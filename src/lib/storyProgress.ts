@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { StoryJourney } from '@/data/seed/vrindavan';
+import type { StoryJourney } from '@/types/content';
 
 export type StoryCompletionEntry = {
   completedAt: string;

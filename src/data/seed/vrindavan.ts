@@ -1,32 +1,4 @@
-export type StoryPanel = {
-  id: string;
-  title: string;
-  text: string;
-};
-
-export type StoryJourney = {
-  world: { slug: string; title: string; description: string };
-  character: { slug: string; name: string };
-  value: { slug: string; name: string };
-  story: {
-    slug: string;
-    title: string;
-    world: string;
-    character: string;
-    value: string;
-    ageBand: '4-6' | '7-9';
-    panels: StoryPanel[];
-    quiz: {
-      question: string;
-      options: string[];
-      correctAnswer: string;
-      gentleFeedback: string;
-    };
-    badgeName: string;
-    parentReflectionPrompt: string;
-    completionShareCopy: string;
-  };
-};
+import type { StoryJourney } from '@/types/content';
 
 export const vrindavanJourney: StoryJourney = {
   world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
