@@ -1,7 +1,7 @@
 import { useFocusEffect } from '@react-navigation/native';
 import { Link } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { getAllStoryCompletions } from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
 
@@ -47,40 +47,31 @@ export default function Screen() {
 
   return (
     <SafeAreaView style={styles.screen}>
-      <View style={styles.heroCard}>
-        <Text style={styles.heroEyebrow}>Explore Worlds</Text>
-        <Text style={styles.heading}>Vrindavan Path</Text>
-        <Text style={styles.subheading}>
-          Walk a gentle story trail with Krishna. Finish one glowing stop each day and watch your kindness grow.
-        </Text>
-        <View style={styles.progressPill}>
-          <Text style={styles.progressText}>
-            {completedCount}/{stories.length} story stops completed
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <View style={styles.heroCard}>
+          <Text style={styles.heroEyebrow}>Explore Worlds</Text>
+          <Text style={styles.heading}>Vrindavan Path</Text>
+          <Text style={styles.subheading}>
+            Walk a gentle story trail with Krishna. Finish one glowing stop each day and watch your kindness grow.
           </Text>
+          <View style={styles.progressPill}>
+            <Text style={styles.progressText}>
+              {completedCount}/{stories.length} story stops completed
+            </Text>
+          </View>
         </View>
-      </View>
 
-      <View style={styles.worldCard}>
-        <Text style={styles.pathTitle}>Your journey map</Text>
-        <Text style={styles.pathCopy}>Start at your next glowing step. Completed stories keep their sparkly badge forever.</Text>
+        <View style={styles.worldCard}>
+          <Text style={styles.pathTitle}>Your journey map</Text>
+          <Text style={styles.pathCopy}>Start at your next glowing step. Completed stories keep their sparkly badge forever.</Text>
 
-        {stories.map((packet, index) => {
-          const nodeState = getNodeState(index, packet.story.slug);
-          const isLocked = nodeState === 'locked';
-          const isCompleted = nodeState === 'completed';
+          {stories.map((packet, index) => {
+            const nodeState = getNodeState(index, packet.story.slug);
+            const isLocked = nodeState === 'locked';
+            const isCompleted = nodeState === 'completed';
 
-          return (
-            <View key={packet.story.slug} style={styles.stepWrap}>
-              {index > 0 && <View style={[styles.connector, isLocked ? styles.connectorLocked : styles.connectorOpen]} />}
-              <Link
-                href={`/story/${packet.story.slug}` as never}
-                style={[
-                  styles.node,
-                  isCompleted && styles.nodeCompleted,
-                  nodeState === 'available' && styles.nodeAvailable,
-                  isLocked && styles.nodeLocked
-                ]}
-              >
+            const content = (
+              <>
                 <View style={styles.nodeHeaderRow}>
                   <Text style={[styles.stepBadge, isLocked ? styles.stepBadgeLocked : styles.stepBadgeOpen]}>Stop {index + 1}</Text>
                   <Text style={[styles.nodeState, isCompleted ? styles.stateCompleted : nodeState === 'available' ? styles.stateAvailable : styles.stateLocked]}>
@@ -96,19 +87,44 @@ export default function Screen() {
                       ? 'Tap to begin your next 10-minute story ritual.'
                       : 'Complete the glowing step before this one to unlock.'}
                 </Text>
-              </Link>
-            </View>
-          );
-        })}
-      </View>
+              </>
+            );
 
-      <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>
+            return (
+              <View key={packet.story.slug} style={styles.stepWrap}>
+                {index > 0 && <View style={[styles.connector, isLocked ? styles.connectorLocked : styles.connectorOpen]} />}
+                {isLocked ? (
+                  <View
+                    style={[styles.node, styles.nodeLocked]}
+                    accessible
+                    accessibilityRole='text'
+                    accessibilityState={{ disabled: true }}
+                  >
+                    {content}
+                  </View>
+                ) : (
+                  <Link
+                    href={`/story/${packet.story.slug}` as never}
+                    style={[styles.node, isCompleted && styles.nodeCompleted, nodeState === 'available' && styles.nodeAvailable]}
+                    accessibilityRole='button'
+                  >
+                    {content}
+                  </Link>
+                )}
+              </View>
+            );
+          })}
+        </View>
+
+        <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>
+      </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, padding: 20, gap: 12, backgroundColor: '#F7F1FF' },
+  screen: { flex: 1, backgroundColor: '#F7F1FF' },
+  scrollContent: { padding: 20, gap: 12 },
   heroCard: {
     borderRadius: 22,
     padding: 18,
@@ -155,5 +171,5 @@ const styles = StyleSheet.create({
   stateLocked: { color: '#80789A' },
   nodeHint: { marginTop: 8, color: '#5E507A', fontSize: 13, lineHeight: 18 },
   nodeHintLocked: { color: '#7F7891' },
-  backLink: { marginTop: 'auto', textAlign: 'center', color: '#4E3B76', fontWeight: '700' }
+  backLink: { marginTop: 8, textAlign: 'center', color: '#4E3B76', fontWeight: '700', marginBottom: 8 }
 });

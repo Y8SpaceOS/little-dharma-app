@@ -1,4 +1,6 @@
 # Task Log
+- 2026-05-15: Sprint 19 stabilization pass: fixed trust/UX blocker on `/(child)/worlds` by making `coming next` (locked) steps non-navigable while keeping `completed` and `ready now` steps linked to existing story routes; preserved child-friendly locked copy: "Complete the glowing step before this one to unlock."
+- 2026-05-15: Sprint 19 stabilization also wrapped journey-map content in `ScrollView` for smaller iPhone safety and growth to longer paths, and added simple accessibility states for locked (`disabled`) vs tappable steps.
 - 2026-05-15: Sprint 19 (Vrindavan Path v2 Visual Upgrade, Q2 Product Experience) completed: transformed `/(child)/worlds` from a plain list into a premium child-friendly journey map with a magical hero card, progress pill, path framing copy, step sequencing, and richer story cards.
 - 2026-05-15: Added three visual journey states driven by existing local progress (`completed`, `ready now`, `coming next`) with clear child guidance copy; preserved existing link routing into `/story/[slug]` and did not introduce public profiles, leaderboards, sharing, chat, or backend dependencies.
 - 2026-05-15: Updated sprint governance docs for Sprint 19 completion in `docs/MASTER_SPRINT_QUEUE.md` (status set to done, sprint metadata declared, completion note added).
