@@ -18,6 +18,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Execution consistency, parent trust safeguards, and long-horizon category-defining operating discipline.
 
 ### Sprint 12 — Engineering Quality Gate Cleanup
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Fix recurring typecheck/toolchain blockers, tsconfig issues, package-lock drift, and repo health so future Codex PRs are safer.
@@ -28,6 +33,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Safety-through-reliability: strong engineering hygiene protects trust and faster category execution.
 
 ### Sprint 13 — Lint and Static Analysis Baseline Hardening
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Reinstate dependable lint/static analysis gates to prevent avoidable regressions.
@@ -38,6 +48,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Premium product quality starts with clean, consistent engineering signals.
 
 ### Sprint 14 — Test Harness Reliability and Coverage Targets
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Strengthen automated confidence by making the test harness stable and defining meaningful coverage targets.
@@ -48,6 +63,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Reliability that enables faster safe iteration toward daily ritual quality.
 
 ### Sprint 15 — Developer Environment Bootstrap Guide
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Make contributor setup reproducible so sprint velocity does not depend on tribal knowledge.
@@ -58,6 +78,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Execution speed and consistency as a strategic moat.
 
 ### Sprint 16 — Story Player Premium Polish
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Elevate story player pacing and visual hierarchy to feel category-defining and calm for children.
@@ -68,6 +93,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Child delight + premium taste without sacrificing simplicity.
 
 ### Sprint 17 — Ritual Moment Premium Polish
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Refine ritual step emotional quality so it becomes a memorable daily micro-practice.
@@ -78,6 +108,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Daily habit stickiness through emotionally resonant ritual quality.
 
 ### Sprint 18 — My Treasures and Badge Wallet v1
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Create a clearer child reward memory surface that reinforces progress and value learning.
@@ -88,6 +123,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Child delight + repeat engagement loop via safe private rewards.
 
 ### Sprint 19 — Vrindavan Path v2 Visual Upgrade
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Upgrade journey-path visual clarity so daily next-step progression is immediately understandable.
@@ -98,6 +138,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** 10-minute habit reinforcement through clear forward momentum cues.
 
 ### Sprint 20 — Parent Dashboard v2
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Improve parent confidence with clearer progress signals, ritual outcomes, and actionable reflection prompts.
@@ -108,6 +153,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Parent trust + retention via meaningful visibility into child growth.
 
 ### Sprint 21 — Add Three More Vrindavan Stories
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Expand content depth within existing world while preserving quality and safety governance.
@@ -118,6 +168,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Content universe depth with handcrafted quality, not content-farm velocity.
 
 ### Sprint 22 — Seven-Day Vrindavan Path
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Turn current multi-story path into a true seven-day ritual sequence.
@@ -128,6 +183,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Daily habit strength through predictable ritual cadence.
 
 ### Sprint 23 — Continue Journey Logic
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ensure children can resume incomplete journeys safely and effortlessly.
@@ -138,6 +198,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Trust through reliability + reduced frustration for families.
 
 ### Sprint 24 — Local Weekly Progress
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Provide dependable local weekly progress aggregation for parent-facing insight surfaces.
@@ -148,6 +213,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Parent trust and retention via interpretable progress evidence.
 
 ### Sprint 25 — Parent-Safe Share Card v1
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Design a trustworthy share-card artifact optimized for parent-to-parent private sharing moments.
@@ -158,6 +228,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Shareable moment potential without compromising child safety.
 
 ### Sprint 26 — Native Parent Sharing v1
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Enable parent-initiated native sharing flow that preserves privacy and consent boundaries.
@@ -168,6 +243,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Growth with trust-first guardrails.
 
 ### Sprint 27 — Grandparent Share Copy Variants
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Improve conversion of family sharing by tailoring copy variants for grandparents and extended family.
@@ -178,6 +258,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Warm family virality grounded in cultural trust.
 
 ### Sprint 28 — Bedtime Mode v1
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Introduce a calmer bedtime interaction mode for nightly ritual consistency.
@@ -188,6 +273,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Daily 10-minute ritual fit for real family bedtime contexts.
 
 ### Sprint 29 — Chant & Sing Ritual Section v1
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Add a dedicated chant-and-sing ritual section pattern while preserving attribution integrity.
@@ -198,6 +288,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Cultural identity depth + child delight through participatory ritual.
 
 ### Sprint 30 — Soul Prototype Readiness Audit
+- **Target quality level:** Q2 Soul Prototype
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Assess Soul Prototype readiness against product, quality, safety, and growth criteria before next phase.
@@ -208,6 +303,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Strategic readiness with no illusion of progress.
 
 ### Sprint 31 — Content QA and Source-Note Model
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Deliver content qa and source-note model as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -218,6 +318,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How content qa and source-note model improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 32 — Source and Provenance Fields
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Deliver source and provenance fields as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -228,6 +333,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How source and provenance fields improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 33 — Parent-Facing Why This Story Matters
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Deliver parent-facing why this story matters as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -238,6 +348,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How parent-facing why this story matters improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 34 — Ganesha World Shell
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Deliver ganesha world shell as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -248,6 +363,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How ganesha world shell improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 35 — First Ganesha Stories
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Deliver first ganesha stories as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -260,6 +380,11 @@ Status legend: `not started`, `in progress`, `done`.
 ## Private Beta
 
 ### Sprint 36 — Hanuman World Shell
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Deliver hanuman world shell as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -270,6 +395,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How hanuman world shell improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 37 — First Hanuman Stories
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Deliver first hanuman stories as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -280,6 +410,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How first hanuman stories improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 38 — Age-Band Variations
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Deliver age-band variations as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -290,6 +425,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How age-band variations improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 39 — Language-Ready Content Fields
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Deliver language-ready content fields as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -300,6 +440,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How language-ready content fields improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 40 — Hindi Transliteration and Meaning Fields
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Deliver hindi transliteration and meaning fields as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -310,6 +455,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How hindi transliteration and meaning fields improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 41 — Richer My Treasures
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Deliver richer my treasures as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -320,6 +470,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How richer my treasures improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 42 — Values Map
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Deliver values map as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -330,6 +485,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How values map improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 43 — Today I Learned Summary
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Deliver today i learned summary as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -340,6 +500,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How today i learned summary improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 44 — Parent Evening Reflection Flow
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Deliver parent evening reflection flow as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -350,6 +515,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How parent evening reflection flow improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 45 — Gentle Seven-Day Ritual Streak
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Deliver gentle seven-day ritual streak as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -360,6 +530,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How gentle seven-day ritual streak improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 46 — First Festival Pack Shell
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Deliver first festival pack shell as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -370,6 +545,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How first festival pack shell improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 47 — Festival Story and Ritual Format
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Deliver festival story and ritual format as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -380,6 +560,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How festival story and ritual format improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 48 — Festival Share Card Placeholder
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Deliver festival share card placeholder as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -390,6 +575,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How festival share card placeholder improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 49 — Parent Feedback Capture
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Deliver parent feedback capture as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -400,6 +590,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How parent feedback capture improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 50 — Local Analytics Events
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Deliver local analytics events as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -410,6 +605,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How local analytics events improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 51 — Error Boundaries
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Deliver error boundaries as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -420,6 +620,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How error boundaries improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 52 — Loading and Skeleton States
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Deliver loading and skeleton states as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -430,6 +635,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How loading and skeleton states improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 53 — Accessibility Pass
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Deliver accessibility pass as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -440,6 +650,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How accessibility pass improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 54 — Tablet Layout Pass
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Deliver tablet layout pass as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -450,6 +665,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How tablet layout pass improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 55 — Offline-First Content Cache Model
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Deliver offline-first content cache model as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -460,6 +680,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How offline-first content cache model improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 56 — Sample Narration for 3 Stories
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Deliver sample narration for 3 stories as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -470,6 +695,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How sample narration for 3 stories improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 57 — Audio Narration Controls
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Deliver audio narration controls as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -480,6 +710,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How audio narration controls improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 58 — Bedtime Audio Ritual v1
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Deliver bedtime audio ritual v1 as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -490,6 +725,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How bedtime audio ritual v1 improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 59 — Private Beta Feedback Form
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Deliver private beta feedback form as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -500,6 +740,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How private beta feedback form improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 60 — Private Beta Release Candidate
+- **Target quality level:** Q3 Private Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Deliver private beta release candidate as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
@@ -510,6 +755,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** How private beta release candidate improves delight, trust, ritual consistency, safety, and future monetisation readiness.
 
 ### Sprint 61 — Private Beta Sprint 61: Retention Experiments
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -520,6 +770,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 62 — Private Beta Sprint 62: Content Ops QA
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -530,6 +785,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 63 — Private Beta Sprint 63: Safety Review Cadence
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -540,6 +800,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 64 — Private Beta Sprint 64: Parent Insight Reporting
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -550,6 +815,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 65 — Private Beta Sprint 65: Subscription Narrative
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -562,6 +832,11 @@ Status legend: `not started`, `in progress`, `done`.
 ## Paid Beta
 
 ### Sprint 66 — Paid Beta Sprint 66: Lifecycle Messaging
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -572,6 +847,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 67 — Paid Beta Sprint 67: Launch Readiness
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -582,6 +862,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 68 — Paid Beta Sprint 68: Partnership Pilots
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -592,6 +877,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 69 — Paid Beta Sprint 69: Category Moat Deepening
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -602,6 +892,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 70 — Paid Beta Sprint 70: Cohort Expansion
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -612,6 +907,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 71 — Paid Beta Sprint 71: Retention Experiments
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -622,6 +922,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 72 — Paid Beta Sprint 72: Content Ops QA
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -632,6 +937,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 73 — Paid Beta Sprint 73: Safety Review Cadence
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -642,6 +952,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 74 — Paid Beta Sprint 74: Parent Insight Reporting
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -652,6 +967,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 75 — Paid Beta Sprint 75: Subscription Narrative
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -662,6 +982,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 76 — Paid Beta Sprint 76: Lifecycle Messaging
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -672,6 +997,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 77 — Paid Beta Sprint 77: Launch Readiness
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -682,6 +1012,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 78 — Paid Beta Sprint 78: Partnership Pilots
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -692,6 +1027,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 79 — Paid Beta Sprint 79: Category Moat Deepening
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -702,6 +1042,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 80 — Paid Beta Sprint 80: Cohort Expansion
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -712,6 +1057,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 81 — Paid Beta Sprint 81: Retention Experiments
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -722,6 +1072,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 82 — Paid Beta Sprint 82: Content Ops QA
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -732,6 +1087,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 83 — Paid Beta Sprint 83: Safety Review Cadence
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -742,6 +1102,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 84 — Paid Beta Sprint 84: Parent Insight Reporting
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -752,6 +1117,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 85 — Paid Beta Sprint 85: Subscription Narrative
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -762,6 +1132,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 86 — Paid Beta Sprint 86: Lifecycle Messaging
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -772,6 +1147,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 87 — Paid Beta Sprint 87: Launch Readiness
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -782,6 +1162,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 88 — Paid Beta Sprint 88: Partnership Pilots
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -792,6 +1177,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 89 — Paid Beta Sprint 89: Category Moat Deepening
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -802,6 +1192,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 90 — Paid Beta Sprint 90: Cohort Expansion
+- **Target quality level:** Q4 Paid Beta Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -812,6 +1207,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 91 — Paid Beta Sprint 91: Retention Experiments
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -822,6 +1222,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 92 — Paid Beta Sprint 92: Content Ops QA
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -832,6 +1237,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 93 — Paid Beta Sprint 93: Safety Review Cadence
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -842,6 +1252,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 94 — Paid Beta Sprint 94: Parent Insight Reporting
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -852,6 +1267,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 95 — Paid Beta Sprint 95: Subscription Narrative
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -864,6 +1284,11 @@ Status legend: `not started`, `in progress`, `done`.
 ## Public Launch Candidate
 
 ### Sprint 96 — Public Launch Candidate Sprint 96: Lifecycle Messaging
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -874,6 +1299,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 97 — Public Launch Candidate Sprint 97: Launch Readiness
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -884,6 +1314,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 98 — Public Launch Candidate Sprint 98: Partnership Pilots
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -894,6 +1329,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 99 — Public Launch Candidate Sprint 99: Category Moat Deepening
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -904,6 +1344,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 100 — Public Launch Candidate Sprint 100: Cohort Expansion
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -914,6 +1359,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 101 — Public Launch Candidate Sprint 101: Retention Experiments
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -924,6 +1374,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 102 — Public Launch Candidate Sprint 102: Content Ops QA
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -934,6 +1389,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 103 — Public Launch Candidate Sprint 103: Safety Review Cadence
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -944,6 +1404,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 104 — Public Launch Candidate Sprint 104: Parent Insight Reporting
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -954,6 +1419,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 105 — Public Launch Candidate Sprint 105: Subscription Narrative
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -964,6 +1434,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 106 — Public Launch Candidate Sprint 106: Lifecycle Messaging
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -974,6 +1449,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 107 — Public Launch Candidate Sprint 107: Launch Readiness
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -984,6 +1464,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 108 — Public Launch Candidate Sprint 108: Partnership Pilots
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -994,6 +1479,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 109 — Public Launch Candidate Sprint 109: Category Moat Deepening
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1004,6 +1494,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 110 — Public Launch Candidate Sprint 110: Cohort Expansion
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1014,6 +1509,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 111 — Public Launch Candidate Sprint 111: Retention Experiments
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1024,6 +1524,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 112 — Public Launch Candidate Sprint 112: Content Ops QA
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1034,6 +1539,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 113 — Public Launch Candidate Sprint 113: Safety Review Cadence
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1044,6 +1554,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 114 — Public Launch Candidate Sprint 114: Parent Insight Reporting
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1054,6 +1569,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 115 — Public Launch Candidate Sprint 115: Subscription Narrative
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1064,6 +1584,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 116 — Public Launch Candidate Sprint 116: Lifecycle Messaging
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1074,6 +1599,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 117 — Public Launch Candidate Sprint 117: Launch Readiness
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1084,6 +1614,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 118 — Public Launch Candidate Sprint 118: Partnership Pilots
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1094,6 +1629,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 119 — Public Launch Candidate Sprint 119: Category Moat Deepening
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1104,6 +1644,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 120 — Public Launch Candidate Sprint 120: Cohort Expansion
+- **Target quality level:** Q5 Public Launch Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1116,6 +1661,11 @@ Status legend: `not started`, `in progress`, `done`.
 ## Category-Defining V1
 
 ### Sprint 121 — Category-Defining V1 Sprint 121: Retention Experiments
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1126,6 +1676,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 122 — Category-Defining V1 Sprint 122: Content Ops QA
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1136,6 +1691,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 123 — Category-Defining V1 Sprint 123: Safety Review Cadence
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1146,6 +1706,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 124 — Category-Defining V1 Sprint 124: Parent Insight Reporting
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1156,6 +1721,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 125 — Category-Defining V1 Sprint 125: Subscription Narrative
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1166,6 +1736,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 126 — Category-Defining V1 Sprint 126: Lifecycle Messaging
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1176,6 +1751,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 127 — Category-Defining V1 Sprint 127: Launch Readiness
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1186,6 +1766,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 128 — Category-Defining V1 Sprint 128: Partnership Pilots
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1196,6 +1781,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 129 — Category-Defining V1 Sprint 129: Category Moat Deepening
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1206,6 +1796,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 130 — Category-Defining V1 Sprint 130: Cohort Expansion
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1216,6 +1811,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 131 — Category-Defining V1 Sprint 131: Retention Experiments
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1226,6 +1826,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 132 — Category-Defining V1 Sprint 132: Content Ops QA
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1236,6 +1841,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 133 — Category-Defining V1 Sprint 133: Safety Review Cadence
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1246,6 +1856,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 134 — Category-Defining V1 Sprint 134: Parent Insight Reporting
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1256,6 +1871,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 135 — Category-Defining V1 Sprint 135: Subscription Narrative
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1266,6 +1886,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 136 — Category-Defining V1 Sprint 136: Lifecycle Messaging
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1276,6 +1901,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 137 — Category-Defining V1 Sprint 137: Launch Readiness
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1286,6 +1916,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 138 — Category-Defining V1 Sprint 138: Partnership Pilots
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1296,6 +1931,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 139 — Category-Defining V1 Sprint 139: Category Moat Deepening
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1306,6 +1946,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 140 — Category-Defining V1 Sprint 140: Cohort Expansion
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1316,6 +1961,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 141 — Category-Defining V1 Sprint 141: Retention Experiments
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1326,6 +1976,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 142 — Category-Defining V1 Sprint 142: Content Ops QA
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1336,6 +1991,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 143 — Category-Defining V1 Sprint 143: Safety Review Cadence
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1346,6 +2006,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 144 — Category-Defining V1 Sprint 144: Parent Insight Reporting
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1356,6 +2021,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 145 — Category-Defining V1 Sprint 145: Subscription Narrative
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1366,6 +2036,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 146 — Category-Defining V1 Sprint 146: Lifecycle Messaging
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Product Experience
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1376,6 +2051,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 147 — Category-Defining V1 Sprint 147: Launch Readiness
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Content Engine
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1386,6 +2066,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 148 — Category-Defining V1 Sprint 148: Partnership Pilots
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Trust & Safety
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1396,6 +2081,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 149 — Category-Defining V1 Sprint 149: Category Moat Deepening
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Growth Loops
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
@@ -1406,6 +2096,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Phase-specific improvement to delight, trust, daily ritual stickiness, safety compliance, and monetisation path quality.
 
 ### Sprint 150 — Category-Defining V1 Sprint 150: Cohort Expansion
+- **Target quality level:** Q6 Category-Defining V1 Quality
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
+- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.

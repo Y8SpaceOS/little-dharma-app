@@ -45,3 +45,13 @@ Every sprint PR summary must include:
 - No false claims about tests or QA.
 - Preserve trust/safety and parent promise constraints.
 - Prefer small, composable increments over large rewrites.
+
+
+## Quality-Level and Depth Requirements
+- Every sprint must declare a **target quality level** (Q1–Q6).
+- Every sprint must declare a **sprint type** (Product Experience, Content Engine, Trust & Safety, Growth Loop, Platform Foundation, Monetisation, Audio/Ritual, Brand/IP).
+- Every sprint must follow `docs/SPRINT_DEPTH_STANDARDS.md` for depth-of-coverage expectations.
+- Every PR must report **quality gates passed** and **quality gates deferred**.
+- Every PR must include complete **Sprint Depth Checklist** answers.
+- Codex must not claim a quality gate is passed unless evidence exists in implementation, tests, docs, and/or manual QA notes.
+- Codex must not mark shallow implementation as complete when the sprint requires full surface coverage.
