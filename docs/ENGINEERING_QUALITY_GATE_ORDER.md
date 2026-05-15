@@ -22,5 +22,11 @@ Provide deterministic, reproducible quality checks for local development and CI-
 - If a restricted registry blocks dependency fetches, record the exact package and HTTP error in `docs/TASK_LOG.md` and mark gate status as blocked (not passed).
 
 ## Current Sprint 12 outcome
-- TypeScript config no longer depends on `expo/tsconfig.base`, allowing `npm run typecheck` to run without Expo package resolution.
-- Added `ignoreDeprecations: "6.0"` to explicitly handle TS5101 and keep the baseline deterministic on the current TypeScript series.
+- TypeScript config is Expo-compatible (`extends: "expo/tsconfig.base"`) so Expo startup does not rewrite the file.
+- Deprecation compatibility is set to `ignoreDeprecations: "5.0"` for local TypeScript validity in stabilized Sprint 12 validation.
+
+## Stabilization pass update (2026-05-15)
+- Local Mac validation confirmed `npm ci`, `npm run lint`, `npm run test`, and `npx expo start --clear` pass with iPhone runtime verification.
+- Pre-fix failure was caused by `ignoreDeprecations: "6.0"` being invalid in the local TypeScript toolchain and Expo auto-restoring `extends: "expo/tsconfig.base"`.
+- Stabilization set Expo-compatible `tsconfig.json` shape (`extends: "expo/tsconfig.base"`) and changed deprecation compatibility to `ignoreDeprecations: "5.0"` for local TypeScript compatibility.
+- Sprint 12 should remain done only when all four quality gates pass in standard local validation: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`.

@@ -12,12 +12,13 @@
         "src/*"
       ]
     },
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "5.0"
   },
   "include": [
     "app",
     "src",
     "expo-env.d.ts",
     ".expo/types/**/*.ts"
-  ]
+  ],
+  "extends": "expo/tsconfig.base"
 }
