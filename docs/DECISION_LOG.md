@@ -41,3 +41,6 @@
 - 2026-05-15: Adopted formal six-level quality ladder (Q1–Q6), phase gates (A–E), sprint depth standards, and mandatory scorecard/checklist-based PR reporting as core Execution OS policy.
   - Rationale: Prevent shallow “task complete” outputs and enforce category-defining depth aligned to sprint phase.
   - Implications: Every sprint now must declare quality level/type, prove depth, and explicitly report passed/deferred quality gates with evidence.
+- 2026-05-15: Removed `extends: "expo/tsconfig.base"` from root TypeScript configuration and standardized a lockfile-first quality-gate execution order (`npm ci` → `typecheck` → `lint` → `test`).
+  - Rationale: Sprint 12 required eliminating recurring typecheck/toolchain blockers and making baseline checks deterministic even when Expo package resolution is unavailable.
+  - Implications: Expo runtime behavior still requires normal dependency installation + iPhone QA, but static quality gates are now auditable and less environment-fragile for future Codex PRs.

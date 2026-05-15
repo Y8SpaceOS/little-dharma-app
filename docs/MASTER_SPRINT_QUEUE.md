@@ -19,11 +19,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 12 — Engineering Quality Gate Cleanup
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Platform Foundation
+- **Primary quality dimension:** Reliability
+- **Protected quality dimensions:** Child safety defaults, parent trust surfaces, daily ritual continuity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Removed broken Expo tsconfig dependency from root typecheck path, added TypeScript deprecation compatibility setting, and documented deterministic quality-gate execution order/lockfile policy for local + CI.
 - **Primary track:** Platform Foundations
 - **Objective:** Fix recurring typecheck/toolchain blockers, tsconfig issues, package-lock drift, and repo health so future Codex PRs are safer.
 - **Scope:** Repair tsconfig issues, align scripts, regenerate deterministic lockfile strategy, and document standard quality-gate order for local + CI.
