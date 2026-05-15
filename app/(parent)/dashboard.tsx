@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link, useRouter } from 'expo-router';
+import { useFocusEffect } from '@react-navigation/native';
 import { Alert, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
 import { getOnboardingState, resetOnboarding, subscribeOnboardingState, type OnboardingProfile } from '@/lib/onboardingState';
@@ -28,9 +29,15 @@ export default function DashboardScreen() {
   const [summary, setSummary] = useState(initialSummary);
 
   useEffect(() => subscribeOnboardingState(() => setProfile(getOnboardingState().profile)), []);
-  useEffect(() => {
+  const refreshSummary = useCallback(() => {
     getParentDashboardSnapshot().then(setSummary).catch(() => null);
   }, []);
+
+  useFocusEffect(
+    useCallback(() => {
+      refreshSummary();
+    }, [refreshSummary])
+  );
 
   const onReset = () => {
     Alert.alert('Reset onboarding?', 'This clears the local child profile on this device and returns to the welcome screen.', [
