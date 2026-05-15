@@ -145,11 +145,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 20 — Parent Dashboard v2
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Parent trust
+- **Protected quality dimensions:** Daily 10-minute ritual habit, Premium UI/UX taste, Content depth and authenticity, Safety/privacy, Child delight
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded `/(parent)/dashboard` into a premium private parent-trust surface with latest story/value/ritual/badge recap, progress summary, ritual-loop education, conversation starter, and explicit privacy reassurance using existing local completion data only.
 - **Primary track:** Product Experience
 - **Objective:** Improve parent confidence with clearer progress signals, ritual outcomes, and actionable reflection prompts.
 - **Scope:** Refine dashboard sections, summary hierarchy, and next-action guidance for evening family reflection.
