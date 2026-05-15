@@ -57,3 +57,6 @@
 - 2026-05-15: Temporarily deferred Sprint 14 and Sprint 15 while executing Sprint 16 premium Story Player polish immediately after Sprint 12/13 quality-gate cleanup.
   - Rationale: Sprint 12 and Sprint 13 established the critical local gate standard (`npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`), enabling a focused move to visible product quality improvements for the child ritual experience.
   - Implications: Sprint 14 and Sprint 15 remain explicitly `not started` in the queue (not marked done), must be resumed later, and current work preserves existing trust/safety and progress logic while improving premium UX taste.
+- 2026-05-15: GitHub Actions is now the canonical automated quality gate because Codex Cloud may have restricted package registry access. Codex creates PRs; GitHub Actions validates gates; iPhone QA validates product experience for UI PRs.
+  - Rationale: Local Codex Cloud environments can fail package install due to registry restrictions, so merge confidence must come from deterministic hosted CI.
+  - Implications: Every PR and push to `main` must pass `npm ci` + `typecheck` + `lint` + `test` in GitHub Actions before merge/release decisions.
