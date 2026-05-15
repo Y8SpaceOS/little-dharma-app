@@ -97,11 +97,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 17 — Ritual Moment Premium Polish
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Premium UI/UX taste
+- **Protected quality dimensions:** Daily 10-minute ritual habit, parent trust, child delight, safety/privacy, content depth and authenticity, parent-safe shareability
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Elevated Ritual Moment into a calmer premium card with sacred-but-child-friendly hierarchy (chant seed, transliteration, meaning, reflection, practice duration) plus gentle framing copy while preserving Story → Ritual → Quiz → Completion flow and attribution-safe content.
 - **Primary track:** Product Experience
 - **Objective:** Refine ritual step emotional quality so it becomes a memorable daily micro-practice.
 - **Scope:** Improve ritual copy framing, pacing hints, and transition ergonomics while preserving attribution-safe policy.
