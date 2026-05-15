@@ -96,7 +96,7 @@ export const vrindavanThirdStoryPacket: StoryJourney = {
     value: 'Gratitude',
     ageBand: '4-6',
     panels: [
-      { id: 'g1', title: 'Morning by the River', text: 'At sunrise, Krishna sat beside the flowing Yamuna and listened to the soft water song.' },
+      { id: 'g1', title: 'Morning by the River', text: 'In this Little Dharma story, Krishna sits beside the flowing Yamuna at sunrise and listens to the soft water song.' },
       { id: 'g2', title: 'A Cool Drink', text: 'After playtime, Krishna and his friends took cool sips of water and felt refreshed.' },
       { id: 'g3', title: 'A Thankful Heart', text: 'Krishna smiled and said, “This river helps us every day. Let us say thank you with respect.”' },
       { id: 'g4', title: 'Careful Hands', text: 'The children picked up fallen leaves and kept the riverbank tidy before heading home.' },
@@ -111,9 +111,9 @@ export const vrindavanThirdStoryPacket: StoryJourney = {
     },
     ritual: {
       microShlokaTitle: 'Little Dharma chant seed for gratitude',
-      microShlokaText: 'धन्यवादं स्मरामि',
-      transliteration: 'Dhanyavaadam smaraami',
-      childMeaning: 'I remember to say thank you. A thankful heart helps us feel calm and joyful.',
+      microShlokaText: 'कृतज्ञोऽस्मि',
+      transliteration: "Kritajno'smi",
+      childMeaning: 'I am thankful. A thankful heart helps us feel calm and joyful.',
       parentMeaning: 'Build gratitude as a daily habit by naming one simple blessing and one small act of care each evening.',
       ritualPrompt: 'Before bedtime, place both hands together and softly say the phrase once, then each share one thing you are thankful for today.',
       reflectionQuestion: 'What is one gift from today that we can thank and protect?',
@@ -137,7 +137,7 @@ export const vrindavanFourthStoryPacket: StoryJourney = {
     value: 'Patience',
     ageBand: '4-6',
     panels: [
-      { id: 't1', title: 'Clouds Gather Slowly', text: 'One afternoon in Vrindavan, dark clouds gathered while Krishna waited for his friends near a kadamba tree.' },
+      { id: 't1', title: 'Clouds Gather Slowly', text: 'In this Little Dharma story, dark clouds gather in Vrindavan while Krishna waits for his friends near a kadamba tree.' },
       { id: 't2', title: 'A Long Minute', text: 'The wind grew cool, and Krishna noticed he felt restless because no one had arrived yet.' },
       { id: 't3', title: 'Breathing with the Breeze', text: 'He placed a hand on his chest and took three slow breaths, listening to leaves rustle above.' },
       { id: 't4', title: 'Kind Waiting', text: 'Instead of complaining, Krishna prepared space so everyone could sit comfortably when they came.' },
@@ -151,7 +151,7 @@ export const vrindavanFourthStoryPacket: StoryJourney = {
       gentleFeedback: 'Beautiful try. Patience can begin with one calm breath and one kind choice.'
     },
     ritual: {
-      microShlokaTitle: 'Simple Sanskrit phrase for patience',
+      microShlokaTitle: 'Little Dharma practice phrase for patience',
       microShlokaText: 'शान्तिः शान्तिः',
       transliteration: 'Shaantih shaantih',
       childMeaning: 'Peace, peace. Slow breathing helps our body and heart feel peaceful while we wait.',
@@ -178,12 +178,12 @@ export const vrindavanFifthStoryPacket: StoryJourney = {
     value: 'Truthfulness',
     ageBand: '4-6',
     panels: [
-      { id: 'h1', title: 'Playtime in the Courtyard', text: 'Krishna and his friends played music in the courtyard, passing a small bamboo flute between turns.' },
+      { id: 'h1', title: 'Playtime in the Courtyard', text: 'In this Little Dharma story, Krishna and his friends play music in the courtyard, passing a small bamboo flute between turns.' },
       { id: 'h2', title: 'A Sudden Crack', text: 'The flute slipped from Krishna’s hand and made a tiny crack on the side.' },
       { id: 'h3', title: 'A Quiet Choice', text: 'For a moment, Krishna felt nervous and wondered if he should hide what happened.' },
       { id: 'h4', title: 'Speaking the Truth', text: 'He took a breath and said, “Friends, I dropped the flute. I am sorry. Let us repair it together.”' },
       { id: 'h5', title: 'Repair and Forgiveness', text: 'The children carefully wrapped the flute and thanked Krishna for telling the truth right away.' },
-      { id: 'h6', title: 'Truth Builds Trust', text: 'Krishna learned that honest words may feel hard for a moment, but they make friendships strong.' }
+      { id: 'h6', title: 'Truth Builds Trust', text: 'Krishna reminded his friends that honest words may feel hard for a moment, but they make friendships strong.' }
     ],
     quiz: {
       question: 'Why was Krishna’s truthful choice important?',
