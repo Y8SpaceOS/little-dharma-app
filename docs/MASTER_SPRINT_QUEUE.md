@@ -161,11 +161,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 21 — Add Three More Vrindavan Stories
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Content Engine
+- **Primary quality dimension:** Content depth and authenticity
+- **Protected quality dimensions:** Child delight, Daily 10-minute ritual habit, Parent trust, Safety/privacy, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added three new ritual-ready Vrindavan packets (gratitude, patience, truthfulness) with child-safe story/ritual/quiz/badge/parent-bridge content integrated into existing journey progression, Explore path, Treasures badges, and Parent Dashboard summaries via existing local progress flow.
 - **Primary track:** Content Engine
 - **Objective:** Expand content depth within existing world while preserving quality and safety governance.
 - **Scope:** Create three additional structured Vrindavan story packets with ritual, quiz, badge, and parent bridge fields.
