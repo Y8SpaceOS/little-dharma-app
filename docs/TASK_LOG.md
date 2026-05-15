@@ -6,3 +6,8 @@
 - 2026-05-15: `npm install` still fails with `403 Forbidden` for `@expo/vector-icons`; no package-lock could be generated in this environment.
 - 2026-05-15: Checks run: `npm run typecheck` ✅, `npm run lint` ✅ (simplified gate), `npm run test` ✅.
 - Next sprint: run dependency install in an authorized registry environment, restore full ESLint TypeScript config, and verify full Expo toolchain checks.
+- 2026-05-15: Built premium mobile-first welcome + parent onboarding flow (consent placeholder, child profile, nickname, age band, language, favorite character, bedtime preference) and routed completion into child home.
+- 2026-05-15: Reworked child home into five large child-friendly action cards and added clearer parent/child navigation links across onboarding, child home, and parent dashboard.
+- 2026-05-15: Added lightweight local onboarding state in app memory; intentionally no backend auth/payments/content bulk additions in this sprint.
+- 2026-05-15: Checks run: `npm run typecheck` ❌ (existing environment/tooling issue: missing `expo/tsconfig.base` and TS deprecation gate), `npm run test` ✅, `npm run dev` ⚠️ blocked (`expo: not found` in environment).
+- Next sprint: restore Expo CLI + dependency/toolchain availability, then rerun full typecheck and Expo boot verification with durable onboarding persistence.
