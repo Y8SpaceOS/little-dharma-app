@@ -40,7 +40,8 @@ export default function StoryScreen() {
   }
 
   const { story } = journey;
-  const progressLabel = `${panelIndex + 1}/${story.panels.length}`;
+  const progressLabel = `Panel ${panelIndex + 1} of ${story.panels.length}`;
+  const progressPercent = Math.round(((panelIndex + 1) / story.panels.length) * 100);
   const panel = story.panels[panelIndex];
   const atLastPanel = panelIndex === story.panels.length - 1;
 
@@ -58,15 +59,25 @@ export default function StoryScreen() {
   return (
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Text style={styles.eyebrow}>Today&apos;s Journey</Text>
-        <Text style={styles.title}>{story.title}</Text>
-        <Text style={styles.meta}>{story.world} • {story.character} • Value: {story.value} • Age {story.ageBand}</Text>
+        <View style={styles.headerCard}>
+          <Text style={styles.eyebrow}>Today&apos;s Journey</Text>
+          <Text style={styles.title}>{story.title}</Text>
+          <Text style={styles.meta}>{story.world} • {story.character} • Value: {story.value} • Age {story.ageBand}</Text>
+        </View>
 
         {stage === 'story' && (
           <View style={styles.card}>
-            <Text style={styles.step}>{progressLabel}</Text>
+            <View style={styles.progressHeader}>
+              <Text style={styles.step}>{progressLabel}</Text>
+              <Text style={styles.stepPercent}>{progressPercent}% complete</Text>
+            </View>
+            <View style={styles.progressTrack}>
+              <View style={[styles.progressFill, { width: `${progressPercent}%` }]} />
+            </View>
             <Text style={styles.panelTitle}>{panel.title}</Text>
-            <Text style={styles.panelText}>{panel.text}</Text>
+            <View style={styles.storyBodyCard}>
+              <Text style={styles.panelText}>{panel.text}</Text>
+            </View>
             <View style={styles.dotsWrap}>
               {story.panels.map((storyPanel) => (
                 <View key={storyPanel.id} style={[styles.dot, storyPanel.id === panel.id && styles.dotActive]} />
@@ -91,7 +102,7 @@ export default function StoryScreen() {
                   setPanelIndex((prev) => Math.min(story.panels.length - 1, prev + 1));
                 }}
               >
-                <Text style={styles.buttonText}>{atLastPanel ? 'Go to Quiz' : 'Next'}</Text>
+                <Text style={styles.buttonText}>{atLastPanel ? 'Continue to Ritual' : 'Next Panel'}</Text>
               </Pressable>
             </View>
           </View>
@@ -109,7 +120,7 @@ export default function StoryScreen() {
             <Text style={styles.ritualPromptText}>Reflect: {story.ritual.reflectionQuestion}</Text>
             <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round(story.ritual.suggestedPracticeDurationSeconds / 60))} minute{story.ritual.suggestedPracticeDurationSeconds >= 120 ? 's' : ''}.</Text>
             <Pressable style={styles.button} onPress={() => setStage('quiz')}>
-              <Text style={styles.buttonText}>I understand</Text>
+              <Text style={styles.buttonText}>Continue to Quiz</Text>
             </Pressable>
           </View>
         )}
@@ -127,6 +138,7 @@ export default function StoryScreen() {
                 <Text style={styles.optionText}>{option}</Text>
               </Pressable>
             ))}
+            <Text style={styles.quizHint}>Choose the kindest answer you would try in real life.</Text>
             <Pressable onPress={onQuizSubmit} style={[styles.button, !selectedAnswer && styles.buttonDisabled]} disabled={!selectedAnswer}>
               <Text style={styles.buttonText}>See my badge</Text>
             </Pressable>
@@ -167,15 +179,21 @@ export default function StoryScreen() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: '#FFF8EF' },
-  scrollContent: { padding: tokens.spacing.lg, gap: 10, paddingBottom: tokens.spacing.xl },
+  scrollContent: { padding: tokens.spacing.lg, gap: 14, paddingBottom: tokens.spacing.xl },
+  headerCard: { backgroundColor: '#FFF3E5', borderRadius: 24, borderWidth: 1, borderColor: '#F4D9BC', padding: tokens.spacing.lg, gap: 8 },
   eyebrow: { fontSize: 14, fontWeight: '700', color: '#B06122', textTransform: 'uppercase', letterSpacing: 0.8 },
   title: { fontSize: 30, fontWeight: '800', color: '#3E2A1A' },
-  meta: { fontSize: 14, color: '#7B5C43' },
-  card: { marginTop: 8, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 12, borderWidth: 1, borderColor: '#F2DCC2' },
+  meta: { fontSize: 14, color: '#7B5C43', lineHeight: 20 },
+  card: { marginTop: 4, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 14, borderWidth: 1, borderColor: '#F2DCC2' },
   fallbackCard: { margin: tokens.spacing.lg, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 12, borderWidth: 1, borderColor: '#F2DCC2' },
   homeLink: { marginTop: 8, alignSelf: 'flex-start', backgroundColor: '#E78739', color: '#FFFFFF', fontWeight: '800', fontSize: 16, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
-  step: { fontSize: 12, color: '#9B7A5D', fontWeight: '700' },
-  panelTitle: { fontSize: 24, fontWeight: '800', color: '#412C1A' },
+  progressHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  step: { fontSize: 12, color: '#9B7A5D', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.5 },
+  stepPercent: { fontSize: 12, color: '#A06C39', fontWeight: '700' },
+  progressTrack: { height: 8, backgroundColor: '#F4DFCB', borderRadius: 999, overflow: 'hidden' },
+  progressFill: { height: '100%', backgroundColor: '#D7863A', borderRadius: 999 },
+  panelTitle: { fontSize: 26, fontWeight: '800', color: '#412C1A' },
+  storyBodyCard: { backgroundColor: '#FFF9F2', borderRadius: 18, borderWidth: 1, borderColor: '#F2DECB', paddingHorizontal: 14, paddingVertical: 16 },
   panelText: { fontSize: 21, lineHeight: 31, color: '#5C4330' },
   dotsWrap: { flexDirection: 'row', gap: 6, alignItems: 'center', justifyContent: 'center', marginVertical: 2 },
   dot: { width: 8, height: 8, borderRadius: 4, backgroundColor: '#E7CBAE' },
@@ -189,6 +207,7 @@ const styles = StyleSheet.create({
   option: { borderRadius: 16, borderWidth: 1, borderColor: '#E6C8A8', padding: 14, backgroundColor: '#FFF8EE' },
   optionSelected: { borderColor: '#CE7A2D', backgroundColor: '#FFE6C7' },
   optionText: { fontSize: 18, color: '#4B3524', fontWeight: '600' },
+  quizHint: { fontSize: 13, color: '#7D6147', fontWeight: '600' },
   parentPrompt: { marginTop: 4, fontSize: 16, color: '#5A4A36', fontWeight: '600' },
   shareCard: { borderRadius: 16, backgroundColor: '#F8F2FF', padding: 12, gap: 6, borderWidth: 1, borderColor: '#DACAF6' },
   shareTitle: { fontSize: 16, fontWeight: '800', color: '#4E3B76' },
