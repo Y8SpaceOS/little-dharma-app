@@ -62,3 +62,7 @@
 - 2026-05-15: Stabilization pass on execution OS queue: rewrote `docs/MASTER_SPRINT_QUEUE.md` with specific actionable sprint plans, marked Sprint 11 as done with completion note, and set Sprint 12 (Engineering Quality Gate Cleanup) as the first `not started` sprint.
 - 2026-05-15: Checks run (stabilization): `npm run test` ✅, `npm run typecheck` ❌ (pre-existing blockers: TS5101 deprecation gate and missing `expo/tsconfig.base`).
 - Next sprint: Sprint 12 — Engineering Quality Gate Cleanup.
+- 2026-05-15: Final stabilization pass for execution OS docs: made `docs/CODEX_AUTOPILOT.md` sprint selection unambiguous with MASTER_SPRINT_QUEUE as source of truth and TASK/DECISION logs as audit-only.
+- 2026-05-15: Rewrote `docs/MASTER_SPRINT_QUEUE.md` with unique actionable sprint entries, kept Sprint 11 done, kept Sprint 12 as first `not started`, and aligned Sprints 12–60 to detailed requested direction.
+- 2026-05-15: Checks run (final stabilization): `npm run test` ✅, `npm run typecheck` ❌ (pre-existing TS5101 + missing `expo/tsconfig.base`).
+- Next sprint: Sprint 12 — Engineering Quality Gate Cleanup.
