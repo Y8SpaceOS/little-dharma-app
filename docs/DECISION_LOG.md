@@ -26,3 +26,6 @@
 - 2026-05-15: Elevated Child Home Today card to reflect persisted completion state (status, earned badge, and CTA swap) sourced from local story progress helpers.
   - Rationale: daily ritual products need immediate “done for today” clarity on the home surface to drive repeat usage loops.
   - Implications: progress-state helpers now serve as reusable contract for future weekly summaries, parent dashboards, and private share cards.
+- 2026-05-15: Switched Today’s Journey resolution from single hardcoded story routing to sequence-based “next incomplete” selection over structured Vrindavan story packets.
+  - Rationale: multi-day ritual behavior requires deterministic day-by-day progression and graceful completion state after finishing all available path nodes.
+  - Implications: future worlds can plug into the same helper contract for path progress, parent summaries, and world-map states without rewriting story player routing.

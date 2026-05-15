@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Link, useLocalSearchParams, useRouter } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
-import { getTodaysJourney } from '@/services/journeys';
+import { getStoryJourneyBySlug } from '@/services/journeys';
 import { trackEvent } from '@/lib/analytics';
 import { tokens } from '@/design/tokens';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
@@ -11,28 +11,36 @@ type Stage = 'story' | 'quiz' | 'complete';
 export default function StoryScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
-  const journey = getTodaysJourney();
+  const journey = slug ? getStoryJourneyBySlug(slug) : null;
   const [stage, setStage] = useState<Stage>('story');
   const [panelIndex, setPanelIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);
   const [previouslyCompleted, setPreviouslyCompleted] = useState(false);
 
-  const story = journey.story;
-
   useEffect(() => {
-    if (slug === story.slug) {
-      trackEvent('story_started', { storySlug: slug });
-      getStoryCompletion(story.slug).then((record) => setPreviouslyCompleted(Boolean(record))).catch(() => setPreviouslyCompleted(false));
+    if (journey) {
+      trackEvent('story_started', { storySlug: journey.story.slug });
+      getStoryCompletion(journey.story.slug)
+        .then((record) => setPreviouslyCompleted(Boolean(record)))
+        .catch(() => setPreviouslyCompleted(false));
     }
-  }, [slug, story.slug]);
+  }, [journey]);
 
-  const progressLabel = useMemo(() => `${panelIndex + 1}/${story.panels.length}`, [panelIndex, story.panels.length]);
-
-  if (slug !== story.slug) {
-    return <SafeAreaView style={styles.screen}><Text style={styles.title}>Story not found.</Text></SafeAreaView>;
+  if (!journey) {
+    return (
+      <SafeAreaView style={styles.screen}>
+        <View style={styles.fallbackCard}>
+          <Text style={styles.title}>Story not found</Text>
+          <Text style={styles.meta}>This journey is not available right now. Please return to Child Home.</Text>
+          <Link href='/(child)/today' style={styles.homeLink}>Back to Child Home</Link>
+        </View>
+      </SafeAreaView>
+    );
   }
 
+  const { story } = journey;
+  const progressLabel = `${panelIndex + 1}/${story.panels.length}`;
   const panel = story.panels[panelIndex];
   const atLastPanel = panelIndex === story.panels.length - 1;
 
@@ -45,14 +53,6 @@ export default function StoryScreen() {
     trackEvent('badge_earned', { badge: story.badgeName, storySlug: story.slug });
     trackEvent('story_completed', { storySlug: story.slug });
     await markStoryComplete(story.slug, story.badgeName);
-  };
-
-  const startOver = () => {
-    setPanelIndex(0);
-    setSelectedAnswer(null);
-    setIsCorrect(false);
-    setStage('story');
-    trackEvent('story_restarted', { storySlug: story.slug });
   };
 
   return (
@@ -73,17 +73,24 @@ export default function StoryScreen() {
               ))}
             </View>
             <View style={styles.controls}>
-              <Pressable disabled={panelIndex === 0} style={[styles.button, panelIndex === 0 && styles.buttonDisabled]} onPress={() => setPanelIndex((prev) => Math.max(0, prev - 1))}>
+              <Pressable
+                disabled={panelIndex === 0}
+                style={[styles.button, panelIndex === 0 && styles.buttonDisabled]}
+                onPress={() => setPanelIndex((prev) => Math.max(0, prev - 1))}
+              >
                 <Text style={styles.buttonText}>Back</Text>
               </Pressable>
-              <Pressable style={styles.button} onPress={() => {
-                if (atLastPanel) {
-                  setStage('quiz');
-                  trackEvent('journey_started', { world: journey.world.slug });
-                  return;
-                }
-                setPanelIndex((prev) => Math.min(story.panels.length - 1, prev + 1));
-              }}>
+              <Pressable
+                style={styles.button}
+                onPress={() => {
+                  if (atLastPanel) {
+                    setStage('quiz');
+                    trackEvent('journey_started', { world: journey.world.slug });
+                    return;
+                  }
+                  setPanelIndex((prev) => Math.min(story.panels.length - 1, prev + 1));
+                }}
+              >
                 <Text style={styles.buttonText}>{atLastPanel ? 'Go to Quiz' : 'Next'}</Text>
               </Pressable>
             </View>
@@ -95,7 +102,11 @@ export default function StoryScreen() {
             <Text style={styles.panelTitle}>Gentle Quiz Time</Text>
             <Text style={styles.panelText}>{story.quiz.question}</Text>
             {story.quiz.options.map((option) => (
-              <Pressable key={option} onPress={() => setSelectedAnswer(option)} style={[styles.option, selectedAnswer === option && styles.optionSelected]}>
+              <Pressable
+                key={option}
+                onPress={() => setSelectedAnswer(option)}
+                style={[styles.option, selectedAnswer === option && styles.optionSelected]}
+              >
                 <Text style={styles.optionText}>{option}</Text>
               </Pressable>
             ))}
@@ -115,9 +126,13 @@ export default function StoryScreen() {
               <Text style={styles.shareCopy}>{story.completionShareCopy}</Text>
               <Text style={styles.shareHint}>Private family sharing only. No public child profile is shown.</Text>
             </View>
-            <Text style={styles.revisit}>{previouslyCompleted ? 'You completed this journey before. Kindness grows with practice!' : 'This is your first completion of this journey. Great ritual start!'}</Text>
+            <Text style={styles.revisit}>
+              {previouslyCompleted
+                ? 'You completed this journey before. Kindness grows with practice!'
+                : 'This is your first completion of this journey. Great ritual start!'}
+            </Text>
             <View style={styles.controls}>
-              <Pressable style={styles.button} onPress={startOver}>
+              <Pressable style={styles.button} onPress={() => { setPanelIndex(0); setSelectedAnswer(null); setIsCorrect(false); setStage('story'); }}>
                 <Text style={styles.buttonText}>Read Again</Text>
               </Pressable>
               <Pressable style={styles.buttonSecondary} onPress={() => router.push('/(child)/today')}>
@@ -138,6 +153,8 @@ const styles = StyleSheet.create({
   title: { fontSize: 30, fontWeight: '800', color: '#3E2A1A' },
   meta: { fontSize: 14, color: '#7B5C43' },
   card: { marginTop: 8, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 12, borderWidth: 1, borderColor: '#F2DCC2' },
+  fallbackCard: { margin: tokens.spacing.lg, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 12, borderWidth: 1, borderColor: '#F2DCC2' },
+  homeLink: { marginTop: 8, alignSelf: 'flex-start', backgroundColor: '#E78739', color: '#FFFFFF', fontWeight: '800', fontSize: 16, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
   step: { fontSize: 12, color: '#9B7A5D', fontWeight: '700' },
   panelTitle: { fontSize: 24, fontWeight: '800', color: '#412C1A' },
   panelText: { fontSize: 21, lineHeight: 31, color: '#5C4330' },

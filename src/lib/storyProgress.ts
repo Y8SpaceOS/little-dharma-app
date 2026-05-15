@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import type { StoryJourney } from '@/data/seed/vrindavan';
 
 export type StoryCompletionEntry = {
   completedAt: string;
@@ -39,6 +40,43 @@ export async function hasCompletedStory(storySlug: string) {
 export async function getCompletedBadge(storySlug: string) {
   const completion = await getStoryCompletion(storySlug);
   return completion?.badgeName ?? null;
+}
+
+export async function getCompletedStoryCount(stories: StoryJourney[]) {
+  const completions = await readStoryCompletions();
+  return stories.filter((story) => Boolean(completions[story.story.slug])).length;
+}
+
+export async function getLatestCompletedStory(stories: StoryJourney[]) {
+  const completions = await readStoryCompletions();
+  return stories
+    .filter((story) => Boolean(completions[story.story.slug]))
+    .sort((a, b) => {
+      const timeA = new Date(completions[a.story.slug].completedAt).getTime();
+      const timeB = new Date(completions[b.story.slug].completedAt).getTime();
+      return timeB - timeA;
+    })[0] ?? null;
+}
+
+export async function getNextIncompleteStory(stories: StoryJourney[]) {
+  const completions = await readStoryCompletions();
+  return stories.find((story) => !completions[story.story.slug]) ?? null;
+}
+
+export async function getWorldProgress(worldSlug: string, stories: StoryJourney[]) {
+  const worldStories = stories.filter((story) => story.world.slug === worldSlug);
+  const completedCount = await getCompletedStoryCount(worldStories);
+  const latestCompletedStory = await getLatestCompletedStory(worldStories);
+  const nextIncompleteStory = await getNextIncompleteStory(worldStories);
+
+  return {
+    worldSlug,
+    totalStories: worldStories.length,
+    completedStories: completedCount,
+    latestCompletedStory,
+    nextIncompleteStory,
+    isCompleted: completedCount === worldStories.length && worldStories.length > 0
+  };
 }
 
 export async function markStoryComplete(storySlug: string, badgeName: string) {

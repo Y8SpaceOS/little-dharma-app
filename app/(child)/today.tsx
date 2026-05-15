@@ -6,7 +6,7 @@ import { tokens } from '@/design/tokens';
 import { trackEvent } from '@/lib/analytics';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 import { getCompletedBadge, hasCompletedStory } from '@/lib/storyProgress';
-import { getTodaysJourney } from '@/services/journeys';
+import { getTodaysJourney, getVrindavanJourneyPath } from '@/services/journeys';
 
 const actions = [
   { label: 'Explore Worlds', href: '/(child)/worlds', colors: ['#D9EDFF', '#C6E4FF'] },
@@ -17,20 +17,37 @@ const actions = [
 
 export default function TodayScreen() {
   const [nickname, setNickname] = useState(getOnboardingState().profile?.nickname || 'Little One');
-  const [journeyComplete, setJourneyComplete] = useState(false);
+  const [status, setStatus] = useState<'ready' | 'completed' | 'path-completed'>('ready');
   const [earnedBadge, setEarnedBadge] = useState<string | null>(null);
-  const todayStory = getTodaysJourney().story;
+  const [storySlug, setStorySlug] = useState<string | null>(null);
+  const [storyTitle, setStoryTitle] = useState('Krishna Shares Butter With Friends');
+  const [storyValue, setStoryValue] = useState('Kindness');
 
   const refreshJourneyCard = useCallback(async () => {
-    const completed = await hasCompletedStory(todayStory.slug);
-    setJourneyComplete(completed);
-    setEarnedBadge(completed ? await getCompletedBadge(todayStory.slug) : null);
-  }, [todayStory.slug]);
+    const nextStory = await getTodaysJourney();
+
+    if (!nextStory) {
+      const firstStory = getVrindavanJourneyPath()[0];
+      setStorySlug(firstStory.story.slug);
+      setStoryTitle('Vrindavan path completed for now');
+      setStoryValue('All values in this path');
+      setEarnedBadge(null);
+      setStatus('path-completed');
+      return;
+    }
+
+    setStorySlug(nextStory.story.slug);
+    setStoryTitle(nextStory.story.title);
+    setStoryValue(nextStory.story.value);
+    const completed = await hasCompletedStory(nextStory.story.slug);
+    setStatus(completed ? 'completed' : 'ready');
+    setEarnedBadge(completed ? await getCompletedBadge(nextStory.story.slug) : null);
+  }, []);
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || 'Little One')), []);
   useEffect(() => {
     refreshJourneyCard().catch(() => {
-      setJourneyComplete(false);
+      setStatus('ready');
       setEarnedBadge(null);
     });
   }, [refreshJourneyCard]);
@@ -38,7 +55,7 @@ export default function TodayScreen() {
   useFocusEffect(
     useCallback(() => {
       refreshJourneyCard().catch(() => {
-        setJourneyComplete(false);
+        setStatus('ready');
         setEarnedBadge(null);
       });
     }, [refreshJourneyCard])
@@ -46,19 +63,21 @@ export default function TodayScreen() {
 
   trackEvent('app_opened');
 
+  const ctaLabel = status === 'path-completed' ? 'Read Again' : status === 'completed' ? 'Continue Vrindavan Path' : "Start Today's Journey";
+  const ctaHref = status === 'path-completed' ? `/story/${storySlug}` : `/story/${storySlug}`;
+
   return (
     <SafeAreaView style={styles.screen}>
       <Text style={styles.greeting}>Namaste, {nickname} ✨</Text>
       <Text style={styles.subtitle}>Choose your calm adventure for today.</Text>
 
-      <View style={[styles.card, journeyComplete ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
+      <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
         <Text style={styles.journeyEyebrow}>Today&apos;s Journey</Text>
-        <Text style={styles.journeyTitle}>{todayStory.title}</Text>
-        <Text style={styles.journeyStatus}>{journeyComplete ? 'Completed for today ✅' : 'Ready to begin 🌼'}</Text>
-        {journeyComplete && earnedBadge && <Text style={styles.badgeLine}>Earned badge: {earnedBadge}</Text>}
-        <Link href='/story/krishna-shares-butter' style={styles.journeyCta}>
-          {journeyComplete ? 'Read Again' : 'Start Today\'s Journey'}
-        </Link>
+        <Text style={styles.journeyTitle}>{storyTitle}</Text>
+        <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
+        <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Path completed' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
+        {earnedBadge && <Text style={styles.badgeLine}>Earned badge: {earnedBadge}</Text>}
+        {storySlug && <Link href={ctaHref as never} style={styles.journeyCta}>{ctaLabel}</Link>}
       </View>
 
       <View style={styles.grid}>
@@ -77,6 +96,7 @@ const styles = StyleSheet.create({
   screen: { flex: 1, padding: tokens.spacing.lg, backgroundColor: tokens.colors.cloud, gap: 10 },
   greeting: { fontSize: 30, fontWeight: '800', color: tokens.colors.textPrimary },
   subtitle: { fontSize: 17, color: '#5C4A3B', marginBottom: tokens.spacing.sm },
+  metaLine: { fontSize: 14, color: '#6A513D', marginTop: 4 },
   grid: { gap: tokens.spacing.sm },
   card: { fontSize: 20, fontWeight: '700', borderRadius: 24, padding: tokens.spacing.lg, minHeight: 96, overflow: 'hidden', color: '#3F2B1D' },
   journeyPendingCard: { backgroundColor: '#FFE3B8', borderWidth: 1, borderColor: '#F2CC90' },
