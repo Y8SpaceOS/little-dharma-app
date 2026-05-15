@@ -1,34 +1,55 @@
 ## Summary
 - What changed in this PR?
 
-## Product impact
-- What parent/child outcome improved?
+## Sprint metadata
+- Target quality level:
+- Sprint type:
+- Primary quality dimension:
+- Protected quality dimensions:
 
-## Category-defining product check
-- Child delight:
-- Parent trust:
-- Daily 10-minute usage potential:
-- Shareable moment potential:
-- Content universe depth:
-- Premium UX taste:
-- Safety compliance:
-- Monetisation readiness:
+## Before vs after
+- Before:
+- After:
 
-## Safety/privacy check
-- Any privacy, safety, or trust risks introduced?
+## Quality scorecard (1–5)
+| Dimension | Before | After | Notes |
+|---|---:|---:|---|
+| Child delight |  |  |  |
+| Parent trust |  |  |  |
+| Daily 10-minute ritual habit |  |  |  |
+| Content depth and authenticity |  |  |  |
+| Premium UI/UX taste |  |  |  |
+| Parent-safe shareability |  |  |  |
+| Safety/privacy |  |  |  |
+| Monetisation readiness |  |  |  |
 
-## Tests run
+## Sprint depth checklist
+1. What user outcome improved?
+2. What is the primary quality dimension?
+3. What are the protected quality dimensions?
+4. What surfaces were touched?
+5. What adjacent surfaces were checked?
+6. What edge cases were considered?
+7. What was intentionally deferred?
+8. What would make this sprint feel shallow?
+9. Why is the implementation deep enough for the current quality level?
+10. What manual QA proves this?
+
+## Quality gates
+- Quality gates passed:
+- Quality gates deferred:
+- Phase gate impact:
+
+## Risk review
+- Launch risk:
+- Parent trust risk:
+- Content accuracy risk:
+
+## Regression checklist
 - [ ] `npm run test`
 - [ ] `npm run typecheck` (if environment allows)
-- Additional checks:
+- [ ] Manual iPhone QA completed (or explicitly deferred with reason)
+- [ ] Protected quality dimensions did not regress
 
-## Manual QA steps
-- iPhone device(s):
-- Flows tested:
-- Results:
-
-## Known blockers
-- Environment, tooling, or dependency blockers:
-
-## Next sprint recommendation
-- Next sprint number/title from `docs/MASTER_SPRINT_QUEUE.md`:
+## Merge recommendation
+- Recommend merge / do not merge + rationale.
