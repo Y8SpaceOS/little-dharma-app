@@ -111,14 +111,29 @@ export default function StoryScreen() {
 
         {stage === 'ritual' && (
           <View style={styles.card}>
-            <Text style={styles.panelTitle}>Little Ritual Moment</Text>
-            <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle}</Text>
-            <Text style={styles.ritualText}>{story.ritual.microShlokaText}</Text>
-            <Text style={styles.ritualTransliteration}>{story.ritual.transliteration}</Text>
-            <Text style={styles.ritualMeaning}>Meaning: {story.ritual.childMeaning}</Text>
-            <Text style={styles.ritualPromptText}>Try this now: {story.ritual.ritualPrompt}</Text>
-            <Text style={styles.ritualPromptText}>Reflect: {story.ritual.reflectionQuestion}</Text>
-            <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round(story.ritual.suggestedPracticeDurationSeconds / 60))} minute{story.ritual.suggestedPracticeDurationSeconds >= 120 ? 's' : ''}.</Text>
+            <Text style={styles.ritualStageEyebrow}>Ritual Moment</Text>
+            <Text style={styles.panelTitle}>A calm heart pause</Text>
+            <Text style={styles.ritualFraming}>Breathe softly together. This is your family&apos;s tiny sacred minute.</Text>
+            <View style={styles.ritualCard}>
+              <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle}</Text>
+              <View style={styles.ritualScriptCard}>
+                <Text style={styles.ritualText}>{story.ritual.microShlokaText}</Text>
+                <Text style={styles.ritualTransliteration}>{story.ritual.transliteration}</Text>
+              </View>
+              <View style={styles.ritualDetailBlock}>
+                <Text style={styles.ritualDetailLabel}>Meaning</Text>
+                <Text style={styles.ritualMeaning}>{story.ritual.childMeaning}</Text>
+              </View>
+              <View style={styles.ritualDetailBlock}>
+                <Text style={styles.ritualDetailLabel}>Practice together</Text>
+                <Text style={styles.ritualPromptText}>{story.ritual.ritualPrompt}</Text>
+              </View>
+              <View style={styles.ritualDetailBlock}>
+                <Text style={styles.ritualDetailLabel}>Gentle reflection</Text>
+                <Text style={styles.ritualPromptText}>{story.ritual.reflectionQuestion}</Text>
+              </View>
+              <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round(story.ritual.suggestedPracticeDurationSeconds / 60))} minute{story.ritual.suggestedPracticeDurationSeconds >= 120 ? 's' : ''}.</Text>
+            </View>
             <Pressable style={styles.button} onPress={() => setStage('quiz')}>
               <Text style={styles.buttonText}>Continue to Quiz</Text>
             </Pressable>
@@ -215,10 +230,16 @@ const styles = StyleSheet.create({
   shareHint: { fontSize: 13, color: '#6B5A88' },
   revisit: { fontSize: 13, color: '#7A644C' },
   ritualLabel: { fontSize: 14, fontWeight: '700', color: '#7B5C43', textTransform: 'uppercase', letterSpacing: 0.6 },
-  ritualText: { fontSize: 28, fontWeight: '800', color: '#3E2A1A' },
-  ritualTransliteration: { fontSize: 18, color: '#5C4330', fontStyle: 'italic' },
-  ritualMeaning: { fontSize: 18, lineHeight: 27, color: '#5C4330' },
+  ritualStageEyebrow: { fontSize: 12, color: '#8B6A4C', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },
+  ritualFraming: { fontSize: 15, color: '#6E523B', lineHeight: 22, marginTop: -4 },
+  ritualCard: { backgroundColor: '#FFFBF5', borderRadius: 18, borderWidth: 1, borderColor: '#F1DEC8', padding: 14, gap: 12 },
+  ritualScriptCard: { backgroundColor: '#FFF4E7', borderRadius: 16, borderWidth: 1, borderColor: '#EFCDAA', paddingHorizontal: 14, paddingVertical: 16, gap: 10 },
+  ritualText: { fontSize: 30, fontWeight: '800', color: '#3E2A1A', textAlign: 'center', lineHeight: 38 },
+  ritualTransliteration: { fontSize: 17, color: '#6A4A30', fontStyle: 'italic', textAlign: 'center', lineHeight: 25 },
+  ritualDetailBlock: { gap: 4 },
+  ritualDetailLabel: { fontSize: 12, color: '#8B6A4C', fontWeight: '800', letterSpacing: 0.5, textTransform: 'uppercase' },
+  ritualMeaning: { fontSize: 17, lineHeight: 26, color: '#5C4330' },
   ritualPromptText: { fontSize: 16, lineHeight: 24, color: '#5C4330' },
-  ritualDuration: { fontSize: 13, color: '#7A644C', fontWeight: '600' },
+  ritualDuration: { fontSize: 13, color: '#7A644C', fontWeight: '700', marginTop: 2 },
   ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' }
 });
