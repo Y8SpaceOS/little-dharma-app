@@ -29,3 +29,9 @@
 - 2026-05-15: Switched Today’s Journey resolution from single hardcoded story routing to sequence-based “next incomplete” selection over structured Vrindavan story packets.
   - Rationale: multi-day ritual behavior requires deterministic day-by-day progression and graceful completion state after finishing all available path nodes.
   - Implications: future worlds can plug into the same helper contract for path progress, parent summaries, and world-map states without rewriting story player routing.
+- 2026-05-15: Introduced a structured `ritual` block inside each `StoryJourney.story` contract and made the ritual step mandatory in the story flow before quiz completion.
+  - Rationale: Shift product posture from “story consumption” to “daily cultural-spiritual ritual” without adding heavy audio/backend scope.
+  - Implications: Future packets must include micro-shloka/phrase seed, transliteration, child meaning, parent bridge, and reflection timing metadata.
+- 2026-05-15: Adopted explicit attribution-safe language policy for uncertain lines (e.g., “Little Dharma chant seed” / “simple Sanskrit phrase”) instead of direct scripture claims.
+  - Rationale: Parent trust and authenticity require avoiding overclaiming scriptural provenance.
+  - Implications: Content pipeline must continue provenance checks; uncertain entries remain clearly labeled and reviewable.

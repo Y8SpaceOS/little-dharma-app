@@ -56,3 +56,19 @@ Internal provenance references for stories/shlokas/festival details to support a
 6. Limited internal pilot.
 7. Publish with version tag and traceable source notes.
 8. Post-release feedback loop and revision policy.
+
+## Story Ritual Metadata Contract (Ritual Layer v1)
+Each structured story packet now carries a ritual sub-object to power a 10-minute daily loop:
+- `microShlokaTitle`
+- `microShlokaText`
+- `transliteration`
+- `childMeaning`
+- `parentMeaning`
+- `ritualPrompt`
+- `reflectionQuestion`
+- `suggestedPracticeDurationSeconds`
+
+This contract is intentionally lightweight: it supports calm, repeatable family ritual moments without requiring audio, push notifications, or social surfaces.
+
+## Attribution Integrity Rule
+When scriptural provenance is uncertain, content must be labeled as a “Little Dharma chant seed” or “simple Sanskrit phrase.” Do not present uncertain lines as direct scripture quotes.
