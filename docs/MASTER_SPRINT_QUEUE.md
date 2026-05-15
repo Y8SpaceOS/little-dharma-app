@@ -177,11 +177,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 22 — Seven-Day Vrindavan Path
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Content Engine
+- **Primary quality dimension:** Content depth and authenticity
+- **Protected quality dimensions:** Child delight, Daily 10-minute ritual habit, Parent trust, Safety/privacy, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added two new Little Dharma Vrindavan story packets (cooperation, forgiveness) to complete a seven-story starter week with full Story → Ritual → Quiz → Completion schema coverage and existing local progress integrations across Today, Explore Worlds, My Treasures, and Parent Dashboard.
 - **Primary track:** Content Engine
 - **Objective:** Turn current multi-story path into a true seven-day ritual sequence.
 - **Scope:** Define seven-day ordering, pacing metadata, and completion logic for daily continuity.

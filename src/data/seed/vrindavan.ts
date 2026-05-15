@@ -207,10 +207,96 @@ export const vrindavanFifthStoryPacket: StoryJourney = {
   }
 };
 
+
+
+export const vrindavanSixthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'cooperation', name: 'Cooperation' },
+  story: {
+    slug: 'krishna-builds-a-rain-shelter',
+    title: 'Krishna Builds a Rain Shelter With Friends',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Cooperation',
+    ageBand: '4-6',
+    panels: [
+      { id: 'o1', title: 'Rain Over Vrindavan', text: 'In this Little Dharma story, sudden rain begins while Krishna and his friends are returning home from the meadow.' },
+      { id: 'o2', title: 'A Muddy Path', text: 'They see younger children near a puddle, unsure how to cross without slipping.' },
+      { id: 'o3', title: 'Many Hands, One Plan', text: 'Krishna says, “Let us work together.” One child gathers broad leaves, another brings small sticks, and another clears stones.' },
+      { id: 'o4', title: 'Careful Teamwork', text: 'Krishna helps everyone place the leaves and sticks to make a dry stepping path and a tiny shelter by a tree.' },
+      { id: 'o5', title: 'Everyone Crosses Safely', text: 'The younger children walk across smiling, and everyone claps for the team effort.' },
+      { id: 'o6', title: 'Cooperation Feels Strong', text: 'Krishna reminds them that when we combine kind effort, hard moments become lighter for all.' }
+    ],
+    quiz: {
+      question: 'What showed cooperation in the rain?',
+      options: ['Everyone took a small role and built the path together', 'Only one person worked while others watched', 'They argued and left the younger children behind'],
+      correctAnswer: 'Everyone took a small role and built the path together',
+      gentleFeedback: 'Lovely try. Cooperation means each person offers one helpful part so everyone can succeed.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma practice phrase for cooperation',
+      microShlokaText: 'संगच्छध्वं संवदध्वं',
+      transliteration: 'Sangacchadhvam samvadadhvam',
+      childMeaning: 'Let us move and speak together. Teamwork helps everyone feel strong and supported.',
+      parentMeaning: 'Present this as a Little Dharma teamwork chant seed: assign simple shared roles so cooperation is practiced, not only praised.',
+      ritualPrompt: 'Stand in a small circle, hold hands for one breath, and say the phrase once before doing one tiny family cleanup task together.',
+      reflectionQuestion: 'What small role can each of us take tomorrow to help as one team?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Monsoon Team Lantern',
+    parentReflectionPrompt: 'Ask your child: What role did you play today that helped the whole family?',
+    completionShareCopy: 'Today we completed a Little Dharma cooperation journey and practiced helping as one team.'
+  }
+};
+
+export const vrindavanSeventhStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'forgiveness', name: 'Forgiveness' },
+  story: {
+    slug: 'krishna-and-the-torn-garland',
+    title: 'Krishna and the Torn Garland',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Forgiveness',
+    ageBand: '4-6',
+    panels: [
+      { id: 'f1', title: 'Festival Flowers', text: 'In this Little Dharma story, Krishna and friends string marigold flowers for an evening celebration in Vrindavan.' },
+      { id: 'f2', title: 'A Garland Tears', text: 'A younger friend trips, and one finished garland tears apart on the ground.' },
+      { id: 'f3', title: 'Big Feelings First', text: 'The friend looks upset and whispers, “I spoiled it.” Krishna notices everyone feels disappointed.' },
+      { id: 'f4', title: 'A Gentle Repair Choice', text: 'Krishna says, “We can forgive and begin again.” He offers fresh thread and invites the friend to help restring flowers.' },
+      { id: 'f5', title: 'Hands Working, Hearts Softening', text: 'Together they rebuild the garland, this time laughing and encouraging one another.' },
+      { id: 'f6', title: 'Forgiveness Restores Joy', text: 'Krishna reminds them that forgiveness does not ignore mistakes—it helps hearts heal so we can repair with love.' }
+    ],
+    quiz: {
+      question: 'How did Krishna practice forgiveness?',
+      options: ['He chose gentle repair and invited the friend to try again', 'He blamed the friend and ended the activity', 'He pretended nothing happened and walked away'],
+      correctAnswer: 'He chose gentle repair and invited the friend to try again',
+      gentleFeedback: 'Beautiful effort. Forgiveness helps us soften, repair, and stay connected after mistakes.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma chant seed for forgiveness',
+      microShlokaText: 'क्षम्यतां मम',
+      transliteration: 'Kshamyataam mama',
+      childMeaning: 'Please forgive me. We can say sorry, forgive, and begin again with kindness.',
+      parentMeaning: 'Frame this as a Little Dharma repair phrase: pair apology, forgiveness, and one concrete repair action to build relational safety.',
+      ritualPrompt: 'At bedtime, place a hand on the heart and say the phrase once, then each person names one “try again” moment from the day.',
+      reflectionQuestion: 'When a mistake happens tomorrow, what words can help us repair quickly and kindly?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Marigold Mercy Circle',
+    parentReflectionPrompt: 'Ask your child: How did forgiveness help our hearts feel lighter today?',
+    completionShareCopy: 'Today we completed a Little Dharma forgiveness journey and practiced gentle repair after mistakes.'
+  }
+};
+
 export const vrindavanStoryPackets: StoryJourney[] = [
   vrindavanJourney,
   vrindavanSecondStoryPacket,
   vrindavanThirdStoryPacket,
   vrindavanFourthStoryPacket,
-  vrindavanFifthStoryPacket
+  vrindavanFifthStoryPacket,
+  vrindavanSixthStoryPacket,
+  vrindavanSeventhStoryPacket
 ];
