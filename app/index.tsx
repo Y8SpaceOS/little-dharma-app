@@ -1,11 +1,33 @@
+import { useEffect, useState } from 'react';
 import { Link, Redirect } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
-import { getOnboardingState } from '@/lib/onboardingState';
+import { getOnboardingState, loadOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 
 export default function Home() {
-  const { onboardingComplete } = getOnboardingState();
+  const [isLoading, setIsLoading] = useState(true);
+  const [onboardingComplete, setOnboardingComplete] = useState(getOnboardingState().onboardingComplete);
+
+  useEffect(() => {
+    const unsubscribe = subscribeOnboardingState(() => {
+      setOnboardingComplete(getOnboardingState().onboardingComplete);
+    });
+
+    loadOnboardingState().finally(() => setIsLoading(false));
+    return unsubscribe;
+  }, []);
+
+  if (isLoading) {
+    return (
+      <LinearGradient colors={[tokens.colors.cloud, '#FFE7CC']} style={styles.gradient}>
+        <SafeAreaView style={styles.loadingContainer}>
+          <ActivityIndicator size='large' color={tokens.colors.peacock} />
+          <Text style={styles.loadingText}>Warming up your family space...</Text>
+        </SafeAreaView>
+      </LinearGradient>
+    );
+  }
 
   if (onboardingComplete) {
     return <Redirect href='/(child)/today' />;
@@ -30,6 +52,8 @@ export default function Home() {
 const styles = StyleSheet.create({
   gradient: { flex: 1 },
   container: { flex: 1, justifyContent: 'center', padding: tokens.spacing.lg },
+  loadingContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', gap: 14 },
+  loadingText: { fontSize: 17, color: tokens.colors.midnight, fontWeight: '600' },
   heroCard: {
     backgroundColor: '#FFF9F3',
     borderRadius: 32,
