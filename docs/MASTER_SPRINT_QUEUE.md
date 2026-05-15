@@ -129,11 +129,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 19 — Vrindavan Path v2 Visual Upgrade
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Premium UI/UX taste
+- **Protected quality dimensions:** Child delight, Daily 10-minute ritual habit, Parent trust, Safety/privacy, Content depth and authenticity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Rebuilt Explore Worlds into a child-friendly journey map with magical path framing, clear story-step cards, and completed/ready/coming-next states powered by existing local story completion data while preserving private-only progress and existing story navigation routes.
 - **Primary track:** Product Experience
 - **Objective:** Upgrade journey-path visual clarity so daily next-step progression is immediately understandable.
 - **Scope:** Enhance path-node visuals, completed/incomplete affordances, and contextual guidance copy.
