@@ -193,18 +193,19 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 23 — Continue Journey Logic
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Protected quality dimensions:** Child delight, Parent trust, Premium UI/UX taste, Safety/privacy, Content depth and authenticity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded Child Home Today's Journey completed-path state into a warm Week 1 celebration with clear continuation actions (revisit stories, treasures, parent dashboard, daily reflection) while preserving local progress, reread flow, Explore Worlds completed behavior, and no auto-reset/public social surfaces.
 - **Primary track:** Product Experience
-- **Objective:** Ensure children can resume incomplete journeys safely and effortlessly.
-- **Scope:** Implement robust continue-state logic, resume checkpoints, and fallback behaviors for interrupted sessions.
-- **Non-scope:** Cloud sync, auth, or multi-device continuity.
-- **Definition of done:** Interrupted sessions resume accurately with no progress loss in local persistence scenarios.
-- **Manual iPhone QA steps:** Force-close app mid-story on iPhone, relaunch, and confirm continue behavior restores expected step.
-- **Category-defining product check focus:** Trust through reliability + reduced frustration for families.
+- **Objective:** Improve end-of-path continuity after all seven Vrindavan stories are complete so children feel celebrated and guided, not stuck.
+- **Scope:** Add completion-state celebration copy and continuation CTAs on Today’s Journey while preserving existing progression and adjacent summaries.
+- **Non-scope:** New stories/worlds, backend/auth/payments/audio/sharing, automatic progress reset, or social/public child surfaces.
+- **Definition of done:** After seven completions, Child Home shows premium celebratory continuation UX with safe next actions and no dead-end feeling.
+- **Manual iPhone QA steps:** Complete/simulate all seven stories, open Child Home, verify celebration state and links (Explore Worlds/My Treasures/Parent Dashboard/reflection), verify reread path, and confirm no auto-reset or social/public surfaces.
+- **Category-defining product check focus:** Child delight + ritual continuity + parent-safe continuation after completion.
 
 ### Sprint 24 — Local Weekly Progress
 - **Target quality level:** Q2 Soul Prototype
