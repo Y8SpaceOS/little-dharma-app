@@ -30,3 +30,6 @@
 - 2026-05-15: Checks run: `npm run typecheck` ❌ (pre-existing `tsconfig` blockers: TS5101 deprecation gate and missing `expo/tsconfig.base`), `npm run test` ✅, `npm run dev` ⚠️ blocked (`expo: not found` in environment).
 - 2026-05-15: Category-Defining Product Check (Magical Story Player v1): child delight ✅, parent trust ✅, daily 10-minute usage ✅, shareable moment potential ✅, content universe depth ✅, premium UX taste ✅, safety compliance ✅, monetisation path ✅.
 - Next sprint: add a true Today’s Journey completion state on child home (completed badge + re-enter CTA) and begin second story packet to validate daily ritual continuity across days.
+- 2026-05-15: Story player stabilization pass only (no new scope): added non-dead-end completion CTAs (“Read Again” reset + “Done for Today” route to `/(child)/today`) and wrapped story/quiz/completion in ScrollView for smaller iPhone safety.
+- 2026-05-15: Maintained parent-safe share card as placeholder only; no native sharing, no public child profile, no leaderboard, no open sharing surfaces added.
+- 2026-05-15: Checks run (stabilization): `npm run test` ✅, `npm run typecheck` ❌ (pre-existing `tsconfig` blockers: TS5101 deprecation gate and missing `expo/tsconfig.base`).
