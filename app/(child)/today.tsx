@@ -29,8 +29,8 @@ export default function TodayScreen() {
     if (!nextStory) {
       const firstStory = getVrindavanJourneyPath()[0];
       setStorySlug(firstStory.story.slug);
-      setStoryTitle('Vrindavan path completed for now');
-      setStoryValue('All values in this path');
+      setStoryTitle('Week 1 complete! You finished Vrindavan 🌟');
+      setStoryValue('All seven values practiced with love');
       setEarnedBadge(null);
       setStatus('path-completed');
       return;
@@ -63,8 +63,7 @@ export default function TodayScreen() {
 
   trackEvent('app_opened');
 
-  const ctaLabel = status === 'path-completed' ? 'Read Again' : status === 'completed' ? 'Continue Vrindavan Path' : "Start Today's Journey";
-  const ctaHref = status === 'path-completed' ? `/story/${storySlug}` : `/story/${storySlug}`;
+  const ctaLabel = status === 'path-completed' ? 'Revisit Vrindavan Stories' : status === 'completed' ? 'Continue Vrindavan Path' : "Start Today's Journey";
 
   return (
     <SafeAreaView style={styles.screen}>
@@ -75,10 +74,23 @@ export default function TodayScreen() {
         <Text style={styles.journeyEyebrow}>Today&apos;s Journey</Text>
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
-        <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Path completed' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
-        <Text style={styles.ritualTag}>{status === 'path-completed' ? "Today’s ritual: 10 minutes" : 'Story + value + shloka'}</Text>
+        <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Vrindavan path complete' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
+        <Text style={styles.ritualTag}>{status === 'path-completed' ? 'Keep your 10-minute ritual glowing each day' : 'Story + value + shloka'}</Text>
+        {status === 'path-completed' && (
+          <Text style={styles.completionCopy}>
+            You completed all 7 stories! Choose your next cozy step below.
+          </Text>
+        )}
         {earnedBadge && <Text style={styles.badgeLine}>Earned badge: {earnedBadge}</Text>}
-        {storySlug && <Link href={ctaHref as never} style={styles.journeyCta}>{ctaLabel}</Link>}
+        {status !== 'path-completed' && storySlug && <Link href={`/story/${storySlug}` as never} style={styles.journeyCta}>{ctaLabel}</Link>}
+        {status === 'path-completed' && (
+          <View style={styles.completeActionsWrap}>
+            <Link href='/(child)/worlds' style={styles.journeyCta}>{ctaLabel}</Link>
+            <Link href='/(child)/treasures' style={styles.secondaryCta}>View My Treasures</Link>
+            <Link href='/(parent)/dashboard' style={styles.secondaryCta}>Open Parent Dashboard</Link>
+            <Link href='/(child)/chant' style={styles.secondaryCta}>Continue today’s reflection</Link>
+          </View>
+        )}
       </View>
 
       <View style={styles.grid}>
@@ -106,7 +118,10 @@ const styles = StyleSheet.create({
   journeyTitle: { fontSize: 22, fontWeight: '800', color: '#3F2B1D', marginTop: 2 },
   journeyStatus: { fontSize: 16, fontWeight: '700', color: '#5C4A3B', marginTop: 6 },
   ritualTag: { fontSize: 13, color: '#7A4C25', marginTop: 2, fontWeight: '700' },
+  completionCopy: { marginTop: 8, fontSize: 14, lineHeight: 20, color: '#2F5D3E', fontWeight: '600' },
   badgeLine: { fontSize: 15, color: '#375E42', marginTop: 4, fontWeight: '700' },
   journeyCta: { marginTop: 10, alignSelf: 'flex-start', backgroundColor: '#E78739', color: '#FFFFFF', fontWeight: '800', fontSize: 16, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
+  completeActionsWrap: { marginTop: 2, gap: 8 },
+  secondaryCta: { alignSelf: 'flex-start', backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: '#9BCDAA', color: '#2F5D3E', fontWeight: '700', fontSize: 15, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 9, overflow: 'hidden' },
   parentPortal: { marginTop: 'auto', textAlign: 'center', color: tokens.colors.peacock, fontWeight: '700', fontSize: 16 }
 });
