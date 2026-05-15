@@ -11,3 +11,6 @@
 - 2026-05-15: Added lightweight local onboarding state in app memory; intentionally no backend auth/payments/content bulk additions in this sprint.
 - 2026-05-15: Checks run: `npm run typecheck` ❌ (existing environment/tooling issue: missing `expo/tsconfig.base` and TS deprecation gate), `npm run test` ✅, `npm run dev` ⚠️ blocked (`expo: not found` in environment).
 - Next sprint: restore Expo CLI + dependency/toolchain availability, then rerun full typecheck and Expo boot verification with durable onboarding persistence.
+- 2026-05-15: PR stabilization pass: added missing `expo-linear-gradient` dependency (`~15.0.7`) for Expo SDK 54 compatibility used by welcome screen.
+- 2026-05-15: Attempted `npm install expo-linear-gradient@~15.0.7` but blocked with `403 Forbidden` from registry in Codex Cloud; `package-lock.json` could not be refreshed in this environment.
+- 2026-05-15: Re-ran checks for this PR update: `npm run typecheck` ❌ (existing environment/tooling blocker: missing `expo/tsconfig.base` and TS deprecation gate), `npm run test` ✅.
