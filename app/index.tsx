@@ -1,15 +1,58 @@
-import { Link } from 'expo-router';
-import { SafeAreaView, Text, View } from 'react-native';
+import { Link, Redirect } from 'expo-router';
+import { LinearGradient } from 'expo-linear-gradient';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { tokens } from '@/design/tokens';
+import { getOnboardingState } from '@/lib/onboardingState';
 
 export default function Home() {
+  const { onboardingComplete } = getOnboardingState();
+
+  if (onboardingComplete) {
+    return <Redirect href='/(child)/today' />;
+  }
+
   return (
-    <SafeAreaView style={{ flex: 1, justifyContent: 'center', padding: 24, gap: 12 }}>
-      <Text style={{ fontSize: 28, fontWeight: '700' }}>Little Dharma</Text>
-      <View style={{ gap: 8 }}>
-        <Link href='/(child)/today'>Child Mode</Link>
-        <Link href='/(parent)/dashboard'>Parent Mode</Link>
-        <Link href='/auth/sign-in'>Sign In</Link>
-      </View>
-    </SafeAreaView>
+    <LinearGradient colors={[tokens.colors.cloud, '#FFE7CC']} style={styles.gradient}>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.heroCard}>
+          <Text style={styles.badge}>Little Dharma</Text>
+          <Text style={styles.title}>A calm, joyful journey for growing hearts.</Text>
+          <Text style={styles.subtitle}>Parent-led onboarding. Child-first magical learning experience.</Text>
+          <Link href='/onboarding' style={styles.primaryCta}>
+            Begin as Parent
+          </Link>
+        </View>
+      </SafeAreaView>
+    </LinearGradient>
   );
 }
+
+const styles = StyleSheet.create({
+  gradient: { flex: 1 },
+  container: { flex: 1, justifyContent: 'center', padding: tokens.spacing.lg },
+  heroCard: {
+    backgroundColor: '#FFF9F3',
+    borderRadius: 32,
+    padding: tokens.spacing.xl,
+    gap: tokens.spacing.md,
+    shadowColor: '#D28C4A',
+    shadowOpacity: 0.15,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 4
+  },
+  badge: { fontSize: 14, fontWeight: '700', color: tokens.colors.peacock },
+  title: { fontSize: 34, lineHeight: 40, fontWeight: '800', color: tokens.colors.textPrimary },
+  subtitle: { fontSize: 17, lineHeight: 24, color: '#5D4A3A' },
+  primaryCta: {
+    marginTop: tokens.spacing.sm,
+    backgroundColor: tokens.colors.saffron,
+    color: '#fff',
+    fontWeight: '700',
+    textAlign: 'center',
+    borderRadius: tokens.radius.button,
+    paddingVertical: 18,
+    fontSize: 18,
+    overflow: 'hidden'
+  }
+});
