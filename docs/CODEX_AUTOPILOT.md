@@ -73,3 +73,6 @@ If blocked (credentials, registry, infra, permissions):
 3. avoid claiming success for blocked checks,
 4. add a clear human action list to unblock,
 5. continue all non-blocked work in-scope.
+
+## Generic Prompt Shortcut
+Future generic prompts may simply say: **"Run the next sprint from `docs/MASTER_SPRINT_QUEUE.md`."**
