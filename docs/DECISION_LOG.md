@@ -44,3 +44,6 @@
 - 2026-05-15: Removed `extends: "expo/tsconfig.base"` from root TypeScript configuration and standardized a lockfile-first quality-gate execution order (`npm ci` → `typecheck` → `lint` → `test`).
   - Rationale: Sprint 12 required eliminating recurring typecheck/toolchain blockers and making baseline checks deterministic even when Expo package resolution is unavailable.
   - Implications: Expo runtime behavior still requires normal dependency installation + iPhone QA, but static quality gates are now auditable and less environment-fragile for future Codex PRs.
+- 2026-05-15: Standardized Sprint 12 TypeScript compatibility policy around Expo SDK 54-aligned dev type tooling (`typescript ~5.9.2`, `@types/react ~19.1.10`) while preserving Expo-managed tsconfig extension.
+  - Rationale: Remaining typecheck failures were static type/tooling misalignment issues rather than runtime behavior defects.
+  - Implications: lockfile must be updated and committed from successful local install, then validated with full quality gate order before merge.
