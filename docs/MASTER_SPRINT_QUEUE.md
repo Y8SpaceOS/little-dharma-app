@@ -113,11 +113,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 18 — My Treasures and Badge Wallet v1
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Child delight
+- **Protected quality dimensions:** Daily 10-minute ritual habit, Premium UI/UX taste, Parent trust, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Replaced placeholder Treasures route with a warm private badge wallet using local story completion data, journey progress summary, and empty/earned states without adding public or social mechanics.
 - **Primary track:** Product Experience
 - **Objective:** Create a clearer child reward memory surface that reinforces progress and value learning.
 - **Scope:** Define and implement v1 badge wallet information architecture and retrieval states for earned treasures.

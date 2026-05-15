@@ -1,4 +1,7 @@
 # Decision Log
+- 2026-05-15: Kept My Treasures as a strictly local, private badge wallet with non-competitive framing (no public profile, no leaderboard, no chat, no sharing surfaces) while using existing story completion persistence as the single source of truth.
+  - Rationale: Sprint 18 targets child delight and ritual reinforcement without any trust/safety regressions.
+  - Implications: Future badge/progress upgrades must preserve private-by-default model unless parent-controlled trust-reviewed sharing is explicitly scoped in later growth sprints.
 - 2026-05-15: Kept sprint scope strictly to foundation stabilization; deferred new feature scope until baseline checks and schema quality improved.
 - 2026-05-15: Adopted temporary TypeScript module shims and simplified lint gate to keep CI-style quality checks executable in restricted dependency environments.
 - 2026-05-15: Set RLS to enabled broadly with deny-all placeholders on sensitive profile tables until auth-bound policies are finalized.
