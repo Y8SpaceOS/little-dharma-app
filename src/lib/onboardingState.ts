@@ -42,7 +42,9 @@ export function getOnboardingState() {
 
 export function subscribeOnboardingState(listener: () => void) {
   listeners.add(listener);
-  return () => listeners.delete(listener);
+  return () => {
+    listeners.delete(listener);
+  };
 }
 
 export async function loadOnboardingState() {

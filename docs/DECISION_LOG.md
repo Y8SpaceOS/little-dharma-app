@@ -47,3 +47,6 @@
 - 2026-05-15: Standardized Sprint 12 TypeScript compatibility policy around Expo SDK 54-aligned dev type tooling (`typescript ~5.9.2`, `@types/react ~19.1.10`) while preserving Expo-managed tsconfig extension.
   - Rationale: Remaining typecheck failures were static type/tooling misalignment issues rather than runtime behavior defects.
   - Implications: lockfile must be updated and committed from successful local install, then validated with full quality gate order before merge.
+- 2026-05-15: Reversed the earlier decision to keep temporary TypeScript module shims and deleted `src/types/shims.d.ts`.
+  - Rationale: The shims declared replacement module types for `react`, `react-native`, `expo-router`, `@supabase/supabase-js`, `react/jsx-runtime`, and `node:fs`. They were only useful when packages could not be installed in Codex Cloud; once `node_modules` is present locally they shadow the real `.d.ts` files and produce `TS2305` errors for any export not listed in the stub. This was the actual blocker behind every prior "typecheck still failing" report.
+  - Implications: TypeScript now resolves package types from `node_modules` only. If a future environment cannot install packages, the right answer is to install them in CI before running `npm run typecheck` — not to reintroduce hand-written module shims.

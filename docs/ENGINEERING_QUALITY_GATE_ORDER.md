@@ -36,3 +36,9 @@ Provide deterministic, reproducible quality checks for local development and CI-
 - Root-cause analysis of remaining local typecheck failures indicated Expo SDK 54 type alignment drift in dev dependencies (`typescript`, `@types/react`) plus strict TS typing gaps in onboarding.
 - Stabilization updates: keep Expo-managed tsconfig extension, keep `ignoreDeprecations: "5.0"`, align dev dependency targets to Expo SDK 54 expectations (`typescript ~5.9.2`, `@types/react ~19.1.10`), and type explicit onboarding callback values to remove implicit `any`/JSX namespace fragility.
 - Deterministic merge gate remains unchanged and must be validated in fresh local environment with committed lockfile: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`.
+
+## Root-cause resolution (2026-05-15)
+- Earlier failure was masked: the actual blocker was `src/types/shims.d.ts`, which `declare module`-replaced the public surface of `react`, `react-native`, `expo-router`, `@supabase/supabase-js`, `react/jsx-runtime`, and `node:fs` with a handful of stubs. Those shims were originally introduced when Codex Cloud could not install packages, but they actively override the real `.d.ts` files once `node_modules` is present, producing `TS2305` errors for every export not listed in the stub.
+- Fix: deleted `src/types/shims.d.ts`. All previously-shimmed modules now resolve from `node_modules` via Expo's `moduleResolution: "Bundler"` configuration.
+- Secondary fix: `subscribeOnboardingState` in `src/lib/onboardingState.ts` returned `() => listeners.delete(listener)`. `Set.delete()` returns `boolean`, which violated `EffectCallback`'s `void | Destructor` contract. Changed to a block body so the cleanup function is typed `() => void`.
+- Final gate run on `pr-13-sprint12` (Mac, 2026-05-15): `npm ci` ✅, `npm run typecheck` ✅ (0 errors), `npm run lint` ✅, `npm run test` ✅. Sprint 12 done.
