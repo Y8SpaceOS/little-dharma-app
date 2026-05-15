@@ -19,3 +19,8 @@
 - 2026-05-15: Added AsyncStorage dependency declaration for Expo-compatible local persistence (`@react-native-async-storage/async-storage` ~2.2.0); install blocked in this environment by registry policy.
 - 2026-05-15: Checks run: `npm install` ❌ (`403 Forbidden` fetching `@react-native-async-storage/async-storage`), `npm run typecheck` ❌ (pre-existing `expo/tsconfig.base` missing + TS deprecation gate), `npm run test` ✅, `npm run dev` ⚠️ blocked (`expo: not found`).
 - Next sprint: run install in allowed registry, rerun typecheck with Expo toolchain resolved, and add onboarding persistence unit tests once dependency install is unblocked.
+- 2026-05-15: Added category-defining product architecture docs: product strategy, five-track roadmap, shareable moments framework, content universe architecture, brand/IP bible, and trust/safety parent promise.
+- 2026-05-15: Updated Autopilot manual with mandatory Category-Defining Product Check and updated roadmap phases to Soul Prototype → Private Beta → Paid Beta → Public Launch → Category Leadership.
+- 2026-05-15: Checks run: `npm run typecheck` ❌ (pre-existing `tsconfig` blockers: TS5101 deprecation gate and missing `expo/tsconfig.base`), `npm run test` ✅.
+- 2026-05-15: Category-Defining Product Check: child delight ✅, parent trust ✅, daily 10-minute usage ✅, shareable moment potential ✅, content universe depth ✅, premium UX taste ✅ (strategy-level), safety compliance ✅, monetisation path ✅.
+- Next sprint: translate strategy docs into measurable KPIs and phase-by-phase acceptance criteria tied to product analytics events.

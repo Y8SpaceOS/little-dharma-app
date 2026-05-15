@@ -8,3 +8,9 @@
 - 2026-05-15: Switched onboarding state from in-memory process variables to device-local persistence using AsyncStorage-backed state hydration on app launch.
   - Rationale: Reset/app restart must preserve or clear onboarding deterministically for parent trust and reliable child routing.
   - Implications: Onboarding-related screens subscribe to shared onboarding state updates and use async save/reset flows.
+- 2026-05-15: Reframed planning system around category-defining product architecture rather than feature-by-feature execution.
+  - Rationale: Strategic ambition requires durable product, content, trust/safety, distribution, and monetisation foundations coordinated in parallel.
+  - Implications: Future sprints must map outcomes to five tracks and pass the mandatory Category-Defining Product Check.
+- 2026-05-15: Adopted parent-to-parent virality model with explicit blocking of child-public sharing patterns.
+  - Rationale: Growth must strengthen trust and safety moat instead of introducing risky social surfaces.
+  - Implications: Share features will be parent-controlled, private-channel oriented, and safety-gated by design.
