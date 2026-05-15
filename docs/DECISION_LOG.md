@@ -41,3 +41,12 @@
 - 2026-05-15: Adopted formal six-level quality ladder (Q1–Q6), phase gates (A–E), sprint depth standards, and mandatory scorecard/checklist-based PR reporting as core Execution OS policy.
   - Rationale: Prevent shallow “task complete” outputs and enforce category-defining depth aligned to sprint phase.
   - Implications: Every sprint now must declare quality level/type, prove depth, and explicitly report passed/deferred quality gates with evidence.
+- 2026-05-15: Removed `extends: "expo/tsconfig.base"` from root TypeScript configuration and standardized a lockfile-first quality-gate execution order (`npm ci` → `typecheck` → `lint` → `test`).
+  - Rationale: Sprint 12 required eliminating recurring typecheck/toolchain blockers and making baseline checks deterministic even when Expo package resolution is unavailable.
+  - Implications: Expo runtime behavior still requires normal dependency installation + iPhone QA, but static quality gates are now auditable and less environment-fragile for future Codex PRs.
+- 2026-05-15: Standardized Sprint 12 TypeScript compatibility policy around Expo SDK 54-aligned dev type tooling (`typescript ~5.9.2`, `@types/react ~19.1.10`) while preserving Expo-managed tsconfig extension.
+  - Rationale: Remaining typecheck failures were static type/tooling misalignment issues rather than runtime behavior defects.
+  - Implications: lockfile must be updated and committed from successful local install, then validated with full quality gate order before merge.
+- 2026-05-15: Reversed the earlier decision to keep temporary TypeScript module shims and deleted `src/types/shims.d.ts`.
+  - Rationale: The shims declared replacement module types for `react`, `react-native`, `expo-router`, `@supabase/supabase-js`, `react/jsx-runtime`, and `node:fs`. They were only useful when packages could not be installed in Codex Cloud; once `node_modules` is present locally they shadow the real `.d.ts` files and produce `TS2305` errors for any export not listed in the stub. This was the actual blocker behind every prior "typecheck still failing" report.
+  - Implications: TypeScript now resolves package types from `node_modules` only. If a future environment cannot install packages, the right answer is to install them in CI before running `npm run typecheck` — not to reintroduce hand-written module shims.

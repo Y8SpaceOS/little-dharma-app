@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { ReactElement, useEffect, useMemo, useState } from 'react';
 import { Link, useRouter } from 'expo-router';
 import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { tokens } from '@/design/tokens';
@@ -7,7 +7,7 @@ import { AgeBand, BedtimePreference, ChildLanguage, completeOnboarding, Favorite
 type Step = {
   title: string;
   subtitle: string;
-  render: () => JSX.Element;
+  render: () => ReactElement;
 };
 
 const ageBands: AgeBand[] = ['0-2', '3-5', '6-8', '9-12'];
@@ -39,8 +39,8 @@ export default function OnboardingScreen() {
       render: () => <Text style={styles.bodyText}>No child public profile, no open chat, no ads, and no public leaderboard.</Text>
     },
     { title: 'Parental Consent', subtitle: 'Consent flow placeholder', render: () => <Text style={styles.bodyText}>Consent verification will be connected in a future sprint.</Text> },
-    { title: 'Create Child Profile', subtitle: 'What is your child\'s name?', render: () => <TextInput value={profile.childName} onChangeText={(value) => setProfile((p) => ({ ...p, childName: value }))} placeholder='Child name' style={styles.input} /> },
-    { title: 'Choose Nickname', subtitle: 'How should we greet your child?', render: () => <TextInput value={profile.nickname} onChangeText={(value) => setProfile((p) => ({ ...p, nickname: value }))} placeholder='Nickname' style={styles.input} /> },
+    { title: 'Create Child Profile', subtitle: 'What is your child\'s name?', render: () => <TextInput value={profile.childName} onChangeText={(value: string) => setProfile((p) => ({ ...p, childName: value }))} placeholder='Child name' style={styles.input} /> },
+    { title: 'Choose Nickname', subtitle: 'How should we greet your child?', render: () => <TextInput value={profile.nickname} onChangeText={(value: string) => setProfile((p) => ({ ...p, nickname: value }))} placeholder='Nickname' style={styles.input} /> },
     { title: 'Age Band', subtitle: 'Tailor the journey by age.', render: () => <ChoiceList items={ageBands} selected={profile.ageBand} onPick={(ageBand) => setProfile((p) => ({ ...p, ageBand }))} /> },
     { title: 'Preferred Language', subtitle: 'Choose learning language.', render: () => <ChoiceList items={languages} selected={profile.language} onPick={(language) => setProfile((p) => ({ ...p, language }))} /> },
     { title: 'Favourite Character', subtitle: 'Choose a guide friend.', render: () => <ChoiceList items={characters} selected={profile.favoriteCharacter} onPick={(favoriteCharacter) => setProfile((p) => ({ ...p, favoriteCharacter }))} /> },
