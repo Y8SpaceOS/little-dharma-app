@@ -54,3 +54,6 @@
 - 2026-05-15: Standardized lint gate policy to always execute real ESLint via `scripts/run-lint.mjs`, with intentional-warning fallback only for explicitly detected missing parser dependencies.
   - Rationale: Sprint 13 required replacing the placeholder lint echo with deterministic static analysis behavior while still handling restricted dependency environments honestly.
   - Implications: CI/local merge gate should run `npm ci` first so lint executes full parser-backed analysis; fallback warning is only acceptable when dependency installation is blocked and must be logged in TASK_LOG.
+- 2026-05-15: Temporarily deferred Sprint 14 and Sprint 15 while executing Sprint 16 premium Story Player polish immediately after Sprint 12/13 quality-gate cleanup.
+  - Rationale: Sprint 12 and Sprint 13 established the critical local gate standard (`npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`), enabling a focused move to visible product quality improvements for the child ritual experience.
+  - Implications: Sprint 14 and Sprint 15 remain explicitly `not started` in the queue (not marked done), must be resumed later, and current work preserves existing trust/safety and progress logic while improving premium UX taste.

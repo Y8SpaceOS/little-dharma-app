@@ -81,11 +81,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 16 — Story Player Premium Polish
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Premium UI/UX taste
+- **Protected quality dimensions:** Parent trust, safety/privacy, content depth and authenticity, parent-safe shareability, daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Polished Story Player hierarchy, spacing, magical reading treatment, progress clarity, quiz/completion visual rhythm, and CTA hierarchy while preserving story logic, local progress behavior, and parent-safe private completion card.
 - **Primary track:** Product Experience
 - **Objective:** Elevate story player pacing and visual hierarchy to feel category-defining and calm for children.
 - **Scope:** Polish story step typography/spacing/CTA clarity, improve completion feedback states, and tighten interaction consistency.
