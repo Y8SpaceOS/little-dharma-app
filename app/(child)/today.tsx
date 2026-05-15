@@ -1,8 +1,9 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'expo-router';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
 import { trackEvent } from '@/lib/analytics';
-import { getOnboardingState } from '@/lib/onboardingState';
+import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 
 const actions = [
   { label: "Today's Journey", href: '/story/krishna-shares-butter', colors: ['#FFE3B8', '#FFD1A3'] },
@@ -13,12 +14,15 @@ const actions = [
 ] as const;
 
 export default function TodayScreen() {
-  const { profile } = getOnboardingState();
+  const [nickname, setNickname] = useState(getOnboardingState().profile?.nickname || 'Little One');
+
+  useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || 'Little One')), []);
+
   trackEvent('app_opened');
 
   return (
     <SafeAreaView style={styles.screen}>
-      <Text style={styles.greeting}>Namaste, {profile?.nickname || 'Little One'} ✨</Text>
+      <Text style={styles.greeting}>Namaste, {nickname} ✨</Text>
       <Text style={styles.subtitle}>Choose your calm adventure for today.</Text>
       <View style={styles.grid}>
         {actions.map((action) => (

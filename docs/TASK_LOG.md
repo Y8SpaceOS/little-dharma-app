@@ -14,3 +14,8 @@
 - 2026-05-15: PR stabilization pass: added missing `expo-linear-gradient` dependency (`~15.0.7`) for Expo SDK 54 compatibility used by welcome screen.
 - 2026-05-15: Attempted `npm install expo-linear-gradient@~15.0.7` but blocked with `403 Forbidden` from registry in Codex Cloud; `package-lock.json` could not be refreshed in this environment.
 - 2026-05-15: Re-ran checks for this PR update: `npm run typecheck` ❌ (existing environment/tooling blocker: missing `expo/tsconfig.base` and TS deprecation gate), `npm run test` ✅.
+- 2026-05-15: Implemented durable local onboarding persistence plumbing with load-on-launch hydration, onboarding save/reset flows, and parent dashboard profile visibility/edit/reset routing updates.
+- 2026-05-15: Added reset confirmation UX and child-home nickname fallback/subscription update behavior tied to onboarding state updates.
+- 2026-05-15: Added AsyncStorage dependency declaration for Expo-compatible local persistence (`@react-native-async-storage/async-storage` ~2.2.0); install blocked in this environment by registry policy.
+- 2026-05-15: Checks run: `npm install` ❌ (`403 Forbidden` fetching `@react-native-async-storage/async-storage`), `npm run typecheck` ❌ (pre-existing `expo/tsconfig.base` missing + TS deprecation gate), `npm run test` ✅, `npm run dev` ⚠️ blocked (`expo: not found`).
+- Next sprint: run install in allowed registry, rerun typecheck with Expo toolchain resolved, and add onboarding persistence unit tests once dependency install is unblocked.
