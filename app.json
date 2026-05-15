@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "Little Dharma",
+    "slug": "little-dharma",
+    "scheme": "littledharma",
+    "plugins": ["expo-router"],
+    "experiments": {"typedRoutes": true}
+  }
+}
