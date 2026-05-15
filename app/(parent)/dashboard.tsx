@@ -1,17 +1,36 @@
 import { useEffect, useState } from 'react';
 import { Link, useRouter } from 'expo-router';
-import { Alert, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Alert, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
 import { getOnboardingState, resetOnboarding, subscribeOnboardingState, type OnboardingProfile } from '@/lib/onboardingState';
 import { getParentDashboardSnapshot } from '@/services/progress';
 
+const initialSummary = {
+  currentWorld: 'Vrindavan',
+  storiesCompleted: 0,
+  totalStories: 0,
+  completionPercent: 0,
+  latestCompletedStoryTitle: 'Loading...',
+  latestEarnedBadge: 'Loading...',
+  latestValueLearned: 'Loading...',
+  latestRitualCompleted: 'Loading...',
+  latestReflectionPrompt: 'Loading...',
+  suggestedNextJourney: 'Loading...',
+  dailyRitualCopy: '',
+  reflectionBridgeCopy: '',
+  ritualLoopExplanation: '',
+  privacyPromise: ''
+};
+
 export default function DashboardScreen() {
   const router = useRouter();
   const [profile, setProfile] = useState<OnboardingProfile | null>(getOnboardingState().profile);
-  const [summary, setSummary] = useState({ currentWorld: 'Vrindavan', storiesCompleted: 0, totalStories: 0, latestEarnedBadge: 'No badge yet', latestValueLearned: 'Loading...', latestRitualCompleted: 'Loading...', suggestedNextJourney: 'Loading...', dailyRitualCopy: '', reflectionBridgeCopy: '' });
+  const [summary, setSummary] = useState(initialSummary);
 
   useEffect(() => subscribeOnboardingState(() => setProfile(getOnboardingState().profile)), []);
-  useEffect(() => { getParentDashboardSnapshot().then(setSummary).catch(() => null); }, []);
+  useEffect(() => {
+    getParentDashboardSnapshot().then(setSummary).catch(() => null);
+  }, []);
 
   const onReset = () => {
     Alert.alert('Reset onboarding?', 'This clears the local child profile on this device and returns to the welcome screen.', [
@@ -20,7 +39,76 @@ export default function DashboardScreen() {
     ]);
   };
 
-  return <SafeAreaView style={styles.screen}><Text style={styles.heading}>Parent Dashboard</Text><View style={styles.card}><Text style={styles.label}>Child profile</Text><Text style={styles.value}>{profile?.childName || 'Not set'} ({profile?.ageBand || 'n/a'})</Text><Text style={styles.stat}>Current world: {summary.currentWorld}</Text><Text style={styles.stat}>Stories completed: {summary.storiesCompleted}/{summary.totalStories}</Text><Text style={styles.stat}>Latest earned badge: {summary.latestEarnedBadge}</Text><Text style={styles.stat}>Latest value learned: {summary.latestValueLearned}</Text><Text style={styles.stat}>Latest ritual completed: {summary.latestRitualCompleted}</Text><Text style={styles.stat}>Next suggested journey: {summary.suggestedNextJourney}</Text><Text style={styles.ritual}>{summary.dailyRitualCopy}</Text><Text style={styles.ritual}>{summary.reflectionBridgeCopy}</Text></View><Link href='/onboarding' style={styles.button}>Edit Onboarding</Link><Text onPress={onReset} style={styles.reset}>Reset Local Onboarding State</Text><Link href='/(child)/today' style={styles.childLink}>Switch to Child Home</Link></SafeAreaView>;
+  return (
+    <SafeAreaView style={styles.screen}>
+      <ScrollView contentContainerStyle={styles.content}>
+        <Text style={styles.heading}>Parent Dashboard</Text>
+        <Text style={styles.subheading}>A private view of your child’s values journey.</Text>
+
+        <View style={styles.card}>
+          <Text style={styles.sectionTitle}>Child profile</Text>
+          <Text style={styles.childName}>{profile?.childName || 'Not set'} ({profile?.ageBand || 'n/a'})</Text>
+          <Text style={styles.detail}>Current world: {summary.currentWorld}</Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.sectionTitle}>Journey progress</Text>
+          <Text style={styles.progressMain}>{summary.storiesCompleted}/{summary.totalStories} stories completed</Text>
+          <Text style={styles.progressSub}>{summary.completionPercent}% of current path complete</Text>
+          <Text style={styles.detail}>Next suggested journey: {summary.suggestedNextJourney}</Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.sectionTitle}>Latest completed moment</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Story:</Text> {summary.latestCompletedStoryTitle}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Value:</Text> {summary.latestValueLearned}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Ritual/Shloka moment:</Text> {summary.latestRitualCompleted}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Badge earned:</Text> {summary.latestEarnedBadge}</Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.sectionTitle}>Daily 10-minute ritual loop</Text>
+          <Text style={styles.ritual}>{summary.ritualLoopExplanation}</Text>
+          <Text style={styles.ritual}>{summary.dailyRitualCopy}</Text>
+          <Text style={styles.ritual}>{summary.reflectionBridgeCopy}</Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.sectionTitle}>Tonight’s parent conversation starter</Text>
+          <Text style={styles.prompt}>{summary.latestReflectionPrompt}</Text>
+        </View>
+
+        <View style={styles.privacyCard}>
+          <Text style={styles.privacyTitle}>Privacy reassurance</Text>
+          <Text style={styles.privacyText}>{summary.privacyPromise}</Text>
+        </View>
+
+        <Link href='/onboarding' style={styles.button}>Edit Onboarding</Link>
+        <Text onPress={onReset} style={styles.reset}>Reset Local Onboarding State</Text>
+        <Link href='/(child)/today' style={styles.childLink}>Switch to Child Home</Link>
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
 
-const styles = StyleSheet.create({ screen: { flex: 1, backgroundColor: '#F4F7FC', padding: tokens.spacing.lg, gap: tokens.spacing.md }, heading: { fontSize: 30, fontWeight: '800', color: tokens.colors.midnight }, card: { backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 8 }, label: { color: '#50607A', fontWeight: '700' }, value: { color: tokens.colors.midnight, fontSize: 18, fontWeight: '700' }, stat: { color: '#2B3550' }, ritual: { color: '#4F5F7C', marginTop: 8, fontStyle: 'italic' }, button: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: tokens.radius.button, textAlign: 'center', color: tokens.colors.midnight, fontWeight: '700' }, reset: { textAlign: 'center', color: '#8A2F2F', fontWeight: '600' }, childLink: { textAlign: 'center', color: tokens.colors.peacock, fontWeight: '700' } });
+const styles = StyleSheet.create({
+  screen: { flex: 1, backgroundColor: '#EFF4FF' },
+  content: { padding: tokens.spacing.lg, gap: tokens.spacing.md, paddingBottom: 40 },
+  heading: { fontSize: 32, fontWeight: '800', color: '#1E2C50' },
+  subheading: { color: '#4D5F88', fontSize: 15, marginTop: -6 },
+  card: { backgroundColor: '#FFFFFF', borderRadius: 22, padding: tokens.spacing.lg, gap: 8, borderWidth: 1, borderColor: '#E5EBFA' },
+  sectionTitle: { color: '#445378', fontWeight: '800', letterSpacing: 0.3, textTransform: 'uppercase', fontSize: 12 },
+  childName: { color: '#1E2C50', fontSize: 20, fontWeight: '800' },
+  detail: { color: '#2B3550', fontSize: 15, lineHeight: 22 },
+  label: { fontWeight: '700', color: '#1E2C50' },
+  progressMain: { color: '#1F2F59', fontSize: 22, fontWeight: '800' },
+  progressSub: { color: '#5A6A92', fontWeight: '600' },
+  ritual: { color: '#4F5F7C', fontStyle: 'italic', lineHeight: 22 },
+  prompt: { color: '#24345E', fontSize: 16, lineHeight: 24, fontWeight: '600' },
+  privacyCard: { backgroundColor: '#1E2C50', borderRadius: 22, padding: tokens.spacing.lg, gap: 8 },
+  privacyTitle: { color: '#DCE8FF', fontWeight: '800', textTransform: 'uppercase', fontSize: 12, letterSpacing: 0.3 },
+  privacyText: { color: '#FFFFFF', lineHeight: 22, fontSize: 15 },
+  button: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: tokens.radius.button, textAlign: 'center', color: '#1E2C50', fontWeight: '700' },
+  reset: { textAlign: 'center', color: '#8A2F2F', fontWeight: '600' },
+  childLink: { textAlign: 'center', color: tokens.colors.peacock, fontWeight: '700' }
+});
