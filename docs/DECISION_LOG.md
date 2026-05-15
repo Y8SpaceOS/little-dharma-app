@@ -14,3 +14,9 @@
 - 2026-05-15: Adopted parent-to-parent virality model with explicit blocking of child-public sharing patterns.
   - Rationale: Growth must strengthen trust and safety moat instead of introducing risky social surfaces.
   - Implications: Share features will be parent-controlled, private-channel oriented, and safety-gated by design.
+- 2026-05-15: Standardized the first Magical Story Player journey as a structured content object in seed data rather than hard-coded UI strings.
+  - Rationale: Category-defining quality requires durable metadata that can scale to worlds/characters/values while preserving age-band, quiz, badge, and parent reflection consistency.
+  - Implications: Future stories can plug into the same player contract with minimal UI changes and clearer content governance.
+- 2026-05-15: Implemented parent-safe share moment as an in-app completion card placeholder only, with explicit private-sharing language and no public-child surfaces.
+  - Rationale: Growth architecture must preserve parent trust and safety non-negotiables before native share channels are introduced.
+  - Implications: Native share export can be layered later behind parent action without changing the ritual completion flow.
