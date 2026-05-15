@@ -1,4 +1,5 @@
-import { vrindavanStoryPackets, type StoryJourney } from '@/data/seed/vrindavan';
+import { vrindavanStoryPackets } from '@/data/seed/vrindavan';
+import type { StoryJourney } from '@/types/content';
 import { getNextIncompleteStory } from '@/lib/storyProgress';
 
 export type JourneyCardState = 'ready' | 'completed' | 'path-completed';

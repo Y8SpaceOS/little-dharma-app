@@ -76,6 +76,7 @@ export default function TodayScreen() {
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
         <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Path completed' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
+        <Text style={styles.ritualTag}>{status === 'path-completed' ? "Today’s ritual: 10 minutes" : 'Story + value + shloka'}</Text>
         {earnedBadge && <Text style={styles.badgeLine}>Earned badge: {earnedBadge}</Text>}
         {storySlug && <Link href={ctaHref as never} style={styles.journeyCta}>{ctaLabel}</Link>}
       </View>
@@ -104,6 +105,7 @@ const styles = StyleSheet.create({
   journeyEyebrow: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.8, color: '#754827' },
   journeyTitle: { fontSize: 22, fontWeight: '800', color: '#3F2B1D', marginTop: 2 },
   journeyStatus: { fontSize: 16, fontWeight: '700', color: '#5C4A3B', marginTop: 6 },
+  ritualTag: { fontSize: 13, color: '#7A4C25', marginTop: 2, fontWeight: '700' },
   badgeLine: { fontSize: 15, color: '#375E42', marginTop: 4, fontWeight: '700' },
   journeyCta: { marginTop: 10, alignSelf: 'flex-start', backgroundColor: '#E78739', color: '#FFFFFF', fontWeight: '800', fontSize: 16, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
   parentPortal: { marginTop: 'auto', textAlign: 'center', color: tokens.colors.peacock, fontWeight: '700', fontSize: 16 }

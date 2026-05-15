@@ -1,32 +1,4 @@
-export type StoryPanel = {
-  id: string;
-  title: string;
-  text: string;
-};
-
-export type StoryJourney = {
-  world: { slug: string; title: string; description: string };
-  character: { slug: string; name: string };
-  value: { slug: string; name: string };
-  story: {
-    slug: string;
-    title: string;
-    world: string;
-    character: string;
-    value: string;
-    ageBand: '4-6' | '7-9';
-    panels: StoryPanel[];
-    quiz: {
-      question: string;
-      options: string[];
-      correctAnswer: string;
-      gentleFeedback: string;
-    };
-    badgeName: string;
-    parentReflectionPrompt: string;
-    completionShareCopy: string;
-  };
-};
+import type { StoryJourney } from '@/types/content';
 
 export const vrindavanJourney: StoryJourney = {
   world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
@@ -52,6 +24,16 @@ export const vrindavanJourney: StoryJourney = {
       options: ['He shared the butter with everyone', 'He hid the butter pot', 'He ran away with the butter'],
       correctAnswer: 'He shared the butter with everyone',
       gentleFeedback: 'Beautiful try. Krishna teaches us that sharing with love makes everyone feel included.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma chant seed for sharing',
+      microShlokaText: 'सर्वे भवन्तु सुखिनः',
+      transliteration: 'Sarve bhavantu sukhinah',
+      childMeaning: 'May everyone be happy. Sharing helps everyone feel happy and included.',
+      parentMeaning: 'Frame sharing as a family value: we notice who has less and make space so everyone feels included.',
+      ritualPrompt: 'Place one hand on your heart and say the chant seed together one time before snack sharing.',
+      reflectionQuestion: 'Who can we include and share with at home today?',
+      suggestedPracticeDurationSeconds: 90
     },
     badgeName: 'Peacock Feather of Kindness',
     parentReflectionPrompt: 'Ask your child: When did Krishna show kindness today?',
@@ -83,6 +65,16 @@ export const vrindavanSecondStoryPacket: StoryJourney = {
       options: ['He comforted and helped the calf find its mother', 'He ignored the calf and kept walking', 'He told the calf to stop crying loudly'],
       correctAnswer: 'He comforted and helped the calf find its mother',
       gentleFeedback: 'Lovely effort. Compassion means noticing someone’s fear and helping with patience and care.'
+    },
+    ritual: {
+      microShlokaTitle: 'Simple Sanskrit phrase for compassion',
+      microShlokaText: 'दयां कुरु',
+      transliteration: 'Dayaam kuru',
+      childMeaning: 'Be kind and caring. When someone is scared, we stay gentle and help them feel safe.',
+      parentMeaning: 'Model compassion by naming fear calmly and guiding your child to offer comfort before solving the problem.',
+      ritualPrompt: 'Take one slow breath together and say the phrase softly, then think of one person who may need comfort today.',
+      reflectionQuestion: 'How can we help someone who feels scared tonight?',
+      suggestedPracticeDurationSeconds: 90
     },
     badgeName: 'Lotus Heart of Compassion',
     parentReflectionPrompt: 'Ask your child: Who can we comfort today when they feel worried?',

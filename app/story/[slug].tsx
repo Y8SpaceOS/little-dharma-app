@@ -6,7 +6,7 @@ import { trackEvent } from '@/lib/analytics';
 import { tokens } from '@/design/tokens';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
 
-type Stage = 'story' | 'quiz' | 'complete';
+type Stage = 'story' | 'ritual' | 'quiz' | 'complete';
 
 export default function StoryScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -84,7 +84,7 @@ export default function StoryScreen() {
                 style={styles.button}
                 onPress={() => {
                   if (atLastPanel) {
-                    setStage('quiz');
+                    setStage('ritual');
                     trackEvent('journey_started', { world: journey.world.slug });
                     return;
                   }
@@ -94,6 +94,23 @@ export default function StoryScreen() {
                 <Text style={styles.buttonText}>{atLastPanel ? 'Go to Quiz' : 'Next'}</Text>
               </Pressable>
             </View>
+          </View>
+        )}
+
+
+        {stage === 'ritual' && (
+          <View style={styles.card}>
+            <Text style={styles.panelTitle}>Little Ritual Moment</Text>
+            <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle}</Text>
+            <Text style={styles.ritualText}>{story.ritual.microShlokaText}</Text>
+            <Text style={styles.ritualTransliteration}>{story.ritual.transliteration}</Text>
+            <Text style={styles.ritualMeaning}>Meaning: {story.ritual.childMeaning}</Text>
+            <Text style={styles.ritualPromptText}>Try this now: {story.ritual.ritualPrompt}</Text>
+            <Text style={styles.ritualPromptText}>Reflect: {story.ritual.reflectionQuestion}</Text>
+            <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round(story.ritual.suggestedPracticeDurationSeconds / 60))} minute{story.ritual.suggestedPracticeDurationSeconds >= 120 ? 's' : ''}.</Text>
+            <Pressable style={styles.button} onPress={() => setStage('quiz')}>
+              <Text style={styles.buttonText}>I understand</Text>
+            </Pressable>
           </View>
         )}
 
@@ -121,6 +138,8 @@ export default function StoryScreen() {
             <Text style={styles.panelTitle}>Badge Earned: {story.badgeName} 🦚</Text>
             <Text style={styles.panelText}>{isCorrect ? 'Wonderful! You chose a kindness answer.' : story.quiz.gentleFeedback}</Text>
             <Text style={styles.parentPrompt}>For Parent: {story.parentReflectionPrompt}</Text>
+            <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
+            <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
             <View style={styles.shareCard}>
               <Text style={styles.shareTitle}>Parent-safe shareable moment</Text>
               <Text style={styles.shareCopy}>{story.completionShareCopy}</Text>
@@ -175,5 +194,12 @@ const styles = StyleSheet.create({
   shareTitle: { fontSize: 16, fontWeight: '800', color: '#4E3B76' },
   shareCopy: { fontSize: 16, color: '#4B3C68' },
   shareHint: { fontSize: 13, color: '#6B5A88' },
-  revisit: { fontSize: 13, color: '#7A644C' }
+  revisit: { fontSize: 13, color: '#7A644C' },
+  ritualLabel: { fontSize: 14, fontWeight: '700', color: '#7B5C43', textTransform: 'uppercase', letterSpacing: 0.6 },
+  ritualText: { fontSize: 28, fontWeight: '800', color: '#3E2A1A' },
+  ritualTransliteration: { fontSize: 18, color: '#5C4330', fontStyle: 'italic' },
+  ritualMeaning: { fontSize: 18, lineHeight: 27, color: '#5C4330' },
+  ritualPromptText: { fontSize: 16, lineHeight: 24, color: '#5C4330' },
+  ritualDuration: { fontSize: 13, color: '#7A644C', fontWeight: '600' },
+  ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' }
 });
