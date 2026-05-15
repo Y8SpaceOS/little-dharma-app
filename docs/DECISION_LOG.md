@@ -35,3 +35,6 @@
 - 2026-05-15: Adopted explicit attribution-safe language policy for uncertain lines (e.g., “Little Dharma chant seed” / “simple Sanskrit phrase”) instead of direct scripture claims.
   - Rationale: Parent trust and authenticity require avoiding overclaiming scriptural provenance.
   - Implications: Content pipeline must continue provenance checks; uncertain entries remain clearly labeled and reviewable.
+- 2026-05-15: Established a durable sprint execution operating system centered on `docs/MASTER_SPRINT_QUEUE.md` as the canonical backlog for sprints 11-150, with one-sprint-at-a-time runner rules and mandatory QA/safety/category-check templates.
+  - Rationale: Autopilot needed deterministic sprint selection and repeatable quality gates to scale execution speed without losing product vision.
+  - Implications: Future generic sprint prompts can run reliably via queue-first workflow; every sprint must update queue/logs and ship with test + manual iPhone QA reporting.

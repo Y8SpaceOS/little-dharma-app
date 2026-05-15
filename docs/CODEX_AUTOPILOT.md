@@ -14,7 +14,7 @@ Codex Autopilot executes one production-quality sprint at a time with clear qual
 
 ## Sprint Workflow
 1. **Understand context**: read required files and current repo state.
-2. **Select priority task**: choose highest-priority unfinished roadmap/task-log item.
+2. **Select sprint from source of truth**: open `docs/MASTER_SPRINT_QUEUE.md` and run the first sprint marked `Status: not started`.
 3. **Implement minimally**: avoid random scope; advance one or more roadmap tracks with quality.
 4. **Run checks**: run available scripts (`typecheck`, `lint`, `test`, plus task-specific checks).
 5. **Fix issues**: resolve failing checks caused by code changes.
@@ -73,3 +73,12 @@ If blocked (credentials, registry, infra, permissions):
 3. avoid claiming success for blocked checks,
 4. add a clear human action list to unblock,
 5. continue all non-blocked work in-scope.
+
+## Generic Prompt Shortcut
+Future generic prompts may simply say: **"Run the next sprint from `docs/MASTER_SPRINT_QUEUE.md`."**
+
+
+## Sprint Selection Source of Truth
+- `docs/MASTER_SPRINT_QUEUE.md` is the canonical source for sprint selection.
+- `docs/TASK_LOG.md` and `docs/DECISION_LOG.md` are history/audit logs and must not be used as sprint-selection sources.
+- If any mismatch exists, follow `docs/MASTER_SPRINT_QUEUE.md` and record the correction in `docs/TASK_LOG.md`.
