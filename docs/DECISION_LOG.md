@@ -20,3 +20,9 @@
 - 2026-05-15: Implemented parent-safe share moment as an in-app completion card placeholder only, with explicit private-sharing language and no public-child surfaces.
   - Rationale: Growth architecture must preserve parent trust and safety non-negotiables before native share channels are introduced.
   - Implications: Native share export can be layered later behind parent action without changing the ritual completion flow.
+- 2026-05-15: Kept Today’s Journey routing pinned to `krishna-shares-butter` while adding a second fully-structured story packet in seed content.
+  - Rationale: sprint objective required proving content-engine scalability without introducing story-selection UI scope creep.
+  - Implications: next sprint can add day-based or sequence-based routing on top of already-structured multi-packet content.
+- 2026-05-15: Elevated Child Home Today card to reflect persisted completion state (status, earned badge, and CTA swap) sourced from local story progress helpers.
+  - Rationale: daily ritual products need immediate “done for today” clarity on the home surface to drive repeat usage loops.
+  - Implications: progress-state helpers now serve as reusable contract for future weekly summaries, parent dashboards, and private share cards.

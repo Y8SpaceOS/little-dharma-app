@@ -58,3 +58,36 @@ export const vrindavanJourney: StoryJourney = {
     completionShareCopy: 'Today we completed a Little Dharma kindness journey together.'
   }
 };
+
+export const vrindavanSecondStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'compassion', name: 'Compassion' },
+  story: {
+    slug: 'krishna-helps-a-lost-calf',
+    title: 'Krishna Helps a Lost Calf',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Compassion',
+    ageBand: '4-6',
+    panels: [
+      { id: 'c1', title: 'Soft Cries in the Meadow', text: 'While walking through Vrindavan, Krishna heard a little calf crying near the tall grass.' },
+      { id: 'c2', title: 'A Gentle Pause', text: 'Krishna knelt quietly and saw the calf looking around with worried eyes.' },
+      { id: 'c3', title: 'Kind Words First', text: 'He softly said, “Do not worry, little one. I am here with you.”' },
+      { id: 'c4', title: 'Searching Together', text: 'Krishna followed tiny hoof prints and asked nearby friends if they had seen the calf’s mother.' },
+      { id: 'c5', title: 'A Joyful Reunion', text: 'Soon the mother cow came running, and the calf snuggled close with a happy bounce.' },
+      { id: 'c6', title: 'Compassion in Action', text: 'Krishna smiled and reminded everyone that caring for someone afraid is a beautiful act of compassion.' }
+    ],
+    quiz: {
+      question: 'How did Krishna show compassion to the calf?',
+      options: ['He comforted and helped the calf find its mother', 'He ignored the calf and kept walking', 'He told the calf to stop crying loudly'],
+      correctAnswer: 'He comforted and helped the calf find its mother',
+      gentleFeedback: 'Lovely effort. Compassion means noticing someone’s fear and helping with patience and care.'
+    },
+    badgeName: 'Lotus Heart of Compassion',
+    parentReflectionPrompt: 'Ask your child: Who can we comfort today when they feel worried?',
+    completionShareCopy: 'Today our family completed a Little Dharma compassion story and reflected on helping others feel safe.'
+  }
+};
+
+export const vrindavanStoryPackets: StoryJourney[] = [vrindavanJourney, vrindavanSecondStoryPacket];

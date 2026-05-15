@@ -1,37 +1,48 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+export type StoryCompletionEntry = {
+  completedAt: string;
+  badgeName: string;
+};
+
 export type StoryCompletionRecord = {
-  [storySlug: string]: {
-    completedAt: string;
-    badgeName: string;
-  };
+  [storySlug: string]: StoryCompletionEntry;
 };
 
 const STORAGE_KEY = 'little_dharma_story_progress_v1';
 
-export async function getStoryCompletion(storySlug: string) {
+async function readStoryCompletions(): Promise<StoryCompletionRecord> {
   const raw = await AsyncStorage.getItem(STORAGE_KEY);
-  if (!raw) return null;
+  if (!raw) return {};
 
   try {
-    const parsed = JSON.parse(raw) as StoryCompletionRecord;
-    return parsed[storySlug] ?? null;
+    return JSON.parse(raw) as StoryCompletionRecord;
   } catch {
-    return null;
+    return {};
   }
 }
 
-export async function markStoryComplete(storySlug: string, badgeName: string) {
-  const raw = await AsyncStorage.getItem(STORAGE_KEY);
-  let current: StoryCompletionRecord = {};
+export async function getAllStoryCompletions() {
+  return readStoryCompletions();
+}
 
-  if (raw) {
-    try {
-      current = JSON.parse(raw) as StoryCompletionRecord;
-    } catch {
-      current = {};
-    }
-  }
+export async function getStoryCompletion(storySlug: string) {
+  const allCompletions = await readStoryCompletions();
+  return allCompletions[storySlug] ?? null;
+}
+
+export async function hasCompletedStory(storySlug: string) {
+  const completion = await getStoryCompletion(storySlug);
+  return Boolean(completion);
+}
+
+export async function getCompletedBadge(storySlug: string) {
+  const completion = await getStoryCompletion(storySlug);
+  return completion?.badgeName ?? null;
+}
+
+export async function markStoryComplete(storySlug: string, badgeName: string) {
+  const current = await readStoryCompletions();
 
   current[storySlug] = {
     completedAt: new Date().toISOString(),
