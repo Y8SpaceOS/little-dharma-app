@@ -50,3 +50,7 @@
 - 2026-05-15: Reversed the earlier decision to keep temporary TypeScript module shims and deleted `src/types/shims.d.ts`.
   - Rationale: The shims declared replacement module types for `react`, `react-native`, `expo-router`, `@supabase/supabase-js`, `react/jsx-runtime`, and `node:fs`. They were only useful when packages could not be installed in Codex Cloud; once `node_modules` is present locally they shadow the real `.d.ts` files and produce `TS2305` errors for any export not listed in the stub. This was the actual blocker behind every prior "typecheck still failing" report.
   - Implications: TypeScript now resolves package types from `node_modules` only. If a future environment cannot install packages, the right answer is to install them in CI before running `npm run typecheck` — not to reintroduce hand-written module shims.
+
+- 2026-05-15: Standardized lint gate policy to always execute real ESLint via `scripts/run-lint.mjs`, with intentional-warning fallback only for explicitly detected missing parser dependencies.
+  - Rationale: Sprint 13 required replacing the placeholder lint echo with deterministic static analysis behavior while still handling restricted dependency environments honestly.
+  - Implications: CI/local merge gate should run `npm ci` first so lint executes full parser-backed analysis; fallback warning is only acceptable when dependency installation is blocked and must be logged in TASK_LOG.

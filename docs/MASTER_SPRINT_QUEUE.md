@@ -35,11 +35,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 13 — Lint and Static Analysis Baseline Hardening
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Platform Foundation
+- **Primary quality dimension:** Reliability
+- **Protected quality dimensions:** Child safety defaults, parent trust surfaces, daily ritual continuity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Restored deterministic ESLint command + flat config baseline and added environment-aware lint runner that marks missing parser dependencies as intentional warning until npm ci is available.
 - **Primary track:** Platform Foundations
 - **Objective:** Reinstate dependable lint/static analysis gates to prevent avoidable regressions.
 - **Scope:** Restore lint config completeness, standardize rule severity, and ensure lint command is deterministic across environments.
