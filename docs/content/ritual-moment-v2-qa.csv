@@ -1,0 +1,17 @@
+qaArea,surface,expectedBehavior,status,notes
+ritual step visibility,app/story/[slug].tsx,Ritual stage clearly presents Step 1 Say Step 2 Breathe and Step 3 Reflect,pass,Verified by code and validator keyword check
+Say step phrase rendering,app/story/[slug].tsx,Shows micro-shloka text when available with calm fallback text when missing,pass,Uses microShlokaText fallback
+transliteration rendering,app/story/[slug].tsx,Transliteration appears only when provided and does not leave empty placeholder,pass,Conditional render with Boolean guard
+child meaning rendering,app/story/[slug].tsx,Child meaning is shown with child-safe fallback wording if missing,pass,Uses childMeaning fallback
+Breathe step instruction,app/story/[slug].tsx,Displays calm instruction Take three soft breaths together with no pressure cues,pass,Static copy added intentionally
+Reflect step prompt,app/story/[slug].tsx,Shows reflectionQuestion or gentle fallback prompt for conversation,pass,Uses reflectionQuestion fallback
+parent meaning / bridge,app/story/[slug].tsx,Shows parentMeaning bridge or calm parent fallback guidance,pass,Uses parentMeaning fallback
+missing-field fallback,app/story/[slug].tsx,Missing ritual fields do not crash screen and defaults keep flow usable,pass,All key ritual fields now guarded
+quiz flow preserved,app/story/[slug].tsx,Continue to Quiz still transitions ritual to pause and then quiz,pass,Stage state transitions unchanged
+completion flow preserved,app/story/[slug].tsx,Quiz submit still writes completion and shows completion stage,pass,markStoryComplete path unchanged
+no audio dependency,app/story/[slug].tsx,Ritual flow uses text-only instructions and no audio hook,pass,No audio feature added
+no timer dependency,app/story/[slug].tsx,Ritual step itself has no countdown dependency or pressure timer requirement,pass,Pause timer remains existing non-ritual stage behavior
+no streak pressure,app/story/[slug].tsx,No keep your streak or equivalent pressure language appears,pass,Checked by validator forbidden phrase scan
+no competitive framing,app/story/[slug].tsx,No beat your friends competitive language appears,pass,Checked by validator forbidden phrase scan
+iPhone layout sanity,app/story/[slug].tsx,Ritual cards remain readable with grouped step sections and spacing,pending_manual_qa,Requires Expo Go device check
+story 1–21 regression,story journey runtime,All 21 stories remain reachable with unchanged story packet contracts,pending_manual_qa,Requires manual path walkthrough

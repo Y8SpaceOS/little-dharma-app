@@ -137,32 +137,46 @@ export default function StoryScreen() {
         {stage === 'ritual' && (
           <View style={styles.card}>
             <Text style={styles.ritualStageEyebrow}>Ritual Moment</Text>
-            <Text style={styles.panelTitle}>A calm heart pause</Text>
-            <Text style={styles.ritualFraming}>Breathe softly together. This is your family&apos;s tiny sacred minute.</Text>
+            <Text style={styles.panelTitle}>Say, Breathe, Reflect</Text>
+            <Text style={styles.ritualFraming}>A short family ritual to feel calm and connected together.</Text>
 
             <View style={styles.companionInlineCard}>
               <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.ritualEncouragement}</Text>
             </View>
+
             <View style={styles.ritualCard}>
-              <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle}</Text>
-              <View style={styles.ritualScriptCard}>
-                <Text style={styles.ritualText}>{story.ritual.microShlokaText}</Text>
-                <Text style={styles.ritualTransliteration}>{story.ritual.transliteration}</Text>
+              <View style={styles.ritualStepBlock}>
+                <Text style={styles.ritualStepTitle}>Step 1: Say</Text>
+                <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle || 'Kind phrase'}</Text>
+                <View style={styles.ritualScriptCard}>
+                  <Text style={styles.ritualText}>{story.ritual.microShlokaText || 'Let us say one kind phrase together.'}</Text>
+                  {Boolean(story.ritual.transliteration) && (
+                    <Text style={styles.ritualTransliteration}>{story.ritual.transliteration}</Text>
+                  )}
+                </View>
+                <View style={styles.ritualDetailBlock}>
+                  <Text style={styles.ritualDetailLabel}>Child meaning</Text>
+                  <Text style={styles.ritualMeaning}>{story.ritual.childMeaning || 'We use gentle words to help our hearts feel peaceful.'}</Text>
+                </View>
               </View>
-              <View style={styles.ritualDetailBlock}>
-                <Text style={styles.ritualDetailLabel}>Meaning</Text>
-                <Text style={styles.ritualMeaning}>{story.ritual.childMeaning}</Text>
+
+              <View style={styles.ritualStepBlock}>
+                <Text style={styles.ritualStepTitle}>Step 2: Breathe</Text>
+                <Text style={styles.ritualPromptText}>Take three soft breaths together.</Text>
+                <Text style={styles.ritualSupportText}>{story.ritual.ritualPrompt || 'Breathe in softly, breathe out slowly, and relax your shoulders.'}</Text>
               </View>
-              <View style={styles.ritualDetailBlock}>
-                <Text style={styles.ritualDetailLabel}>Practice together</Text>
-                <Text style={styles.ritualPromptText}>{story.ritual.ritualPrompt}</Text>
+
+              <View style={styles.ritualStepBlock}>
+                <Text style={styles.ritualStepTitle}>Step 3: Reflect</Text>
+                <Text style={styles.ritualPromptText}>{story.ritual.reflectionQuestion || 'What did your heart notice in this story?'}</Text>
+                <View style={styles.ritualDetailBlock}>
+                  <Text style={styles.ritualDetailLabel}>Parent bridge</Text>
+                  <Text style={styles.ritualSupportText}>{story.ritual.parentMeaning || 'Parents can model one simple example from today and invite a short family reply.'}</Text>
+                </View>
               </View>
-              <View style={styles.ritualDetailBlock}>
-                <Text style={styles.ritualDetailLabel}>Gentle reflection</Text>
-                <Text style={styles.ritualPromptText}>{story.ritual.reflectionQuestion}</Text>
-              </View>
-              <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round(story.ritual.suggestedPracticeDurationSeconds / 60))} minute{story.ritual.suggestedPracticeDurationSeconds >= 120 ? 's' : ''}.</Text>
+
+              <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round((story.ritual.suggestedPracticeDurationSeconds || 60) / 60))} minute{(story.ritual.suggestedPracticeDurationSeconds || 60) >= 120 ? 's' : ''}.</Text>
             </View>
             <Pressable style={styles.button} onPress={() => setStage('pause')}>
               <Text style={styles.buttonText}>Continue to Quiz</Text>
@@ -378,7 +392,9 @@ const styles = StyleSheet.create({
   ritualLabel: { fontSize: 14, fontWeight: '700', color: '#7B5C43', textTransform: 'uppercase', letterSpacing: 0.6 },
   ritualStageEyebrow: { fontSize: 12, color: '#8B6A4C', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },
   ritualFraming: { fontSize: 15, color: '#6E523B', lineHeight: 22, marginTop: -4 },
-  ritualCard: { backgroundColor: '#FFFBF5', borderRadius: 18, borderWidth: 1, borderColor: '#F1DEC8', padding: 14, gap: 12 },
+  ritualCard: { backgroundColor: '#FFFBF5', borderRadius: 18, borderWidth: 1, borderColor: '#F1DEC8', padding: 14, gap: 14 },
+  ritualStepBlock: { backgroundColor: '#FFFFFF', borderRadius: 14, borderWidth: 1, borderColor: '#F3E2CE', padding: 12, gap: 8 },
+  ritualStepTitle: { fontSize: 16, fontWeight: '800', color: '#5B3D23' },
   ritualScriptCard: { backgroundColor: '#FFF4E7', borderRadius: 16, borderWidth: 1, borderColor: '#EFCDAA', paddingHorizontal: 14, paddingVertical: 16, gap: 10 },
   ritualText: { fontSize: 30, fontWeight: '800', color: '#3E2A1A', textAlign: 'center', lineHeight: 38 },
   ritualTransliteration: { fontSize: 17, color: '#6A4A30', fontStyle: 'italic', textAlign: 'center', lineHeight: 25 },
@@ -386,6 +402,7 @@ const styles = StyleSheet.create({
   ritualDetailLabel: { fontSize: 12, color: '#8B6A4C', fontWeight: '800', letterSpacing: 0.5, textTransform: 'uppercase' },
   ritualMeaning: { fontSize: 17, lineHeight: 26, color: '#5C4330' },
   ritualPromptText: { fontSize: 16, lineHeight: 24, color: '#5C4330' },
+  ritualSupportText: { fontSize: 15, lineHeight: 23, color: '#6A5039' },
   ritualDuration: { fontSize: 13, color: '#7A644C', fontWeight: '700', marginTop: 2 },
   pauseCard: { marginTop: 4, borderRadius: 24, borderWidth: 1, borderColor: '#D8CBB9', backgroundColor: '#F6EFE5', padding: tokens.spacing.lg, gap: 14, alignItems: 'center' },
   pauseEyebrow: { fontSize: 12, color: '#8A6B4D', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },

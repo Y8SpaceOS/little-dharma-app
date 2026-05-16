@@ -531,7 +531,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Daily 10-minute ritual habit
 - **Protected quality dimensions:** Content depth and authenticity, Parent trust, Child delight, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded ritual experience in story detail into a calm three-step Say, Breathe, Reflect structure with resilient missing-field fallbacks, QA artifacts, and validation coverage while preserving Story → Ritual/Pause/Reflection → Quiz → Completion flow and existing schema.
 - **Primary track:** Product Experience
 - **Objective:** Deepen ritual moment quality through a clearer three-part micro-structure.
 - **Scope:** Refine ritual sequencing and copy framing for say/breathe/reflect within existing story loop.
