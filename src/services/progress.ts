@@ -25,13 +25,13 @@ function buildWeeklyProgressSummary(stories: ReturnType<typeof getVrindavanJourn
     completedDays === 0
       ? 'This week has just begun. One calm 10-minute story ritual today starts the Vrindavan rhythm.'
       : remainingDays === 0
-        ? 'Your child completed all seven Vrindavan days this week. Celebrate the values practiced and revisit favorite stories to keep the ritual warm.'
-        : `Your child completed ${completedDays} of 7 Vrindavan days this week. ${remainingDays} day${remainingDays === 1 ? '' : 's'} remain for a full family ritual week.`;
+        ? 'Your child completed the full 21-story Vrindavan path. Celebrate this milestone, revisit favorite stories, and keep the daily ritual gentle and warm.'
+        : `Your child completed ${completedDays} of 21 Vrindavan stories. ${remainingDays} stor${remainingDays === 1 ? 'y remains' : 'ies remain'} in the full path.`;
 
   return {
     completedDays,
     remainingDays,
-    completionLabel: `${completedDays}/7 days completed`,
+    completionLabel: `${completedDays}/21 stories completed`,
     practicedValues,
     parentSummary
   };
@@ -59,12 +59,12 @@ export async function getParentDashboardSnapshot() {
     latestRitualParentMeaning:
       latestStory?.ritual.parentMeaning ?? 'After your next story, you will see a gentle note about why this value matters in everyday family life.',
     latestReflectionPrompt: latestStory?.parentReflectionPrompt ?? 'After your next story, ask your child what value they practiced and where they can use it at home tonight.',
-    suggestedNextJourney: worldProgress.nextIncompleteStory?.story.title ?? 'Vrindavan path completed for now',
+    suggestedNextJourney: worldProgress.nextIncompleteStory?.story.title ?? 'Vrindavan 21-story path completed',
     dailyRitualCopy:
       worldProgress.isCompleted
-        ? 'You completed the current Vrindavan path. Revisit stories to keep the daily ritual warm and joyful.'
+        ? 'You completed the 21-story Vrindavan path. Revisit any story, repeat one small ritual, and choose one carrying word for the week.'
         : 'A calm 10-minute daily ritual is building beautifully—one story, one value, one reflection at a time.',
-    reflectionBridgeCopy: 'Use tonight’s conversation starter for a gentle 2-minute family reflection.',
+    reflectionBridgeCopy: worldProgress.isCompleted ? 'Your child has completed the 21-story Vrindavan path. Ask which value felt easiest, which felt hardest, and which one your family wants to practice this week.' : 'Use tonight’s conversation starter for a gentle 2-minute family reflection.',
     ritualLoopExplanation:
       'Daily ritual loop: Story (imagination) → Value (character) → Shloka/chant seed (memory) → Reflection (family conversation).',
     privacyPromise: 'Private by default on this device: local progress only, no ads, no public child profile, no leaderboard, and no open chat.',
