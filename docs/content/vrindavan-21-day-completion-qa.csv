@@ -1,0 +1,12 @@
+qaArea,surface,expectedBehavior,status,notes
+story 21 completion,story completion flow,Completing story 21 transitions cleanly through completion state,pass,Flow preserved with no schema changes
+full path completion message,child today screen,Full path card explicitly celebrates completion of all 21 stories,pass,Updated completion-state copy
+parent reflection,parent dashboard,Parent sees reflection-oriented completion guidance after full completion,pass,Prompt encourages calm family reflection
+revisit guidance,child today screen,Child can revisit stories and repeat one small ritual without pressure,pass,Gentle continuation options only
+progress dashboard integrity,parent dashboard,Progress totals and completion percent remain accurate,pass,No regression detected in snapshot rendering
+no streak pressure,child and parent copy,No streak anxiety language appears,pending_manual_qa,Validated by script and pending device pass
+no leaderboard competition,privacy and progress copy,No competitive or leaderboard framing appears,pass,Privacy copy unchanged
+no public sharing pressure,completion-state copy,No pressure to share publicly to prove completion,pass,Share pressure language not present
+story 1-21 reachability,world map and navigation,All 21 stories remain reachable in order,pending_manual_qa,Requires iPhone walkthrough
+layout sanity,child and parent screens,Completion text remains readable and not clipped,pending_manual_qa,Requires device visual pass
+runtime regression,overall app behavior,No red screen or blank screen from completion updates,pending_manual_qa,Requires runtime device verification

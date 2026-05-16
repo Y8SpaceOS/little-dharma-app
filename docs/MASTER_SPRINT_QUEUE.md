@@ -515,7 +515,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Daily 10-minute ritual habit
 - **Protected quality dimensions:** Parent trust, Child delight, Premium UI/UX taste, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added warm 21-story completion-state behavior across child/parent progress surfaces with gentle revisit/reflection guidance, plus Sprint 45 QA doc/CSV/validator and no schema/story-count/backend/dependency changes.
 - **Primary track:** Product Experience
 - **Objective:** Define and implement coherent completion-state behavior for the 21-day path.
 - **Scope:** Completion messaging, continuation guidance, and parent bridge updates for full-path completion.

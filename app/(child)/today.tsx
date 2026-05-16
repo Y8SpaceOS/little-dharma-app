@@ -33,8 +33,8 @@ export default function TodayScreen() {
     if (!nextStory) {
       const firstStory = getVrindavanJourneyPath()[0];
       setStorySlug(firstStory.story.slug);
-      setStoryTitle('Week 1 complete! You finished Vrindavan 🌟');
-      setStoryValue('All seven values practiced with love');
+      setStoryTitle('Vrindavan path complete! You finished all 21 stories 🌟');
+      setStoryValue('21 Little Dharma values practiced with love');
       setEarnedBadge(null);
       setStatus('path-completed');
       const carryingWord = await getLatestCarryingWord(getVrindavanJourneyPath());
@@ -118,7 +118,7 @@ export default function TodayScreen() {
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
         <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Vrindavan path complete' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
-        <Text style={styles.ritualTag}>{status === 'path-completed' ? 'Keep your 10-minute ritual glowing each day' : 'Story + value + shloka'}</Text>
+        <Text style={styles.ritualTag}>{status === 'path-completed' ? 'Your 10-minute ritual can continue gently, one calm day at a time' : 'Story + value + shloka'}</Text>
         {latestCarryingWord && (
           <View style={styles.carryingWordChip}>
             <Text style={styles.carryingWordLabel}>Carrying Word: {latestCarryingWord}</Text>
@@ -126,7 +126,7 @@ export default function TodayScreen() {
         )}
         {status === 'path-completed' && (
           <Text style={styles.completionCopy}>
-            You completed all 7 stories! Choose your next cozy step below.
+            You walked through 21 Little Dharma moments in Vrindavan. You can revisit any story, repeat one small ritual, and choose one carrying word for this week.
           </Text>
         )}
         {earnedBadge && <Text style={styles.badgeLine}>Earned badge: {earnedBadge}</Text>}
@@ -136,7 +136,7 @@ export default function TodayScreen() {
             <Link href='/(child)/worlds' style={styles.journeyCta}>{ctaLabel}</Link>
             <Link href='/(child)/treasures' style={styles.secondaryCta}>View My Treasures</Link>
             <Link href='/(parent)/dashboard' style={styles.secondaryCta}>Open Parent Dashboard</Link>
-            <Link href='/(child)/chant' style={styles.secondaryCta}>Continue today’s reflection</Link>
+            <Link href='/(child)/chant' style={styles.secondaryCta}>Repeat one small ritual</Link>
           </View>
         )}
       </View>

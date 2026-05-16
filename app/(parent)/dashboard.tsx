@@ -27,8 +27,8 @@ const initialSummary: ParentDashboardSummary = {
   privacyPromise: '',
   weeklyProgress: {
     completedDays: 0,
-    remainingDays: 7,
-    completionLabel: '0/7 days completed',
+    remainingDays: 21,
+    completionLabel: '0/21 stories completed',
     practicedValues: [] as string[],
     parentSummary: ''
   }
@@ -93,7 +93,7 @@ export default function DashboardScreen() {
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Weekly Vrindavan progress</Text>
           <Text style={styles.progressMain}>{summary.weeklyProgress.completionLabel}</Text>
-          <Text style={styles.progressSub}>{summary.weeklyProgress.remainingDays} of 7 days remaining this week</Text>
+          <Text style={styles.progressSub}>{summary.weeklyProgress.remainingDays} stories remaining in the full path</Text>
           <Text style={styles.detail}><Text style={styles.label}>Values practiced:</Text> {summary.weeklyProgress.practicedValues.length > 0 ? summary.weeklyProgress.practicedValues.join(', ') : 'Not yet practiced this week'}</Text>
           <Text style={styles.ritual}>{summary.weeklyProgress.parentSummary}</Text>
         </View>
