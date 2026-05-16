@@ -464,10 +464,11 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 42 — Vrindavan Week 2 Content Architecture
 - **Target quality level:** Q3 Private Beta Quality
 - **Sprint type:** Content Engine
-- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Primary quality dimension:** Content depth and authenticity
 - **Protected quality dimensions:** Content depth and authenticity, Parent trust, Child delight, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Produced Week 2 Vrindavan content architecture docs/CSV for planned stories 8–14 with value arcs, ritual/pause/quiz/parent/source-sensitivity briefs and Sprint 43 handoff checklist; no runtime app changes.
 - **Primary track:** Content Engine
 - **Objective:** Architect the second-week Vrindavan content plan before implementation.
 - **Scope:** Define story-order arc, value progression, ritual cadence, and continuity rules for stories 8–14.
