@@ -3,6 +3,8 @@
 ## Purpose
 Sprint 39 creates the first concrete, reviewable **master content inventory** for the 1,000+ story strategy. This sprint intentionally delivers a planning/index artifact, not runtime features, so the team can scale content depth with authenticity discipline before story production accelerates.
 
+> Note: Sprint 40 production pipeline now consumes this index as the controlled intake source for story production briefs and age-band drafting.
+
 ## Why this sprint is an index sprint (not 1,050 full stories)
 Writing 1,050 full experiences in one sprint would reduce quality and increase authenticity risk. Instead, Sprint 39 defines high-quality **BaseStoryIdea** units that each map to three planned age-band variants (`ages_3_5`, `ages_6_8`, `ages_9_12`). This locks strategic coverage and sequencing while preserving editorial review gates.
 
