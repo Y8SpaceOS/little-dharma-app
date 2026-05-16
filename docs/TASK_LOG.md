@@ -1,4 +1,14 @@
 # Task Log
+- 2026-05-16: Sprint 36 (Content Authenticity OS v1, Q3 Content Engine / Trust & Safety track) completed as a docs-only governance sprint.
+- 2026-05-16: Created `docs/CONTENT_AUTHENTICITY_OS.md` with official content labels, source-sensitivity tiers, sacred-figure protocol, scriptural/source-claim rules, parent-facing source-note rules, age-band adaptation standards, authenticity review workflow, controlled review statuses, QA checklist, red-flag triggers, and 1,000+ story governance requirements.
+- 2026-05-16: No runtime app behavior changed (no UI/navigation/runtime data/backend/auth/cloud/audio/sharing/analytics/dependency changes; `src/data/seed/vrindavan.ts` untouched).
+- 2026-05-16: This sprint protects the 1,000+ story ambition by enforcing authenticity governance so high-sensitivity content scales carefully while original/everyday content can scale faster without trust erosion.
+- 2026-05-16: Updated `docs/MASTER_SPRINT_QUEUE.md` to mark Sprint 36 done with completion note; Sprint 14 and Sprint 15 remain deferred/not started; Sprint 37 remains the next active not-started sprint.
+- 2026-05-16: Checks run: `npm ci` ✅, `npm run typecheck` ❌ (TypeScript libs/type definitions unresolved in this container), `npm run lint` ❌ (eslint runtime cannot resolve `../package.json` in this container), `npm run test` ✅.
+- 2026-05-16: Sprint 36 documentation stabilization pass corrected accidental historical gate drift across older sprint entries and preserved Sprint 36-only environment notes.
+- 2026-05-16: Merge-readiness note: GitHub Actions is the source of truth for gate status and is green before merge; Sprint 36 container-local typecheck/lint failures are documented as environment-specific observations only.
+
+
 - 2026-05-16: Sprint 29 stabilization pass: corrected governance drift in `docs/MASTER_SPRINT_QUEUE.md` by restoring Sprint 14 to deferred/not started placeholders and restoring Sprint 21 primary track to Content Engine; also updated Threshold v1 behavior so visibility is recomputed on Today screen focus and app foreground/active return (while preserving 30-minute local-only recent-return softening).
 - 2026-05-16: Sprint 29 was revised from “Chant & Sing Ritual Section v1” to “Threshold v1: Calm Arrival” based on final strategic roadmap feedback; implemented only revised Sprint 29 scope.
 - 2026-05-16: Sprint 29 (Threshold v1: Calm Arrival, Q2 Product Experience) completed: added a calm threshold entry overlay on `/(child)/today` with low-stimulation copy (“Let’s enter quietly.” / “A little story. A little stillness.” / “Begin today’s Little Dharma.”) and one clear primary action to enter the child journey.
