@@ -16,7 +16,9 @@ const initialSummary: ParentDashboardSummary = {
   latestCompletedStoryTitle: 'Loading...',
   latestEarnedBadge: 'Loading...',
   latestValueLearned: 'Loading...',
+  latestCarryingWord: 'Loading...',
   latestRitualCompleted: 'Loading...',
+  latestRitualParentMeaning: '',
   latestReflectionPrompt: 'Loading...',
   suggestedNextJourney: 'Loading...',
   dailyRitualCopy: '',
@@ -77,6 +79,18 @@ export default function DashboardScreen() {
 
 
         <View style={styles.card}>
+          <Text style={styles.sectionTitle}>Today&apos;s Mirror</Text>
+          <Text style={styles.mirrorTitle}>What your child practiced today</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Latest story:</Text> {summary.latestCompletedStoryTitle}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Value practiced:</Text> {summary.latestValueLearned}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Carrying Word:</Text> {summary.latestCarryingWord}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Badge earned:</Text> {summary.latestEarnedBadge}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Parent-child prompt:</Text> {summary.latestReflectionPrompt}</Text>
+          <Text style={styles.mirrorWhy}>{summary.latestRitualParentMeaning}</Text>
+          <Text style={styles.mirrorWhy}>Why this matters: short nightly reflection helps children carry values from story time into everyday choices with warmth and confidence.</Text>
+        </View>
+
+        <View style={styles.card}>
           <Text style={styles.sectionTitle}>Weekly Vrindavan progress</Text>
           <Text style={styles.progressMain}>{summary.weeklyProgress.completionLabel}</Text>
           <Text style={styles.progressSub}>{summary.weeklyProgress.remainingDays} of 7 days remaining this week</Text>
@@ -131,6 +145,8 @@ const styles = StyleSheet.create({
   progressSub: { color: '#5A6A92', fontWeight: '600' },
   ritual: { color: '#4F5F7C', fontStyle: 'italic', lineHeight: 22 },
   prompt: { color: '#24345E', fontSize: 16, lineHeight: 24, fontWeight: '600' },
+  mirrorTitle: { color: '#1F2F59', fontSize: 20, fontWeight: '800' },
+  mirrorWhy: { color: '#4F5F7C', lineHeight: 22, fontStyle: 'italic' },
   privacyCard: { backgroundColor: '#1E2C50', borderRadius: 22, padding: tokens.spacing.lg, gap: 8 },
   privacyTitle: { color: '#DCE8FF', fontWeight: '800', textTransform: 'uppercase', fontSize: 12, letterSpacing: 0.3 },
   privacyText: { color: '#FFFFFF', lineHeight: 22, fontSize: 15 },
