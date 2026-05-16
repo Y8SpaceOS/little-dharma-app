@@ -416,10 +416,11 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 39 — 1,000+ Story Master Index v1
 - **Target quality level:** Q3 Private Beta Quality
 - **Sprint type:** Content Engine
-- **Primary quality dimension:** Execution clarity
+- **Primary quality dimension:** Content depth and authenticity
 - **Protected quality dimensions:** Content depth and authenticity, Parent trust, Child delight
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Created Story Master Index v1 with 450 base ideas and machine-readable CSV coverage for 1,350 planned age-band experiences, including world/value/release/source distributions and candidate sets for private beta/public beta/paid v1 without runtime app changes.
 - **Primary track:** Content Engine
 - **Objective:** Build the first structured master index connecting base story ideas to age-band expansion logic.
 - **Scope:** Produce index framework, coverage targets by world/value, and editorial priority tiers.
