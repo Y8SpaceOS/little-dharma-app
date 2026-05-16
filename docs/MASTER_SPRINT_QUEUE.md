@@ -274,17 +274,18 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 28 — Bedtime Mode v1
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Protected quality dimensions:** Parent trust, Child delight, Premium UI/UX taste, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Product Experience
 - **Objective:** Introduce a calmer bedtime interaction mode for nightly ritual consistency.
 - **Scope:** Define bedtime mode behavior, visual tone adjustments, and transition entry/exit logic.
 - **Non-scope:** Audio narration build-out or sleep tracking features.
 - **Definition of done:** Bedtime mode is available, stable, and improves perceived calmness in QA sessions.
-- **Manual iPhone QA steps:** Enable bedtime mode on iPhone at journey start and validate readability, pacing, and navigation comfort.
+- **Manual iPhone QA steps:** Complete a story on iPhone, confirm Bedtime Mode entry point appears naturally on completion, open Bedtime Mode, verify calm readability and low-stimulation tone, verify value/reflection/breathing-or-gratitude/parent-child closing line, verify Read Again + Done for Today still work, verify My Treasures + Parent Dashboard + weekly progress + share card still work, and confirm no audio/notifications/public profile/leaderboard/chat/native sharing were introduced.
+- **Completion note:** Added a calm Bedtime Mode v1 surface from completion with a soft entry point and guided close-of-day ritual (value practiced, gentle reflection question, breathing/gratitude prompt, and parent-child closing line) while preserving Story → Ritual → Quiz → Completion flow and existing local progress/share surfaces.
 - **Category-defining product check focus:** Daily 10-minute ritual fit for real family bedtime contexts.
 
 ### Sprint 29 — Chant & Sing Ritual Section v1
