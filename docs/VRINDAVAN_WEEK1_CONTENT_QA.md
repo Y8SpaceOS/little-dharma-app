@@ -23,19 +23,19 @@ Scope: Existing Week 1 runtime stories in `src/data/seed/vrindavan.ts` only. No 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Krishna Shares Butter With Friends | `krishna-shares-butter` | Kindness | Clear sharing arc, concrete social behavior, gentle quiz language. | low | low | low | low | low | low | **share** fits well and is sticky for age 4–6. | Strong bedtime snack/household bridge; parent prompt is direct and non-judgmental. | Keep as-is. Optional future micro-edit: shorten panel 6 metaphor for youngest readers. | ready_for_private_beta |
 | Krishna Helps a Lost Calf | `krishna-helps-a-lost-calf` | Compassion | Models co-regulation (kneel, soothe, help), strong emotional safety. | low | low | low | low | low | low | **comfort** fits and maps to action. | Excellent mirror for bedtime reassurance and sibling comfort moments. | Keep as-is. Optional future source-note in docs only for phrase provenance confidence. | ready_for_private_beta |
-| Krishna Thanks the Yamuna | `krishna-thanks-the-yamuna` | Gratitude | Nature respect + gratitude + care action creates depth beyond manners. | low | low | medium (term “blessings” may be abstract for younger 4-year-olds) | low | low | low | **thankful** fits; very memorable. | Parent bridge is practical (name blessing + care action). | Minor copy refinement completed in runtime panel 6: “blessings” -> “good gifts” for age clarity. | minor_revision_needed (addressed in sprint) |
+| Krishna Thanks the Yamuna | `krishna-thanks-the-yamuna` | Gratitude | Nature respect + gratitude + care action creates depth beyond manners. | low | low | medium (term “blessings” may be abstract for younger 4-year-olds) | low | low | low | **thankful** fits; very memorable. | Parent bridge is practical (name blessing + care action). | Minor copy refinement completed in runtime panel 6: “blessings” -> “good gifts” for age clarity (resolved). | ready_for_private_beta |
 | Krishna Waits Under the Kadamba Tree | `krishna-waits-under-the-kadamba-tree` | Patience | Strong emotional-regulation modeling and body-based calming practice. | low | low | low | low | low | low | **breathe** fits and reinforces ritual habit. | Excellent bedtime carryover; parent prompt helps with daily wait moments. | Keep as-is. | ready_for_private_beta |
 | Krishna and the Broken Flute | `krishna-and-the-broken-flute` | Truthfulness | Honest repair framing avoids shame and supports relational trust. | low | low | low | low | low | low | **truth** fits; concrete and strong. | Parent reflection prompt is practical and non-judgmental. | Keep as-is. | ready_for_private_beta |
 | Krishna Builds a Rain Shelter With Friends | `krishna-builds-a-rain-shelter` | Cooperation | Team-role framing is concrete; avoids hero-only framing. | low | low | low | low | low | low | **together** fits and is easy to repeat. | Parent mirror (family roles) supports 10-minute ritual habit extension. | Keep as-is. | ready_for_private_beta |
 | Krishna and the Torn Garland | `krishna-and-the-torn-garland` | Forgiveness | Repair-centered forgiveness avoids minimization and blame. | low | low | low | low | low | low | **repair** fits better than abstract forgiveness for daily use. | Very strong bedtime mirror for apology + repair rituals. | Keep as-is. | ready_for_private_beta |
 
 ## Private Beta Readiness Summary
-- `ready_for_private_beta`: 6 stories
-- `minor_revision_needed`: 1 story (`krishna-thanks-the-yamuna`) — now addressed via small copy-safe refinement in this sprint.
+- `ready_for_private_beta`: 7 stories
+- `minor_revision_needed`: 0 stories
 - `major_revision_needed`: 0 stories
 - `blocked`: 0 stories
 
-Overall Week 1 classification: **ready_for_private_beta** after the one minor readability refinement.
+Overall Week 1 classification: **ready_for_private_beta**. Historical note: one minor readability refinement was identified and resolved in Sprint 41.
 
 ## Runtime Copy Refinements Made in Sprint 41
 Only one small schema-safe copy refinement was applied:
