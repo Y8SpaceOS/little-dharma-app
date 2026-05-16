@@ -304,20 +304,21 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Revised from the previously queued “Chant & Sing Ritual Section v1” to “Threshold v1: Calm Arrival” based on final strategic roadmap feedback; implemented a calm threshold overlay with local recent-return softening and no protected-scope regressions.
 - **Category-defining product check focus:** Calm ritual entry craft that strengthens daily habit without trust/safety regressions.
 
-### Sprint 30 — Soul Prototype Readiness Audit
+### Sprint 30 — Companion Architecture v1
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Child delight
+- **Protected quality dimensions:** Daily 10-minute ritual habit, Premium UI/UX taste, Parent trust, Safety/privacy, Content depth and authenticity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Assess Soul Prototype readiness against product, quality, safety, and growth criteria before next phase.
-- **Scope:** Run readiness checklist, compile gaps, prioritize remediation list, and baseline KPI instrumentation needs.
-- **Non-scope:** Large new feature implementation during audit sprint.
-- **Definition of done:** Audit report complete with go/no-go recommendation and prioritized next-sprint actions.
-- **Manual iPhone QA steps:** Execute full critical-path iPhone QA matrix and attach pass/fail evidence to audit notes.
-- **Category-defining product check focus:** Strategic readiness with no illusion of progress.
+- **Status:** done
+- **Primary track:** Product Experience
+- **Objective:** Introduce a lightweight original Little Dharma companion architecture that makes child journey moments warmer, calmer, and gently relational.
+- **Scope:** Add a text-only companion config module and integrate low-stimulation companion presence on Child Home/Today, Ritual Moment, Completion, and Bedtime Mode while preserving existing flow and privacy constraints.
+- **Non-scope:** Final companion art/branding canon, naming flows, child/parent name collection, audio/animation libs/backend/auth/cloud sync/native sharing/notifications/public profiles/leaderboards/chat/community.
+- **Definition of done:** Companion v1 appears in selected child-safe surfaces with short warm non-authoritative copy, and all protected flows/surfaces remain intact.
+- **Manual iPhone QA steps:** Open app fresh; validate Threshold v1; run Today → Story → Ritual → Quiz → Completion; open Bedtime Mode; verify companion copy calmness/privacy; regression-check Share Card, My Treasures, Parent Dashboard, and Weekly Progress.
+- **Completion note:** Revised from the old “Soul Prototype Readiness Audit” to “Companion Architecture v1” based on final strategic roadmap feedback; implemented text-only companion presence without sacred-figure risk, identity collection, audio, or heavy animation.
+- **Category-defining product check focus:** Child delight and ritual warmth without sacrificing parent trust, safety/privacy, and cultural respect.
 
 ### Sprint 31 — Content QA and Source-Note Model
 - **Target quality level:** Q3 Private Beta Quality

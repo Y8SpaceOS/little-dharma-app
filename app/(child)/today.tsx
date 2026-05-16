@@ -8,6 +8,7 @@ import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingSt
 import { getCompletedBadge, hasCompletedStory } from '@/lib/storyProgress';
 import { getTodaysJourney, getVrindavanJourneyPath } from '@/services/journeys';
 import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
+import { companionV1 } from '@/lib/companion';
 
 const actions = [
   { label: 'Explore Worlds', href: '/(child)/worlds', colors: ['#D9EDFF', '#C6E4FF'] },
@@ -100,6 +101,11 @@ export default function TodayScreen() {
       <Text style={styles.greeting}>Namaste, {nickname} ✨</Text>
       <Text style={styles.subtitle}>Choose your calm adventure for today.</Text>
 
+      <View style={styles.companionCard}>
+        <Text style={styles.companionEyebrow}>{companionV1.motif} {companionV1.displayLabel}</Text>
+        <Text style={styles.companionCopy}>{companionV1.copy.homeGreeting}</Text>
+      </View>
+
       <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
         <Text style={styles.journeyEyebrow}>Today&apos;s Journey</Text>
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
@@ -153,6 +159,11 @@ const styles = StyleSheet.create({
   screen: { flex: 1, padding: tokens.spacing.lg, backgroundColor: tokens.colors.cloud, gap: 10 },
   greeting: { fontSize: 30, fontWeight: '800', color: tokens.colors.textPrimary },
   subtitle: { fontSize: 17, color: '#5C4A3B', marginBottom: tokens.spacing.sm },
+
+  companionCard: { backgroundColor: '#FFF7EA', borderWidth: 1, borderColor: '#F1DDC2', borderRadius: 18, paddingHorizontal: 14, paddingVertical: 12, gap: 4, marginBottom: 2 },
+  companionEyebrow: { fontSize: 12, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8, color: '#8A6138' },
+  companionCopy: { fontSize: 15, lineHeight: 21, color: '#5E4631', fontWeight: '600' },
+
   metaLine: { fontSize: 14, color: '#6A513D', marginTop: 4 },
   grid: { gap: tokens.spacing.sm },
   card: { fontSize: 20, fontWeight: '700', borderRadius: 24, padding: tokens.spacing.lg, minHeight: 96, overflow: 'hidden', color: '#3F2B1D' },
