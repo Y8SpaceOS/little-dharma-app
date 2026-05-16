@@ -54,6 +54,8 @@ export async function getParentDashboardSnapshot() {
     latestEarnedBadge: latestStory?.badgeName ?? 'No badge yet',
     latestValueLearned: latestStory?.value ?? 'No value completed yet',
     latestRitualCompleted: latestStory?.ritual.microShlokaTitle ?? 'No ritual completed yet',
+    latestRitualParentMeaning:
+      latestStory?.ritual.parentMeaning ?? 'After your next story, you will see a gentle note about why this value matters in everyday family life.',
     latestReflectionPrompt: latestStory?.parentReflectionPrompt ?? 'After your next story, ask your child what value they practiced and where they can use it at home tonight.',
     suggestedNextJourney: worldProgress.nextIncompleteStory?.story.title ?? 'Vrindavan path completed for now',
     dailyRitualCopy:

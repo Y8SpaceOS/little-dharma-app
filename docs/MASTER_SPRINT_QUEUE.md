@@ -352,20 +352,21 @@ Status legend: `not started`, `in progress`, `done`.
 - **Manual iPhone QA steps:** Run Threshold → Today’s Journey → Story → Ritual → Pause → Quiz → Completion; verify carrying word copy/value mapping plus Child Home/My Treasures visibility and no regressions to Bedtime Mode, Share Card, Parent Dashboard, Weekly Progress, and privacy constraints.
 - **Category-defining product check focus:** Ritual carry-forward clarity that strengthens daily habit while preserving private-by-default parent trust.
 
-### Sprint 33 — Parent-Facing Why This Story Matters
+### Sprint 33 — Parent Dashboard: Today’s Mirror v1
 - **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Parent trust
+- **Protected quality dimensions:** Daily 10-minute ritual habit, Content depth and authenticity, Premium UI/UX taste, Safety/privacy, Child delight
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
-- **Primary track:** Trust & Safety
-- **Objective:** Deliver parent-facing why this story matters as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the parent-facing why this story matters increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Parent-Facing Why This Story Matters meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How parent-facing why this story matters improves delight, trust, ritual consistency, safety, and future monetisation readiness.
+- **Status:** done
+- **Completion note:** Revised Sprint 33 scope based on final strategic roadmap feedback and upgraded Parent Dashboard with a Today’s Mirror section that reflects latest story/value/carrying word/badge plus a warm parent-child prompt and gentle meaning using existing local data only.
+- **Primary track:** Product Experience
+- **Objective:** Turn Parent Dashboard into Today’s Mirror v1 so parents can quickly understand what was practiced and what to ask tonight.
+- **Scope:** Update Parent Dashboard with a new Today’s Mirror section powered by existing local story completion data including latest story, value practiced, carrying word, badge, parent-child prompt, and why-this-matters explanation.
+- **Non-scope:** Backend/auth/cloud sync, notifications, native sharing, analytics, AI text generation, new stories, audio, child/parent name collection, public profiles, leaderboards, chat/community.
+- **Definition of done:** Parent Dashboard surfaces warm, useful nightly reflection context while preserving weekly progress, privacy reassurance, local-only behavior, and existing navigation.
+- **Manual iPhone QA steps:** Run Threshold → Story → Ritual → Pause → Quiz → Completion; open Parent Dashboard and verify Today’s Mirror values/prompt, weekly progress, privacy reassurance, and regressions for Share Card, Bedtime Mode, My Treasures / Words I Carry, and Child Home.
+- **Category-defining product check focus:** Parent trust and ritual carry-forward clarity without privacy regressions or expanded data collection.
 
 ### Sprint 34 — Ganesha World Shell
 - **Target quality level:** Q3 Private Beta Quality
