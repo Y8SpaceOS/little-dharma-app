@@ -341,7 +341,7 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 34 — Roadmap Reconciliation + Content Scale Rebase
 - **Target quality level:** Q3 Private Beta Quality
 - **Sprint type:** Platform Foundation
-- **Primary quality dimension:** Content depth and authenticity
+- **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Historical sprint integrity, Safety/privacy, Content depth and authenticity, Child delight, Premium UI/UX taste, Existing app behavior
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** done

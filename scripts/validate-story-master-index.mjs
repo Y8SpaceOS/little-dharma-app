@@ -17,7 +17,10 @@ let total=0;
 for(let i=1;i<lines.length;i++){
   const row=parseLine(lines[i]);
   for(const c of ['baseStoryId','primaryValue','contentWorld','contentLabel','sourceSensitivityTier','reviewStatus','releasePhase','parentSourceNote']) if(!row[ix[c]]?.trim()) fail(`Row ${i+1} missing ${c}`);
-  total += Number(row[ix.plannedExperienceCount]||0);
+  const plannedRaw = row[ix.plannedExperienceCount]?.trim();
+  const planned = Number(plannedRaw);
+  if (!Number.isFinite(planned) || planned < 1) fail(`Row ${i + 1} has invalid plannedExperienceCount: ${plannedRaw}`);
+  total += planned;
 }
 if(total<1050) fail(`Expected plannedExperienceCount total >= 1050, got ${total}`);
 console.log(`✅ story-master-index-v1.csv validation passed (rows=${lines.length-1}, planned=${total})`);
