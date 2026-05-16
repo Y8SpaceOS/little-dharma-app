@@ -387,7 +387,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Content depth and authenticity, Parent trust, Existing app behavior, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added `docs/CONTENT_DATA_MODEL_V2.md` as a docs-only v2 schema planning spec covering entities, required fields, enums, validation rules, submodels, migration staging, and 1,000+ scale alignment without runtime changes.
 - **Primary track:** Platform Foundations
 - **Objective:** Specify the v2 content model needed for scale planning without implementing runtime migrations yet.
 - **Scope:** Define required schema fields for age-band variants, authenticity metadata, ritual metadata, and sequencing identifiers.

@@ -1,4 +1,14 @@
 # Task Log
+
+- 2026-05-16: Sprint 37 (Content Data Model v2, Q3 Platform Foundation) completed as a docs-only architecture sprint.
+- 2026-05-16: Created `docs/CONTENT_DATA_MODEL_V2.md` defining the future Content Data Model v2 (entities, required fields, allowed values, value taxonomy rules, ritual/pause/quiz/parent/bedtime submodels, validation rules, staged migration approach, illustrative interfaces, and one illustrative Vrindavan StoryExperience record).
+- 2026-05-16: No runtime app behavior changed (no UI/navigation/runtime story-schema implementation/backend/auth/cloud sync/audio/sharing/analytics/dependency changes; `src/data/seed/vrindavan.ts` untouched; no existing story data migrated).
+- 2026-05-16: Sprint 37 output supports the long-term 1,000+ story ambition while preserving current Story → Ritual → Pause → Quiz → Completion runtime flow.
+- 2026-05-16: Updated `docs/MASTER_SPRINT_QUEUE.md` to mark Sprint 37 done with concise completion note; Sprint 14 and Sprint 15 remain deferred/not started; Sprint 38 remains the next active not-started sprint.
+- 2026-05-16: Checks run: `npm ci` ✅, `npm run typecheck` ❌ (TypeScript global/lib + type-definition resolution issue in this container), `npm run lint` ❌ (eslint runtime cannot resolve `../package.json` in this container), `npm run test` ✅.
+- 2026-05-16: Sprint 37 stabilization corrected accidental historical gate drift and preserved Sprint 37-only environment notes.
+- 2026-05-16: Merge-readiness note: GitHub Actions is the source of truth for gate status and is green before merge; Sprint 37 container-local typecheck/lint failures are documented as environment-specific observations only.
+- 2026-05-16: Sprint 37 stabilization pass corrected remaining historical gate drift (including Sprint 33 and Sprint 34 check-line regressions) and aligned Content Data Model v2 field contracts (`sourceNote`/`parentSourceNote` and reviewer metadata requiredness) while preserving Sprint 37-only environment notes.
 - 2026-05-16: Sprint 36 (Content Authenticity OS v1, Q3 Content Engine / Trust & Safety track) completed as a docs-only governance sprint.
 - 2026-05-16: Created `docs/CONTENT_AUTHENTICITY_OS.md` with official content labels, source-sensitivity tiers, sacred-figure protocol, scriptural/source-claim rules, parent-facing source-note rules, age-band adaptation standards, authenticity review workflow, controlled review statuses, QA checklist, red-flag triggers, and 1,000+ story governance requirements.
 - 2026-05-16: No runtime app behavior changed (no UI/navigation/runtime data/backend/auth/cloud/audio/sharing/analytics/dependency changes; `src/data/seed/vrindavan.ts` untouched).
