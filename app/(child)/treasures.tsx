@@ -3,20 +3,26 @@ import { Link } from 'expo-router';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
-import { getAllStoryCompletions, type StoryCompletionRecord } from '@/lib/storyProgress';
+import { getAllStoryCompletions, getCompletedCarryingWords, type StoryCompletionRecord } from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
 
 export default function TreasuresScreen() {
   const [completions, setCompletions] = useState<StoryCompletionRecord>({});
+  const [wordsICarry, setWordsICarry] = useState<string[]>([]);
 
   const refreshTreasures = useCallback(async () => {
     const stored = await getAllStoryCompletions();
     setCompletions(stored);
+    const words = await getCompletedCarryingWords(getVrindavanJourneyPath());
+    setWordsICarry(Array.from(new Set(words)));
   }, []);
 
   useFocusEffect(
     useCallback(() => {
-      refreshTreasures().catch(() => setCompletions({}));
+      refreshTreasures().catch(() => {
+        setCompletions({});
+        setWordsICarry([]);
+      });
     }, [refreshTreasures])
   );
 
@@ -64,6 +70,22 @@ export default function TreasuresScreen() {
             })}
           </View>
         )}
+
+
+        <View style={styles.wordsCard}>
+          <Text style={styles.wordsTitle}>Words I Carry</Text>
+          {wordsICarry.length === 0 ? (
+            <Text style={styles.wordsEmpty}>Complete a story and your first carrying word will appear here.</Text>
+          ) : (
+            <View style={styles.wordsWrap}>
+              {wordsICarry.map((word) => (
+                <View key={word} style={styles.wordChip}>
+                  <Text style={styles.wordChipText}>{word}</Text>
+                </View>
+              ))}
+            </View>
+          )}
+        </View>
 
         <Text style={styles.privacyNote}>Only your family can see this. No leaderboard, no public profile, just your own beautiful growth.</Text>
         <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>

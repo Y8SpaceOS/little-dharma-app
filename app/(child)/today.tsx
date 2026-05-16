@@ -5,7 +5,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { tokens } from '@/design/tokens';
 import { trackEvent } from '@/lib/analytics';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
-import { getCompletedBadge, hasCompletedStory } from '@/lib/storyProgress';
+import { getCompletedBadge, getLatestCarryingWord, hasCompletedStory } from '@/lib/storyProgress';
 import { getTodaysJourney, getVrindavanJourneyPath } from '@/services/journeys';
 import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
 import { companionV1 } from '@/lib/companion';
@@ -25,6 +25,7 @@ export default function TodayScreen() {
   const [storyTitle, setStoryTitle] = useState('Krishna Shares Butter With Friends');
   const [storyValue, setStoryValue] = useState('Kindness');
   const [showThreshold, setShowThreshold] = useState(false);
+  const [latestCarryingWord, setLatestCarryingWord] = useState<string | null>(null);
 
   const refreshJourneyCard = useCallback(async () => {
     const nextStory = await getTodaysJourney();
@@ -36,6 +37,8 @@ export default function TodayScreen() {
       setStoryValue('All seven values practiced with love');
       setEarnedBadge(null);
       setStatus('path-completed');
+      const carryingWord = await getLatestCarryingWord(getVrindavanJourneyPath());
+      setLatestCarryingWord(carryingWord);
       return;
     }
 
@@ -45,6 +48,9 @@ export default function TodayScreen() {
     const completed = await hasCompletedStory(nextStory.story.slug);
     setStatus(completed ? 'completed' : 'ready');
     setEarnedBadge(completed ? await getCompletedBadge(nextStory.story.slug) : null);
+
+    const carryingWord = await getLatestCarryingWord(getVrindavanJourneyPath());
+    setLatestCarryingWord(carryingWord);
   }, []);
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || 'Little One')), []);
@@ -59,6 +65,7 @@ export default function TodayScreen() {
     refreshJourneyCard().catch(() => {
       setStatus('ready');
       setEarnedBadge(null);
+      setLatestCarryingWord(null);
     });
 
     refreshThresholdVisibility();
@@ -112,6 +119,11 @@ export default function TodayScreen() {
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
         <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Vrindavan path complete' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
         <Text style={styles.ritualTag}>{status === 'path-completed' ? 'Keep your 10-minute ritual glowing each day' : 'Story + value + shloka'}</Text>
+        {latestCarryingWord && (
+          <View style={styles.carryingWordChip}>
+            <Text style={styles.carryingWordLabel}>Carrying Word: {latestCarryingWord}</Text>
+          </View>
+        )}
         {status === 'path-completed' && (
           <Text style={styles.completionCopy}>
             You completed all 7 stories! Choose your next cozy step below.

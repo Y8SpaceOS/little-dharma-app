@@ -78,7 +78,7 @@ export default function StoryScreen() {
     trackEvent('quiz_completed', { storySlug: story.slug, correct });
     trackEvent('badge_earned', { badge: story.badgeName, storySlug: story.slug });
     trackEvent('story_completed', { storySlug: story.slug });
-    await markStoryComplete(story.slug, story.badgeName);
+    await markStoryComplete(story.slug, story.badgeName, story.value);
   };
 
   return (
@@ -253,6 +253,13 @@ export default function StoryScreen() {
             <Text style={styles.parentPrompt}>For Parent: {story.parentReflectionPrompt}</Text>
             <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
             <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
+
+
+            <View style={styles.carryingWordCard}>
+              <Text style={styles.carryingWordEyebrow}>Carrying Word</Text>
+              <Text style={styles.carryingWordTitle}>Today you carry: {story.value}</Text>
+              <Text style={styles.carryingWordCopy}>Carry this word gently today.</Text>
+            </View>
 
             <View style={styles.companionInlineCard}>
               <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
