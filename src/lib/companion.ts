@@ -3,7 +3,7 @@ export const companionV1 = {
   displayLabel: 'Little Dharma Guide',
   motif: '✧',
   copy: {
-    homeGreeting: 'You came in quietly.',
+    homeGreeting: "Hi, I'm your Companion. Today we can take one small Journey together.",
     ritualEncouragement: 'Let’s sit with the story.',
     completion: 'You stayed with the feeling.',
     carryForward: 'Carry this value gently today.',
