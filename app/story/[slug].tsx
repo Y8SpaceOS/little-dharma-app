@@ -7,7 +7,9 @@ import { tokens } from '@/design/tokens';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
 import { companionV1 } from '@/lib/companion';
 
-type Stage = 'story' | 'ritual' | 'quiz' | 'complete' | 'bedtime';
+type Stage = 'story' | 'ritual' | 'pause' | 'quiz' | 'complete' | 'bedtime';
+
+const PAUSE_DURATION_MS = 13000;
 
 export default function StoryScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -61,6 +63,12 @@ export default function StoryScreen() {
   ];
 
   const bedtimeClosingLine = `Parent: “I saw ${story.value.toLowerCase()} in you tonight.” Child: “Tomorrow I will practice it again with a calm heart.”`;
+
+  useEffect(() => {
+    if (stage !== 'pause') return;
+    const timer = setTimeout(() => setStage('quiz'), PAUSE_DURATION_MS);
+    return () => clearTimeout(timer);
+  }, [stage]);
 
   const onQuizSubmit = async () => {
     if (!selectedAnswer) return;
@@ -156,9 +164,27 @@ export default function StoryScreen() {
               </View>
               <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round(story.ritual.suggestedPracticeDurationSeconds / 60))} minute{story.ritual.suggestedPracticeDurationSeconds >= 120 ? 's' : ''}.</Text>
             </View>
-            <Pressable style={styles.button} onPress={() => setStage('quiz')}>
+            <Pressable style={styles.button} onPress={() => setStage('pause')}>
               <Text style={styles.buttonText}>Continue to Quiz</Text>
             </Pressable>
+          </View>
+        )}
+
+        {stage === 'pause' && (
+          <View style={styles.pauseCard}>
+            <Text style={styles.pauseEyebrow}>Quiet Pause</Text>
+            <View style={styles.pauseGlowWrap}>
+              <View style={styles.pauseGlowOuter}>
+                <View style={styles.pauseGlowInner} />
+              </View>
+            </View>
+            <Text style={styles.pauseTitle}>Let&apos;s sit with the story.</Text>
+            <Text style={styles.pauseLine}>Take one quiet breath.</Text>
+            <Text style={styles.pauseLine}>What did your heart notice?</Text>
+            <View style={styles.companionInlineCard}>
+              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
+              <Text style={styles.companionInlineCopy}>{companionV1.copy.ritualEncouragement}</Text>
+            </View>
           </View>
         )}
 
@@ -354,6 +380,13 @@ const styles = StyleSheet.create({
   ritualMeaning: { fontSize: 17, lineHeight: 26, color: '#5C4330' },
   ritualPromptText: { fontSize: 16, lineHeight: 24, color: '#5C4330' },
   ritualDuration: { fontSize: 13, color: '#7A644C', fontWeight: '700', marginTop: 2 },
+  pauseCard: { marginTop: 4, borderRadius: 24, borderWidth: 1, borderColor: '#D8CBB9', backgroundColor: '#F6EFE5', padding: tokens.spacing.lg, gap: 14, alignItems: 'center' },
+  pauseEyebrow: { fontSize: 12, color: '#8A6B4D', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },
+  pauseGlowWrap: { alignItems: 'center', justifyContent: 'center', marginTop: 2 },
+  pauseGlowOuter: { width: 122, height: 122, borderRadius: 61, backgroundColor: '#EEDAC2', alignItems: 'center', justifyContent: 'center' },
+  pauseGlowInner: { width: 72, height: 72, borderRadius: 36, backgroundColor: '#FFF5E7' },
+  pauseTitle: { fontSize: 28, color: '#3E2A1A', fontWeight: '800', textAlign: 'center', lineHeight: 34 },
+  pauseLine: { fontSize: 18, color: '#6A4F37', fontWeight: '600', textAlign: 'center', lineHeight: 25 },
   ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' },
   bedtimeButton: { borderRadius: 14, borderWidth: 1, borderColor: '#C8BADF', backgroundColor: '#F4EEFF', paddingVertical: 11, alignItems: 'center' },
   bedtimeButtonText: { fontSize: 15, fontWeight: '700', color: '#4E3A73' },
