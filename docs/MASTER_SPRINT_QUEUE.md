@@ -7,7 +7,7 @@ Status legend: `not started`, `in progress`, `done`.
 ## Soul Prototype
 
 ### Sprint 11 — Execution OS and Master Sprint Queue
-- **Status:** not started
+- **Status:** done
 - **Completion note:** Added execution OS docs, Codex runner, PR template, iPhone QA loop, content quality bar, and sprint queue.
 - **Primary track:** Platform Foundations
 - **Objective:** Codify Codex execution OS and durable sprint governance artifacts for deterministic one-sprint delivery.

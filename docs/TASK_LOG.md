@@ -210,3 +210,5 @@
 - Next sprint recommendation: Sprint 29 — Chant & Sing Ritual Section v1.
 
 - 2026-05-16: Sprint 28 governance stabilization pass: corrected accidental documentation drift by restoring Sprint 14 in `docs/MASTER_SPRINT_QUEUE.md` to deferred placeholders with `Status: not started`, leaving Sprint 15 unchanged, and restoring Sprint 23 historical TASK_LOG gate results to successful `npm ci`/`typecheck`/`lint`/`test` wording.
+
+- 2026-05-16: Final Sprint 28 governance stabilization pass: restored Sprint 11 status to `done` in `docs/MASTER_SPRINT_QUEUE.md` while preserving Sprint 11 completion metadata, keeping Sprint 14 and Sprint 15 deferred/not started, and leaving Sprint 28 marked done.
