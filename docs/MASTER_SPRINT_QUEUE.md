@@ -225,11 +225,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 25 — Parent-Safe Share Card v1
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Growth Loop
+- **Primary quality dimension:** Parent-safe shareability
+- **Protected quality dimensions:** Parent trust, Premium UI/UX taste, Daily 10-minute ritual habit, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded the story completion surface with a premium screenshot-friendly Little Dharma parent-safe share card that summarizes completed story, practiced value, badge earned, ritual reflection, and privacy-safe family copy without exposing child identifiers or adding native sharing/public-social features.
 - **Primary track:** Growth Loops
 - **Objective:** Design a trustworthy share-card artifact optimized for parent-to-parent private sharing moments.
 - **Scope:** Define v1 share card content schema, privacy-safe defaults, and export-ready placeholder constraints.
