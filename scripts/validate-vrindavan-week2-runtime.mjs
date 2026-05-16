@@ -54,13 +54,39 @@ if (!csv) fail('QA CSV is empty.');
 const lines = csv.split(/\r?\n/);
 if (lines.length < 2) fail('QA CSV must include header plus 7 rows.');
 
-const headers = lines[0].split(',').map((h) => h.trim());
+function parseCsvLine(line) {
+  const cells = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i += 1) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (ch === ',' && !inQuotes) {
+      cells.push(current.trim());
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+
+  cells.push(current.trim());
+  return cells;
+}
+
+const headers = parseCsvLine(lines[0]);
 for (const col of requiredColumns) {
   if (!headers.includes(col)) fail(`Missing required column: ${col}`);
 }
 
 const rows = lines.slice(1).map((line) => {
-  const values = line.split(',');
+  const values = parseCsvLine(line);
   const row = {};
   headers.forEach((header, idx) => {
     row[header] = (values[idx] ?? '').trim();
