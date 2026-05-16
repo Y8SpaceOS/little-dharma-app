@@ -355,7 +355,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Content depth and authenticity
 - **Protected quality dimensions:** Parent trust, Daily 10-minute ritual habit, Safety/privacy, Premium UI/UX taste, Historical sprint integrity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Created `docs/CONTENT_UNIVERSE_MAP.md` v1 with world taxonomy, source-sensitivity tiers, age-band strategy, sequencing, and 1,000+ experience scale targets; sprint remained docs-only with no runtime behavior changes.
 - **Primary track:** Content Engine
 - **Objective:** Establish the canonical map of Little Dharma’s first scalable content universe before adding more runtime content.
 - **Scope:** Define taxonomy for worlds, value arcs, ritual formats, and progression lanes; document sequencing rules and coverage gaps.
