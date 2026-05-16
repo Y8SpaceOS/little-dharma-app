@@ -239,24 +239,26 @@ Status legend: `not started`, `in progress`, `done`.
 - **Manual iPhone QA steps:** Complete a journey on iPhone and verify share-card content shows private-family-safe language.
 - **Category-defining product check focus:** Shareable moment potential without compromising child safety.
 
-### Sprint 26 — Native Parent Sharing v1
+### Sprint 26 — Share Card QA + Screenshot Polish
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Growth Loop
+- **Primary quality dimension:** Parent-safe shareability
+- **Protected quality dimensions:** Parent trust, Premium UI/UX taste, Safety/privacy, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Growth Loops
-- **Objective:** Enable parent-initiated native sharing flow that preserves privacy and consent boundaries.
-- **Scope:** Implement controlled native share trigger from parent-safe completion context with sanitized payload.
-- **Non-scope:** Auto-sharing, child-operated sharing, or social graph integrations.
-- **Definition of done:** Parents can trigger native share intentionally; payload excludes sensitive child identifiers.
-- **Manual iPhone QA steps:** Test native share sheet on iPhone from completion card and validate safe text/image payload.
-- **Category-defining product check focus:** Growth with trust-first guardrails.
+- **Completion note:** Polished the existing parent-safe screenshot share card with improved spacing, hierarchy, and line-wrapping readability for iPhone while preserving screenshot-only guidance and privacy-safe non-identifying content.
+- **Objective:** Polish the parent-safe share card so it is screenshot-friendly, visually premium, privacy-safe, and readable on iPhone before any native sharing is introduced.
+- **Scope:** Improve share card visual layout, hierarchy, spacing, and label readability while preserving existing completion actions and local progress update behavior.
+- **Non-scope:** Native share APIs, backend/auth/cloud sync, public profiles, leaderboards, chat/community, analytics.
+- **Definition of done:** Completion share card feels premium and screenshot-ready on iPhone without exposing child personal data or introducing public/social surfaces.
+- **Manual iPhone QA steps:** Complete a story, review completion share card readability on iPhone, confirm no personal child data shown, verify Read Again + Done for Today, and verify My Treasures + Parent Dashboard still update.
+
+- **Category-defining product check focus:** Parent-led private sharing readiness with trust-first guardrails.
 
 ### Sprint 27 — Grandparent Share Copy Variants
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
+- **Sprint type:** Growth Loop
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
