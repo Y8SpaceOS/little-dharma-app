@@ -51,11 +51,11 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 14 — Test Harness Reliability and Coverage Targets
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Protected quality dimensions:** Child delight, Premium UI/UX taste, Parent trust, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Platform Foundations
 - **Objective:** Strengthen automated confidence by making the test harness stable and defining meaningful coverage targets.
 - **Scope:** Stabilize test runner behavior, define critical flow coverage targets, and document test taxonomy (smoke/unit/integration).
@@ -167,7 +167,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** done
 - **Completion note:** Added three new ritual-ready Vrindavan packets (gratitude, patience, truthfulness) with child-safe story/ritual/quiz/badge/parent-bridge content integrated into existing journey progression, Explore path, Treasures badges, and Parent Dashboard summaries via existing local progress flow.
-- **Primary track:** Content Engine
+- **Primary track:** Product Experience
 - **Objective:** Expand content depth within existing world while preserving quality and safety governance.
 - **Scope:** Create three additional structured Vrindavan story packets with ritual, quiz, badge, and parent bridge fields.
 - **Non-scope:** New world launch, external CMS, or bulk low-quality content ingestion.
@@ -288,20 +288,21 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Added a calm Bedtime Mode v1 surface from completion with a soft entry point and guided close-of-day ritual (value practiced, gentle reflection question, breathing/gratitude prompt, and parent-child closing line) while preserving Story → Ritual → Quiz → Completion flow and existing local progress/share surfaces.
 - **Category-defining product check focus:** Daily 10-minute ritual fit for real family bedtime contexts.
 
-### Sprint 29 — Chant & Sing Ritual Section v1
+### Sprint 29 — Threshold v1: Calm Arrival
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Protected quality dimensions:** Child delight, Premium UI/UX taste, Parent trust, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Add a dedicated chant-and-sing ritual section pattern while preserving attribution integrity.
-- **Scope:** Define data contract and UI slot for chant/sing moments including transliteration and parent meaning notes.
-- **Non-scope:** Streaming music catalog or broad audio library production.
-- **Definition of done:** Chant/ritual section pattern is implemented for pilot stories with policy-compliant labeling.
-- **Manual iPhone QA steps:** Run chant section in supported stories on iPhone and validate comprehension and safety copy.
-- **Category-defining product check focus:** Cultural identity depth + child delight through participatory ritual.
+- **Status:** done
+- **Primary track:** Product Experience
+- **Objective:** Add a calm Threshold v1 entry moment so opening Little Dharma feels like entering a quiet ritual space before Today's Journey.
+- **Scope:** Add a lightweight, low-stimulation entry surface before the child journey using existing UI primitives and local-only behavior, with optional recent-return softening.
+- **Non-scope:** First-launch onboarding, child/parent name collection, Dharmi/companion naming, audio/chime/notifications, native sharing, backend/auth/cloud sync, and new dependencies.
+- **Definition of done:** Threshold v1 appears calmly before child entry, offers a single clear enter action, preserves all existing flows, and remains private/local-only.
+- **Manual iPhone QA steps:** Open app fresh, verify Threshold v1 appears and feels calm, tap entry action into child journey, background/return to validate non-annoying behavior (including recent-return softening if present), then run Story → Ritual → Quiz → Completion plus Bedtime Mode, Share Card, My Treasures, Parent Dashboard, and Weekly Progress regressions.
+- **Completion note:** Revised from the previously queued “Chant & Sing Ritual Section v1” to “Threshold v1: Calm Arrival” based on final strategic roadmap feedback; implemented a calm threshold overlay with local recent-return softening and no protected-scope regressions.
+- **Category-defining product check focus:** Calm ritual entry craft that strengthens daily habit without trust/safety regressions.
 
 ### Sprint 30 — Soul Prototype Readiness Audit
 - **Target quality level:** Q2 Soul Prototype

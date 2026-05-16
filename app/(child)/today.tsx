@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'expo-router';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { tokens } from '@/design/tokens';
 import { trackEvent } from '@/lib/analytics';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 import { getCompletedBadge, hasCompletedStory } from '@/lib/storyProgress';
 import { getTodaysJourney, getVrindavanJourneyPath } from '@/services/journeys';
+import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
 
 const actions = [
   { label: 'Explore Worlds', href: '/(child)/worlds', colors: ['#D9EDFF', '#C6E4FF'] },
@@ -22,6 +23,7 @@ export default function TodayScreen() {
   const [storySlug, setStorySlug] = useState<string | null>(null);
   const [storyTitle, setStoryTitle] = useState('Krishna Shares Butter With Friends');
   const [storyValue, setStoryValue] = useState('Kindness');
+  const [showThreshold, setShowThreshold] = useState(false);
 
   const refreshJourneyCard = useCallback(async () => {
     const nextStory = await getTodaysJourney();
@@ -50,6 +52,10 @@ export default function TodayScreen() {
       setStatus('ready');
       setEarnedBadge(null);
     });
+
+    shouldShowThreshold()
+      .then((shouldShow) => setShowThreshold(shouldShow))
+      .catch(() => setShowThreshold(true));
   }, [refreshJourneyCard]);
 
   useFocusEffect(
@@ -64,6 +70,11 @@ export default function TodayScreen() {
   trackEvent('app_opened');
 
   const ctaLabel = status === 'path-completed' ? 'Revisit Vrindavan Stories' : status === 'completed' ? 'Continue Vrindavan Path' : "Start Today's Journey";
+
+  const enterChildJourney = useCallback(() => {
+    setShowThreshold(false);
+    markThresholdEntered().catch(() => undefined);
+  }, []);
 
   return (
     <SafeAreaView style={styles.screen}>
@@ -101,6 +112,20 @@ export default function TodayScreen() {
         ))}
       </View>
       <Link href='/(parent)/dashboard' style={styles.parentPortal}>Parent Space</Link>
+
+      {showThreshold && (
+        <View style={styles.thresholdOverlay}>
+          <View style={styles.thresholdCard}>
+            <Text style={styles.thresholdIcon}>🪔</Text>
+            <Text style={styles.thresholdTitle}>Let’s enter quietly.</Text>
+            <Text style={styles.thresholdCopy}>A little story. A little stillness.</Text>
+            <Text style={styles.thresholdCopy}>Begin today’s Little Dharma.</Text>
+            <Pressable onPress={enterChildJourney} style={styles.thresholdButton} accessibilityRole='button'>
+              <Text style={styles.thresholdButtonText}>Enter Today’s Journey</Text>
+            </Pressable>
+          </View>
+        </View>
+      )}
     </SafeAreaView>
   );
 }
@@ -123,5 +148,36 @@ const styles = StyleSheet.create({
   journeyCta: { marginTop: 10, alignSelf: 'flex-start', backgroundColor: '#E78739', color: '#FFFFFF', fontWeight: '800', fontSize: 16, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
   completeActionsWrap: { marginTop: 2, gap: 8 },
   secondaryCta: { alignSelf: 'flex-start', backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: '#9BCDAA', color: '#2F5D3E', fontWeight: '700', fontSize: 15, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 9, overflow: 'hidden' },
-  parentPortal: { marginTop: 'auto', textAlign: 'center', color: tokens.colors.peacock, fontWeight: '700', fontSize: 16 }
+  parentPortal: { marginTop: 'auto', textAlign: 'center', color: tokens.colors.peacock, fontWeight: '700', fontSize: 16 },
+  thresholdOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(246, 236, 225, 0.95)',
+    justifyContent: 'center',
+    padding: tokens.spacing.lg
+  },
+  thresholdCard: {
+    backgroundColor: '#FFF9F1',
+    borderRadius: 30,
+    borderWidth: 1,
+    borderColor: '#E8D7C2',
+    paddingVertical: 28,
+    paddingHorizontal: 22,
+    alignItems: 'center',
+    shadowColor: '#A57B49',
+    shadowOpacity: 0.14,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 4
+  },
+  thresholdIcon: { fontSize: 32 },
+  thresholdTitle: { marginTop: 12, fontSize: 28, fontWeight: '800', color: '#4A3725', textAlign: 'center' },
+  thresholdCopy: { marginTop: 8, fontSize: 17, lineHeight: 24, color: '#6A513D', textAlign: 'center' },
+  thresholdButton: {
+    marginTop: 18,
+    backgroundColor: '#E78739',
+    borderRadius: 999,
+    paddingHorizontal: 22,
+    paddingVertical: 12
+  },
+  thresholdButtonText: { fontSize: 16, fontWeight: '800', color: '#FFFFFF' }
 });
