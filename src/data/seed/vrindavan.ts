@@ -101,7 +101,7 @@ export const vrindavanThirdStoryPacket: StoryJourney = {
       { id: 'g3', title: 'A Thankful Heart', text: 'Krishna smiled and said, “This river helps us every day. Let us say thank you with respect.”' },
       { id: 'g4', title: 'Careful Hands', text: 'The children picked up fallen leaves and kept the riverbank tidy before heading home.' },
       { id: 'g5', title: 'Sharing Thanks', text: 'Each friend named one gift they were thankful for—water, trees, sunshine, and friendship.' },
-      { id: 'g6', title: 'Gratitude Grows Joy', text: 'Krishna reminded them that when we notice blessings and care for them, joy grows quietly inside.' }
+      { id: 'g6', title: 'Gratitude Grows Joy', text: 'Krishna reminded them that when we notice good gifts and care for them, joy grows quietly inside.' }
     ],
     quiz: {
       question: 'How did Krishna and his friends show gratitude at the river?',
