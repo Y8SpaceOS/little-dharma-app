@@ -1,4 +1,5 @@
 # Task Log
+- 2026-05-16: Sprint 29 stabilization pass: corrected governance drift in `docs/MASTER_SPRINT_QUEUE.md` by restoring Sprint 14 to deferred/not started placeholders and restoring Sprint 21 primary track to Content Engine; also updated Threshold v1 behavior so visibility is recomputed on Today screen focus and app foreground/active return (while preserving 30-minute local-only recent-return softening).
 - 2026-05-16: Sprint 29 was revised from “Chant & Sing Ritual Section v1” to “Threshold v1: Calm Arrival” based on final strategic roadmap feedback; implemented only revised Sprint 29 scope.
 - 2026-05-16: Sprint 29 (Threshold v1: Calm Arrival, Q2 Product Experience) completed: added a calm threshold entry overlay on `/(child)/today` with low-stimulation copy (“Let’s enter quietly.” / “A little story. A little stillness.” / “Begin today’s Little Dharma.”) and one clear primary action to enter the child journey.
 - 2026-05-16: Added local-only recent-return softening using AsyncStorage (`src/lib/thresholdState.ts`): threshold is skipped for returns within 30 minutes to reduce friction while preserving ritual intent and no backend/auth/cloud behavior.

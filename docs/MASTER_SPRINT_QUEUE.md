@@ -51,11 +51,11 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 14 — Test Harness Reliability and Coverage Targets
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** Product Experience
-- **Primary quality dimension:** Daily 10-minute ritual habit
-- **Protected quality dimensions:** Child delight, Premium UI/UX taste, Parent trust, Safety/privacy
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Strengthen automated confidence by making the test harness stable and defining meaningful coverage targets.
 - **Scope:** Stabilize test runner behavior, define critical flow coverage targets, and document test taxonomy (smoke/unit/integration).
@@ -167,7 +167,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** done
 - **Completion note:** Added three new ritual-ready Vrindavan packets (gratitude, patience, truthfulness) with child-safe story/ritual/quiz/badge/parent-bridge content integrated into existing journey progression, Explore path, Treasures badges, and Parent Dashboard summaries via existing local progress flow.
-- **Primary track:** Product Experience
+- **Primary track:** Content Engine
 - **Objective:** Expand content depth within existing world while preserving quality and safety governance.
 - **Scope:** Create three additional structured Vrindavan story packets with ritual, quiz, badge, and parent bridge fields.
 - **Non-scope:** New world launch, external CMS, or bulk low-quality content ingestion.

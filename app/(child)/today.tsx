@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'expo-router';
-import { Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { AppState, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { tokens } from '@/design/tokens';
 import { trackEvent } from '@/lib/analytics';
@@ -47,16 +47,21 @@ export default function TodayScreen() {
   }, []);
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || 'Little One')), []);
+
+  const refreshThresholdVisibility = useCallback(() => {
+    shouldShowThreshold()
+      .then((shouldShow) => setShowThreshold(shouldShow))
+      .catch(() => setShowThreshold(true));
+  }, []);
+
   useEffect(() => {
     refreshJourneyCard().catch(() => {
       setStatus('ready');
       setEarnedBadge(null);
     });
 
-    shouldShowThreshold()
-      .then((shouldShow) => setShowThreshold(shouldShow))
-      .catch(() => setShowThreshold(true));
-  }, [refreshJourneyCard]);
+    refreshThresholdVisibility();
+  }, [refreshJourneyCard, refreshThresholdVisibility]);
 
   useFocusEffect(
     useCallback(() => {
@@ -64,8 +69,22 @@ export default function TodayScreen() {
         setStatus('ready');
         setEarnedBadge(null);
       });
-    }, [refreshJourneyCard])
+      refreshThresholdVisibility();
+    }, [refreshJourneyCard, refreshThresholdVisibility])
   );
+
+
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', (nextState) => {
+      if (nextState === 'active') {
+        refreshThresholdVisibility();
+      }
+    });
+
+    return () => {
+      subscription.remove();
+    };
+  }, [refreshThresholdVisibility]);
 
   trackEvent('app_opened');
 
