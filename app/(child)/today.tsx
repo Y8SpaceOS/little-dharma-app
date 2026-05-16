@@ -96,7 +96,7 @@ export default function TodayScreen() {
 
   trackEvent('app_opened');
 
-  const ctaLabel = status === 'path-completed' ? 'Revisit Vrindavan Stories' : status === 'completed' ? 'Continue Vrindavan Path' : "Start Today's Journey";
+  const ctaLabel = status === 'path-completed' ? 'Revisit a Vrindavan Journey' : status === 'completed' ? 'Continue with the next Journey' : "Begin Today's Journey";
 
   const enterChildJourney = useCallback(() => {
     setShowThreshold(false);
@@ -106,19 +106,20 @@ export default function TodayScreen() {
   return (
     <SafeAreaView style={styles.screen}>
       <Text style={styles.greeting}>Namaste, {nickname} ✨</Text>
-      <Text style={styles.subtitle}>Choose your calm adventure for today.</Text>
+      <Text style={styles.subtitle}>Today is a gentle moment with your Companion.</Text>
 
       <View style={styles.companionCard}>
         <Text style={styles.companionEyebrow}>{companionV1.motif} {companionV1.displayLabel}</Text>
         <Text style={styles.companionCopy}>{companionV1.copy.homeGreeting}</Text>
+        <Text style={styles.companionInvitation}>Today, we’ll take one small Journey together. You can pause anytime.</Text>
       </View>
 
       <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
         <Text style={styles.journeyEyebrow}>Today&apos;s Journey</Text>
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
-        <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Vrindavan path complete' : status === 'completed' ? 'Completed' : 'Ready to begin'}</Text>
-        <Text style={styles.ritualTag}>{status === 'path-completed' ? 'Your 10-minute ritual can continue gently, one calm day at a time' : 'Story + value + shloka'}</Text>
+        <Text style={styles.journeyStatus}>{status === 'path-completed' ? 'Vrindavan path complete' : status === 'completed' ? "Today's Journey is complete" : 'Your Journey is ready'}</Text>
+        <Text style={styles.ritualTag}>{status === 'path-completed' ? 'Your 10-minute ritual can continue gently, one calm day at a time.' : status === 'completed' ? 'You can take the next small step when you feel ready.' : 'One story, one value, one calm ritual.'}</Text>
         {latestCarryingWord && (
           <View style={styles.carryingWordChip}>
             <Text style={styles.carryingWordLabel}>Carrying Word: {latestCarryingWord}</Text>
@@ -126,7 +127,7 @@ export default function TodayScreen() {
         )}
         {status === 'path-completed' && (
           <Text style={styles.completionCopy}>
-            You walked through 21 Little Dharma moments in Vrindavan. You can revisit any story, repeat one small ritual, and choose one carrying word for this week.
+            You walked through 21 Little Dharma moments in Vrindavan. Revisit any Journey, repeat one small ritual, or carry one gentle word this week.
           </Text>
         )}
         {earnedBadge && <Text style={styles.badgeLine}>Earned badge: {earnedBadge}</Text>}
@@ -175,6 +176,7 @@ const styles = StyleSheet.create({
   companionCard: { backgroundColor: '#FFF7EA', borderWidth: 1, borderColor: '#F1DDC2', borderRadius: 18, paddingHorizontal: 14, paddingVertical: 12, gap: 4, marginBottom: 2 },
   companionEyebrow: { fontSize: 12, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8, color: '#8A6138' },
   companionCopy: { fontSize: 15, lineHeight: 21, color: '#5E4631', fontWeight: '600' },
+  companionInvitation: { fontSize: 14, lineHeight: 20, color: '#6A513D' },
 
   metaLine: { fontSize: 14, color: '#6A513D', marginTop: 4 },
   grid: { gap: tokens.spacing.sm },

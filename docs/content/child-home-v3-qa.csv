@@ -1,0 +1,16 @@
+qaArea,surface,expectedBehavior,status,notes
+greeting clarity,child today home,Greeting is warm and readable with clear Today framing,pass,Verified in updated copy and layout
+companion invitation,child today home,Companion invitation is visible and calm with gentle next-step framing,pass,Companion card now includes explicit invitation line
+ready state CTA,child today home,Ready state shows clear gentle CTA to begin next story,pass,Begin Today's Journey
+completed state CTA,child today home,Completed state offers calm continuation CTA without pressure,pass,Continue with the next Journey
+path-completed state copy,child today home,Path completed state celebrates completion and offers revisit options,pass,Revisit/treasures/parent dashboard/chant options preserved
+carrying word display,child today home,Latest carrying word chip appears when available,pass,Existing state usage preserved
+worlds navigation,child today home,Worlds navigation remains accessible and functional,pending_manual_qa,Requires iPhone tap verification
+treasures navigation,child today home,Treasures navigation remains accessible and functional,pending_manual_qa,Requires iPhone tap verification
+parent dashboard navigation,child today home,Parent dashboard link remains accessible and functional,pending_manual_qa,Requires iPhone tap verification
+chant/ritual navigation,child today home,Chant/ritual link remains accessible and functional,pending_manual_qa,Requires iPhone tap verification
+no streak pressure,child today home,No streak-based pressure language appears,pass,Forbidden pressure phrases absent
+no competitive framing,child today home,No peer-competition language appears,pass,No compare/beat language used
+no guilt/shame framing,child today home,No guilt or shame language appears,pass,No moralized compliance copy
+iPhone layout sanity,child today home,No clipping/cutoff on standard iPhone sizes,pending_manual_qa,Manual device pass required
+story 1–21 regression,journey runtime,Stories 1 through 21 progression logic remains unchanged,pass,No schema/path mutation in runtime services

@@ -563,7 +563,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Child delight
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Daily 10-minute ritual habit, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Child Home Today now has a warmer Companion-led invitation, clearer state-specific Journey guidance, calmer CTA labels, and Sprint 48 QA doc/CSV/validator coverage without runtime/story-schema changes.
 - **Primary track:** Product Experience
 - **Objective:** Make daily entry invitation warmer and clearer while preserving trust-safe companion boundaries.
 - **Scope:** Update child-home invitation framing and progression cues using existing companion architecture.
