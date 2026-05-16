@@ -17,7 +17,8 @@ function buildWeeklyProgressSummary(stories: ReturnType<typeof getVrindavanJourn
     .map((packet) => packet.story.value)
     .filter((value, index, all) => all.indexOf(value) === index);
 
-  const completedDays = Math.min(stories.length, completedSlugs.size);
+  const completedStoryCount = stories.filter((packet) => completedSlugs.has(packet.story.slug)).length;
+  const completedDays = Math.min(stories.length, completedStoryCount);
   const remainingDays = Math.max(stories.length - completedDays, 0);
 
   const parentSummary =

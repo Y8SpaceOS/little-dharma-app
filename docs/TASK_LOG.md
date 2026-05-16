@@ -1,4 +1,5 @@
 # Task Log
+- 2026-05-16: Sprint 24 stabilization pass fixed weekly rollup logic to count only completions from the Vrindavan path story list (not all stored story completions), preserving accurate 7-day progress as additional worlds are added.
 - 2026-05-15: Sprint 24 (Local Weekly Progress, Q2 Product Experience) completed: added a new Parent Dashboard “Weekly Vrindavan progress” section powered entirely by existing local story completion data, showing 7-day completed/remaining progress, values practiced across completed stories, and a gentle parent-facing weekly summary.
 - 2026-05-15: Implemented local weekly aggregation in `getParentDashboardSnapshot()` by deriving completed slugs from AsyncStorage-backed story completions and computing a deterministic weekly rollup (`completedDays`, `remainingDays`, `completionLabel`, `practicedValues`, `parentSummary`) with no backend/auth/cloud sync changes.
 - 2026-05-15: Preserved existing Today, Explore Worlds, Story loop, My Treasures, and Parent Dashboard flows; no public profile, leaderboard, chat/community, sharing, notifications, calendar, or new story content was introduced.
