@@ -120,7 +120,7 @@ Content Data Model v2 is designed to:
 - `reviewStatus`
 - `notes`
 
-### StoryExperience (required field contract)
+### StoryExperience (required field contract + conditional review metadata)
 
 - `storyExperienceId`
 - `baseStoryId`
@@ -131,6 +131,7 @@ Content Data Model v2 is designed to:
 - `contentLabel`
 - `sourceSensitivityTier`
 - `sourceNote`
+- `parentSourceNote`
 - `primaryValue`
 - `supportingValue`
 - `carryingWord`
@@ -207,6 +208,13 @@ Content Data Model v2 is designed to:
 
 ---
 
+## Source note field semantics
+
+- `sourceNote` = internal/source-facing editorial provenance/context note used by content/review teams.
+- `parentSourceNote` = short parent-facing trust note suitable for parent-visible surfaces.
+
+---
+
 ## Validation rules (v2 governance expectations)
 
 1. Every `StoryExperience` must have `contentLabel`.
@@ -220,6 +228,9 @@ Content Data Model v2 is designed to:
 9. Every `StoryExperience` must have `reviewStatus`.
 10. No public child-data fields in this model.
 11. No `childName` or `parentName` fields in this model.
+12. `createdBy` is required.
+13. `reviewedBy` and `lastReviewedAt` are optional while `reviewStatus` is `draft`, `needs_source_review`, `needs_tone_review`, `needs_parent_trust_review`, or `blocked`.
+14. `reviewedBy` and `lastReviewedAt` are required when `reviewStatus` is `approved_for_private_beta` or `approved_for_public_beta`.
 
 ---
 
@@ -324,6 +335,7 @@ interface StoryExperience {
   contentLabel: ContentLabel;
   sourceSensitivityTier: SourceSensitivityTier;
   sourceNote: string;
+  parentSourceNote: string;
   primaryValue: string;
   supportingValue?: string;
   carryingWord: string;
@@ -339,8 +351,8 @@ interface StoryExperience {
   releasePhase: ContentReleasePhase;
   reviewStatus: ReviewStatus;
   createdBy: string;
-  reviewedBy?: string;
-  lastReviewedAt?: string; // ISO8601
+  reviewedBy?: string; // Required when reviewStatus is approved_for_private_beta/public_beta
+  lastReviewedAt?: string; // Required when reviewStatus is approved_for_private_beta/public_beta (ISO8601)
 }
 ```
 
@@ -360,7 +372,8 @@ interface StoryExperience {
   "contentWorld": "vrindavan_krishna",
   "contentLabel": "traditional_retelling",
   "sourceSensitivityTier": "tier_2_traditional_retelling",
-  "sourceNote": "A child-friendly traditional retelling inspired by Bhakti storytelling themes; wording adapted for age appropriateness.",
+  "sourceNote": "Internal note: child-friendly traditional retelling inspired by Bhakti storytelling themes; wording adapted for age appropriateness.",
+  "parentSourceNote": "Parent note: this is a respectful traditional retelling in simple child-friendly language.",
   "primaryValue": "kindness",
   "supportingValue": "friendship",
   "carryingWord": "Kindness",
