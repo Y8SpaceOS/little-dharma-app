@@ -16,6 +16,7 @@ const initialSummary: ParentDashboardSummary = {
   latestCompletedStoryTitle: 'Loading...',
   latestEarnedBadge: 'Loading...',
   latestValueLearned: 'Loading...',
+  latestCarryingWord: 'Loading...',
   latestRitualCompleted: 'Loading...',
   latestRitualParentMeaning: '',
   latestReflectionPrompt: 'Loading...',
@@ -82,7 +83,7 @@ export default function DashboardScreen() {
           <Text style={styles.mirrorTitle}>What your child practiced today</Text>
           <Text style={styles.detail}><Text style={styles.label}>Latest story:</Text> {summary.latestCompletedStoryTitle}</Text>
           <Text style={styles.detail}><Text style={styles.label}>Value practiced:</Text> {summary.latestValueLearned}</Text>
-          <Text style={styles.detail}><Text style={styles.label}>Carrying Word:</Text> {summary.latestValueLearned}</Text>
+          <Text style={styles.detail}><Text style={styles.label}>Carrying Word:</Text> {summary.latestCarryingWord}</Text>
           <Text style={styles.detail}><Text style={styles.label}>Badge earned:</Text> {summary.latestEarnedBadge}</Text>
           <Text style={styles.detail}><Text style={styles.label}>Parent-child prompt:</Text> {summary.latestReflectionPrompt}</Text>
           <Text style={styles.mirrorWhy}>{summary.latestRitualParentMeaning}</Text>

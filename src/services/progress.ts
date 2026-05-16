@@ -1,4 +1,4 @@
-import { getAllStoryCompletions, getWorldProgress } from '@/lib/storyProgress';
+import { getAllStoryCompletions, getLatestCarryingWord, getWorldProgress } from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
 
 
@@ -44,6 +44,7 @@ export async function getParentDashboardSnapshot() {
   const completedSlugs = new Set(Object.keys(allCompletions));
   const weeklyProgress = buildWeeklyProgressSummary(stories, completedSlugs);
   const latestStory = worldProgress.latestCompletedStory?.story ?? null;
+  const latestCarryingWord = await getLatestCarryingWord(stories);
 
   return {
     currentWorld: 'Vrindavan',
@@ -53,6 +54,7 @@ export async function getParentDashboardSnapshot() {
     latestCompletedStoryTitle: latestStory?.title ?? 'No story completed yet',
     latestEarnedBadge: latestStory?.badgeName ?? 'No badge yet',
     latestValueLearned: latestStory?.value ?? 'No value completed yet',
+    latestCarryingWord: latestCarryingWord ?? latestStory?.value ?? 'No carrying word yet',
     latestRitualCompleted: latestStory?.ritual.microShlokaTitle ?? 'No ritual completed yet',
     latestRitualParentMeaning:
       latestStory?.ritual.parentMeaning ?? 'After your next story, you will see a gentle note about why this value matters in everyday family life.',
