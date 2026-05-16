@@ -44,6 +44,20 @@ export default function StoryScreen() {
   const progressPercent = Math.round(((panelIndex + 1) / story.panels.length) * 100);
   const panel = story.panels[panelIndex];
   const atLastPanel = panelIndex === story.panels.length - 1;
+  const shareCopyVariants = [
+    {
+      label: 'Default family copy',
+      copy: story.completionShareCopy
+    },
+    {
+      label: 'Grandparent-friendly copy',
+      copy: `A gentle Little Dharma moment to share with grandparents: today we completed “${story.title},” practiced ${story.value.toLowerCase()}, and ended with a calm reflection.`
+    },
+    {
+      label: 'Close family group copy',
+      copy: `Family update from our 10-minute Little Dharma ritual: ${story.title} is complete, ${story.value.toLowerCase()} was today’s value, and ${story.badgeName} was earned. Sharing this joy with our close family circle.`
+    }
+  ];
 
   const onQuizSubmit = async () => {
     if (!selectedAnswer) return;
@@ -186,7 +200,14 @@ export default function StoryScreen() {
                 </View>
               </View>
               <Text style={styles.shareSummary}>Ritual summary: Story, chant seed, and reflection completed with calm presence in about 10 minutes.</Text>
-              <Text style={styles.shareCopy}>{story.completionShareCopy}</Text>
+              <View style={styles.shareVariantsWrap}>
+                {shareCopyVariants.map((variant) => (
+                  <View key={variant.label} style={styles.shareVariantCard}>
+                    <Text style={styles.shareVariantLabel}>{variant.label}</Text>
+                    <Text style={styles.shareCopy}>{variant.copy}</Text>
+                  </View>
+                ))}
+              </View>
               <Text style={styles.shareHint}>Private family sharing only. No child name, age, location, account details, or public profile shown.</Text>
               <Text style={styles.shareHintSecondary}>Take a screenshot to share with family.</Text>
             </View>
@@ -254,6 +275,9 @@ const styles = StyleSheet.create({
   sharePillLabel: { color: '#6B5294', fontSize: 11, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.6 },
   sharePillValue: { color: '#3F2C63', fontSize: 17, fontWeight: '800', lineHeight: 23 },
   shareSummary: { fontSize: 15, lineHeight: 23, color: '#4B3C68', fontWeight: '600' },
+  shareVariantsWrap: { gap: 10 },
+  shareVariantCard: { backgroundColor: '#FFFFFF', borderRadius: 14, borderWidth: 1, borderColor: '#E2D5F7', paddingHorizontal: 12, paddingVertical: 10, gap: 6 },
+  shareVariantLabel: { color: '#6D5598', fontSize: 11, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.6 },
   shareCopy: { fontSize: 15, color: '#4B3C68', lineHeight: 23 },
   shareHint: { fontSize: 13, color: '#5F4A84', fontWeight: '700', lineHeight: 19 },
   shareHintSecondary: { fontSize: 14, color: '#5B4A79', fontWeight: '700', lineHeight: 20 },

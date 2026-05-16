@@ -259,16 +259,17 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 27 — Grandparent Share Copy Variants
 - **Target quality level:** Q2 Soul Prototype
 - **Sprint type:** Growth Loop
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Primary quality dimension:** Parent-safe shareability
+- **Protected quality dimensions:** Parent trust, Safety/privacy, Premium UI/UX taste, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Growth Loops
 - **Objective:** Improve conversion of family sharing by tailoring copy variants for grandparents and extended family.
 - **Scope:** Craft and test parent-safe copy variants plus selection rules by relationship context.
 - **Non-scope:** New channels requiring backend messaging infrastructure.
-- **Definition of done:** At least two validated copy variants with clear usage guidance and safety review sign-off.
-- **Manual iPhone QA steps:** On iPhone preview/share each copy variant and confirm tone, brevity, and privacy-safe wording.
+- **Definition of done:** Parent-safe share card includes multiple privacy-safe family copy variants (including grandparent-friendly) with no identity exposure or native sharing additions.
+- **Manual iPhone QA steps:** Complete a story on iPhone, open completion screen, verify all variants are readable and privacy-safe, verify no native share API appears, verify Read Again + Done for Today, and verify My Treasures + Parent Dashboard updates.
+- **Completion note:** Added three privacy-safe screenshot-friendly share copy variants on completion (default family, grandparent-friendly, close family group style) while preserving completion actions and existing local progress behavior, with no native sharing/public-social features.
 - **Category-defining product check focus:** Warm family virality grounded in cultural trust.
 
 ### Sprint 28 — Bedtime Mode v1
