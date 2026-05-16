@@ -291,6 +291,288 @@ export const vrindavanSeventhStoryPacket: StoryJourney = {
   }
 };
 
+
+
+export const vrindavanEighthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'generosity', name: 'Generosity' },
+  story: {
+    slug: 'krishna-shares-the-picnic',
+    title: 'Krishna Shares the Picnic',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Generosity',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s8p1', title: 'Picnic Cloth in the Grass', text: 'Krishna and friends spread a picnic cloth beneath a shady tree in Vrindavan.' },
+      { id: 'w2s8p2', title: 'A Quiet Noticing', text: 'Krishna noticed one friend had only a tiny snack and looked unsure.' },
+      { id: 'w2s8p3', title: 'Sharing First', text: 'With a warm smile, Krishna offered part of his fruit and said, “Let us all have enough.”' },
+      { id: 'w2s8p4', title: 'Many Small Gifts', text: 'Soon each child shared one small bite, and the picnic became full for everyone.' },
+      { id: 'w2s8p5', title: 'Generosity Feels Bright', text: 'Krishna reminded them that sharing first can make every heart feel included.' }
+    ],
+    quiz: {
+      question: 'What helped everyone feel included at the picnic?',
+      options: ['Each friend shared a small portion kindly', 'Only Krishna kept all his food', 'The children hid their snacks'],
+      correctAnswer: 'Each friend shared a small portion kindly',
+      gentleFeedback: 'Beautiful effort. Generosity means we make room so everyone can feel cared for.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma sharing phrase',
+      microShlokaText: 'दानं शुभम्',
+      transliteration: 'Daanam shubham',
+      childMeaning: 'Sharing is beautiful. Even a small share can bring joy.',
+      parentMeaning: 'Keep sharing invitational and warm: model giving first so children learn inclusion through example, not pressure.',
+      ritualPrompt: 'Before a snack, each person offers one small piece kindly to someone nearby.',
+      reflectionQuestion: 'What small thing can we happily share today?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Lotus Lunch Basket',
+    parentReflectionPrompt: 'Ask your child: Where did sharing make someone feel included today?',
+    completionShareCopy: 'Today we completed a Little Dharma generosity story and practiced sharing with joy.'
+  }
+};
+
+export const vrindavanNinthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'focus', name: 'Focus' },
+  story: {
+    slug: 'the-flute-and-quiet-listening',
+    title: 'The Flute and Quiet Listening',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Focus',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s9p1', title: 'Lively Afternoon', text: 'Friends were chatting and laughing while Krishna held his flute in the meadow.' },
+      { id: 'w2s9p2', title: 'A Gentle Invitation', text: 'Krishna said, “Let us make our ears quiet for one minute and listen together.”' },
+      { id: 'w2s9p3', title: 'Soft Sounds Appear', text: 'They heard a bird call, leaves moving, and one sweet flute note in the breeze.' },
+      { id: 'w2s9p4', title: 'Calm Smiles', text: 'The children smiled because quiet listening helped them notice so much more.' },
+      { id: 'w2s9p5', title: 'Focus Grows Gently', text: 'Krishna reminded them that focus can begin with one calm breath and kind attention.' }
+    ],
+    quiz: {
+      question: 'What happened when the children listened quietly?',
+      options: ['They noticed gentle sounds and felt calmer', 'They heard nothing at all', 'They became upset with each other'],
+      correctAnswer: 'They noticed gentle sounds and felt calmer',
+      gentleFeedback: 'Lovely try. Quiet listening helps our minds settle and notice small beautiful details.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma listening phrase',
+      microShlokaText: 'शृणु शांतम्',
+      transliteration: 'Shrinu shaantam',
+      childMeaning: 'Listen with peace. Quiet ears can hear gentle sounds.',
+      parentMeaning: 'Treat listening as a calm practice: short, encouraging, and effort-focused rather than performance-focused.',
+      ritualPrompt: 'Sit together for one minute and name one soft sound each person notices.',
+      reflectionQuestion: 'Which quiet sound helped your heart feel calm?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Silver Flute Leaf',
+    parentReflectionPrompt: 'Ask your child: When did quiet listening help you notice more today?',
+    completionShareCopy: 'Today we completed a Little Dharma focus story and practiced quiet listening together.'
+  }
+};
+
+export const vrindavanTenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'respect', name: 'Respect' },
+  story: {
+    slug: 'respect-at-the-yamuna-bank',
+    title: 'Respect at the Yamuna Bank',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Respect',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s10p1', title: 'Approaching the River', text: 'Krishna and friends walked toward the Yamuna as evening light turned the water gold.' },
+      { id: 'w2s10p2', title: 'Remembering Gentle Steps', text: 'Krishna slowed down and said, “This is a special place. Let us move gently.”' },
+      { id: 'w2s10p3', title: 'Respect in Action', text: 'The children used quiet voices, careful feet, and tidy hands near the riverbank.' },
+      { id: 'w2s10p4', title: 'A Peaceful Visit', text: 'Because everyone stayed respectful, the riverbank felt calm and welcoming.' },
+      { id: 'w2s10p5', title: 'Gentle Hearts', text: 'Krishna smiled and reminded them that respect keeps shared places peaceful for all.' }
+    ],
+    quiz: {
+      question: 'How did the children show respect at the Yamuna bank?',
+      options: ['With quiet voices, gentle steps, and clean habits', 'By running loudly and pushing', 'By leaving the place messy'],
+      correctAnswer: 'With quiet voices, gentle steps, and clean habits',
+      gentleFeedback: 'Wonderful effort. Respect means our actions help a special place stay peaceful and cared for.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma respect phrase',
+      microShlokaText: 'मृदु चल',
+      transliteration: 'Mridu chala',
+      childMeaning: 'Move gently. Gentle steps show respect.',
+      parentMeaning: 'Link respect to observable habits—voice, movement, and care—so children can practice it in daily places.',
+      ritualPrompt: 'Take five slow gentle steps together as if entering a peaceful sacred place.',
+      reflectionQuestion: 'Where can we practice gentle steps at home tomorrow?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'River Respect Pebble',
+    parentReflectionPrompt: 'Ask your child: What did your gentle body do to show respect today?',
+    completionShareCopy: 'Today we completed a Little Dharma respect story and practiced gentle steps.'
+  }
+};
+
+export const vrindavanEleventhStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'humility', name: 'Humility' },
+  story: {
+    slug: 'the-garland-mistake-and-honest-bow',
+    title: 'The Garland Mistake and Honest Bow',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Humility',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s11p1', title: 'Flower Work Together', text: 'Krishna and friends were tying marigolds into a bright garland for the courtyard.' },
+      { id: 'w2s11p2', title: 'A Small Mistake', text: 'Krishna pulled too fast, and the garland knot came loose.' },
+      { id: 'w2s11p3', title: 'Honest Bow', text: 'He placed a hand on his heart, bowed gently, and said, “I made a mistake. I am sorry.”' },
+      { id: 'w2s11p4', title: 'Repair with Friends', text: 'Together they tied the flowers again, this time slowly and with smiles.' },
+      { id: 'w2s11p5', title: 'Humility Restores Connection', text: 'Krishna reminded them that honest apology helps hearts reconnect quickly.' }
+    ],
+    quiz: {
+      question: 'What did Krishna do after the garland mistake?',
+      options: ['He admitted it, bowed, and helped repair', 'He blamed someone else', 'He walked away silently'],
+      correctAnswer: 'He admitted it, bowed, and helped repair',
+      gentleFeedback: 'Great try. Humility means we can tell the truth and make things better with care.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma repair phrase',
+      microShlokaText: 'क्षम्यतां',
+      transliteration: 'Kshamyataam',
+      childMeaning: 'Please forgive me. I can repair with kindness.',
+      parentMeaning: 'Model dignity-based repair: honest ownership, gentle apology, and one concrete helping action.',
+      ritualPrompt: 'Hand on heart, bow softly once, and practice saying: “I made a mistake, I can make it better.”',
+      reflectionQuestion: 'What brave truth can help us repair today?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Golden Garland Knot',
+    parentReflectionPrompt: 'Ask your child: How did honest words help us reconnect today?',
+    completionShareCopy: 'Today we completed a Little Dharma humility story and practiced honest repair.'
+  }
+};
+
+export const vrindavanTwelfthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'self-control', name: 'Self-Control' },
+  story: {
+    slug: 'butter-pot-waiting-game',
+    title: 'Butter Pot Waiting Game',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Self-Control',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s12p1', title: 'A Tempting Butter Pot', text: 'A fresh butter pot sat nearby, and everyone wanted a taste right away.' },
+      { id: 'w2s12p2', title: 'Pause Before Hands', text: 'Krishna laughed gently and said, “Let us play a waiting game first.”' },
+      { id: 'w2s12p3', title: 'Three Calm Breaths', text: 'They took three slow breaths and watched their eager hands become still.' },
+      { id: 'w2s12p4', title: 'Wise Choice', text: 'After waiting, they asked politely, shared turns, and enjoyed together.' },
+      { id: 'w2s12p5', title: 'Waiting Helps', text: 'Krishna reminded them that a little waiting helps us choose with care.' }
+    ],
+    quiz: {
+      question: 'What helped in the butter pot waiting game?',
+      options: ['Three breaths before acting', 'Grabbing quickly first', 'Arguing for turns'],
+      correctAnswer: 'Three breaths before acting',
+      gentleFeedback: 'Nice effort. A short pause can make our next choice kinder and wiser.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma waiting phrase',
+      microShlokaText: 'क्षनं तिष्ठ',
+      transliteration: 'Kshanam tishtha',
+      childMeaning: 'Wait a moment. Breathing helps us choose well.',
+      parentMeaning: 'Keep self-control playful: brief pause, soft tone, and encouragement for effort over perfection.',
+      ritualPrompt: 'Before touching a wanted item, take three slow breaths together.',
+      reflectionQuestion: 'When can we use a three-breath wait tomorrow?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Butter Star Token',
+    parentReflectionPrompt: 'Ask your child: How did waiting help your choice today?',
+    completionShareCopy: 'Today we completed a Little Dharma self-control story and practiced the three-breath wait.'
+  }
+};
+
+export const vrindavanThirteenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'service', name: 'Service' },
+  story: {
+    slug: 'sweeping-the-courtyard-together',
+    title: 'Sweeping the Courtyard Together',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Service',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s13p1', title: 'Leaves Everywhere', text: 'After playtime, dry leaves covered the courtyard floor.' },
+      { id: 'w2s13p2', title: 'Krishna Starts Helping', text: 'Krishna picked up a small broom and began sweeping with a cheerful face.' },
+      { id: 'w2s13p3', title: 'Friends Join In', text: 'One by one, friends joined with tiny tasks—sweeping, gathering, and tidying corners.' },
+      { id: 'w2s13p4', title: 'Peaceful Courtyard', text: 'Soon the space looked calm and clean, ready for everyone to sit together.' },
+      { id: 'w2s13p5', title: 'Service Feels Joyful', text: 'Krishna reminded them that helping together is a joyful gift to shared spaces.' }
+    ],
+    quiz: {
+      question: 'Why did sweeping together feel good?',
+      options: ['Everyone helped and made the space peaceful', 'Only one person worked while others watched', 'The children made a bigger mess'],
+      correctAnswer: 'Everyone helped and made the space peaceful',
+      gentleFeedback: 'Lovely effort. Service means we offer helpful hands so everyone can enjoy a peaceful space.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma helping phrase',
+      microShlokaText: 'सेवा आनंदः',
+      transliteration: 'Sevaa aanandah',
+      childMeaning: 'Helping is joyful. Small help matters.',
+      parentMeaning: 'Frame service as shared contribution, not punishment. Keep tasks short and doable for confidence.',
+      ritualPrompt: 'Choose one tiny helping action and do it together for two minutes.',
+      reflectionQuestion: 'Who did we help today, and how did it feel?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Courtyard Care Broom',
+    parentReflectionPrompt: 'Ask your child: Which small helping task felt joyful today?',
+    completionShareCopy: 'Today we completed a Little Dharma service story and practiced joyful helping.'
+  }
+};
+
+export const vrindavanFourteenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'curiosity', name: 'Curiosity' },
+  story: {
+    slug: 'wonder-at-fireflies',
+    title: 'Wonder at Fireflies',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Curiosity',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w2s14p1', title: 'Twilight in Vrindavan', text: 'As evening settled, tiny lights began blinking above the grass.' },
+      { id: 'w2s14p2', title: 'Eyes Full of Wonder', text: 'Krishna and friends watched fireflies glow and dance in the warm dusk air.' },
+      { id: 'w2s14p3', title: 'Gentle Questions', text: 'Krishna asked, “What beauty do you notice when we look slowly?”' },
+      { id: 'w2s14p4', title: 'Quiet Noticing', text: 'The children shared soft answers and stood peacefully in the glowing night.' },
+      { id: 'w2s14p5', title: 'Wonder Stays in the Heart', text: 'Krishna smiled and reminded them that curiosity helps us notice and cherish small gifts.' }
+    ],
+    quiz: {
+      question: 'What can curiosity help us do?',
+      options: ['Notice and appreciate small beautiful things', 'Rush past everything quickly', 'Make fun of questions'],
+      correctAnswer: 'Notice and appreciate small beautiful things',
+      gentleFeedback: 'Beautiful thinking. Curiosity helps us learn gently and enjoy the wonder around us.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma wonder phrase',
+      microShlokaText: 'आश्चर्यं पश्य',
+      transliteration: 'Aashcharyam pashya',
+      childMeaning: 'See the wonder. Small lights can fill our hearts with joy.',
+      parentMeaning: 'Welcome open-ended wonder questions without rushing to correct or finish; curiosity grows through patient attention.',
+      ritualPrompt: 'Pause for one breath and each name one tiny beautiful thing you notice right now.',
+      reflectionQuestion: 'What small wonder do we want to notice again tomorrow?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Firefly Wonder Light',
+    parentReflectionPrompt: 'Ask your child: What tiny beautiful thing did you notice tonight?',
+    completionShareCopy: 'Today we completed a Little Dharma curiosity story and practiced wonder-noticing.'
+  }
+};
+
 export const vrindavanStoryPackets: StoryJourney[] = [
   vrindavanJourney,
   vrindavanSecondStoryPacket,
@@ -298,5 +580,12 @@ export const vrindavanStoryPackets: StoryJourney[] = [
   vrindavanFourthStoryPacket,
   vrindavanFifthStoryPacket,
   vrindavanSixthStoryPacket,
-  vrindavanSeventhStoryPacket
+  vrindavanSeventhStoryPacket,
+  vrindavanEighthStoryPacket,
+  vrindavanNinthStoryPacket,
+  vrindavanTenthStoryPacket,
+  vrindavanEleventhStoryPacket,
+  vrindavanTwelfthStoryPacket,
+  vrindavanThirteenthStoryPacket,
+  vrindavanFourteenthStoryPacket
 ];
