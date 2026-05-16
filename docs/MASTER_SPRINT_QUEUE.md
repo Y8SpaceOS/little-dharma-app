@@ -209,11 +209,12 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 24 — Local Weekly Progress
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Parent trust
+- **Protected quality dimensions:** Daily 10-minute ritual habit, Child delight, Premium UI/UX taste, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added a local-only weekly Vrindavan progress summary to Parent Dashboard with clear 7-day completion/remaining counts, values practiced list, and gentle parent-facing weekly ritual guidance derived from existing story completion storage.
 - **Primary track:** Platform Foundations
 - **Objective:** Provide dependable local weekly progress aggregation for parent-facing insight surfaces.
 - **Scope:** Define weekly progress model, local aggregation logic, and dashboard integration contract.
