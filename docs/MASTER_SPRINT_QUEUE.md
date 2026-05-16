@@ -320,20 +320,21 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Revised from the old “Soul Prototype Readiness Audit” to “Companion Architecture v1” based on final strategic roadmap feedback; implemented text-only companion presence without sacred-figure risk, identity collection, audio, or heavy animation.
 - **Category-defining product check focus:** Child delight and ritual warmth without sacrificing parent trust, safety/privacy, and cultural respect.
 
-### Sprint 31 — Content QA and Source-Note Model
+### Sprint 31 — The Pause v1
 - **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Protected quality dimensions:** Child delight, Premium UI/UX taste, Parent trust, Safety/privacy, Content depth and authenticity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Product Experience
-- **Objective:** Deliver content qa and source-note model as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the content qa and source-note model increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Content QA and Source-Note Model meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How content qa and source-note model improves delight, trust, ritual consistency, safety, and future monetisation readiness.
+- **Objective:** Add a short silent low-stimulation pause between story consumption and quiz answering so children sit with the story before responding.
+- **Scope:** Insert a Pause v1 stage in `app/story/[slug].tsx` between Ritual and Quiz, using existing UI primitives, calm copy, and timer-based auto-advance without countdown/audiovisual stimulation.
+- **Non-scope:** Audio/chime/music/vibration, skip/customization controls, backend/auth/cloud sync, native sharing, notifications, public profiles, leaderboards, chat/community, dependencies, or story catalog expansion.
+- **Definition of done:** Story → Ritual → Pause → Quiz → Completion runs end-to-end with a short calm silent auto-advance pause and no regressions in protected surfaces.
+- **Manual iPhone QA steps:** Open app fresh, validate Threshold v1, run Today → Story panels → Ritual → confirm Pause v1 appears before quiz and auto-advances after ~13s, then complete quiz/completion and regression-check Share Card, Bedtime Mode, My Treasures, Parent Dashboard, and Weekly Progress.
+- **Completion note:** Revised from the old “Content QA and Source-Note Model” to “The Pause v1” based on final strategic roadmap feedback; implemented silent pause stage and preserved existing local/private journey architecture.
+- **Category-defining product check focus:** Distinctive calm ritual pacing that strengthens daily habit while preserving trust and low-stimulation quality.
 
 ### Sprint 32 — Source and Provenance Fields
 - **Target quality level:** Q3 Private Beta Quality
