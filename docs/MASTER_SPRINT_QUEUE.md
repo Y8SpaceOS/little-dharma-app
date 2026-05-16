@@ -51,11 +51,11 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 14 — Test Harness Reliability and Coverage Targets
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** Growth Loop
-- **Primary quality dimension:** Parent-safe shareability
-- **Protected quality dimensions:** Parent trust, Premium UI/UX taste, Safety/privacy, Daily 10-minute ritual habit
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Strengthen automated confidence by making the test harness stable and defining meaningful coverage targets.
 - **Scope:** Stabilize test runner behavior, define critical flow coverage targets, and document test taxonomy (smoke/unit/integration).
