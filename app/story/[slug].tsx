@@ -5,6 +5,7 @@ import { getStoryJourneyBySlug } from '@/services/journeys';
 import { trackEvent } from '@/lib/analytics';
 import { tokens } from '@/design/tokens';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
+import { companionV1 } from '@/lib/companion';
 
 type Stage = 'story' | 'ritual' | 'quiz' | 'complete' | 'bedtime';
 
@@ -130,6 +131,11 @@ export default function StoryScreen() {
             <Text style={styles.ritualStageEyebrow}>Ritual Moment</Text>
             <Text style={styles.panelTitle}>A calm heart pause</Text>
             <Text style={styles.ritualFraming}>Breathe softly together. This is your family&apos;s tiny sacred minute.</Text>
+
+            <View style={styles.companionInlineCard}>
+              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
+              <Text style={styles.companionInlineCopy}>{companionV1.copy.ritualEncouragement}</Text>
+            </View>
             <View style={styles.ritualCard}>
               <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle}</Text>
               <View style={styles.ritualScriptCard}>
@@ -183,6 +189,11 @@ export default function StoryScreen() {
             <Text style={styles.bedtimeTitle}>Soft closing ritual for tonight</Text>
             <Text style={styles.bedtimeBody}>Settle in together with a slow breath and one gentle reflection before sleep.</Text>
 
+            <View style={styles.companionInlineCard}>
+              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
+              <Text style={styles.companionInlineCopy}>{companionV1.copy.bedtime}</Text>
+            </View>
+
             <View style={styles.bedtimeSection}>
               <Text style={styles.bedtimeLabel}>Value practiced</Text>
               <Text style={styles.bedtimeValue}>{story.value}</Text>
@@ -216,6 +227,11 @@ export default function StoryScreen() {
             <Text style={styles.parentPrompt}>For Parent: {story.parentReflectionPrompt}</Text>
             <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
             <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
+
+            <View style={styles.companionInlineCard}>
+              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
+              <Text style={styles.companionInlineCopy}>{companionV1.copy.completion} {companionV1.copy.carryForward}</Text>
+            </View>
             <Pressable style={styles.bedtimeButton} onPress={() => setStage('bedtime')}>
               <Text style={styles.bedtimeButtonText}>Enter Bedtime Mode</Text>
             </Pressable>
@@ -302,6 +318,11 @@ const styles = StyleSheet.create({
   optionText: { fontSize: 18, color: '#4B3524', fontWeight: '600' },
   quizHint: { fontSize: 13, color: '#7D6147', fontWeight: '600' },
   parentPrompt: { marginTop: 4, fontSize: 16, color: '#5A4A36', fontWeight: '600' },
+
+  companionInlineCard: { backgroundColor: '#FFF9F0', borderRadius: 14, borderWidth: 1, borderColor: '#F0DFC8', paddingHorizontal: 12, paddingVertical: 10, gap: 4 },
+  companionInlineLabel: { fontSize: 11, color: '#7D5A36', fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.6 },
+  companionInlineCopy: { fontSize: 15, color: '#5D4732', lineHeight: 22, fontWeight: '600' },
+
   shareCard: { borderRadius: 24, backgroundColor: '#F8F2FF', paddingHorizontal: 18, paddingVertical: 18, gap: 14, borderWidth: 1, borderColor: '#D8C6F5', shadowColor: '#583596', shadowOpacity: 0.14, shadowRadius: 16, shadowOffset: { width: 0, height: 7 }, elevation: 5 },
   shareBrand: { fontSize: 11, fontWeight: '800', color: '#7B5FAF', textTransform: 'uppercase', letterSpacing: 1.1 },
   shareTitle: { fontSize: 22, fontWeight: '800', color: '#3F2C63', lineHeight: 28 },
