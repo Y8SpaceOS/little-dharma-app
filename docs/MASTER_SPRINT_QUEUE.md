@@ -631,8 +631,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Existing app behavior, Parent trust, Safety/privacy, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Build a durable manual QA matrix for private-beta critical journeys.
 - **Scope:** Define device/OS matrix, critical-path checklist, pass/fail logging template, and triage severity rules.
@@ -662,8 +661,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Parent trust
 - **Protected quality dimensions:** Child delight, Safety/privacy, Existing app behavior, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Add graceful failure containment for critical runtime surfaces.
 - **Scope:** Define and implement error boundaries plus safe fallback copy for key child/parent routes.
@@ -723,8 +721,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Existing app behavior, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Prepare non-code artifacts and compliance checklist needed for private-beta distribution readiness.
 - **Scope:** Assemble metadata, policy copy, screenshots/checklists, support/contact workflows, and known-risk ledger.
@@ -739,8 +736,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Content depth and authenticity, Child delight, Existing app behavior
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Cut and validate the private-beta release candidate across product, content, and trust gates.
 - **Scope:** Freeze candidate build scope, run full gate checklist, triage blockers, and publish go/no-go report.
@@ -848,8 +844,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -926,8 +921,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1002,8 +996,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1078,8 +1071,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1154,8 +1146,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1230,8 +1221,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1306,8 +1296,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1384,8 +1373,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1460,8 +1448,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1536,8 +1523,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1612,8 +1598,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1688,8 +1673,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1766,8 +1750,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1842,8 +1825,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1918,8 +1900,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1994,8 +1975,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -2070,8 +2050,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -2146,8 +2125,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered Content Production Pipeline v1 docs/templates and optional validator covering intake, batching, drafting prompts, review gates, approval rules, QA checklists, and Sprint 41–45 handoff guidance with no runtime app changes.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
