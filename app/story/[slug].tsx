@@ -62,7 +62,10 @@ export default function StoryScreen() {
     }
   ];
 
-  const bedtimeClosingLine = `Parent: “I saw ${story.value.toLowerCase()} in you tonight.” Child: “Tomorrow I will practice it again with a calm heart.”`;
+  const safeValue = story.value?.trim() || 'kindness';
+  const bedtimeReflectionQuestion = story.ritual.reflectionQuestion?.trim() || 'What is one gentle moment from today that you want to remember before sleep?';
+  const bedtimeParentBridge = story.ritual.parentMeaning?.trim() || story.parentReflectionPrompt?.trim() || 'Parent: Share one calm moment you noticed today, then invite one short reply.';
+  const bedtimeClosingLine = `Parent: “I saw ${safeValue.toLowerCase()} in you tonight.” Child: “Tomorrow I will practice it again with a calm heart.”`;
 
   useEffect(() => {
     if (stage !== 'pause') return;
@@ -225,9 +228,9 @@ export default function StoryScreen() {
 
         {stage === 'bedtime' && (
           <View style={styles.bedtimeCard}>
-            <Text style={styles.bedtimeEyebrow}>Bedtime Mode</Text>
-            <Text style={styles.bedtimeTitle}>Soft closing ritual for tonight</Text>
-            <Text style={styles.bedtimeBody}>Settle in together with a slow breath and one gentle reflection before sleep.</Text>
+            <Text style={styles.bedtimeEyebrow}>Bedtime</Text>
+            <Text style={styles.bedtimeTitle}>A gentle goodnight close</Text>
+            <Text style={styles.bedtimeSettle}>Settle down together. Relax your shoulders, soften your voice, and take one slow breath.</Text>
 
             <View style={styles.companionInlineCard}>
               <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
@@ -236,12 +239,12 @@ export default function StoryScreen() {
 
             <View style={styles.bedtimeSection}>
               <Text style={styles.bedtimeLabel}>Value practiced</Text>
-              <Text style={styles.bedtimeValue}>{story.value}</Text>
+              <Text style={styles.bedtimeValue}>{safeValue}</Text>
             </View>
 
             <View style={styles.bedtimeSection}>
               <Text style={styles.bedtimeLabel}>Gentle reflection question</Text>
-              <Text style={styles.bedtimeBody}>{story.ritual.reflectionQuestion}</Text>
+              <Text style={styles.bedtimeBody}>{bedtimeReflectionQuestion}</Text>
             </View>
 
             <View style={styles.bedtimeSection}>
@@ -251,12 +254,18 @@ export default function StoryScreen() {
 
             <View style={styles.bedtimeSection}>
               <Text style={styles.bedtimeLabel}>Parent-child closing line</Text>
-              <Text style={styles.bedtimeBody}>{bedtimeClosingLine}</Text>
+              <Text style={styles.bedtimeBody}>{bedtimeParentBridge}</Text>
+              <Text style={styles.bedtimeClosingLine}>{bedtimeClosingLine}</Text>
             </View>
 
-            <Pressable style={styles.button} onPress={() => setStage('complete')}>
-              <Text style={styles.buttonText}>Back to Completion</Text>
-            </Pressable>
+            <View style={styles.controls}>
+              <Pressable style={styles.button} onPress={() => setStage('complete')}>
+                <Text style={styles.buttonText}>Back to Completion</Text>
+              </Pressable>
+              <Pressable style={styles.buttonSecondary} onPress={() => router.push('/(child)/today')}>
+                <Text style={styles.buttonSecondaryText}>Return to Child Home</Text>
+              </Pressable>
+            </View>
           </View>
         )}
 
@@ -420,9 +429,11 @@ const styles = StyleSheet.create({
   bedtimeButtonText: { fontSize: 15, fontWeight: '700', color: '#4E3A73' },
   bedtimeCard: { marginTop: 4, backgroundColor: '#F7F5FF', borderRadius: 24, padding: tokens.spacing.lg, gap: 14, borderWidth: 1, borderColor: '#D9D1EC' },
   bedtimeEyebrow: { fontSize: 12, color: '#6C5A95', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },
-  bedtimeTitle: { fontSize: 26, fontWeight: '800', color: '#3F3556' },
+  bedtimeTitle: { fontSize: 24, fontWeight: '800', color: '#3F3556', lineHeight: 30 },
+  bedtimeSettle: { fontSize: 15, lineHeight: 23, color: '#564D6D' },
   bedtimeSection: { backgroundColor: '#FFFFFF', borderRadius: 16, borderWidth: 1, borderColor: '#E2DBF2', padding: 12, gap: 5 },
   bedtimeLabel: { fontSize: 11, color: '#6D5F8F', fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.6 },
   bedtimeValue: { fontSize: 20, fontWeight: '700', color: '#443A5D' },
-  bedtimeBody: { fontSize: 16, lineHeight: 23, color: '#564D6D' }
+  bedtimeBody: { fontSize: 16, lineHeight: 24, color: '#564D6D' },
+  bedtimeClosingLine: { fontSize: 16, lineHeight: 24, color: '#4C4363', fontWeight: '600', marginTop: 4 }
 });

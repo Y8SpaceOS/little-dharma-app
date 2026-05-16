@@ -547,7 +547,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Child delight
 - **Protected quality dimensions:** Parent trust, Daily 10-minute ritual habit, Safety/privacy, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Delivered calmer Bedtime Mode v2 with settle-down guidance, value/reflection/parent-bridge fallbacks, breathing-gratitude prompt, and clear return actions while preserving Story → Ritual → Pause → Quiz → Completion → Bedtime flow and avoiding new dependencies/features.
 - **Primary track:** Product Experience
 - **Objective:** Upgrade bedtime closure quality for calmer repeat nightly usage.
 - **Scope:** Improve bedtime pacing/copy and parent-child close while preserving existing architecture.

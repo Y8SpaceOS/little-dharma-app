@@ -1,0 +1,16 @@
+qaArea,surface,expectedBehavior,status,notes
+bedtime screen visibility,app/story/[slug].tsx,Bedtime stage is reachable from completion and renders calm closing sections,pass,Enter Bedtime Mode opens bedtime card
+value practiced display,app/story/[slug].tsx,Value practiced section shows value and falls back safely when missing,pass,Uses safeValue fallback
+reflection question display,app/story/[slug].tsx,Reflection section shows ritual reflection question or gentle default,pass,Uses bedtimeReflectionQuestion fallback
+parent bridge / closing line,app/story/[slug].tsx,Parent bridge appears with fallback and parent-child closing line remains present,pass,Uses bedtimeParentBridge plus bedtimeClosingLine
+breathing or gratitude prompt,app/story/[slug].tsx,Bedtime includes one breathing or gratitude prompt,pass,Three breaths plus gratitude line
+return path,app/story/[slug].tsx,Child can return to completion or child home from bedtime,pass,Two explicit buttons
+missing-field fallback,app/story/[slug].tsx,Missing value/reflection/parent meaning should not crash bedtime,pass,Fallbacks implemented
+no audio dependency,app/story/[slug].tsx,Bedtime works without audio surfaces or audio runtime dependency,pass,No audio UI added
+no timer dependency,app/story/[slug].tsx,Bedtime has no countdown/timer controls,pass,No timer elements in bedtime section
+no streak pressure,app/story/[slug].tsx,No streak retention language is shown in bedtime flow,pass,Forbidden phrase scan included in validator
+no competitive framing,app/story/[slug].tsx,No competitive wording such as beating friends,pass,Forbidden phrase scan included in validator
+no public sharing pressure,app/story/[slug].tsx,No prompt to publicly share bedtime flow,pass,No bedtime sharing CTA
+completion flow preserved,app/story/[slug].tsx,Completion behavior remains intact and bedtime remains optional,pass,Completion stage unchanged aside from entry/return
+iPhone layout sanity,app/story/[slug].tsx,Bedtime copy should remain readable on iPhone sizes,pending_manual_qa,Requires on-device validation
+story 1–21 regression,app/story/[slug].tsx + story data,Stories 1–21 still reachable and runnable,pending_manual_qa,Manual device pass required
