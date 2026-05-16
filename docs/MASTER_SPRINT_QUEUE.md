@@ -499,7 +499,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Content depth and authenticity
 - **Protected quality dimensions:** Parent trust, Daily 10-minute ritual habit, Child delight, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added seven Week 3 Vrindavan runtime packets (stories 15–21) plus Week 3 QA doc/CSV/validators, completing a schema-compatible 21-story private-beta path with no UI/navigation/backend/CMS/audio/analytics/dependency changes.
 - **Primary track:** Content Engine
 - **Objective:** Complete the 21-day Vrindavan base path by adding stories 15–21.
 - **Scope:** Author/integrate stories 15–21 using established templates and QA workflow.
