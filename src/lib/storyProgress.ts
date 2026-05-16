@@ -4,6 +4,7 @@ import type { StoryJourney } from '@/types/content';
 export type StoryCompletionEntry = {
   completedAt: string;
   badgeName: string;
+  valueWord?: string;
 };
 
 export type StoryCompletionRecord = {
@@ -79,13 +80,36 @@ export async function getWorldProgress(worldSlug: string, stories: StoryJourney[
   };
 }
 
-export async function markStoryComplete(storySlug: string, badgeName: string) {
+export async function markStoryComplete(storySlug: string, badgeName: string, valueWord?: string) {
   const current = await readStoryCompletions();
 
   current[storySlug] = {
     completedAt: new Date().toISOString(),
-    badgeName
+    badgeName,
+    valueWord
   };
 
   await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+}
+
+
+export async function getLatestCarryingWord(stories: StoryJourney[]) {
+  const latestStory = await getLatestCompletedStory(stories);
+  if (!latestStory) return null;
+
+  const completion = await getStoryCompletion(latestStory.story.slug);
+  return completion?.valueWord ?? latestStory.story.value;
+}
+
+export async function getCompletedCarryingWords(stories: StoryJourney[]) {
+  const completions = await readStoryCompletions();
+
+  return stories
+    .filter((story) => Boolean(completions[story.story.slug]))
+    .sort((a, b) => {
+      const timeA = new Date(completions[a.story.slug].completedAt).getTime();
+      const timeB = new Date(completions[b.story.slug].completedAt).getTime();
+      return timeB - timeA;
+    })
+    .map((story) => completions[story.story.slug].valueWord ?? story.story.value);
 }

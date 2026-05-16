@@ -78,7 +78,7 @@ export default function StoryScreen() {
     trackEvent('quiz_completed', { storySlug: story.slug, correct });
     trackEvent('badge_earned', { badge: story.badgeName, storySlug: story.slug });
     trackEvent('story_completed', { storySlug: story.slug });
-    await markStoryComplete(story.slug, story.badgeName);
+    await markStoryComplete(story.slug, story.badgeName, story.value);
   };
 
   return (
@@ -254,6 +254,13 @@ export default function StoryScreen() {
             <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
             <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
 
+
+            <View style={styles.carryingWordCard}>
+              <Text style={styles.carryingWordEyebrow}>Carrying Word</Text>
+              <Text style={styles.carryingWordTitle}>Today you carry: {story.value}</Text>
+              <Text style={styles.carryingWordCopy}>Carry this word gently today.</Text>
+            </View>
+
             <View style={styles.companionInlineCard}>
               <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.completion} {companionV1.copy.carryForward}</Text>
@@ -388,6 +395,10 @@ const styles = StyleSheet.create({
   pauseTitle: { fontSize: 28, color: '#3E2A1A', fontWeight: '800', textAlign: 'center', lineHeight: 34 },
   pauseLine: { fontSize: 18, color: '#6A4F37', fontWeight: '600', textAlign: 'center', lineHeight: 25 },
   ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' },
+  carryingWordCard: { backgroundColor: '#FFF4DE', borderWidth: 1, borderColor: '#F0D2A4', borderRadius: 18, padding: 14, gap: 4 },
+  carryingWordEyebrow: { fontSize: 12, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8, color: '#8A5A2D' },
+  carryingWordTitle: { fontSize: 20, fontWeight: '800', color: '#4A2B17' },
+  carryingWordCopy: { fontSize: 15, lineHeight: 21, color: '#6B4B2F' },
   bedtimeButton: { borderRadius: 14, borderWidth: 1, borderColor: '#C8BADF', backgroundColor: '#F4EEFF', paddingVertical: 11, alignItems: 'center' },
   bedtimeButtonText: { fontSize: 15, fontWeight: '700', color: '#4E3A73' },
   bedtimeCard: { marginTop: 4, backgroundColor: '#F7F5FF', borderRadius: 24, padding: tokens.spacing.lg, gap: 14, borderWidth: 1, borderColor: '#D9D1EC' },

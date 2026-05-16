@@ -336,20 +336,21 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Revised from the old “Content QA and Source-Note Model” to “The Pause v1” based on final strategic roadmap feedback; implemented silent pause stage and preserved existing local/private journey architecture.
 - **Category-defining product check focus:** Distinctive calm ritual pacing that strengthens daily habit while preserving trust and low-stimulation quality.
 
-### Sprint 32 — Source and Provenance Fields
+### Sprint 32 — Carrying Word v1 (Revised from Source and Provenance Fields)
 - **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Product Experience
+- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Protected quality dimensions:** Child delight, Parent trust, Content depth and authenticity, Safety/privacy, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Deliver source and provenance fields as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the source and provenance fields increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Source and Provenance Fields meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How source and provenance fields improves delight, trust, ritual consistency, safety, and future monetisation readiness.
+- **Status:** done
+- **Completion note:** Revised Sprint 32 scope based on final strategic roadmap feedback and shipped Carrying Word v1 using existing story value/completion data across Story Completion, Child Home, and My Treasures without adding new persistence, social mechanics, scoring, or backend dependencies.
+- **Primary track:** Product Experience
+- **Objective:** Bridge in-app completion to real-life family practice by giving each completed story one calm value-word to carry into the day/night.
+- **Scope:** Use `story.value` as carrying word; add completion-surface carrying word card; show latest carrying word on Child Home where safe; add lightweight completed-values “Words I Carry” section in My Treasures derived from local completed stories.
+- **Non-scope:** Source/provenance system, new stories, backend/auth/cloud sync, native sharing, notifications, audio, voice, public profiles, leaderboards, chat/community, analytics, paywall/monetization, child/parent name collection.
+- **Definition of done:** Completion screen clearly presents carrying word; Child Home/My Treasures surfaces completed carrying words where available; core ritual and trust/safety protected dimensions remain intact.
+- **Manual iPhone QA steps:** Run Threshold → Today’s Journey → Story → Ritual → Pause → Quiz → Completion; verify carrying word copy/value mapping plus Child Home/My Treasures visibility and no regressions to Bedtime Mode, Share Card, Parent Dashboard, Weekly Progress, and privacy constraints.
+- **Category-defining product check focus:** Ritual carry-forward clarity that strengthens daily habit while preserving private-by-default parent trust.
 
 ### Sprint 33 — Parent-Facing Why This Story Matters
 - **Target quality level:** Q3 Private Beta Quality

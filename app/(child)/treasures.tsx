@@ -3,20 +3,26 @@ import { Link } from 'expo-router';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
-import { getAllStoryCompletions, type StoryCompletionRecord } from '@/lib/storyProgress';
+import { getAllStoryCompletions, getCompletedCarryingWords, type StoryCompletionRecord } from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
 
 export default function TreasuresScreen() {
   const [completions, setCompletions] = useState<StoryCompletionRecord>({});
+  const [wordsICarry, setWordsICarry] = useState<string[]>([]);
 
   const refreshTreasures = useCallback(async () => {
     const stored = await getAllStoryCompletions();
     setCompletions(stored);
+    const words = await getCompletedCarryingWords(getVrindavanJourneyPath());
+    setWordsICarry(Array.from(new Set(words)));
   }, []);
 
   useFocusEffect(
     useCallback(() => {
-      refreshTreasures().catch(() => setCompletions({}));
+      refreshTreasures().catch(() => {
+        setCompletions({});
+        setWordsICarry([]);
+      });
     }, [refreshTreasures])
   );
 
@@ -65,6 +71,22 @@ export default function TreasuresScreen() {
           </View>
         )}
 
+
+        <View style={styles.wordsCard}>
+          <Text style={styles.wordsTitle}>Words I Carry</Text>
+          {wordsICarry.length === 0 ? (
+            <Text style={styles.wordsEmpty}>Complete a story and your first carrying word will appear here.</Text>
+          ) : (
+            <View style={styles.wordsWrap}>
+              {wordsICarry.map((word) => (
+                <View key={word} style={styles.wordChip}>
+                  <Text style={styles.wordChipText}>{word}</Text>
+                </View>
+              ))}
+            </View>
+          )}
+        </View>
+
         <Text style={styles.privacyNote}>Only your family can see this. No leaderboard, no public profile, just your own beautiful growth.</Text>
         <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>
       </ScrollView>
@@ -90,6 +112,12 @@ const styles = StyleSheet.create({
   badgeName: { fontSize: 19, fontWeight: '800', color: '#3D2615' },
   badgeMeta: { fontSize: 14, color: '#6D4B2C' },
   badgeDate: { fontSize: 13, color: '#8C613A', marginTop: 2 },
+  wordsCard: { backgroundColor: '#FFF4DE', borderWidth: 1, borderColor: '#F0D2A4', borderRadius: 20, padding: tokens.spacing.md, gap: 8 },
+  wordsTitle: { fontSize: 20, fontWeight: '800', color: '#4A2B17' },
+  wordsEmpty: { fontSize: 14, lineHeight: 20, color: '#6D4B2C' },
+  wordsWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  wordChip: { backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: '#F1D8B2', borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6 },
+  wordChipText: { fontSize: 13, fontWeight: '700', color: '#6A4A2C' },
   privacyNote: { marginTop: 6, fontSize: 13, lineHeight: 19, color: '#735A42' },
   backLink: { marginTop: 6, textAlign: 'center', color: tokens.colors.peacock, fontSize: 16, fontWeight: '700' }
 });
