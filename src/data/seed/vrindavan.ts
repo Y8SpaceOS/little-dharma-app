@@ -573,6 +573,287 @@ export const vrindavanFourteenthStoryPacket: StoryJourney = {
   }
 };
 
+
+
+export const vrindavanFifteenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'responsibility', name: 'Responsibility' },
+  story: {
+    slug: 'krishna-cares-for-the-smallest-calf',
+    title: 'Krishna Cares for the Smallest Calf',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Responsibility',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s15p1', title: 'Morning Meadow Bell', text: 'At sunrise, Krishna counted the calves before the herd walked to the meadow.' },
+      { id: 'w3s15p2', title: 'One Tiny Lagging Step', text: 'The smallest calf walked slowly behind, still learning where to place its feet.' },
+      { id: 'w3s15p3', title: 'A Caring Pause', text: 'Krishna slowed down and stayed beside the little calf so it would not feel alone.' },
+      { id: 'w3s15p4', title: 'Safe and Steady', text: 'He guided it around stones and toward soft grass while friends watched with gentle smiles.' },
+      { id: 'w3s15p5', title: 'Responsibility Is Love', text: 'Krishna said, “When someone is small, we protect them with patient care.”' }
+    ],
+    quiz: {
+      question: 'How did Krishna show responsibility?',
+      options: ['He stayed with the smallest calf and guided it safely', 'He hurried ahead and forgot to count', 'He laughed when the calf walked slowly'],
+      correctAnswer: 'He stayed with the smallest calf and guided it safely',
+      gentleFeedback: 'Wonderful effort. Responsibility means we care for what is in our hands with steady love.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma care phrase',
+      microShlokaText: 'पालनं प्रेम',
+      transliteration: 'Paalanam prema',
+      childMeaning: 'Caring is love. We help little ones feel safe.',
+      parentMeaning: 'Teach responsibility as loving stewardship: small daily acts of care build reliability without pressure.',
+      ritualPrompt: 'Choose one small caring task and complete it gently together today.',
+      reflectionQuestion: 'Who needed our careful help today?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Calf Care Bell',
+    parentReflectionPrompt: 'Ask your child: What careful job did you finish with love today?',
+    completionShareCopy: 'Today we completed a Little Dharma responsibility story and practiced steady care.'
+  }
+};
+
+export const vrindavanSixteenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'calm', name: 'Calm' },
+  story: {
+    slug: 'moonlight-calm-under-the-kadamba-tree',
+    title: 'Moonlight Calm Under the Kadamba Tree',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Calm',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s16p1', title: 'Soft Moon Over Vrindavan', text: 'Night came quietly, and moonlight silvered the kadamba leaves.' },
+      { id: 'w3s16p2', title: 'Busy Hearts', text: 'After a full day, Krishna and friends still felt bouncy and noisy inside.' },
+      { id: 'w3s16p3', title: 'Listen to the Breeze', text: 'Krishna invited everyone to sit, feel the cool air, and hear crickets singing.' },
+      { id: 'w3s16p4', title: 'Three Gentle Breaths', text: 'They breathed in slowly and out slowly until shoulders softened and smiles returned.' },
+      { id: 'w3s16p5', title: 'Calm Lights the Night', text: 'Krishna said, “A calm heart helps us rest, listen, and be kind.”' }
+    ],
+    quiz: {
+      question: 'What helped the friends feel calm?',
+      options: ['They sat quietly and took slow breaths', 'They shouted louder and louder', 'They ran in circles without stopping'],
+      correctAnswer: 'They sat quietly and took slow breaths',
+      gentleFeedback: 'Lovely try. Calm can begin with one quiet pause and one slow breath.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma calm phrase',
+      microShlokaText: 'शान्तं हृदयम्',
+      transliteration: 'Shaantam hridayam',
+      childMeaning: 'Calm heart. Slow breaths help us feel peaceful.',
+      parentMeaning: 'Use short evening pauses to co-regulate; calm is practiced through rhythm, not forced silence.',
+      ritualPrompt: 'Sit together and take three slow breaths under a dim light before bedtime.',
+      reflectionQuestion: 'When did our body feel calmer tonight?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Moonlit Calm Leaf',
+    parentReflectionPrompt: 'Ask your child: Which breath felt the calmest tonight?',
+    completionShareCopy: 'Today we completed a Little Dharma calm story and practiced moonlight breathing.'
+  }
+};
+
+export const vrindavanSeventeenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'forgiveness', name: 'Forgiveness' },
+  story: {
+    slug: 'the-friendship-repair-circle',
+    title: 'The Friendship Repair Circle',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Forgiveness',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s17p1', title: 'A Hurt Moment', text: 'During play, two friends pulled the same garland and it tore in half.' },
+      { id: 'w3s17p2', title: 'Tight Faces', text: 'Both children looked upset and turned away from each other.' },
+      { id: 'w3s17p3', title: 'Circle of Listening', text: 'Krishna invited everyone into a small circle and asked each friend to speak kindly and listen fully.' },
+      { id: 'w3s17p4', title: 'Sorry and Repair', text: 'Each child said sorry, and together they retied the flowers with careful hands.' },
+      { id: 'w3s17p5', title: 'Forgiveness Makes Space', text: 'Krishna smiled and said forgiveness helps friendship breathe again.' }
+    ],
+    quiz: {
+      question: 'How was friendship repaired?',
+      options: ['They listened, said sorry, and fixed the garland together', 'They stayed angry all day', 'They blamed one friend only'],
+      correctAnswer: 'They listened, said sorry, and fixed the garland together',
+      gentleFeedback: 'Beautiful effort. Forgiveness grows when we listen, repair, and begin again kindly.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma repair phrase',
+      microShlokaText: 'क्षमां ददामि',
+      transliteration: 'Kshamaam dadaami',
+      childMeaning: 'I offer forgiveness. We can begin again with kindness.',
+      parentMeaning: 'Guide conflict repair in short steps: calm, listen, apologize, and make one concrete repair action.',
+      ritualPrompt: 'In a small circle, each person says one kind word and one repair promise.',
+      reflectionQuestion: 'What helped us make peace today?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Friendship Repair Flower',
+    parentReflectionPrompt: 'Ask your child: What words helped fix a friendship today?',
+    completionShareCopy: 'Today we completed a Little Dharma forgiveness story and practiced kind repair.'
+  }
+};
+
+export const vrindavanEighteenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'courage', name: 'Courage' },
+  story: {
+    slug: 'krishna-speaks-bravely-and-kindly',
+    title: 'Krishna Speaks Bravely and Kindly',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Courage',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s18p1', title: 'Crowded Path', text: 'On a narrow path, older children rushed ahead and smaller ones were squeezed aside.' },
+      { id: 'w3s18p2', title: 'A Brave Breath', text: 'Krishna noticed the problem and took one steady breath before speaking.' },
+      { id: 'w3s18p3', title: 'Kind Clear Words', text: 'He said, “Let us make room for everyone so all can walk safely together.”' },
+      { id: 'w3s18p4', title: 'Space for All', text: 'The children slowed down, formed two gentle lines, and the path felt peaceful again.' },
+      { id: 'w3s18p5', title: 'Courage with Kindness', text: 'Krishna reminded them that brave words can be soft and still strong.' }
+    ],
+    quiz: {
+      question: 'What made Krishna’s courage special?',
+      options: ['He spoke up clearly and kindly for everyone’s safety', 'He yelled to scare others', 'He stayed silent even when others were hurt'],
+      correctAnswer: 'He spoke up clearly and kindly for everyone’s safety',
+      gentleFeedback: 'Great try. Courage can sound calm, respectful, and caring.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma courage phrase',
+      microShlokaText: 'धैर्यं वद',
+      transliteration: 'Dhairyam vada',
+      childMeaning: 'Speak with courage. Kind words can protect others.',
+      parentMeaning: 'Coach assertive safety language your child can use: calm voice, clear request, respectful tone.',
+      ritualPrompt: 'Practice one brave-and-kind sentence together for a tricky moment.',
+      reflectionQuestion: 'When can we use brave kind words tomorrow?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Brave Voice Conch',
+    parentReflectionPrompt: 'Ask your child: What brave kind sentence do you want to remember?',
+    completionShareCopy: 'Today we completed a Little Dharma courage story and practiced brave kind words.'
+  }
+};
+
+export const vrindavanNineteenthStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'wisdom', name: 'Wisdom' },
+  story: {
+    slug: 'the-wise-choice-at-the-crossroads',
+    title: 'The Wise Choice at the Crossroads',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Wisdom',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s19p1', title: 'Two Paths Ahead', text: 'Walking home, Krishna and friends reached a crossroads with two ways to the village.' },
+      { id: 'w3s19p2', title: 'Fast but Slippery', text: 'One path looked short but muddy after rain; the other was longer and dry.' },
+      { id: 'w3s19p3', title: 'Pause and Think', text: 'Krishna said, “Let us choose what keeps everyone safe, not only what is quick.”' },
+      { id: 'w3s19p4', title: 'Steady Steps Home', text: 'They chose the longer dry path and arrived smiling, clean, and safe.' },
+      { id: 'w3s19p5', title: 'Wisdom Chooses Well', text: 'Krishna taught that wise choices think ahead with care for all.' }
+    ],
+    quiz: {
+      question: 'Why did they choose the longer path?',
+      options: ['It was safer for everyone', 'It looked more exciting and risky', 'They wanted to get muddy quickly'],
+      correctAnswer: 'It was safer for everyone',
+      gentleFeedback: 'Nice effort. Wisdom looks ahead and chooses what protects everyone.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma wisdom phrase',
+      microShlokaText: 'धीः पश्यति',
+      transliteration: 'Dhih pashyati',
+      childMeaning: 'Wisdom sees ahead. We pause and choose carefully.',
+      parentMeaning: 'Model decision pauses: name options, consider safety, then choose with calm clarity.',
+      ritualPrompt: 'Before one family decision, pause for one breath and name the safest choice together.',
+      reflectionQuestion: 'What helped us make a wise choice today?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Crossroads Wisdom Lamp',
+    parentReflectionPrompt: 'Ask your child: How did we choose safely today?',
+    completionShareCopy: 'Today we completed a Little Dharma wisdom story and practiced choosing with care.'
+  }
+};
+
+export const vrindavanTwentiethStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'devotion', name: 'Devotion' },
+  story: {
+    slug: 'morning-devotion-in-vrindavan',
+    title: 'Morning Devotion in Vrindavan',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Devotion',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s20p1', title: 'Dawn Bell Sounds', text: 'At dawn, Krishna and friends gathered quietly as birds welcomed the morning.' },
+      { id: 'w3s20p2', title: 'Hands at the Heart', text: 'They stood with gentle posture, hands near the heart, and took a grateful breath.' },
+      { id: 'w3s20p3', title: 'Offering a Simple Song', text: 'Krishna led a short prayerful song, soft and peaceful, with loving attention.' },
+      { id: 'w3s20p4', title: 'Devotion in Actions', text: 'After singing, they helped prepare water and flowers for the day with care.' },
+      { id: 'w3s20p5', title: 'Love in Daily Rhythm', text: 'Krishna smiled and said devotion is love remembered in small daily acts.' }
+    ],
+    quiz: {
+      question: 'What did devotion look like in this story?',
+      options: ['A gentle morning song and caring daily actions', 'Rushing through the morning without attention', 'Only saying words with no caring actions'],
+      correctAnswer: 'A gentle morning song and caring daily actions',
+      gentleFeedback: 'Beautiful try. Devotion can be simple, sincere, and steady each day.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma devotion phrase',
+      microShlokaText: 'भक्तिः प्रेम',
+      transliteration: 'Bhaktih prema',
+      childMeaning: 'Devotion is loving care. We remember love each day.',
+      parentMeaning: 'Keep devotional practice child-safe and short: sincere attention, gentle posture, and one concrete caring act.',
+      ritualPrompt: 'Begin the day with one soft chant seed and one small caring action done together.',
+      reflectionQuestion: 'What loving action can we offer this morning?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Morning Devotion Bloom',
+    parentReflectionPrompt: 'Ask your child: Which morning action felt most loving today?',
+    completionShareCopy: 'Today we completed a Little Dharma devotion story and practiced a loving morning rhythm.'
+  }
+};
+
+export const vrindavanTwentyFirstStoryPacket: StoryJourney = {
+  world: { slug: 'vrindavan', title: 'Vrindavan', description: 'Sacred groves of love and kindness.' },
+  character: { slug: 'krishna', name: 'Krishna' },
+  value: { slug: 'joyful-gratitude', name: 'Joyful Gratitude' },
+  story: {
+    slug: 'the-gratitude-circle-at-sunset',
+    title: 'The Gratitude Circle at Sunset',
+    world: 'Vrindavan',
+    character: 'Krishna',
+    value: 'Joyful Gratitude',
+    ageBand: '4-6',
+    panels: [
+      { id: 'w3s21p1', title: 'Golden Sunset Sky', text: 'As the sun set, Krishna and friends sat in a circle beneath a glowing sky.' },
+      { id: 'w3s21p2', title: 'One by One Thanks', text: 'Each child shared one thankful joy from the day: a song, a friend, a kind meal, a cool breeze.' },
+      { id: 'w3s21p3', title: 'Listening Hearts', text: 'Everyone listened quietly and smiled when each voice was heard.' },
+      { id: 'w3s21p4', title: 'Joy Shared Is Joy Grown', text: 'Krishna said, “When we share gratitude, joy becomes bigger for everyone.”' },
+      { id: 'w3s21p5', title: 'A Full and Peaceful Close', text: 'They ended with folded hands, carrying thankfulness into the evening.' }
+    ],
+    quiz: {
+      question: 'What happened in the gratitude circle?',
+      options: ['Each person shared one thankful joy and listened kindly', 'Only one person spoke while others left', 'They competed to have the biggest gift'],
+      correctAnswer: 'Each person shared one thankful joy and listened kindly',
+      gentleFeedback: 'Lovely thinking. Gratitude and listening help joy grow together.'
+    },
+    ritual: {
+      microShlokaTitle: 'Little Dharma gratitude-close phrase',
+      microShlokaText: 'धन्योऽस्मि हृष्टोऽस्मि',
+      transliteration: "Dhanyo'smi hrishto'smi",
+      childMeaning: 'I am thankful, I am joyful.',
+      parentMeaning: 'Close the day with shared gratitude rounds to build emotional warmth, belonging, and peaceful bedtime transitions.',
+      ritualPrompt: 'At sunset or bedtime, each family member names one thankful joy from today.',
+      reflectionQuestion: 'What joy are we carrying into tomorrow?',
+      suggestedPracticeDurationSeconds: 90
+    },
+    badgeName: 'Sunset Gratitude Circle',
+    parentReflectionPrompt: 'Ask your child: What thankful joy do you want to remember tomorrow?',
+    completionShareCopy: 'Today we completed a Little Dharma joyful gratitude story and closed the day with thanks.'
+  }
+};
 export const vrindavanStoryPackets: StoryJourney[] = [
   vrindavanJourney,
   vrindavanSecondStoryPacket,
@@ -587,5 +868,12 @@ export const vrindavanStoryPackets: StoryJourney[] = [
   vrindavanEleventhStoryPacket,
   vrindavanTwelfthStoryPacket,
   vrindavanThirteenthStoryPacket,
-  vrindavanFourteenthStoryPacket
+  vrindavanFourteenthStoryPacket,
+  vrindavanFifteenthStoryPacket,
+  vrindavanSixteenthStoryPacket,
+  vrindavanSeventeenthStoryPacket,
+  vrindavanEighteenthStoryPacket,
+  vrindavanNineteenthStoryPacket,
+  vrindavanTwentiethStoryPacket,
+  vrindavanTwentyFirstStoryPacket
 ];
