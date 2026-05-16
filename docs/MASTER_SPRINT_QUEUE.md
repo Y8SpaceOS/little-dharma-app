@@ -371,7 +371,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Content depth and authenticity
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Child delight, Historical sprint integrity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Created `docs/CONTENT_AUTHENTICITY_OS.md` as a docs-only governance gate defining labels, source-sensitivity tiers, sacred-figure and source-claim protocols, review workflow/statuses, QA checklist, and 1,000+ scale controls with no runtime behavior changes.
 - **Primary track:** Trust & Safety
 - **Objective:** Define repeatable authenticity governance so content scale does not dilute cultural trust.
 - **Scope:** Create editorial/authenticity checklist, provenance grading rules, review roles, and escalation workflow.
