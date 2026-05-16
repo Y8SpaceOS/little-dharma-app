@@ -168,9 +168,20 @@ export default function StoryScreen() {
             <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
             <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
             <View style={styles.shareCard}>
-              <Text style={styles.shareTitle}>Parent-safe shareable moment</Text>
+              <Text style={styles.shareBrand}>Little Dharma</Text>
+              <Text style={styles.shareTitle}>Parent-safe family share card</Text>
+              <View style={styles.shareStoryBlock}>
+                <Text style={styles.shareStoryLabel}>Completed story</Text>
+                <Text style={styles.shareStoryTitle}>{story.title}</Text>
+              </View>
+              <View style={styles.sharePillsRow}>
+                <View style={styles.sharePill}><Text style={styles.sharePillText}>Value practiced: {story.value}</Text></View>
+                <View style={styles.sharePill}><Text style={styles.sharePillText}>Badge earned: {story.badgeName}</Text></View>
+              </View>
+              <Text style={styles.shareSummary}>Ritual summary: Story, chant seed, and reflection completed with calm presence in about 10 minutes.</Text>
               <Text style={styles.shareCopy}>{story.completionShareCopy}</Text>
-              <Text style={styles.shareHint}>Private family sharing only. No public child profile is shown.</Text>
+              <Text style={styles.shareHint}>Private family sharing only. No child name, age, location, account details, or public profile shown.</Text>
+              <Text style={styles.shareHintSecondary}>Take a screenshot to share with family.</Text>
             </View>
             <Text style={styles.revisit}>
               {previouslyCompleted
@@ -224,10 +235,19 @@ const styles = StyleSheet.create({
   optionText: { fontSize: 18, color: '#4B3524', fontWeight: '600' },
   quizHint: { fontSize: 13, color: '#7D6147', fontWeight: '600' },
   parentPrompt: { marginTop: 4, fontSize: 16, color: '#5A4A36', fontWeight: '600' },
-  shareCard: { borderRadius: 16, backgroundColor: '#F8F2FF', padding: 12, gap: 6, borderWidth: 1, borderColor: '#DACAF6' },
-  shareTitle: { fontSize: 16, fontWeight: '800', color: '#4E3B76' },
-  shareCopy: { fontSize: 16, color: '#4B3C68' },
-  shareHint: { fontSize: 13, color: '#6B5A88' },
+  shareCard: { borderRadius: 22, backgroundColor: '#F8F2FF', padding: 16, gap: 10, borderWidth: 1, borderColor: '#DACAF6', shadowColor: '#583596', shadowOpacity: 0.12, shadowRadius: 14, shadowOffset: { width: 0, height: 6 }, elevation: 4 },
+  shareBrand: { fontSize: 12, fontWeight: '800', color: '#7B5FAF', textTransform: 'uppercase', letterSpacing: 1 },
+  shareTitle: { fontSize: 20, fontWeight: '800', color: '#3F2C63' },
+  shareStoryBlock: { backgroundColor: '#FFFFFF', borderRadius: 14, borderWidth: 1, borderColor: '#E3D6F7', padding: 10, gap: 4 },
+  shareStoryLabel: { fontSize: 11, color: '#745A9D', fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.6 },
+  shareStoryTitle: { fontSize: 17, color: '#3F2C63', fontWeight: '700' },
+  sharePillsRow: { gap: 8 },
+  sharePill: { backgroundColor: '#EDE2FF', borderRadius: 999, paddingVertical: 8, paddingHorizontal: 12, borderWidth: 1, borderColor: '#D5C2F8' },
+  sharePillText: { color: '#4A3572', fontSize: 14, fontWeight: '700' },
+  shareSummary: { fontSize: 15, lineHeight: 22, color: '#4B3C68', fontWeight: '600' },
+  shareCopy: { fontSize: 15, color: '#4B3C68', lineHeight: 22 },
+  shareHint: { fontSize: 13, color: '#5F4A84', fontWeight: '700' },
+  shareHintSecondary: { fontSize: 13, color: '#6B5A88' },
   revisit: { fontSize: 13, color: '#7A644C' },
   ritualLabel: { fontSize: 14, fontWeight: '700', color: '#7B5C43', textTransform: 'uppercase', letterSpacing: 0.6 },
   ritualStageEyebrow: { fontSize: 12, color: '#8B6A4C', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },
