@@ -6,7 +6,9 @@ import { tokens } from '@/design/tokens';
 import { getOnboardingState, resetOnboarding, subscribeOnboardingState, type OnboardingProfile } from '@/lib/onboardingState';
 import { getParentDashboardSnapshot } from '@/services/progress';
 
-const initialSummary = {
+type ParentDashboardSummary = Awaited<ReturnType<typeof getParentDashboardSnapshot>>;
+
+const initialSummary: ParentDashboardSummary = {
   currentWorld: 'Vrindavan',
   storiesCompleted: 0,
   totalStories: 0,
@@ -25,7 +27,7 @@ const initialSummary = {
     completedDays: 0,
     remainingDays: 7,
     completionLabel: '0/7 days completed',
-    practicedValues: [],
+    practicedValues: [] as string[],
     parentSummary: ''
   }
 };
@@ -33,7 +35,7 @@ const initialSummary = {
 export default function DashboardScreen() {
   const router = useRouter();
   const [profile, setProfile] = useState<OnboardingProfile | null>(getOnboardingState().profile);
-  const [summary, setSummary] = useState(initialSummary);
+  const [summary, setSummary] = useState<ParentDashboardSummary>(initialSummary);
 
   useEffect(() => subscribeOnboardingState(() => setProfile(getOnboardingState().profile)), []);
   const refreshSummary = useCallback(() => {
