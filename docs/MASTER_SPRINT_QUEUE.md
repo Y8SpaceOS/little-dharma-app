@@ -368,412 +368,102 @@ Status legend: `not started`, `in progress`, `done`.
 - **Manual iPhone QA steps:** Run Threshold → Story → Ritual → Pause → Quiz → Completion; open Parent Dashboard and verify Today’s Mirror values/prompt, weekly progress, privacy reassurance, and regressions for Share Card, Bedtime Mode, My Treasures / Words I Carry, and Child Home.
 - **Category-defining product check focus:** Parent trust and ritual carry-forward clarity without privacy regressions or expanded data collection.
 
-### Sprint 34 — Ganesha World Shell
+### Sprint 34 — Roadmap Reconciliation + Content Scale Rebase
 - **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
+- **Sprint type:** Platform Foundation
+- **Primary quality dimension:** Execution clarity
+- **Protected quality dimensions:** Historical sprint integrity, Safety/privacy, Content depth and authenticity, Child delight, Premium UI/UX taste, Existing app behavior
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+- **Status:** done
+- **Completion note:** Rebased the active roadmap after Sprint 33 to align with private-beta readiness and a 1,000+ story strategy; preserved Sprint 11–33 history and explicitly deferred unfinished platform work from Sprint 14/15.
+
+## Rebased Private Beta Roadmap (Active Queue)
+
+### Sprint 35 — Content Universe Map v1
 - **Status:** not started
-- **Primary track:** Growth Loops
-- **Objective:** Deliver ganesha world shell as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the ganesha world shell increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Ganesha World Shell meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How ganesha world shell improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 35 — First Ganesha Stories
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 36 — Content Authenticity OS v1
 - **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Deliver first ganesha stories as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the first ganesha stories increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** First Ganesha Stories meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How first ganesha stories improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-## Private Beta
-
-### Sprint 36 — Hanuman World Shell
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 37 — Content Data Model v2
 - **Status:** not started
-- **Primary track:** Product Experience
-- **Objective:** Deliver hanuman world shell as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the hanuman world shell increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Hanuman World Shell meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How hanuman world shell improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 37 — First Hanuman Stories
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 38 — Age-Band Story Templates v1
 - **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Deliver first hanuman stories as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the first hanuman stories increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** First Hanuman Stories meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How first hanuman stories improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 38 — Age-Band Variations
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 39 — 1,000+ Story Master Index v1
 - **Status:** not started
-- **Primary track:** Trust & Safety
-- **Objective:** Deliver age-band variations as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the age-band variations increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Age-Band Variations meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How age-band variations improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 39 — Language-Ready Content Fields
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 40 — Content Production Pipeline v1
 - **Status:** not started
-- **Primary track:** Growth Loops
-- **Objective:** Deliver language-ready content fields as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the language-ready content fields increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Language-Ready Content Fields meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How language-ready content fields improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 40 — Hindi Transliteration and Meaning Fields
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 41 — Vrindavan Week 1 Content QA Pass
 - **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Deliver hindi transliteration and meaning fields as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the hindi transliteration and meaning fields increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Hindi Transliteration and Meaning Fields meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How hindi transliteration and meaning fields improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 41 — Richer My Treasures
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 42 — Vrindavan Week 2 Content Architecture
 - **Status:** not started
-- **Primary track:** Product Experience
-- **Objective:** Deliver richer my treasures as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the richer my treasures increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Richer My Treasures meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How richer my treasures improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 42 — Values Map
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 43 — Add Vrindavan Stories 8–14
 - **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Deliver values map as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the values map increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Values Map meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How values map improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 43 — Today I Learned Summary
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 44 — Add Vrindavan Stories 15–21
 - **Status:** not started
-- **Primary track:** Trust & Safety
-- **Objective:** Deliver today i learned summary as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the today i learned summary increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Today I Learned Summary meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How today i learned summary improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 44 — Parent Evening Reflection Flow
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 45 — 21-Day Vrindavan Path Completion State
 - **Status:** not started
-- **Primary track:** Growth Loops
-- **Objective:** Deliver parent evening reflection flow as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the parent evening reflection flow increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Parent Evening Reflection Flow meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How parent evening reflection flow improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 45 — Gentle Seven-Day Ritual Streak
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 46 — Ritual Moment v2: Say, Breathe, Reflect
 - **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Deliver gentle seven-day ritual streak as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the gentle seven-day ritual streak increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Gentle Seven-Day Ritual Streak meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How gentle seven-day ritual streak improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 46 — First Festival Pack Shell
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 47 — Bedtime Mode v2
 - **Status:** not started
-- **Primary track:** Product Experience
-- **Objective:** Deliver first festival pack shell as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the first festival pack shell increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** First Festival Pack Shell meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How first festival pack shell improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 47 — Festival Story and Ritual Format
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 48 — Child Home v3: Companion-led Daily Invitation
 - **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Deliver festival story and ritual format as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the festival story and ritual format increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Festival Story and Ritual Format meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How festival story and ritual format improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 48 — Festival Share Card Placeholder
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 49 — Values Garden v1
 - **Status:** not started
-- **Primary track:** Trust & Safety
-- **Objective:** Deliver festival share card placeholder as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the festival share card placeholder increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Festival Share Card Placeholder meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How festival share card placeholder improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 49 — Parent Feedback Capture
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 50 — My Treasures v2
 - **Status:** not started
-- **Primary track:** Growth Loops
-- **Objective:** Deliver parent feedback capture as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the parent feedback capture increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Parent Feedback Capture meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How parent feedback capture improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 50 — Local Analytics Events
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 51 — Parent Dashboard v3: Journey as Story
 - **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Deliver local analytics events as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the local analytics events increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Local Analytics Events meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How local analytics events improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 51 — Error Boundaries
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 52 — Parent Trust & Privacy Center v1
 - **Status:** not started
-- **Primary track:** Product Experience
-- **Objective:** Deliver error boundaries as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the error boundaries increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Error Boundaries meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How error boundaries improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 52 — Loading and Skeleton States
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 53 — Manual QA Regression Matrix
 - **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Deliver loading and skeleton states as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the loading and skeleton states increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Loading and Skeleton States meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How loading and skeleton states improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 53 — Accessibility Pass
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 54 — Accessibility Pass
 - **Status:** not started
-- **Primary track:** Trust & Safety
-- **Objective:** Deliver accessibility pass as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the accessibility pass increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Accessibility Pass meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How accessibility pass improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 54 — Tablet Layout Pass
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 55 — Error Boundaries
 - **Status:** not started
-- **Primary track:** Growth Loops
-- **Objective:** Deliver tablet layout pass as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the tablet layout pass increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Tablet Layout Pass meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How tablet layout pass improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 55 — Offline-First Content Cache Model
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 56 — Loading and Skeleton States
 - **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Deliver offline-first content cache model as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the offline-first content cache model increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Offline-First Content Cache Model meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How offline-first content cache model improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 56 — Sample Narration for 3 Stories
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 57 — Parent Feedback Capture v1
 - **Status:** not started
-- **Primary track:** Product Experience
-- **Objective:** Deliver sample narration for 3 stories as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the sample narration for 3 stories increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Sample Narration for 3 Stories meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How sample narration for 3 stories improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 57 — Audio Narration Controls
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 58 — Privacy-Safe Analytics Spec
 - **Status:** not started
-- **Primary track:** Content Engine
-- **Objective:** Deliver audio narration controls as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the audio narration controls increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Audio Narration Controls meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How audio narration controls improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 58 — Bedtime Audio Ritual v1
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
+### Sprint 59 — App Store Readiness Pack
 - **Status:** not started
-- **Primary track:** Trust & Safety
-- **Objective:** Deliver bedtime audio ritual v1 as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the bedtime audio ritual v1 increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Bedtime Audio Ritual v1 meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How bedtime audio ritual v1 improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
-### Sprint 59 — Private Beta Feedback Form
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
-- **Primary track:** Growth Loops
-- **Objective:** Deliver private beta feedback form as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the private beta feedback form increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Private Beta Feedback Form meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How private beta feedback form improves delight, trust, ritual consistency, safety, and future monetisation readiness.
-
 ### Sprint 60 — Private Beta Release Candidate
-- **Target quality level:** Q3 Private Beta Quality
-- **Sprint type:** [Set per sprint track]
-- **Primary quality dimension:** [Declare one]
-- **Protected quality dimensions:** [Declare non-regression set]
-- **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
 - **Status:** not started
-- **Primary track:** Platform Foundations
-- **Objective:** Deliver private beta release candidate as a production-ready increment that strengthens private-beta readiness and daily ritual quality.
-- **Scope:** Define acceptance criteria, implement the private beta release candidate increment, and document QA + telemetry implications for parent/child journeys.
-- **Non-scope:** Unrelated feature expansion, auth/payments rollouts, public child-sharing surfaces, and broad architecture rewrites.
-- **Definition of done:** Private Beta Release Candidate meets acceptance criteria, passes required checks, and is documented for follow-on sprints.
-- **Manual iPhone QA steps:** Run affected child and parent flows on iPhone via Expo Go, including regression checks around story start, ritual, completion, and dashboard surfaces.
-- **Category-defining product check focus:** How private beta release candidate improves delight, trust, ritual consistency, safety, and future monetisation readiness.
+
+## Content Scale Strategy (Execution Targets)
+- **Private alpha:** 7 stories
+- **Private beta:** 21–30 stories
+- **Public beta:** 60–100 story experiences
+- **Paid v1:** 150–250 story experiences
+- **Long-term moat:** 1,000+ story experiences
+
+## 1,000+ Story Logic
+- **Base idea pool:** 300–350 high-quality Indian wisdom story ideas
+- **Age-band multiplication:** 3 variants per base story (younger, core, older)
+- **Experience range:** 900–1,050+ total story experiences
+
+## Deferred Platform Backlog (Not Completed)
+- **Sprint 14 — Test Harness Reliability and Coverage Targets:** not completed; deferred intentionally.
+- **Sprint 15 — Developer Environment Bootstrap Guide:** not completed; deferred intentionally.
+
+## Later-Phase Backlog (Preserved Themes from the 150-Sprint Vision)
+- Ganesha World Architecture
+- Ganesha Stories
+- Hanuman World Architecture
+- Hanuman Stories
+- Ramayana / Mahabharata / Shiva / Devi / Saraswati content worlds
+- Festival pack architecture
+- Language-ready fields and Hindi transliteration
+- Offline-first content model
+- Audio/narration after pronunciation/authenticity QA
+- Subscription narrative
+- Paid beta expansion
+- Launch readiness
+- Partnerships
+- School content
+- Books, activity kits, toys, and franchise/IP expansion
 
 ### Sprint 61 — Private Beta Sprint 61: Retention Experiments
 - **Target quality level:** Q4 Paid Beta Quality
