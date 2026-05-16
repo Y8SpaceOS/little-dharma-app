@@ -7,7 +7,7 @@ Status legend: `not started`, `in progress`, `done`.
 ## Soul Prototype
 
 ### Sprint 11 — Execution OS and Master Sprint Queue
-- **Status:** done
+- **Status:** not started
 - **Completion note:** Added execution OS docs, Codex runner, PR template, iPhone QA loop, content quality bar, and sprint queue.
 - **Primary track:** Platform Foundations
 - **Objective:** Codify Codex execution OS and durable sprint governance artifacts for deterministic one-sprint delivery.
@@ -51,11 +51,11 @@ Status legend: `not started`, `in progress`, `done`.
 
 ### Sprint 14 — Test Harness Reliability and Coverage Targets
 - **Target quality level:** Q2 Soul Prototype
-- **Sprint type:** Product Experience
-- **Primary quality dimension:** Daily 10-minute ritual habit
-- **Protected quality dimensions:** Parent trust, Child delight, Premium UI/UX taste, Safety/privacy
+- **Sprint type:** [Set per sprint track]
+- **Primary quality dimension:** [Declare one]
+- **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Strengthen automated confidence by making the test harness stable and defining meaningful coverage targets.
 - **Scope:** Stabilize test runner behavior, define critical flow coverage targets, and document test taxonomy (smoke/unit/integration).
