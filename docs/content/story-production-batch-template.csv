@@ -1,0 +1,2 @@
+batchId,baseStoryId,targetAgeBand,contentWorld,primaryValue,sourceSensitivityTier,releasePhase,productionStage,assignedTo,draftStatus,authenticityReviewStatus,parentTrustReviewStatus,childReadabilityReviewStatus,finalApprovalStatus,notes
+BATCH-EXAMPLE-001,BSI-0001,ages_6_8,vrindavan_krishna,kindness,tier_2_traditional_retelling,private_beta,selected,unassigned,not_started,not_started,not_started,not_started,not_started,illustrative_row_only

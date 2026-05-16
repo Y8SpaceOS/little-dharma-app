@@ -330,3 +330,9 @@
 - 2026-05-16: Sprint 39 stabilization pass: fixed `scripts/validate-story-master-index.mjs` numeric validation so malformed/non-finite/less-than-1 `plannedExperienceCount` values fail with explicit row+value error before total aggregation.
 - 2026-05-16: Sprint 39 stabilization pass: restored Sprint 34 historical metadata drift in `docs/MASTER_SPRINT_QUEUE.md` (`Primary quality dimension` reset to `Execution clarity`) while keeping Sprint 39 done, Sprint 40 next not-started, and Sprint 14/15 deferred.
 - 2026-05-16: Re-ran Story Master Index validation: `node scripts/validate-story-master-index.mjs` passed with 450 rows and 1,350 planned experiences.
+- 2026-05-16: Sprint 40 (Content Production Pipeline v1, Q3 Platform Foundation) completed as a content-operations sprint with no runtime feature/UI/navigation changes.
+- 2026-05-16: Added production-system artifacts: `docs/CONTENT_PRODUCTION_PIPELINE.md`, `docs/content/story-production-brief-template.md`, `docs/CONTENT_DRAFTING_PROMPTS.md`, and `docs/content/story-production-batch-template.csv` to define intake, batching, drafting, review gates, approval rules, QA checklists, output quality bar, and Sprint 41–45 usage.
+- 2026-05-16: Added optional manual validator `scripts/validate-story-production-templates.mjs` (Node built-ins only) to verify required pipeline docs/templates and batch CSV header columns.
+- 2026-05-16: Updated `docs/STORY_MASTER_INDEX_V1.md` with a concise note that Sprint 40 pipeline consumes the index; no existing story data migration was performed.
+- 2026-05-16: Updated `docs/MASTER_SPRINT_QUEUE.md` to mark Sprint 40 done with completion note; Sprint 14 and Sprint 15 remain deferred/not completed; Sprint 41 remains next active not-started sprint.
+- 2026-05-16: Checks run: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`, `node scripts/validate-story-master-index.mjs`, and `node scripts/validate-story-production-templates.mjs`.
