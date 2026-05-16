@@ -400,10 +400,11 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 38 — Age-Band Story Templates v1
 - **Target quality level:** Q3 Private Beta Quality
 - **Sprint type:** Content Engine
-- **Primary quality dimension:** Daily 10-minute ritual habit
+- **Primary quality dimension:** Content depth and authenticity
 - **Protected quality dimensions:** Content depth and authenticity, Parent trust, Child delight, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added `docs/AGE_BAND_STORY_TEMPLATES.md` with age-specific writing structures, transformation model, safety/authenticity guardrails, reviewer checklist, and scale/launch sequencing for 3–5, 6–8, and 9–12 without runtime changes.
 - **Primary track:** Content Engine
 - **Objective:** Define reusable template standards for younger/core/older story variants.
 - **Scope:** Write template structure for tone, complexity, ritual wording, quiz style, and parent bridge by age band.
