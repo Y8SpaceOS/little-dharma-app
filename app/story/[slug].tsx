@@ -6,7 +6,7 @@ import { trackEvent } from '@/lib/analytics';
 import { tokens } from '@/design/tokens';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
 
-type Stage = 'story' | 'ritual' | 'quiz' | 'complete';
+type Stage = 'story' | 'ritual' | 'quiz' | 'complete' | 'bedtime';
 
 export default function StoryScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -58,6 +58,8 @@ export default function StoryScreen() {
       copy: `Family update from our 10-minute Little Dharma ritual: ${story.title} is complete, ${story.value.toLowerCase()} was today’s value, and ${story.badgeName} was earned. Sharing this joy with our close family circle.`
     }
   ];
+
+  const bedtimeClosingLine = `Parent: “I saw ${story.value.toLowerCase()} in you tonight.” Child: “Tomorrow I will practice it again with a calm heart.”`;
 
   const onQuizSubmit = async () => {
     if (!selectedAnswer) return;
@@ -174,6 +176,39 @@ export default function StoryScreen() {
           </View>
         )}
 
+
+        {stage === 'bedtime' && (
+          <View style={styles.bedtimeCard}>
+            <Text style={styles.bedtimeEyebrow}>Bedtime Mode</Text>
+            <Text style={styles.bedtimeTitle}>Soft closing ritual for tonight</Text>
+            <Text style={styles.bedtimeBody}>Settle in together with a slow breath and one gentle reflection before sleep.</Text>
+
+            <View style={styles.bedtimeSection}>
+              <Text style={styles.bedtimeLabel}>Value practiced</Text>
+              <Text style={styles.bedtimeValue}>{story.value}</Text>
+            </View>
+
+            <View style={styles.bedtimeSection}>
+              <Text style={styles.bedtimeLabel}>Gentle reflection question</Text>
+              <Text style={styles.bedtimeBody}>{story.ritual.reflectionQuestion}</Text>
+            </View>
+
+            <View style={styles.bedtimeSection}>
+              <Text style={styles.bedtimeLabel}>Breathing or gratitude prompt</Text>
+              <Text style={styles.bedtimeBody}>Take three slow breaths together, then each share one small thing you are grateful for from today.</Text>
+            </View>
+
+            <View style={styles.bedtimeSection}>
+              <Text style={styles.bedtimeLabel}>Parent-child closing line</Text>
+              <Text style={styles.bedtimeBody}>{bedtimeClosingLine}</Text>
+            </View>
+
+            <Pressable style={styles.button} onPress={() => setStage('complete')}>
+              <Text style={styles.buttonText}>Back to Completion</Text>
+            </Pressable>
+          </View>
+        )}
+
         {stage === 'complete' && (
           <View style={styles.card}>
             <Text style={styles.panelTitle}>Badge Earned: {story.badgeName} 🦚</Text>
@@ -181,6 +216,10 @@ export default function StoryScreen() {
             <Text style={styles.parentPrompt}>For Parent: {story.parentReflectionPrompt}</Text>
             <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
             <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
+            <Pressable style={styles.bedtimeButton} onPress={() => setStage('bedtime')}>
+              <Text style={styles.bedtimeButtonText}>Enter Bedtime Mode</Text>
+            </Pressable>
+
             <View style={styles.shareCard}>
               <Text style={styles.shareBrand}>Little Dharma</Text>
               <Text style={styles.shareTitle}>Parent-safe family share card</Text>
@@ -294,5 +333,14 @@ const styles = StyleSheet.create({
   ritualMeaning: { fontSize: 17, lineHeight: 26, color: '#5C4330' },
   ritualPromptText: { fontSize: 16, lineHeight: 24, color: '#5C4330' },
   ritualDuration: { fontSize: 13, color: '#7A644C', fontWeight: '700', marginTop: 2 },
-  ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' }
+  ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' },
+  bedtimeButton: { borderRadius: 14, borderWidth: 1, borderColor: '#C8BADF', backgroundColor: '#F4EEFF', paddingVertical: 11, alignItems: 'center' },
+  bedtimeButtonText: { fontSize: 15, fontWeight: '700', color: '#4E3A73' },
+  bedtimeCard: { marginTop: 4, backgroundColor: '#F7F5FF', borderRadius: 24, padding: tokens.spacing.lg, gap: 14, borderWidth: 1, borderColor: '#D9D1EC' },
+  bedtimeEyebrow: { fontSize: 12, color: '#6C5A95', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1 },
+  bedtimeTitle: { fontSize: 26, fontWeight: '800', color: '#3F3556' },
+  bedtimeSection: { backgroundColor: '#FFFFFF', borderRadius: 16, borderWidth: 1, borderColor: '#E2DBF2', padding: 12, gap: 5 },
+  bedtimeLabel: { fontSize: 11, color: '#6D5F8F', fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.6 },
+  bedtimeValue: { fontSize: 20, fontWeight: '700', color: '#443A5D' },
+  bedtimeBody: { fontSize: 16, lineHeight: 23, color: '#564D6D' }
 });
