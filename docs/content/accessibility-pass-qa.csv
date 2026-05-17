@@ -1,0 +1,18 @@
+qaArea,surface,expectedBehavior,status,notes
+child home accessibility,app/(child)/today.tsx,Child Home core actions have clear accessible purpose and navigation labels,pass,Added accessibility labels and button/link roles
+story screen accessibility,app/story/[slug].tsx,Story controls announce clear next and previous actions,pass,Added explicit labels on panel controls
+ritual accessibility,app/story/[slug].tsx,Ritual continue action is clearly announced,pending_manual_qa,Needs VoiceOver device verification
+quiz accessibility,app/story/[slug].tsx,Quiz options and submit action announce purpose clearly,pass,Option labels and submit role/label added
+completion accessibility,app/story/[slug].tsx,Completion CTAs including bedtime entry announce clearly,pending_manual_qa,Needs iPhone VoiceOver pass
+bedtime accessibility,app/story/[slug].tsx,Bedtime actions are clearly discoverable and announced,pending_manual_qa,Manual device run required
+treasures accessibility,app/(child)/treasures.tsx,Treasures navigation CTAs are labeled clearly,pass,Added explicit link labels
+values garden accessibility,app/(child)/treasures.tsx,Values section remains readable and semantically stable,pending_manual_qa,Manual VoiceOver review pending
+parent dashboard accessibility,app/(parent)/dashboard.tsx,Parent links/buttons announce destination clearly,pass,Added role/label metadata
+trust privacy center accessibility,app/(parent)/privacy.tsx,Back navigation and content remain clear and readable,pass,Back link label added
+navigation link labels,multiple routes,Cross-surface links expose meaningful accessible labels,pass,Applied labels on major links
+tap target sanity,multiple routes,Primary actions keep comfortable touch targets and avoid tiny hit areas,pass,No shrinkage of existing targets
+readability hierarchy,multiple routes,Readable structure remains stable without redesign,pass,No disruptive visual changes
+screen-reader basics,multiple routes,Interactive controls include baseline role and/or label semantics,pass,Applied built-in RN props
+no overclaim language,docs and UI,No forbidden accessibility overclaim phrases are used,pass,Validator enforces phrase bans
+iPhone VoiceOver manual QA,mobile device execution,Manual VoiceOver iPhone checks are physically run,pending_manual_qa,Not runnable in CLI
+story 1–21 regression,story routing and progression,All 21 stories remain accessible through existing path logic,pass,Validated by existing regression validators

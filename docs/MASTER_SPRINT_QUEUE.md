@@ -659,9 +659,10 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Premium UI/UX taste
 - **Protected quality dimensions:** Child delight, Parent trust, Safety/privacy, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Product Experience
 - **Objective:** Improve accessibility quality across core child and parent flows.
+- **Completion note:** Added safe accessibility labels/roles/hints across private-beta critical child/parent routes, plus Accessibility Pass QA doc/CSV/validator with explicit pending manual iPhone VoiceOver requirement.
 - **Scope:** Audit and fix accessible labels, touch targets, contrast/readability, and focus/voiceover essentials.
 - **Non-scope:** New feature modules, design-system rewrite.
 - **Definition of done:** Core flows meet documented accessibility bar with regression notes.

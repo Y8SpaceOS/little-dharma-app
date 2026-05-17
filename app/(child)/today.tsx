@@ -114,7 +114,7 @@ export default function TodayScreen() {
         <Text style={styles.companionInvitation}>Today, we’ll take one small Journey together. You can pause anytime.</Text>
       </View>
 
-      <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
+      <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]} accessibilityLabel='Today journey summary card'>
         <Text style={styles.journeyEyebrow}>Today&apos;s Journey</Text>
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
@@ -144,12 +144,12 @@ export default function TodayScreen() {
 
       <View style={styles.grid}>
         {actions.map((action) => (
-          <Link key={action.label} href={action.href as never} style={[styles.card, { backgroundColor: action.colors[0] }]}>
+          <Link key={action.label} href={action.href as never} style={[styles.card, { backgroundColor: action.colors[0] }]} accessibilityRole='link' accessibilityLabel={`${action.label} screen`}>
             {action.label}
           </Link>
         ))}
       </View>
-      <Link href='/(parent)/dashboard' style={styles.parentPortal}>Parent Space</Link>
+      <Link href='/(parent)/dashboard' style={styles.parentPortal} accessibilityRole='link' accessibilityLabel='Open Parent Space dashboard'>Parent Space</Link>
 
       {showThreshold && (
         <View style={styles.thresholdOverlay}>
@@ -158,7 +158,7 @@ export default function TodayScreen() {
             <Text style={styles.thresholdTitle}>Let’s enter quietly.</Text>
             <Text style={styles.thresholdCopy}>A little story. A little stillness.</Text>
             <Text style={styles.thresholdCopy}>Begin today’s Little Dharma.</Text>
-            <Pressable onPress={enterChildJourney} style={styles.thresholdButton} accessibilityRole='button'>
+            <Pressable onPress={enterChildJourney} style={styles.thresholdButton} accessibilityRole='button' accessibilityLabel='Enter today journey' accessibilityHint='Closes this quiet welcome and opens Child Home actions'>
               <Text style={styles.thresholdButtonText}>Enter Today’s Journey</Text>
             </Pressable>
           </View>
