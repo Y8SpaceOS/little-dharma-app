@@ -863,8 +863,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -941,8 +940,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1017,8 +1015,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1093,8 +1090,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1169,8 +1165,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1245,8 +1240,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1321,8 +1315,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1399,8 +1392,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1475,8 +1467,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1551,8 +1542,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1627,8 +1617,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1703,8 +1692,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1781,8 +1769,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1857,8 +1844,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -1933,8 +1919,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -2009,8 +1994,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -2085,8 +2069,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
@@ -2161,8 +2144,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** [Declare one]
 - **Protected quality dimensions:** [Declare non-regression set]
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** done
-- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
+- **Status:** not started
 - **Primary track:** Platform Foundations
 - **Objective:** Ship one specific phase-aligned increment that advances readiness for scale while preserving parent trust and child delight.
 - **Scope:** Execute one bounded deliverable with explicit acceptance criteria, update queue/logs, and report checks + iPhone QA outcomes.
