@@ -4,18 +4,23 @@ import { useFocusEffect } from '@react-navigation/native';
 import { Alert, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import CalmLoadingState from '@/components/CalmLoadingState';
 import { getOnboardingState, resetOnboarding, subscribeOnboardingState, type OnboardingProfile } from '@/lib/onboardingState';
 import { getParentDashboardSnapshot } from '@/services/progress';
 
 type ParentDashboardSummary = Awaited<ReturnType<typeof getParentDashboardSnapshot>>;
-const initialSummary = { currentWorld:'Vrindavan', storiesCompleted:0, totalStories:0, completionPercent:0, latestCompletedStoryTitle:'Loading...', latestEarnedBadge:'Loading...', latestValueLearned:'Loading...', latestCarryingWord:'Loading...', latestRitualCompleted:'Loading...', latestRitualParentMeaning:'', latestReflectionPrompt:'Loading...', suggestedNextJourney:'Loading...', dailyRitualCopy:'', reflectionBridgeCopy:'', ritualLoopExplanation:'', privacyPromise:'', weeklyProgress:{ completedDays:0, remainingDays:21, completionLabel:'0/21 stories completed', practicedValues:[], parentSummary:'' } } as ParentDashboardSummary;
+const initialSummary = { currentWorld:'Vrindavan', storiesCompleted:0, totalStories:0, completionPercent:0, latestCompletedStoryTitle:'—', latestEarnedBadge:'—', latestValueLearned:'—', latestCarryingWord:'—', latestRitualCompleted:'—', latestRitualParentMeaning:'', latestReflectionPrompt:'—', suggestedNextJourney:'—', dailyRitualCopy:'', reflectionBridgeCopy:'', ritualLoopExplanation:'', privacyPromise:'', weeklyProgress:{ completedDays:0, remainingDays:21, completionLabel:'0/21 stories completed', practicedValues:[], parentSummary:'' } } as ParentDashboardSummary;
 
 function DashboardScreenContent() {
   const router = useRouter();
   const [profile, setProfile] = useState<OnboardingProfile | null>(getOnboardingState().profile);
   const [summary, setSummary] = useState<ParentDashboardSummary>(initialSummary);
+  const [isSummaryLoading, setIsSummaryLoading] = useState(true);
   useEffect(() => subscribeOnboardingState(() => setProfile(getOnboardingState().profile)), []);
-  const refreshSummary = useCallback(() => { getParentDashboardSnapshot().then(setSummary).catch(() => null); }, []);
+  const refreshSummary = useCallback(() => {
+    setIsSummaryLoading(true);
+    getParentDashboardSnapshot().then(setSummary).catch(() => null).finally(() => setIsSummaryLoading(false));
+  }, []);
   useFocusEffect(useCallback(() => { refreshSummary(); }, [refreshSummary]));
 
   const onReset = () => Alert.alert('Reset onboarding?', 'This clears the local child profile on this device and returns to the welcome screen.', [
@@ -28,6 +33,8 @@ function DashboardScreenContent() {
   return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
     <Text style={styles.heading}>Parent Dashboard</Text>
     <Text style={styles.subheading}>A calm, private view of your child’s journey as a story of growth.</Text>
+
+    {isSummaryLoading && <CalmLoadingState surfaceName='Parent Dashboard summary' audience='parent' variant='card' />}
 
     <View style={styles.card}><Text style={styles.sectionTitle}>Family snapshot</Text>
       <Text style={styles.childName}>{profile?.childName || 'Not set'} ({profile?.ageBand || 'n/a'})</Text>
@@ -69,15 +76,9 @@ function DashboardScreenContent() {
 
 const styles = StyleSheet.create({ screen:{flex:1,backgroundColor:'#EFF4FF'}, content:{padding:tokens.spacing.lg,gap:tokens.spacing.md,paddingBottom:40}, heading:{fontSize:32,fontWeight:'800',color:'#1E2C50'}, subheading:{color:'#4D5F88',fontSize:15,marginTop:-6}, card:{backgroundColor:'#FFFFFF',borderRadius:22,padding:tokens.spacing.lg,gap:8,borderWidth:1,borderColor:'#E5EBFA'}, sectionTitle:{color:'#445378',fontWeight:'800',letterSpacing:0.3,textTransform:'uppercase',fontSize:12}, childName:{color:'#1E2C50',fontSize:20,fontWeight:'800'}, detail:{color:'#2B3550',fontSize:15,lineHeight:22}, label:{fontWeight:'700',color:'#1E2C50'}, progressMain:{color:'#1F2F59',fontSize:22,fontWeight:'800'}, progressSub:{color:'#5A6A92',fontWeight:'600'}, ritual:{color:'#4F5F7C',fontStyle:'italic',lineHeight:22}, prompt:{color:'#24345E',fontSize:16,lineHeight:24,fontWeight:'600'}, privacyCard:{backgroundColor:'#1E2C50',borderRadius:22,padding:tokens.spacing.lg,gap:8}, privacyTitle:{color:'#DCE8FF',fontWeight:'800',textTransform:'uppercase',fontSize:12,letterSpacing:0.3}, privacyText:{color:'#FFFFFF',lineHeight:22,fontSize:15}, button:{backgroundColor:'#DCE8FF',padding:16,borderRadius:tokens.radius.button,textAlign:'center',color:'#1E2C50',fontWeight:'700'}, reset:{textAlign:'center',color:'#8A2F2F',fontWeight:'600'}, childLink:{textAlign:'center',color:tokens.colors.peacock,fontWeight:'700'} });
 
-
 export default function DashboardScreen() {
   return (
-    <RouteErrorBoundary
-      surfaceName='Parent Dashboard'
-      audience='parent'
-      primaryActionHref='/(child)/today'
-      primaryActionLabel='Go to Child Home'
-    >
+    <RouteErrorBoundary surfaceName='Parent Dashboard' audience='parent' primaryActionHref='/(child)/today' primaryActionLabel='Go to Child Home'>
       <DashboardScreenContent />
     </RouteErrorBoundary>
   );

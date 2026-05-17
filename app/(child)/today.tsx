@@ -4,6 +4,7 @@ import { AppState, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react
 import { useFocusEffect } from '@react-navigation/native';
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import CalmLoadingState from '@/components/CalmLoadingState';
 import { trackEvent } from '@/lib/analytics';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 import { getCompletedBadge, getLatestCarryingWord, hasCompletedStory } from '@/lib/storyProgress';
@@ -27,8 +28,10 @@ function TodayScreenContent() {
   const [storyValue, setStoryValue] = useState('Kindness');
   const [showThreshold, setShowThreshold] = useState(false);
   const [latestCarryingWord, setLatestCarryingWord] = useState<string | null>(null);
+  const [isJourneyLoading, setIsJourneyLoading] = useState(true);
 
   const refreshJourneyCard = useCallback(async () => {
+    setIsJourneyLoading(true);
     const nextStory = await getTodaysJourney();
 
     if (!nextStory) {
@@ -40,6 +43,7 @@ function TodayScreenContent() {
       setStatus('path-completed');
       const carryingWord = await getLatestCarryingWord(getVrindavanJourneyPath());
       setLatestCarryingWord(carryingWord);
+      setIsJourneyLoading(false);
       return;
     }
 
@@ -52,6 +56,7 @@ function TodayScreenContent() {
 
     const carryingWord = await getLatestCarryingWord(getVrindavanJourneyPath());
     setLatestCarryingWord(carryingWord);
+    setIsJourneyLoading(false);
   }, []);
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || 'Little One')), []);
@@ -67,6 +72,7 @@ function TodayScreenContent() {
       setStatus('ready');
       setEarnedBadge(null);
       setLatestCarryingWord(null);
+      setIsJourneyLoading(false);
     });
 
     refreshThresholdVisibility();
@@ -77,6 +83,7 @@ function TodayScreenContent() {
       refreshJourneyCard().catch(() => {
         setStatus('ready');
         setEarnedBadge(null);
+        setIsJourneyLoading(false);
       });
       refreshThresholdVisibility();
     }, [refreshJourneyCard, refreshThresholdVisibility])
@@ -116,6 +123,10 @@ function TodayScreenContent() {
       </View>
 
       <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]} accessibilityLabel='Today journey summary card'>
+        {isJourneyLoading ? (
+          <CalmLoadingState surfaceName='Child Home journey summary' audience='child' variant='inline' />
+        ) : (
+          <>
         <Text style={styles.journeyEyebrow}>Today&apos;s Journey</Text>
         <Text style={styles.journeyTitle}>{storyTitle}</Text>
         <Text style={styles.metaLine}>World: Vrindavan • Value: {storyValue}</Text>
@@ -140,6 +151,8 @@ function TodayScreenContent() {
             <Link href='/(parent)/dashboard' style={styles.secondaryCta}>Open Parent Dashboard</Link>
             <Link href='/(child)/chant' style={styles.secondaryCta}>Repeat one small ritual</Link>
           </View>
+        )}
+          </>
         )}
       </View>
 

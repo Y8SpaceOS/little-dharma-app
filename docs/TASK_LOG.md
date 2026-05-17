@@ -450,3 +450,10 @@
 - 2026-05-17: Updated `docs/MASTER_SPRINT_QUEUE.md` to mark Sprint 53 done with concise completion note; kept Sprint 14 and Sprint 15 deferred/not completed and Sprint 54 as next active not-started sprint.
 - 2026-05-17: Scope integrity preserved: no backend/auth/cloud sync, no CMS, no audio, no analytics/telemetry, no dependency additions, no new stories/world shells, no monetization/social/leaderboard mechanics.
 - 2026-05-17: Manual device QA execution remains required; matrix device rows are intentionally `pending_manual_qa` until explicit physical iPhone / Expo Go evidence is recorded in run logs.
+
+- 2026-05-17: Sprint 56 (Loading and Skeleton States, Q3 Product Experience) completed: added dependency-free `CalmLoadingState` static placeholder component and integrated calm loading states on Child Home (`app/(child)/today.tsx`), My Treasures (`app/(child)/treasures.tsx`), and Parent Dashboard (`app/(parent)/dashboard.tsx`).
+- 2026-05-17: Reduced abrupt loading UX by replacing raw user-facing dashboard seed `Loading...` fields with neutral placeholders and rendering calm loading treatment during async summary refresh.
+- 2026-05-17: Added QA artifacts: `docs/LOADING_SKELETON_STATES_QA.md`, `docs/content/loading-skeleton-states-qa.csv`, and `scripts/validate-loading-skeleton-states.mjs` (Node built-ins only, quote-aware CSV parsing, forbidden phrase checks, route usage checks).
+- 2026-05-17: Scope constraints preserved: no new product features, no story content/schema edits, no dependencies, no animation libraries, no backend/auth/cloud sync, no analytics/telemetry additions.
+- 2026-05-17: Manual iPhone loading-state QA remains required and marked pending (`pending_manual_qa`) until checked on iPhone/Expo Go.
+
