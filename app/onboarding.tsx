@@ -4,7 +4,7 @@ import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } fro
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { AgeBand, BedtimePreference, ChildLanguage, completeOnboarding, FavoriteCharacter, getOnboardingState, loadOnboardingState, OnboardingProfile } from '@/lib/onboardingState';
-import { ChildAgeBand, ParentIntent, getChildProfile, saveChildProfile, skipChildProfileSetup } from '@/lib/childProfile';
+import { ChildAgeBand, ChildProfile, ParentIntent, getChildProfile, saveChildProfile, skipChildProfileSetup } from '@/lib/childProfile';
 
 type Step = { title: string; subtitle: string; render: () => ReactElement };
 const ageBands: AgeBand[] = ['0-2', '3-5', '6-8', '9-12'];
@@ -23,14 +23,17 @@ function OnboardingScreenContent() {
   const [childNameOrNickname, setChildNameOrNickname] = useState('');
   const [childAgeBand, setChildAgeBand] = useState<ChildAgeBand | undefined>();
   const [parentIntent, setParentIntent] = useState<ParentIntent | undefined>();
+  const [savedChildProfile, setSavedChildProfile] = useState<ChildProfile | null>(null);
+  const [isChildProfileHydrated, setIsChildProfileHydrated] = useState(false);
 
   useEffect(() => {
     loadOnboardingState().then((state) => { if (state.profile) setProfile(state.profile); });
     getChildProfile().then((saved) => {
+      setSavedChildProfile(saved);
       if (saved.childNameOrNickname) setChildNameOrNickname(saved.childNameOrNickname);
       if (saved.ageBand) setChildAgeBand(saved.ageBand);
       if (saved.parentIntent) setParentIntent(saved.parentIntent);
-    }).catch(() => undefined);
+    }).catch(() => undefined).finally(() => setIsChildProfileHydrated(true));
   }, []);
 
   const steps: Step[] = useMemo(() => [
@@ -56,13 +59,21 @@ function OnboardingScreenContent() {
 
   const current = steps[stepIndex]; const isLast = stepIndex === steps.length - 1; const isEditing = !!getOnboardingState().profile;
   const finishFlow = async (skipChildSetup: boolean) => {
+    if (!isChildProfileHydrated) return;
+
     await completeOnboarding(profile);
-    if (skipChildSetup) await skipChildProfileSetup();
-    else await saveChildProfile({ childNameOrNickname, ageBand: childAgeBand, parentIntent });
+    if (skipChildSetup) {
+      await skipChildProfileSetup();
+    } else {
+      const mergedName = childNameOrNickname.trim() || savedChildProfile?.childNameOrNickname;
+      const mergedAgeBand = childAgeBand ?? savedChildProfile?.ageBand;
+      const mergedIntent = parentIntent ?? savedChildProfile?.parentIntent;
+      await saveChildProfile({ childNameOrNickname: mergedName, ageBand: mergedAgeBand, parentIntent: mergedIntent });
+    }
     router.replace('/(child)/today');
   };
 
-  return <SafeAreaView style={styles.screen}><View style={styles.card}><Text style={styles.stepCount}>Step {stepIndex + 1} of {steps.length}</Text><Text style={styles.title}>{current.title}</Text><Text style={styles.subtitle}>{current.subtitle}</Text><View style={styles.content}>{current.render()}</View><View style={styles.row}><TouchableOpacity accessibilityRole='button' accessibilityLabel='Go to previous onboarding step' disabled={stepIndex === 0} onPress={() => setStepIndex((s) => Math.max(0, s - 1))} style={[styles.button, styles.secondaryButton, stepIndex === 0 && styles.disabled]}><Text style={styles.secondaryText}>Back</Text></TouchableOpacity><TouchableOpacity accessibilityRole='button' accessibilityLabel={isLast ? 'Finish onboarding' : 'Go to next onboarding step'} onPress={async () => { if (isLast) { await finishFlow(false); return; } setStepIndex((s) => s + 1); }} style={[styles.button, styles.primaryButton]}><Text style={styles.primaryText}>{isLast ? (isEditing ? 'Save & Return to Child Home' : 'Enter Child Home') : 'Next'}</Text></TouchableOpacity></View>{isLast && <TouchableOpacity accessibilityRole='button' accessibilityLabel='Skip optional child setup and continue' onPress={async () => finishFlow(true)}><Text style={styles.parentLink}>Skip optional setup</Text></TouchableOpacity>}<Link href='/(parent)/dashboard' style={styles.parentLink} accessibilityRole='link' accessibilityLabel='Go to Parent Dashboard'>Go to Parent Dashboard</Link></View></SafeAreaView>;
+  return <SafeAreaView style={styles.screen}><View style={styles.card}><Text style={styles.stepCount}>Step {stepIndex + 1} of {steps.length}</Text><Text style={styles.title}>{current.title}</Text><Text style={styles.subtitle}>{current.subtitle}</Text><View style={styles.content}>{current.render()}</View><View style={styles.row}><TouchableOpacity accessibilityRole='button' accessibilityLabel='Go to previous onboarding step' disabled={stepIndex === 0} onPress={() => setStepIndex((s) => Math.max(0, s - 1))} style={[styles.button, styles.secondaryButton, stepIndex === 0 && styles.disabled]}><Text style={styles.secondaryText}>Back</Text></TouchableOpacity><TouchableOpacity accessibilityRole='button' accessibilityLabel={isLast ? 'Finish onboarding' : 'Go to next onboarding step'} disabled={isLast && !isChildProfileHydrated} onPress={async () => { if (isLast) { await finishFlow(false); return; } setStepIndex((s) => s + 1); }} style={[styles.button, styles.primaryButton, isLast && !isChildProfileHydrated && styles.disabled]}><Text style={styles.primaryText}>{isLast ? (isEditing ? 'Save & Return to Child Home' : 'Enter Child Home') : 'Next'}</Text></TouchableOpacity></View>{isLast && <TouchableOpacity accessibilityRole='button' accessibilityLabel='Skip optional child setup and continue' disabled={!isChildProfileHydrated} onPress={async () => finishFlow(true)}><Text style={styles.parentLink}>Skip optional setup</Text></TouchableOpacity>}<Link href='/(parent)/dashboard' style={styles.parentLink} accessibilityRole='link' accessibilityLabel='Go to Parent Dashboard'>Go to Parent Dashboard</Link></View></SafeAreaView>;
 }
 
 function ChoiceList<T extends string>({ items, selected, onPick, emptyLabel }: { items: T[]; selected?: T; onPick: (item: T) => void; emptyLabel?: string }) {

@@ -51,6 +51,8 @@ ok('QA CSV structure validated');
 const onboarding = fs.readFileSync(path.join(root, 'app/onboarding.tsx'), 'utf8');
 if (!/childProfile|child setup|saveChildProfile|getChildProfile/i.test(onboarding)) fail('Onboarding does not reference child profile setup.');
 if (!/getChildProfile/.test(onboarding)) fail('Onboarding does not hydrate child profile data on load.');
+if (!/isChildProfileHydrated/.test(onboarding)) fail('Onboarding missing child profile hydration guard state.');
+if (!/savedChildProfile/.test(onboarding)) fail('Onboarding missing saved child profile merge behavior.');
 const dashboard = fs.readFileSync(path.join(root, 'app/(parent)/dashboard.tsx'), 'utf8');
 if (!/child profile|childProfile|getChildProfile/i.test(dashboard)) fail('Parent dashboard does not reference child profile summary.');
 const today = fs.readFileSync(path.join(root, 'app/(child)/today.tsx'), 'utf8');
