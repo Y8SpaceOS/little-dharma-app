@@ -44,7 +44,26 @@ for (const phrase of ['Sprint 60', 'done', 'Sprint 61', 'Sprint 62', 'Sprint 63'
 }
 if (!(master.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') && master.includes('deferred intentionally'))) throw new Error('Sprint 14 deferred text missing');
 if (!(master.includes('Sprint 15 — Developer Environment Bootstrap Guide') && master.includes('deferred intentionally'))) throw new Error('Sprint 15 deferred text missing');
-if (master.match(/Sprint\s(?:6[4-9]|[7-9]\d|1\d\d|150)[^\n]*done/i)) throw new Error('Future sprint beyond 63 marked done');
+const extractSprintSection = (queueText, sprintNumber) => {
+  const heading = `### Sprint ${sprintNumber} — `;
+  const startIndex = queueText.indexOf(heading);
+  if (startIndex === -1) return null;
+
+  const remaining = queueText.slice(startIndex + heading.length);
+  const nextHeadingOffset = remaining.search(/\n### Sprint \d+ — /);
+  const endIndex = nextHeadingOffset === -1 ? queueText.length : startIndex + heading.length + nextHeadingOffset;
+
+  return queueText.slice(startIndex, endIndex);
+};
+
+for (let sprint = 64; sprint <= 150; sprint += 1) {
+  const section = extractSprintSection(master, sprint);
+  if (section) {
+    if (!section.includes('- **Status:** not started')) {
+      throw new Error(`Sprint ${sprint} must be marked not started in MASTER_SPRINT_QUEUE`);
+    }
+  }
+}
 
 const taskLog = readFileSync('docs/TASK_LOG.md', 'utf8');
 if (!taskLog.includes('Sprint 63 (Story World Browse v1) completed')) throw new Error('TASK_LOG missing sprint 63 entry');
