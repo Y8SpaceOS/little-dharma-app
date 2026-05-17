@@ -579,7 +579,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Child delight
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Daily 10-minute ritual habit, Content depth and authenticity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added Values Garden v1 to My Treasures using existing local completion/value data with calm private framing, QA doc/CSV/validator coverage, and no story schema/content or social-pressure mechanics changes.
 - **Primary track:** Product Experience
 - **Objective:** Introduce a calm values-memory surface that reinforces practiced virtues.
 - **Scope:** Define and implement v1 values garden representation using existing completion/value data.
