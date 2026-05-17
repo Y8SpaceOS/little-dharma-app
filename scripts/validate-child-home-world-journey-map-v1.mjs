@@ -29,15 +29,17 @@ if (idxSprint < 0 || idxStatus < 0) throw new Error('Roadmap CSV headers missing
 const map = new Map(roadmap.map((line) => { const cols = line.split(','); return [Number(cols[idxSprint]), cols[idxStatus]]; }));
 for (let sprint = 61; sprint <= 150; sprint += 1) if (!map.has(sprint)) throw new Error(`Missing Sprint ${sprint} row in roadmap CSV.`);
 [61, 62, 63, 64].forEach((s) => { if (map.get(s) !== 'done') throw new Error(`Sprint ${s} must be done.`); });
-for (let sprint = 65; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
+if (map.get(65) !== 'done') throw new Error('Sprint 65 must be done.');
+for (let sprint = 66; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!/Sprint 64[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 64 done.');
-if (!/Sprint 65[\s\S]*?\*\*Status:\*\* not started/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must keep Sprint 65 not started.');
+if (!/Sprint 65[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 65 done.');
+if (!/Sprint 66[\s\S]*?\*\*Status:\*\* not started/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must keep Sprint 66 not started.');
 if (!/Sprint 14[\s\S]*deferred intentionally/.test(queue) || !/Sprint 15[\s\S]*deferred intentionally/.test(queue)) throw new Error('Sprint 14/15 deferred state missing.');
 
 const taskLog = fs.readFileSync('docs/TASK_LOG.md', 'utf8');
-if (!/Sprint 64/i.test(taskLog)) throw new Error('TASK_LOG must include Sprint 64 entry.');
+if (!/Sprint 65/i.test(taskLog)) throw new Error('TASK_LOG must include Sprint 65 entry.');
 
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 if (pkg.scripts && Object.keys(pkg.scripts).some((k) => k.includes('validate-child-home-world-journey-map-v1'))) throw new Error('Do not add Sprint 64 validator to package.json scripts.');

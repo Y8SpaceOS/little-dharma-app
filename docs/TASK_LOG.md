@@ -516,3 +516,10 @@
 - Preserved existing child route links (Story World, Bedtime, Treasures, Parent Space) and threshold entry behavior; no backend/auth/cloud/CMS/analytics/monetization/audio-recording additions.
 - Added Sprint 64 QA documentation files and a dedicated validator script.
 - Updated roadmap governance artifacts: Sprint 64 marked done; Sprint 65+ remain not_started; Sprint 14/15 deferred state preserved.
+
+## 2026-05-17 — Sprint 65 Story Detail Upgrade v1
+- Implemented story detail pre-story surface in `app/story/[slug].tsx` with Story World metadata enrichment (duration, value, age bands, source tradition, journey context, audio placeholder), parent talk-together note, reflection prompt, and Start/Continue CTA while preserving story runtime sequence.
+- Added calm unknown-story fallback copy and navigation to Story World / Child Home.
+- Added Sprint 65 QA artifacts: `docs/STORY_DETAIL_UPGRADE_V1_QA.md` and `docs/content/story-detail-upgrade-v1-qa.csv`.
+- Added validator `scripts/validate-story-detail-upgrade-v1.mjs` covering governance state and story-detail presence checks for Sprint 65 requirements.
+- Updated roadmap governance: Sprint 65 marked done in MASTER_SPRINT_QUEUE and post-foundation roadmap CSV; Sprint 66+ remained not_started.
