@@ -691,7 +691,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Premium UI/UX taste
 - **Protected quality dimensions:** Child delight, Parent trust, Daily 10-minute ritual habit, Safety/privacy
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added dependency-free calm loading/skeleton states for Child Home, My Treasures, and Parent Dashboard with new QA doc/CSV/validator artifacts while keeping manual iPhone loading-state sign-off pending.
 - **Primary track:** Product Experience
 - **Objective:** Improve perceived responsiveness with calm, consistent loading states.
 - **Scope:** Add/loading skeleton treatments for major child and parent surfaces with low-stimulation motion.

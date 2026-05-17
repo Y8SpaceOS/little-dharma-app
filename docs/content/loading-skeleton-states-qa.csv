@@ -1,0 +1,18 @@
+qaArea,surface,expectedBehavior,status,notes
+loading component exists,global,CalmLoadingState component exists with reusable props,pass,Implemented in src/components/CalmLoadingState.tsx
+child home loading state,app/(child)/today.tsx,Child Home journey summary shows calm loading placeholder during async refresh,pass,Inline variant added
+audience copy,src/components/CalmLoadingState.tsx,Child parent and neutral loading copy defaults are available,pass,Defaults implemented
+parent dashboard loading state,app/(parent)/dashboard.tsx,Parent dashboard shows calm loading state instead of abrupt raw loading placeholders,pass,Loading card added and raw Loading text removed from seed summary
+story invalid/missing state,app/story/[slug].tsx,Invalid or missing story slug remains user-safe and recoverable,pending_manual_qa,Existing fallback route still present
+treasures loading/empty distinction,app/(child)/treasures.tsx,Treasures loading placeholder is distinct from empty earned states,pass,Inline loading in summary card only
+onboarding loading/review,app/onboarding.tsx,Onboarding remains stable with no regressions from loading sprint,pending_manual_qa,No new loading control needed
+trust privacy review,app/(parent)/privacy.tsx,Trust and Privacy Center content/behavior remains unchanged,pass,No runtime changes on privacy screen
+error boundary compatibility,src/components/RouteErrorBoundary.tsx,Loading component usage remains compatible with route-level boundaries,pass,No boundary contract changes
+low-stimulation copy,global,Loading copy remains calm and non-pressuring,pass,Forbidden language excluded
+no animation dependency,global,No animation libraries or loader packages introduced,pass,React Native built-ins only
+no telemetry/backend,global,No telemetry analytics backend or sync logic added,pass,Scope preserved
+accessibility label,src/components/CalmLoadingState.tsx,Loading state is exposed with accessibility role and label,pass,progressbar role + contextual label
+no dark-pattern language,global,Loading text avoids urgency FOMO or coercive language,pass,Reviewed
+iPhone manual QA,manual,Loading and transitions verified on iPhone Expo Go,pending_manual_qa,Must be completed before release sign-off
+story 1–21 regression,story flow,All 21 stories still playable through completion,pending_manual_qa,Manual full-path regression required
+parent dashboard regression,parent dashboard,Dashboard sections and summaries remain correct after loading polish,pending_manual_qa,Manual iPhone and spot local checks required

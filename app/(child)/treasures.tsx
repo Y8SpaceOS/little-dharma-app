@@ -4,6 +4,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import CalmLoadingState from '@/components/CalmLoadingState';
 import {
   getAllStoryCompletions,
   getCompletedCarryingWords,
@@ -16,14 +17,17 @@ function TreasuresScreenContent() {
   const [completions, setCompletions] = useState<StoryCompletionRecord>({});
   const [wordsICarry, setWordsICarry] = useState<string[]>([]);
   const [latestCarryingWord, setLatestCarryingWord] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const refreshTreasures = useCallback(async () => {
+    setIsLoading(true);
     const path = getVrindavanJourneyPath();
     const stored = await getAllStoryCompletions();
     setCompletions(stored);
     const words = await getCompletedCarryingWords(path);
     setWordsICarry(Array.from(new Set(words)));
     setLatestCarryingWord(await getLatestCarryingWord(path));
+    setIsLoading(false);
   }, []);
 
   useFocusEffect(
@@ -32,6 +36,7 @@ function TreasuresScreenContent() {
         setCompletions({});
         setWordsICarry([]);
         setLatestCarryingWord(null);
+        setIsLoading(false);
       });
     }, [refreshTreasures])
   );
@@ -86,6 +91,10 @@ function TreasuresScreenContent() {
         <Text style={styles.subtitle}>Your private memory shelf from stories you completed with care.</Text>
 
         <View style={styles.summaryCard}>
+          {isLoading ? (
+            <CalmLoadingState surfaceName='My Treasures summary' audience='child' variant='inline' />
+          ) : (
+            <>
           <Text style={styles.summaryEyebrow}>Vrindavan journey</Text>
           <Text style={styles.summaryTitle}>{completionLabel}</Text>
           <Text style={styles.summaryCopy}>
@@ -102,6 +111,8 @@ function TreasuresScreenContent() {
           </View>
           {latestTreasure ? <Text style={styles.summaryHint}>Latest memory: {latestTreasure.story.title}</Text> : null}
           {isFullPathComplete ? <Text style={styles.fullPathMessage}>Full path complete — take your time revisiting any story you love.</Text> : null}
+            </>
+          )}
         </View>
 
         <View style={styles.gardenCard}>
