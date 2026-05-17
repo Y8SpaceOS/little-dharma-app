@@ -38,7 +38,7 @@ function StoryScreenContent() {
         <View style={styles.fallbackCard}>
           <Text style={styles.title}>This story is resting for now.</Text>
           <Text style={styles.meta}>Return to Story World or go back to Child Home.</Text>
-          <Link href='/world/vrindavan' style={styles.homeLink}>Return to Story World</Link>
+          <Link href='/(child)/worlds' style={styles.homeLink}>Return to Story World</Link>
           <Link href='/(child)/today' style={styles.secondaryLink}>Go back to Child Home</Link>
         </View>
       </SafeAreaView>

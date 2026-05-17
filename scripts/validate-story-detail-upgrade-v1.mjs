@@ -29,6 +29,8 @@ for (const group of mustContainAny) {
     throw new Error(`Story detail source missing required signal: ${group.join(' | ')}`);
   }
 }
+if (!storyDetail.includes("href='/(child)/worlds'")) throw new Error('Fallback must link Return to Story World to /(child)/worlds');
+if (!storyDetail.includes("href='/(child)/today'")) throw new Error('Fallback must include Go back to Child Home link to /(child)/today');
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!queue.includes('### Sprint 65 — Story Detail Upgrade v1\n- **Status:** done')) throw new Error('Sprint 65 must be done in MASTER_SPRINT_QUEUE');
