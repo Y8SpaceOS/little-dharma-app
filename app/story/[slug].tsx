@@ -4,6 +4,7 @@ import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'rea
 import { getStoryJourneyBySlug } from '@/services/journeys';
 import { trackEvent } from '@/lib/analytics';
 import { tokens } from '@/design/tokens';
+import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
 import { companionV1 } from '@/lib/companion';
 
@@ -11,7 +12,7 @@ type Stage = 'story' | 'ritual' | 'pause' | 'quiz' | 'complete' | 'bedtime';
 
 const PAUSE_DURATION_MS = 13000;
 
-export default function StoryScreen() {
+function StoryScreenContent() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const journey = slug ? getStoryJourneyBySlug(slug) : null;
@@ -443,3 +444,15 @@ const styles = StyleSheet.create({
   bedtimeBody: { fontSize: 16, lineHeight: 24, color: '#564D6D' },
   bedtimeClosingLine: { fontSize: 16, lineHeight: 24, color: '#4C4363', fontWeight: '600', marginTop: 4 }
 });
+
+
+export default function StoryScreen() {
+  return (
+    <RouteErrorBoundary
+      surfaceName='Story Journey'
+      audience='child'
+    >
+      <StoryScreenContent />
+    </RouteErrorBoundary>
+  );
+}

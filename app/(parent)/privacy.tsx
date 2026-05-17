@@ -1,6 +1,7 @@
 import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
+import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 
 const sections = [
   {
@@ -37,7 +38,7 @@ const sections = [
   }
 ] as const;
 
-export default function PrivacyScreen() {
+function PrivacyScreenContent() {
   return (
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.content}>
@@ -77,3 +78,15 @@ const styles = StyleSheet.create({
   noteText: { color: '#FFFFFF', fontSize: 15, lineHeight: 22, fontWeight: '600' },
   backLink: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: tokens.radius.button, textAlign: 'center', color: '#1E2C50', fontWeight: '700' }
 });
+
+
+export default function PrivacyScreen() {
+  return (
+    <RouteErrorBoundary
+      surfaceName='Parent Trust & Privacy Center'
+      audience='parent'
+    >
+      <PrivacyScreenContent />
+    </RouteErrorBoundary>
+  );
+}

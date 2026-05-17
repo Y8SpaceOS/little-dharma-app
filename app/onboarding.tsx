@@ -2,6 +2,7 @@ import { ReactElement, useEffect, useMemo, useState } from 'react';
 import { Link, useRouter } from 'expo-router';
 import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { tokens } from '@/design/tokens';
+import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { AgeBand, BedtimePreference, ChildLanguage, completeOnboarding, FavoriteCharacter, getOnboardingState, loadOnboardingState, OnboardingProfile } from '@/lib/onboardingState';
 
 type Step = {
@@ -19,7 +20,7 @@ const defaultProfile: OnboardingProfile = {
   childName: '', nickname: '', ageBand: '3-5', language: 'English', favoriteCharacter: 'Krishna', bedtimePreference: 'Cozy (10 min)'
 };
 
-export default function OnboardingScreen() {
+function OnboardingScreenContent() {
   const router = useRouter();
   const [stepIndex, setStepIndex] = useState(0);
   const [profile, setProfile] = useState<OnboardingProfile>(defaultProfile);
@@ -80,3 +81,15 @@ const styles = StyleSheet.create({
   choiceText: { fontSize: 16, color: '#5A4636', fontWeight: '600' },
   choiceTextSelected: { color: '#3C250F' }
 });
+
+
+export default function OnboardingScreen() {
+  return (
+    <RouteErrorBoundary
+      surfaceName='Onboarding'
+      audience='parent'
+    >
+      <OnboardingScreenContent />
+    </RouteErrorBoundary>
+  );
+}

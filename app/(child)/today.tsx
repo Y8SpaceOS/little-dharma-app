@@ -3,6 +3,7 @@ import { Link } from 'expo-router';
 import { AppState, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { tokens } from '@/design/tokens';
+import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { trackEvent } from '@/lib/analytics';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 import { getCompletedBadge, getLatestCarryingWord, hasCompletedStory } from '@/lib/storyProgress';
@@ -17,7 +18,7 @@ const actions = [
   { label: 'My Treasures', href: '/(child)/treasures', colors: ['#FCE5BF', '#F6D69A'] }
 ] as const;
 
-export default function TodayScreen() {
+function TodayScreenContent() {
   const [nickname, setNickname] = useState(getOnboardingState().profile?.nickname || 'Little One');
   const [status, setStatus] = useState<'ready' | 'completed' | 'path-completed'>('ready');
   const [earnedBadge, setEarnedBadge] = useState<string | null>(null);
@@ -227,3 +228,17 @@ const styles = StyleSheet.create({
   },
   thresholdButtonText: { fontSize: 16, fontWeight: '800', color: '#FFFFFF' }
 });
+
+
+export default function TodayScreen() {
+  return (
+    <RouteErrorBoundary
+      surfaceName='Child Home'
+      audience='child'
+      primaryActionHref='/onboarding'
+      primaryActionLabel='Go to Onboarding'
+    >
+      <TodayScreenContent />
+    </RouteErrorBoundary>
+  );
+}

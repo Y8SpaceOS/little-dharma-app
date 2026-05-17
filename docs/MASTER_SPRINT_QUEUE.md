@@ -675,7 +675,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Parent trust
 - **Protected quality dimensions:** Child delight, Safety/privacy, Existing app behavior, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added dependency-free route error boundaries with calm fallback copy, retry + safe navigation actions, and Sprint 55 QA doc/CSV/validator artifacts while keeping manual iPhone failure simulation pending.
 - **Primary track:** Platform Foundations
 - **Objective:** Add graceful failure containment for critical runtime surfaces.
 - **Scope:** Define and implement error boundaries plus safe fallback copy for key child/parent routes.

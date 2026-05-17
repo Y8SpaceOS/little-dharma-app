@@ -3,6 +3,7 @@ import { Link } from 'expo-router';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
+import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import {
   getAllStoryCompletions,
   getCompletedCarryingWords,
@@ -11,7 +12,7 @@ import {
 } from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
 
-export default function TreasuresScreen() {
+function TreasuresScreenContent() {
   const [completions, setCompletions] = useState<StoryCompletionRecord>({});
   const [wordsICarry, setWordsICarry] = useState<string[]>([]);
   const [latestCarryingWord, setLatestCarryingWord] = useState<string | null>(null);
@@ -213,3 +214,15 @@ const styles = StyleSheet.create({
   privacyNote: { marginTop: 6, fontSize: 13, lineHeight: 19, color: '#735A42' },
   backLink: { marginTop: 6, textAlign: 'center', color: tokens.colors.peacock, fontSize: 16, fontWeight: '700' }
 });
+
+
+export default function TreasuresScreen() {
+  return (
+    <RouteErrorBoundary
+      surfaceName='My Treasures'
+      audience='child'
+    >
+      <TreasuresScreenContent />
+    </RouteErrorBoundary>
+  );
+}
