@@ -4,7 +4,7 @@
 Deliver a clear, parent-readable Trust & Privacy Center that explains Little Dharma's current local-device data behavior, trust posture, child-safety boundaries, and parent guidance without adding backend/account/cloud sync/social/analytics complexity.
 
 ## Surfaces touched
-- `app/(parent)/trust-privacy.tsx`
+- `app/(parent)/privacy.tsx`
 - `app/(parent)/dashboard.tsx`
 - `docs/content/parent-trust-privacy-center-v1-qa.csv`
 - `scripts/validate-parent-trust-privacy-center-v1.mjs`

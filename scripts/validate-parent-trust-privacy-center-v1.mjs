@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const qaDocPath = path.join('docs', 'PARENT_TRUST_PRIVACY_CENTER_V1_QA.md');
 const qaCsvPath = path.join('docs', 'content', 'parent-trust-privacy-center-v1-qa.csv');
-const trustRoutePath = path.join('app', '(parent)', 'trust-privacy.tsx');
+const privacyRoutePath = path.join('app', '(parent)', 'privacy.tsx');
 const parentDashboardPath = path.join('app', '(parent)', 'dashboard.tsx');
 
 const requiredColumns = ['qaArea', 'surface', 'expectedBehavior', 'status', 'notes'];
@@ -60,7 +60,7 @@ function fail(message) {
 
 if (!fs.existsSync(qaDocPath)) fail(`Missing QA document: ${qaDocPath}`);
 if (!fs.existsSync(qaCsvPath)) fail(`Missing QA CSV: ${qaCsvPath}`);
-if (!fs.existsSync(trustRoutePath)) fail(`Missing Trust & Privacy route: ${trustRoutePath}`);
+if (!fs.existsSync(privacyRoutePath)) fail(`Missing Trust & Privacy route: ${privacyRoutePath}`);
 if (!fs.existsSync(parentDashboardPath)) fail(`Missing parent dashboard: ${parentDashboardPath}`);
 
 const csvRaw = fs.readFileSync(qaCsvPath, 'utf8').replace(/\r\n/g, '\n').trim();
@@ -97,20 +97,20 @@ for (const [index, row] of rows.entries()) {
   }
 }
 
-const trustCopy = fs.readFileSync(trustRoutePath, 'utf8');
+const privacyCopy = fs.readFileSync(privacyRoutePath, 'utf8');
 for (const concept of requiredConcepts) {
-  if (!trustCopy.toLowerCase().includes(concept.toLowerCase())) {
+  if (!privacyCopy.toLowerCase().includes(concept.toLowerCase())) {
     fail(`Trust center copy missing required concept: ${concept}`);
   }
 }
 
 const dashboardCopy = fs.readFileSync(parentDashboardPath, 'utf8');
-if (!dashboardCopy.includes('trust-privacy')) {
+if (!dashboardCopy.includes('/(parent)/privacy')) {
   fail('Parent dashboard does not contain Trust & Privacy Center link/CTA');
 }
 
 const qaDocCopy = fs.readFileSync(qaDocPath, 'utf8');
-const changedUiScope = `${trustCopy}\n${dashboardCopy}\n${qaDocCopy}`.toLowerCase();
+const changedUiScope = `${privacyCopy}\n${dashboardCopy}\n${qaDocCopy}`.toLowerCase();
 for (const phrase of forbiddenPhrases) {
   if (changedUiScope.includes(phrase.toLowerCase())) {
     fail(`Forbidden phrase found in changed UI/QA scope: ${phrase}`);
