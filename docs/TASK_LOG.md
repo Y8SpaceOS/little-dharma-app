@@ -510,3 +510,9 @@
 - 2026-05-17: Roadmap freeze updates completed preserving Sprint 61 backbone: updated post-foundation roadmap markdown + CSV through Sprint 150, kept Sprint 60 conditional no-go pending manual iPhone QA, kept Sprint 14/15 deferred/not completed, kept Sprint 61/62 done, marked Sprint 63 done, and kept Sprint 64+ not_started.
 - 2026-05-17: Added Sprint 63 QA artifacts (`docs/STORY_WORLD_BROWSE_V1_QA.md`, `docs/content/story-world-browse-v1-qa.csv`) and validator (`scripts/validate-story-world-browse-v1.mjs`).
 - 2026-05-17: Scope guardrails preserved: no paid beta start, no external private beta start, no App Store submission, no backend/auth/cloud sync, no microphone permission/audio recording, no analytics/telemetry, and no hard gamification mechanics.
+
+## 2026-05-17 — Sprint 64 (Child Home + World Selection and Journey Map v1)
+- Refreshed `app/(child)/today.tsx` into a warmer child-facing destination with nickname-aware Namaste greeting fallback, Today’s Story hero, age-band-aware quick paths, Story Corners preview, and Dharma Journeys preview cards.
+- Preserved existing child route links (Story World, Bedtime, Treasures, Parent Space) and threshold entry behavior; no backend/auth/cloud/CMS/analytics/monetization/audio-recording additions.
+- Added Sprint 64 QA documentation files and a dedicated validator script.
+- Updated roadmap governance artifacts: Sprint 64 marked done; Sprint 65+ remain not_started; Sprint 14/15 deferred state preserved.

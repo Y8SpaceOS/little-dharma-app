@@ -831,7 +831,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Upgraded the child browse surface to Story World with warm sections, rich cards, age-aware ordering from Sprint 62 profile age band, Dharma Journeys preview cards, local-first trust copy, and Sprint 63 QA/doc/validator artifacts.
 
 ### Sprint 64 — Child Home + World Selection and Journey Map v1
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Refreshed Child Home into a warm destination with nickname-aware Namaste greeting fallback, Today's Story hero from Story World metadata, age-band-aware quick paths, Story Corner + Dharma Journeys preview sections, trust microcopy, plus Sprint 64 QA/doc/validator updates.
 
 ### Sprint 65 — Story Detail Upgrade v1
 - **Status:** not started
