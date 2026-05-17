@@ -1,0 +1,21 @@
+qaArea,surface,expectedBehavior,status,notes
+dashboard visibility,app/(parent)/dashboard.tsx,Parent dashboard route renders without crash,pass,Verified by lint/type/tests and screen composition
+parent-facing header,app/(parent)/dashboard.tsx,Header is warm and parent-trust oriented,pass,"Includes calm, private journey framing"
+journey progress summary,app/(parent)/dashboard.tsx,Journey section explains completed progress and next story,pass,Uses 21-story framing and completion percent
+values practiced summary,app/(parent)/dashboard.tsx,Values practiced are summarized from completed stories,pass,Shows values list or calm empty copy
+latest memory timestamp logic,src/services/progress.ts,Latest memory is timestamp-derived with safe fallback,pass,Uses Date.parse with invalid-date fallback
+carrying word display if available,app/(parent)/dashboard.tsx,Current carrying word is displayed when available,pass,Falls back to value text
+tonight parent conversation prompt,app/(parent)/dashboard.tsx,Prompt appears for parent-child reflection,pass,Uses latest reflection prompt fallback
+gentle next step,app/(parent)/dashboard.tsx,Dashboard gives gentle continue-without-pressure guidance,pass,Continue gently card
+privacy note,app/(parent)/dashboard.tsx,Privacy note is visible and local-only,pass,No tracking analytics/public profile wording
+empty state,parent dashboard snapshot + UI,No-completion state remains clear and calm,pass,No judgment language
+partial progress state,parent dashboard snapshot + UI,Partial completion state remains specific and useful,pass,Remaining story context shown
+full path completion state,parent dashboard snapshot + UI,21/21 completion state offers gentle continuation,pass,No pressure mechanics
+local-only data usage,src/services/progress.ts,Uses local storage-derived progress only,pass,No backend/auth/sync/analytics integration
+child home navigation,app/(parent)/dashboard.tsx,Child Home link still routes correctly,pending_manual_qa,Requires on-device verification
+no surveillance framing,app/(parent)/dashboard.tsx + QA docs,No surveillance-like language,pass,Validated by sprint validator
+no comparison-or-scoring framing,app/(parent)/dashboard.tsx + QA docs,No comparison or scoring language,pass,Validated by sprint validator
+no streak pressure,app/(parent)/dashboard.tsx + QA docs,No streak pressure language,pass,Validated by sprint validator
+no public sharing pressure,app/(parent)/dashboard.tsx + QA docs,No public-sharing pressure language,pass,Validated by sprint validator
+iPhone layout sanity,Parent dashboard on iPhone,No truncation/cut-off on iPhone,pending_manual_qa,Manual Expo Go QA required
+story 1–21 regression,Vrindavan journey/progress services,Existing 21-story behavior is preserved,pass,Existing validators executed
