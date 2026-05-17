@@ -826,10 +826,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Status:** done
 - **Completion note:** Added a parent-trusted local-first optional child profile and age setup foundation with skippable onboarding capture, parent dashboard summary, child-home safe fallback, QA doc/CSV/validator, and no backend/cloud sync/analytics/telemetry/dependency or age-band routing changes.
 
-### Sprint 63 — Story Library Browse v1
-- **Status:** not started
+### Sprint 63 — Story World Browse v1
+- **Status:** done
+- **Completion note:** Upgraded the child browse surface to Story World with warm sections, rich cards, age-aware ordering from Sprint 62 profile age band, Dharma Journeys preview cards, local-first trust copy, and Sprint 63 QA/doc/validator artifacts.
 
-### Sprint 64 — World Selection and Journey Map v1
+### Sprint 64 — Child Home + World Selection and Journey Map v1
 - **Status:** not started
 
 ### Sprint 65 — Story Detail Upgrade v1
@@ -850,7 +851,7 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 70 — Parent Controls v1
 - **Status:** not started
 
-### Sprint 71 — Parent Journey Settings v1
+### Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1
 - **Status:** not started
 
 ### Sprint 72 — Content Pack Architecture v2

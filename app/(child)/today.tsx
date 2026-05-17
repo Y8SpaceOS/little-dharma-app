@@ -14,7 +14,7 @@ import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState'
 import { companionV1 } from '@/lib/companion';
 
 const actions = [
-  { label: 'Explore Worlds', href: '/(child)/worlds', colors: ['#D9EDFF', '#C6E4FF'] },
+  { label: 'Story World', href: '/(child)/worlds', colors: ['#D9EDFF', '#C6E4FF'] },
   { label: 'Bedtime Story', href: '/(child)/bedtime', colors: ['#DCD8FF', '#CFC9FF'] },
   { label: 'Chant & Sing', href: '/(child)/chant', colors: ['#FFDDF0', '#FFD0E8'] },
   { label: 'My Treasures', href: '/(child)/treasures', colors: ['#FCE5BF', '#F6D69A'] }
