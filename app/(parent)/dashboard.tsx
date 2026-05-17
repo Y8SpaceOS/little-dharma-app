@@ -59,6 +59,7 @@ export default function DashboardScreen() {
 
     <View style={styles.privacyCard}><Text style={styles.privacyTitle}>Privacy note</Text><Text style={styles.privacyText}>{summary.privacyPromise}</Text></View>
 
+    <Link href='/(parent)/trust-privacy' style={styles.button}>Open Trust & Privacy Center</Link>
     <Link href='/onboarding' style={styles.button}>Edit Onboarding</Link>
     <Text onPress={onReset} style={styles.reset}>Reset Local Onboarding State</Text>
     <Link href='/(child)/today' style={styles.childLink}>Switch to Child Home</Link>
