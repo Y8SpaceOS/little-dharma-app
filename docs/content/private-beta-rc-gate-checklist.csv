@@ -1,0 +1,24 @@
+gateArea,gateItem,evidenceSource,requiredFor,status,owner,notes
+engineering,npm ci,docs/content/private-beta-rc-automated-checks-ledger.csv,internal_release_gate,pass,Engineering,Dependency install completed for RC verification run.
+engineering,typecheck,docs/content/private-beta-rc-automated-checks-ledger.csv,internal_release_gate,pass,Engineering,Type safety check passed in sprint run.
+engineering,lint,docs/content/private-beta-rc-automated-checks-ledger.csv,internal_release_gate,pass,Engineering,Static lint quality gate passed.
+engineering,tests,docs/content/private-beta-rc-automated-checks-ledger.csv,internal_release_gate,pass,Engineering,Automated tests passed.
+content,story path 1-21,scripts/validate-vrindavan-21-story-path.mjs,private_beta_candidate,pass,Content,21-day path validator passed.
+content,story completion state,scripts/validate-vrindavan-completion-state.mjs,private_beta_candidate,pass,Engineering,Completion state validator passed.
+product,ritual flow,scripts/validate-ritual-moment-v2.mjs,private_beta_candidate,pass,Product,Validated ritual flow artifacts.
+product,bedtime mode,scripts/validate-bedtime-mode-v2.mjs,private_beta_candidate,pass,Product,Validated bedtime mode artifacts.
+product,Child Home,scripts/validate-child-home-v3.mjs,private_beta_candidate,pass,Product,Child Home v3 validator passed.
+product,My Treasures,scripts/validate-my-treasures-v2.mjs,private_beta_candidate,pass,Product,My Treasures validator passed.
+product,Values Garden,scripts/validate-values-garden-v1.mjs,private_beta_candidate,pass,Product,Values Garden validator passed.
+parent trust,Parent Dashboard,scripts/validate-parent-dashboard-v3.mjs,private_beta_candidate,pass,Product,Parent Dashboard validator passed.
+parent trust,Parent Trust & Privacy Center,scripts/validate-parent-trust-privacy-center-v1.mjs,private_beta_candidate,pass,Trust,Privacy center validator passed.
+parent trust,Parent Feedback Capture,scripts/validate-parent-feedback-capture-v1.mjs,private_beta_candidate,pass,Trust,Feedback capture validator passed.
+manual QA,manual iPhone QA,docs/content/private-beta-rc-manual-qa-evidence-template.csv,external_private_beta,blocked,QA,Physical device evidence not yet executed in this sprint.
+release readiness,App Store readiness pack,scripts/validate-app-store-readiness-pack.mjs,external_private_beta,pending_owner_review,Release,Metadata/screenshots/urls still require owner completion.
+privacy,privacy-safe analytics spec,scripts/validate-privacy-safe-analytics-spec.mjs,private_beta_candidate,pass,Trust,Spec validated and no runtime instrumentation added.
+privacy,no runtime analytics,docs/PRIVACY_SAFE_ANALYTICS_SPEC.md,private_beta_candidate,accepted_risk,Trust,Intentional privacy posture with no runtime instrumentation.
+architecture,no backend/cloud sync,docs/PRIVATE_BETA_RELEASE_CANDIDATE_REPORT.md,private_beta_candidate,accepted_risk,Engineering,Local-only architecture intentionally retained for private beta.
+safety,no child-facing ads,docs/PRIVATE_BETA_RELEASE_CANDIDATE_REPORT.md,external_private_beta,pass,Product,No ad SDKs or child ad surfaces in scope.
+safety,no public community,docs/PRIVATE_BETA_RELEASE_CANDIDATE_REPORT.md,external_private_beta,pass,Product,No public sharing/community/chat surfaces.
+release governance,release owner sign-off,docs/PRIVATE_BETA_RELEASE_CANDIDATE_REPORT.md,external_private_beta,pending_owner_review,Release,Owner sign-off required before any external distribution.
+engineering,all existing validators,scripts/validate-private-beta-release-candidate.mjs,private_beta_candidate,pass,Engineering,Existing validator suite plus RC validator executed.

@@ -1,0 +1,11 @@
+blockerId,blockerArea,blockerDescription,severity,owner,status,releaseImpact,notes
+PBRC-001,manual QA,manual iPhone QA evidence not completed,P0_blocker,QA,open,Blocks external private beta decision,Must execute and attach evidence rows.
+PBRC-002,app store assets,App Store screenshots not captured,P1_critical,Release,open,Blocks App Store readiness claim,Needed for future submission readiness pack completeness.
+PBRC-003,policy URLs,privacy policy URL not finalized,P1_critical,Legal,open,Blocks external listing readiness,Owner/legal review pending.
+PBRC-004,support URLs,support URL not finalized,P2_major,Support,open,Blocks external listing readiness,Owner to provide final support endpoint.
+PBRC-005,metadata governance,app metadata owner approval pending,P1_critical,Release,open,Blocks external private beta promotion,Requires explicit owner sign-off.
+PBRC-006,accessibility claims,formal accessibility certification not claimed,P3_minor,Accessibility,not_applicable,No blocker for internal RC gate,Intentional: do not overclaim certification.
+PBRC-007,architecture,no backend/cloud sync as accepted limitation,P3_minor,Engineering,accepted,Accepted limitation for private beta,Local-first posture retained intentionally.
+PBRC-008,feedback system,local-only feedback as accepted limitation,P3_minor,Product,accepted,Accepted limitation for private beta,No backend capture implemented by design.
+PBRC-009,privacy posture,no runtime analytics as intentional privacy posture,P3_minor,Trust,accepted,Accepted limitation/decision,Future spec exists but runtime instrumentation intentionally absent.
+PBRC-010,distribution,App Store review not attempted,P2_major,Release,not_applicable,No App Store claim should be made,Out of scope for this sprint.

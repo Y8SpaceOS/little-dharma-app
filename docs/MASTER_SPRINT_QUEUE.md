@@ -755,7 +755,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Content depth and authenticity, Child delight, Existing app behavior
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Published private-beta RC gate artifacts (report, gate checklist, automated ledger, blocker log, manual QA evidence template, and validator), recorded conditional no-go pending manual iPhone QA evidence, and preserved runtime behavior/scope with Sprint 61 still not started.
 - **Primary track:** Platform Foundations
 - **Objective:** Cut and validate the private-beta release candidate across product, content, and trust gates.
 - **Scope:** Freeze candidate build scope, run full gate checklist, triage blockers, and publish go/no-go report.

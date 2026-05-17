@@ -481,3 +481,10 @@
 - 2026-05-17: Updated `docs/MASTER_SPRINT_QUEUE.md` to mark Sprint 59 done with concise completion note, preserving Sprint 11–58 history, keeping Sprint 14 and Sprint 15 deferred/not completed, and leaving Sprint 60 as next not-started sprint.
 - 2026-05-17: No runtime app behavior changed. No App Store submission occurred. No backend/auth/cloud sync/CMS/audio/analytics/telemetry/dependencies added. No product stories/features/worlds added.
 - 2026-05-17: Manual iPhone QA evidence remains required and is not replaced by this sprint; Sprint 60 still owns private-beta release-candidate gate execution.
+
+- 2026-05-17: Sprint 60 (Private Beta Release Candidate, Q3 Platform Foundation) completed: froze and evaluated the private-beta candidate without runtime behavior changes and produced decision-grade release gate artifacts — `docs/PRIVATE_BETA_RELEASE_CANDIDATE_REPORT.md`, `docs/content/private-beta-rc-gate-checklist.csv`, `docs/content/private-beta-rc-automated-checks-ledger.csv`, `docs/content/private-beta-rc-blocker-log.csv`, `docs/content/private-beta-rc-manual-qa-evidence-template.csv`, and `scripts/validate-private-beta-release-candidate.mjs`.
+- 2026-05-17: Release recommendation is **conditional no-go for external private beta until manual iPhone QA evidence is completed**; automated checks are tracked separately from manual evidence and owner sign-off requirements.
+- 2026-05-17: Scope and safety constraints preserved: no App Store submission, no production build, no App Store Connect/EAS credentials, no backend/auth/cloud sync/CMS/audio/analytics/telemetry/dependencies added, and no stories/features/worlds added.
+- 2026-05-17: Sprint 61 remains not started; Sprint 14 and Sprint 15 remain deferred/not completed.
+- 2026-05-17: Checks run: npm ci; npm run typecheck; npm run lint; npm run test; all existing validators; new private-beta RC validator; git status.
+
