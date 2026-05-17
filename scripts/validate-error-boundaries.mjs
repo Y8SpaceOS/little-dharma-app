@@ -7,7 +7,8 @@ const requiredRoutes = [
   'app/story/[slug].tsx',
   'app/(child)/treasures.tsx',
   'app/(parent)/dashboard.tsx',
-  'app/(parent)/privacy.tsx'
+  'app/(parent)/privacy.tsx',
+  'app/onboarding.tsx'
 ];
 
 const mustExist = ['docs/ERROR_BOUNDARIES_QA.md', 'docs/content/error-boundaries-qa.csv', 'src/components/RouteErrorBoundary.tsx'];
@@ -59,7 +60,4 @@ for (const route of requiredRoutes) {
   const content = fs.readFileSync(route, 'utf8');
   if (!content.includes('RouteErrorBoundary')) throw new Error(`Route missing RouteErrorBoundary reference: ${route}`);
 }
-const onboarding = fs.readFileSync('app/onboarding.tsx', 'utf8') + qaDoc;
-if (!onboarding.includes('RouteErrorBoundary') && !qaDoc.includes('onboarding')) throw new Error('Onboarding must be wrapped or explicitly reviewed in QA');
-
 console.log('validate-error-boundaries: ok');

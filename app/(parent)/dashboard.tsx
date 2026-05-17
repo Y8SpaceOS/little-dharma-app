@@ -75,6 +75,8 @@ export default function DashboardScreen() {
     <RouteErrorBoundary
       surfaceName='Parent Dashboard'
       audience='parent'
+      primaryActionHref='/(child)/today'
+      primaryActionLabel='Go to Child Home'
     >
       <DashboardScreenContent />
     </RouteErrorBoundary>

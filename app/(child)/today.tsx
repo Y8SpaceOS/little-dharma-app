@@ -235,6 +235,8 @@ export default function TodayScreen() {
     <RouteErrorBoundary
       surfaceName='Child Home'
       audience='child'
+      primaryActionHref='/onboarding'
+      primaryActionLabel='Go to Onboarding'
     >
       <TodayScreenContent />
     </RouteErrorBoundary>
