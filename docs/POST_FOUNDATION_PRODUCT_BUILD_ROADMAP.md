@@ -90,9 +90,106 @@ The owner decision for Sprint 61 is to pause immediate paid-beta and external-pr
 - **Before any paid beta:** explicit owner go/no-go.
 
 ## Integrated Frozen Queue (Sprint 63–150)
-- Sprint 63 — Story World Browse v1.
-- Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1.
-- Sprint 91 — Ramayana Journey Outline v1 and Sprint 92 — Ramayana Journey v1.
-- Sprint 97 — Story Audio Foundation v1.
-- Sprint 112 — Bhagavad Gita for Children Editorial Framework v1.
-- Sprint 116–119 — Mahabharata expansion track.
+
+### Sprints 63–90 — Product Depth Expansion
+
+| Sprint | Title |
+|---|---|
+| 63 | Story World Browse v1 |
+| 64 | Child Home + World Selection and Journey Map v1 |
+| 65 | Story Detail Upgrade v1 |
+| 66 | Ritual Flow Polish v3 |
+| 67 | Completion Celebration Upgrade v2 |
+| 68 | My Treasures Depth v3 |
+| 69 | Values Garden Depth v2 |
+| 70 | Parent Controls v1 |
+| 71 | Parent Journey Settings + Dharma Journey Data Model v1 |
+| 72 | Content Pack Architecture v2 |
+| 73 | Krishna Story Pack Expansion Planning |
+| 74 | Ganesha World Architecture v1 |
+| 75 | Ganesha Story Pack v1 |
+| 76 | Hanuman World Architecture v1 |
+| 77 | Hanuman Story Pack v1 |
+| 78 | Festival Box Digital Experience v1 |
+| 79 | Bedtime Journey Expansion v1 |
+| 80 | Morning Ritual Experience v1 |
+| 81 | Illustration System Direction v1 |
+| 82 | Character/IP System v1 |
+| 83 | Parent Weekly Summary v1 |
+| 84 | Offline Local Content Hardening v1 |
+| 85 | Manual iPhone QA Evidence Pass 1 |
+| 86 | Navigation Polish and Route Audit v1 |
+| 87 | Copy Tone and Parent Trust Polish v1 |
+| 88 | Accessibility Manual QA Evidence Pack v1 |
+| 89 | App Performance and Responsiveness Audit v1 |
+| 90 | Product Depth Gate Review |
+
+### Sprints 91–120 — Content + Parent Utility Expansion
+
+| Sprint | Title |
+|---|---|
+| 91 | Ramayana Journey Outline v1 |
+| 92 | Ramayana Journey v1 |
+| 93 | Ramayana Content Pack v1 |
+| 94 | Ramayana Parent Progress v1 |
+| 95 | Ramayana Visual Map v1 |
+| 96 | Ramayana Parent Notes + Reflection v1 |
+| 97 | Story Audio Foundation v1 |
+| 98 | Audio Player v1 |
+| 99 | Indian Voice + Pronunciation Guide v1 |
+| 100 | Ramayana Audio v1 |
+| 101 | Krishna Childhood Journey Data v1 |
+| 102 | Krishna Childhood Journey UI v1 |
+| 103 | Krishna Audio v1 |
+| 104 | Festival Journey Data v1 |
+| 105 | Festival Calendar / Seasonal Surfacing v1 |
+| 106 | Festival Parent Notes v1 |
+| 107 | Shloka Journey Data v1 |
+| 108 | Shloka Learning UI v1 |
+| 109 | Shloka Audio v1 |
+| 110 | Customs Corner v1 |
+| 111 | Rituals at Home v1 |
+| 112 | Bhagavad Gita for Children Editorial Framework v1 |
+| 113 | Bhagavad Gita Journey Data v1 |
+| 114 | Bhagavad Gita Journey UI v1 |
+| 115 | Bhagavad Gita Glossary v1 |
+| 116 | Mahabharata Editorial Framework v1 |
+| 117 | Mahabharata Journey Outline v1 |
+| 118 | Mahabharata Character Guide v1 |
+| 119 | Mahabharata Journey Data v1 |
+| 120 | Content + UX Quality Gate v1 |
+
+### Sprints 121–150 — Distribution-Ready Product Build
+
+| Sprint | Title |
+|---|---|
+| 121 | Parent Dashboard v2 |
+| 122 | Parent Safety Controls v1 |
+| 123 | Age-Aware Content Depth v1 |
+| 124 | Multi-Child Profile Foundation v1 |
+| 125 | Child Profile Switcher v1 |
+| 126 | Family Reading Mode v1 |
+| 127 | Grandparent Listening Mode v1 |
+| 128 | Local Progress Export v1 |
+| 129 | Offline Audio Placeholder v1 |
+| 130 | Offline Experience v1 |
+| 131 | Visual Design System v2 |
+| 132 | Illustration System v2 |
+| 133 | Companion Expressions v1 |
+| 134 | Microinteractions v1 |
+| 135 | Accessibility v2 |
+| 136 | Performance Pass v2 |
+| 137 | Content Integrity Validator Expansion v1 |
+| 138 | Full App QA Matrix v1 |
+| 139 | Privacy and Trust Copy v2 |
+| 140 | Source Notes and Cultural Respect Framework v1 |
+| 141 | Parent Trust Intro Carousel v1 |
+| 142 | App Store Preview Surface Prep v1 |
+| 143 | Launch Content Pack v1 |
+| 144 | Internal Family QA v1 |
+| 145 | Manual iPhone QA Evidence Closure v1 |
+| 146 | Bug Bash v1 |
+| 147 | Release Candidate v2 |
+| 148 | Final Privacy / Local-First Audit v1 |
+| 149 | Launch Decision Prep v1 |
+| 150 | Launch / No-Go Decision Sprint |
