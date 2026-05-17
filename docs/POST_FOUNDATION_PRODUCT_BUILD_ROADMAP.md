@@ -66,7 +66,7 @@ The owner decision for Sprint 61 is to pause immediate paid-beta and external-pr
 
 ## Recommended Next 10 Sprints (Detailed)
 1. **Sprint 62 — Child Profile and Age Setup v1:** Child setup flow clarity, safe defaults, and age-fit guidance architecture.
-2. **Sprint 63 — Story Library Browse v1:** Browse IA, category surfacing, and starter discovery pathways.
+2. **Sprint 63 — Story World Browse v1:** Warm child-facing Story World browse IA, rich cards, age-aware ordering, and Dharma Journeys preview.
 3. **Sprint 64 — World Selection and Journey Map v1:** World selector and journey map legibility improvements.
 4. **Sprint 65 — Story Detail Upgrade v1:** Better story metadata framing and pre-story confidence cues.
 5. **Sprint 66 — Ritual Flow Polish v3:** Ritual pacing, transitions, and comprehension polish.
@@ -74,7 +74,7 @@ The owner decision for Sprint 61 is to pause immediate paid-beta and external-pr
 7. **Sprint 68 — My Treasures Depth v3:** Better utility and revisit value in treasure surfaces.
 8. **Sprint 69 — Values Garden Depth v2:** Clearer value progression and reflective meaning.
 9. **Sprint 70 — Parent Controls v1:** Parent-facing configuration guardrails and control clarity.
-10. **Sprint 71 — Parent Journey Settings v1:** Household journey pacing/preferences and management depth.
+10. **Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1:** Household journey pacing/preferences plus future-ready data model support.
 
 ## Risks of Launching Too Early
 - Parent trust damage from quality inconsistencies.
@@ -88,3 +88,11 @@ The owner decision for Sprint 61 is to pause immediate paid-beta and external-pr
 - **After Sprint 120:** Confirm whether content + parent utility maturity is adequate for distribution-focused work.
 - **Before any external private beta:** explicit owner go/no-go.
 - **Before any paid beta:** explicit owner go/no-go.
+
+## Integrated Frozen Queue (Sprint 63–150)
+- Sprint 63 — Story World Browse v1.
+- Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1.
+- Sprint 91 — Ramayana Journey Outline v1 and Sprint 92 — Ramayana Journey v1.
+- Sprint 97 — Story Audio Foundation v1.
+- Sprint 112 — Bhagavad Gita for Children Editorial Framework v1.
+- Sprint 116–119 — Mahabharata expansion track.

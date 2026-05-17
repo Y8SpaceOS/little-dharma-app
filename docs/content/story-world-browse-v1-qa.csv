@@ -1,0 +1,14 @@
+checkId,area,expectation,status,notes
+SW63-01,story world screen,Child-facing title says Story World,pass,Verified route copy
+SW63-02,sections,All Story World sections render,pass,Start Here Krishna Ganesha Bedtime Values Festival Dharma Journeys
+SW63-03,rich cards,Metadata chips and CTA render,pass,Duration age bands value source status shown
+SW63-04,coming soon,Coming-soon cards do not navigate,pass,Rendered as non-link cards
+SW63-05,navigation,Available cards navigate to /story/[slug],pass,Uses existing story detail route
+SW63-06,age ordering,3-5 ordering favors shorter/simple stories,pass,Age priority sorting applied
+SW63-07,age ordering,6-8 ordering supports medium depth,pass,Age priority sorting applied
+SW63-08,age ordering,9-12 ordering supports longer/deeper stories,pass,Age priority sorting applied
+SW63-09,age ordering,prefer-not-to-say fallback shows Start Here ordering,pass,Fallback logic applied
+SW63-10,age ordering,missing profile fallback shows Start Here ordering,pass,Fallback logic applied
+SW63-11,parent trust,Parent-trust copy visible,pass,Local-first and settings copy shown
+SW63-12,privacy,No exact age collection introduced,pass,Only broad age bands used
+SW63-13,scope,No paid beta external beta or hard gamification copy,pass,Scope guard validated

@@ -1,175 +1,130 @@
-import { useFocusEffect } from '@react-navigation/native';
 import { Link } from 'expo-router';
+import { useFocusEffect } from '@react-navigation/native';
 import { useCallback, useMemo, useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { getChildProfile, type ChildAgeBand } from '@/lib/childProfile';
 import { getAllStoryCompletions } from '@/lib/storyProgress';
-import { getVrindavanJourneyPath } from '@/services/journeys';
+import { storyWorldItems, storyWorldSections, type StoryWorldItem } from '@/data/storyWorld';
 
-type NodeState = 'completed' | 'available' | 'locked';
+const ageBandWeights: Record<ChildAgeBand, number> = {
+  '3-5': 0,
+  '6-8': 1,
+  '9-12': 2,
+  'prefer-not-to-say': 3
+};
+
+function getAgePriority(ageBand: ChildAgeBand | undefined, item: StoryWorldItem): number {
+  if (!ageBand || ageBand === 'prefer-not-to-say') return item.sectionId === 'start-here' ? 0 : 2;
+  if (!item.ageBands.includes(ageBand)) return 50;
+  if (ageBand === '3-5') return item.durationMinutes <= 8 ? 0 : 1;
+  if (ageBand === '6-8') return item.durationMinutes <= 10 ? 0 : 1;
+  return item.durationMinutes >= 10 ? 0 : 1;
+}
 
 export default function Screen() {
-  const stories = getVrindavanJourneyPath();
+  const [ageBand, setAgeBand] = useState<ChildAgeBand | undefined>();
   const [completedSlugs, setCompletedSlugs] = useState<Record<string, boolean>>({});
 
   useFocusEffect(
     useCallback(() => {
+      getChildProfile().then((profile) => setAgeBand(profile.ageBand)).catch(() => setAgeBand(undefined));
       getAllStoryCompletions()
         .then((entries) => {
           const map: Record<string, boolean> = {};
-          Object.keys(entries).forEach((slug) => {
-            map[slug] = true;
-          });
+          Object.keys(entries).forEach((slug) => (map[slug] = true));
           setCompletedSlugs(map);
         })
         .catch(() => setCompletedSlugs({}));
     }, [])
   );
 
-  const firstIncompleteIndex = useMemo(
-    () => stories.findIndex((packet) => !completedSlugs[packet.story.slug]),
-    [completedSlugs, stories]
-  );
-
-  const pathCompleted = firstIncompleteIndex === -1;
-  const completedCount = stories.filter((packet) => completedSlugs[packet.story.slug]).length;
-
-  const getNodeState = (index: number, slug: string): NodeState => {
-    if (completedSlugs[slug]) {
-      return 'completed';
-    }
-
-    if (pathCompleted) {
-      return 'completed';
-    }
-
-    return index === firstIncompleteIndex ? 'available' : 'locked';
-  };
+  const orderedItems = useMemo(() => {
+    const sorted = [...storyWorldItems].sort((a, b) => {
+      const aPriority = getAgePriority(ageBand, a);
+      const bPriority = getAgePriority(ageBand, b);
+      if (aPriority !== bPriority) return aPriority - bPriority;
+      if (a.status !== b.status) return a.status === 'available' ? -1 : 1;
+      const aWeight = Math.min(...a.ageBands.map((band) => ageBandWeights[band]));
+      const bWeight = Math.min(...b.ageBands.map((band) => ageBandWeights[band]));
+      return aWeight - bWeight;
+    });
+    return sorted;
+  }, [ageBand]);
 
   return (
     <SafeAreaView style={styles.screen}>
-      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.heroCard}>
-          <Text style={styles.heroEyebrow}>Explore Worlds</Text>
-          <Text style={styles.heading}>Vrindavan Path</Text>
-          <Text style={styles.subheading}>
-            Walk a gentle story trail with Krishna. Finish one glowing stop each day and watch your kindness grow.
-          </Text>
-          <View style={styles.progressPill}>
-            <Text style={styles.progressText}>
-              {completedCount}/{stories.length} story stops completed
-            </Text>
-          </View>
+          <Text style={styles.heroEyebrow}>Little Dharma</Text>
+          <Text style={styles.heading}>Story World</Text>
+          <Text style={styles.subheading}>Choose a warm story corner and begin your next gentle journey.</Text>
         </View>
 
-        <View style={styles.worldCard}>
-          <Text style={styles.pathTitle}>Your journey map</Text>
-          <Text style={styles.pathCopy}>Start at your next glowing step. Completed stories keep their sparkly badge forever.</Text>
+        <View style={styles.parentTrustCard}>
+          <Text style={styles.parentTrustText}>Recommended using the broad age band saved on this device.</Text>
+          <Text style={styles.parentTrustText}>You can change this anytime in Parent settings. Stories stay local-first.</Text>
+        </View>
 
-          {stories.map((packet, index) => {
-            const nodeState = getNodeState(index, packet.story.slug);
-            const isLocked = nodeState === 'locked';
-            const isCompleted = nodeState === 'completed';
+        {storyWorldSections.map((section) => {
+          const sectionItems = orderedItems.filter((item) => item.sectionId === section.id);
+          return (
+            <View key={section.id} style={styles.sectionCard}>
+              <Text style={styles.sectionTitle}>{section.title}</Text>
+              <Text style={styles.sectionSubtitle}>{section.subtitle}</Text>
+              {sectionItems.map((item) => {
+                const isAvailable = item.status === 'available' && !!item.slug;
+                const isDone = item.slug ? !!completedSlugs[item.slug] : false;
+                const cta = !isAvailable ? 'Opening soon' : isDone ? 'Continue' : 'Start Story';
+                const card = (
+                  <>
+                    <Text style={styles.cardTitle}>{item.shortTitle}</Text>
+                    <Text style={styles.cardSummary}>{item.summary}</Text>
+                    <View style={styles.metaRow}>
+                      <Text style={styles.metaChip}>{item.durationMinutes} min</Text>
+                      <Text style={styles.metaChip}>Ages {item.ageBands.join(', ')}</Text>
+                      <Text style={styles.metaChip}>Value: {item.primaryValue}</Text>
+                    </View>
+                    <Text style={styles.source}>{item.sourceTradition}</Text>
+                    <Text style={styles.cta}>{cta}</Text>
+                  </>
+                );
 
-            const content = (
-              <>
-                <View style={styles.nodeHeaderRow}>
-                  <Text style={[styles.stepBadge, isLocked ? styles.stepBadgeLocked : styles.stepBadgeOpen]}>Stop {index + 1}</Text>
-                  <Text style={[styles.nodeState, isCompleted ? styles.stateCompleted : nodeState === 'available' ? styles.stateAvailable : styles.stateLocked]}>
-                    {isCompleted ? 'Completed' : nodeState === 'available' ? 'Ready now' : 'Coming next'}
-                  </Text>
-                </View>
-                <Text style={[styles.nodeTitle, isLocked && styles.nodeTitleLocked]}>{packet.story.title}</Text>
-                <Text style={[styles.nodeValue, isLocked && styles.nodeValueLocked]}>Value: {packet.story.value}</Text>
-                <Text style={[styles.nodeHint, isLocked && styles.nodeHintLocked]}>
-                  {isCompleted
-                    ? `Badge earned: ${packet.story.badgeName}`
-                    : nodeState === 'available'
-                      ? 'Tap to begin your next 10-minute story ritual.'
-                      : 'Complete the glowing step before this one to unlock.'}
-                </Text>
-              </>
-            );
+                if (!isAvailable) {
+                  return <View key={item.id} style={[styles.storyCard, styles.comingSoonCard]}>{card}</View>;
+                }
 
-            return (
-              <View key={packet.story.slug} style={styles.stepWrap}>
-                {index > 0 && <View style={[styles.connector, isLocked ? styles.connectorLocked : styles.connectorOpen]} />}
-                {isLocked ? (
-                  <View
-                    style={[styles.node, styles.nodeLocked]}
-                    accessible
-                    accessibilityRole='text'
-                    accessibilityState={{ disabled: true }}
-                  >
-                    {content}
-                  </View>
-                ) : (
-                  <Link
-                    href={`/story/${packet.story.slug}` as never}
-                    style={[styles.node, isCompleted && styles.nodeCompleted, nodeState === 'available' && styles.nodeAvailable]}
-                    accessibilityRole='button'
-                  >
-                    {content}
+                return (
+                  <Link key={item.id} href={`/story/${item.slug}` as never} style={styles.storyCard}>
+                    {card}
                   </Link>
-                )}
-              </View>
-            );
-          })}
-        </View>
-
-        <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>
+                );
+              })}
+            </View>
+          );
+        })}
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#F7F1FF' },
-  scrollContent: { padding: 20, gap: 12 },
-  heroCard: {
-    borderRadius: 22,
-    padding: 18,
-    backgroundColor: '#EDE3FF',
-    borderWidth: 1,
-    borderColor: '#D9C8FF'
-  },
-  heroEyebrow: { fontSize: 12, fontWeight: '800', letterSpacing: 0.8, textTransform: 'uppercase', color: '#6A4AA0' },
-  heading: { marginTop: 4, fontSize: 30, fontWeight: '800', color: '#33204F' },
-  subheading: { marginTop: 8, color: '#5A4B70', fontSize: 15, lineHeight: 21 },
-  progressPill: {
-    marginTop: 12,
-    alignSelf: 'flex-start',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 999,
-    paddingHorizontal: 12,
-    paddingVertical: 7,
-    borderWidth: 1,
-    borderColor: '#DDCDFB'
-  },
-  progressText: { fontSize: 13, fontWeight: '700', color: '#4F3C73' },
-  worldCard: { backgroundColor: '#FFF', borderRadius: 24, borderWidth: 1, borderColor: '#DCCDFA', padding: 14, gap: 8 },
-  pathTitle: { fontSize: 19, fontWeight: '800', color: '#3A2960' },
-  pathCopy: { color: '#6A5A90', fontSize: 14, lineHeight: 19, marginBottom: 6 },
-  stepWrap: { gap: 8 },
-  connector: { width: 2, height: 12, marginLeft: 18 },
-  connectorOpen: { backgroundColor: '#CDB2FB' },
-  connectorLocked: { backgroundColor: '#E5DCF3' },
-  node: { borderRadius: 16, borderWidth: 1, borderColor: '#E6DDFB', backgroundColor: '#FCFAFF', padding: 12 },
-  nodeCompleted: { borderColor: '#BCE8C8', backgroundColor: '#EEFFF2' },
-  nodeAvailable: { borderColor: '#DDB66B', backgroundColor: '#FFF4DF' },
-  nodeLocked: { borderColor: '#E4DDF0', backgroundColor: '#F5F2FA' },
-  nodeHeaderRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  stepBadge: { fontSize: 12, fontWeight: '800', textTransform: 'uppercase' },
-  stepBadgeOpen: { color: '#6A4AA0' },
-  stepBadgeLocked: { color: '#8D84A3' },
-  nodeTitle: { marginTop: 6, fontSize: 17, color: '#3A2960', fontWeight: '800' },
-  nodeTitleLocked: { color: '#6F6685' },
-  nodeValue: { marginTop: 2, fontSize: 14, color: '#5D4D82', fontWeight: '600' },
-  nodeValueLocked: { color: '#817A94' },
-  nodeState: { fontSize: 12, fontWeight: '800' },
-  stateCompleted: { color: '#2D7D4B' },
-  stateAvailable: { color: '#9B6200' },
-  stateLocked: { color: '#80789A' },
-  nodeHint: { marginTop: 8, color: '#5E507A', fontSize: 13, lineHeight: 18 },
-  nodeHintLocked: { color: '#7F7891' },
-  backLink: { marginTop: 8, textAlign: 'center', color: '#4E3B76', fontWeight: '700', marginBottom: 8 }
+  screen: { flex: 1, backgroundColor: '#FDF5E6' },
+  scrollContent: { padding: 16, gap: 12, paddingBottom: 28 },
+  heroCard: { backgroundColor: '#FFF2D6', borderRadius: 24, borderWidth: 1, borderColor: '#F4C87A', padding: 18 },
+  heroEyebrow: { color: '#8A5410', fontSize: 12, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8 },
+  heading: { fontSize: 32, fontWeight: '900', color: '#2D485E', marginTop: 2 },
+  subheading: { marginTop: 6, color: '#5A4436', fontSize: 15, lineHeight: 21 },
+  parentTrustCard: { backgroundColor: '#FFF9ED', borderColor: '#E6D7BA', borderWidth: 1, borderRadius: 16, padding: 12, gap: 4 },
+  parentTrustText: { color: '#5B4637', fontSize: 13, lineHeight: 18 },
+  sectionCard: { backgroundColor: '#FFFCF6', borderColor: '#F0DFC0', borderWidth: 1, borderRadius: 20, padding: 14, gap: 8 },
+  sectionTitle: { fontSize: 21, fontWeight: '800', color: '#1E4E75' },
+  sectionSubtitle: { color: '#6A5B4A', fontSize: 13, marginBottom: 4 },
+  storyCard: { backgroundColor: '#FFFFFF', borderColor: '#EADCC3', borderWidth: 1, borderRadius: 18, padding: 12, gap: 6 },
+  comingSoonCard: { backgroundColor: '#F7F0E2', borderColor: '#D8CBB1' },
+  cardTitle: { fontSize: 17, fontWeight: '800', color: '#2D2A26' },
+  cardSummary: { fontSize: 13, color: '#5F5142', lineHeight: 18 },
+  metaRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
+  metaChip: { fontSize: 12, color: '#2A5C7D', backgroundColor: '#E8F5FF', borderRadius: 999, paddingHorizontal: 8, paddingVertical: 4 },
+  source: { fontSize: 12, color: '#44602B' },
+  cta: { marginTop: 4, fontSize: 14, color: '#A35D00', fontWeight: '800' }
 });
