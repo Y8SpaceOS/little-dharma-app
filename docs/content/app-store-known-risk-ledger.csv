@@ -1,0 +1,11 @@
+riskId,riskArea,riskDescription,severity,mitigation,owner,status,notes
+R-001,manual QA,Manual iPhone QA evidence not yet executed for release decision,P1_critical,Run full manual regression matrix and attach evidence,QA,open,Gate blocker until complete.
+R-002,privacy policy URL,Privacy policy URL not finalized for metadata,P1_critical,Owner/legal publish and verify stable URL,Owner,open,Required before submission.
+R-003,support URL,Support URL not finalized for metadata,P1_critical,Ops/owner publish support page URL,Ops,open,Required before submission.
+R-004,screenshot evidence,Required screenshot set not yet captured,P2_major,Execute screenshot plan on target devices,QA,open,Must complete before submission.
+R-005,metadata approval,App metadata is draft and not owner-approved,P2_major,Owner review and approve final copy,Product Owner,open,Pending final wording.
+R-006,analytics implementation,No production analytics implementation for beta insights,P3_minor,Use manual QA and parent feedback until future scoped work,Product,accepted,Intentional constraint in current scope.
+R-007,backend/cloud sync,No backend or cloud sync may limit cross-device continuity,P3_minor,Document limitation clearly in support workflows,Product,accepted,Out of scope by design.
+R-008,local-only feedback,Parent feedback local-only storage limits automatic intake,P2_major,Provide manual support/contact escalation path,Support,open,Track in feedback handling workflow.
+R-009,accessibility certification,Accessibility is reviewed manually but not formally certified,P2_major,Run manual accessibility QA and keep claims conservative,QA,open,Do not claim full compliance.
+R-010,app store review unknowns,App review outcome unknown until actual submission,P2_major,Prepare clear review notes and conservative claims,Release Manager,open,Cannot be fully mitigated pre-submission.

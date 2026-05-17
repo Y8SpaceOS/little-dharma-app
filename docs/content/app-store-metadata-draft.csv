@@ -1,0 +1,19 @@
+metadataArea,draftValue,status,notes
+app name,Little Dharma,draft,Working title pending owner confirmation.
+subtitle,Parent-guided spiritual stories,draft,Keep trust-safe and non-medical.
+short description,"A local-first family app for gentle story and reflection rituals.",draft,Limit overclaims.
+full description,"Little Dharma offers parent-guided spiritual storytelling, reflection prompts, and daily values practice for families. The app emphasizes a private local-first child journey, no open community-sharing features, and parent trust surfaces.",pending_manual_review,Owner edit needed before submission.
+keywords,"family,stories,values,ritual,reflection,parent-guided",draft,Must match final positioning.
+category,Education,needs_owner_input,Owner to finalize category choice.
+age positioning,Parent-guided family experience for children,needs_owner_input,Confirm final age band with policy check.
+support URL requirement,TBD URL required before review,blocked,Must be finalized before App Store submission.
+privacy policy URL requirement,TBD URL required before review,blocked,Must be finalized before App Store submission.
+marketing URL optional,TBD optional marketing URL,draft,Optional field only.
+copyright,"2026 Little Dharma",draft,Owner legal text required.
+contact/support email placeholder,support@example.com,needs_owner_input,Replace with production support email.
+review notes draft,"Private beta build with parent-guided storytelling and local-first behavior.",draft,Include manual test notes at submission time.
+child safety summary,"No open community-sharing features and no child-facing ads.",pending_manual_review,Keep language conservative.
+privacy summary,"Local-first posture with privacy-focused parent communication.",pending_manual_review,Must align with final policy URL text.
+local-first statement,"Story journey and parent feedback are handled locally in current scope.",draft,Keep consistent with runtime behavior.
+analytics statement,"No runtime analytics instrumentation active as of Sprint 58.",pending_manual_review,Reference internal analytics spec status.
+feedback statement,"Parent feedback capture is local-only as of Sprint 57.",draft,Manual export/communication workflow only.

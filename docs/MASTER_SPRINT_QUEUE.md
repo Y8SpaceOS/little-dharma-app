@@ -739,7 +739,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Parent trust, Safety/privacy, Existing app behavior, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Delivered App Store Readiness Pack documentation artifacts (metadata draft, readiness checklist, screenshot plan, known-risk ledger, validator) with conservative trust-safe claims and no runtime behavior changes; Sprint 60 remains next not-started gate.
 - **Primary track:** Platform Foundations
 - **Objective:** Prepare non-code artifacts and compliance checklist needed for private-beta distribution readiness.
 - **Scope:** Assemble metadata, policy copy, screenshots/checklists, support/contact workflows, and known-risk ledger.

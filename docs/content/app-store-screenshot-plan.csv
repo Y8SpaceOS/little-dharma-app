@@ -1,0 +1,11 @@
+screenshotId,surface,purpose,requiredDevice,captureInstructions,status,notes
+SS-01,onboarding / welcome,Show calm family entrypoint,iPhone 6.7 inch,Start fresh install and capture first welcome/onboarding frame,pending_capture,Use production-like content only.
+SS-02,Child Home,Show daily ritual entry clarity,iPhone 6.7 inch,Open child today/home and capture main journey card,pending_capture,Ensure no debug banners.
+SS-03,story screen,Show storytelling experience quality,iPhone 6.7 inch,Open a story panel with readable text and illustration/planning frame,pending_capture,No sensitive personal info.
+SS-04,ritual moment,Show reflection/ritual guidance,iPhone 6.7 inch,Capture ritual step with value-focused copy,pending_capture,Keep trust-safe tone.
+SS-05,completion / treasure state,Show completion encouragement,iPhone 6.7 inch,Capture completion state and earned treasure summary,pending_capture,Avoid overclaim copy.
+SS-06,My Treasures,Show private progress memory,iPhone 6.7 inch,Capture My Treasures screen with earned items,pending_capture,No public ranking elements.
+SS-07,Values Garden if visible/current,Show values progression surface,iPhone 6.7 inch,Capture Values Garden route only if present in current build,planned,Mark blocked if unavailable.
+SS-08,Parent Dashboard,Show parent trust insights,iPhone 6.7 inch,Capture parent dashboard summary sections,pending_capture,No personal identifiers.
+SS-09,Trust & Privacy Center,Show trust/privacy posture,iPhone 6.7 inch,Capture privacy center core sections,pending_capture,Align with privacy wording.
+SS-10,Parent Feedback Capture,Show local parent feedback flow,iPhone 6.7 inch,Capture feedback form and local-only framing copy,pending_capture,No real personal data in sample.
