@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import { Link, useLocalSearchParams, useRouter } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { getStoryJourneyBySlug } from '@/services/journeys';
+import { storyWorldItems, storyWorldSections } from '@/data/storyWorld';
 import { trackEvent } from '@/lib/analytics';
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
 import { companionV1 } from '@/lib/companion';
 
-type Stage = 'story' | 'ritual' | 'pause' | 'quiz' | 'complete' | 'bedtime';
+type Stage = 'detail' | 'story' | 'ritual' | 'pause' | 'quiz' | 'complete' | 'bedtime';
 
 const PAUSE_DURATION_MS = 13000;
 
@@ -16,7 +17,7 @@ function StoryScreenContent() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const journey = slug ? getStoryJourneyBySlug(slug) : null;
-  const [stage, setStage] = useState<Stage>('story');
+  const [stage, setStage] = useState<Stage>('detail');
   const [panelIndex, setPanelIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -35,15 +36,34 @@ function StoryScreenContent() {
     return (
       <SafeAreaView style={styles.screen}>
         <View style={styles.fallbackCard}>
-          <Text style={styles.title}>Story not found</Text>
-          <Text style={styles.meta}>This journey is not available right now. Please return to Child Home.</Text>
-          <Link href='/(child)/today' style={styles.homeLink}>Back to Child Home</Link>
+          <Text style={styles.title}>This story is resting for now.</Text>
+          <Text style={styles.meta}>Return to Story World or go back to Child Home.</Text>
+          <Link href='/world/vrindavan' style={styles.homeLink}>Return to Story World</Link>
+          <Link href='/(child)/today' style={styles.secondaryLink}>Go back to Child Home</Link>
         </View>
       </SafeAreaView>
     );
   }
 
+
   const { story } = journey;
+  const storyWorldMeta = storyWorldItems.find((item) => item.slug === story.slug);
+  const sectionTitle = storyWorldMeta
+    ? storyWorldSections.find((section) => section.id === storyWorldMeta.sectionId)?.title
+    : undefined;
+  const storySummary = storyWorldMeta?.summary || 'A gentle story from Little Dharma with a calm reflection moment.';
+  const durationMinutes = storyWorldMeta?.durationMinutes ?? 10;
+  const primaryValue = storyWorldMeta?.primaryValue || story.value;
+  const ageBandText = storyWorldMeta?.ageBands?.length ? storyWorldMeta.ageBands.join(', ') : story.ageBand;
+  const sourceTradition = storyWorldMeta?.sourceTradition || story.world;
+  const journeyPreviewText = storyWorldMeta?.journeyId
+    ? `Part of Vrindavan Starter Path · Journey step ${storyWorldMeta.journeyOrder ?? 1}`
+    : 'Dharma Journey preview';
+  const audioStateText = storyWorldMeta?.audioAvailable ? 'Listen option available in this story.' : 'Audio coming soon';
+  const detailReflectionPrompt = story.parentReflectionPrompt?.trim()
+    ? `Talk together: ${story.parentReflectionPrompt}`
+    : `What is one ${primaryValue.toLowerCase()} thing you can do today?`;
+
   const progressLabel = `Panel ${panelIndex + 1} of ${story.panels.length}`;
   const progressPercent = Math.round(((panelIndex + 1) / story.panels.length) * 100);
   const panel = story.panels[panelIndex];
@@ -67,6 +87,7 @@ function StoryScreenContent() {
   const bedtimeReflectionQuestion = story.ritual.reflectionQuestion?.trim() || 'What is one gentle moment from today that you want to remember before sleep?';
   const bedtimeParentBridge = story.ritual.parentMeaning?.trim() || story.parentReflectionPrompt?.trim() || 'Parent: Share one calm moment you noticed today, then invite one short reply.';
   const bedtimeClosingLine = `Parent: “I saw ${safeValue.toLowerCase()} in you tonight.” Child: “Tomorrow I will practice it again with a calm heart.”`;
+  const storyCta = previouslyCompleted ? 'Continue Story' : 'Start Story';
 
   useEffect(() => {
     if (stage !== 'pause') return;
@@ -93,6 +114,32 @@ function StoryScreenContent() {
           <Text style={styles.title}>{story.title}</Text>
           <Text style={styles.meta}>{story.world} • {story.character} • Value: {story.value} • Age {story.ageBand}</Text>
         </View>
+
+
+        {stage === 'detail' && (
+          <View style={styles.card}>
+            <Text style={styles.panelTitle}>{story.title}</Text>
+            <Text style={styles.panelText}>{storySummary}</Text>
+            <View style={styles.detailMetaCard}>
+              <Text style={styles.meta}>Duration: about {durationMinutes} minutes</Text>
+              <Text style={styles.meta}>Primary value: {primaryValue}</Text>
+              <Text style={styles.meta}>Age band: {ageBandText}</Text>
+              <Text style={styles.meta}>Story World: {sectionTitle || sourceTradition}</Text>
+              <Text style={styles.meta}>Source: {sourceTradition}</Text>
+              <Text style={styles.meta}>{journeyPreviewText}</Text>
+              <Text style={styles.meta}>{audioStateText}</Text>
+            </View>
+            <View style={styles.parentNoteCard}>
+              <Text style={styles.parentNoteTitle}>For Parents</Text>
+              <Text style={styles.parentNoteText}>This story gently introduces the value of {primaryValue.toLowerCase()}.</Text>
+              <Text style={styles.parentNoteText}>{detailReflectionPrompt}</Text>
+              <Text style={styles.parentNoteText}>This story is written in simple language for children.</Text>
+            </View>
+            <Pressable accessibilityRole='button' accessibilityLabel={storyCta} style={styles.button} onPress={() => setStage('story')}>
+              <Text style={styles.buttonText}>{storyCta}</Text>
+            </Pressable>
+          </View>
+        )}
 
         {stage === 'story' && (
           <View style={styles.card}>
@@ -359,6 +406,11 @@ const styles = StyleSheet.create({
   card: { marginTop: 4, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 14, borderWidth: 1, borderColor: '#F2DCC2' },
   fallbackCard: { margin: tokens.spacing.lg, backgroundColor: '#FFFFFF', borderRadius: 24, padding: tokens.spacing.lg, gap: 12, borderWidth: 1, borderColor: '#F2DCC2' },
   homeLink: { marginTop: 8, alignSelf: 'flex-start', backgroundColor: '#E78739', color: '#FFFFFF', fontWeight: '800', fontSize: 16, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
+  secondaryLink: { marginTop: 8, alignSelf: 'flex-start', backgroundColor: '#FFF3E5', color: '#8C4B10', fontWeight: '800', fontSize: 16, borderRadius: 14, borderWidth: 1, borderColor: '#E7B785', paddingHorizontal: 16, paddingVertical: 10, overflow: 'hidden' },
+  detailMetaCard: { backgroundColor: '#FFF9F2', borderRadius: 18, borderWidth: 1, borderColor: '#F2DECB', paddingHorizontal: 14, paddingVertical: 14, gap: 6 },
+  parentNoteCard: { backgroundColor: '#F4F9FF', borderRadius: 18, borderWidth: 1, borderColor: '#D3E6F8', paddingHorizontal: 14, paddingVertical: 14, gap: 8 },
+  parentNoteTitle: { fontSize: 16, fontWeight: '800', color: '#2D4B66' },
+  parentNoteText: { fontSize: 15, color: '#415E79', lineHeight: 22 },
   progressHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   step: { fontSize: 12, color: '#9B7A5D', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.5 },
   stepPercent: { fontSize: 12, color: '#A06C39', fontWeight: '700' },

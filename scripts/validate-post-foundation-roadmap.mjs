@@ -28,10 +28,15 @@ const s61=rows.find(r=>r.n===61); const s62=rows.find(r=>r.n===62);
 if (s61?.status!=='done') fail('Sprint 61 status must be done');
 if (s62?.status!=='done') fail('Sprint 62 status must be done');
 const s63=rows.find(r=>r.n===63);
-if (!(s63 && (s63.status==='done' || s63.status==='not_started'))) fail('Sprint 63 status must be done or not_started');
+if (s63?.status!=='done') fail('Sprint 63 status must be done');
 const s64=rows.find(r=>r.n===64);
 if (s64?.status!=='done') fail('Sprint 64 status must be done');
-if (rows.some(r=>r.n>=65 && r.status==='done')) fail('No Sprint 65+ row may be marked done');
+const s65=rows.find(r=>r.n===65);
+if (s65?.status!=='done') fail('Sprint 65 status must be done');
+for (let n = 66; n <= 150; n += 1) {
+  const row = rows.find((r) => r.n === n);
+  if (row?.status !== 'not_started') fail(`Sprint ${n} must remain not_started`);
+}
 ok('Status constraints valid');
 
 const queue = fs.readFileSync(queueMd,'utf8');
@@ -41,6 +46,9 @@ for (const phrase of ['### Sprint 60','- **Status:** done','### Sprint 61','### 
 
 if (!/### Sprint 62[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 62 must be done inside Sprint 62 section.');
 if (!/### Sprint 63[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 63 must be done inside Sprint 63 section after completion.');
+if (!/### Sprint 64[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 64 must be done inside Sprint 64 section after completion.');
+if (!/### Sprint 65[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 65 must be done inside Sprint 65 section after completion.');
+if (!/### Sprint 66[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('Sprint 66 must remain not started.');
 ok('MASTER_SPRINT_QUEUE required phrases present');
 
 const doc = fs.readFileSync(roadmapMd,'utf8');

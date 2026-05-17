@@ -1,0 +1,16 @@
+checkId,area,expectation,status,notes
+SDU1-01,Render,Story detail shows for a valid story slug,pass,Verified in upgraded pre-story stage
+SDU1-02,Content,Story title is visible,pass,Uses journey story title
+SDU1-03,Content,Summary is visible,pass,Uses Story World summary fallback
+SDU1-04,Metadata,Duration appears when metadata exists,pass,Duration minutes rendered in metadata block
+SDU1-05,Metadata,Primary value appears,pass,Primary value rendered from metadata or story
+SDU1-06,Metadata,Age band appears when metadata exists,pass,Age bands rendered from Story World
+SDU1-07,Metadata,Story World/source appears,pass,Story World + source tradition lines rendered
+SDU1-08,Metadata,Journey context appears,pass,Starter path step placeholder rendered
+SDU1-09,Audio,Audio placeholder appears without playback feature,pass,Audio coming soon line added
+SDU1-10,Parent,Parent note/talk together appears,pass,For Parents card rendered
+SDU1-11,Reflection,Gentle reflection prompt appears,pass,Talk together reflection line included
+SDU1-12,Navigation,Primary CTA enters existing story runtime,pass,Start/Continue Story sets stage to story
+SDU1-13,Regression,Story read/completion behavior preserved,pass,Existing stages unchanged after entry
+SDU1-14,Fallback,Unknown story state is graceful,pass,Resting copy + return links
+SDU1-15,Scope,No forbidden platform features introduced,pass,No backend/auth/cloud/audio recording/gamification additions

@@ -835,7 +835,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Refreshed Child Home into a warm destination with nickname-aware Namaste greeting fallback, Today's Story hero from Story World metadata, age-band-aware quick paths, Story Corner + Dharma Journeys preview sections, trust microcopy, plus Sprint 64 QA/doc/validator updates.
 
 ### Sprint 65 — Story Detail Upgrade v1
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded story detail entry with warm pre-story metadata cards, parent talk-together guidance, reflection prompt, journey/audio placeholders, graceful fallback states, and Sprint 65 QA/validator/governance updates while preserving existing story runtime flow.
 
 ### Sprint 66 — Ritual Flow Polish v3
 - **Status:** not started
