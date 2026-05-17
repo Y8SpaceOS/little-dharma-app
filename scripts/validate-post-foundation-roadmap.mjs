@@ -26,14 +26,17 @@ ok('Rows exist for Sprint 61 through Sprint 150');
 
 const s61=rows.find(r=>r.n===61); const s62=rows.find(r=>r.n===62);
 if (s61?.status!=='done') fail('Sprint 61 status must be done');
-if (s62?.status!=='not_started') fail('Sprint 62 status must be not_started');
-if (rows.some(r=>r.n>=62 && r.status==='done')) fail('No Sprint 62+ row may be marked done');
+if (s62?.status!=='done') fail('Sprint 62 status must be done');
+if (rows.some(r=>r.n>=63 && r.status==='done')) fail('No Sprint 63+ row may be marked done');
 ok('Status constraints valid');
 
 const queue = fs.readFileSync(queueMd,'utf8');
-for (const phrase of ['### Sprint 60','- **Status:** done','### Sprint 61','### Sprint 62','- **Status:** not started','Foundation Phase complete','Product Build Phase 2','not proceeding to paid beta','not proceeding to external private beta','Sprint 14 — Test Harness Reliability and Coverage Targets','Sprint 15 — Developer Environment Bootstrap Guide','not completed; deferred intentionally']) {
+for (const phrase of ['### Sprint 60','- **Status:** done','### Sprint 61','### Sprint 62','### Sprint 63','- **Status:** not started','Foundation Phase complete','Product Build Phase 2','not proceeding to paid beta','not proceeding to external private beta','Sprint 14 — Test Harness Reliability and Coverage Targets','Sprint 15 — Developer Environment Bootstrap Guide','not completed; deferred intentionally']) {
   if (!queue.includes(phrase)) fail(`MASTER_SPRINT_QUEUE missing required phrase: ${phrase}`);
 }
+
+if (!/### Sprint 62[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 62 must be done inside Sprint 62 section.');
+if (!/### Sprint 63[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('Sprint 63 must remain not started inside Sprint 63 section.');
 ok('MASTER_SPRINT_QUEUE required phrases present');
 
 const doc = fs.readFileSync(roadmapMd,'utf8');
