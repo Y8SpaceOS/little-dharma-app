@@ -1,0 +1,16 @@
+qaArea,expectedBehavior,status,notes
+no runtime instrumentation,Sprint 58 adds docs/spec only and no runtime event hooks,pass,Verified by code review and validator checks
+no analytics SDK,No analytics vendor SDK/dependency added,pass,Validator scans package.json for blocked vendor names
+no backend telemetry,No network telemetry pipeline or backend ingestion added,pass,No backend files or telemetry endpoints added
+event taxonomy exists,Machine-readable taxonomy CSV exists with required columns and rows,pass,docs/content/privacy-safe-event-taxonomy.csv present
+prohibited fields documented,Spec and taxonomy explicitly list forbidden fields,pass,Includes child identity and free-text prohibitions
+consent boundaries documented,Consent/disclosure boundaries are explicit and parent-led,pass,Spec includes consent section
+retention principles documented,Retention limits and deletion expectations documented,pass,Spec includes retention principles
+vendor rules documented,Future vendor/SDK due diligence rules documented,pass,Spec includes vendor evaluation section
+parent trust review,Future runtime instrumentation requires parent-trust review,pending_manual_review,Manual trust review required before implementation
+child safety review,Future runtime instrumentation requires child-safety review,pending_manual_review,Manual safety review required before implementation
+no dark-pattern metrics,Dark-pattern retention metrics prohibited,pass,Red-line rules block pressure mechanics
+no free-text capture,Free-text feedback content and raw reflections are prohibited,pass,Explicitly listed in forbidden fields and prohibited events
+no child identity tracking,Child identity tracking prohibited by spec and taxonomy,pass,Prohibited event rows included
+future implementation checklist,Manual checklist exists before any runtime instrumentation,pass,Spec includes checklist section
+Sprint 59 remains not started,Queue state preserves Sprint 59 as next not-started sprint,pass,Updated queue without starting Sprint 59

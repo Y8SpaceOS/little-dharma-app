@@ -723,7 +723,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Safety/privacy
 - **Protected quality dimensions:** Parent trust, Child delight, Existing app behavior, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added a privacy-safe future analytics specification, machine-readable taxonomy + QA CSVs, and validator guardrails with explicit no-runtime-instrumentation/no-SDK/no-backend constraints; Sprint 59 remains next not-started sprint.
 - **Primary track:** Trust & Safety
 - **Objective:** Specify event strategy that supports product learning while preserving strict privacy defaults.
 - **Scope:** Define event taxonomy, data minimization rules, retention policy, and opt-in/consent boundaries.
