@@ -627,9 +627,10 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Safety/privacy
 - **Protected quality dimensions:** Parent trust, Child delight, Existing app behavior, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Trust & Safety
 - **Objective:** Consolidate privacy/trust explanations into an explicit parent-facing center.
+- **Completion note:** Added Parent Trust & Privacy Center route, dashboard CTA, QA doc/CSV, and Sprint 52 validator with local-data + no-overclaim checks.
 - **Scope:** Document and surface local-data behavior, protections, and parent expectations in one place.
 - **Non-scope:** New telemetry collection, account creation, cloud sync.
 - **Definition of done:** Trust & Privacy Center v1 clearly communicates safeguards and limits.
