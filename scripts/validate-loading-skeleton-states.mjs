@@ -57,8 +57,25 @@ for (const [i, r] of dataRows.entries()) {
 }
 
 const loadingComp = fs.readFileSync('src/components/CalmLoadingState.tsx', 'utf8');
-if (!/from 'react-native'/.test(loadingComp)) fail('CalmLoadingState must use React Native built-ins');
-if (/from ['"](?!react-native|react)['"][^'"]+['"]/.test(loadingComp)) fail('CalmLoadingState must not import non React Native dependencies');
+
+const importSources = new Set();
+const fromImportPattern = /import[\s\S]*?from\s+['"]([^'"]+)['"]/g;
+const sideEffectImportPattern = /import\s+['"]([^'"]+)['"]/g;
+
+for (const pattern of [fromImportPattern, sideEffectImportPattern]) {
+  let match;
+  while ((match = pattern.exec(loadingComp)) !== null) {
+    importSources.add(match[1]);
+  }
+}
+
+if (!importSources.has('react-native')) fail('CalmLoadingState must import react-native built-ins');
+const allowedImportSources = new Set(['react-native', 'react']);
+for (const source of importSources) {
+  if (!allowedImportSources.has(source)) {
+    fail(`CalmLoadingState has forbidden import source: ${source}`);
+  }
+}
 
 const routeFiles = ['app/(child)/today.tsx', 'app/(child)/treasures.tsx', 'app/(parent)/dashboard.tsx', 'app/story/[slug].tsx', 'app/onboarding.tsx', 'app/(parent)/privacy.tsx'];
 const references = routeFiles.filter((f) => fs.existsSync(f) && fs.readFileSync(f, 'utf8').includes('CalmLoadingState'));
