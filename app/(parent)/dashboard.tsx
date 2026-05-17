@@ -6,7 +6,7 @@ import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import CalmLoadingState from '@/components/CalmLoadingState';
 import { getOnboardingState, resetOnboarding, subscribeOnboardingState, type OnboardingProfile } from '@/lib/onboardingState';
-import { ChildProfile, getChildProfile } from '@/lib/childProfile';
+import { ChildProfile, clearChildProfile, getChildProfile } from '@/lib/childProfile';
 import { getParentDashboardSnapshot } from '@/services/progress';
 
 type ParentDashboardSummary = Awaited<ReturnType<typeof getParentDashboardSnapshot>>;
@@ -27,7 +27,7 @@ function DashboardScreenContent() {
 
   const onReset = () => Alert.alert('Reset onboarding?', 'This clears the local child profile on this device and returns to the welcome screen.', [
     { text: 'Cancel', style: 'cancel' },
-    { text: 'Reset', style: 'destructive', onPress: async () => { await resetOnboarding(); router.replace('/'); } }
+    { text: 'Reset', style: 'destructive', onPress: async () => { await Promise.all([resetOnboarding(), clearChildProfile()]); router.replace('/'); } }
   ]);
 
   const valuesLine = summary.weeklyProgress.practicedValues.length > 0 ? summary.weeklyProgress.practicedValues.join(' • ') : 'No values recorded yet. Your next story will begin this values journey.';

@@ -21,3 +21,6 @@ iPhone manual QA,Expo Go iPhone,Manual walkthrough executed,pending_manual_qa,Mu
 core story flow regression,app/story/[slug].tsx,Story flow unchanged,pass,No story flow edits
 parent dashboard regression,app/(parent)/dashboard.tsx,Dashboard remains functional,pass,Snapshot still renders
 privacy center regression,app/(parent)/privacy.tsx,Privacy center remains functional,pass,No route changes
+reset clears child profile,app/(parent)/dashboard.tsx,Reset action clears onboarding and child profile local state,pass,resetOnboarding and clearChildProfile both called
+revisit setup hydrates saved profile,app/onboarding.tsx,Onboarding load hydrates saved child profile fields,pass,getChildProfile hydration on mount
+revisit setup does not wipe saved profile by default,app/onboarding.tsx,Finishing revisit without edits preserves prior saved optional fields,pass,Hydrated values persist unless changed or skip chosen

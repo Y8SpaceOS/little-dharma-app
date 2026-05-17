@@ -24,6 +24,14 @@ Deliver a parent-trusted, local-only child profile setup foundation that is opti
 - Onboarding includes an optional child setup step.
 - Parent can skip optional setup and continue.
 
+## Reset behavior review
+- Parent Dashboard reset now clears onboarding state and local child profile state together.
+- Reset copy and reset behavior are aligned.
+
+## Revisit/edit preservation review
+- Revisit setup hydrates saved child profile fields from local storage.
+- Finishing revisit without edits does not wipe saved optional child profile values by default.
+
 ## Privacy/safety review
 - No exact birthdate collection.
 - No sensitive child information requested.

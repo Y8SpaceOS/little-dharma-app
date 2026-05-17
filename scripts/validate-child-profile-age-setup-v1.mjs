@@ -49,7 +49,8 @@ for (const [idx, r] of data.entries()) {
 ok('QA CSV structure validated');
 
 const onboarding = fs.readFileSync(path.join(root, 'app/onboarding.tsx'), 'utf8');
-if (!/childProfile|child setup|saveChildProfile/i.test(onboarding)) fail('Onboarding does not reference child profile setup.');
+if (!/childProfile|child setup|saveChildProfile|getChildProfile/i.test(onboarding)) fail('Onboarding does not reference child profile setup.');
+if (!/getChildProfile/.test(onboarding)) fail('Onboarding does not hydrate child profile data on load.');
 const dashboard = fs.readFileSync(path.join(root, 'app/(parent)/dashboard.tsx'), 'utf8');
 if (!/child profile|childProfile|getChildProfile/i.test(dashboard)) fail('Parent dashboard does not reference child profile summary.');
 const today = fs.readFileSync(path.join(root, 'app/(child)/today.tsx'), 'utf8');
@@ -61,6 +62,9 @@ for (const phrase of ['local-only','optional','skippable','broad age band','no e
 }
 
 const forbidden = ['mandatory','required profile','upload child data','child tracking','we monitor your child','performance score','rank','leaderboard','streak','limited time','targeted ads','personalised advertising','personalized advertising','exact date of birth','school name','location tracking'];
+const childLib = fs.readFileSync(path.join(root, 'src/lib/childProfile.ts'), 'utf8');
+if (!/clearChildProfile/.test(childLib)) fail('childProfile utility missing clear/reset helper.');
+
 const filesToCheck = ['src/lib/childProfile.ts','app/onboarding.tsx','app/(parent)/dashboard.tsx','app/(child)/today.tsx','docs/CHILD_PROFILE_AGE_SETUP_V1_QA.md','docs/content/child-profile-age-setup-v1-qa.csv'];
 for (const rel of filesToCheck) {
   const t = fs.readFileSync(path.join(root, rel), 'utf8').toLowerCase();

@@ -57,3 +57,8 @@ export async function skipChildProfileSetup(): Promise<ChildProfile> {
   await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(profile));
   return profile;
 }
+
+
+export async function clearChildProfile(): Promise<void> {
+  await AsyncStorage.removeItem(STORAGE_KEY);
+}

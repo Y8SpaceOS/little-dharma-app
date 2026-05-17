@@ -4,7 +4,7 @@ import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } fro
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { AgeBand, BedtimePreference, ChildLanguage, completeOnboarding, FavoriteCharacter, getOnboardingState, loadOnboardingState, OnboardingProfile } from '@/lib/onboardingState';
-import { ChildAgeBand, ParentIntent, saveChildProfile, skipChildProfileSetup } from '@/lib/childProfile';
+import { ChildAgeBand, ParentIntent, getChildProfile, saveChildProfile, skipChildProfileSetup } from '@/lib/childProfile';
 
 type Step = { title: string; subtitle: string; render: () => ReactElement };
 const ageBands: AgeBand[] = ['0-2', '3-5', '6-8', '9-12'];
@@ -24,7 +24,14 @@ function OnboardingScreenContent() {
   const [childAgeBand, setChildAgeBand] = useState<ChildAgeBand | undefined>();
   const [parentIntent, setParentIntent] = useState<ParentIntent | undefined>();
 
-  useEffect(() => { loadOnboardingState().then((state) => { if (state.profile) setProfile(state.profile); }); }, []);
+  useEffect(() => {
+    loadOnboardingState().then((state) => { if (state.profile) setProfile(state.profile); });
+    getChildProfile().then((saved) => {
+      if (saved.childNameOrNickname) setChildNameOrNickname(saved.childNameOrNickname);
+      if (saved.ageBand) setChildAgeBand(saved.ageBand);
+      if (saved.parentIntent) setParentIntent(saved.parentIntent);
+    }).catch(() => undefined);
+  }, []);
 
   const steps: Step[] = useMemo(() => [
     { title: 'Welcome, Parent', subtitle: 'You guide the account. Your child explores safely inside your protected family space.', render: () => <Text style={styles.bodyText}>No child public profile, no open chat, no ads, and no public score lists.</Text> },
