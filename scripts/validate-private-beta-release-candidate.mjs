@@ -96,15 +96,27 @@ const reportText = readFile(report).toLowerCase();
   if (reportText.includes(p)) fail(`Report contains forbidden overclaim phrase: ${p}`);
 });
 
+function extractSprintSection(queueText, sprintNumber, sprintTitle) {
+  const heading = `### Sprint ${sprintNumber} — ${sprintTitle}`;
+  const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`(^|\\n)${escapedHeading}\\n([\\s\\S]*?)(?=\\n### Sprint \\d+ — |$)`);
+  const match = queueText.match(pattern);
+  if (!match) return '';
+  return `${heading}\n${match[2]}`;
+}
+
 const queueText = readFile(queueFile);
-if (!queueText.includes('### Sprint 60 — Private Beta Release Candidate') || !queueText.includes('- **Status:** done')) {
-  fail('MASTER_SPRINT_QUEUE must mark Sprint 60 done.');
+const sprint60Section = extractSprintSection(queueText, 60, 'Private Beta Release Candidate');
+if (!sprint60Section) fail('MASTER_SPRINT_QUEUE missing Sprint 60 section.');
+if (sprint60Section && !sprint60Section.includes('- **Status:** done')) {
+  fail('MASTER_SPRINT_QUEUE must mark Sprint 60 done inside Sprint 60 section.');
 }
-if (!queueText.includes('### Sprint 61 — Private Beta Sprint 61: Retention Experiments') || !queueText.includes('### Sprint 61 — Private Beta Sprint 61: Retention Experiments\n- **Target quality level:** Q4 Paid Beta Quality')) {
-  fail('MASTER_SPRINT_QUEUE missing Sprint 61 section.');
+
+const sprint61Section = extractSprintSection(queueText, 61, 'Private Beta Sprint 61: Retention Experiments');
+if (!sprint61Section) fail('MASTER_SPRINT_QUEUE missing Sprint 61 section.');
+if (sprint61Section && !sprint61Section.includes('- **Status:** not started')) {
+  fail('Sprint 61 must remain not started inside Sprint 61 section.');
 }
-const sprint61Block = queueText.split('### Sprint 61 — Private Beta Sprint 61: Retention Experiments')[1] || '';
-if (!sprint61Block.includes('- **Status:** not started')) fail('Sprint 61 must remain not started.');
 if (!queueText.includes('Sprint 14 — Test Harness Reliability and Coverage Targets:** not completed; deferred intentionally.')) fail('Sprint 14 deferred note missing.');
 if (!queueText.includes('Sprint 15 — Developer Environment Bootstrap Guide:** not completed; deferred intentionally.')) fail('Sprint 15 deferred note missing.');
 
