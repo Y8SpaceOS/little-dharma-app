@@ -1,0 +1,20 @@
+qaArea,surface,expectedBehavior,status,notes
+screen visibility,app/(child)/treasures.tsx,Treasures screen loads with warm header and structured sections,pass,Verified in code structure
+progress summary,app/(child)/treasures.tsx,Shows X of 21 Vrindavan memories saved with derived counts,pass,completionLabel plus summary pills added
+Values Garden preserved,app/(child)/treasures.tsx,Values Garden section remains present and labeled,pass,Section preserved and refined
+practiced values display,app/(child)/treasures.tsx,Value chips show practiced value with story count,pass,Chip mapping retained
+latest carrying word display,app/(child)/treasures.tsx,Latest carrying word appears when available,pass,Conditional rendering preserved
+earned badges display,app/(child)/treasures.tsx,Badges show name story value and earned date context,pass,Badge cards include all labels
+Words I Carry display,app/(child)/treasures.tsx,Words I Carry remains visible with chips,pass,Section preserved
+empty state,app/(child)/treasures.tsx,Zero completion state is clear and gentle,pass,Updated copy avoids pressure
+partial progress state,app/(child)/treasures.tsx,Partial completion state includes progress context and latest memory,pass,Added summary hint and counts
+full path completion state,app/(child)/treasures.tsx,21 of 21 shows calm full-path completion message,pass,isFullPathComplete copy added
+privacy note,app/(child)/treasures.tsx,Calm private on-device framing remains visible,pass,Bottom privacy note retained
+local-only data usage,app/(child)/treasures.tsx,Uses existing local completion/value/word sources only,pass,No new storage or services
+child home navigation,app/(child)/treasures.tsx,Back to Child Home link still works,pass,Route unchanged
+no leaderboard,app/(child)/treasures.tsx,No leaderboard feature or framing,pass,Copy explicitly avoids leaderboard mechanics
+no streak pressure,app/(child)/treasures.tsx,No streak urgency or pressure copy,pass,None present
+no competitive framing,app/(child)/treasures.tsx,No competitive/ranking language,pass,None present
+no public sharing pressure,app/(child)/treasures.tsx,No public profile/share prompts,pass,None present
+iPhone layout sanity,app/(child)/treasures.tsx,Layout should remain readable on iPhone,pending_manual_qa,Manual device check required
+story 1–21 regression,app/(child)/today.tsx and journey/progress services,Story progression behavior remains unchanged,pending_manual_qa,Runtime flow verification on device required

@@ -595,7 +595,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Premium UI/UX taste
 - **Protected quality dimensions:** Child delight, Parent trust, Safety/privacy, Daily 10-minute ritual habit
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Elevated My Treasures into a calmer private memory surface with clearer progress hierarchy, preserved Values Garden/Words I Carry, and added Sprint 50 QA doc+CSV+validator coverage.
 - **Primary track:** Product Experience
 - **Objective:** Upgrade My Treasures into a richer, clearer private memory surface.
 - **Scope:** Improve organization, progression context, and calm presentation of earned items/words.
