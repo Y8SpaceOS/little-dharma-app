@@ -707,7 +707,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Parent trust
 - **Protected quality dimensions:** Safety/privacy, Child delight, Existing app behavior, Content authenticity
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added a parent-only local feedback capture route with structured trust-safe fields, explicit local-only privacy copy, dashboard entrypoint/back navigation, and Sprint 57 QA doc/CSV/validator artifacts while keeping manual iPhone sign-off pending.
 - **Primary track:** Growth Loops
 - **Objective:** Create a trust-safe mechanism for private beta parents to submit structured feedback.
 - **Scope:** Define v1 capture flow/content fields/privacy copy and lightweight storage/handling approach.

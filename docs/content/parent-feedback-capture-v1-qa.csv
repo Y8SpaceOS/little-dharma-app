@@ -1,0 +1,20 @@
+qaArea,surface,expectedBehavior,status,notes
+feedback route exists,app/(parent)/feedback.tsx,Parent feedback capture route is present and parent-facing only,pass,Implemented route with parent-only copy
+parent dashboard link,app/(parent)/dashboard.tsx,Dashboard includes clear CTA link to feedback route,pass,Open Parent Feedback Capture link added
+back navigation,app/(parent)/feedback.tsx,Feedback surface includes navigation back to Parent Dashboard,pass,Back to Parent Dashboard link included
+parent-only placement,app/(parent)/feedback.tsx,Feedback UX appears only in parent route tree,pass,No child routes modified
+no child-flow prompt,app/(child)/*,No feedback prompts interrupt child story/home flow,pass,Child-facing surfaces unchanged
+structured fields,app/(parent)/feedback.tsx,All required structured feedback fields are present,pass,All requested categories included
+local-only explanation,app/(parent)/feedback.tsx,UI clearly states feedback is kept on device in this version,pass,Trust copy present near top
+optional contact guidance,app/(parent)/feedback.tsx,UI states contact details are optional and comfort-based,pass,Guidance copy included
+no sensitive child-data request,app/(parent)/feedback.tsx,UI asks parents not to include sensitive child information,pass,Safety language included
+no public/community behavior,app/(parent)/feedback.tsx,UI confirms no public profile or community post is created,pass,No public behavior implemented
+no telemetry/backend,src/lib/parentFeedback.ts,Storage uses local AsyncStorage only without network calls,pass,Local-first persistence only
+save or capture-state behavior,src/lib/parentFeedback.ts + app/(parent)/feedback.tsx,Feedback draft can be saved locally and reloaded,pass,Save + load implemented
+confirmation copy,app/(parent)/feedback.tsx,Save action shows local-only confirmation wording,pass,Confirmation includes saved on this device
+error boundary compatibility,app/(parent)/feedback.tsx,Route is wrapped in RouteErrorBoundary,pass,Boundary wrapper added
+accessibility labels,app/(parent)/feedback.tsx,Form/actions include accessibility roles labels or hints,pass,Labels and roles present
+iPhone manual QA,Expo Go on iPhone,Manual route/field/save/navigation checks executed,pending_manual_qa,Required before full sign-off
+parent dashboard regression,app/(parent)/dashboard.tsx,Parent Dashboard continues to function,pass,Verified by tests/validators
+privacy center regression,app/(parent)/privacy.tsx,Privacy Center continues to function,pass,No breaking changes applied
+child home regression,app/(child)/today.tsx,Child Home route continues to function,pending_manual_qa,Needs explicit iPhone regression check
