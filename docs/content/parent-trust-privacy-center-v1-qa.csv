@@ -1,18 +1,18 @@
 qaArea,surface,expectedBehavior,status,notes
-trust center visibility,app/(parent)/trust-privacy.tsx,Parent Trust and Privacy Center screen renders with sectioned trust copy,pass,Route added and validator checks key concepts.
+trust center visibility,app/(parent)/privacy.tsx,Parent Trust and Privacy Center screen renders with sectioned trust copy,pass,Route added and validator checks key concepts.
 parent dashboard link,app/(parent)/dashboard.tsx,Parent Dashboard shows CTA to Trust and Privacy Center,pass,Open Trust and Privacy Center link placed under privacy note.
-back navigation,app/(parent)/trust-privacy.tsx,Back to Parent Dashboard control returns without route errors,pass,Back link uses /(parent)/dashboard path.
-local-device data explanation,app/(parent)/trust-privacy.tsx,Copy says progress/profile behavior is currently local to this device,pass,Local-device language included without permanence claims.
-no account/cloud sync claim,app/(parent)/trust-privacy.tsx,Copy clarifies no account or cloud sync in this version,pass,Explicitly stated in What we do not do section.
-no analytics/telemetry claim,app/(parent)/trust-privacy.tsx,Copy clarifies no ad systems or tracking-style data behavior in this version,pass,Non-telemetry wording retained.
-no public profile/social sharing,app/(parent)/trust-privacy.tsx,Copy states no public child profile and no public sharing features,pass,Explicitly stated.
-no score-comparison boards,app/(parent)/trust-privacy.tsx,No comparison mechanics are presented in trust-center copy,pass,Language avoids banned terms.
-progress explanation,app/(parent)/trust-privacy.tsx,Copy explains progress updates from local story/ritual completion,pass,How progress works section added.
-parent supervision explanation,app/(parent)/trust-privacy.tsx,Copy states parents should guide young children during use,pass,Parent role section includes supervision guidance.
-content adaptation explanation,app/(parent)/trust-privacy.tsx,Copy states adapted devotional/value storytelling not literal translation,pass,Authenticity positioning included.
-current limitations explanation,app/(parent)/trust-privacy.tsx,Copy clearly lists current version limitations,pass,No sync/recovery/remote portal stated.
-no compliance overclaim,app/(parent)/trust-privacy.tsx,No legal compliance certification claim appears,pass,Validator blocks forbidden phrases.
-no medical/educational outcome overclaim,app/(parent)/trust-privacy.tsx,No certified outcome claim appears,pass,Copy avoids medical or outcome promises.
-iphone layout sanity,app/(parent)/trust-privacy.tsx,Readable and non-clipped layout on iPhone,pending_manual_qa,Requires device verification in Expo Go.
+back navigation,app/(parent)/privacy.tsx,Back to Parent Dashboard control returns without route errors,pass,Back link uses /(parent)/dashboard path.
+local-device data explanation,app/(parent)/privacy.tsx,Copy says progress/profile behavior is currently local to this device,pass,Local-device language included without permanence claims.
+no account/cloud sync claim,app/(parent)/privacy.tsx,Copy clarifies no account or cloud sync in this version,pass,Explicitly stated in What we do not do section.
+no analytics/telemetry claim,app/(parent)/privacy.tsx,Copy clarifies no ad systems or tracking-style data behavior in this version,pass,Non-telemetry wording retained.
+no public profile/social sharing,app/(parent)/privacy.tsx,Copy states no public child profile and no public sharing features,pass,Explicitly stated.
+no score-comparison boards,app/(parent)/privacy.tsx,No comparison mechanics are presented in trust-center copy,pass,Language avoids banned terms.
+progress explanation,app/(parent)/privacy.tsx,Copy explains progress updates from local story/ritual completion,pass,How progress works section added.
+parent supervision explanation,app/(parent)/privacy.tsx,Copy states parents should guide young children during use,pass,Parent role section includes supervision guidance.
+content adaptation explanation,app/(parent)/privacy.tsx,Copy states adapted devotional/value storytelling not literal translation,pass,Authenticity positioning included.
+current limitations explanation,app/(parent)/privacy.tsx,Copy clearly lists current version limitations,pass,No sync/recovery/remote portal stated.
+no compliance overclaim,app/(parent)/privacy.tsx,No legal compliance certification claim appears,pass,Validator blocks forbidden phrases.
+no medical/educational outcome overclaim,app/(parent)/privacy.tsx,No certified outcome claim appears,pass,Copy avoids medical or outcome promises.
+iphone layout sanity,app/(parent)/privacy.tsx,Readable and non-clipped layout on iPhone,pending_manual_qa,Requires device verification in Expo Go.
 dashboard regression,app/(parent)/dashboard.tsx,Dashboard existing summary cards and links still function,pass,No route rename and existing links preserved.
 child home regression,app/(child)/today.tsx,Child Home to Parent Dashboard path still functions,pass,No child route modifications required.
