@@ -1,0 +1,2 @@
+runId,date,tester,device,osVersion,buildSource,testId,result,issueSeverity,issueDescription,screenshotOrVideoRef,notes
+RUN-YYYYMMDD-01,YYYY-MM-DD,qa_tester_name,iPhone 15,iOS XX.X,expo_go_release_candidate,MQA-001,not_run,none,,,

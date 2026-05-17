@@ -643,9 +643,10 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Execution clarity
 - **Protected quality dimensions:** Existing app behavior, Parent trust, Safety/privacy, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
 - **Primary track:** Platform Foundations
 - **Objective:** Build a durable manual QA matrix for private-beta critical journeys.
+- **Completion note:** Added a durable manual QA regression matrix system (MD guide + matrix CSV + run-log template + validator) for repeatable private-beta iPhone release checks, with severity triage, release gates, and explicit pending manual device execution policy.
 - **Scope:** Define device/OS matrix, critical-path checklist, pass/fail logging template, and triage severity rules.
 - **Non-scope:** Automated test framework expansion, feature work.
 - **Definition of done:** QA matrix is ready for recurring sprint-level execution.
