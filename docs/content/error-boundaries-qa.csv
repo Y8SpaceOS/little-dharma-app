@@ -1,0 +1,19 @@
+qaArea,surface,expectedBehavior,status,notes
+boundary component exists,RouteErrorBoundary,Class boundary exists and catches render errors,pass,Implemented with getDerivedStateFromError and componentDidCatch
+child home protected,app/(child)/today.tsx,Route content is wrapped by RouteErrorBoundary,pass,Audience child
+story flow protected,app/story/[slug].tsx,Route content is wrapped by RouteErrorBoundary,pass,Audience child
+ treasures protected,app/(child)/treasures.tsx,Route content is wrapped by RouteErrorBoundary,pass,Audience child
+parent dashboard protected,app/(parent)/dashboard.tsx,Route content is wrapped by RouteErrorBoundary,pass,Audience parent
+trust privacy center protected,app/(parent)/privacy.tsx,Route content is wrapped by RouteErrorBoundary,pass,Audience parent
+onboarding protected,app/onboarding.tsx,Route content is wrapped by RouteErrorBoundary,pass,Audience parent and safe navigation available
+child fallback copy,RouteErrorBoundary,Child fallback copy is calm and non-technical,pass,Uses warm pause language
+parent fallback copy,RouteErrorBoundary,Parent fallback copy is calm and trust-preserving,pass,References quick reset and safe access
+retry action,RouteErrorBoundary,Try again action resets boundary state,pass,Uses local state reset
+safe navigation action,RouteErrorBoundary,Fallback shows safe link to child home or parent dashboard,pass,Audience-based default safe path
+no raw stack trace in UI,RouteErrorBoundary,UI does not expose stack trace terms or raw debug details,pass,No stack/trace/exception words in fallback UI
+no telemetry/reporting,Sprint 55 scope,No telemetry analytics or backend reporting added,pass,Implementation intentionally local-only
+accessibility labels,RouteErrorBoundary,Alert container and actions provide labels/roles,pass,accessibilityRole and accessibilityLabel present
+iPhone manual QA,All protected routes,Failure simulation validated on iPhone Expo Go,pending_manual_qa,Pending device execution
+story 1–21 regression,Story runtime,Existing stories still render and complete as before,pass,No story content/schema changes
+parent dashboard regression,Parent dashboard runtime,Parent summary still renders in non-error path,pass,No behavior changes beyond wrapper
+trust privacy regression,Parent privacy runtime,Trust/privacy content still renders in non-error path,pass,No content changes
