@@ -1,0 +1,17 @@
+checklistArea,item,owner,requiredBefore,status,notes
+app metadata,Owner approves final metadata text,Product Owner,submit_for_review,in_progress,Use metadata draft CSV as source.
+privacy policy,Publish final privacy policy URL,Legal/Owner,submit_for_review,blocked,URL not finalized.
+support URL,Publish support URL,Ops/Owner,submit_for_review,blocked,URL not finalized.
+screenshots,Capture all required App Store screenshots,QA,submit_for_review,pending_manual_review,See screenshot plan CSV.
+manual iPhone QA,Execute manual iPhone regression matrix,QA,go_no_go,pending_manual_review,Evidence package required.
+child safety copy review,Review all child safety claims for overclaim risk,Trust Lead,go_no_go,ready_for_review,Must align with allowed claims.
+privacy copy review,Review privacy summary language,Trust Lead,go_no_go,ready_for_review,Keep conservative.
+analytics disclosure review,Confirm no runtime analytics claim language,Engineering,go_no_go,ready_for_review,Match Sprint 58 posture.
+local data explanation,Confirm local-first explanation appears in metadata/docs,Engineering,go_no_go,in_progress,Cross-check docs and metadata.
+parent feedback explanation,Confirm local-only parent feedback wording,Product,go_no_go,ready_for_review,Based on Sprint 57.
+known-risk review,Review known-risk ledger and owners,Release Manager,go_no_go,in_progress,Ensure blockers visible.
+build/version review,Confirm build/version text for submission notes,Engineering,submit_for_review,not_started,Needs release candidate build context.
+route regression evidence,Attach route-level QA evidence,QA,go_no_go,pending_manual_review,Required before gate.
+accessibility manual review,Run manual accessibility checks and note limits,QA,go_no_go,pending_manual_review,Do not claim full certification.
+no prohibited claims,Audit metadata/doc language for prohibited claims,Trust Lead,go_no_go,ready_for_review,Use validator + manual pass.
+release go/no-go,Owner decision meeting and sign-off,Owner,release_decision,not_started,Sprint 60 gate.
