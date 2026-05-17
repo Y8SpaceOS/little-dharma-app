@@ -12,6 +12,7 @@ function ParentFeedbackContent() {
   const defaultAgeBand = getOnboardingState().profile?.ageBand ?? '';
   const [draft, setDraft] = useState<ParentFeedbackDraft>({ ...EMPTY_PARENT_FEEDBACK_DRAFT, childAgeBand: defaultAgeBand });
   const [saveMessage, setSaveMessage] = useState('');
+  const [saveHint, setSaveHint] = useState('');
   const hasUserEditedRef = useRef(false);
 
   useEffect(() => {
@@ -34,9 +35,16 @@ function ParentFeedbackContent() {
     hasUserEditedRef.current = true;
     setDraft((prev) => ({ ...prev, [key]: value }));
     setSaveMessage('');
+    setSaveHint('');
   };
 
   const onSave = async () => {
+    if (!canSave) {
+      setSaveMessage('');
+      setSaveHint('Add at least one feedback note before saving on this device.');
+      return;
+    }
+
     const saved = await saveParentFeedbackDraft({
       parentName: draft.parentName,
       childAgeBand: draft.childAgeBand,
@@ -50,6 +58,7 @@ function ParentFeedbackContent() {
       contactDetail: draft.contactDetail
     });
     setDraft(saved);
+    setSaveHint('');
     setSaveMessage(`Saved on this device at ${new Date(saved.updatedAt).toLocaleString()}. Ready to share manually with the founder when helpful.`);
   };
 
@@ -85,6 +94,7 @@ function ParentFeedbackContent() {
     <TextInput style={styles.input} placeholder='Contact detail (optional, local only)' value={draft.contactDetail} onChangeText={(text) => setField('contactDetail', text)} accessibilityLabel='Optional contact detail local only' accessibilityHint='Stored only on this device in this version' />
 
     <Text onPress={onSave} style={[styles.saveButton, !canSave ? styles.saveDisabled : null]} accessibilityRole='button' accessibilityLabel='Save parent feedback on device'>Save Feedback on This Device</Text>
+    {saveHint ? <Text style={styles.helper}>{saveHint}</Text> : null}
     {saveMessage ? <Text style={styles.confirmation}>{saveMessage}</Text> : null}
 
     <Link href='/(parent)/dashboard' style={styles.backLink} accessibilityRole='link' accessibilityLabel='Back to Parent Dashboard'>Back to Parent Dashboard</Link>
@@ -105,6 +115,7 @@ const styles = StyleSheet.create({
   chipActive: { backgroundColor: '#1E2C50', color: '#FFFFFF' },
   saveButton: { backgroundColor: '#C9F1DE', color: '#0D5132', textAlign: 'center', fontWeight: '700', borderRadius: tokens.radius.button, padding: 14 },
   saveDisabled: { opacity: 0.6 },
+  helper: { color: '#5A6A92', lineHeight: 20 },
   confirmation: { color: '#1E2C50', fontWeight: '600', lineHeight: 20 },
   backLink: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: tokens.radius.button, textAlign: 'center', color: '#1E2C50', fontWeight: '700' }
 });

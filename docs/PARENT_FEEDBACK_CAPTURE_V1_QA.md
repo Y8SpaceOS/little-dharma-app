@@ -19,6 +19,9 @@ Feedback draft persists locally via AsyncStorage only. Copy clearly states feedb
 ## Async hydration safety review
 Draft hydration is guarded so async local load does not overwrite active parent typing. If any field is edited before hydration resolves, loaded data is not applied.
 
+## Empty-save guard review
+Save action does not persist or show success confirmation when structured feedback notes are empty. The UI shows a gentle helper message prompting at least one feedback note before saving.
+
 ## Parent trust review
 Copy is explicit about parent-only use and no public posting. Contact sharing is optional and consent-based.
 
