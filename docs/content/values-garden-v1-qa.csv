@@ -1,0 +1,16 @@
+qaArea,surface,expectedBehavior,status,notes
+values garden visibility,app/(child)/treasures.tsx,Values Garden section appears in My Treasures,pass,Section title and subtitle render above treasure list
+empty state,app/(child)/treasures.tsx,Shows calm garden empty-state copy when no completed stories,pass,Message invites one gentle journey
+practiced values display,app/(child)/treasures.tsx,Displays practiced value chips derived from completed stories,pass,Values are aggregated from completed Vrindavan stories
+value count display,app/(child)/treasures.tsx,Each value chip shows story count practiced,pass,Uses singular/plural story wording
+latest carrying word display,app/(child)/treasures.tsx,Latest carrying word appears when available,pass,Conditional line hidden when no word exists
+privacy note,app/(child)/treasures.tsx,Shows private local framing text,pass,Includes Private on this device line
+existing treasures preserved,app/(child)/treasures.tsx,Existing badge treasure cards still render with metadata,pass,No removal of existing badge wallet block
+child home to treasures navigation,app/(child)/today.tsx,Treasures route remains reachable from Child Home,pending_manual_qa,Manual on-device path validation required
+local-only data usage,src/lib/storyProgress.ts + app/(child)/treasures.tsx,Uses existing local completion/value sources only,pass,No new persistence/services added
+no leaderboard,app/(child)/treasures.tsx,No leaderboard wording or mechanics are present,pass,Copy explicitly avoids ranking mechanics
+no streak pressure,app/(child)/treasures.tsx,No streak reminders or pressure language,pass,No streak copy present
+no competitive framing,app/(child)/treasures.tsx,No social comparison framing,pass,No comparison/challenge language
+no public sharing pressure,app/(child)/treasures.tsx,No sharing CTA or public profile framing,pass,No share prompts in values garden block
+iPhone layout sanity,app/(child)/treasures.tsx,Layout remains readable on iPhone widths,pending_manual_qa,Manual Expo Go verification pending
+story 1–21 regression,src/services/journeys.ts + app/(child)/today.tsx,Story path and daily journey runtime remain stable,pending_manual_qa,Manual flow check still required

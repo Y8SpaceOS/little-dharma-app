@@ -3,18 +3,26 @@ import { Link } from 'expo-router';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
-import { getAllStoryCompletions, getCompletedCarryingWords, type StoryCompletionRecord } from '@/lib/storyProgress';
+import {
+  getAllStoryCompletions,
+  getCompletedCarryingWords,
+  getLatestCarryingWord,
+  type StoryCompletionRecord
+} from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
 
 export default function TreasuresScreen() {
   const [completions, setCompletions] = useState<StoryCompletionRecord>({});
   const [wordsICarry, setWordsICarry] = useState<string[]>([]);
+  const [latestCarryingWord, setLatestCarryingWord] = useState<string | null>(null);
 
   const refreshTreasures = useCallback(async () => {
+    const path = getVrindavanJourneyPath();
     const stored = await getAllStoryCompletions();
     setCompletions(stored);
-    const words = await getCompletedCarryingWords(getVrindavanJourneyPath());
+    const words = await getCompletedCarryingWords(path);
     setWordsICarry(Array.from(new Set(words)));
+    setLatestCarryingWord(await getLatestCarryingWord(path));
   }, []);
 
   useFocusEffect(
@@ -22,6 +30,7 @@ export default function TreasuresScreen() {
       refreshTreasures().catch(() => {
         setCompletions({});
         setWordsICarry([]);
+        setLatestCarryingWord(null);
       });
     }, [refreshTreasures])
   );
@@ -31,6 +40,18 @@ export default function TreasuresScreen() {
     () => vrindavanPath.filter((packet) => Boolean(completions[packet.story.slug])),
     [completions, vrindavanPath]
   );
+
+  const valueGarden = useMemo(() => {
+    const counts = new Map<string, number>();
+    earnedTreasures.forEach((packet) => {
+      const value = packet.story.value.trim();
+      counts.set(value, (counts.get(value) ?? 0) + 1);
+    });
+
+    return Array.from(counts.entries())
+      .map(([value, storyCount]) => ({ value, storyCount }))
+      .sort((a, b) => b.storyCount - a.storyCount || a.value.localeCompare(b.value));
+  }, [earnedTreasures]);
 
   const completedCount = earnedTreasures.length;
   const totalCount = vrindavanPath.length;
@@ -45,6 +66,25 @@ export default function TreasuresScreen() {
           <Text style={styles.summaryEyebrow}>Journey progress</Text>
           <Text style={styles.summaryTitle}>{completedCount} of {totalCount} treasures collected</Text>
           <Text style={styles.summaryCopy}>Every completed story adds one special reminder of your values.</Text>
+        </View>
+
+        <View style={styles.gardenCard}>
+          <Text style={styles.gardenTitle}>Values Garden</Text>
+          <Text style={styles.gardenSubtitle}>Every story you complete plants a small value seed.</Text>
+          {valueGarden.length === 0 ? (
+            <Text style={styles.gardenEmpty}>Your garden is ready. Begin one gentle journey to plant your first value seed.</Text>
+          ) : (
+            <View style={styles.valueWrap}>
+              {valueGarden.map((entry) => (
+                <View key={entry.value} style={styles.valueChip}>
+                  <Text style={styles.valueChipTitle}>{entry.value}</Text>
+                  <Text style={styles.valueChipMeta}>{entry.storyCount} stor{entry.storyCount === 1 ? 'y' : 'ies'} practiced</Text>
+                </View>
+              ))}
+            </View>
+          )}
+          {latestCarryingWord ? <Text style={styles.latestWord}>Latest carrying word: {latestCarryingWord}</Text> : null}
+          <Text style={styles.gardenPrivacy}>Private on this device.</Text>
         </View>
 
         {completedCount === 0 ? (
@@ -87,7 +127,7 @@ export default function TreasuresScreen() {
           )}
         </View>
 
-        <Text style={styles.privacyNote}>Only your family can see this. No leaderboard, no public profile, just your own beautiful growth.</Text>
+        <Text style={styles.privacyNote}>Only your family can see this. No leaderboard, no ranking, just your own beautiful growth.</Text>
         <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>
       </ScrollView>
     </SafeAreaView>
@@ -103,6 +143,16 @@ const styles = StyleSheet.create({
   summaryEyebrow: { fontSize: 12, letterSpacing: 1, textTransform: 'uppercase', fontWeight: '700', color: '#7A4A25' },
   summaryTitle: { fontSize: 22, fontWeight: '800', color: '#4A2B17' },
   summaryCopy: { fontSize: 14, lineHeight: 20, color: '#6D4B2C' },
+  gardenCard: { backgroundColor: '#EAF7E8', borderRadius: 24, borderWidth: 1, borderColor: '#CBE8C4', padding: tokens.spacing.lg, gap: 8 },
+  gardenTitle: { fontSize: 24, fontWeight: '800', color: '#2C5A34' },
+  gardenSubtitle: { fontSize: 15, lineHeight: 21, color: '#3F6F47' },
+  gardenEmpty: { fontSize: 15, lineHeight: 21, color: '#3F6F47' },
+  valueWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  valueChip: { backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: '#CFE5CC', borderRadius: 16, paddingHorizontal: 12, paddingVertical: 8, minWidth: 124 },
+  valueChipTitle: { fontSize: 14, fontWeight: '800', color: '#2A5631' },
+  valueChipMeta: { fontSize: 12, lineHeight: 17, color: '#4B6F52', marginTop: 2 },
+  latestWord: { fontSize: 14, color: '#355D3D' },
+  gardenPrivacy: { fontSize: 13, color: '#466B4D' },
   emptyCard: { backgroundColor: '#FFF3DD', borderRadius: 24, borderWidth: 1, borderColor: '#F3D7AB', padding: tokens.spacing.lg, gap: 8 },
   emptyTitle: { fontSize: 22, fontWeight: '800', color: '#5A361D' },
   emptyCopy: { fontSize: 15, lineHeight: 21, color: '#6D4B2C' },
