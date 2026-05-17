@@ -58,7 +58,7 @@ Upgrade My Treasures v2 into a premium, private memory surface that clearly expl
 - No streak pressure.
 - No FOMO scarcity copy.
 - No competitive framing.
-- No public profile or social pressure copy.
+- No public-facing profile or social pressure copy.
 
 ## Regression checklist
 - Back to Child Home link still routes to `/(child)/today`.

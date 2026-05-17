@@ -58,7 +58,23 @@ export default function TreasuresScreen() {
   const badgesCount = earnedTreasures.length;
   const carryingWordCount = wordsICarry.length;
   const valueCount = valueGarden.length;
-  const latestTreasure = earnedTreasures[earnedTreasures.length - 1] ?? null;
+  const latestTreasure = useMemo(() => {
+    let latestPacket: (typeof earnedTreasures)[number] | null = null;
+    let latestMs = Number.NEGATIVE_INFINITY;
+
+    earnedTreasures.forEach((packet) => {
+      const completedAt = completions[packet.story.slug]?.completedAt;
+      const ms = completedAt ? Date.parse(completedAt) : Number.NaN;
+
+      if (Number.isFinite(ms) && ms > latestMs) {
+        latestPacket = packet;
+        latestMs = ms;
+      }
+    });
+
+    if (latestPacket) return latestPacket;
+    return earnedTreasures[earnedTreasures.length - 1] ?? null;
+  }, [completions, earnedTreasures]);
   const completionLabel = `${completedCount} of ${totalCount} Vrindavan memories saved`;
   const isFullPathComplete = totalCount > 0 && completedCount === totalCount;
 
