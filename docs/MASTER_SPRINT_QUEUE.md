@@ -611,7 +611,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Primary quality dimension:** Parent trust
 - **Protected quality dimensions:** Safety/privacy, Content depth and authenticity, Daily 10-minute ritual habit, Premium UI/UX taste
 - **Expected depth standard:** See `docs/SPRINT_DEPTH_STANDARDS.md`
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Reframed Parent Dashboard as a warm journey-story summary using existing local completion/value data, plus QA doc/CSV/validator coverage with privacy-first non-surveillance language.
 - **Primary track:** Trust & Safety
 - **Objective:** Upgrade parent dashboard narrative coherence so progress feels meaningful and trustworthy.
 - **Scope:** Reframe parent insights as journey story with clear context, safeguards, and next-step prompts.

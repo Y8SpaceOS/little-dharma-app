@@ -411,3 +411,10 @@
 
 - 2026-05-17: Sprint 50 stabilization pass: latest memory derivation on My Treasures now uses most-recent valid `completedAt` timestamp from completion records (with safe fallback when timestamps are missing/invalid) instead of static Vrindavan path order.
 - 2026-05-17: Sprint 50 stabilization pass: strengthened `scripts/validate-my-treasures-v2.mjs` to enforce status enum contract (`pass|pending_manual_qa|minor_issue|blocked`), required non-empty QA row fields, required Treasures surface concept checks, and forbidden phrase scanning across Treasures UI + My Treasures QA doc.
+
+- 2026-05-17: Sprint 51 (Parent Dashboard v3: Journey as Story, Q3 Product Experience) completed: upgraded `app/(parent)/dashboard.tsx` narrative hierarchy to warm parent-facing journey storytelling with clear path progress, values practiced summary, latest meaningful memory, carrying word, tonight conversation prompt, gentle next step, and visible privacy note while preserving route/navigation behavior.
+- 2026-05-17: Updated `src/services/progress.ts` to derive latest completed memory using `completedAt` timestamps from existing local completion records with a safe fallback when timestamps are missing/invalid; no runtime story schema changes and no story content additions.
+- 2026-05-17: Added Sprint 51 QA artifacts: `docs/PARENT_DASHBOARD_V3_QA.md`, machine-readable `docs/content/parent-dashboard-v3-qa.csv`, and manual validator `scripts/validate-parent-dashboard-v3.mjs` (Node built-ins only, quote-aware CSV parsing, forbidden-language checks).
+- 2026-05-17: Scope constraints preserved: no new stories, no backend/auth/cloud sync/CMS/audio/analytics/dependency changes, no public sharing/social/leaderboards/profiles, and no surveillance/ranking/streak-pressure mechanics.
+- 2026-05-17: Checks run: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`, all existing required validators, and `node scripts/validate-parent-dashboard-v3.mjs`.
+- 2026-05-17: Manual iPhone QA remains required and pending execution in Expo Go (Parent Dashboard readability, latest memory correctness, privacy note visibility, Child Home navigation, and no layout regressions).
