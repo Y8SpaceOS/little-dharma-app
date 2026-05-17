@@ -495,3 +495,10 @@
 - 2026-05-17: Sprint 61 remains not started; Sprint 14 and Sprint 15 remain deferred/not completed.
 - 2026-05-17: Checks run: npm ci; npm run typecheck; npm run lint; npm run test; all existing validators; new private-beta RC validator; git status.
 
+- 2026-05-17: Sprint 62 (Child Profile and Age Setup v1, first Product Build Phase 2 sprint) completed with a parent-trusted local-first foundation: added `src/lib/childProfile.ts` for minimal optional child profile fields (`childNameOrNickname`, broad `ageBand`, optional `parentIntent`, `setupCompleted`, `updatedAtLocal`) using existing AsyncStorage only.
+- 2026-05-17: Updated onboarding with an optional/skippable parent-facing setup step and privacy-safe copy (local-only explanation, nickname guidance, sensitive-data avoidance), plus skip path that does not block app access.
+- 2026-05-17: Added parent dashboard child profile summary card and revisit path; updated Child Home to use saved nickname when available with safe fallback preserved when profile is absent.
+- 2026-05-17: Added QA artifacts `docs/CHILD_PROFILE_AGE_SETUP_V1_QA.md` and `docs/content/child-profile-age-setup-v1-qa.csv`, and added manual validator `scripts/validate-child-profile-age-setup-v1.mjs` (Node built-ins only, quote-aware CSV parser, forbidden phrase checks, required artifact and integration checks).
+- 2026-05-17: Scope guards preserved: no backend/auth/cloud sync/CMS/audio/analytics/telemetry/dependencies/monetisation/public sharing/public community/child chat/ads/leaderboards; no age-band routing and no story gating added.
+- 2026-05-17: Manual iPhone QA remains required and is intentionally marked pending for onboarding setup visibility, skip behavior, revisit/edit flow, parent dashboard summary, child home fallback, and core story regression.
+- 2026-05-17: Checks run: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`, all required roadmap validators including new child-profile validator, and `git status`.

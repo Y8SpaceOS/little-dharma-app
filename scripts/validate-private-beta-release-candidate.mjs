@@ -119,8 +119,13 @@ if (sprint61Section && !sprint61Section.includes('- **Status:** done')) {
 }
 const sprint62Section = extractSprintSection(queueText, 62, 'Child Profile and Age Setup v1');
 if (!sprint62Section) fail('MASTER_SPRINT_QUEUE missing Sprint 62 section.');
-if (sprint62Section && !sprint62Section.includes('- **Status:** not started')) {
-  fail('Sprint 62 must remain not started inside Sprint 62 section.');
+if (sprint62Section && !sprint62Section.includes('- **Status:** done')) {
+  fail('Sprint 62 must be marked done inside Sprint 62 section.');
+}
+const sprint63Section = extractSprintSection(queueText, 63, 'Story Library Browse v1');
+if (!sprint63Section) fail('MASTER_SPRINT_QUEUE missing Sprint 63 section.');
+if (sprint63Section && !sprint63Section.includes('- **Status:** not started')) {
+  fail('Sprint 63 must remain not started inside Sprint 63 section.');
 }
 if (!queueText.includes('Sprint 14 — Test Harness Reliability and Coverage Targets:** not completed; deferred intentionally.')) fail('Sprint 14 deferred note missing.');
 if (!queueText.includes('Sprint 15 — Developer Environment Bootstrap Guide:** not completed; deferred intentionally.')) fail('Sprint 15 deferred note missing.');

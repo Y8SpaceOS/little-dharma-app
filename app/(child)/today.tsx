@@ -7,6 +7,7 @@ import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import CalmLoadingState from '@/components/CalmLoadingState';
 import { trackEvent } from '@/lib/analytics';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
+import { getChildProfile } from '@/lib/childProfile';
 import { getCompletedBadge, getLatestCarryingWord, hasCompletedStory } from '@/lib/storyProgress';
 import { getTodaysJourney, getVrindavanJourneyPath } from '@/services/journeys';
 import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
@@ -60,6 +61,12 @@ function TodayScreenContent() {
   }, []);
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || 'Little One')), []);
+
+  useEffect(() => {
+    getChildProfile().then((childProfile) => {
+      if (childProfile.childNameOrNickname) setNickname(childProfile.childNameOrNickname);
+    }).catch(() => undefined);
+  }, []);
 
   const refreshThresholdVisibility = useCallback(() => {
     shouldShowThreshold()

@@ -1,0 +1,26 @@
+qaArea,surface,expectedBehavior,status,notes
+child profile utility exists,src/lib/childProfile.ts,Local utility exists with minimal fields,pass,Implemented with AsyncStorage only
+local-only storage,src/lib/childProfile.ts,Data remains local-only on device,pass,No remote APIs
+optional nickname,app/onboarding.tsx,Nickname field can be left blank,pass,No blocking validation
+broad age band only,app/onboarding.tsx,Age choices are 3-5 6-8 9-12 prefer-not-to-say only,pass,No precise age capture
+no exact birthdate,app/onboarding.tsx,No DOB input appears,pass,Field absent
+optional parent intent,app/onboarding.tsx,Parent intent can be skipped,pass,No blocking validation
+onboarding setup visible,app/onboarding.tsx,Parent-facing setup step is visible,pass,Added final optional step
+setup is skippable,app/onboarding.tsx,Skip action enters app,pass,Skip button added on final step
+parent dashboard summary,app/(parent)/dashboard.tsx,Summary card shows saved values or calm fallback,pass,Includes revisit link
+Child Home greeting safe fallback,app/(child)/today.tsx,Greeting falls back safely when no profile saved,pass,Little One remains fallback
+no age-band routing,app/(child)/today.tsx,No story availability changes from age band,pass,No routing logic added
+no sensitive child information,app/onboarding.tsx,UI avoids sensitive data prompts,pass,Privacy-safe copy included
+no backend/cloud sync,src/lib/childProfile.ts,No backend or cloud integration,pass,Local storage only
+no analytics/telemetry,app/onboarding.tsx,No new analytics telemetry added,pass,No tracking added
+no profile required to use app,app/onboarding.tsx,App remains usable after skip,pass,Skip path implemented
+accessibility labels,app/onboarding.tsx,Interactive setup controls include labels,pass,Inputs and skip have labels
+error boundary compatibility,src/components/RouteErrorBoundary.tsx,Boundaries remain compatible,pending_manual_qa,Runtime manual pass pending
+loading state compatibility,src/components/CalmLoadingState.tsx,Loading behavior remains compatible,pending_manual_qa,Runtime manual pass pending
+iPhone manual QA,Expo Go iPhone,Manual walkthrough executed,pending_manual_qa,Must run on device
+core story flow regression,app/story/[slug].tsx,Story flow unchanged,pass,No story flow edits
+parent dashboard regression,app/(parent)/dashboard.tsx,Dashboard remains functional,pass,Snapshot still renders
+privacy center regression,app/(parent)/privacy.tsx,Privacy center remains functional,pass,No route changes
+reset clears child profile,app/(parent)/dashboard.tsx,Reset action clears onboarding and child profile local state,pass,resetOnboarding and clearChildProfile both called
+revisit setup hydrates saved profile,app/onboarding.tsx,Onboarding load hydrates saved child profile fields,pass,getChildProfile hydration on mount
+revisit setup does not wipe saved profile by default,app/onboarding.tsx,Finishing revisit without edits preserves prior saved optional fields,pass,Hydrated values persist unless changed or skip chosen

@@ -823,7 +823,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Category-defining product check focus:** Strategic sequencing discipline and trust-safe execution pacing.
 
 ### Sprint 62 — Child Profile and Age Setup v1
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Added a parent-trusted local-first optional child profile and age setup foundation with skippable onboarding capture, parent dashboard summary, child-home safe fallback, QA doc/CSV/validator, and no backend/cloud sync/analytics/telemetry/dependency or age-band routing changes.
 
 ### Sprint 63 — Story Library Browse v1
 - **Status:** not started
