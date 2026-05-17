@@ -14,11 +14,12 @@ for (const file of required) {
 }
 
 const today = fs.readFileSync('app/(child)/today.tsx', 'utf8');
-['Namaste', 'Story World', 'Dharma Journeys', "Today's Story"].forEach((token) => {
+['Namaste', 'Story World', 'Dharma Journeys', "Today's Story", 'Chant & Sing'].forEach((token) => {
   if (!today.includes(token)) throw new Error(`Child Home missing required token: ${token}`);
 });
 if (!/nickname|childNameOrNickname/i.test(today)) throw new Error('Child Home must reference nickname/profile safely.');
 if (!today.includes('/(child)/worlds')) throw new Error('Story World route reference missing from Child Home.');
+if (!today.includes('/(child)/chant')) throw new Error('Chant & Sing route reference missing from Child Home.');
 
 const roadmap = fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv', 'utf8').trim().split('\n');
 const header = roadmap.shift().split(',');

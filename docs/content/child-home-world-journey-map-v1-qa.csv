@@ -4,7 +4,7 @@ id,area,check,expected,status
 3,Greeting,Fallback shown when nickname missing,"Namaste, little one",pass
 4,Today Hero,Today\'s Story hero visible,Hero card shown with metadata,pass
 5,Today Hero,Hero navigation,Opens story detail or Story World fallback,pass
-6,Quick Paths,Quick cards render,Story World/Bedtime/Krishna/Values/Treasures cards visible,pass
+6,Quick Paths,Quick cards render,Story World/Bedtime/Krishna/Values/Treasures/Chant cards visible,pass
 7,Story World,Navigation intact,Story World route opens,pass
 8,Bedtime,Navigation intact,Bedtime route opens,pass
 9,World Corners,Story Corners section visible,Krishna/Ganesha/Bedtime/Values/Festival/Journeys displayed,pass
@@ -16,3 +16,5 @@ id,area,check,expected,status
 15,Guardrail,No beta/app-store rollout behavior,No started paid/private beta or App Store submission copy,pass
 16,Guardrail,No microphone/audio recording,No permission or recording feature added,pass
 17,Guardrail,No hard gamification,No coins/XP/streak/leaderboard loops,pass
+
+18,Chant & Sing,Navigation intact,Chant & Sing route opens from Child Home,pass

@@ -14,7 +14,7 @@ import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState'
 import { companionV1 } from '@/lib/companion';
 import { storyWorldItems } from '@/data/storyWorld';
 
-type HomeCard = { label: string; href: '/(child)/worlds' | '/(child)/bedtime' | '/(child)/treasures' | '/(parent)/dashboard'; description: string; colors: [string, string] };
+type HomeCard = { label: string; href: '/(child)/worlds' | '/(child)/bedtime' | '/(child)/treasures' | '/(child)/chant' | '/(parent)/dashboard'; description: string; colors: [string, string] };
 
 const fallbackName = 'Little One';
 
@@ -23,25 +23,29 @@ const quickEntriesByAgeBand: Record<ChildAgeBand | 'default', HomeCard[]> = {
     { label: 'Bedtime Stories', href: '/(child)/bedtime', description: 'Quiet stories for a calm evening.', colors: ['#E9E2FF', '#DCCEFF'] },
     { label: 'Krishna Stories', href: '/(child)/worlds', description: 'Playful stories with gentle values.', colors: ['#D9EDFF', '#C6E4FF'] },
     { label: 'Values Garden', href: '/(child)/worlds', description: 'Small stories about kindness and care.', colors: ['#DDF7E8', '#CDEFD9'] },
-    { label: 'Story World', href: '/(child)/worlds', description: 'Explore all story corners.', colors: ['#FFE8C7', '#FFD8A8'] }
+    { label: 'Story World', href: '/(child)/worlds', description: 'Explore all story corners.', colors: ['#FFE8C7', '#FFD8A8'] },
+    { label: 'Chant & Sing', href: '/(child)/chant', description: 'Repeat one calm ritual with joy.', colors: ['#FFDDF0', '#FFD0E8'] }
   ],
   '6-8': [
     { label: 'Story World', href: '/(child)/worlds', description: 'Choose your next story corner.', colors: ['#FFE8C7', '#FFD8A8'] },
     { label: 'Krishna Stories', href: '/(child)/worlds', description: 'Adventures and values from Vrindavan.', colors: ['#D9EDFF', '#C6E4FF'] },
     { label: 'Values Garden', href: '/(child)/worlds', description: 'Practice one value in every story.', colors: ['#DDF7E8', '#CDEFD9'] },
-    { label: 'My Treasures', href: '/(child)/treasures', description: 'See your earned badges and values.', colors: ['#FCE5BF', '#F6D69A'] }
+    { label: 'My Treasures', href: '/(child)/treasures', description: 'See your earned badges and values.', colors: ['#FCE5BF', '#F6D69A'] },
+    { label: 'Chant & Sing', href: '/(child)/chant', description: 'A gentle practice for today.', colors: ['#FFDDF0', '#FFD0E8'] }
   ],
   '9-12': [
     { label: 'Dharma Journeys', href: '/(child)/worlds', description: 'Discover longer story paths.', colors: ['#FFE1EA', '#FFD0DF'] },
     { label: 'Story World', href: '/(child)/worlds', description: 'Browse all available story corners.', colors: ['#FFE8C7', '#FFD8A8'] },
     { label: 'Krishna Stories', href: '/(child)/worlds', description: 'Deeper stories and meaningful choices.', colors: ['#D9EDFF', '#C6E4FF'] },
-    { label: 'My Treasures', href: '/(child)/treasures', description: 'Review values you practiced.', colors: ['#FCE5BF', '#F6D69A'] }
+    { label: 'My Treasures', href: '/(child)/treasures', description: 'Review values you practiced.', colors: ['#FCE5BF', '#F6D69A'] },
+    { label: 'Chant & Sing', href: '/(child)/chant', description: 'A calm ritual break for your day.', colors: ['#FFDDF0', '#FFD0E8'] }
   ],
   'prefer-not-to-say': [
     { label: 'Start with Story World', href: '/(child)/worlds', description: 'A gentle place to begin today.', colors: ['#FFE8C7', '#FFD8A8'] },
     { label: 'Bedtime Stories', href: '/(child)/bedtime', description: 'Calm stories for peaceful moments.', colors: ['#E9E2FF', '#DCCEFF'] },
     { label: 'Krishna Stories', href: '/(child)/worlds', description: 'Warm stories of joy and kindness.', colors: ['#D9EDFF', '#C6E4FF'] },
-    { label: 'My Treasures', href: '/(child)/treasures', description: 'A safe place for your badges.', colors: ['#FCE5BF', '#F6D69A'] }
+    { label: 'My Treasures', href: '/(child)/treasures', description: 'A safe place for your badges.', colors: ['#FCE5BF', '#F6D69A'] },
+    { label: 'Chant & Sing', href: '/(child)/chant', description: 'Gentle chanting moments.', colors: ['#FFDDF0', '#FFD0E8'] }
   ],
   default: []
 };
