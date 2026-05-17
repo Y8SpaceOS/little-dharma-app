@@ -31,7 +31,8 @@ const s63 = rows.find((r) => r.sprintNumber === 63);
 if (s61?.status !== 'done') throw new Error('Sprint 61 must be done');
 if (s62?.status !== 'done') throw new Error('Sprint 62 must be done');
 if (!['done', 'not_started'].includes(s63?.status || '')) throw new Error('Sprint 63 status invalid');
-for (let i = 64; i <= 150; i++) if (rows.find((r) => r.sprintNumber === i)?.status !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
+if (rows.find((r) => r.sprintNumber === 64)?.status !== 'done') throw new Error('Sprint 64 must be done');
+for (let i = 65; i <= 150; i++) if (rows.find((r) => r.sprintNumber === i)?.status !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
 
 const roadmapText = readFileSync('docs/POST_FOUNDATION_PRODUCT_BUILD_ROADMAP.md', 'utf8');
 for (const phrase of ['Story World Browse v1', 'Dharma Journey Data Model', 'Story Audio Foundation', 'Ramayana Journey', 'Bhagavad Gita for Children', 'Mahabharata']) {
@@ -56,7 +57,7 @@ const extractSprintSection = (queueText, sprintNumber) => {
   return queueText.slice(startIndex, endIndex);
 };
 
-for (let sprint = 64; sprint <= 150; sprint += 1) {
+for (let sprint = 65; sprint <= 150; sprint += 1) {
   const section = extractSprintSection(master, sprint);
   if (section) {
     if (!section.includes('- **Status:** not started')) {

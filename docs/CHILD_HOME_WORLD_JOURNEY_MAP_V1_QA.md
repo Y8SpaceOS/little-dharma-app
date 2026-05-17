@@ -1,0 +1,21 @@
+# Child Home + World Selection + Journey Map v1 QA (Sprint 64)
+
+- Child Home renders successfully.
+- Saved nickname is shown when available.
+- Safe fallback greeting (`Namaste, little one`) is shown when nickname is missing.
+- Today's Story / Start Here hero card renders.
+- Hero card navigates to story detail when available and falls back to Story World when not.
+- Quick entry cards render.
+- Story World quick entry navigates correctly.
+- Bedtime quick entry navigates correctly.
+- Values/My Treasures intent is preserved through existing links.
+- Story Corners section renders.
+- Dharma Journeys / Journey Map preview section renders.
+- Journey preview opening-soon cards are non-navigating and do not misroute.
+- Age-aware ordering/fallback works for 3-5, 6-8, 9-12, prefer-not-to-say, and missing profile.
+- Parent-trust microcopy remains calm and limited.
+- No exact age collection added.
+- No backend/auth/cloud sync added.
+- No paid beta/external private beta/App Store launch behavior added.
+- No audio recording/microphone permission added.
+- No hard gamification mechanics added.

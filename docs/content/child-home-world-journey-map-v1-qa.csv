@@ -1,0 +1,18 @@
+id,area,check,expected,status
+1,Child Home,Child Home screen loads,Screen renders without crash,pass
+2,Greeting,Nickname shown if available,"Namaste, [nickname]",pass
+3,Greeting,Fallback shown when nickname missing,"Namaste, little one",pass
+4,Today Hero,Today\'s Story hero visible,Hero card shown with metadata,pass
+5,Today Hero,Hero navigation,Opens story detail or Story World fallback,pass
+6,Quick Paths,Quick cards render,Story World/Bedtime/Krishna/Values/Treasures cards visible,pass
+7,Story World,Navigation intact,Story World route opens,pass
+8,Bedtime,Navigation intact,Bedtime route opens,pass
+9,World Corners,Story Corners section visible,Krishna/Ganesha/Bedtime/Values/Festival/Journeys displayed,pass
+10,Journey Preview,Dharma Journeys preview visible,Opening-soon cards shown and non-misrouting,pass
+11,Age Awareness,Ordering by broad age band,3-5/6-8/9-12/prefer-not-to-say/missing produce safe ordering,pass
+12,Trust Copy,Parent-trust microcopy,Calm local-first copy displayed,pass
+13,Guardrail,No exact age collection,No exact age prompts or storage,pass
+14,Guardrail,No cloud/auth/backend additions,Local-first only preserved,pass
+15,Guardrail,No beta/app-store rollout behavior,No started paid/private beta or App Store submission copy,pass
+16,Guardrail,No microphone/audio recording,No permission or recording feature added,pass
+17,Guardrail,No hard gamification,No coins/XP/streak/leaderboard loops,pass

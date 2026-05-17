@@ -29,7 +29,9 @@ if (s61?.status!=='done') fail('Sprint 61 status must be done');
 if (s62?.status!=='done') fail('Sprint 62 status must be done');
 const s63=rows.find(r=>r.n===63);
 if (!(s63 && (s63.status==='done' || s63.status==='not_started'))) fail('Sprint 63 status must be done or not_started');
-if (rows.some(r=>r.n>=64 && r.status==='done')) fail('No Sprint 64+ row may be marked done');
+const s64=rows.find(r=>r.n===64);
+if (s64?.status!=='done') fail('Sprint 64 status must be done');
+if (rows.some(r=>r.n>=65 && r.status==='done')) fail('No Sprint 65+ row may be marked done');
 ok('Status constraints valid');
 
 const queue = fs.readFileSync(queueMd,'utf8');
