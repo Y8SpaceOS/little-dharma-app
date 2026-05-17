@@ -1,0 +1,28 @@
+checkName,command,required,expectedResult,status,notes
+npm ci,npm ci,yes,exit 0 with lockfile-resolved install,pass,Executed during sprint gate run.
+typecheck,npm run typecheck,yes,exit 0 typecheck,pass,Executed during sprint gate run.
+lint,npm run lint,yes,exit 0 lint,pass,Executed during sprint gate run.
+tests,npm run test,yes,exit 0 tests,pass,Executed during sprint gate run.
+story master index,node scripts/validate-story-master-index.mjs,yes,validator pass,pass,Passed.
+story production templates,node scripts/validate-story-production-templates.mjs,yes,validator pass,pass,Passed.
+vrindavan week1 qa,node scripts/validate-vrindavan-week1-qa.mjs,yes,validator pass,pass,Passed.
+vrindavan week2 architecture,node scripts/validate-vrindavan-week2-architecture.mjs,yes,validator pass,pass,Passed.
+vrindavan week2 runtime,node scripts/validate-vrindavan-week2-runtime.mjs,yes,validator pass,pass,Passed.
+vrindavan week3 runtime,node scripts/validate-vrindavan-week3-runtime.mjs,yes,validator pass,pass,Passed.
+vrindavan 21 story path,node scripts/validate-vrindavan-21-story-path.mjs,yes,validator pass,pass,Passed.
+vrindavan completion state,node scripts/validate-vrindavan-completion-state.mjs,yes,validator pass,pass,Passed.
+ritual moment v2,node scripts/validate-ritual-moment-v2.mjs,yes,validator pass,pass,Passed.
+bedtime mode v2,node scripts/validate-bedtime-mode-v2.mjs,yes,validator pass,pass,Passed.
+child home v3,node scripts/validate-child-home-v3.mjs,yes,validator pass,pass,Passed.
+values garden v1,node scripts/validate-values-garden-v1.mjs,yes,validator pass,pass,Passed.
+my treasures v2,node scripts/validate-my-treasures-v2.mjs,yes,validator pass,pass,Passed.
+parent dashboard v3,node scripts/validate-parent-dashboard-v3.mjs,yes,validator pass,pass,Passed.
+parent trust privacy center v1,node scripts/validate-parent-trust-privacy-center-v1.mjs,yes,validator pass,pass,Passed.
+manual qa regression matrix,node scripts/validate-manual-qa-regression-matrix.mjs,yes,validator pass,pass,Passed.
+accessibility pass,node scripts/validate-accessibility-pass.mjs,yes,validator pass,pass,Passed.
+error boundaries,node scripts/validate-error-boundaries.mjs,yes,validator pass,pass,Passed.
+loading skeleton states,node scripts/validate-loading-skeleton-states.mjs,yes,validator pass,pass,Passed.
+parent feedback capture v1,node scripts/validate-parent-feedback-capture-v1.mjs,yes,validator pass,pass,Passed.
+privacy safe analytics spec,node scripts/validate-privacy-safe-analytics-spec.mjs,yes,validator pass,pass,Passed.
+app store readiness pack,node scripts/validate-app-store-readiness-pack.mjs,yes,validator pass,pass,Passed.
+private beta rc validator,node scripts/validate-private-beta-release-candidate.mjs,yes,validator pass,pass,Passed.

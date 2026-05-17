@@ -1,0 +1,17 @@
+runId,date,tester,device,osVersion,buildSource,flow,result,issueSeverity,evidenceRef,notes
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,app launch,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,onboarding,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,Child Home,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,story path 1-21,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,story detail,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,ritual flow,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,quiz/completion,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,bedtime mode,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,My Treasures,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,Values Garden,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,Parent Dashboard,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,Trust & Privacy Center,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,Parent Feedback Capture,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,navigation regression,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,layout/readability,not_run,none,link-or-screenshot-id,Template row pending execution.
+PBRC-RUN-001,YYYY-MM-DD,Tester Name,iPhone 14,iOS XX.X,Expo Dev Client,accessibility VoiceOver spot check,not_run,none,link-or-screenshot-id,Template row pending execution.
