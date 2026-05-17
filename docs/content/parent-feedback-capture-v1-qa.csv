@@ -18,3 +18,4 @@ iPhone manual QA,Expo Go on iPhone,Manual route/field/save/navigation checks exe
 parent dashboard regression,app/(parent)/dashboard.tsx,Parent Dashboard continues to function,pass,Verified by tests/validators
 privacy center regression,app/(parent)/privacy.tsx,Privacy Center continues to function,pass,No breaking changes applied
 child home regression,app/(child)/today.tsx,Child Home route continues to function,pending_manual_qa,Needs explicit iPhone regression check
+async draft hydration safety,app/(parent)/feedback.tsx,Async draft load does not overwrite active typing,pass,Hydration is skipped after any local edit starts

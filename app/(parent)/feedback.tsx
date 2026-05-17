@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { tokens } from '@/design/tokens';
@@ -12,11 +12,18 @@ function ParentFeedbackContent() {
   const defaultAgeBand = getOnboardingState().profile?.ageBand ?? '';
   const [draft, setDraft] = useState<ParentFeedbackDraft>({ ...EMPTY_PARENT_FEEDBACK_DRAFT, childAgeBand: defaultAgeBand });
   const [saveMessage, setSaveMessage] = useState('');
+  const hasUserEditedRef = useRef(false);
 
   useEffect(() => {
+    let isMounted = true;
     loadParentFeedbackDraft().then((loaded) => {
+      if (!isMounted || hasUserEditedRef.current) return;
       setDraft({ ...loaded, childAgeBand: loaded.childAgeBand || defaultAgeBand });
     }).catch(() => null);
+
+    return () => {
+      isMounted = false;
+    };
   }, [defaultAgeBand]);
 
   const canSave = useMemo(() => {
@@ -24,6 +31,7 @@ function ParentFeedbackContent() {
   }, [draft]);
 
   const setField = <K extends keyof ParentFeedbackDraft>(key: K, value: ParentFeedbackDraft[K]) => {
+    hasUserEditedRef.current = true;
     setDraft((prev) => ({ ...prev, [key]: value }));
     setSaveMessage('');
   };

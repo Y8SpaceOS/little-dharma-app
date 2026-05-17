@@ -16,6 +16,9 @@ Includes optional parent name/nickname, child age band, child enjoyed notes, con
 ## Local-only behavior review
 Feedback draft persists locally via AsyncStorage only. Copy clearly states feedback is kept on this device and is ready to share manually.
 
+## Async hydration safety review
+Draft hydration is guarded so async local load does not overwrite active parent typing. If any field is edited before hydration resolves, loaded data is not applied.
+
 ## Parent trust review
 Copy is explicit about parent-only use and no public posting. Contact sharing is optional and consent-based.
 
