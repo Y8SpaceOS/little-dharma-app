@@ -58,7 +58,7 @@ export default function PrivacyScreen() {
           <Text style={styles.noteText}>No public profile. No cloud sync in this version. Parent-guided use.</Text>
         </View>
 
-        <Link href='/(parent)/dashboard' style={styles.backLink}>Back to Parent Dashboard</Link>
+        <Link href='/(parent)/dashboard' style={styles.backLink} accessibilityRole='link' accessibilityLabel='Back to Parent Dashboard'>Back to Parent Dashboard</Link>
       </ScrollView>
     </SafeAreaView>
   );

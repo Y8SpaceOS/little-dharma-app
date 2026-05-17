@@ -128,7 +128,7 @@ export default function TreasuresScreen() {
             <View style={styles.emptyCard}>
               <Text style={styles.emptyTitle}>Your badge shelf is waiting 🌼</Text>
               <Text style={styles.emptyCopy}>Complete your first Vrindavan story and your first badge will appear here.</Text>
-              <Link href='/(child)/today' style={styles.emptyCta}>Start a story</Link>
+              <Link href='/(child)/today' style={styles.emptyCta} accessibilityRole='link' accessibilityLabel='Start a story from Child Home'>Start a story</Link>
             </View>
           ) : (
             <View style={styles.treasureList}>
@@ -166,7 +166,7 @@ export default function TreasuresScreen() {
         </View>
 
         <Text style={styles.privacyNote}>Private on this device for your family. No leaderboard, no ranking, no public sharing.</Text>
-        <Link href='/(child)/today' style={styles.backLink}>Back to Child Home</Link>
+        <Link href='/(child)/today' style={styles.backLink} accessibilityRole='link' accessibilityLabel='Back to Child Home'>Back to Child Home</Link>
       </ScrollView>
     </SafeAreaView>
   );

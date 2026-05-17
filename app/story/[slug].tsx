@@ -113,6 +113,8 @@ export default function StoryScreen() {
             </View>
             <View style={styles.controls}>
               <Pressable
+                accessibilityRole='button'
+                accessibilityLabel='Go to previous story panel'
                 disabled={panelIndex === 0}
                 style={[styles.button, panelIndex === 0 && styles.buttonDisabled]}
                 onPress={() => setPanelIndex((prev) => Math.max(0, prev - 1))}
@@ -120,6 +122,8 @@ export default function StoryScreen() {
                 <Text style={styles.buttonText}>Back</Text>
               </Pressable>
               <Pressable
+                accessibilityRole='button'
+                accessibilityLabel={atLastPanel ? 'Continue to ritual moment' : 'Go to next story panel'}
                 style={styles.button}
                 onPress={() => {
                   if (atLastPanel) {
@@ -181,7 +185,7 @@ export default function StoryScreen() {
 
               <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round((story.ritual.suggestedPracticeDurationSeconds || 60) / 60))} minute{(story.ritual.suggestedPracticeDurationSeconds || 60) >= 120 ? 's' : ''}.</Text>
             </View>
-            <Pressable style={styles.button} onPress={() => setStage('pause')}>
+            <Pressable style={styles.button} onPress={() => setStage('pause')} accessibilityRole='button' accessibilityLabel='Continue to quiz'>
               <Text style={styles.buttonText}>Continue to Quiz</Text>
             </Pressable>
           </View>
@@ -212,6 +216,8 @@ export default function StoryScreen() {
             {story.quiz.options.map((option) => (
               <Pressable
                 key={option}
+                accessibilityRole='button'
+                accessibilityLabel={`Quiz option: ${option}`}
                 onPress={() => setSelectedAnswer(option)}
                 style={[styles.option, selectedAnswer === option && styles.optionSelected]}
               >
@@ -219,7 +225,7 @@ export default function StoryScreen() {
               </Pressable>
             ))}
             <Text style={styles.quizHint}>Choose the kindest answer you would try in real life.</Text>
-            <Pressable onPress={onQuizSubmit} style={[styles.button, !selectedAnswer && styles.buttonDisabled]} disabled={!selectedAnswer}>
+            <Pressable onPress={onQuizSubmit} style={[styles.button, !selectedAnswer && styles.buttonDisabled]} disabled={!selectedAnswer} accessibilityRole='button' accessibilityLabel='See my badge'>
               <Text style={styles.buttonText}>See my badge</Text>
             </Pressable>
           </View>
@@ -288,7 +294,7 @@ export default function StoryScreen() {
               <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.completion} {companionV1.copy.carryForward}</Text>
             </View>
-            <Pressable style={styles.bedtimeButton} onPress={() => setStage('bedtime')}>
+            <Pressable style={styles.bedtimeButton} onPress={() => setStage('bedtime')} accessibilityRole='button' accessibilityLabel='Enter bedtime mode'>
               <Text style={styles.bedtimeButtonText}>Enter Bedtime Mode</Text>
             </Pressable>
 
