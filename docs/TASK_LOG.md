@@ -523,3 +523,12 @@
 - Added Sprint 65 QA artifacts: `docs/STORY_DETAIL_UPGRADE_V1_QA.md` and `docs/content/story-detail-upgrade-v1-qa.csv`.
 - Added validator `scripts/validate-story-detail-upgrade-v1.mjs` covering governance state and story-detail presence checks for Sprint 65 requirements.
 - Updated roadmap governance: Sprint 65 marked done in MASTER_SPRINT_QUEUE and post-foundation roadmap CSV; Sprint 66+ remained not_started.
+
+- 2026-05-18: Sprint 66 (Ritual Flow Polish v3) completed: upgraded the ritual surface in `app/story/[slug].tsx` into a warmer child-facing “Diya of Calm” flow with clearer step rhythm (pause/breathe → think/reflect → thank/bless), calmer visual hierarchy, larger rounded ritual cards, and story-value-aware reflection language.
+- 2026-05-18: Added lightweight Moru guide presence as short ritual helper copy (text-only) plus a brief parent-child prompt bridge; preserved non-intrusive behavior and avoided any narrator/audio infrastructure scope.
+- 2026-05-18: Enhanced completion ceremonial tone with diya/blessing/gratitude language; preserved existing story handoffs, completion writes, bedtime stage, and graceful unknown-story fallback routes.
+- 2026-05-18: Added Sprint 66 QA artifacts: `docs/RITUAL_FLOW_POLISH_V3_QA.md` and `docs/content/ritual-flow-polish-v3-qa.csv` covering prototype hygiene layer, Moru guidance layer, trust constraints, and forbidden-scope checks.
+- 2026-05-18: Added manual validator `scripts/validate-ritual-flow-polish-v3.mjs` (Node built-ins only) validating Sprint 66 artifacts, ritual-language quality checks, forbidden-language checks, roadmap governance state (61–66 done, 67–150 not_started), Sprint 14/15 defer state, and package script guard.
+- 2026-05-18: Required checks run: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`, all listed existing validators present in repo, new Sprint 66 validator, and `git status`.
+- 2026-05-18: Scope protections preserved: no paid beta start, no external private beta start, no App Store submission start, no backend/auth/cloud sync, no CMS, no analytics/telemetry, no microphone permission or recording, no monetisation, and no hard gamification mechanics.
+
