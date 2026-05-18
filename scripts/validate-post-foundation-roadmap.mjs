@@ -37,7 +37,7 @@ const s66=rows.find(r=>r.n===66);
 if (s66?.status!=='done') fail('Sprint 66 status must be done');
 const s67=rows.find(r=>r.n===67);
 if (s67?.status!=='done') fail('Sprint 67 status must be done');
-for (let n = 68; n <= 150; n += 1) {
+for (let n = 69; n <= 150; n += 1) {
   const row = rows.find((r) => r.n === n);
   if (row?.status !== 'not_started') fail(`Sprint ${n} must remain not_started`);
 }
@@ -54,7 +54,7 @@ if (!/### Sprint 64[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 64 
 if (!/### Sprint 65[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 65 must be done inside Sprint 65 section after completion.');
 if (!/### Sprint 66[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 66 must be done.');
 if (!/### Sprint 67[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 67 must be done.');
-if (!/### Sprint 68[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('Sprint 68 must remain not started.');
+if (!/### Sprint 68[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 68 must be done.');
 ok('MASTER_SPRINT_QUEUE required phrases present');
 
 const doc = fs.readFileSync(roadmapMd,'utf8');

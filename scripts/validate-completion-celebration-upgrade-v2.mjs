@@ -29,7 +29,7 @@ const rows = new Map(csv.map((line) => {
 }));
 for (let n = 61; n <= 150; n++) if (!rows.has(n)) throw new Error(`Missing roadmap row: Sprint ${n}`);
 for (const n of [61, 62, 63, 64, 65, 66, 67]) if (rows.get(n) !== 'done') throw new Error(`Sprint ${n} must be done in roadmap csv`);
-for (let n = 68; n <= 150; n++) if (rows.get(n) !== 'not_started') throw new Error(`Sprint ${n} must be not_started`);
+for (let n = 69; n <= 150; n++) if (rows.get(n) !== 'not_started') throw new Error(`Sprint ${n} must be not_started`);
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 const extractSprintSection = (queueText, sprintNumber) => {
@@ -47,8 +47,8 @@ if (!sprint67Section) throw new Error('Sprint 67 section missing in MASTER_SPRIN
 if (!sprint67Section.includes('- **Status:** done')) throw new Error('Sprint 67 section must contain status done in MASTER_SPRINT_QUEUE');
 const sprint68Section = extractSprintSection(queue, 68);
 if (!sprint68Section) throw new Error('Sprint 68 section missing in MASTER_SPRINT_QUEUE');
-if (!sprint68Section.includes('- **Status:** not started')) throw new Error('Sprint 68 section must contain status not started in MASTER_SPRINT_QUEUE');
-for (let sprint = 68; sprint <= 150; sprint += 1) {
+if (!sprint68Section.includes('- **Status:** done')) throw new Error('Sprint 68 section must contain status done in MASTER_SPRINT_QUEUE');
+for (let sprint = 69; sprint <= 150; sprint += 1) {
   const section = extractSprintSection(queue, sprint);
   if (section && !section.includes('- **Status:** not started')) throw new Error(`Sprint ${sprint} must remain not started in MASTER_SPRINT_QUEUE where section exists`);
 }
