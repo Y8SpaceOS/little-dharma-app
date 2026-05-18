@@ -56,6 +56,12 @@ export default function ControlsScreen() {
         </View>
 
         <View style={styles.card}>
+          <Text style={styles.title}>Dharma Journey settings</Text>
+          <Text style={styles.helper}>Dharma Journeys are gentle story paths. Review Ramayana, Krishna Childhood, and future paths.</Text>
+          <Link href='/(parent)/journey-settings' style={styles.link} accessibilityRole='link' accessibilityLabel='Open Journey Settings'>Open Journey Settings</Link>
+        </View>
+
+        <View style={styles.card}>
           <Text style={styles.title}>Luvlu companion guidance</Text>
           <View style={styles.switchRow}>
             <Text style={styles.switchLabel}>Luvlu helper prompts</Text>

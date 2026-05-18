@@ -565,3 +565,14 @@
 - 2026-05-18: Updated governance artifacts: `docs/MASTER_SPRINT_QUEUE.md` marks Sprint 70 done, Sprint 71 onward remains not started, Sprint 14/15 remain deferred/not completed, and Sprint 60 conditional no-go pending manual iPhone QA evidence remains present; `docs/content/post-foundation-product-build-roadmap.csv` marks Sprint 70 done with Sprint 71+ not_started.
 - 2026-05-18: Required checks run: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`, all listed available validators including new `node scripts/validate-parent-controls-v1.mjs`, and `git status`.
 - 2026-05-18: Scope protections preserved: no paid beta start, no external private beta start, no App Store submission start, no backend/auth/cloud sync/CMS/analytics/telemetry, no microphone permission or audio recording, and no hard gamification mechanics.
+
+## Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1
+- Added Dharma Journey local-first data foundation (`src/lib/dharmaJourneys.ts`) with required DharmaJourney and JourneyProgress fields, seeded journey metadata, helpers, sequencing guidance, and editorial guardrails comments.
+- Added local JourneyProgress utility layer (`src/lib/journeyProgress.ts`) with get/set/list/mark-complete/parent-summary helpers using on-device AsyncStorage only.
+- Added parent route `app/(parent)/journey-settings.tsx` and stable entry points from Parent Dashboard and Parent Controls.
+- Updated Story World journey previews with Festival and Hanuman journey placeholders and child-safe “story path is being prepared” language.
+- Added QA artifacts: `docs/PARENT_JOURNEY_SETTINGS_DHARMA_JOURNEY_MODEL_V1_QA.md` and `docs/content/parent-journey-settings-dharma-journey-model-v1-qa.csv`.
+- Added validator `scripts/validate-parent-journey-settings-dharma-journey-model-v1.mjs` and updated roadmap validator expectations for Sprint 71 done and Sprint 72+ not_started.
+- Governance updates: marked Sprint 71 done, kept Sprint 72 onward not started/not_started by file convention, preserved Sprint 14/15 deferred and Sprint 60 conditional no-go wording.
+- Scope guardrails preserved: no full journey runtime, no new long-form Ramayana/Mahabharata/Gita content, no backend/auth/cloud sync/CMS/analytics/telemetry, no paid beta/external beta/App Store submission, and no audio playback/microphone/recording additions.
+

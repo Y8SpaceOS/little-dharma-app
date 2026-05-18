@@ -858,7 +858,7 @@ Status legend: `not started`, `in progress`, `done`.
 - **Status:** done
 
 ### Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1
-- **Status:** not started
+- **Status:** done
 
 ### Sprint 72 — Content Pack Architecture v2
 - **Status:** not started
