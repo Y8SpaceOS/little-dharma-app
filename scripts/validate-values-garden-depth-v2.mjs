@@ -31,10 +31,29 @@ const qaDoc = read('docs/VALUES_GARDEN_DEPTH_V2_QA.md').toLowerCase();
 if (!qaDoc.includes('local') || !qaDoc.includes('privacy')) fail('QA doc should include local/privacy-safe framing');
 
 const queue = read('docs/MASTER_SPRINT_QUEUE.md');
-const sprint69 = /### Sprint 69[\s\S]*?- \*\*Status:\*\* done/i.test(queue);
-const sprint70 = /### Sprint 70[\s\S]*?- \*\*Status:\*\* not_started/i.test(queue);
-if (!sprint69) fail('MASTER_SPRINT_QUEUE must show Sprint 69 done');
-if (!sprint70) fail('MASTER_SPRINT_QUEUE must show Sprint 70 not_started');
+const extractSprintSection = (queueText, sprintNumber) => {
+  const heading = `### Sprint ${sprintNumber} — `;
+  const start = queueText.indexOf(heading);
+  if (start === -1) return null;
+  const remaining = queueText.slice(start + heading.length);
+  const nextOffset = remaining.search(/\n### Sprint \d+ — /);
+  const end = nextOffset === -1 ? queueText.length : start + heading.length + nextOffset;
+  return queueText.slice(start, end);
+};
+
+const sprint69Section = extractSprintSection(queue, 69);
+if (!sprint69Section) fail('MASTER_SPRINT_QUEUE missing Sprint 69 section');
+if (!sprint69Section.includes('- **Status:** done')) fail('Sprint 69 section must contain status done');
+
+const sprint70Section = extractSprintSection(queue, 70);
+if (!sprint70Section) fail('MASTER_SPRINT_QUEUE missing Sprint 70 section');
+if (!sprint70Section.includes('- **Status:** not started')) fail('Sprint 70 section must contain status not started');
+
+for (let sprint = 70; sprint <= 150; sprint += 1) {
+  const section = extractSprintSection(queue, sprint);
+  if (section && section.includes('- **Status:** done')) fail(`Sprint ${sprint} must not be done in MASTER_SPRINT_QUEUE`);
+}
+
 if (!/Sprint 14[\s\S]*deferred intentionally/i.test(queue) || !/Sprint 15[\s\S]*deferred intentionally/i.test(queue)) fail('Sprint 14/15 must remain deferred');
 
 const roadmap = read('docs/content/post-foundation-product-build-roadmap.csv').trim().split(/\r?\n/);
