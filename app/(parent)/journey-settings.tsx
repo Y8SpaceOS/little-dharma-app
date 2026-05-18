@@ -3,6 +3,12 @@ import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { getAllDharmaJourneys, getParentFacingJourneySummary } from '@/lib/dharmaJourneys';
 
+function getJourneyStatusLabel(status: 'available' | 'planned' | 'coming_later') {
+  if (status === 'available') return 'Available';
+  if (status === 'planned') return 'Planned';
+  return 'Coming soon';
+}
+
 export default function ParentJourneySettingsScreen() {
   const journeys = useMemo(() => getAllDharmaJourneys(), []);
   const summary = getParentFacingJourneySummary();
@@ -31,7 +37,7 @@ export default function ParentJourneySettingsScreen() {
         <Text style={styles.copy}>{journey.description}</Text>
         <Text style={styles.meta}>Source tradition: {journey.sourceTradition}</Text>
         <Text style={styles.meta}>Broad age bands: {journey.recommendedAgeBands.join(', ')}</Text>
-        <Text style={styles.meta}>Status: {journey.status === 'coming_later' ? 'Coming soon' : 'Planned'}</Text>
+        <Text style={styles.meta}>Status: {getJourneyStatusLabel(journey.status)}</Text>
       </View>
     ))}
 

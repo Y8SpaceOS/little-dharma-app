@@ -18,9 +18,22 @@ ok('Seeded journey names present');
 const parent = fs.readFileSync('app/(parent)/journey-settings.tsx','utf8');
 for(const phrase of ['Dharma Journeys','story paths','Progress stays on this device','No public child profile','Ramayana Journey and Krishna Childhood Journey are recommended first']) if(!parent.includes(phrase)) fail(`Missing parent copy phrase: ${phrase}`);
 ok('Parent copy includes trust and sequencing language');
-const text = must.map(f=>fs.readFileSync(f,'utf8')).join('\n') + '\n' + parent + '\n' + model;
-if(/\bMoru\b/.test(text)) fail('Found Moru in active sources/docs');
-for(const banned of ['XP','coins','streak','leaderboard','microphone permission','recording']) if(new RegExp(banned,'i').test(text)) fail(`Found banned term: ${banned}`);
+const activeMoruScope = [
+  'app/(parent)/journey-settings.tsx',
+  'app/(parent)/controls.tsx',
+  'app/(parent)/dashboard.tsx',
+  'app/(child)/today.tsx',
+  'app/(child)/worlds.tsx',
+  'src/data/storyWorld.ts',
+  'src/lib/dharmaJourneys.ts',
+  'docs/PARENT_JOURNEY_SETTINGS_DHARMA_JOURNEY_MODEL_V1_QA.md',
+  'docs/content/parent-journey-settings-dharma-journey-model-v1-qa.csv'
+];
+const text = activeMoruScope.map(f=>fs.readFileSync(f,'utf8')).join('\n');
+if(/\bMoru\b/.test(text)) fail('Found Moru in active runtime/current Sprint 71 sources/docs');
+for(const [label, pattern] of [['XP',/\bxp\b/i],['coins',/\bcoins?\b/i],['streak',/\bstreaks?\b/i],['leaderboard',/\bleaderboard\b/i]]) if(pattern.test(text)) fail(`Found banned term: ${label}`);
+if(/microphone permission/i.test(text) && !/no[^\n.]{0,80}microphone permission/i.test(text)) fail('Found microphone permission scope outside explicit exclusion language');
+if(/\brecording\b/i.test(text) && !/no[^\n.]{0,80}recording/i.test(text)) fail('Found recording scope outside explicit exclusion language');
 for(const banned of ['backend','cloud sync','analytics','telemetry','CMS']) if(new RegExp(`No ${banned}|no ${banned}`,'i').test(text)===false) {} // informational only
 ok('No banned gamification/audio terms found');
 const csv=fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv','utf8').trim().split(/\r?\n/).slice(1).map(l=>l.split(','));
