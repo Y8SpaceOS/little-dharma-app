@@ -41,9 +41,35 @@ for (let s = 67; s <= 150; s += 1) {
   if (!r || r.status !== 'not_started') fail(`Sprint ${s} must remain not_started in roadmap CSV.`);
 }
 
-const queue = read('docs/MASTER_SPRINT_QUEUE.md').toLowerCase();
-if (!(queue.includes('sprint 66') && queue.includes('status:** done'))) fail('MASTER_SPRINT_QUEUE must show Sprint 66 done.');
-if (!(queue.includes('sprint 67') && queue.includes('not started'))) fail('MASTER_SPRINT_QUEUE must show Sprint 67 not started.');
+const queueRaw = read('docs/MASTER_SPRINT_QUEUE.md');
+const queue = queueRaw.toLowerCase();
+const extractSprintSection = (queueText, sprintNumber) => {
+  const heading = `### Sprint ${sprintNumber} — `;
+  const startIndex = queueText.indexOf(heading);
+  if (startIndex === -1) return null;
+
+  const remaining = queueText.slice(startIndex + heading.length);
+  const nextHeadingOffset = remaining.search(/\n### Sprint \d+ — /);
+  const endIndex = nextHeadingOffset === -1 ? queueText.length : startIndex + heading.length + nextHeadingOffset;
+
+  return queueText.slice(startIndex, endIndex);
+};
+
+const sprint66Section = extractSprintSection(queueRaw, 66);
+if (!sprint66Section) fail('MASTER_SPRINT_QUEUE is missing Sprint 66 section.');
+if (!sprint66Section.includes('- **Status:** done')) fail('Sprint 66 section must contain status done.');
+
+const sprint67Section = extractSprintSection(queueRaw, 67);
+if (!sprint67Section) fail('MASTER_SPRINT_QUEUE is missing Sprint 67 section.');
+if (!sprint67Section.includes('- **Status:** not started')) fail('Sprint 67 section must contain status not started.');
+
+for (let s = 67; s <= 150; s += 1) {
+  const section = extractSprintSection(queueRaw, s);
+  if (section && !section.includes('- **Status:** not started')) {
+    fail(`Sprint ${s} section must remain not started in MASTER_SPRINT_QUEUE.`);
+  }
+}
+
 if (!(queue.includes('sprint 14') && queue.includes('deferred'))) fail('Sprint 14 must remain deferred/not completed.');
 if (!(queue.includes('sprint 15') && queue.includes('deferred'))) fail('Sprint 15 must remain deferred/not completed.');
 
