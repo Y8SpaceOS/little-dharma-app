@@ -1,0 +1,8 @@
+checkId,checkItem,status,notes
+s73-1,Plan doc exists,pass,KRISHNA_STORY_PACK_EXPANSION_PLAN.md added
+s73-2,QA doc exists,pass,KRISHNA_STORY_PACK_EXPANSION_PLANNING_QA.md added
+s73-3,Roadmap CSV exists with required columns,pass,krishna-story-pack-expansion-plan.csv added
+s73-4,At least 20 candidates,pass,20 planned rows present
+s73-5,Guardrails and age bands documented,pass,Plan doc includes age bands + editorial guardrails
+s73-6,No forbidden scope introduced,pass,No runtime stories/backend/audio/recording/cms/telemetry added
+s73-7,Governance updated for Sprint 73 done,pass,Queue + roadmap + task log updated
