@@ -541,3 +541,11 @@
 
 - 2026-05-18: Sprint 67 mascot naming migration update: renamed child-facing companion references from Moru to Luvlu across current runtime guidance copy and Sprint 67 QA/validator artifacts, while preserving peacock companion role, non-intrusive guidance, and no-audio/no-recording scope.
 - 2026-05-18: Consistency follow-up for Sprint 66 artifacts: updated ritual-flow QA/validator references from Moru guidance to Luvlu/companion guidance so current app-facing naming is consistent without changing Sprint order/objective.
+
+- 2026-05-18: Sprint 68 (My Treasures Depth v3) completed: upgraded `app/(child)/treasures.tsx` into a warm child-facing memory chest with story-memory/blessing framing, large rounded cards, saffron/cream visual treatment, Luvlu helper guidance, value-grouped treasure sections (diya/flower/lotus metaphors), and gentle revisit CTAs.
+- 2026-05-18: Added warm empty-state experience (“Your treasure chest is waiting”) with Story World / Today’s Story CTAs and no pressure language; preserved local completion data reads, existing route behavior, and privacy-safe local-first posture.
+- 2026-05-18: Added subtle parent-trust microcopy clarifying on-device storage, no public child profile, and non-competitive memory framing.
+- 2026-05-18: Added Sprint 68 QA artifacts: `docs/MY_TREASURES_DEPTH_V3_QA.md` and `docs/content/my-treasures-depth-v3-qa.csv`.
+- 2026-05-18: Added Sprint 68 validator `scripts/validate-my-treasures-depth-v3.mjs` (Node built-ins only, manually runnable, package-script guard) covering artifacts, warm-language tokens, empty-state fallback, forbidden gamification/audio language, roadmap governance state (61–68 done, 69–150 not_started), Sprint 14/15 deferred checks, and TASK_LOG entry presence.
+- 2026-05-18: Updated governance artifacts to mark Sprint 68 done (`docs/MASTER_SPRINT_QUEUE.md`, `docs/content/post-foundation-product-build-roadmap.csv`) while keeping Sprint 60 conditional no-go posture, Sprint 14/15 deferred, and Sprint 69 onward not_started.
+- 2026-05-18: Scope protections preserved: no backend/auth/cloud sync, no CMS, no analytics/telemetry, no paid beta start, no external private beta start, no App Store submission start, no microphone/audio recording, and no hard gamification mechanics.

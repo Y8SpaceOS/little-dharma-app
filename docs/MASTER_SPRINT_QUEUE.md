@@ -847,7 +847,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Upgraded story completion into a warm ceremonial celebration with value-aware blessing language, short Luvlu guidance, parent-child prompt, gentle next actions, and soft My Treasures/Values Garden bridges without forbidden scope.
 
 ### Sprint 68 — My Treasures Depth v3
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded My Treasures into a warm story-memory chest with blessings, diyas, value-grouped memory cards, Luvlu helper guidance, and parent-trust microcopy using local completion data only.
 
 ### Sprint 69 — Values Garden Depth v2
 - **Status:** not started
