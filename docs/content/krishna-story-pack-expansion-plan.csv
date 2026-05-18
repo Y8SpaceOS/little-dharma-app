@@ -1,0 +1,21 @@
+storyId,title,childFacingTitle,proposedOrder,contentSurface,ageBands,primaryValue,secondaryValues,characters,sourceTradition,sensitivityLevel,editorialNotes,status
+krishna-birth,Krishna's Birth,Baby Krishna Arrives,1,both,3-5|6-8,Love,Care|Trust,Krishna|Devaki|Vasudeva,Bhagavata tradition,medium,Use gentle birth-night framing without fear-heavy prison detail.,planned
+vasudeva-carries-baby,Vasudeva Carries Baby Krishna,A Safe River Journey,2,krishna_childhood_journey,6-8|9-12,Courage,Protection|Faith,Vasudeva|Krishna,Bhagavata tradition,medium,Emphasize protection and care; soften threat language.,planned
+baby-comes-gokul,Baby Krishna Comes to Gokul,Welcome to Gokul,3,both,3-5|6-8,Family Warmth,Belonging|Joy,Krishna|Yashoda|Nanda,Bhagavata tradition,low,"Focus on welcome, love, and village warmth.",planned
+naming-krishna-balarama,Naming of Krishna and Balarama,A Special Name Day,4,both,3-5|6-8,Identity,Family|Blessing,Krishna|Balarama|Yashoda,Bhagavata tradition,low,Highlight blessing and celebration rituals.,planned
+butter-pot,Krishna and the Butter Pot,Butter Time with Krishna,5,both,3-5|6-8,Sharing,Play|Joy,Krishna|Yashoda,Bhagavata tradition,low,Avoid prank-only tone; carry kindness lesson.,planned
+eats-mud,Krishna Eats Mud,Mud Surprise,6,both,3-5|6-8,Truth,Care|Listening,Krishna|Yashoda,Bhagavata tradition,low,Keep child-like accountability framing.,planned
+yashoda-universe,Yashoda Sees the Universe,The Universe in a Smile,7,krishna_childhood_journey,6-8|9-12,Wonder,Devotion|Love,Krishna|Yashoda,Bhagavata tradition,medium,Explain wonder simply; avoid heavy theology.,needs_review
+crawling-days,Krishna and the Crawling Days,Little Steps in Vrindavan,8,both,3-5,Growth,Joy|Care,Krishna|Yashoda,Bhagavata tradition,low,Simple family warmth for youngest age band.,planned
+mortar,Krishna and the Mortar,The Tied Butter Helper,9,both,6-8|9-12,Responsibility,Forgiveness|Love,Krishna|Yashoda,Bhagavata tradition,medium,Use soft consequence language and reconciliation.,needs_review
+twin-trees,Krishna and the Twin Trees,Two Trees and a Blessing,10,krishna_childhood_journey,6-8|9-12,Compassion,Release|Grace,Krishna,Bhagavata tradition,medium,Avoid intense supernatural fear framing.,needs_review
+calves,Krishna and the Calves,Caring for Calves,11,both,3-5|6-8,Care,Duty|Friendship,Krishna|Cowherd friends,Bhagavata tradition,low,Animal care and responsibility focus.,planned
+flute,Krishna Plays the Flute,Flute Songs in Vrindavan,12,both,3-5|6-8|9-12,Joy,Harmony|Devotion,Krishna|Friends,Bhagavata tradition,low,Flute and nature wonder with calm language.,planned
+cowherd-friends,Krishna and the Cowherd Friends,Friends of Vrindavan,13,both,6-8,Friendship,Teamwork|Care,Krishna|Cowherd friends,Bhagavata tradition,low,Group kindness and inclusion.,planned
+fruit-seller,Krishna and the Fruit Seller,A Gift of Fruit,14,both,3-5|6-8,Generosity,Gratitude|Love,Krishna|Fruit seller,Bhagavata tradition,low,Mutual giving and gratitude framing.,planned
+kaliya,Krishna and Kaliya,Brave Dance by the River,15,krishna_childhood_journey,6-8|9-12,Courage,Protection|Calm,Krishna|Kaliya,Bhagavata tradition,high,No graphic detail; frame as restoring safety.,needs_review
+forest-fire,Krishna and the Forest Fire,Keeping Everyone Safe,16,krishna_childhood_journey,6-8|9-12,Protection,Trust|Composure,Krishna|Cowherd friends,Bhagavata tradition,high,No panic-heavy detail for younger children.,needs_review
+govardhan,Krishna Lifts Govardhan,Shelter Under the Hill,17,both,6-8|9-12,Courage,Community|Faith,Krishna|Villagers,Bhagavata tradition,medium,Community protection and gratitude focus.,planned
+rainstorm,Krishna and the Rainstorm,Storm and Safe Shelter,18,both,6-8|9-12,Resilience,Trust|Togetherness,Krishna|Villagers,Bhagavata tradition,medium,Storm detail should remain non-traumatic.,planned
+sudama-childhood,Krishna and Sudama Childhood Friendship,Best Friends Forever,19,both,6-8|9-12,Friendship,Loyalty|Humility,Krishna|Sudama,Bhagavata tradition,low,Highlight care across differences.,planned
+leaves-mathura,Krishna Leaves for Mathura,A Brave Goodbye,20,krishna_childhood_journey,9-12,Duty,Love|Courage,Krishna|Yashoda|Nanda,Bhagavata tradition,high,Use gentle goodbye framing with parent note.,ready_for_draft_later

@@ -35,7 +35,7 @@ for (let sprint = 61; sprint <= 150; sprint += 1) if (!roadmapStatus.has(sprint)
 for (let sprint = 61; sprint <= 69; sprint += 1) if (roadmapStatus.get(sprint) !== 'done') fail(`Sprint ${sprint} must be done`);
 if (roadmapStatus.get(71) !== 'done') fail('Sprint 71 must be done');
 if (roadmapStatus.get(72) !== 'done') fail('Sprint 72 must be done');
-for (let sprint = 73; sprint <= 150; sprint += 1) if (roadmapStatus.get(sprint) !== 'not_started') fail(`Sprint ${sprint} must be not_started`);
+for (let sprint = 74; sprint <= 150; sprint += 1) if (roadmapStatus.get(sprint) !== 'not_started') fail(`Sprint ${sprint} must be not_started`);
 
 const queueText = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 const extractSprintSection = (queue, sprint) => {

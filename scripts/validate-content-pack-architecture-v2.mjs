@@ -52,7 +52,7 @@ const idxN = header.indexOf('sprintNumber'); const idxS = header.indexOf('status
 const rows = roadmap.slice(1).map((line)=>line.split(','));
 for (let n=61;n<=150;n++) if (!rows.find(r=>Number(r[idxN])===n)) fail(`Missing roadmap row sprint ${n}`);
 for (let n=61;n<=72;n++) if (rows.find(r=>Number(r[idxN])===n)?.[idxS] !== 'done') fail(`Sprint ${n} must be done in CSV`);
-for (let n=73;n<=150;n++) if (rows.find(r=>Number(r[idxN])===n)?.[idxS] !== 'not_started') fail(`Sprint ${n} must be not_started in CSV`);
+for (let n=74;n<=150;n++) if (rows.find(r=>Number(r[idxN])===n)?.[idxS] !== 'not_started') fail(`Sprint ${n} must be not_started in CSV`);
 ok('Roadmap CSV sprint status checks passed');
 
 const section = (n) => {
@@ -62,7 +62,7 @@ const section = (n) => {
   return queue.slice(start, next > -1 ? next : queue.length);
 };
 if (!section(72).includes('- **Status:** done')) fail('MASTER_SPRINT_QUEUE Sprint 72 must be done');
-if (!section(73).includes('- **Status:** not started')) fail('MASTER_SPRINT_QUEUE Sprint 73 must be not started');
+if (!section(73).includes('- **Status:** done')) fail('MASTER_SPRINT_QUEUE Sprint 73 must be done');
 if (queue.includes('not_started')) fail('MASTER_SPRINT_QUEUE must use "not started"');
 if (!queue.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 14 defer state missing');
 if (!queue.includes('Sprint 15 — Developer Environment Bootstrap Guide') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 15 defer state missing');
