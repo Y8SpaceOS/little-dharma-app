@@ -89,6 +89,30 @@ function StoryScreenContent() {
   const bedtimeClosingLine = `Parent: “I saw ${safeValue.toLowerCase()} in you tonight.” Child: “Tomorrow I will practice it again with a calm heart.”`;
   const storyCta = previouslyCompleted ? 'Continue Story' : 'Start Story';
 
+  const valueKey = safeValue.toLowerCase();
+  const completionTitle = valueKey.includes('courage')
+    ? 'You lit a diya of courage'
+    : valueKey.includes('kind')
+      ? 'Your kindness flower grew today'
+      : valueKey.includes('gratitude')
+        ? 'A gratitude blessing is saved'
+        : valueKey.includes('calm')
+          ? 'You kept one calm thought'
+          : valueKey.includes('truth')
+            ? 'Your truth flower grew today'
+            : 'You completed one gentle story';
+  const completionMemoryLine = valueKey.includes('flower') || valueKey.includes('kind') || valueKey.includes('truth')
+    ? 'A soft story flower is glowing in your memory garden.'
+    : 'A small blessing is saved as a glowing story memory.';
+  const completionCompanionLine = valueKey.includes('courage')
+    ? 'Luvlu says: That was a brave and kind choice.'
+    : valueKey.includes('gratitude')
+      ? 'Luvlu says: Let us keep this blessing in your heart.'
+      : "Luvlu says: You kept the story's blessing.";
+  const completionParentPrompt = story.parentReflectionPrompt?.trim()
+    ? `Talk together: ${story.parentReflectionPrompt}`
+    : `Ask your child: What did this ${safeValue.toLowerCase()} story teach us today?`;
+
   useEffect(() => {
     if (stage !== 'pause') return;
     const timer = setTimeout(() => setStage('quiz'), PAUSE_DURATION_MS);
@@ -196,8 +220,8 @@ function StoryScreenContent() {
             <Text style={styles.ritualFraming}>A warm Little Dharma moment to breathe, remember the story value, and share one gentle blessing together.</Text>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
-              <Text style={styles.companionInlineCopy}>Moru says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineCopy}>Luvlu says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
             </View>
 
             <View style={styles.ritualCard}>
@@ -251,8 +275,8 @@ function StoryScreenContent() {
             <Text style={styles.pauseLine}>Take one quiet breath.</Text>
             <Text style={styles.pauseLine}>What did your heart notice?</Text>
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
-              <Text style={styles.companionInlineCopy}>Moru says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineCopy}>Luvlu says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
             </View>
           </View>
         )}
@@ -287,7 +311,7 @@ function StoryScreenContent() {
             <Text style={styles.bedtimeSettle}>Settle down together. Relax your shoulders, soften your voice, and take one slow breath.</Text>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.bedtime}</Text>
             </View>
 
@@ -325,25 +349,30 @@ function StoryScreenContent() {
 
         {stage === 'complete' && (
           <View style={styles.card}>
-            <Text style={styles.panelTitle}>Badge Earned: {story.badgeName} 🦚</Text>
-            <Text style={styles.panelText}>{isCorrect ? 'Wonderful! You chose a kindness answer.' : story.quiz.gentleFeedback}</Text>
-            <Text style={styles.parentPrompt}>For Parent: {story.parentReflectionPrompt}</Text>
-            <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
-            <Text style={styles.ritualLine}>Your diya of gratitude is glowing. A small blessing is saved from today&apos;s gentle ritual moment.</Text>
+            <Text style={styles.panelTitle}>{completionTitle}</Text>
+            <Text style={styles.panelText}>{story.title || 'Your story is complete.'}</Text>
 
+            <View style={styles.completionGlowCard}>
+              <Text style={styles.completionGlowSymbol}>🪔</Text>
+              <Text style={styles.completionGlowTitle}>Your story memory is glowing</Text>
+              <Text style={styles.completionGlowCopy}>{completionMemoryLine}</Text>
+            </View>
 
             <View style={styles.carryingWordCard}>
-              <Text style={styles.carryingWordEyebrow}>Carrying Word</Text>
-              <Text style={styles.carryingWordTitle}>Today you carry: {story.value}</Text>
-              <Text style={styles.carryingWordCopy}>Carry this word gently today.</Text>
+              <Text style={styles.carryingWordEyebrow}>Value practiced</Text>
+              <Text style={styles.carryingWordTitle}>{safeValue}</Text>
+              <Text style={styles.carryingWordCopy}>{isCorrect ? 'That was a gentle and thoughtful choice.' : story.quiz.gentleFeedback}</Text>
             </View>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
-              <Text style={styles.companionInlineCopy}>{companionV1.copy.completion} {companionV1.copy.carryForward}</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineCopy}>{completionCompanionLine}</Text>
             </View>
+
+            <Text style={styles.parentPrompt}>{completionParentPrompt}</Text>
+            <Text style={styles.ritualLine}>Your blessing can live in My Treasures, and this value can help your garden grow.</Text>
             <Pressable style={styles.bedtimeButton} onPress={() => setStage('bedtime')} accessibilityRole='button' accessibilityLabel='Enter bedtime mode'>
-              <Text style={styles.bedtimeButtonText}>Enter Bedtime Mode</Text>
+              <Text style={styles.bedtimeButtonText}>Bedtime Mode</Text>
             </Pressable>
 
             <View style={styles.shareCard}>
@@ -383,10 +412,10 @@ function StoryScreenContent() {
             </Text>
             <View style={styles.controls}>
               <Pressable style={styles.button} onPress={() => { setPanelIndex(0); setSelectedAnswer(null); setIsCorrect(false); setStage('story'); }}>
-                <Text style={styles.buttonText}>Read Again</Text>
+                <Text style={styles.buttonText}>Read another story</Text>
               </Pressable>
               <Pressable style={styles.buttonSecondary} onPress={() => router.push('/(child)/today')}>
-                <Text style={styles.buttonSecondaryText}>Done for Today</Text>
+                <Text style={styles.buttonSecondaryText}>Go to Child Home</Text>
               </Pressable>
             </View>
           </View>
@@ -480,6 +509,10 @@ const styles = StyleSheet.create({
   pauseTitle: { fontSize: 28, color: '#3E2A1A', fontWeight: '800', textAlign: 'center', lineHeight: 34 },
   pauseLine: { fontSize: 18, color: '#6A4F37', fontWeight: '600', textAlign: 'center', lineHeight: 25 },
   ritualLine: { marginTop: 4, fontSize: 14, color: '#6B5A88', fontWeight: '700' },
+  completionGlowCard: { backgroundColor: '#FFF8EA', borderRadius: 20, borderWidth: 1, borderColor: '#F2D2A2', padding: 16, alignItems: 'center', gap: 4 },
+  completionGlowSymbol: { fontSize: 40 },
+  completionGlowTitle: { fontSize: 22, fontWeight: '800', color: '#4A2B17', textAlign: 'center' },
+  completionGlowCopy: { fontSize: 15, lineHeight: 22, color: '#6B4B2F', textAlign: 'center' },
   carryingWordCard: { backgroundColor: '#FFF4DE', borderWidth: 1, borderColor: '#F0D2A4', borderRadius: 18, padding: 14, gap: 4 },
   carryingWordEyebrow: { fontSize: 12, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8, color: '#8A5A2D' },
   carryingWordTitle: { fontSize: 20, fontWeight: '800', color: '#4A2B17' },

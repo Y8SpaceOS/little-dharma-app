@@ -843,7 +843,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Polished the ritual stage into a warm child-facing Diya of Calm moment with clear three-step guidance (pause/breathe, think/reflect, thank/bless), short Moru helper copy, parent-child prompt bridge, graceful fallback preservation, ceremonial completion language, and Sprint 66 QA/CSV/validator/governance updates while preserving story, bedtime, completion, and trust-safe local-first behavior.
 
 ### Sprint 67 — Completion Celebration Upgrade v2
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Upgraded story completion into a warm ceremonial celebration with value-aware blessing language, short Moru guidance, parent-child prompt, gentle next actions, and soft My Treasures/Values Garden bridges without forbidden scope.
 
 ### Sprint 68 — My Treasures Depth v3
 - **Status:** not started

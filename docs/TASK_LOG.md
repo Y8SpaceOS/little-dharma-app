@@ -532,3 +532,12 @@
 - 2026-05-18: Required checks run: `npm ci`, `npm run typecheck`, `npm run lint`, `npm run test`, all listed existing validators present in repo, new Sprint 66 validator, and `git status`.
 - 2026-05-18: Scope protections preserved: no paid beta start, no external private beta start, no App Store submission start, no backend/auth/cloud sync, no CMS, no analytics/telemetry, no microphone permission or recording, no monetisation, and no hard gamification mechanics.
 
+
+- 2026-05-18: Sprint 67 (Completion Celebration Upgrade v2) completed: upgraded the story completion surface in `app/story/[slug].tsx` to a warm ceremonial close with value-aware title/copy (diya/flower/blessing/story-memory framing), child-safe fallback messaging, and softer visual hierarchy aligned to Story World + Ritual tone.
+- 2026-05-18: Added short non-intrusive Moru completion guidance, one brief parent-child reflection prompt, and gentle non-addictive next actions (Bedtime Mode, Return to Child Home, Read another story) while preserving completion writes, progress flow, and bedtime handoff behavior.
+- 2026-05-18: Added Sprint 67 QA artifacts: `docs/COMPLETION_CELEBRATION_UPGRADE_V2_QA.md` and `docs/content/completion-celebration-upgrade-v2-qa.csv` with prototype hygiene and scope guard checks.
+- 2026-05-18: Added manual validator `scripts/validate-completion-celebration-upgrade-v2.mjs` (Node built-ins only) to enforce artifacts, warm-language presence, Moru + parent prompt copy, forbidden-language guards, roadmap governance states, Sprint 14/15 defer state, package script guard, and launch-scope constraints.
+- 2026-05-18: Scope protections preserved: no audio playback/microphone/recording additions, no hard gamification, no backend/auth/cloud sync/CMS/analytics/telemetry/monetisation, and no paid beta/external private beta/App Store submission start.
+
+- 2026-05-18: Sprint 67 mascot naming migration update: renamed child-facing companion references from Moru to Luvlu across current runtime guidance copy and Sprint 67 QA/validator artifacts, while preserving peacock companion role, non-intrusive guidance, and no-audio/no-recording scope.
+- 2026-05-18: Consistency follow-up for Sprint 66 artifacts: updated ritual-flow QA/validator references from Moru guidance to Luvlu/companion guidance so current app-facing naming is consistent without changing Sprint order/objective.
