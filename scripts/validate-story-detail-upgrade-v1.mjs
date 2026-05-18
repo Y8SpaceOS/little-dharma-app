@@ -34,7 +34,7 @@ if (!storyDetail.includes("href='/(child)/today'")) throw new Error('Fallback mu
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!queue.includes('### Sprint 65 — Story Detail Upgrade v1\n- **Status:** done')) throw new Error('Sprint 65 must be done in MASTER_SPRINT_QUEUE');
-if (!queue.includes('### Sprint 66 — Ritual Flow Polish v3\n- **Status:** not started')) throw new Error('Sprint 66 must remain not started');
+if (!queue.includes('### Sprint 66 — Ritual Flow Polish v3\n- **Status:** done')) throw new Error('Sprint 66 must be done');
 if (!queue.includes('Sprint 14') || !queue.includes('deferred intentionally')) throw new Error('Sprint 14 deferred state missing');
 if (!queue.includes('Sprint 15') || !queue.includes('deferred intentionally')) throw new Error('Sprint 15 deferred state missing');
 
@@ -47,7 +47,8 @@ for (let i = 61; i <= 150; i += 1) {
 for (const s of [61, 62, 63, 64, 65]) {
   if (bySprint.get(s)[6] !== 'done') throw new Error(`Sprint ${s} must be done in roadmap csv`);
 }
-for (let i = 66; i <= 150; i += 1) {
+if (bySprint.get(66)[6] !== 'done') throw new Error('Sprint 66 must be done');
+for (let i = 67; i <= 150; i += 1) {
   if (bySprint.get(i)[6] !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
 }
 

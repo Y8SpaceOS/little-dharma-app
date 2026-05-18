@@ -30,7 +30,8 @@ const map = new Map(roadmap.map((line) => { const cols = line.split(','); return
 for (let sprint = 61; sprint <= 150; sprint += 1) if (!map.has(sprint)) throw new Error(`Missing Sprint ${sprint} row in roadmap CSV.`);
 [61, 62, 63, 64].forEach((s) => { if (map.get(s) !== 'done') throw new Error(`Sprint ${s} must be done.`); });
 if (map.get(65) !== 'done') throw new Error('Sprint 65 must be done.');
-for (let sprint = 66; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
+if (map.get(66) !== 'done') throw new Error('Sprint 66 must be done.');
+for (let sprint = 67; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!/Sprint 64[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 64 done.');

@@ -839,7 +839,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Upgraded story detail entry with warm pre-story metadata cards, parent talk-together guidance, reflection prompt, journey/audio placeholders, graceful fallback states, and Sprint 65 QA/validator/governance updates while preserving existing story runtime flow.
 
 ### Sprint 66 — Ritual Flow Polish v3
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Polished the ritual stage into a warm child-facing Diya of Calm moment with clear three-step guidance (pause/breathe, think/reflect, thank/bless), short Moru helper copy, parent-child prompt bridge, graceful fallback preservation, ceremonial completion language, and Sprint 66 QA/CSV/validator/governance updates while preserving story, bedtime, completion, and trust-safe local-first behavior.
 
 ### Sprint 67 — Completion Celebration Upgrade v2
 - **Status:** not started

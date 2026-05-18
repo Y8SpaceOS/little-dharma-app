@@ -192,17 +192,17 @@ function StoryScreenContent() {
         {stage === 'ritual' && (
           <View style={styles.card}>
             <Text style={styles.ritualStageEyebrow}>Ritual Moment</Text>
-            <Text style={styles.panelTitle}>Say, Breathe, Reflect</Text>
-            <Text style={styles.ritualFraming}>A short family ritual to feel calm and connected together.</Text>
+            <Text style={styles.panelTitle}>Diya of Calm: Pause, Think, Bless</Text>
+            <Text style={styles.ritualFraming}>A warm Little Dharma moment to breathe, remember the story value, and share one gentle blessing together.</Text>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
-              <Text style={styles.companionInlineCopy}>{companionV1.copy.ritualEncouragement}</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
+              <Text style={styles.companionInlineCopy}>Moru says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
             </View>
 
             <View style={styles.ritualCard}>
               <View style={styles.ritualStepBlock}>
-                <Text style={styles.ritualStepTitle}>Step 1: Say</Text>
+                <Text style={styles.ritualStepTitle}>Step 1: Pause and breathe (Say)</Text>
                 <Text style={styles.ritualLabel}>{story.ritual.microShlokaTitle || 'Kind phrase'}</Text>
                 <View style={styles.ritualScriptCard}>
                   <Text style={styles.ritualText}>{story.ritual.microShlokaText || 'Let us say one kind phrase together.'}</Text>
@@ -217,24 +217,24 @@ function StoryScreenContent() {
               </View>
 
               <View style={styles.ritualStepBlock}>
-                <Text style={styles.ritualStepTitle}>Step 2: Breathe</Text>
-                <Text style={styles.ritualPromptText}>Take three soft breaths together.</Text>
-                <Text style={styles.ritualSupportText}>{story.ritual.ritualPrompt || 'Breathe in softly, breathe out slowly, and relax your shoulders.'}</Text>
+                <Text style={styles.ritualStepTitle}>Step 2: Think and reflect (Breathe)</Text>
+                <Text style={styles.ritualPromptText}>Think of one calm moment in this story.</Text>
+                <Text style={styles.ritualSupportText}>{`Story value: ${safeValue}. ${story.ritual.reflectionQuestion || `What is one ${safeValue.toLowerCase()} thing your heart noticed today?`}`}</Text>
               </View>
 
               <View style={styles.ritualStepBlock}>
-                <Text style={styles.ritualStepTitle}>Step 3: Reflect</Text>
-                <Text style={styles.ritualPromptText}>{story.ritual.reflectionQuestion || 'What did your heart notice in this story?'}</Text>
+                <Text style={styles.ritualStepTitle}>Step 3: Thank and bless (Reflect)</Text>
+                <Text style={styles.ritualPromptText}>Think of one person you want to thank, then share one kind word or blessing.</Text>
                 <View style={styles.ritualDetailBlock}>
-                  <Text style={styles.ritualDetailLabel}>Parent bridge</Text>
-                  <Text style={styles.ritualSupportText}>{story.ritual.parentMeaning || 'Parents can model one simple example from today and invite a short family reply.'}</Text>
+                  <Text style={styles.ritualDetailLabel}>Parent-child prompt</Text>
+                  <Text style={styles.ritualSupportText}>{`Ask your child: What made your heart feel calm today? Then say together: "May our home stay kind and gentle." ${story.ritual.parentMeaning || ''}`.trim()}</Text>
                 </View>
               </View>
 
-              <Text style={styles.ritualDuration}>Practice time: about {Math.max(1, Math.round((story.ritual.suggestedPracticeDurationSeconds || 60) / 60))} minute{(story.ritual.suggestedPracticeDurationSeconds || 60) >= 120 ? 's' : ''}.</Text>
+              <Text style={styles.ritualDuration}>Gentle practice time: about {Math.max(1, Math.round((story.ritual.suggestedPracticeDurationSeconds || 60) / 60))} minute{(story.ritual.suggestedPracticeDurationSeconds || 60) >= 120 ? 's' : ''}.</Text>
             </View>
             <Pressable style={styles.button} onPress={() => setStage('pause')} accessibilityRole='button' accessibilityLabel='Continue to quiz'>
-              <Text style={styles.buttonText}>Continue to Quiz</Text>
+              <Text style={styles.buttonText}>Light the Diya and Continue</Text>
             </Pressable>
           </View>
         )}
@@ -251,8 +251,8 @@ function StoryScreenContent() {
             <Text style={styles.pauseLine}>Take one quiet breath.</Text>
             <Text style={styles.pauseLine}>What did your heart notice?</Text>
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
-              <Text style={styles.companionInlineCopy}>{companionV1.copy.ritualEncouragement}</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
+              <Text style={styles.companionInlineCopy}>Moru says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
             </View>
           </View>
         )}
@@ -287,7 +287,7 @@ function StoryScreenContent() {
             <Text style={styles.bedtimeSettle}>Settle down together. Relax your shoulders, soften your voice, and take one slow breath.</Text>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.bedtime}</Text>
             </View>
 
@@ -329,7 +329,7 @@ function StoryScreenContent() {
             <Text style={styles.panelText}>{isCorrect ? 'Wonderful! You chose a kindness answer.' : story.quiz.gentleFeedback}</Text>
             <Text style={styles.parentPrompt}>For Parent: {story.parentReflectionPrompt}</Text>
             <Text style={styles.parentPrompt}>Parent reflection bridge: {story.ritual.parentMeaning}</Text>
-            <Text style={styles.ritualLine}>Today&apos;s 10-minute ritual: story + value + shloka + reflection</Text>
+            <Text style={styles.ritualLine}>Your diya of gratitude is glowing. A small blessing is saved from today&apos;s gentle ritual moment.</Text>
 
 
             <View style={styles.carryingWordCard}>
@@ -339,7 +339,7 @@ function StoryScreenContent() {
             </View>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>{companionV1.motif} {companionV1.displayLabel}</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Moru</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.completion} {companionV1.copy.carryForward}</Text>
             </View>
             <Pressable style={styles.bedtimeButton} onPress={() => setStage('bedtime')} accessibilityRole='button' accessibilityLabel='Enter bedtime mode'>
