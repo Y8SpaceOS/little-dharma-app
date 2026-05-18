@@ -40,11 +40,12 @@ const csv=fs.readFileSync('docs/content/post-foundation-product-build-roadmap.cs
 const byN=Object.fromEntries(csv.map(r=>[Number(r[0]),r[6]]));
 for(let n=61;n<=150;n++) if(!(n in byN)) fail(`Missing sprint row ${n}`);
 for(let n=61;n<=71;n++) if(byN[n]!=='done') fail(`Sprint ${n} must be done`);
-for(let n=72;n<=150;n++) if(byN[n]!=='not_started') fail(`Sprint ${n} must be not_started`);
+if(byN[72]!=='done') fail('Sprint 72 must be done');
+for(let n=73;n<=150;n++) if(byN[n]!=='not_started') fail(`Sprint ${n} must be not_started`);
 ok('Roadmap CSV statuses valid');
 const queue=fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md','utf8');
 if(!/### Sprint 71[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 71 must be done in MASTER_SPRINT_QUEUE');
-if(!/### Sprint 72[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('Sprint 72 must be not started in MASTER_SPRINT_QUEUE');
+if(!/### Sprint 72[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 72 must be done in MASTER_SPRINT_QUEUE');
 if(queue.includes('not_started')) fail('MASTER_SPRINT_QUEUE must not use not_started token');
 for(const phrase of ['Sprint 14 — Test Harness Reliability and Coverage Targets','not completed; deferred intentionally','Sprint 15 — Developer Environment Bootstrap Guide','conditional no-go pending manual iPhone QA evidence']) if(!queue.includes(phrase)) fail(`Queue missing ${phrase}`);
 ok('MASTER_SPRINT_QUEUE governance checks passed');

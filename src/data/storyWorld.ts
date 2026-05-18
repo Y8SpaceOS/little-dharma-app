@@ -1,5 +1,6 @@
 import { type ChildAgeBand } from '@/lib/childProfile';
 import { getVrindavanJourneyPath } from '@/services/journeys';
+import { getContentPacksForDharmaJourneys, getContentPacksForStoryWorld } from '@/lib/contentPacks';
 
 export type StoryWorldStatus = 'available' | 'coming_soon';
 export type StoryWorldSectionId =
@@ -59,6 +60,9 @@ const journeyStories = getVrindavanJourneyPath().map((packet, index): StoryWorld
   sectionId: index < 3 ? 'start-here' : 'krishna'
 }));
 
+const storyWorldPackCount = getContentPacksForStoryWorld().length;
+const journeyPackCount = getContentPacksForDharmaJourneys().length;
+
 export const storyWorldSections: StoryWorldSection[] = [
   { id: 'start-here', title: 'Start Here', subtitle: 'Your warm first story corners.' },
   { id: 'krishna', title: 'Krishna Stories', subtitle: 'Playful wisdom from Krishna\'s world.' },
@@ -66,7 +70,7 @@ export const storyWorldSections: StoryWorldSection[] = [
   { id: 'bedtime', title: 'Bedtime Stories', subtitle: 'Calm stories for quiet evenings.' },
   { id: 'values', title: 'Values Stories', subtitle: 'Small moments that grow big hearts.' },
   { id: 'festivals', title: 'Festival Stories', subtitle: 'Opening soon · festive story corners.' },
-  { id: 'dharma-journeys', title: 'Dharma Journeys', subtitle: 'Story paths arriving soon.' }
+  { id: 'dharma-journeys', title: 'Dharma Journeys', subtitle: `${journeyPackCount} local journey packs planned with care.` }
 ];
 
 const comingSoonJourneys: StoryWorldItem[] = [
@@ -81,7 +85,7 @@ const comingSoonJourneys: StoryWorldItem[] = [
   id: `journey-preview-${index + 1}`,
   title,
   shortTitle: title,
-  summary: 'A story path is being prepared with care.',
+  summary: `A local-first journey pack is being prepared with care (${storyWorldPackCount} story world packs in planning).`,
   sourceTradition: 'Dharma Journeys',
   ageBands: ['3-5', '6-8', '9-12', 'prefer-not-to-say'],
   durationMinutes: 8,
