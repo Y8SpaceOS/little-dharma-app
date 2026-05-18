@@ -149,7 +149,7 @@ function TreasuresScreenContent() {
             <Text style={styles.emptyCopy}>Complete a story to save your first blessing.</Text>
             <Text style={styles.emptyLuvlu}>Luvlu says: Let us find your first story memory.</Text>
             <View style={styles.emptyActions}>
-              <Link href='/(child)/world' style={styles.primaryCta} accessibilityRole='link' accessibilityLabel='Go to Story World'>Go to Story World</Link>
+              <Link href='/(child)/worlds' style={styles.primaryCta} accessibilityRole='link' accessibilityLabel='Go to Story World'>Go to Story World</Link>
               <Link href='/(child)/today' style={styles.secondaryCta} accessibilityRole='link' accessibilityLabel="Start Today's story from Child Home">Start Today’s Story</Link>
             </View>
           </View>
@@ -182,7 +182,7 @@ function TreasuresScreenContent() {
                         <Text style={styles.memoryMeta}>Story: {packet.story.title}</Text>
                         <Text style={styles.memoryMeta}>Value practiced: {packet.story.value}</Text>
                         <Text style={styles.memoryMeta}>Blessing saved: {earnedDate}</Text>
-                        <Link href={`/world/${packet.story.slug}`} style={styles.revisitLink} accessibilityRole='link' accessibilityLabel={`Revisit ${packet.story.title}`}>Revisit story</Link>
+                        <Link href={`/story/${packet.story.slug}`} style={styles.revisitLink} accessibilityRole='link' accessibilityLabel={`Revisit ${packet.story.title}`}>Revisit story</Link>
                       </View>
                     );
                   })}
