@@ -78,6 +78,7 @@ function DashboardScreenContent() {
 
     <View style={styles.privacyCard}><Text style={styles.privacyTitle}>Privacy note</Text><Text style={styles.privacyText}>{summary.privacyPromise}</Text></View>
 
+    <Link href='/(parent)/controls' style={styles.button} accessibilityRole='link' accessibilityLabel='Open Parent Controls'>Parent Controls — Review child profile, helper prompts, and local privacy settings</Link>
     <Link href='/(parent)/privacy' style={styles.button} accessibilityRole='link' accessibilityLabel='Open Trust and Privacy Center'>Open Trust & Privacy Center</Link>
     <Link href='/(parent)/feedback' style={styles.button} accessibilityRole='link' accessibilityLabel='Open Parent Feedback Capture'>Open Parent Feedback Capture</Link>
     <Link href='/onboarding' style={styles.button} accessibilityRole='link' accessibilityLabel='Edit onboarding settings'>Edit Onboarding</Link>

@@ -32,13 +32,11 @@ const rows = csv.map((line) => {
 for (let s = 61; s <= 150; s += 1) {
   if (!rows.find((r) => r.sprint === s)) fail(`Roadmap CSV missing sprint row ${s}.`);
 }
-[61,62,63,64,65,66].forEach((s) => {
+[61,62,63,64,65,66,67,68,69,70].forEach((s) => {
   const r = rows.find((x) => x.sprint === s);
   if (!r || r.status !== 'done') fail(`Sprint ${s} must be done in roadmap CSV.`);
 });
-{ const r = rows.find((x) => x.sprint === 67); if (!r || r.status !== 'done') fail('Sprint 67 must be done in roadmap CSV.'); }
-{ const r = rows.find((x) => x.sprint === 69); if (!r || r.status !== 'done') fail('Sprint 69 must be done in roadmap CSV.'); }
-for (let s = 70; s <= 150; s += 1) {
+for (let s = 71; s <= 150; s += 1) {
   const r = rows.find((x) => x.sprint === s);
   if (!r || r.status !== 'not_started') fail(`Sprint ${s} must remain not_started in roadmap CSV.`);
 }
@@ -68,7 +66,9 @@ if (!sprint67Section.includes('- **Status:** done')) fail('Sprint 67 section mus
 { const r = rows.find((x) => x.sprint === 67); if (!r || r.status !== 'done') fail('Sprint 67 must be done in roadmap CSV.'); }
 const sprint69Section = extractSprintSection(queueRaw, 69);
 if (!sprint69Section || !sprint69Section.includes('- **Status:** done')) fail('Sprint 69 section must contain status done.');
-for (let s = 70; s <= 150; s += 1) {
+const sprint70Section = extractSprintSection(queueRaw, 70);
+if (!sprint70Section || !sprint70Section.includes('- **Status:** done')) fail('Sprint 70 section must contain status done.');
+for (let s = 71; s <= 150; s += 1) {
   const section = extractSprintSection(queueRaw, s);
   if (section && !section.includes('- **Status:** not started')) {
     fail(`Sprint ${s} section must remain not started in MASTER_SPRINT_QUEUE.`);

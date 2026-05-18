@@ -33,7 +33,7 @@ if (map.get(65) !== 'done') throw new Error('Sprint 65 must be done.');
 if (map.get(66) !== 'done') throw new Error('Sprint 66 must be done.');
 if (map.get(67) !== 'done') throw new Error('Sprint 67 must be done.');
 if (map.get(69) !== 'done') throw new Error('Sprint 69 must be done.');
-for (let sprint = 70; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
+for (let sprint = 71; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 const extractSprintSection = (queueText, sprintNumber) => {
@@ -50,7 +50,7 @@ for (const sprint of [64, 65, 66, 67, 68, 69]) {
   if (!section || !section.includes('- **Status:** done')) throw new Error(`MASTER_SPRINT_QUEUE must mark Sprint ${sprint} done.`);
 }
 const sprint70Section = extractSprintSection(queue, 70);
-if (!sprint70Section || !sprint70Section.includes('- **Status:** not started')) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 70 not started.');
+if (!sprint70Section || !sprint70Section.includes('- **Status:** done')) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 70 done.');
 if (!/Sprint 14[\s\S]*deferred intentionally/.test(queue) || !/Sprint 15[\s\S]*deferred intentionally/.test(queue)) throw new Error('Sprint 14/15 deferred state missing.');
 
 const taskLog = fs.readFileSync('docs/TASK_LOG.md', 'utf8');
