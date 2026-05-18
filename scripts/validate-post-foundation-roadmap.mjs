@@ -37,7 +37,11 @@ const s66=rows.find(r=>r.n===66);
 if (s66?.status!=='done') fail('Sprint 66 status must be done');
 const s67=rows.find(r=>r.n===67);
 if (s67?.status!=='done') fail('Sprint 67 status must be done');
-for (let n = 69; n <= 150; n += 1) {
+const s68=rows.find(r=>r.n===68);
+if (s68?.status!=='done') fail('Sprint 68 status must be done');
+const s69=rows.find(r=>r.n===69);
+if (s69?.status!=='done') fail('Sprint 69 status must be done');
+for (let n = 70; n <= 150; n += 1) {
   const row = rows.find((r) => r.n === n);
   if (row?.status !== 'not_started') fail(`Sprint ${n} must remain not_started`);
 }
