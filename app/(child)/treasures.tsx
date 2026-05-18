@@ -117,14 +117,14 @@ function TreasuresScreenContent() {
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.title}>My Treasures ✨</Text>
-        <Text style={styles.subtitle}>Your Story Memories and blessings are held here with care.</Text>
+        <Text style={styles.subtitle}>Your Story Memories and values are held here with care.</Text>
 
         <View style={styles.heroCard}>
           {isLoading ? (
             <CalmLoadingState surfaceName='My Treasures summary' audience='child' variant='inline' />
           ) : (
             <>
-              <Text style={styles.heroEyebrow}>Your Story Memories</Text>
+              <Text style={styles.heroEyebrow}>Your values are growing</Text>
               <Text style={styles.heroTitle}>{completedCount} of {totalCount} story memories saved</Text>
               <Text style={styles.heroCopy}>
                 {completedCount === 0
@@ -140,14 +140,14 @@ function TreasuresScreenContent() {
         <Text style={styles.sectionSubtitle}>Earned Badges become story memories here. Vrindavan memories saved stay Private on this device.</Text>
         <View style={styles.luvluCard}>
           <Text style={styles.luvluTitle}>🦚 Luvlu</Text>
-          <Text style={styles.luvluCopy}>Luvlu says: These are your gentle story memories. Open a treasure and remember what your heart learned.</Text>
+          <Text style={styles.luvluCopy}>Luvlu says: Every kind story helps your garden grow. Choose one value to remember today.</Text>
         </View>
 
         {completedCount === 0 ? (
           <View style={styles.emptyCard}>
-            <Text style={styles.emptyTitle}>Your treasure chest is waiting</Text>
-            <Text style={styles.emptyCopy}>Complete a story to save your first blessing.</Text>
-            <Text style={styles.emptyLuvlu}>Luvlu says: Let us find your first story memory.</Text>
+            <Text style={styles.emptyTitle}>Your garden is ready to grow</Text>
+            <Text style={styles.emptyCopy}>Complete a story to plant your first value seed.</Text>
+            <Text style={styles.emptyLuvlu}>Luvlu says: Let us find your first kindness flower.</Text>
             <View style={styles.emptyActions}>
               <Link href='/(child)/worlds' style={styles.primaryCta} accessibilityRole='link' accessibilityLabel='Go to Story World'>Go to Story World</Link>
               <Link href='/(child)/today' style={styles.secondaryCta} accessibilityRole='link' accessibilityLabel="Start Today's story from Child Home">Start Today’s Story</Link>
@@ -157,6 +157,7 @@ function TreasuresScreenContent() {
           <>
             <View style={styles.sectionCard}>
               <Text style={styles.sectionTitle}>Values Garden • Values you practiced</Text>
+              <Text style={styles.sectionSubtitle}>Flowers that have bloomed from your completed stories. Kindness Flower • Courage Diya • Gratitude Leaf • Truth Lotus.</Text>
               <View style={styles.valueWrap}>
                 {valueGarden.map((entry) => (
                   <View key={entry.value} style={styles.valueChip}>
@@ -168,7 +169,8 @@ function TreasuresScreenContent() {
             </View>
 
             <View style={styles.sectionCard}>
-              <Text style={styles.sectionTitle}>Story flowers in your memory garden</Text>
+              <Text style={styles.sectionTitle}>Story memories that helped this garden</Text>
+              <Text style={styles.sectionSubtitle}>Story memories help your garden grow. Your blessings and values stay together.</Text>
               {groupedByValue.map((section) => (
                 <View key={section.value} style={styles.memorySection}>
                   <Text style={styles.memorySectionTitle}>{section.icon} {section.heading}</Text>
@@ -193,8 +195,9 @@ function TreasuresScreenContent() {
         )}
 
         <View style={styles.wordsCard}>
-          <Text style={styles.sectionTitle}>Words I Carry</Text>
-          <Text style={styles.sectionSubtitle}>Gentle words from your stories.</Text>
+          <Text style={styles.sectionTitle}>One value for today</Text>
+          <Text style={styles.sectionSubtitle}>Words I Carry from your story garden.</Text>
+          <Text style={styles.sectionSubtitle}>Choose one gentle value to remember before sleep.</Text>
           {wordsICarry.length === 0 ? <Text style={styles.wordsEmpty}>Your carrying word will appear after your first completed story.</Text> : (
             <View style={styles.wordsWrap}>
               {wordsICarry.map((word) => <View key={word} style={styles.wordChip}><Text style={styles.wordChipText}>{word}</Text></View>)}
@@ -203,7 +206,22 @@ function TreasuresScreenContent() {
           {latestCarryingWord ? <Text style={styles.latestWord}>Latest carrying word: {latestCarryingWord}</Text> : null}
         </View>
 
-        <Text style={styles.privacyNote}>Treasures stay on this device. No public child profile. These are gentle story memories, not competitive rewards.</Text>
+        <View style={styles.bridgeCard}>
+          <Text style={styles.bridgeTitle}>My Treasures bridge</Text>
+          <Text style={styles.bridgeCopy}>See the story memories behind these values in My Treasures and Story World.</Text>
+          <View style={styles.emptyActions}>
+            <Link href='/(child)/treasures' style={styles.secondaryCta} accessibilityRole='link' accessibilityLabel='Open My Treasures'>Open My Treasures</Link>
+            <Link href='/(child)/worlds' style={styles.secondaryCta} accessibilityRole='link' accessibilityLabel='Go back to Story World'>Go to Story World</Link>
+          </View>
+        </View>
+
+        <View style={styles.parentPromptCard}>
+          <Text style={styles.parentPromptTitle}>Parent-child prompt</Text>
+          <Text style={styles.parentPromptCopy}>Ask your child: Where did we see kindness today?</Text>
+        </View>
+
+
+        <Text style={styles.privacyNote}>Values are based on stories completed on this device. No public child profile. This garden is for reflection, not competition.</Text>
       </ScrollView>
     </SafeAreaView>
   );
@@ -248,6 +266,13 @@ const styles = StyleSheet.create({
   wordChip: { backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: '#E5D9F9', borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6 },
   wordChipText: { fontSize: 13, fontWeight: '700', color: '#5A4682' },
   latestWord: { fontSize: 14, color: '#355D3D' },
+
+  bridgeCard: { backgroundColor: '#EDF8EE', borderRadius: 20, borderWidth: 1, borderColor: '#CDE9D2', padding: tokens.spacing.lg, gap: 8 },
+  bridgeTitle: { fontSize: 20, fontWeight: '800', color: '#2E5D35' },
+  bridgeCopy: { fontSize: 14, lineHeight: 20, color: '#3F6A45' },
+  parentPromptCard: { backgroundColor: '#FFF8E8', borderRadius: 20, borderWidth: 1, borderColor: '#F1DEB6', padding: tokens.spacing.lg, gap: 6 },
+  parentPromptTitle: { fontSize: 18, fontWeight: '800', color: '#5A361D' },
+  parentPromptCopy: { fontSize: 15, lineHeight: 21, color: '#6D4B2C' },
   privacyNote: { marginTop: 6, fontSize: 13, lineHeight: 19, color: '#735A42' }
 });
 

@@ -32,12 +32,13 @@ const roadmapStatus = new Map(rows.map((line) => {
 }));
 
 for (let sprint = 61; sprint <= 150; sprint += 1) if (!roadmapStatus.has(sprint)) fail(`Missing sprint row ${sprint}`);
-for (let sprint = 61; sprint <= 68; sprint += 1) if (roadmapStatus.get(sprint) !== 'done') fail(`Sprint ${sprint} must be done`);
-for (let sprint = 69; sprint <= 150; sprint += 1) if (roadmapStatus.get(sprint) !== 'not_started') fail(`Sprint ${sprint} must be not_started`);
+for (let sprint = 61; sprint <= 69; sprint += 1) if (roadmapStatus.get(sprint) !== 'done') fail(`Sprint ${sprint} must be done`);
+for (let sprint = 70; sprint <= 150; sprint += 1) if (roadmapStatus.get(sprint) !== 'not_started') fail(`Sprint ${sprint} must be not_started`);
 
 const queueText = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!/### Sprint 68[\s\S]*?- \*\*Status:\*\* done/.test(queueText)) fail('Sprint 68 done missing in queue section');
-if (!/### Sprint 69[\s\S]*?- \*\*Status:\*\* not started/.test(queueText)) fail('Sprint 69 not started missing in queue section');
+if (!/### Sprint 69[\s\S]*?- \*\*Status:\*\* done/.test(queueText)) fail('Sprint 69 done missing in queue section');
+if (!/### Sprint 70[\s\S]*?- \*\*Status:\*\* not_started/.test(queueText) && !/### Sprint 70[\s\S]*?- \*\*Status:\*\* not started/.test(queueText)) fail('Sprint 70 not started missing in queue section');
 if (!queueText.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queueText.includes('Sprint 15 — Developer Environment Bootstrap Guide') || !queueText.includes('not completed; deferred intentionally')) {
   fail('Sprint 14/15 deferred state missing');
 }

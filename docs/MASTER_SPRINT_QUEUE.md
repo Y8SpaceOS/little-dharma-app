@@ -851,10 +851,11 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Upgraded My Treasures into a warm story-memory chest with blessings, diyas, value-grouped memory cards, Luvlu helper guidance, and parent-trust microcopy using local completion data only.
 
 ### Sprint 69 — Values Garden Depth v2
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Deepened Values Garden into a warm child-facing garden-of-values layer within the existing child experience using local completion data, Luvlu helper guidance, parent-child reflection prompt, gentle My Treasures bridge, hopeful empty state, and privacy-safe non-competitive microcopy while preserving existing behavior.
 
 ### Sprint 70 — Parent Controls v1
-- **Status:** not started
+- **Status:** not_started
 
 ### Sprint 71 — Parent Journey Settings + Dharma Journey Data Model v1
 - **Status:** not started

@@ -1,0 +1,15 @@
+qaArea,surface,expectedBehavior,status,notes
+render,Values Garden surface,Screen loads without crash,pass,Validated by automated checks
+visual_language,Values Garden hero,Uses warm child-friendly garden language and layout,pass,Includes values-growing framing
+metaphor,value cards,Uses flower seed leaf lotus diya value metaphors,pass,Present in section copy and grouping labels
+data,value cards,Shows values from local completed stories when available,pass,Uses local completion map only
+story_context,value cards,Shows story count and/or story titles for practiced values,pass,Story count chips and memory cards
+empty_state,no completions,Shows hopeful garden-ready empty state and CTA,pass,Points to Story World and Today
+luvlu,helper guidance,Luvlu copy is brief helpful non-dominant,pass,Short helper card and empty-state line
+parent_prompt,reflection,Contains one short parent-child reflection prompt,pass,Kindness prompt included
+trust,privacy microcopy,Local-first non-public non-competitive trust note appears,pass,Footer trust microcopy
+bridge,my treasures bridge,Bridge copy and CTA to My Treasures and Story World,pass,Gentle bridge card present
+gamification_guard,content,No XP coins streak leaderboard pressure language,pass,Validator enforces forbidden terms
+audio_guard,content,No microphone recording permission/audio recording scope,pass,Validator scans source and docs
+scope_guard,platform,No backend auth cloud sync cms analytics telemetry,pass,No architecture additions
+roadmap,governance,Sprint 69 done and Sprint 70+ not_started,pass,Validated in roadmap and queue checks
