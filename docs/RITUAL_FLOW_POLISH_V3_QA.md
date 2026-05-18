@@ -10,8 +10,8 @@ Date: 2026-05-18
 - [x] Ritual has a clear child-friendly title and short explanation.
 - [x] Ritual has simple, age-appropriate three-step structure (pause/breathe, think/reflect, thank/bless).
 - [x] Ritual connects to story/value context when available.
-- [x] Moru guidance appears as short helper copy where useful.
-- [x] Moru does not dominate the ritual flow or interrupt pacing.
+- [x] Luvlu guidance appears as short helper copy where useful.
+- [x] Luvlu does not dominate the ritual flow or interrupt pacing.
 - [x] No actual audio playback, microphone permission, or recording added.
 - [x] Parent-child prompt exists and remains brief.
 - [x] Completion language uses diya/blessing/gratitude framing (no XP/coins/streaks).
@@ -27,4 +27,4 @@ Date: 2026-05-18
 ## Notes
 
 - Sprint scope intentionally limited to ritual flow polish and governance/QA validator updates.
-- Moru appears as lightweight text guide only; no narrator/audio implementation was introduced.
+- Luvlu appears as lightweight text guide only; no narrator/audio implementation was introduced.

@@ -48,7 +48,8 @@ for (const s of [61, 62, 63, 64, 65]) {
   if (bySprint.get(s)[6] !== 'done') throw new Error(`Sprint ${s} must be done in roadmap csv`);
 }
 if (bySprint.get(66)[6] !== 'done') throw new Error('Sprint 66 must be done');
-for (let i = 67; i <= 150; i += 1) {
+if (bySprint.get(67)[6] !== 'done') throw new Error('Sprint 67 must be done');
+for (let i = 68; i <= 150; i += 1) {
   if (bySprint.get(i)[6] !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
 }
 

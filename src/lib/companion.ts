@@ -1,6 +1,8 @@
 export const companionV1 = {
   internalId: 'companion-v1',
-  displayLabel: 'Little Dharma Guide',
+  displayLabel: 'Luvlu',
+  species: 'peacock',
+  role: 'gentle guide',
   motif: '✧',
   copy: {
     homeGreeting: "Hi, I'm your Companion. Today we can take one small Journey together.",

@@ -31,12 +31,15 @@ for (let sprint = 61; sprint <= 150; sprint += 1) if (!map.has(sprint)) throw ne
 [61, 62, 63, 64].forEach((s) => { if (map.get(s) !== 'done') throw new Error(`Sprint ${s} must be done.`); });
 if (map.get(65) !== 'done') throw new Error('Sprint 65 must be done.');
 if (map.get(66) !== 'done') throw new Error('Sprint 66 must be done.');
-for (let sprint = 67; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
+if (map.get(67) !== 'done') throw new Error('Sprint 67 must be done.');
+for (let sprint = 68; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!/Sprint 64[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 64 done.');
 if (!/Sprint 65[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 65 done.');
-if (!/Sprint 66[\s\S]*?\*\*Status:\*\* not started/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must keep Sprint 66 not started.');
+if (!/Sprint 66[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 66 done.');
+if (!/Sprint 67[\s\S]*?\*\*Status:\*\* done/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must mark Sprint 67 done.');
+if (!/Sprint 68[\s\S]*?\*\*Status:\*\* not started/.test(queue)) throw new Error('MASTER_SPRINT_QUEUE must keep Sprint 68 not started.');
 if (!/Sprint 14[\s\S]*deferred intentionally/.test(queue) || !/Sprint 15[\s\S]*deferred intentionally/.test(queue)) throw new Error('Sprint 14/15 deferred state missing.');
 
 const taskLog = fs.readFileSync('docs/TASK_LOG.md', 'utf8');

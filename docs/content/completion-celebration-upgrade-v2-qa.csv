@@ -1,0 +1,12 @@
+qa_id,area,assertion,status,notes
+CC67-01,completion,Completion screen renders successfully after story flow,pending_manual_qa,Manual iPhone QA required
+CC67-02,completion,Completion uses warm ceremonial child-facing style,pending_manual_qa,
+CC67-03,content,Completion uses diya flower blessing story-memory language,pending_manual_qa,
+CC67-04,content,Story value aware copy with fallback when missing,pending_manual_qa,
+CC67-05,luvlu,Short Luvlu completion guidance present and non-dominant,pending_manual_qa,
+CC67-06,parent,Parent-child reflection prompt is present and brief,pending_manual_qa,
+CC67-07,cta,Next actions are clear and non-addictive,pending_manual_qa,
+CC67-08,bridge,My Treasures and Values Garden bridge remains soft,pending_manual_qa,
+CC67-09,scope,No audio playback microphone or recording added,pass,Verified by code scan
+CC67-10,scope,No XP coins streak leaderboard language added,pass,Verified by code scan
+CC67-11,scope,No backend auth cloud sync cms analytics telemetry monetisation added,pass,No such changes in sprint
