@@ -1,0 +1,18 @@
+id,area,check,status,notes
+CPA72-001,model,ContentPack model includes required fields,pass,src/lib/contentPacks.ts
+CPA72-002,seed,Krishna Stories pack seeded,pass,status available
+CPA72-003,seed,Ganesha Stories pack seeded,pass,status planned
+CPA72-004,seed,Hanuman Stories pack seeded,pass,status planned
+CPA72-005,seed,Festival Stories pack seeded,pass,status planned
+CPA72-006,seed,Bedtime Stories pack seeded,pass,status planned
+CPA72-007,seed,Values Stories pack seeded,pass,status planned
+CPA72-008,seed,Ramayana Journey Pack seeded,pass,status planned
+CPA72-009,seed,Krishna Childhood Journey Pack seeded,pass,status planned
+CPA72-010,seed,Mahabharata Journey Pack seeded,pass,status coming_later
+CPA72-011,seed,Bhagavad Gita for Children Pack seeded,pass,status coming_later
+CPA72-012,helpers,Content pack helper functions implemented,pass,pure local helpers only
+CPA72-013,architecture,story_world and dharma_journey distinction present,pass,source + docs updated
+CPA72-014,guardrails,Editorial and parent-trust guardrails documented,pass,QA + architecture docs
+CPA72-015,scope,No backend auth cloud sync CMS analytics telemetry monetisation,pass,local-first only
+CPA72-016,scope,No full journey runtime/map and no large content pack addition,pass,metadata foundation only
+CPA72-017,governance,Sprint 72 marked done and Sprint 73+ unchanged states,pass,queue + roadmap csv updated

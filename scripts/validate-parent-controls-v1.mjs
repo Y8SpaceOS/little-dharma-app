@@ -33,13 +33,14 @@ const rows = csv.slice(1).map(r=>({n:Number(r[h.sprintNumber]),status:r[h.status
 for(let n=61;n<=150;n++) if(!rows.find(r=>r.n===n)) fail(`Missing sprint ${n} in roadmap CSV`);
 for(let n=61;n<=70;n++) if(rows.find(r=>r.n===n)?.status!=='done') fail(`Sprint ${n} must be done in CSV`);
 if(rows.find(r=>r.n===71)?.status!=='done') fail('Sprint 71 must be done in CSV');
-for(let n=72;n<=150;n++) if(rows.find(r=>r.n===n)?.status!=='not_started') fail(`Sprint ${n} must be not_started in CSV`);
+if(rows.find(r=>r.n===72)?.status!=='done') fail('Sprint 72 must be done in CSV');
+for(let n=73;n<=150;n++) if(rows.find(r=>r.n===n)?.status!=='not_started') fail(`Sprint ${n} must be not_started in CSV`);
 ok('Roadmap CSV statuses valid');
 
 const queue = fs.readFileSync(path.resolve('docs/MASTER_SPRINT_QUEUE.md'),'utf8');
 if(!/### Sprint 70[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 70 must be done in MASTER_SPRINT_QUEUE');
 if(!/### Sprint 71[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 71 must be done in MASTER_SPRINT_QUEUE');
-if(!/### Sprint 72[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('Sprint 72 must be not started in MASTER_SPRINT_QUEUE');
+if(!/### Sprint 72[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 72 must be done in MASTER_SPRINT_QUEUE');
 if(queue.includes('Status:** not_started')) fail('MASTER_SPRINT_QUEUE must use not started, not not_started');
 if(!queue.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queue.includes('Sprint 15 — Developer Environment Bootstrap Guide') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 14/15 deferred guard missing');
 if(!queue.toLowerCase().includes('conditional no-go') || !queue.toLowerCase().includes('manual iphone qa evidence')) fail('Sprint 60 conditional no-go language missing');

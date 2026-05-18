@@ -861,7 +861,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Status:** done
 
 ### Sprint 72 — Content Pack Architecture v2
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Implemented local-first Content Pack Architecture v2 with seeded story world + dharma journey pack metadata, pure helper APIs, parent-trust/editorial guardrails documentation, Sprint 72 QA artifacts, and validator coverage while preserving existing child and parent runtime behavior.
 
 ### Sprint 73 — Krishna Story Pack Expansion Planning
 - **Status:** not started
