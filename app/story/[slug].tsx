@@ -412,7 +412,7 @@ function StoryScreenContent() {
             </Text>
             <View style={styles.controls}>
               <Pressable style={styles.button} onPress={() => { setPanelIndex(0); setSelectedAnswer(null); setIsCorrect(false); setStage('story'); }}>
-                <Text style={styles.buttonText}>Read another story</Text>
+                <Text style={styles.buttonText}>Read this story again</Text>
               </Pressable>
               <Pressable style={styles.buttonSecondary} onPress={() => router.push('/(child)/today')}>
                 <Text style={styles.buttonSecondaryText}>Go to Child Home</Text>
