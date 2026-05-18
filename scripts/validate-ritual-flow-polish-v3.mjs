@@ -32,11 +32,11 @@ const rows = csv.map((line) => {
 for (let s = 61; s <= 150; s += 1) {
   if (!rows.find((r) => r.sprint === s)) fail(`Roadmap CSV missing sprint row ${s}.`);
 }
-[61,62,63,64,65,66,67,68,69,70].forEach((s) => {
+[61,62,63,64,65,66,67,68,69,70,71].forEach((s) => {
   const r = rows.find((x) => x.sprint === s);
   if (!r || r.status !== 'done') fail(`Sprint ${s} must be done in roadmap CSV.`);
 });
-for (let s = 71; s <= 150; s += 1) {
+for (let s = 72; s <= 150; s += 1) {
   const r = rows.find((x) => x.sprint === s);
   if (!r || r.status !== 'not_started') fail(`Sprint ${s} must remain not_started in roadmap CSV.`);
 }
