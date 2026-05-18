@@ -64,7 +64,8 @@ const rows = roadmap.slice(1).map((r) => r.split(','));
 const bySprint = new Map(rows.map((r) => [Number(r[0]), r]));
 for (let s = 61; s <= 150; s++) if (!bySprint.has(s)) fail(`Roadmap CSV missing sprint ${s}`);
 for (let s = 61; s <= 69; s++) if ((bySprint.get(s)?.[statusIdx] ?? '').trim() !== 'done') fail(`Sprint ${s} must be done`);
-for (let s = 71; s <= 150; s++) if ((bySprint.get(s)?.[statusIdx] ?? '').trim() !== 'not_started') fail(`Sprint ${s} must be not_started`);
+if ((bySprint.get(71)?.[statusIdx] ?? '').trim() !== 'done') fail('Sprint 71 must be done');
+for (let s = 72; s <= 150; s++) if ((bySprint.get(s)?.[statusIdx] ?? '').trim() !== 'not_started') fail(`Sprint ${s} must be not_started`);
 
 const taskLog = read('docs/TASK_LOG.md');
 if (!/Sprint 69/i.test(taskLog)) fail('TASK_LOG missing Sprint 69 entry');

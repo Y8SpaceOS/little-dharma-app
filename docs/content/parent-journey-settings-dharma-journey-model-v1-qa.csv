@@ -1,0 +1,8 @@
+check,status,notes
+DharmaJourney model required fields,pass,Implemented in src/lib/dharmaJourneys.ts
+JourneyProgress foundation,pass,Type plus local helpers in src/lib/journeyProgress.ts
+Seeded journeys baseline,pass,Ramayana Krishna Childhood Ganesha Festival Hanuman Mahabharata Bhagavad Gita for Children
+Parent Journey Settings route and entry points,pass,Route plus links from Parent Dashboard and Parent Controls
+Parent copy local-first privacy-safe,pass,On-device progress no public child profile copy included
+Guardrails and sequencing guidance,pass,Ramayana Krishna first and editorial safety constraints documented
+Forbidden scope excluded,pass,No backend auth cloud sync cms analytics telemetry audio recording or gamification added

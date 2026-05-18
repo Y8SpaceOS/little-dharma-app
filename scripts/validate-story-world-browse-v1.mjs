@@ -36,7 +36,8 @@ if (rows.find((r) => r.sprintNumber === 65)?.status !== 'done') throw new Error(
 if (rows.find((r) => r.sprintNumber === 66)?.status !== 'done') throw new Error('Sprint 66 must be done');
 if (rows.find((r) => r.sprintNumber === 67)?.status !== 'done') throw new Error('Sprint 67 must be done');
 if (rows.find((r) => r.sprintNumber === 69)?.status !== 'done') throw new Error('Sprint 69 must be done');
-for (let i = 71; i <= 150; i++) if (rows.find((r) => r.sprintNumber === i)?.status !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
+if (rows.find((r) => r.sprintNumber === 71)?.status !== 'done') throw new Error('Sprint 71 must be done');
+for (let i = 72; i <= 150; i++) if (rows.find((r) => r.sprintNumber === i)?.status !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
 
 const roadmapText = readFileSync('docs/POST_FOUNDATION_PRODUCT_BUILD_ROADMAP.md', 'utf8');
 for (const phrase of ['Story World Browse v1', 'Dharma Journey Data Model', 'Story Audio Foundation', 'Ramayana Journey', 'Bhagavad Gita for Children', 'Mahabharata']) {
@@ -69,7 +70,9 @@ const s67Section = extractSprintSection(master, 67);
 if (s67Section && !s67Section.includes('- **Status:** done')) throw new Error('Sprint 67 must be marked done in MASTER_SPRINT_QUEUE');
 const s69Section = extractSprintSection(master, 69);
 if (!s69Section || !s69Section.includes('- **Status:** done')) throw new Error('Sprint 69 must be marked done in MASTER_SPRINT_QUEUE');
-for (let sprint = 71; sprint <= 150; sprint += 1) {
+const s71Section = extractSprintSection(master, 71);
+if (s71Section && !s71Section.includes('- **Status:** done')) throw new Error('Sprint 71 must be marked done in MASTER_SPRINT_QUEUE');
+for (let sprint = 72; sprint <= 150; sprint += 1) {
   const section = extractSprintSection(master, sprint);
   if (section && !section.includes('- **Status:** not started')) {
     throw new Error(`Sprint ${sprint} must be marked not started in MASTER_SPRINT_QUEUE`);

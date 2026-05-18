@@ -74,12 +74,14 @@ const comingSoonJourneys: StoryWorldItem[] = [
   'Krishna Childhood Journey',
   'Ganesha Wisdom Journey',
   'Bhagavad Gita for Children',
-  'Mahabharata Journey'
+  'Mahabharata Journey',
+  'Festival Journey',
+  'Hanuman Journey'
 ].map((title, index) => ({
   id: `journey-preview-${index + 1}`,
   title,
   shortTitle: title,
-  summary: 'This story corner is being prepared with care.',
+  summary: 'A story path is being prepared with care.',
   sourceTradition: 'Dharma Journeys',
   ageBands: ['3-5', '6-8', '9-12', 'prefer-not-to-say'],
   durationMinutes: 8,
