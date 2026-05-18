@@ -49,9 +49,13 @@ const sprint70Section = extractSprintSection(queue, 70);
 if (!sprint70Section) fail('MASTER_SPRINT_QUEUE missing Sprint 70 section');
 if (!sprint70Section.includes('- **Status:** done')) fail('Sprint 70 section must contain status done');
 
-for (let sprint = 71; sprint <= 150; sprint += 1) {
+const sprint71Section = extractSprintSection(queue, 71);
+if (!sprint71Section) fail('MASTER_SPRINT_QUEUE missing Sprint 71 section');
+if (!sprint71Section.includes('- **Status:** done')) fail('Sprint 71 section must contain status done');
+
+for (let sprint = 72; sprint <= 150; sprint += 1) {
   const section = extractSprintSection(queue, sprint);
-  if (section && section.includes('- **Status:** done')) fail(`Sprint ${sprint} must not be done in MASTER_SPRINT_QUEUE`);
+  if (section && !section.includes('- **Status:** not started')) fail(`Sprint ${sprint} must remain not started in MASTER_SPRINT_QUEUE`);
 }
 
 if (!/Sprint 14[\s\S]*deferred intentionally/i.test(queue) || !/Sprint 15[\s\S]*deferred intentionally/i.test(queue)) fail('Sprint 14/15 must remain deferred');
