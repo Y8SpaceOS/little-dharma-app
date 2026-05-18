@@ -1,0 +1,14 @@
+id,area,check,status,notes
+PC70-001,Routing,Parent Controls screen renders successfully,pass,Route /(parent)/controls loads
+PC70-002,Routing,Parent Dashboard has Parent Controls entry point,pass,Dashboard contains parent-facing controls CTA
+PC70-003,Profile,Child profile summary appears where profile data exists,pass,Nickname age-band parent-intent copy included
+PC70-004,Profile,Broad age-band explanation is visible,pass,Includes no exact-age language
+PC70-005,Companion,Luvlu helper control copy is clear and non-pressure,pass,Text-only helper control with local toggle
+PC70-006,Audio Safety,No audio playback/microphone/recording added,pass,Voice marked coming later
+PC70-007,Bedtime,Bedtime calm preference is local-first and no notifications,pass,No schedule/notification behavior introduced
+PC70-008,Trust,Privacy copy states local-first on-device behavior,pass,No public child profile language present
+PC70-009,Platform,No backend/auth/cloud sync/CMS added,pass,Local AsyncStorage only
+PC70-010,Policy,No analytics/telemetry/monetisation/beta-start/App Store submission added,pass,Forbidden scope preserved
+PC70-011,Reset,Reset copy is clear and safe,pass,Links to existing dashboard confirmation flow
+PC70-012,Regression,Child profile revisit and reset behavior remain stable,pass,Existing routes preserved
+PC70-013,Governance,Sprint 70 done and Sprint 71+ not started/not_started state is correct,pass,Roadmap artifacts updated
