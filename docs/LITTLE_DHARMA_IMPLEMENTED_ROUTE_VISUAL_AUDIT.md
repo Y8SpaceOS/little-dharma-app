@@ -45,3 +45,6 @@ This is a Sprint 76 visual QA repair audit. It does **not** claim full prototype
 Given manual QA findings, recommendation is to change next sprint label to:
 - **Sprint 77 — Onboarding + App Shell Visual Parity v1**
 instead of Child Home + Story World polish, because onboarding/app shell remain the largest parity gap.
+
+- 01 Splash / Distinct Brand Mark: documented mapping status in onboarding section.
+- 05 Choose First Companion / Luvlu Intro: documented mapping status in onboarding section.

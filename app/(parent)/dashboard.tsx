@@ -1,9 +1,17 @@
 import { Link } from 'expo-router';
+import { useEffect, useMemo, useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
+import { getParentDashboardSnapshot } from '@/services/progress';
 
 function DashboardScreenContent() {
+  const [summary, setSummary] = useState<Awaited<ReturnType<typeof getParentDashboardSnapshot>> | null>(null);
+  useEffect(() => { getParentDashboardSnapshot().then(setSummary).catch(() => setSummary(null)); }, []);
+  const storiesCompleted = summary?.storiesCompleted ?? 0;
+  const valuesTouched = useMemo(() => summary?.weeklyProgress.practicedValues?.length ?? 0, [summary]);
+  const journeyMetric = storiesCompleted > 0 ? summary?.weeklyProgress.completionLabel || `${storiesCompleted} stories` : 'No stories completed yet';
+  const timeMetric = storiesCompleted > 0 ? `${Math.max(1, storiesCompleted * 8)}m` : '—';
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
     <View style={[visualStyles.heroCard, { backgroundColor: '#F3E8D5' }]}>
       <Text style={styles.heading}>Your child&apos;s journey</Text>
@@ -11,13 +19,13 @@ function DashboardScreenContent() {
     </View>
 
     <View style={styles.metricsRow}>
-      <View style={[visualStyles.parentCard, styles.metric]}><Text style={styles.metricNum}>6</Text><Text style={styles.metricLabel}>Stories</Text></View>
-      <View style={[visualStyles.parentCard, styles.metric]}><Text style={styles.metricNum}>41m</Text><Text style={styles.metricLabel}>Journey time</Text></View>
-      <View style={[visualStyles.parentCard, styles.metric]}><Text style={styles.metricNum}>4</Text><Text style={styles.metricLabel}>Values touched</Text></View>
+      <View style={[visualStyles.parentCard, styles.metric]}><Text style={styles.metricNum}>{storiesCompleted}</Text><Text style={styles.metricLabel}>Stories completed</Text></View>
+      <View style={[visualStyles.parentCard, styles.metric]}><Text style={styles.metricNum}>{timeMetric}</Text><Text style={styles.metricLabel}>Journey time</Text></View>
+      <View style={[visualStyles.parentCard, styles.metric]}><Text style={styles.metricNum}>{valuesTouched || '—'}</Text><Text style={styles.metricLabel}>Values touched</Text></View>
     </View>
 
-    <View style={visualStyles.parentCard}><Text style={styles.section}>Journey progress</Text><Text style={styles.copy}>Ramayana path: 4 of 24 stories completed. Keep one gentle pace.</Text></View>
-    <View style={visualStyles.parentCard}><Text style={styles.section}>Top value this week</Text><Text style={styles.copy}>Courage through Krishna and Hanuman stories.</Text></View>
+    <View style={visualStyles.parentCard}><Text style={styles.section}>Journey progress</Text><Text style={styles.copy}>{journeyMetric}</Text><Text style={styles.copy}>{storiesCompleted > 0 ? 'Keep one gentle pace.' : 'Journey time will appear after stories are completed.'}</Text></View>
+    <View style={visualStyles.parentCard}><Text style={styles.section}>Values this week</Text><Text style={styles.copy}>{valuesTouched > 0 ? summary?.weeklyProgress.practicedValues.join(', ') : 'Values touched will appear as your child reads.'}</Text></View>
 
     <Text style={visualStyles.sectionHeader}>Parent trust</Text>
     <View style={visualStyles.parentCard}><Text style={styles.copy}>🔒 Local-first: child progress stays on this device.</Text><Text style={styles.copy}>🎙️ No microphone or recording in v1.</Text><Text style={styles.copy}>🧒 No public child profile.</Text><Text style={styles.copy}>🕊️ No ads, no leaderboards, no pressure loops.</Text></View>
