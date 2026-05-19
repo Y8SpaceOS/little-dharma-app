@@ -1,25 +1,54 @@
-# Little Dharma Prototype Visual Parity Foundation v1 QA (Sprint 76)
+# Sprint 76 Visual QA Failure Patch (Prototype Visual Parity Foundation v1)
+
+This update is an explicit **Sprint 76 visual QA failure patch** after manual QA reported that runtime visuals still felt too list-like and technical.
 
 ## Runtime surfaces implemented this sprint
-- Child Home (`app/(child)/today.tsx`): warm hero card, Luvlu helper bubble, parent-trust note card, rounded journey cards, softened section hierarchy.
-- Story World Browse (`app/(child)/worlds.tsx`): doorway-style hero, rounded world cards, chip system for age/value/duration, parent-trust treatment.
-- World Detail / empty state (`app/world/[slug].tsx`): warm doorway container and empty-state card treatment.
-- Story Detail (`app/story/[slug].tsx`): rounded warm cards, parent-trust note treatment, soft screen surface.
-- Visual system foundation (`src/design/visualSystem.ts`): warm palette, typography scale, rounded cards, CTA/chip styles, section header style, Luvlu bubble, parent-trust card, empty-state card.
+
+This visual QA failure patch was implemented this sprint across the listed runtime surfaces.
+
+## Screens changed
+- `app/_layout.tsx` (hide route/debug headers)
+- `app/(child)/today.tsx`
+- `app/(child)/worlds.tsx`
+- `app/world/[slug].tsx`
+- `app/(parent)/dashboard.tsx`
+- `src/design/visualSystem.ts`
+
+## Prototype references used
+- 09 Child Home
+- 10 Story World Browse
+- 15 Krishna Stories Category
+- 16 Festival Doorway
+- 18 Empty/New Child State
+- 19 Dharma Journeys Hub
+- 22 Story Detail (partial in this patch)
+- 38 Parent Progress Dashboard
+- 40 Parent Controls
+
+## Visual changes made
+- Route/debug headers hidden from runtime shell.
+- Child Home rebuilt with warm greeting hero, journey hero card, Luvlu helper bubble, and 2x2 warm pathway doorway grid.
+- Story World rebuilt from text-list feeling into doorway card grid with icons and distinct surfaces.
+- World detail rebuilt with world-specific hero tone and structured story cards with separated chips/rows/CTA.
+- Parent Dashboard rebuilt into warm trust-first hierarchy with weekly metrics and trust cards.
+- Expanded shared warm visual system tokens and component styles.
+
+## Remaining parity gaps
+- Stronger Krishna/Ganesha/Bedtime/Journey motif depth with richer art anchors.
+- Advanced gradients and illustration anchors.
+- Doorway-art blocks and journey pathline visuals.
+- Richer treasures/collectible moments.
+- Full parent surface parity pass beyond dashboard.
+- Story Detail screen 22 parity still partial and needs deeper visual pass.
+
+## Manual QA checklist
+- [ ] No visible route/debug labels such as `(child)/today`.
+- [ ] Child Home feels warm, rounded, and child-facing with doorway cards.
+- [ ] Story World feels like entering worlds, not reading a catalogue.
+- [ ] World detail cards separate title/description/chips/source/CTA cleanly.
+- [ ] Parent dashboard feels trust-first and warm (not enterprise/report-like).
+- [ ] Luvlu is helper-only and Moru is not used in active runtime copy.
+
 
 ## Prototype mapping
-- Child Home discovery feel mapped to reference section "02 Child Home Discovery" using warm cards + doorway framing.
-- Story World doorway tone mapped to "10 Story World Browse" with collectible chips and category cards.
-- Journey/Detail calm flow mapped to "03 Journeys Story Runtime" through softer cards and parent note visibility.
-- Parent trust visibility mapped to onboarding/parent references with explicit trust-note cards.
-
-## Before/after evidence
-- Before: flatter list-heavy surfaces with weaker visual grouping and less emotional warmth.
-- After: soft cream backgrounds, rounded cards, child-facing hierarchy, saffron CTA/chip patterns, and calmer trust framing.
-- Screenshot capture is tracked for manual iPhone QA evidence in Sprint 60 gate; this sprint provides runtime styling integration first.
-
-## Remaining parity gaps for Sprint 77+
-- Distinct surface theming depth for Krishna vs Ganesha vs Bedtime vs Journey needs stronger motif-level visual identity.
-- More advanced gradients, illustration anchors, and doorway-art blocks remain pending.
-- Journey pathline visuals and richer collectible/treasure moments remain partial.
-- Parent surfaces need additional visual parity passes for full reference alignment.
+This patch maps Child Home, Story World, World Detail, Parent Dashboard, and shell cleanup against the prototype references listed above.
