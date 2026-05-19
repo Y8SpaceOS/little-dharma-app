@@ -5,6 +5,7 @@ import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { getChildProfile, type ChildAgeBand } from '@/lib/childProfile';
 import { getAllStoryCompletions } from '@/lib/storyProgress';
 import { storyWorldItems, storyWorldSections, type StoryWorldItem } from '@/data/storyWorld';
+import { visualStyles } from '@/design/visualSystem';
 
 const ageBandWeights: Record<ChildAgeBand, number> = {
   '3-5': 0,
@@ -52,15 +53,15 @@ export default function Screen() {
   }, [ageBand]);
 
   return (
-    <SafeAreaView style={styles.screen}>
+    <SafeAreaView style={visualStyles.softScreen}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.heroCard}>
+        <View style={[styles.heroCard, visualStyles.roundedCard, visualStyles.warmCard]}>
           <Text style={styles.heroEyebrow}>Little Dharma</Text>
           <Text style={styles.heading}>Story World</Text>
           <Text style={styles.subheading}>Choose a warm story corner and begin your next gentle journey.</Text>
         </View>
 
-        <View style={styles.parentTrustCard}>
+        <View style={visualStyles.parentTrustNoteCard}>
           <Text style={styles.parentTrustText}>Recommended using the broad age band saved on this device.</Text>
           <Text style={styles.parentTrustText}>You can change this anytime in Parent settings. Stories stay local-first.</Text>
         </View>
@@ -68,7 +69,7 @@ export default function Screen() {
         {storyWorldSections.map((section) => {
           const sectionItems = orderedItems.filter((item) => item.sectionId === section.id);
           return (
-            <View key={section.id} style={styles.sectionCard}>
+            <View key={section.id} style={[styles.sectionCard, visualStyles.roundedCard]}>
               <Text style={styles.sectionTitle}>{section.id === 'ganesha' ? '🪔 ' : ''}{section.title}</Text>
               <Text style={styles.sectionSubtitle}>{section.subtitle}</Text>{section.id === 'ganesha' ? <Text style={styles.ganeshaNote}>Ganesha Wisdom Journey foundations are visible here with child-safe planning cards. Parent notes remain trust-first and local on this device.</Text> : null}
               {sectionItems.map((item) => {
@@ -80,9 +81,9 @@ export default function Screen() {
                     <Text style={styles.cardTitle}>{item.shortTitle}</Text>
                     <Text style={styles.cardSummary}>{item.summary}</Text>
                     <View style={styles.metaRow}>
-                      <Text style={styles.metaChip}>{item.durationMinutes} min</Text>
-                      <Text style={styles.metaChip}>Ages {item.ageBands.join(', ')}</Text>
-                      <Text style={styles.metaChip}>Value: {item.primaryValue}</Text>
+                      <Text style={visualStyles.chip}>{item.durationMinutes} min</Text>
+                      <Text style={visualStyles.chip}>Ages {item.ageBands.join(', ')}</Text>
+                      <Text style={visualStyles.chip}>Value: {item.primaryValue}</Text>
                     </View>
                     <Text style={styles.source}>{item.sourceTradition}</Text>
                     <Text style={styles.cta}>{cta}</Text>
