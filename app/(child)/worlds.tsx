@@ -69,12 +69,12 @@ export default function Screen() {
           const sectionItems = orderedItems.filter((item) => item.sectionId === section.id);
           return (
             <View key={section.id} style={styles.sectionCard}>
-              <Text style={styles.sectionTitle}>{section.title}</Text>
-              <Text style={styles.sectionSubtitle}>{section.subtitle}</Text>
+              <Text style={styles.sectionTitle}>{section.id === 'ganesha' ? '🪔 ' : ''}{section.title}</Text>
+              <Text style={styles.sectionSubtitle}>{section.subtitle}</Text>{section.id === 'ganesha' ? <Text style={styles.ganeshaNote}>Ganesha Wisdom Journey foundations are visible here with child-safe planning cards. Parent notes remain trust-first and local on this device.</Text> : null}
               {sectionItems.map((item) => {
                 const isAvailable = item.status === 'available' && !!item.slug;
                 const isDone = item.slug ? !!completedSlugs[item.slug] : false;
-                const cta = !isAvailable ? 'Opening soon' : isDone ? 'Continue' : 'Start Story';
+                const cta = !isAvailable ? (item.sectionId === 'ganesha' ? 'Story foundation in progress' : 'Opening soon') : isDone ? 'Continue' : 'Start Story';
                 const card = (
                   <>
                     <Text style={styles.cardTitle}>{item.shortTitle}</Text>
@@ -125,6 +125,7 @@ const styles = StyleSheet.create({
   cardSummary: { fontSize: 13, color: '#5F5142', lineHeight: 18 },
   metaRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   metaChip: { fontSize: 12, color: '#2A5C7D', backgroundColor: '#E8F5FF', borderRadius: 999, paddingHorizontal: 8, paddingVertical: 4 },
+  ganeshaNote: { color: '#7A4A00', backgroundColor: '#FFF4DE', borderColor: '#F0D19B', borderWidth: 1, borderRadius: 12, paddingHorizontal: 10, paddingVertical: 8, fontSize: 12, lineHeight: 17 },
   source: { fontSize: 12, color: '#44602B' },
   cta: { marginTop: 4, fontSize: 14, color: '#A35D00', fontWeight: '800' }
 });

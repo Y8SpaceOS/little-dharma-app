@@ -66,7 +66,7 @@ const journeyPackCount = getContentPacksForDharmaJourneys().length;
 export const storyWorldSections: StoryWorldSection[] = [
   { id: 'start-here', title: 'Start Here', subtitle: 'Your warm first story corners.' },
   { id: 'krishna', title: 'Krishna Stories', subtitle: 'Playful wisdom from Krishna\'s world.' },
-  { id: 'ganesha', title: 'Ganesha Stories', subtitle: 'Opening soon · gentle wisdom stories.' },
+  { id: 'ganesha', title: 'Ganesha Stories', subtitle: 'Story World foundations for New Beginnings, Kindness, Gratitude, Listening, and Patience.' },
   { id: 'bedtime', title: 'Bedtime Stories', subtitle: 'Calm stories for quiet evenings.' },
   { id: 'values', title: 'Values Stories', subtitle: 'Small moments that grow big hearts.' },
   { id: 'festivals', title: 'Festival Stories', subtitle: 'Opening soon · festive story corners.' },
@@ -116,4 +116,80 @@ const comingSoonSections: StoryWorldItem[] = comingSoonSectionsSeed.map((entry) 
   status: 'coming_soon'
 }));
 
-export const storyWorldItems: StoryWorldItem[] = [...journeyStories, ...comingSoonSections, ...comingSoonJourneys];
+
+
+const ganeshaFoundationItems: StoryWorldItem[] = [
+  {
+    id: 'ganesha-beginnings-lamp',
+    title: 'The Lamp of Beginnings',
+    shortTitle: 'Diya of New Beginnings',
+    summary: 'A warm Ganesha Story World foundation card for gratitude and hopeful new starts.',
+    sourceTradition: 'Ganesha Story Pack v1 foundation',
+    journeyId: 'ganesha-wisdom-journey',
+    journeyOrder: 1,
+    ageBands: ['3-5', '6-8'],
+    durationMinutes: 8,
+    primaryValue: 'Gratitude',
+    secondaryValues: ['Hope'],
+    characters: ['Ganesha', 'Family'],
+    isSequential: true,
+    audioAvailable: false,
+    status: 'coming_soon',
+    sectionId: 'ganesha'
+  },
+  {
+    id: 'ganesha-listening-ears',
+    title: 'The Great Listening Ears',
+    shortTitle: 'Big Listening Ears',
+    summary: 'A gentle wisdom card about listening with respect before speaking.',
+    sourceTradition: 'Ganesha Story Pack v1 foundation',
+    journeyId: 'ganesha-wisdom-journey',
+    journeyOrder: 2,
+    ageBands: ['3-5', '6-8'],
+    durationMinutes: 8,
+    primaryValue: 'Listening',
+    secondaryValues: ['Respect'],
+    characters: ['Ganesha'],
+    isSequential: true,
+    audioAvailable: false,
+    status: 'coming_soon',
+    sectionId: 'ganesha'
+  },
+  {
+    id: 'ganesha-gratitude-bowl',
+    title: 'The Gratitude Bowl',
+    shortTitle: 'Thank You Bowl',
+    summary: 'A story corner for small thank-you moments, joy, and family warmth.',
+    sourceTradition: 'Ganesha Story Pack v1 foundation',
+    journeyId: 'ganesha-wisdom-journey',
+    journeyOrder: 5,
+    ageBands: ['3-5', '6-8'],
+    durationMinutes: 8,
+    primaryValue: 'Gratitude',
+    secondaryValues: ['Joy'],
+    characters: ['Ganesha', 'Family'],
+    isSequential: true,
+    audioAvailable: false,
+    status: 'coming_soon',
+    sectionId: 'ganesha'
+  },
+  {
+    id: 'ganesha-patient-river',
+    title: 'The Patient River',
+    shortTitle: 'Patient River Story',
+    summary: 'A calm practice card for patience and steady effort in daily life.',
+    sourceTradition: 'Ganesha Story Pack v1 foundation',
+    journeyId: 'ganesha-wisdom-journey',
+    journeyOrder: 8,
+    ageBands: ['6-8', '9-12'],
+    durationMinutes: 10,
+    primaryValue: 'Patience',
+    secondaryValues: ['Resilience'],
+    characters: ['Ganesha'],
+    isSequential: true,
+    audioAvailable: false,
+    status: 'coming_soon',
+    sectionId: 'ganesha'
+  }
+];
+export const storyWorldItems: StoryWorldItem[] = [...journeyStories, ...ganeshaFoundationItems, ...comingSoonSections, ...comingSoonJourneys];
