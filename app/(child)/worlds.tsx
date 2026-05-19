@@ -1,5 +1,5 @@
-import { Link } from 'expo-router';
-import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
+import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
 
 const doorways = [
@@ -14,6 +14,7 @@ const doorways = [
 ];
 
 export default function Screen() {
+  const router = useRouter();
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
     <View style={[visualStyles.heroCard, { backgroundColor: '#FFF0D5' }]}>
       <Text style={styles.heading}>Story World</Text>
@@ -21,15 +22,17 @@ export default function Screen() {
       <Text style={styles.sub}>Each world carries a gentle value and one calm moment.</Text>
     </View>
 
-    <View style={styles.grid}>{doorways.map((d) => <Link key={d.title} href={d.href as never} style={[visualStyles.doorwayCard, { backgroundColor: d.bg, width: '48%' }]}>
-      <Text style={styles.icon}>{d.icon}</Text>
-      <Text style={styles.cardTitle}>{d.title}</Text>
-      <Text style={styles.cardCopy}>{d.copy}</Text>
-      <Text style={[visualStyles.chip, { marginTop: 8 }]}>Enter world</Text>
-    </Link>)}</View>
+    <View style={styles.grid}>{doorways.map((d) => <Pressable key={d.title} onPress={() => router.push(d.href as never)} style={[visualStyles.doorwayCard, { backgroundColor: d.bg, width: '48%' }]}>
+      <View style={styles.cardStack}>
+        <Text style={styles.icon}>{d.icon}</Text>
+        <Text style={styles.cardTitle}>{d.title}</Text>
+        <Text style={styles.cardCopy}>{d.copy}</Text>
+        <Text style={[visualStyles.chip, { marginTop: 8 }]}>Enter world</Text>
+      </View>
+    </Pressable>)}</View>
 
     <View style={visualStyles.parentCard}><Text style={styles.trust}>Parent trust note: age guidance stays local on this device. No public child profile.</Text></View>
   </ScrollView></SafeAreaView>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:28}, heading:{fontSize:32,fontWeight:'900',color:visualTokens.color.warmBrown}, subHeading:{fontSize:24,fontWeight:'800',color:'#6A4522'}, sub:{fontSize:14,color:visualTokens.color.mutedBrown,marginTop:4}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, icon:{fontSize:32}, cardTitle:{marginTop:6,fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown}, cardCopy:{marginTop:4,fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown}, trust:{fontSize:13,lineHeight:19,color:visualTokens.color.mutedBrown} });
+const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:28}, heading:{fontSize:32,fontWeight:'900',color:visualTokens.color.warmBrown}, subHeading:{fontSize:24,fontWeight:'800',color:'#6A4522'}, sub:{fontSize:14,color:visualTokens.color.mutedBrown,marginTop:4}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, cardStack:{gap:6}, icon:{fontSize:32}, cardTitle:{fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown}, cardCopy:{fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown}, trust:{fontSize:13,lineHeight:19,color:visualTokens.color.mutedBrown} });

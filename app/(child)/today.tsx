@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { Link } from 'expo-router';
-import { AppState, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Link, useRouter } from 'expo-router';
+import { AppState, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
@@ -10,6 +10,7 @@ import { visualStyles, visualTokens } from '@/design/visualSystem';
 function TodayScreenContent() {
   const [nickname, setNickname] = useState<string | null>(getOnboardingState().profile?.nickname || null);
   const [showThreshold, setShowThreshold] = useState(false);
+  const router = useRouter();
   const name = nickname?.trim() || 'Little One';
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || null)), []);
@@ -42,9 +43,14 @@ function TodayScreenContent() {
 
     <Text style={visualStyles.sectionHeader}>Choose your path</Text>
     <View style={styles.grid}>
-      {paths.map((p) => <Link key={p.title} href={p.href as never} style={[visualStyles.doorwayCard, { backgroundColor: p.bg, width: '48%' }]}>
-        <Text style={styles.cardIcon}>{p.icon}</Text><Text style={styles.cardTitle}>{p.title}</Text><Text style={styles.cardCopy}>{p.copy}</Text>
-      </Link>)}
+      {paths.map((p) => <Pressable key={p.title} onPress={() => router.push(p.href as never)} style={[visualStyles.doorwayCard, { backgroundColor: p.bg, width: '48%' }]}>
+        <View style={styles.cardStack}>
+          <Text style={styles.cardIcon}>{p.icon}</Text>
+          <Text style={styles.cardTitle}>{p.title}</Text>
+          <Text style={styles.cardCopy}>{p.copy}</Text>
+          <Text style={styles.cardCta}>Open</Text>
+        </View>
+      </Pressable>)}
     </View>
 
     <View style={styles.parentWrap}><Link href='/(parent)/dashboard' style={visualStyles.secondaryCta}>Open Parent Space</Link></View>
@@ -54,6 +60,6 @@ function TodayScreenContent() {
   </SafeAreaView>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:32}, greeting:{fontSize:16,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:34,lineHeight:38,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:15,lineHeight:22,color:visualTokens.color.mutedBrown}, heroIcon:{fontSize:44}, heroTitle:{fontSize:28,fontWeight:'900',color:visualTokens.color.warmBrown}, helper:{fontSize:13,color:visualTokens.color.mutedBrown,fontWeight:'700'}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, cardIcon:{fontSize:30}, cardTitle:{fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:6}, cardCopy:{fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown,marginTop:4}, parentWrap:{paddingTop:4}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
+const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:32}, greeting:{fontSize:16,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:34,lineHeight:38,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:15,lineHeight:22,color:visualTokens.color.mutedBrown}, heroIcon:{fontSize:44}, heroTitle:{fontSize:28,fontWeight:'900',color:visualTokens.color.warmBrown}, helper:{fontSize:13,color:visualTokens.color.mutedBrown,fontWeight:'700'}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, cardStack:{gap:6}, cardIcon:{fontSize:30}, cardTitle:{fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:2}, cardCopy:{fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown}, cardCta:{marginTop:4,fontSize:12,fontWeight:'800',color:visualTokens.color.saffronDeep}, parentWrap:{paddingTop:4}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
 
 export default function TodayScreen() { return <RouteErrorBoundary surfaceName='Child Home' audience='child' primaryActionHref='/onboarding' primaryActionLabel='Go to Onboarding'><TodayScreenContent /></RouteErrorBoundary>; }
