@@ -11,7 +11,7 @@ function DashboardScreenContent() {
   const storiesCompleted = summary?.storiesCompleted ?? 0;
   const valuesTouched = useMemo(() => summary?.weeklyProgress.practicedValues?.length ?? 0, [summary]);
   const journeyMetric = storiesCompleted > 0 ? summary?.weeklyProgress.completionLabel || `${storiesCompleted} stories` : 'No stories completed yet';
-  const timeMetric = storiesCompleted > 0 ? `${Math.max(1, storiesCompleted * 8)}m` : '—';
+  const timeMetric = '—';
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
     <View style={[visualStyles.heroCard, { backgroundColor: '#F3E8D5' }]}>
       <Text style={styles.heading}>Your child&apos;s journey</Text>

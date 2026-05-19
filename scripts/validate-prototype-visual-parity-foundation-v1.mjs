@@ -42,12 +42,18 @@ if (!rootLayout.includes('headerShown: false')) throw new Error('Route/debug hea
 if (today.includes('(child)/today') || worlds.includes('(child)/worlds')) throw new Error('User-facing route/debug labels should not appear in child screen copy');
 
 const story = fs.readFileSync('app/story/[slug].tsx', 'utf8');
+const seedStories = fs.readFileSync('src/data/seed/vrindavan.ts', 'utf8');
 if (!story.includes('visualStyles.roundedCard')) throw new Error('Story detail missing rounded card integration');
 if (!story.includes('Luvlu')) throw new Error('Story detail missing Luvlu copy');
 if (!story.includes('For Parents') || !story.includes('Primary value')) throw new Error('Story detail missing parent/value sections');
 if (story.includes('Moru')) throw new Error('Story detail must use Luvlu, not Moru');
 if (!worldDetail.includes("href={`/story/")) throw new Error('World detail must link available stories to story detail routes');
 if (worldDetail.includes("href='/(child)/worlds' style={visualStyles.secondaryCta}")) throw new Error('World detail cards must not use Story World loop CTA');
+const knownStorySlugs = new Set(Array.from(seedStories.matchAll(/slug: '([^']+)'/g)).map((m) => m[1]));
+const availableCardSlugs = Array.from(worldDetail.matchAll(/status: 'available', storySlug: '([^']+)'/g)).map((m) => m[1]);
+for (const slug of availableCardSlugs) {
+  if (!knownStorySlugs.has(slug)) throw new Error(`World detail available card slug missing from story data: ${slug}`);
+}
 for (const fake of ['>6<', '>41m<', '>4<']) {
   if (parentDashboard.includes(fake)) throw new Error('Parent Dashboard contains fake hard-coded metrics');
 }

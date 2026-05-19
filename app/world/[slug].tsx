@@ -7,8 +7,8 @@ type World = { icon: string; title: string; subtitle: string; hero: string; card
 
 const worldMap: Record<string, World> = {
   krishna: { icon: '🪈', title: 'Krishna Stories', subtitle: 'Playful stories about love, courage and protection.', hero: '#F9EDC9', cards: [
-    { title: 'Krishna and Butter Pot', description: 'A gentle story about sharing.', duration: '5 min', age: '5-8', value: 'Kindness', status: 'available', storySlug: 'krishna-shares-butter-with-friends' },
-    { title: 'Krishna Lifts Govardhan', description: 'Protection and trust.', duration: '7 min', age: '5-8', value: 'Courage', status: 'available', storySlug: 'krishna-lifts-govardhan' }
+    { title: 'Krishna Shares Butter', description: 'A gentle story about sharing.', duration: '5 min', age: '5-8', value: 'Kindness', status: 'available', storySlug: 'krishna-shares-butter' },
+    { title: 'Krishna Helps a Lost Calf', description: 'Compassion and care in one calm moment.', duration: '6 min', age: '5-8', value: 'Compassion', status: 'available', storySlug: 'krishna-helps-a-lost-calf' }
   ] },
   ganesha: { icon: '🐘', title: 'Ganesha Stories', subtitle: 'Wisdom, beginnings and gratitude.', hero: '#F6E7F2', cards: [
     { title: 'Ganesha and the Moon', description: 'A kind lesson in humility.', duration: '6 min', age: '5-8', value: 'Respect', status: 'coming_soon' }
