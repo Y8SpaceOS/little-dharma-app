@@ -34,7 +34,7 @@ for(let n=61;n<=150;n++) if(!rows.find(r=>r.n===n)) fail(`Missing sprint ${n} in
 for(let n=61;n<=70;n++) if(rows.find(r=>r.n===n)?.status!=='done') fail(`Sprint ${n} must be done in CSV`);
 if(rows.find(r=>r.n===71)?.status!=='done') fail('Sprint 71 must be done in CSV');
 if(rows.find(r=>r.n===72)?.status!=='done') fail('Sprint 72 must be done in CSV');
-for(let n=74;n<=150;n++) if(rows.find(r=>r.n===n)?.status!=='not_started') fail(`Sprint ${n} must be not_started in CSV`);
+for(let n=75;n<=150;n++) if(rows.find(r=>r.n===n)?.status!=='not_started') fail(`Sprint ${n} must be not_started in CSV`);
 ok('Roadmap CSV statuses valid');
 
 const queue = fs.readFileSync(path.resolve('docs/MASTER_SPRINT_QUEUE.md'),'utf8');

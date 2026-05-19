@@ -55,7 +55,7 @@ if (!sprint71Section.includes('- **Status:** done')) fail('Sprint 71 section mus
 
 const sprint72Section = extractSprintSection(queue, 72);
 if (sprint72Section && !sprint72Section.includes('- **Status:** done')) fail('Sprint 72 must be done in MASTER_SPRINT_QUEUE');
-for (let sprint = 74; sprint <= 150; sprint += 1) {
+for (let sprint = 75; sprint <= 150; sprint += 1) {
   const section = extractSprintSection(queue, sprint);
   if (section && !section.includes('- **Status:** not started')) fail(`Sprint ${sprint} must remain not started in MASTER_SPRINT_QUEUE`);
 }
@@ -72,7 +72,7 @@ for (let s = 61; s <= 150; s++) if (!bySprint.has(s)) fail(`Roadmap CSV missing 
 for (let s = 61; s <= 69; s++) if ((bySprint.get(s)?.[statusIdx] ?? '').trim() !== 'done') fail(`Sprint ${s} must be done`);
 if ((bySprint.get(71)?.[statusIdx] ?? '').trim() !== 'done') fail('Sprint 71 must be done');
 if ((bySprint.get(72)?.[statusIdx] ?? '').trim() !== 'done') fail('Sprint 72 must be done');
-for (let s = 74; s <= 150; s++) if ((bySprint.get(s)?.[statusIdx] ?? '').trim() !== 'not_started') fail(`Sprint ${s} must be not_started`);
+for (let s = 75; s <= 150; s++) if ((bySprint.get(s)?.[statusIdx] ?? '').trim() !== 'not_started') fail(`Sprint ${s} must be not_started`);
 
 const taskLog = read('docs/TASK_LOG.md');
 if (!/Sprint 69/i.test(taskLog)) fail('TASK_LOG missing Sprint 69 entry');

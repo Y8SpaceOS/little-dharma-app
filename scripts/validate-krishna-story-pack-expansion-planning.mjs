@@ -52,7 +52,7 @@ ok('CSV checks passed');
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 if (!/### Sprint 73[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('MASTER_SPRINT_QUEUE must show Sprint 73 done');
-if (!/### Sprint 74[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('MASTER_SPRINT_QUEUE must show Sprint 74 not started');
+if (!/### Sprint 74[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('MASTER_SPRINT_QUEUE must show Sprint 74 done');
 if (queue.includes('not_started')) fail('MASTER_SPRINT_QUEUE must use `not started` wording');
 if (!queue.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 14 deferred marker missing');
 if (!queue.includes('Sprint 15 — Developer Environment Bootstrap Guide') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 15 deferred marker missing');
@@ -64,7 +64,7 @@ const h = Object.fromEntries(roadmap[0].map((v, i) => [v, i]));
 const rr = roadmap.slice(1).map((r) => ({ n: Number(r[h.sprintNumber]), status: r[h.status] }));
 for (let n = 61; n <= 150; n += 1) if (!rr.find((r) => r.n === n)) fail(`Missing Sprint ${n} in roadmap csv`);
 for (let n = 61; n <= 73; n += 1) if (rr.find((r) => r.n === n)?.status !== 'done') fail(`Sprint ${n} should be done`);
-for (let n = 74; n <= 150; n += 1) if (rr.find((r) => r.n === n)?.status !== 'not_started') fail(`Sprint ${n} should be not_started`);
+for (let n = 75; n <= 150; n += 1) if (rr.find((r) => r.n === n)?.status !== 'not_started') fail(`Sprint ${n} should be not_started`);
 ok('Roadmap CSV governance checks passed');
 
 const tasklog = fs.readFileSync('docs/TASK_LOG.md', 'utf8');

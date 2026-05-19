@@ -41,7 +41,7 @@ const byN=Object.fromEntries(csv.map(r=>[Number(r[0]),r[6]]));
 for(let n=61;n<=150;n++) if(!(n in byN)) fail(`Missing sprint row ${n}`);
 for(let n=61;n<=71;n++) if(byN[n]!=='done') fail(`Sprint ${n} must be done`);
 if(byN[72]!=='done') fail('Sprint 72 must be done');
-for(let n=74;n<=150;n++) if(byN[n]!=='not_started') fail(`Sprint ${n} must be not_started`);
+for(let n=75;n<=150;n++) if(byN[n]!=='not_started') fail(`Sprint ${n} must be not_started`);
 ok('Roadmap CSV statuses valid');
 const queue=fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md','utf8');
 if(!/### Sprint 71[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 71 must be done in MASTER_SPRINT_QUEUE');
