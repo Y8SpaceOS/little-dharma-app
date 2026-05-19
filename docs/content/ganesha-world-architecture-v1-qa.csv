@@ -1,0 +1,10 @@
+checkId,checkItem,status,notes
+s74-1,Architecture doc exists,pass,GANESHA_WORLD_ARCHITECTURE_V1.md added
+s74-2,QA doc exists,pass,GANESHA_WORLD_ARCHITECTURE_V1_QA.md added
+s74-3,Planning CSV exists with required columns,pass,ganesha-world-architecture-v1.csv added
+s74-4,At least 20 candidates,pass,20 planned rows present
+s74-5,Child-facing language documented,pass,Story World language section included
+s74-6,Ganesha Wisdom Journey relation documented,pass,Relation section included
+s74-7,Guardrails and age bands documented,pass,Plan doc includes both sections
+s74-8,No forbidden scope introduced,pass,No runtime/backend/audio/telemetry/monetisation additions
+s74-9,Governance updated for Sprint 74 done,pass,Queue + roadmap + task log updated

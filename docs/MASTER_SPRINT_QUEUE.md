@@ -869,7 +869,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Completed Krishna Story Pack Expansion Planning artifacts including roadmap doc/CSV, QA doc/CSV, governance updates, and Sprint 73 validator while preserving existing runtime behavior and forbidden-scope exclusions.
 
 ### Sprint 74 — Ganesha World Architecture v1
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Completed planning-only Ganesha World Architecture v1 artifacts including architecture doc, planning CSV, QA doc/CSV, Sprint 74 validator, governance updates, and parent-trusted/source-tradition guardrails with no runtime Ganesha story rollout.
 
 ### Sprint 75 — Ganesha Story Pack v1
 - **Status:** not started

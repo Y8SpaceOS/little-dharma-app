@@ -1,0 +1,21 @@
+storyId,title,childFacingTitle,proposedOrder,contentSurface,ageBands,primaryValue,secondaryValues,characters,sourceTradition,sensitivityLevel,editorialNotes,status
+ganesha-beginnings-lamp,The Lamp of Beginnings,Diya of New Beginnings,1,both,"3-5|6-8",Gratitude,Hope,"Ganesha,Family",Puranic retelling traditions,low,Start with calm welcome and blessing language,planned
+ganesha-listening-ears,The Great Listening Ears,Big Listening Ears,2,both,"3-5|6-8",Listening,Respect,Ganesha,Traditional symbolism,low,Emphasize listening before speaking,planned
+ganesha-kind-steps,Kind Steps on the Path,Kind Steps Story Path,3,story_world,"3-5|6-8",Kindness,Care,"Ganesha,Friends",Traditional children's retelling,low,Keep examples from home/school contexts,planned
+ganesha-focus-flower,The Flower of Focus,Focus Flower,4,both,"6-8|9-12",Focus,Patience,Ganesha,Traditional symbolism,low,Use breathing and one-step-at-a-time framing,planned
+ganesha-gratitude-bowl,The Gratitude Bowl,Thank You Bowl,5,story_world,"3-5|6-8",Gratitude,Joy,"Ganesha,Family",Festival/home tradition,low,Use everyday gratitude examples,planned
+ganesha-honest-word,The Honest Word,Truthful Little Word,6,both,"6-8|9-12",Truthfulness,Courage,Ganesha,Values retelling tradition,medium,Gentle repair language after mistakes,planned
+ganesha-friendship-bridge,The Friendship Bridge,Bridge of Friendship,7,story_world,"3-5|6-8",Friendship,Sharing,"Ganesha,Friends",Traditional values story,low,No rivalry framing,planned
+ganesha-patient-river,The Patient River,Patient River Story,8,both,"6-8|9-12",Patience,Resilience,Ganesha,Traditional moral symbolism,medium,Frame waiting as steady effort not punishment,planned
+ganesha-home-helpers,Helpers at Home,Helping Hands Story,9,story_world,"3-5|6-8",Responsibility,Care,"Ganesha,Family",Everyday dharma framing,low,Keep chores framed as caring contribution,planned
+ganesha-learning-turn,Turning Toward Learning,Learning Turn Story,10,ganesha_wisdom_journey,"6-8|9-12",Humility,Curiosity,Ganesha,Traditional learning arcs,medium,Avoid shame language around errors,planned
+ganesha-gentle-courage,Gentle Courage,Gentle Courage Path,11,both,"6-8|9-12",Courage,Compassion,Ganesha,Traditional devotional retelling,medium,No fear-based miracles framing,planned
+ganesha-problem-knot,The Knot and the Smile,Knot of Problems Story,12,both,"6-8|9-12",Problem Solving,Calm,Ganesha,Symbolic retelling,medium,Present obstacles as learning moments,planned
+ganesha-family-blessing,Family Blessing Evening,Evening Blessing Story,13,story_world,"3-5|6-8",Belonging,Gratitude,"Ganesha,Family",Home ritual tradition,low,Include diyas and flowers imagery,planned
+ganesha-festival-welcome,Festival Welcome,Welcome Festival Story,14,story_world,"3-5|6-8|9-12",Joy,Community,"Ganesha,Family,Community",Festival tradition,medium,Respect regional variation in celebration details,planned
+ganesha-soft-symbols,Understanding Symbols,Symbols of Wisdom,15,ganesha_wisdom_journey,"9-12",Discernment,Respect,Ganesha,Tradition-informed explanatory retelling,high,Provide parent note for symbolism interpretation,needs_review
+ganesha-calm-before-action,Pause Before Action,Pause and Think Story,16,both,"6-8|9-12",Self Regulation,Wisdom,Ganesha,Values framing from tradition,low,Use short reflective prompt,planned
+ganesha-kind-speech,Words that Bless,Blessing Words Story,17,story_world,"3-5|6-8",Kind Speech,Empathy,"Ganesha,Friends",Values retelling tradition,low,Avoid scolding tone,planned
+ganesha-sharing-laddu,Sharing the Laddu,Sharing Sweet Story,18,both,"3-5|6-8",Sharing,Joy,"Ganesha,Family,Friends",Festival-food retelling tradition,low,Food references must stay inclusive and gentle,planned
+ganesha-new-school-day,First Day Courage,First Day Blessing Story,19,story_world,"6-8|9-12",Confidence,Belonging,"Ganesha,Child",Contemporary values adaptation,low,Anchor in school anxiety support,planned
+ganesha-light-for-others,Lighting for Others,Diya of Blessings for Others Story,20,ganesha_wisdom_journey,"6-8|9-12",Service,Compassion,"Ganesha,Community",Values-based devotional tradition,medium,Connect service to everyday kindness actions,ready_for_draft_later
