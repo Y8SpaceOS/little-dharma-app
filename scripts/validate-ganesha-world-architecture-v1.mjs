@@ -51,12 +51,23 @@ for (const token of ['beginnings', 'listening', 'focus', 'gratitude', 'wisdom', 
 ok('CSV checks passed');
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
-const sprint74Section = queue.match(/### Sprint 74 — Ganesha World Architecture v1[\s\S]*?(?=\n### Sprint 75 —|$)/);
-if (!sprint74Section) fail('MASTER_SPRINT_QUEUE missing Sprint 74 section');
-const sprint74StatusLines = sprint74Section[0].match(/- \*\*Status:\*\* .+/g) || [];
+
+const extractSprintSection = (doc, sprintNumber) => {
+  const matches = [...doc.matchAll(new RegExp(`### Sprint ${sprintNumber} —[\\s\\S]*?(?=\\n### Sprint \\d+ —|$)`, 'g'))];
+  if (matches.length !== 1) fail(`MASTER_SPRINT_QUEUE must contain exactly one Sprint ${sprintNumber} section (found ${matches.length})`);
+  return matches[0][0];
+};
+
+const sprint74Section = extractSprintSection(queue, 74);
+const sprint74StatusLines = sprint74Section.match(/- \*\*Status:\*\* .+/g) || [];
 if (sprint74StatusLines.length !== 1) fail(`Sprint 74 section must contain exactly one status line (found ${sprint74StatusLines.length})`);
-if (!/^- \*\*Status:\*\* done$/m.test(sprint74Section[0])) fail('Sprint 74 status must be exactly done');
-if (!/### Sprint 75[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('MASTER_SPRINT_QUEUE must show Sprint 75 not started');
+if (sprint74StatusLines[0].trim() !== '- **Status:** done') fail('Sprint 74 status must be exactly done');
+
+const sprint75Section = extractSprintSection(queue, 75);
+const sprint75StatusLines = sprint75Section.match(/- \*\*Status:\*\* .+/g) || [];
+if (sprint75StatusLines.length !== 1) fail(`Sprint 75 section must contain exactly one status line (found ${sprint75StatusLines.length})`);
+if (sprint75StatusLines[0].trim() !== '- **Status:** not started') fail('Sprint 75 status must be exactly not started');
+
 if (queue.includes('not_started')) fail('MASTER_SPRINT_QUEUE must use `not started` wording');
 if (!queue.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 14 deferred marker missing');
 if (!queue.includes('Sprint 15 — Developer Environment Bootstrap Guide') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 15 deferred marker missing');
@@ -66,14 +77,24 @@ ok('Queue governance checks passed');
 const roadmap = fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv', 'utf8').trim().split(/\r?\n/).map((l) => l.split(','));
 const h = Object.fromEntries(roadmap[0].map((v, i) => [v, i]));
 const rr = roadmap.slice(1).map((r) => ({ n: Number(r[h.sprintNumber]), status: r[h.status] }));
-const seen = new Map();
-for (const r of rr) {
-  seen.set(r.n, (seen.get(r.n) || 0) + 1);
+
+const sprintRows = new Map();
+for (const row of rr) {
+  if (!sprintRows.has(row.n)) sprintRows.set(row.n, []);
+  sprintRows.get(row.n).push(row);
 }
-for (const [n,count] of seen.entries()) if (count > 1) fail(`Duplicate sprint row found in roadmap csv: ${n} appears ${count} times`);
-for (let n = 61; n <= 150; n += 1) if (!rr.find((r) => r.n === n)) fail(`Missing Sprint ${n} in roadmap csv`);
-for (let n = 61; n <= 74; n += 1) if (rr.find((r) => r.n === n)?.status !== 'done') fail(`Sprint ${n} should be done`);
-for (let n = 75; n <= 150; n += 1) if (rr.find((r) => r.n === n)?.status !== 'not_started') fail(`Sprint ${n} should be not_started`);
+
+for (const [n, rowsForSprint] of sprintRows.entries()) {
+  if (rowsForSprint.length > 1) fail(`Duplicate sprint row found in roadmap csv: ${n} appears ${rowsForSprint.length} times`);
+}
+
+for (let n = 61; n <= 150; n += 1) {
+  const rowsForSprint = sprintRows.get(n) || [];
+  if (rowsForSprint.length !== 1) fail(`Sprint ${n} must appear exactly once in roadmap csv (found ${rowsForSprint.length})`);
+  const status = rowsForSprint[0].status;
+  if (n <= 74 && status !== 'done') fail(`Sprint ${n} should be done`);
+  if (n >= 75 && status !== 'not_started') fail(`Sprint ${n} should be not_started`);
+}
 ok('Roadmap CSV governance checks passed');
 
 const tasklog = fs.readFileSync('docs/TASK_LOG.md', 'utf8');
