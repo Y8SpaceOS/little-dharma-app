@@ -51,7 +51,11 @@ for (const token of ['beginnings', 'listening', 'focus', 'gratitude', 'wisdom', 
 ok('CSV checks passed');
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
-if (!/### Sprint 74[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('MASTER_SPRINT_QUEUE must show Sprint 74 done');
+const sprint74Section = queue.match(/### Sprint 74 — Ganesha World Architecture v1[\s\S]*?(?=\n### Sprint 75 —|$)/);
+if (!sprint74Section) fail('MASTER_SPRINT_QUEUE missing Sprint 74 section');
+const sprint74StatusLines = sprint74Section[0].match(/- \*\*Status:\*\* .+/g) || [];
+if (sprint74StatusLines.length !== 1) fail(`Sprint 74 section must contain exactly one status line (found ${sprint74StatusLines.length})`);
+if (!/^- \*\*Status:\*\* done$/m.test(sprint74Section[0])) fail('Sprint 74 status must be exactly done');
 if (!/### Sprint 75[\s\S]*?- \*\*Status:\*\* not started/.test(queue)) fail('MASTER_SPRINT_QUEUE must show Sprint 75 not started');
 if (queue.includes('not_started')) fail('MASTER_SPRINT_QUEUE must use `not started` wording');
 if (!queue.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 14 deferred marker missing');
@@ -62,6 +66,11 @@ ok('Queue governance checks passed');
 const roadmap = fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv', 'utf8').trim().split(/\r?\n/).map((l) => l.split(','));
 const h = Object.fromEntries(roadmap[0].map((v, i) => [v, i]));
 const rr = roadmap.slice(1).map((r) => ({ n: Number(r[h.sprintNumber]), status: r[h.status] }));
+const seen = new Map();
+for (const r of rr) {
+  seen.set(r.n, (seen.get(r.n) || 0) + 1);
+}
+for (const [n,count] of seen.entries()) if (count > 1) fail(`Duplicate sprint row found in roadmap csv: ${n} appears ${count} times`);
 for (let n = 61; n <= 150; n += 1) if (!rr.find((r) => r.n === n)) fail(`Missing Sprint ${n} in roadmap csv`);
 for (let n = 61; n <= 74; n += 1) if (rr.find((r) => r.n === n)?.status !== 'done') fail(`Sprint ${n} should be done`);
 for (let n = 75; n <= 150; n += 1) if (rr.find((r) => r.n === n)?.status !== 'not_started') fail(`Sprint ${n} should be not_started`);
