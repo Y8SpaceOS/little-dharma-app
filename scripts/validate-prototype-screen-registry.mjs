@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+const registryPath='docs/LITTLE_DHARMA_PROTOTYPE_SCREEN_REGISTRY.md';
+const taskLogPath='docs/TASK_LOG.md';
+const roadmapPath='docs/POST_FOUNDATION_PRODUCT_BUILD_ROADMAP.md';
+const fail=m=>{console.error(`❌ ${m}`);process.exit(1)}; const ok=m=>console.log(`✅ ${m}`);
+if(!fs.existsSync(registryPath)) fail('Registry file missing.');
+const text=fs.readFileSync(registryPath,'utf8');
+const rows=text.split('\n').filter(l=>/^\| \d{2,3} \|/.test(l));
+if(rows.length!==245) fail(`Expected 245 screen rows, found ${rows.length}.`); ok('Registry file exists with 245 rows.');
+const data=new Map();
+for(const r of rows){const c=r.split('|').map(s=>s.trim()); data.set(Number(c[1]),{tier:c[4],sprint:c[7],usage:c[8]});}
+for(let i=1;i<=245;i++) if(!data.has(i)) fail(`Missing screen ${String(i).padStart(2,'0')}.`); ok('All screen IDs 01–245 are present.');
+for(let i=1;i<=45;i++) if(data.get(i).tier!=='primary') fail(`Screen ${i} must be primary.`);
+for(let i=46;i<=145;i++) if(data.get(i).tier!=='secondary') fail(`Screen ${i} must be secondary.`);
+for(let i=146;i<=245;i++) if(data.get(i).tier!=='tertiary') fail(`Screen ${i} must be tertiary.`); ok('Tier hierarchy checks passed.');
+for(const s of ['Sprint 77','Sprint 78','Sprint 79','Sprint 80','Sprint 81','Sprint 82']) if(!text.includes(s)) fail(`${s} grouping missing.`); ok('Sprint 77–82 groupings exist.');
+for(let i=136;i<=145;i++) if(data.get(i).usage==='implement-now') fail(`Screen ${i} cannot be immediate.`);
+for(let i=235;i<=241;i++) if(data.get(i).usage==='implement-now') fail(`Screen ${i} cannot be immediate.`); ok('Future-only ranges are not immediate implementation.');
+for(const k of ['monetisation','franchise','school','books','activity kits','grandparent','diaspora','regional expansion','subscription']) if(!text.toLowerCase().includes(k)) fail(`Missing governance keyword: ${k}`);
+if(!text.includes('reference-only')) fail('reference-only usage must exist.'); ok('Future-surface governance keywords present.');
+if(!/Luvlu/.test(text)) fail('Luvlu must be used.'); if(/Moru/i.test(text)) fail('Moru must not be introduced.'); if(!/No hard gamification/.test(text)) fail('No-hard-gamification guardrail missing.'); ok('Naming and gamification guardrails passed.');
+const roadmap=fs.readFileSync(roadmapPath,'utf8'); if(!/\| 78 \| Story Detail \+ Content Runtime Visual Integration v1 \|/.test(roadmap)) fail('Roadmap history appears rewritten.'); ok('Roadmap history check passed.');
+const task=fs.readFileSync(taskLogPath,'utf8'); if(!task.includes('Prototype Screen Registry v1')) fail('TASK_LOG append entry missing.'); if(!/Sprint 78.*not started/i.test(task+text+roadmap)) fail('Sprint 78 onward not_started signal missing.'); ok('TASK_LOG append-only and sprint status checks passed.');
+console.log('✅ validate-prototype-screen-registry passed');
