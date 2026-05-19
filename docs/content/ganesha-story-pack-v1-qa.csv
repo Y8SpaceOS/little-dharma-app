@@ -1,0 +1,9 @@
+checkId,checkItem,status,notes
+s75-1,Story pack plan doc exists,pass,GANESHA_STORY_PACK_V1.md added
+s75-2,Story metadata CSV exists,pass,ganesha-story-pack-v1.csv added
+s75-3,Parent notes CSV exists,pass,ganesha-story-pack-v1-parent-notes.csv added
+s75-4,Editorial guardrails CSV exists,pass,ganesha-story-pack-v1-editorial-guardrails.csv added
+s75-5,Ganesha World and Wisdom Journey framing included,pass,Framing included in plan and metadata
+s75-6,Child-safe source-tradition guardrails explicit,pass,Guardrails in plan and guardrail csv
+s75-7,No forbidden scope introduced,pass,No runtime backend/auth/monetisation/audio/gamification additions
+s75-8,Governance updated Sprint 75 done and Sprint 76 not started,pass,Queue + roadmap + task log updated

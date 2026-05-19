@@ -873,7 +873,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Completed planning-only Ganesha World Architecture v1 artifacts including architecture doc, planning CSV, QA doc/CSV, Sprint 74 validator, governance updates, and parent-trusted/source-tradition guardrails with no runtime Ganesha story rollout.
 
 ### Sprint 75 — Ganesha Story Pack v1
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Completed Ganesha Story Pack v1 foundation artifacts including story pack plan, metadata CSV, parent notes CSV, editorial guardrails CSV, QA docs/CSV, Sprint 75 validator, and governance updates while preserving local-first privacy-safe architecture and forbidden-scope boundaries.
 
 ### Sprint 76 — Hanuman World Architecture v1
 - **Status:** not started
