@@ -66,7 +66,12 @@ if (sprint74StatusLines[0].trim() !== '- **Status:** done') fail('Sprint 74 stat
 const sprint75Section = extractSprintSection(queue, 75);
 const sprint75StatusLines = sprint75Section.match(/- \*\*Status:\*\* .+/g) || [];
 if (sprint75StatusLines.length !== 1) fail(`Sprint 75 section must contain exactly one status line (found ${sprint75StatusLines.length})`);
-if (sprint75StatusLines[0].trim() !== '- **Status:** not started') fail('Sprint 75 status must be exactly not started');
+if (sprint75StatusLines[0].trim() !== '- **Status:** done') fail('Sprint 75 status must be exactly done');
+
+const sprint76Section = extractSprintSection(queue, 76);
+const sprint76StatusLines = sprint76Section.match(/- \*\*Status:\*\* .+/g) || [];
+if (sprint76StatusLines.length !== 1) fail(`Sprint 76 section must contain exactly one status line (found ${sprint76StatusLines.length})`);
+if (sprint76StatusLines[0].trim() !== '- **Status:** not started') fail('Sprint 76 status must be exactly not started');
 
 if (queue.includes('not_started')) fail('MASTER_SPRINT_QUEUE must use `not started` wording');
 if (!queue.includes('Sprint 14 — Test Harness Reliability and Coverage Targets') || !queue.includes('not completed; deferred intentionally')) fail('Sprint 14 deferred marker missing');
@@ -92,13 +97,14 @@ for (let n = 61; n <= 150; n += 1) {
   const rowsForSprint = sprintRows.get(n) || [];
   if (rowsForSprint.length !== 1) fail(`Sprint ${n} must appear exactly once in roadmap csv (found ${rowsForSprint.length})`);
   const status = rowsForSprint[0].status;
-  if (n <= 74 && status !== 'done') fail(`Sprint ${n} should be done`);
-  if (n >= 75 && status !== 'not_started') fail(`Sprint ${n} should be not_started`);
+  if (n <= 75 && status !== 'done') fail(`Sprint ${n} should be done`);
+  if (n >= 76 && status !== 'not_started') fail(`Sprint ${n} should be not_started`);
 }
 ok('Roadmap CSV governance checks passed');
 
 const tasklog = fs.readFileSync('docs/TASK_LOG.md', 'utf8');
 if (!tasklog.includes('Sprint 74')) fail('TASK_LOG missing Sprint 74 entry');
+if (!tasklog.includes('Sprint 75')) fail('TASK_LOG missing Sprint 75 entry');
 
 const pkg = fs.readFileSync('package.json', 'utf8');
 if (pkg.includes('validate-ganesha-world-architecture-v1')) fail('package.json should not include validator script');

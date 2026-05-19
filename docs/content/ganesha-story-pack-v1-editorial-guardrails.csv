@@ -1,0 +1,9 @@
+guardrailId,guardrail,appliesTo,priority
+GSP75-01,No fear-based religion framing,all_stories,high
+GSP75-02,No graphic violence or threat imagery,all_stories,high
+GSP75-03,No sectarian superiority claims,all_stories,high
+GSP75-04,No caste-coded messaging,all_stories,high
+GSP75-05,No guilt-heavy devotion framing,all_stories,high
+GSP75-06,Keep deity language reverent and child-safe,all_stories,high
+GSP75-07,Use age-aware values-first explanations,all_stories,medium
+GSP75-08,Keep Luvlu helper language optional and brief,all_stories,medium
