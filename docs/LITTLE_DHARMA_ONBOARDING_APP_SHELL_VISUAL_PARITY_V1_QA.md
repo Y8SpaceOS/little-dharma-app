@@ -6,7 +6,7 @@ Prototype references used: screens 01–08 from the 45-screen onboarding/app-she
 ## Implemented routes and files
 - `/` → `app/index.tsx`
 - `/onboarding` → `app/onboarding.tsx`
-- `/parent-gate` → `app/parent-gate.tsx`
+- `/(parent)/gate` → `app/(parent)/gate.tsx`
 - shell behavior → `app/_layout.tsx`
 - audit update → `docs/LITTLE_DHARMA_IMPLEMENTED_ROUTE_VISUAL_AUDIT.md`
 

@@ -2,7 +2,7 @@ import fs from 'fs';
 const must = (p) => { if (!fs.existsSync(p)) throw new Error(`Missing required file: ${p}`); return fs.readFileSync(p,'utf8'); };
 const onboarding = must('app/onboarding.tsx');
 const index = must('app/index.tsx');
-const gate = must('app/parent-gate.tsx');
+const gate = must('app/(parent)/gate.tsx');
 const audit = must('docs/LITTLE_DHARMA_IMPLEMENTED_ROUTE_VISUAL_AUDIT.md');
 const qa = must('docs/LITTLE_DHARMA_ONBOARDING_APP_SHELL_VISUAL_PARITY_V1_QA.md');
 const queue = must('docs/MASTER_SPRINT_QUEUE.md');
