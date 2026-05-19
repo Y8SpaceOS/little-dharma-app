@@ -52,7 +52,7 @@ const idxN = header.indexOf('sprintNumber'); const idxS = header.indexOf('status
 const rows = roadmap.slice(1).map((line)=>line.split(','));
 for (let n=61;n<=150;n++) if (!rows.find(r=>Number(r[idxN])===n)) fail(`Missing roadmap row sprint ${n}`);
 for (let n=61;n<=72;n++) if (rows.find(r=>Number(r[idxN])===n)?.[idxS] !== 'done') fail(`Sprint ${n} must be done in CSV`);
-for (let n=74;n<=150;n++) if (rows.find(r=>Number(r[idxN])===n)?.[idxS] !== 'not_started') fail(`Sprint ${n} must be not_started in CSV`);
+for (let n=75;n<=150;n++) if (rows.find(r=>Number(r[idxN])===n)?.[idxS] !== 'not_started') fail(`Sprint ${n} must be not_started in CSV`);
 ok('Roadmap CSV sprint status checks passed');
 
 const section = (n) => {

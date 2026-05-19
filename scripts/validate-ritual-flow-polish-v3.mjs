@@ -38,7 +38,7 @@ for (let s = 61; s <= 150; s += 1) {
 });
 if (rows.find((x) => x.sprint === 72)?.status !== 'done') fail('Sprint 72 must be done');
 if (rows.find((x) => x.sprint === 73)?.status !== 'done') fail('Sprint 73 must be done');
-for (let s = 74; s <= 150; s += 1) {
+for (let s = 75; s <= 150; s += 1) {
   const r = rows.find((x) => x.sprint === s);
   if (!r || r.status !== 'not_started') fail(`Sprint ${s} must remain not_started in roadmap CSV.`);
 }
@@ -76,7 +76,7 @@ if (rows.find((x) => x.sprint === 72)?.status !== 'done') fail('Sprint 72 must b
 const s73 = extractSprintSection(queueRaw, 73);
 if (!s73) fail('MASTER_SPRINT_QUEUE is missing Sprint 73 section.');
 if (!s73.includes('- **Status:** done')) fail('Sprint 73 section must be done in MASTER_SPRINT_QUEUE.');
-for (let s = 74; s <= 150; s += 1) {
+for (let s = 75; s <= 150; s += 1) {
   const section = extractSprintSection(queueRaw, s);
   if (section && !section.includes('- **Status:** not started')) {
     fail(`Sprint ${s} section must remain not started in MASTER_SPRINT_QUEUE.`);

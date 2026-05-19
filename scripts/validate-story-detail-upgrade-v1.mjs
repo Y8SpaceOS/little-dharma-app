@@ -52,7 +52,7 @@ if (bySprint.get(67)[6] !== 'done') throw new Error('Sprint 67 must be done');
 if (bySprint.get(69)[6] !== 'done') throw new Error('Sprint 69 must be done');
 if (bySprint.get(71)[6] !== 'done') throw new Error('Sprint 71 must be done');
 if (bySprint.get(72)[6] !== 'done') throw new Error('Sprint 72 must be done');
-for (let i = 74; i <= 150; i += 1) {
+for (let i = 75; i <= 150; i += 1) {
   if (bySprint.get(i)[6] !== 'not_started') throw new Error(`Sprint ${i} must be not_started`);
 }
 

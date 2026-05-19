@@ -35,7 +35,7 @@ if (map.get(67) !== 'done') throw new Error('Sprint 67 must be done.');
 if (map.get(69) !== 'done') throw new Error('Sprint 69 must be done.');
 if (map.get(71) !== 'done') throw new Error('Sprint 71 must be done.');
 if (map.get(72) !== 'done') throw new Error('Sprint 72 must be done.');
-for (let sprint = 74; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
+for (let sprint = 75; sprint <= 150; sprint += 1) if (map.get(sprint) !== 'not_started') throw new Error(`Sprint ${sprint} must be not_started.`);
 
 const queue = fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md', 'utf8');
 const extractSprintSection = (queueText, sprintNumber) => {
