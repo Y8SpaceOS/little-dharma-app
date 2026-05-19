@@ -8,6 +8,7 @@ import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { getStoryCompletion, markStoryComplete } from '@/lib/storyProgress';
 import { companionV1 } from '@/lib/companion';
+import { visualStyles } from '@/design/visualSystem';
 
 type Stage = 'detail' | 'story' | 'ritual' | 'pause' | 'quiz' | 'complete' | 'bedtime';
 
@@ -34,7 +35,7 @@ function StoryScreenContent() {
 
   if (!journey) {
     return (
-      <SafeAreaView style={styles.screen}>
+      <SafeAreaView style={visualStyles.softScreen}>
         <View style={styles.fallbackCard}>
           <Text style={styles.title}>This story is resting for now.</Text>
           <Text style={styles.meta}>Return to Story World or go back to Child Home.</Text>
@@ -131,9 +132,9 @@ function StoryScreenContent() {
   };
 
   return (
-    <SafeAreaView style={styles.screen}>
+    <SafeAreaView style={visualStyles.softScreen}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.headerCard}>
+        <View style={[styles.headerCard, visualStyles.roundedCard, visualStyles.warmCard]}>
           <Text style={styles.eyebrow}>Today&apos;s Journey</Text>
           <Text style={styles.title}>{story.title}</Text>
           <Text style={styles.meta}>{story.world} • {story.character} • Value: {story.value} • Age {story.ageBand}</Text>
@@ -141,7 +142,7 @@ function StoryScreenContent() {
 
 
         {stage === 'detail' && (
-          <View style={styles.card}>
+          <View style={[styles.card, visualStyles.roundedCard]}>
             <Text style={styles.panelTitle}>{story.title}</Text>
             <Text style={styles.panelText}>{storySummary}</Text>
             <View style={styles.detailMetaCard}>
@@ -153,7 +154,7 @@ function StoryScreenContent() {
               <Text style={styles.meta}>{journeyPreviewText}</Text>
               <Text style={styles.meta}>{audioStateText}</Text>
             </View>
-            <View style={styles.parentNoteCard}>
+            <View style={[styles.parentNoteCard, visualStyles.parentTrustNoteCard]}>
               <Text style={styles.parentNoteTitle}>For Parents</Text>
               <Text style={styles.parentNoteText}>This story gently introduces the value of {primaryValue.toLowerCase()}.</Text>
               <Text style={styles.parentNoteText}>{detailReflectionPrompt}</Text>
@@ -166,7 +167,7 @@ function StoryScreenContent() {
         )}
 
         {stage === 'story' && (
-          <View style={styles.card}>
+          <View style={[styles.card, visualStyles.roundedCard]}>
             <View style={styles.progressHeader}>
               <Text style={styles.step}>{progressLabel}</Text>
               <Text style={styles.stepPercent}>{progressPercent}% complete</Text>
@@ -214,13 +215,13 @@ function StoryScreenContent() {
 
 
         {stage === 'ritual' && (
-          <View style={styles.card}>
+          <View style={[styles.card, visualStyles.roundedCard]}>
             <Text style={styles.ritualStageEyebrow}>Ritual Moment</Text>
             <Text style={styles.panelTitle}>Diya of Calm: Pause, Think, Bless</Text>
             <Text style={styles.ritualFraming}>A warm Little Dharma moment to breathe, remember the story value, and share one gentle blessing together.</Text>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu helper</Text>
               <Text style={styles.companionInlineCopy}>Luvlu says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
             </View>
 
@@ -264,7 +265,7 @@ function StoryScreenContent() {
         )}
 
         {stage === 'pause' && (
-          <View style={styles.pauseCard}>
+          <View style={[styles.pauseCard, visualStyles.roundedCard]}>
             <Text style={styles.pauseEyebrow}>Quiet Pause</Text>
             <View style={styles.pauseGlowWrap}>
               <View style={styles.pauseGlowOuter}>
@@ -275,14 +276,14 @@ function StoryScreenContent() {
             <Text style={styles.pauseLine}>Take one quiet breath.</Text>
             <Text style={styles.pauseLine}>What did your heart notice?</Text>
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu helper</Text>
               <Text style={styles.companionInlineCopy}>Luvlu says: Let us take one soft breath. Breathe in like smelling a flower, and breathe out like blowing a diya.</Text>
             </View>
           </View>
         )}
 
         {stage === 'quiz' && (
-          <View style={styles.card}>
+          <View style={[styles.card, visualStyles.roundedCard]}>
             <Text style={styles.panelTitle}>Gentle Quiz Time</Text>
             <Text style={styles.panelText}>{story.quiz.question}</Text>
             {story.quiz.options.map((option) => (
@@ -311,7 +312,7 @@ function StoryScreenContent() {
             <Text style={styles.bedtimeSettle}>Settle down together. Relax your shoulders, soften your voice, and take one slow breath.</Text>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu helper</Text>
               <Text style={styles.companionInlineCopy}>{companionV1.copy.bedtime}</Text>
             </View>
 
@@ -348,7 +349,7 @@ function StoryScreenContent() {
         )}
 
         {stage === 'complete' && (
-          <View style={styles.card}>
+          <View style={[styles.card, visualStyles.roundedCard]}>
             <Text style={styles.panelTitle}>{completionTitle}</Text>
             <Text style={styles.panelText}>{story.title || 'Your story is complete.'}</Text>
 
@@ -365,7 +366,7 @@ function StoryScreenContent() {
             </View>
 
             <View style={styles.companionInlineCard}>
-              <Text style={styles.companionInlineLabel}>🦚 Luvlu</Text>
+              <Text style={styles.companionInlineLabel}>🦚 Luvlu helper</Text>
               <Text style={styles.companionInlineCopy}>{completionCompanionLine}</Text>
             </View>
 

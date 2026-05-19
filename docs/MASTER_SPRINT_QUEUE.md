@@ -877,7 +877,8 @@ Status legend: `not started`, `in progress`, `done`.
 - **Completion note:** Completed Ganesha Story Pack v1 foundation artifacts including story pack plan, metadata CSV, parent notes CSV, editorial guardrails CSV, QA docs/CSV, Sprint 75 validator, and governance updates while preserving local-first privacy-safe architecture and forbidden-scope boundaries.
 
 ### Sprint 76 — Little Dharma Visual System Upgrade v1
-- **Status:** not started
+- **Status:** done
+- **Completion note:** Delivered Prototype Visual Parity Foundation v1 with runtime visual system integration across Child Home, Story World, world detail empty-state treatment, and Story Detail, plus QA and validator artifacts.
 
 ### Sprint 77 — Child Home + Story World Visual Polish v1
 - **Status:** not started

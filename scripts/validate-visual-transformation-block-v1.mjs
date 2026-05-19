@@ -24,14 +24,17 @@ for (const [n, title] of requiredTitles) {
   const row = rows.find((r) => Number(r[idx.sprintNumber]) === n);
   if (!row) fail(`Roadmap CSV missing Sprint ${n}`);
   if (row[idx.sprintTitle] !== title) fail(`Roadmap CSV Sprint ${n} title mismatch`);
-  if (row[idx.status] !== 'not_started') fail(`Roadmap CSV Sprint ${n} must remain not_started`);
+  if (n === 76 && row[idx.status] !== 'done') fail('Roadmap CSV Sprint 76 must be done');
+  if (n > 76 && row[idx.status] !== 'not_started') fail(`Roadmap CSV Sprint ${n} must remain not_started`);
 }
 
 if (/Sprint 76 — Hanuman World Architecture v1/.test(queue)) fail('Queue must not recommend Sprint 76 Hanuman World Architecture v1');
 if (/\n76,Hanuman World Architecture v1,/.test(fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv', 'utf8'))) fail('CSV must not keep Sprint 76 Hanuman title');
 
 if (!/### Sprint 75[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 75 must remain done');
-for (let n = 76; n <= 79; n += 1) {
+const sprint76Block = queue.match(new RegExp(`### Sprint 76 —[\\s\\S]*?(?=\\n### Sprint 77 —|\\n### Sprints 91–120 —)`))?.[0] ?? '';
+if (!sprint76Block.includes('- **Status:** done')) fail('Sprint 76 must be done in queue');
+for (let n = 77; n <= 79; n += 1) {
   const block = queue.match(new RegExp(`### Sprint ${n} —[\\s\\S]*?(?=\\n### Sprint ${n + 1} —|\\n### Sprints 91–120 —)`))?.[0] ?? '';
   if (!block.includes('- **Status:** not started')) fail(`Sprint ${n} must remain not started in queue`);
 }

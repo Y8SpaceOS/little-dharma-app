@@ -13,6 +13,7 @@ import { getTodaysJourney, getVrindavanJourneyPath } from '@/services/journeys';
 import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
 import { companionV1 } from '@/lib/companion';
 import { storyWorldItems } from '@/data/storyWorld';
+import { visualStyles, visualTokens } from '@/design/visualSystem';
 
 type HomeCard = { label: string; href: '/(child)/worlds' | '/(child)/bedtime' | '/(child)/treasures' | '/(child)/chant' | '/(parent)/dashboard'; description: string; colors: [string, string] };
 
@@ -115,18 +116,18 @@ function TodayScreenContent() {
   const name = nickname?.trim() ? nickname.trim() : fallbackName;
 
   return (
-    <SafeAreaView style={styles.screen}>
+    <SafeAreaView style={visualStyles.softScreen}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.heroWrap}>
+        <View style={[styles.heroWrap, visualStyles.roundedCard, visualStyles.warmCard, visualTokens.shadow.soft]}>
           <Text style={styles.greeting}>Namaste, {name} ✨</Text>
           <Text style={styles.subtitle}>What shall we explore today?</Text>
           <Text style={styles.prompt}>Choose a gentle story path for today.</Text>
           <Text style={styles.prompt}>Your Companion is here for one calm step.</Text>
         </View>
 
-        <View style={styles.companionCard}><Text style={styles.companionEyebrow}>{companionV1.motif} {companionV1.displayLabel}</Text><Text style={styles.companionCopy}>{companionV1.copy.homeGreeting}</Text></View>
+        <View style={visualStyles.luvluBubble}><Text style={styles.companionCopy}>{companionV1.motif} {companionV1.displayLabel} says: {companionV1.copy.homeGreeting}</Text></View>
 
-        <View style={styles.todayStoryCard}>
+        <View style={[styles.todayStoryCard, visualStyles.roundedCard, visualStyles.skyCard]}>
           <Text style={styles.sectionEyebrow}>Today's Story</Text>
           {todaysStory ? (
             <>
@@ -144,28 +145,28 @@ function TodayScreenContent() {
           )}
         </View>
 
-        <View style={[styles.card, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
+        <View style={[styles.card, visualStyles.roundedCard, status === 'path-completed' ? styles.journeyCompleteCard : styles.journeyPendingCard]}>
           {isJourneyLoading ? <CalmLoadingState surfaceName='Child Home journey summary' audience='child' variant='inline' /> : <><Text style={styles.sectionEyebrow}>Journey Map Preview</Text><Text style={styles.journeyTitle}>{storyTitle}</Text><Text style={styles.metaLine}>Dharma Journeys • Value: {storyValue}</Text>{latestCarryingWord && <Text style={styles.metaLine}>Carrying Word: {latestCarryingWord}</Text>}{earnedBadge && <Text style={styles.metaLine}>Earned badge: {earnedBadge}</Text>}{status !== 'path-completed' && storySlug ? <Link href={`/story/${storySlug}` as never} style={styles.secondaryCta}>Continue</Link> : <Link href='/(child)/worlds' style={styles.secondaryCta}>Visit Story World</Link>}</>}
         </View>
 
-        <Text style={styles.sectionHeader}>Quick Paths</Text>
+        <Text style={visualStyles.softSectionHeader}>Quick Paths</Text>
         <View style={styles.grid}>{quickEntries.map((action) => <Link key={action.label} href={action.href as never} style={[styles.quickCard, { backgroundColor: action.colors[0] }]}><Text style={styles.quickTitle}>{action.label}</Text><Text style={styles.quickDesc}>{action.description}</Text></Link>)}</View>
 
-        <Text style={styles.sectionHeader}>Choose a Story Corner</Text>
+        <Text style={visualStyles.softSectionHeader}>Choose a Story Corner</Text>
         <View style={styles.grid}>
           {['Krishna Stories', 'Ganesha Stories', 'Bedtime Stories', 'Values Stories', 'Festival Stories', 'Dharma Journeys'].map((corner) => (
             <Link key={corner} href='/(child)/worlds' style={styles.cornerCard}><Text style={styles.quickTitle}>{corner}</Text><Text style={styles.quickDesc}>{corner === 'Krishna Stories' ? 'Explore now' : 'Opening soon'}</Text></Link>
           ))}
         </View>
 
-        <Text style={styles.sectionHeader}>Dharma Journeys</Text>
+        <Text style={visualStyles.softSectionHeader}>Dharma Journeys</Text>
         <View style={styles.grid}>
           {['Ramayana Journey', 'Krishna Childhood Journey', 'Ganesha Wisdom Journey'].map((item) => (
             <View key={item} style={styles.journeyPreviewCard}><Text style={styles.quickTitle}>{item}</Text><Text style={styles.quickDesc}>This story corner is being prepared.</Text></View>
           ))}
         </View>
 
-        <Text style={styles.trustCopy}>Recommended using the broad age band saved on this device. You can change this anytime in Parent settings. Stories and progress stay local-first.</Text>
+        <View style={visualStyles.parentTrustNoteCard}><Text style={styles.trustCopy}>Parent trust note: recommended using the broad age band saved on this device. You can change this anytime in Parent settings. Stories and progress stay local-first.</Text></View>
         <Link href='/(parent)/dashboard' style={styles.parentPortal} accessibilityRole='link' accessibilityLabel='Open Parent Space'>Parent Space</Link>
       </ScrollView>
 
