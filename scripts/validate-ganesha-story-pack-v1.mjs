@@ -24,7 +24,10 @@ ok('Story CSV checks passed');
 const queue=fs.readFileSync('docs/MASTER_SPRINT_QUEUE.md','utf8');
 const s75=queue.match(/### Sprint 75 —[\s\S]*?(?=\n### Sprint 76 —)/)?.[0]||'';
 const s76=queue.match(/### Sprint 76 —[\s\S]*?(?=\n### Sprint 77 —)/)?.[0]||'';
-if(!s75.includes('- **Status:** done')) fail('Sprint 75 must be done');
+
+const sprint75StatusLines = s75.match(/- \*\*Status:\*\* .+/g) || [];
+if (sprint75StatusLines.length !== 1) fail(`Sprint 75 must have exactly one status line (found ${sprint75StatusLines.length})`);
+if (sprint75StatusLines[0].trim() !== '- **Status:** done') fail('Sprint 75 status line must be exactly done');
 if(!s76.includes('- **Status:** not started')) fail('Sprint 76 must be not started');
 ok('Queue checks passed');
 
@@ -45,3 +48,11 @@ const worldsUi=fs.readFileSync('app/(child)/worlds.tsx','utf8');
 if(!worldData.includes("sectionId: 'ganesha'")||!worldData.includes('ganesha-beginnings-lamp')||!worldData.includes('ganesha-listening-ears')) fail('Ganesha Story World foundation cards missing in runtime data');
 if(!worldsUi.includes('Ganesha Wisdom Journey foundations are visible here')) fail('Child-facing Ganesha runtime microcopy missing in worlds UI');
 ok('Runtime UI integration checks passed');
+
+
+const taskLog = fs.readFileSync('docs/TASK_LOG.md','utf8');
+const nextLines = taskLog.match(/- Next sprint recommendation: .+/g) || [];
+if (nextLines.length === 0) fail('TASK_LOG missing next sprint recommendation lines');
+const latestNext = nextLines[nextLines.length - 1].trim();
+if (latestNext !== '- Next sprint recommendation: Sprint 76 — Little Dharma Visual System Upgrade v1.') fail(`Latest next sprint recommendation mismatch: ${latestNext}`);
+ok('Next sprint recommendation check passed');
