@@ -880,8 +880,9 @@ Status legend: `not started`, `in progress`, `done`.
 - **Status:** done
 - **Completion note:** Delivered Prototype Visual Parity Foundation v1 with runtime visual system integration across Child Home, Story World, world detail empty-state treatment, and Story Detail, plus QA and validator artifacts.
 
-### Sprint 77 — Child Home + Story World Visual Polish v1
-- **Status:** not started
+### Sprint 77 — Onboarding + App Shell Prototype Reconstruction v1
+- **Status:** done
+- **Completion note:** Reconstructed onboarding runtime surfaces (splash, brand philosophy, parent promise, child profile setup, Luvlu intro, comfort settings preview, first world preview, parent gate) and app shell polish with warm safe-area presentation, plus Sprint 77 QA/route audit/validator updates while preserving local-first parent-trust constraints.
 
 ### Sprint 78 — Story Detail + Content Runtime Visual Integration v1
 - **Status:** not started

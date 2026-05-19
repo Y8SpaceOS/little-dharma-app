@@ -51,7 +51,7 @@ for (let n = 61; n <= 75; n += 1) {
 }
 const s76 = rows.find((r) => r.n === 76);
 if (s76?.status !== 'done') fail('Sprint 76 must be done');
-for (let n = 77; n <= 150; n += 1) {
+for (let n = 78; n <= 150; n += 1) {
   const row = rows.find((r) => r.n === n);
   if (row?.status !== 'not_started') fail(`Sprint ${n} must remain not_started`);
 }

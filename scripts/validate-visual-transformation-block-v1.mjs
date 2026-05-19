@@ -13,7 +13,7 @@ const idx = Object.fromEntries(header.map((h, i) => [h, i]));
 
 const requiredTitles = new Map([
   [76, 'Little Dharma Visual System Upgrade v1'],
-  [77, 'Child Home + Story World Visual Polish v1'],
+  [77, 'Onboarding + App Shell Prototype Reconstruction v1'],
   [78, 'Story Detail + Content Runtime Visual Integration v1'],
 ]);
 
@@ -25,7 +25,8 @@ for (const [n, title] of requiredTitles) {
   if (!row) fail(`Roadmap CSV missing Sprint ${n}`);
   if (row[idx.sprintTitle] !== title) fail(`Roadmap CSV Sprint ${n} title mismatch`);
   if (n === 76 && row[idx.status] !== 'done') fail('Roadmap CSV Sprint 76 must be done');
-  if (n > 76 && row[idx.status] !== 'not_started') fail(`Roadmap CSV Sprint ${n} must remain not_started`);
+  if (n === 77 && row[idx.status] !== 'done') fail('Roadmap CSV Sprint 77 must be done');
+  if (n > 77 && row[idx.status] !== 'not_started') fail(`Roadmap CSV Sprint ${n} must remain not_started`);
 }
 
 if (/Sprint 76 — Hanuman World Architecture v1/.test(queue)) fail('Queue must not recommend Sprint 76 Hanuman World Architecture v1');
@@ -34,7 +35,7 @@ if (/\n76,Hanuman World Architecture v1,/.test(fs.readFileSync('docs/content/pos
 if (!/### Sprint 75[\s\S]*?- \*\*Status:\*\* done/.test(queue)) fail('Sprint 75 must remain done');
 const sprint76Block = queue.match(new RegExp(`### Sprint 76 —[\\s\\S]*?(?=\\n### Sprint 77 —|\\n### Sprints 91–120 —)`))?.[0] ?? '';
 if (!sprint76Block.includes('- **Status:** done')) fail('Sprint 76 must be done in queue');
-for (let n = 77; n <= 79; n += 1) {
+for (let n = 78; n <= 79; n += 1) {
   const block = queue.match(new RegExp(`### Sprint ${n} —[\\s\\S]*?(?=\\n### Sprint ${n + 1} —|\\n### Sprints 91–120 —)`))?.[0] ?? '';
   if (!block.includes('- **Status:** not started')) fail(`Sprint ${n} must remain not started in queue`);
 }

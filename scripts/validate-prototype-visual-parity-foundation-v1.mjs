@@ -79,7 +79,7 @@ const sprint76StatusLines = sprint76Section[0].match(/- \*\*Status:\*\* .+/g) ??
 if (sprint76StatusLines.length !== 1) throw new Error(`Sprint 76 must have exactly one status line, found ${sprint76StatusLines.length}`);
 if (sprint76StatusLines[0].trim() !== '- **Status:** done') throw new Error('Sprint 76 status must be exactly "- **Status:** done"');
 
-for (let sprint = 77; sprint <= 150; sprint += 1) {
+for (let sprint = 78; sprint <= 150; sprint += 1) {
   const section = queue.match(new RegExp(`### Sprint ${sprint} —[\\s\\S]*?(?=\\n### Sprint ${sprint + 1} —|\\n### Sprints |$)`));
   if (!section) continue;
   const statuses = section[0].match(/- \*\*Status:\*\* .+/g) ?? [];
@@ -105,7 +105,7 @@ for (const rowText of csvRaw.slice(1)) {
     found76 = true;
     if (status !== 'done') throw new Error('Sprint 76 row in roadmap CSV must be done');
   }
-  if (sprint >= 77 && sprint <= 150 && status !== 'not_started') {
+  if (sprint >= 78 && sprint <= 150 && status !== 'not_started') {
     throw new Error(`Sprint ${sprint} row in roadmap CSV must remain not_started`);
   }
 }
