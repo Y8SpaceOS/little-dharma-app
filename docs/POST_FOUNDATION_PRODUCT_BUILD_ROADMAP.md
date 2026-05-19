@@ -108,9 +108,9 @@ The owner decision for Sprint 61 is to pause immediate paid-beta and external-pr
 | 73 | Krishna Story Pack Expansion Planning |
 | 74 | Ganesha World Architecture v1 |
 | 75 | Ganesha Story Pack v1 |
-| 76 | Hanuman World Architecture v1 |
-| 77 | Hanuman Story Pack v1 |
-| 78 | Festival Box Digital Experience v1 |
+| 76 | Little Dharma Visual System Upgrade v1 |
+| 77 | Child Home + Story World Visual Polish v1 |
+| 78 | Story Detail + Content Runtime Visual Integration v1 |
 | 79 | Bedtime Journey Expansion v1 |
 | 80 | Morning Ritual Experience v1 |
 | 81 | Illustration System Direction v1 |
@@ -124,7 +124,11 @@ The owner decision for Sprint 61 is to pause immediate paid-beta and external-pr
 | 89 | App Performance and Responsiveness Audit v1 |
 | 90 | Product Depth Gate Review |
 
-### Sprints 91–120 — Content + Parent Utility Expansion
+#
+## Permanent Child-Facing Visual Rule (Sprint 76 onward)
+From Sprint 76 onward, every child-facing sprint must either (1) improve visible UI, (2) improve a reusable visual component, or (3) explicitly document why no visual change is appropriate. The `little_dharma_45_screen_structured_prototype.html` direction is the minimum child-facing visual quality bar for Little Dharma surfaces.
+
+## Sprints 91–120 — Content + Parent Utility Expansion
 
 | Sprint | Title |
 |---|---|

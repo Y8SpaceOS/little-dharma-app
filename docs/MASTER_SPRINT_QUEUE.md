@@ -921,6 +921,8 @@ Status legend: `not started`, `in progress`, `done`.
 ### Sprint 90 — Product Depth Gate Review
 - **Status:** not started
 
+- **Permanent rule from Sprint 76 onward:** Every child-facing sprint must either improve visible UI, improve a reusable visual component, or explicitly document why no visual change is appropriate. The 45-screen structured prototype remains the minimum child-facing visual quality bar.
+
 ### Sprints 91–120 — Content + Parent Utility Expansion
 - **Status:** not started (phase queue)
 - **Focus:** More content depth, parent usefulness, repeat usage value, family ritual loops, trust surfaces, structured content ops, and no monetisation unless separately approved.
