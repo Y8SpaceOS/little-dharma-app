@@ -31,17 +31,26 @@ if (sprint75StatusLines[0].trim() !== '- **Status:** done') fail('Sprint 75 stat
 if(!s76.includes('- **Status:** not started')) fail('Sprint 76 must be not started');
 ok('Queue checks passed');
 
-const roadmap=fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv','utf8');
-if(!roadmap.includes('75,Ganesha Story Pack v1')||!roadmap.includes('75,Ganesha Story Pack v1,Phase 2 Product Depth Expansion,Improve depth trust and repeat ritual quality,Product Experience,Execution clarity,done')) fail('Roadmap Sprint 75 row must be done');
-if(!roadmap.includes('76,Little Dharma Visual System Upgrade v1')||!roadmap.includes('77,Child Home + Story World Visual Polish v1')||!roadmap.includes('78,Story Detail + Content Runtime Visual Integration v1')) fail('Roadmap visual transformation block titles missing for Sprints 76-78');
-if(!roadmap.includes('76,Little Dharma Visual System Upgrade v1,Phase 2 Product Depth Expansion,Improve depth trust and repeat ritual quality,Product Experience,Execution clarity,not_started')||!roadmap.includes('77,Child Home + Story World Visual Polish v1,Phase 2 Product Depth Expansion,Improve depth trust and repeat ritual quality,Product Experience,Execution clarity,not_started')||!roadmap.includes('78,Story Detail + Content Runtime Visual Integration v1,Phase 2 Product Depth Expansion,Improve depth trust and repeat ritual quality,Product Experience,Execution clarity,not_started')) fail('Sprint 76-78 must remain not_started');
+const roadmapRows=fs.readFileSync('docs/content/post-foundation-product-build-roadmap.csv','utf8').trim().split(/\r?\n/);
+const roadmapHeader=roadmapRows[0].split(',');
+const idx=Object.fromEntries(roadmapHeader.map((v,i)=>[v,i]));
+const parsed=roadmapRows.slice(1).map((line)=>line.split(','));
+const sprint75Rows=parsed.filter((r)=>Number(r[idx.sprintNumber])===75);
+if(sprint75Rows.length!==1) fail(`Sprint 75 must appear exactly once in roadmap CSV (found ${sprint75Rows.length})`);
+if(sprint75Rows[0][idx.status] !== 'done') fail('Roadmap Sprint 75 status must be done');
+
+const visualBlock = new Map([[76,'Little Dharma Visual System Upgrade v1'],[77,'Child Home + Story World Visual Polish v1'],[78,'Story Detail + Content Runtime Visual Integration v1']]);
+for (const [n,title] of visualBlock.entries()) {
+  const row = parsed.find((r)=>Number(r[idx.sprintNumber])===n);
+  if(!row) fail(`Missing Sprint ${n} row`);
+  if(row[idx.sprintTitle] !== title) fail(`Sprint ${n} title mismatch`);
+}
+for (let n=76;n<=150;n+=1){
+  const row=parsed.find((r)=>Number(r[idx.sprintNumber])===n);
+  if(!row) fail(`Missing Sprint ${n} row`);
+  if(row[idx.status] !== 'not_started') fail(`Sprint ${n} must remain not_started`);
+}
 ok('Roadmap checks passed');
-
-const scoped=[plan,fs.readFileSync('docs/content/ganesha-story-pack-v1.csv','utf8').toLowerCase(),fs.readFileSync('docs/content/ganesha-story-pack-v1-parent-notes.csv','utf8').toLowerCase()].join('\n');
-if(/\bmoru\b/i.test(scoped)) fail('Forbidden term moru');
-ok('Safety language checks passed');
-console.log('🎉 validate-ganesha-story-pack-v1 passed');
-
 
 const worldData=fs.readFileSync('src/data/storyWorld.ts','utf8');
 const worldsUi=fs.readFileSync('app/(child)/worlds.tsx','utf8');
@@ -49,6 +58,9 @@ if(!worldData.includes("sectionId: 'ganesha'")||!worldData.includes('ganesha-beg
 if(!worldsUi.includes('Ganesha Wisdom Journey foundations are visible here')) fail('Child-facing Ganesha runtime microcopy missing in worlds UI');
 ok('Runtime UI integration checks passed');
 
+const scoped=[plan,fs.readFileSync('docs/content/ganesha-story-pack-v1.csv','utf8').toLowerCase(),fs.readFileSync('docs/content/ganesha-story-pack-v1-parent-notes.csv','utf8').toLowerCase()].join('\n');
+if(/\bmoru\b/i.test(scoped)) fail('Forbidden term moru');
+ok('Safety language checks passed');
 
 const taskLog = fs.readFileSync('docs/TASK_LOG.md','utf8');
 const nextLines = taskLog.match(/- Next sprint recommendation: .+/g) || [];
@@ -56,3 +68,5 @@ if (nextLines.length === 0) fail('TASK_LOG missing next sprint recommendation li
 const latestNext = nextLines[nextLines.length - 1].trim();
 if (latestNext !== '- Next sprint recommendation: Sprint 76 — Little Dharma Visual System Upgrade v1.') fail(`Latest next sprint recommendation mismatch: ${latestNext}`);
 ok('Next sprint recommendation check passed');
+
+console.log('🎉 validate-ganesha-story-pack-v1 passed');
