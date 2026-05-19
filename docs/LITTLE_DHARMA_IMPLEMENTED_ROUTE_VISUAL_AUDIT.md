@@ -13,7 +13,7 @@ This audit reflects Sprint 77 onboarding + app shell reconstruction work and bui
 | 05 Luvlu Introduction | `/onboarding` step 4 | Implemented | Luvlu positioned as optional helper guide, not brand logo. |
 | 06 Content Comfort Settings | `/onboarding` step 5 | Implemented (preview mode) | Gentle mode + source notes + bedtime-friendly toggles, Festival/Shloka marked coming later. |
 | 07 First World Preview | `/onboarding` step 6 | Implemented | Krishna / Ganesha / Bedtime / Values doorway preview + world CTA path. |
-| 08 Parent Gate | `/(parent)/gate` + `/onboarding` step 7 | Implemented (placeholder gate) | Warm “For parents / Grown-up area” gate present with honest placeholder parent word. |
+| 08 Parent Gate | `/(parent)/profiles` + `/onboarding` step 7 | Implemented (placeholder gate) | Warm “For parents / Grown-up area” gate present with honest placeholder parent word. |
 
 ## App shell status
 - `app/_layout.tsx` keeps route/debug headers hidden across user-facing routes.
@@ -34,7 +34,7 @@ This audit reflects Sprint 77 onboarding + app shell reconstruction work and bui
 
 ## Onboarding status (requested deep check)
 - Onboarding exists at `/onboarding` and now includes dedicated surfaces for prototype 01–08.
-- Parent gate now has dedicated route: `/(parent)/gate`.
+- Parent gate now has dedicated route: `/(parent)/profiles`.
 
 ## Sprint recommendation
 - **Sprint 77 — Onboarding + App Shell Visual Parity v1**
