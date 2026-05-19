@@ -74,7 +74,8 @@ const s71 = extractSprintSection(queueRaw, 71);
 if (s71 && !s71.includes('- **Status:** done')) fail('Sprint 71 section must be done in MASTER_SPRINT_QUEUE.');
 if (rows.find((x) => x.sprint === 72)?.status !== 'done') fail('Sprint 72 must be done');
 const s73 = extractSprintSection(queueRaw, 73);
-if (s73 && !s73.includes('- **Status:** done')) fail('Sprint 73 section must be done in MASTER_SPRINT_QUEUE.');
+if (!s73) fail('MASTER_SPRINT_QUEUE is missing Sprint 73 section.');
+if (!s73.includes('- **Status:** done')) fail('Sprint 73 section must be done in MASTER_SPRINT_QUEUE.');
 for (let s = 74; s <= 150; s += 1) {
   const section = extractSprintSection(queueRaw, s);
   if (section && !section.includes('- **Status:** not started')) {
