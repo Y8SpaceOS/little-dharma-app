@@ -1,67 +1,64 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'expo-router';
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import {
-  PrototypeBrandMark,
-  PrototypeButton,
-  PrototypeHeroCard,
-  PrototypeLuvluBubble,
-  PrototypeMotifRow,
-  PrototypeScreen,
-  PrototypeSecondaryButton,
-  PrototypeSurfaceCard
+  PrototypeBrandIcon,
+  PrototypeBottomCTA,
+  PrototypeLandingScreen,
+  PrototypeLandscape,
+  PrototypeSky,
+  PrototypeStatusBar
 } from '@/components/prototypePrimitives';
 import { getOnboardingState, loadOnboardingState, resetOnboarding, subscribeOnboardingState } from '@/lib/onboardingState';
 
 export default function Home() {
   const [ready, setReady] = useState(false);
-  const [done, setDone] = useState(getOnboardingState().onboardingComplete);
   const router = useRouter();
 
   useEffect(() => {
-    const off = subscribeOnboardingState(() => setDone(getOnboardingState().onboardingComplete));
+    const off = subscribeOnboardingState(() => undefined);
     loadOnboardingState().finally(() => setReady(true));
     return off;
   }, []);
 
-  if (!ready) {
-    return (
-      <PrototypeScreen>
-        <PrototypeHeroCard>
-          <PrototypeBrandMark />
-          <Text style={styles.brandTitle}>Little Dharma</Text>
-          <Text style={styles.promiseText}>A calm, parent-trusted spiritual story world for little hearts.</Text>
-        </PrototypeHeroCard>
-      </PrototypeScreen>
-    );
-  }
-
   return (
-    <PrototypeScreen>
-      <PrototypeHeroCard>
-        <PrototypeMotifRow />
-        <PrototypeBrandMark />
-        <Text style={styles.brandTitle}>Little Dharma</Text>
-        <Text style={styles.promiseText}>Warm stories, gentle values, and child-friendly wonder with parent-guided trust.</Text>
-        <PrototypeLuvluBubble copy='Luvlu is here as a calm helper to guide your family into a gentle beginning.' />
+    <PrototypeLandingScreen>
+      <PrototypeSky />
+      <PrototypeLandscape />
+      <PrototypeStatusBar />
 
-        <PrototypeButton label='Begin Little Dharma' onPress={() => router.push('/onboarding')} />
+      <View style={styles.mainWrap}>
+        <PrototypeBrandIcon />
 
-        {done && <PrototypeSecondaryButton label='Continue to Child World' onPress={() => router.replace('/(child)/today')} />}
+        <Text style={styles.title}>Little Dharma</Text>
+        <Text style={styles.subtitle}>{'Stories, values and wonder\nfor little hearts.'}</Text>
+      </View>
 
-        <PrototypeSurfaceCard>
-          <TouchableOpacity onPress={async () => { await resetOnboarding(); router.replace('/onboarding'); }} style={styles.qaResetWrap}>
-            <Text style={styles.qaResetText}>Reset Onboarding (Local QA)</Text>
-          </TouchableOpacity>
-        </PrototypeSurfaceCard>
-      </PrototypeHeroCard>
-    </PrototypeScreen>
+      <View style={styles.ctaWrap}>
+        <PrototypeBottomCTA label='Begin the journey' onPress={() => router.push('/onboarding')} />
+      </View>
+
+      <View style={styles.devOnlyWrap} pointerEvents='box-none'>
+        <Pressable
+          onPress={async () => {
+            await resetOnboarding();
+            if (ready || getOnboardingState().onboardingComplete) router.replace('/onboarding');
+          }}
+          style={styles.devOnlyLink}
+        >
+          <Text style={styles.devOnlyText}>dev reset</Text>
+        </Pressable>
+      </View>
+    </PrototypeLandingScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  brandTitle: { textAlign: 'center', color: '#5A341B', fontSize: 34, fontWeight: '900', letterSpacing: 0.2 },
-  promiseText: { textAlign: 'center', color: '#6E4D31', fontSize: 16, lineHeight: 23, marginBottom: 2 },
-  qaResetWrap: { paddingVertical: 2 },
-  qaResetText: { textAlign: 'center', color: '#745B41', fontSize: 12, textDecorationLine: 'underline' }
+  mainWrap: { marginTop: 18, alignItems: 'center', paddingHorizontal: 28 },
+  title: { marginTop: 24, color: '#4F2F1A', fontSize: 48, lineHeight: 50, fontWeight: '900', textAlign: 'center' },
+  subtitle: { marginTop: 14, color: '#5C3A20', fontSize: 24, lineHeight: 30, fontWeight: '800', textAlign: 'center' },
+  ctaWrap: { position: 'absolute', left: 24, right: 24, bottom: 94 },
+  devOnlyWrap: { position: 'absolute', right: 6, bottom: 8 },
+  devOnlyLink: { padding: 2 },
+  devOnlyText: { color: 'rgba(70,50,35,0.18)', fontSize: 8 }
 });

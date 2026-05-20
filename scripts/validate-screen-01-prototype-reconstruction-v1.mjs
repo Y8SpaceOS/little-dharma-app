@@ -1,51 +1,36 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 
-const requiredFiles = [
-  'app/index.tsx',
-  'src/components/prototypePrimitives.tsx',
-  'docs/LITTLE_DHARMA_PROTOTYPE_VISUAL_PARITY_AUDIT.md'
-];
-for (const file of requiredFiles) {
-  if (!fs.existsSync(file)) throw new Error(`Missing required file: ${file}`);
-}
+const files = ['app/index.tsx', 'src/components/prototypePrimitives.tsx', 'docs/LITTLE_DHARMA_PROTOTYPE_VISUAL_PARITY_AUDIT.md'];
+for (const file of files) if (!fs.existsSync(file)) throw new Error(`Missing required file: ${file}`);
 
 const index = fs.readFileSync('app/index.tsx', 'utf8');
 const primitives = fs.readFileSync('src/components/prototypePrimitives.tsx', 'utf8');
 const audit = fs.readFileSync('docs/LITTLE_DHARMA_PROTOTYPE_VISUAL_PARITY_AUDIT.md', 'utf8');
-const prototypeSource = audit;
 
-if (!index.includes('export default function Home')) throw new Error('Screen 01 route implementation missing in app/index.tsx');
+if (!index.includes('export default function Home')) throw new Error('Screen 01 route missing in app/index.tsx');
 
-for (const component of [
-  'PrototypeScreen',
-  'PrototypeHeroCard',
-  'PrototypeBrandMark',
-  'PrototypeMotifRow',
-  'PrototypeButton',
-  'PrototypeSecondaryButton',
-  'PrototypeLuvluBubble',
-  'PrototypeSurfaceCard'
-]) {
+for (const component of ['PrototypeLandingScreen', 'PrototypeStatusBar', 'PrototypeSky', 'PrototypeBrandIcon', 'PrototypeLandscape', 'PrototypeBottomCTA']) {
   if (!primitives.includes(`function ${component}`)) throw new Error(`Missing primitive: ${component}`);
-  if (!index.includes(component)) throw new Error(`app/index.tsx not using primitive: ${component}`);
+  if (!index.includes(component)) throw new Error(`Screen 01 must use primitive: ${component}`);
 }
 
-if (/🪔|🌸|☀️|🦚/.test(index)) throw new Error('Screen 01 still relies on emoji-heavy motif treatment in app/index.tsx');
-if (!/Luvlu guide|calm helper/i.test(index)) throw new Error('Luvlu helper declaration missing in Screen 01');
-if (/logo/i.test(index) && /Luvlu/i.test(index)) throw new Error('Luvlu appears conflated with logo in Screen 01 copy');
-if (!index.includes('Begin Little Dharma')) throw new Error('Begin Little Dharma CTA must be preserved');
-if (!index.includes('Reset Onboarding (Local QA)')) throw new Error('QA reset secondary action must remain present');
+if (/PrototypeHeroCard|heroCard|<View style={styles\.card}/.test(index)) throw new Error('Large hero card container should not be used on Screen 01');
+if (!/sun|cloud|PrototypeSky/i.test(index + primitives)) throw new Error('Sky/sun/cloud markers missing');
+if (!/hill|ground|landscape|PrototypeLandscape/i.test(index + primitives)) throw new Error('Landscape/hill/ground markers missing');
+if (!index.includes('Begin the journey')) throw new Error('Missing required CTA copy: Begin the journey');
+if (index.includes('Continue to Child World')) throw new Error('Continue to Child World must not be visible in Screen 01 primary composition');
+if (/Luvlu|PrototypeLuvluBubble/.test(index)) throw new Error('Luvlu helper bubble must not appear in Screen 01 primary composition');
+if (/🪔|🌸|☀️|🦚|✺|✧|◌/.test(index + primitives)) throw new Error('Emoji/symbol motif treatment still present for Screen 01');
+if (!/dev reset/.test(index) || !/fontSize:\s*8/.test(index)) throw new Error('QA reset must remain non-dominant/dev-only');
 
 const forbidden = /\bbackend\b|cloud sync|\bcms\b|voice command|microphone|recording|leaderboard|streak|coins|\bxp\b|ranking/i;
-if (forbidden.test(index) || forbidden.test(primitives)) throw new Error('Forbidden scope keywords detected in Screen 01 implementation');
+if (forbidden.test(index) || forbidden.test(primitives)) throw new Error('Forbidden scope keywords detected');
 
-if (!/manual review until screenshot approval/i.test(audit)) throw new Error('Audit must state App Entry manual screenshot approval requirement');
-if (!/manual screenshot confirmation/i.test(audit)) throw new Error('Audit must require manual screenshot confirmation for visual parity closure');
-if (!/do not auto-upgrade App Entry to 4\/5 or 5\/5/i.test(audit)) throw new Error('Audit must block automatic 4/5 scoring without screenshot evidence');
-
-if (!prototypeSource.includes('01–08, 146–155, 306–315, 424–443, 487')) {
-  throw new Error('Prototype source reference IDs for Screen 01 not found in audit source');
+if (!/manual review until screenshot approval/i.test(audit)) throw new Error('Audit must keep App Entry under manual screenshot review');
+if (!/do not auto-upgrade App Entry to 4\/5 or 5\/5/i.test(audit)) throw new Error('Audit must block auto-upgrade');
+if (!/Screen 01 rebuilt against supplied screenshot; manual screenshot approval required before score upgrade\./i.test(audit)) {
+  throw new Error('Audit missing required screenshot-approval note');
 }
 
 console.log('validate-screen-01-prototype-reconstruction-v1: PASS');
