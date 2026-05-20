@@ -117,7 +117,13 @@ function TreasuresScreenContent() {
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.title}>My Treasures ✨</Text>
-        <Text style={styles.subtitle}>Your Story Memories and values are held here with care.</Text>
+        <Text style={styles.subtitle}>Treasures remind us of the stories and values we explored.</Text>
+
+
+        <View style={styles.reflectCard}>
+          <Text style={styles.reflectTitle}>Story Flowers • Blessing Notes • Value Petals • Diyas Lit</Text>
+          <Text style={styles.reflectCopy}>Treasures will appear here as you complete stories.</Text>
+        </View>
 
         <View style={styles.heroCard}>
           {isLoading ? (
@@ -137,7 +143,7 @@ function TreasuresScreenContent() {
         </View>
 
 
-        <Text style={styles.sectionSubtitle}>Earned Badges become story memories here. Vrindavan memories saved stay Private on this device.</Text>
+        <Text style={styles.sectionSubtitle}>Story Flowers and Blessing Notes become gentle memories here. Value Petals and Diyas Lit stay private on this device.</Text>
         <View style={styles.luvluCard}>
           <Text style={styles.luvluTitle}>🦚 Luvlu</Text>
           <Text style={styles.luvluCopy}>Luvlu says: Every kind story helps your garden grow. Choose one value to remember today.</Text>
@@ -146,7 +152,7 @@ function TreasuresScreenContent() {
         {completedCount === 0 ? (
           <View style={styles.emptyCard}>
             <Text style={styles.emptyTitle}>Your garden is ready to grow</Text>
-            <Text style={styles.emptyCopy}>Complete a story to plant your first value seed.</Text>
+            <Text style={styles.emptyCopy}>Treasures will appear here as you complete stories.</Text>
             <Text style={styles.emptyLuvlu}>Luvlu says: Let us find your first kindness flower.</Text>
             <View style={styles.emptyActions}>
               <Link href='/(child)/worlds' style={styles.primaryCta} accessibilityRole='link' accessibilityLabel='Go to Story World'>Go to Story World</Link>
@@ -232,6 +238,9 @@ const styles = StyleSheet.create({
   content: { padding: tokens.spacing.lg, gap: 12, paddingBottom: tokens.spacing.xl },
   title: { fontSize: 34, fontWeight: '800', color: '#50311A' },
   subtitle: { fontSize: 16, lineHeight: 22, color: '#6D4B2C' },
+  reflectCard: { backgroundColor: "#FFF6E4", borderRadius: 18, borderWidth: 1, borderColor: "#EAD9BB", padding: tokens.spacing.md, gap: 4 },
+  reflectTitle: { fontSize: 16, fontWeight: "800", color: "#5A361D" },
+  reflectCopy: { fontSize: 14, color: "#6D4B2C" },
   heroCard: { backgroundColor: '#FFE7C2', borderRadius: 24, borderWidth: 1, borderColor: '#F5CB8D', padding: tokens.spacing.lg, gap: 8 },
   heroEyebrow: { fontSize: 12, letterSpacing: 1, textTransform: 'uppercase', fontWeight: '700', color: '#7A4A25' },
   heroTitle: { fontSize: 22, fontWeight: '800', color: '#4A2B17' },

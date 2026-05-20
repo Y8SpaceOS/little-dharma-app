@@ -20,9 +20,9 @@ function TodayScreenContent() {
 
   const paths = useMemo(() => [
     { icon: '📖', title: 'Explore Story World', copy: 'Open warm worlds full of values and wonder.', href: '/(child)/worlds', bg: '#DDF0FF' },
-    { icon: '🪔', title: 'Continue your story', copy: 'Your journey will grow as you complete stories.', href: '/(child)/worlds', bg: '#FFF0DA' },
-    { icon: '🛤️', title: 'Dharma Journeys preview', copy: 'Follow one gentle path with calm steps.', href: '/(child)/worlds', bg: '#EAF7E8' },
-    { icon: '🌸', title: "Today's gentle value", copy: 'Kindness glows brighter each time you practice it.', href: '/(child)/worlds', bg: '#F8ECFA' }
+    { icon: '🪔', title: 'Dharma Journeys', copy: 'Long story paths you can explore slowly.', href: '/(child)/journeys', bg: '#FFF0DA' },
+    { icon: '🌸', title: 'Values Garden', copy: 'Stories that help us practice kindness and gratitude.', href: '/(child)/values', bg: '#EAF7E8' },
+    { icon: '✨', title: 'My Treasures', copy: 'Treasures remind us of the stories and values we explored.', href: '/(child)/treasures', bg: '#F8ECFA' }
   ], []);
 
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
