@@ -26,6 +26,10 @@ This audit pauses PR #92 merge until Sprint 80 implemented screens achieve accep
 - **Required repair:** align hero spacing scale, type ramp, and ornamental motif framing to prototype; implement prototype-faithful card geometry and CTA placement; refine Luvlu placement/state to match reference composition.
 - **Repair priority:** **P0**
 - **Merge blocker:** **yes**
+- **Manual review status:** **under manual review until screenshot approval**.
+- **Scoring rule note:** do not auto-upgrade App Entry to 4/5 or 5/5 without explicit screenshot-confirmed evidence.
+- **Evidence requirement:** visual parity closure requires manual screenshot confirmation.
+
 
 ## 2) Onboarding
 - **Implemented route/file:** `/onboarding` → `app/onboarding.tsx`
