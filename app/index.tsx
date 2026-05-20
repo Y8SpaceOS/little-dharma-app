@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
 import { useRouter } from 'expo-router';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   PrototypeBrandIcon,
   PrototypeBottomCTA,
@@ -9,56 +9,36 @@ import {
   PrototypeSky,
   PrototypeStatusBar
 } from '@/components/prototypePrimitives';
-import { getOnboardingState, loadOnboardingState, resetOnboarding, subscribeOnboardingState } from '@/lib/onboardingState';
 
 export default function Home() {
-  const [ready, setReady] = useState(false);
   const router = useRouter();
-
-  useEffect(() => {
-    const off = subscribeOnboardingState(() => undefined);
-    loadOnboardingState().finally(() => setReady(true));
-    return off;
-  }, []);
+  const insets = useSafeAreaInsets();
 
   return (
     <PrototypeLandingScreen>
       <PrototypeSky />
       <PrototypeLandscape />
-      <PrototypeStatusBar />
+      <View style={[styles.statusZone, { paddingTop: Math.max(0, insets.top - 6) }]}>
+        <PrototypeStatusBar />
+      </View>
 
-      <View style={styles.mainWrap}>
+      <View style={styles.contentZone}>
         <PrototypeBrandIcon />
-
         <Text style={styles.title}>Little Dharma</Text>
         <Text style={styles.subtitle}>{'Stories, values and wonder\nfor little hearts.'}</Text>
       </View>
 
-      <View style={styles.ctaWrap}>
+      <View style={[styles.ctaZone, { bottom: Math.max(32, insets.bottom + 16) }]}>
         <PrototypeBottomCTA label='Begin the journey' onPress={() => router.push('/onboarding')} />
-      </View>
-
-      <View style={styles.devOnlyWrap} pointerEvents='box-none'>
-        <Pressable
-          onPress={async () => {
-            await resetOnboarding();
-            if (ready || getOnboardingState().onboardingComplete) router.replace('/onboarding');
-          }}
-          style={styles.devOnlyLink}
-        >
-          <Text style={styles.devOnlyText}>dev reset</Text>
-        </Pressable>
       </View>
     </PrototypeLandingScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  mainWrap: { marginTop: 18, alignItems: 'center', paddingHorizontal: 28 },
-  title: { marginTop: 24, color: '#4F2F1A', fontSize: 48, lineHeight: 50, fontWeight: '900', textAlign: 'center' },
-  subtitle: { marginTop: 14, color: '#5C3A20', fontSize: 24, lineHeight: 30, fontWeight: '800', textAlign: 'center' },
-  ctaWrap: { position: 'absolute', left: 24, right: 24, bottom: 94 },
-  devOnlyWrap: { position: 'absolute', right: 6, bottom: 8 },
-  devOnlyLink: { padding: 2 },
-  devOnlyText: { color: 'rgba(70,50,35,0.18)', fontSize: 8 }
+  statusZone: { position: 'absolute', left: 0, right: 0, top: 0 },
+  contentZone: { alignItems: 'center' },
+  title: { marginTop: 24, color: '#3D2417', fontSize: 40, lineHeight: 44, fontWeight: '800', textAlign: 'center', letterSpacing: -0.5 },
+  subtitle: { marginTop: 16, maxWidth: '78%', color: '#3D2417', fontSize: 19, lineHeight: 26, fontWeight: '700', textAlign: 'center' },
+  ctaZone: { position: 'absolute', left: '6%', right: '6%' }
 });
