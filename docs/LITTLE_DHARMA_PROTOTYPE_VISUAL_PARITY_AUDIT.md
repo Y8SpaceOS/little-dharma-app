@@ -29,7 +29,7 @@ This audit pauses PR #92 merge until Sprint 80 implemented screens achieve accep
 - **Manual review status:** **under manual review until screenshot approval**.
 - **Scoring rule note:** do not auto-upgrade App Entry to 4/5 or 5/5 without explicit screenshot-confirmed evidence.
 - **Evidence requirement:** visual parity closure requires manual screenshot confirmation.
-- **Evidence note:** Screen 01 rebuilt against supplied screenshot; manual screenshot approval required before score upgrade.
+- **Evidence note:** Screen 01 rebuilt against supplied screenshot and Claude visual specification; manual screenshot approval required before score upgrade.
 
 
 ## 2) Onboarding

@@ -28,6 +28,6 @@ if (forbidden.test(combined)) throw new Error('Forbidden scope keywords detected
 
 if (!/manual review until screenshot approval/i.test(audit)) throw new Error('Audit must keep App Entry under manual screenshot review');
 if (!/do not auto-upgrade App Entry to 4\/5 or 5\/5/i.test(audit)) throw new Error('Audit must block auto-upgrade');
-if (!/Screen 01 rebuilt against supplied screenshot; manual screenshot approval required before score upgrade\./i.test(audit)) throw new Error('Audit missing required screenshot note');
+if (!/Screen 01 rebuilt against supplied screenshot and Claude visual specification; manual screenshot approval required before score upgrade\./i.test(audit)) throw new Error('Audit missing required screenshot note');
 
 console.log('validate-screen-01-prototype-reconstruction-v1: PASS');
