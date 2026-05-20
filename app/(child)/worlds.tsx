@@ -13,7 +13,7 @@ const doorways = [
   { icon: '🪔', title: 'Festival Stories', copy: 'Diya-light joy and seasonal traditions.', href: '/world/festivals', tags: ['Festivals'], bg: '#FFEFD8', ready: false }
 ];
 
-const chips = ['Bedtime', 'Values', 'Journeys', 'Festivals'];
+const chips = ['Bedtime', 'Values', 'Journeys', 'Festivals', 'Krishna'];
 
 export default function Screen() {
   const router = useRouter();
@@ -24,7 +24,7 @@ export default function Screen() {
     <View style={[visualStyles.heroCard, { backgroundColor: '#FFF0D5' }]}>
       <Text style={styles.heading}>Story World</Text>
       <Text style={styles.subHeading}>Choose a doorway</Text>
-      <Text style={styles.sub}>Every world is crafted with parent-trusted language and respectful story framing.</Text>
+      <Text style={styles.sub}>Every world is crafted with parent-trusted language and respectful story framing.</Text><Text style={styles.motif}>🪔 🌸 ☀️ ☁️ 🍃</Text>
     </View>
 
     <View style={visualStyles.helperBubble}><Text style={styles.helper}>🦚 Luvlu helper bubble: Tap any world and I will guide you softly.</Text></View>
@@ -36,7 +36,7 @@ export default function Screen() {
         <Text style={styles.icon}>{d.icon}</Text>
         <Text style={styles.cardTitle}>{d.title}</Text>
         <Text style={styles.cardCopy}>{d.copy}</Text>
-        {!d.ready ? <Text style={styles.empty}>Stories are arriving soon. Your journey will grow gently here.</Text> : <Text style={[visualStyles.chip, { marginTop: 8 }]}>Enter Story World</Text>}
+        {!d.ready ? <Text style={styles.empty}>Stories are arriving soon. Your journey will grow gently here.</Text> : <Text style={[visualStyles.chip, { marginTop: 8 }]}>Enter this doorway</Text>}
       </View>
     </Pressable>)}</View>
 
@@ -44,4 +44,4 @@ export default function Screen() {
   </ScrollView></SafeAreaView>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:28}, heading:{fontSize:32,fontWeight:'900',color:visualTokens.color.warmBrown}, subHeading:{fontSize:24,fontWeight:'800',color:'#6A4522'}, sub:{fontSize:14,color:visualTokens.color.mutedBrown,marginTop:4}, helper:{fontSize:13,color:'#1F4A75',fontWeight:'700'}, chips:{flexDirection:'row',flexWrap:'wrap',gap:8}, chip:{paddingVertical:8,paddingHorizontal:12,borderRadius:999,backgroundColor:'#F0E7DA'}, chipActive:{backgroundColor:'#E38C29'}, chipText:{fontWeight:'700',color:'#6A4522'}, chipTextActive:{color:'#fff'}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, cardPressed:{transform:[{scale:0.98}]}, cardStack:{gap:6}, icon:{fontSize:32}, cardTitle:{fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown}, cardCopy:{fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown}, empty:{fontSize:12,lineHeight:17,color:'#6A5B4D',marginTop:8,fontStyle:'italic'}, trust:{fontSize:13,lineHeight:19,color:visualTokens.color.mutedBrown} });
+const styles = StyleSheet.create({ content:{padding:16,gap:14,paddingBottom:28}, motif:{fontSize:16,color:'#8B623F'}, heading:{fontSize:32,fontWeight:'900',color:visualTokens.color.warmBrown}, subHeading:{fontSize:24,fontWeight:'800',color:'#6A4522'}, sub:{fontSize:14,color:visualTokens.color.mutedBrown,marginTop:4}, helper:{fontSize:13,color:'#1F4A75',fontWeight:'700'}, chips:{flexDirection:'row',flexWrap:'wrap',gap:8}, chip:{paddingVertical:8,paddingHorizontal:12,borderRadius:999,backgroundColor:'#F0E7DA'}, chipActive:{backgroundColor:'#E38C29'}, chipText:{fontWeight:'700',color:'#6A4522'}, chipTextActive:{color:'#fff'}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, cardPressed:{transform:[{scale:0.98}]}, cardStack:{gap:6}, icon:{fontSize:32}, cardTitle:{fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown}, cardCopy:{fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown}, empty:{fontSize:12,lineHeight:17,color:'#6A5B4D',marginTop:8,fontStyle:'italic'}, trust:{fontSize:13,lineHeight:19,color:visualTokens.color.mutedBrown} });
