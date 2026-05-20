@@ -1,3 +1,68 @@
+# Little Dharma Implemented Route Visual Audit (Sprint 79 Runtime Reconstruction)
+
+## Reference IDs used
+- 22–28, 86–95, 186–195, 336–347, 430, 444–448, 452, 454–455, 458–461, 462–469, 487.
+
+## Story Detail route (`/story/[slug]`)
+- Reconstructed as a warm story doorway with title, summary, age band, reading time, primary value, and Story World category cues.
+- Added large rounded card treatment, respectful sacred/cultural framing language, and clear primary CTA: **Begin Story**.
+- Added disabled future-only copy: **Listen with Luvlu — Coming soon** (non-functional).
+
+## Story Reader runtime route/state (`/story/[slug]` reader stage)
+- Reconstructed reader with warm background, large readable story text, and gentle section card hierarchy.
+- Added simple Back/Next navigation and end-of-reader completion handoff.
+- Added quiet helper language: Luvlu stays calm and non-distracting in runtime reading flow.
+
+## Story Completion/blessing route/state (`/story/[slug]` completion stage)
+- Added gentle completion moment with blessing language, flower/diya cues, and supportive Luvlu completion card.
+- Added optional parent-child reflection prompt in safe wording: ask grown-up what the story taught.
+- Added clear CTAs back to Story World and Child Home.
+
+## Luvlu declaration
+- Luvlu shown: **yes**.
+- Reason: story guide/helper and completion support.
+- Placement: story detail helper card; reader quiet helper line; completion blessing support card.
+- Size: medium/helper scale in detail/completion; small/quiet in reader.
+- State: detail welcoming guide; reader quiet helper; completion gentle blessing support.
+- Not logo: diya-lotus-sun remains brand boundary (487).
+
+## Luvlu audio guide future boundary
+- Luvlu audio guide is a future product direction.
+- Sprint 79 does not add audio playback.
+- Sprint 79 does not add microphone, voice command, recording, child speech capture, or AI conversation.
+- “Listen with Luvlu — Coming soon” remains disabled and non-functional future copy only.
+
+## Motion/microinteraction decision (454–455 + 458–461 inheritance)
+- Light interaction treatment only: soft press states, rounded card hierarchy, and calm section transitions.
+- No heavy animation libraries introduced.
+- No distracting loops or high-stimulation motion added.
+
+## Cultural + sacred respect decision (462–469 inheritance)
+- Story copy keeps warm, respectful, child-comprehensible language for sacred/cultural content contexts.
+- No deity-as-game-avatar treatment and no over-casual sacred framing added.
+- Luvlu remains guide/helper and is not used as deity substitute.
+
+## Parent-child boundary decision
+- Reflection prompt is optional and framed as safe grown-up conversation.
+- No parent settings exposed as child controls.
+- No new child pathway to parent configuration added.
+
+## Manual QA checklist (Sprint 79)
+- [ ] Story detail renders warm title area, summary, age band, reading time, value, and category.
+- [ ] Primary CTA begins reading flow; future Listen with Luvlu copy is disabled/non-functional.
+- [ ] Reader displays large readable text, calm section card, and simple Back/Next controls.
+- [ ] Reader includes quiet Luvlu helper language and remains visually calm/non-crowded.
+- [ ] Completion shows blessing framing, Luvlu support, and optional grown-up reflection prompt.
+- [ ] Completion provides CTAs back to Story World and Child Home.
+- [ ] No XP/coins/streaks/rankings/leaderboards shown.
+- [ ] No backend/auth/cloud sync/CMS/analytics/telemetry/monetisation/mic/recording/audio playback/voice command added.
+
+## Sprint boundary statement
+- Sprint 79 completed (Story Detail + Reader + Completion reconstruction).
+- Sprint 80 not started.
+- No backend/auth/cloud sync/CMS/analytics/telemetry/monetisation/mic/recording/audio playback/voice command added.
+- No hard gamification added.
+
 # Little Dharma Implemented Route Visual Audit (Sprint 78 Runtime Reconstruction)
 
 ## Reference IDs used
