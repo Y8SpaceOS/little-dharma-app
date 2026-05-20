@@ -25,7 +25,7 @@ export default function Home() {
       <View style={styles.contentZone}>
         <PrototypeBrandIcon />
         <Text style={styles.title}>Little Dharma</Text>
-        <Text style={styles.subtitle}>{'Stories, values and wonder\nfor little hearts.'}</Text>
+        <Text style={styles.subtitle}>Stories, values and wonder for little hearts.</Text>
       </View>
 
       <View style={[styles.ctaZone, { bottom: Math.max(32, insets.bottom + 16) }]}>
