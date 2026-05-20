@@ -1,0 +1,16 @@
+{
+  "name": "luvlu-motion-governance-v1",
+  "screenRange": "424-487",
+  "governanceOnly": true,
+  "runtimeRoutesRequired": false,
+  "constraints": {
+    "notLogo": true,
+    "notDeity": true,
+    "allowGamification": false,
+    "allowMicrophoneOrRecording": false,
+    "allowFutureCompanionsWithoutApproval": false,
+    "allowSacredFocalArtOverlay": false,
+    "requiresReducedMotionFallback": true,
+    "requiresParentBoundaryCopyGuardrails": true
+  }
+}
