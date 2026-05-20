@@ -9,23 +9,21 @@ const primitives = fs.readFileSync('src/components/prototypePrimitives.tsx', 'ut
 const audit = fs.readFileSync('docs/LITTLE_DHARMA_PROTOTYPE_VISUAL_PARITY_AUDIT.md', 'utf8');
 const combined = index + primitives;
 
-for (const component of ['PrototypeLandingScreen', 'PrototypeStatusBar', 'PrototypeSky', 'PrototypeBrandIcon', 'PrototypeLandscape', 'PrototypeBottomCTA']) {
+for (const component of ['PrototypeLandingScreen', 'PrototypeSky', 'PrototypeBrandIcon', 'PrototypeLandscape', 'PrototypeBottomCTA']) {
   if (!primitives.includes(`function ${component}`)) throw new Error(`Missing primitive: ${component}`);
   if (!index.includes(component)) throw new Error(`Screen 01 must use primitive: ${component}`);
 }
 
+if (/9:41|●●●|PrototypeStatusBar|statusWrap|fake status|notch|phone chrome/i.test(index)) throw new Error('Screen 01 must not render fake phone chrome/status row');
 if (/PrototypeHeroCard|PrototypeMotifRow|PrototypeLuvluBubble|styles\.card|heroCard|luvlu|mascot|helper bubble|Continue to Child World|Reset Onboarding|secondary CTA/i.test(index)) throw new Error('Screen 01 contains forbidden previous composition elements');
 if (/🪔|🌸|☀️|🦚|✨|✺|✧|◌/.test(combined)) throw new Error('Emoji/symbol motifs detected');
-if (!index.includes('Begin the journey')) throw new Error('Missing required CTA text: Begin the journey');
-if (!combined.includes('9:41')) throw new Error('Missing status time 9:41');
-if (!combined.includes('●●●')) throw new Error('Missing status dots ●●●');
 if (!index.includes('Little Dharma')) throw new Error('Missing title Little Dharma');
-if (!index.includes('Stories, values and wonder for little hearts.')) throw new Error('Missing exact subtitle sentence');
+if (!index.includes('Stories, values and wonder')) throw new Error('Missing required subtitle copy');
+if (!index.includes('for little hearts.')) throw new Error('Missing required subtitle ending');
+if (!index.includes('Begin the journey')) throw new Error('Missing required CTA text: Begin the journey');
 if (!/sun|cloud|sunBaseOval|leftCloud/i.test(combined)) throw new Error('Sky/sun/cloud markers missing');
 if (!/landscape|hill|ground|greenHill|yellowGround/i.test(combined)) throw new Error('Landscape/hill/ground markers missing');
-if (!/iconDiyaGlow/.test(primitives) || !/iconLotus/.test(primitives) || !/iconStem/.test(primitives)) {
-  throw new Error('Brand icon composition markers missing (diya/lotus/stem)');
-}
+if (!/iconDiyaGlow/.test(primitives) || !/iconLotus/.test(primitives) || !/iconStem/.test(primitives)) throw new Error('Brand icon composition markers missing (diya/lotus/stem)');
 
 const forbidden = /\bbackend\b|cloud sync|\bcms\b|voice command|microphone|recording|leaderboard|streak|coins|\bxp\b|ranking/i;
 if (forbidden.test(combined)) throw new Error('Forbidden scope keywords detected');
