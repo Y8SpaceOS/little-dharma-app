@@ -1,3 +1,56 @@
+# Little Dharma Implemented Route Visual Audit (Sprint 78 Runtime Reconstruction)
+
+## Reference IDs used
+- 09–18, 46–75, 156–175, 316–335, 424–453, 454–461, 462–469, 487.
+
+## Child Home route (`/(child)/today`)
+- Reconstructed as warm child-facing Home with cream/saffron/lotus palette, rounded cards, gentle shadows, and world-building motifs.
+- Added explicit Story World entry card and preserved parent handoff route separation (`/(parent)/dashboard`).
+- Added honest placeholder progress language: “Your journey will grow as you complete stories.”
+
+## Story World route (`/(child)/worlds`)
+- Reconstructed Story World browse with soft world cards and child-facing title language.
+- Added respectful world categories: Krishna Stories, Ganesha Stories, Ramayana Journey, Hanuman Stories, Bedtime Stories, Values Stories, Festival Stories.
+- Added soft filter chips: Bedtime, Values, Journeys, Festivals.
+- Added empty-state text for not-yet-ready world cards without fake metrics.
+
+## Luvlu declaration
+- Luvlu shown: **yes**.
+- Reason: child-facing guide/helper for exploration.
+- Placement: home helper card / Story World helper bubble.
+- Size: medium/helper scale.
+- State: welcoming guide / tap-help / quiet helper.
+- Not logo: diya-lotus-sun remains the brand mark boundary (487).
+
+## Motion/microinteraction decision (454–461 inheritance)
+- Light motion only: soft press states and subtle card lift on press.
+- No heavy animation libraries introduced.
+- No addictive loops or distracting motion added.
+
+## Cultural + sacred respect decision (462–469 inheritance)
+- Deity-adjacent categories use respectful labels and non-cartoon framing language.
+- Luvlu remains guide/helper and is not used as deity substitute.
+- Story World copy avoids gamified framing and avoids avatarization of sacred figures.
+
+## Parent-child boundary decision (470–475 continuity)
+- No parent controls exposed in child surfaces.
+- Parent route remains explicit handoff only (`/(parent)/dashboard`).
+
+## Manual QA checklist (Sprint 78)
+- [ ] Child Home opens with warm header, brand mark, Luvlu helper, Story World entry, and gentle value/preview sections.
+- [ ] Story World shows required categories and chip filters, with respectful language.
+- [ ] Festival Stories card shows honest “arriving soon” placeholder state.
+- [ ] Luvlu visible on Home and Story World, clearly helper role and not logo.
+- [ ] No XP/coins/streaks/rankings/leaderboards shown anywhere in touched child routes.
+- [ ] No backend/auth/cloud sync/CMS/analytics/telemetry/monetisation/mic/recording added.
+- [ ] Existing world/story links still navigate to existing routes.
+
+## Sprint boundary statement
+- Sprint 78 completed (Child Home + Story World runtime visual reconstruction).
+- Sprint 79 not started.
+- No backend/auth/cloud sync/CMS/analytics/telemetry/monetisation/mic/recording added.
+- No hard gamification added.
+
 # Little Dharma Implemented Route Visual Audit (Sprint 77B Runtime Reconstruction)
 
 ## Reference IDs used
