@@ -1,3 +1,65 @@
+# Little Dharma Implemented Route Visual Audit (Sprint 80 Dharma Journeys + Treasures + Values Reconstruction)
+
+## Reference IDs used
+- 19–21, 29–31, 76–85, 176–185, 236–245, 304, 348–365, 449, 452–453, 457–460, 462–469, 487.
+
+## Dharma Journeys routes (`/(child)/journeys`, `/(child)/journeys/[journeyId]`)
+- Added warm Dharma Journeys header with gentle explanation: “Long story paths you can explore slowly.”
+- Added six journey cards: Ramayana Journey, Krishna Childhood Journey, Ganesha Wisdom Journey, Hanuman Courage Journey, Festival Journey, Values Journey.
+- Added journey detail/path shell with local static nodes, gentle future-node language, and back CTAs to Dharma Journeys and Story World.
+- Preserved honest placeholder progress: “Your journey will grow as you complete stories.”
+
+## Values route (`/(child)/values`)
+- Added child-facing Values surface with Kindness, Courage, Devotion, Patience, Gratitude, Truthfulness cards.
+- Each value card links value learning to stories (“Stories that help us practice …”).
+
+## My Treasures route (`/(child)/treasures`)
+- Preserved warm reflective framing and added explicit gentle treasure language: Story Flowers, Blessing Notes, Value Petals, Diyas Lit.
+- Added honest placeholder language: “Treasures will appear here as you complete stories.”
+
+## Child Home link update (`/(child)/today`)
+- Added/preserved clear navigation affordances to Dharma Journeys, Values Garden, and My Treasures without redesigning core Child Home layout.
+
+## Luvlu declaration
+- Luvlu shown: **yes**.
+- reason: gentle journey guide and values reflection helper.
+- placement: Dharma Journeys helper card; Values helper bubble; Treasures helper reflection card.
+- size: medium/helper scale.
+- state: journeys path guide; values gentle explainer; treasures reflective helper.
+- not logo (487 boundary preserved).
+
+## Luvlu audio future boundary
+- Luvlu may become optional tap-to-hear audio guide in a future sprint.
+- Sprint 80 adds no audio playback, microphone, voice command, recording, child speech capture, or AI conversation.
+
+## Motion/microinteraction decision (457–460 inheritance)
+- Light interaction only: soft press, subtle card lift, gentle node highlight cues.
+- No heavy animation libraries and no distracting loops.
+
+## Cultural + sacred respect decision (462–469 inheritance)
+- Respectful sacred framing for Ramayana/Krishna/Ganesha/Hanuman/Festival references.
+- No cartoonish deity treatment or deity-as-avatar framing.
+- Luvlu remains guide/helper and not deity substitute.
+
+## Parent-child boundary decision
+- No parent settings exposed as child controls.
+- No new child pathway to parent configuration beyond existing parent handoff.
+
+## Manual QA checklist (Sprint 80)
+- [ ] Dharma Journeys shows six required journey cards and helper guidance.
+- [ ] Journey detail shell shows warm local node path with gentle future-node language.
+- [ ] Values shows all six required values and story-practice copy.
+- [ ] My Treasures includes Story Flowers/Blessing Notes/Value Petals/Diyas Lit language and honest placeholder.
+- [ ] Child Home provides links/cards to Dharma Journeys, Values, My Treasures.
+- [ ] No XP/coins/streaks/rankings/leaderboards shown in touched surfaces.
+- [ ] No backend/auth/cloud sync/CMS/analytics/telemetry/monetisation/mic/recording/audio playback/voice command added.
+
+## Sprint boundary statement
+- Sprint 80 completed (Dharma Journeys + Values + My Treasures reconstruction).
+- Sprint 81 not started.
+- No backend/auth/cloud sync/CMS/analytics/telemetry/monetisation/mic/recording/audio playback/voice command added.
+- No hard gamification added.
+
 # Little Dharma Implemented Route Visual Audit (Sprint 79 Runtime Reconstruction)
 
 ## Reference IDs used
