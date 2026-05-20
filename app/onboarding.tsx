@@ -1,10 +1,14 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useState } from 'react';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PrototypeBottomCTA, PrototypeLandingScreen } from '@/components/prototypePrimitives';
 
+type ScreenId = '02' | '03' | '04' | '05' | '06' | '07' | '08';
+type AgeBand = '3-5' | '6-8' | '9-12';
+
+const SCREEN_FLOW: ScreenId[] = ['02', '03', '04', '05', '06', '07', '08'];
 
 const SCREEN_02_VALUE_ROWS = [
   { icon: '🌸', title: 'Warm, not preachy', body: 'Values through stories.' },
@@ -12,167 +16,120 @@ const SCREEN_02_VALUE_ROWS = [
   { icon: '🎧', title: 'Low-screen friendly', body: 'Audio for bedtime and car time.' }
 ] as const;
 
-const screen02HeroCard = 'screen02HeroCard';
-const screen02ValueCard = 'screen02ValueCard screen02ValueCard screen02ValueCard';
-const diyaChip = 'diyaChip';
-const blueWaveWrap = 'blueWaveWrap';
-const blueWave = 'blueWave';
-
-type OnboardingScreen = {
-  id: '03' | '04' | '05' | '06' | '07' | '08';
-  title: string;
-  subtitle: string;
-  cta: string;
-  icon: string;
-  heroTone: readonly [string, string];
-  sections: { icon: string; title: string; body: string }[];
-  chips: string[];
-};
-
-
-const SCREEN_02_COPY_COMPAT = "🪔 A gentle spiritual world for children Stories, rituals, shlokas, values and parent-child moments, created with warmth and care. <PrototypeBottomCTA label='Continue' />";
-const screen02CompatibilityMarkers = [SCREEN_02_VALUE_ROWS, screen02HeroCard, screen02ValueCard, diyaChip, blueWaveWrap, blueWave, SCREEN_02_COPY_COMPAT] as const;
-void screen02CompatibilityMarkers;
-
-const ONBOARDING_BATCH_SCREENS: OnboardingScreen[] = [
-  {
-    id: '03',
-    icon: '🌼',
-    title: 'Pick your child’s age band',
-    subtitle: 'We tune stories, shlokas, and reflection prompts to your child’s stage.',
-    cta: 'Choose age band',
-    heroTone: ['#FCE9D1', '#F7D8B9'] as const,
-    chips: ['Ages 3–5', 'Ages 6–8', 'Ages 9–12'],
-    sections: [
-      { icon: '📖', title: 'Story pacing', body: 'Short and gentle for little listeners, deeper arcs for older kids.' },
-      { icon: '🕉️', title: 'Practice depth', body: 'Simple chants first, then layered meaning over time.' }
-    ]
-  },
-  {
-    id: '04', icon: '🌙', title: 'Set your family rhythm', subtitle: 'Choose when Little Dharma should feel most alive in your home.', cta: 'Set rhythm', heroTone: ['#E5E5FF', '#D7D8F9'] as const,
-    chips: ['Bedtime', 'After school', 'Weekend mornings'],
-    sections: [
-      { icon: '⏱️', title: 'Gentle duration', body: '2–10 minute flows designed for real family schedules.' },
-      { icon: '🫶', title: 'Parent-child moments', body: 'Short prompts that spark calm, caring conversations.' }
-    ]
-  },
-  {
-    id: '05', icon: '🪷', title: 'Choose your values focus', subtitle: 'Start with the values your family wants to practice this week.', cta: 'Choose values', heroTone: ['#F7E3F6', '#EED7ED'] as const,
-    chips: ['Kindness', 'Truth', 'Gratitude', 'Courage'],
-    sections: [
-      { icon: '✨', title: 'Value-led stories', body: 'Every story gently reinforces one clear heart-value.' },
-      { icon: '🧭', title: 'Daily carry-over', body: 'Simple real-life prompts help children practice beyond the app.' }
-    ]
-  },
-  {
-    id: '06', icon: '🎧', title: 'Pick your listening style', subtitle: 'Build an experience that works for cuddle time, travel, or winding down.', cta: 'Pick listening style', heroTone: ['#DAEFF7', '#CCE5F2'] as const,
-    chips: ['Read together', 'Audio only', 'Mix mode'],
-    sections: [
-      { icon: '🚗', title: 'Car-friendly mode', body: 'Hands-free moments with warm narration and pauses.' },
-      { icon: '🛏️', title: 'Bedtime calm', body: 'Softer pacing and soothing transitions for nighttime rituals.' }
-    ]
-  },
-  {
-    id: '07', icon: '👨‍👩‍👧', title: 'Parent promise and privacy', subtitle: 'You stay in control with a child-safe, parent-guided environment.', cta: 'Review promise', heroTone: ['#EAF6E2', '#DDEED0'] as const,
-    chips: ['Private by design', 'No open chat', 'Parent guided'],
-    sections: [
-      { icon: '🔒', title: 'Protected space', body: 'No public social feed, and no child profile discoverability.' },
-      { icon: '🛡️', title: 'Family-first controls', body: 'Parents choose what appears and when it appears.' }
-    ]
-  },
-  {
-    id: '08', icon: '🕯️', title: 'Your Little Dharma world is ready', subtitle: 'Start your first guided moment and continue at your family’s pace.', cta: 'Enter Little Dharma', heroTone: ['#FCE6CF', '#F6D7B2'] as const,
-    chips: ['Stories', 'Rituals', 'Values', 'Reflection'],
-    sections: [
-      { icon: '🌸', title: 'Begin gently', body: 'One thoughtful story and one tiny practice can shape the day.' },
-      { icon: '🤍', title: 'Grow over time', body: 'Return anytime and build a steady family rhythm.' }
-    ]
-  }
+const AGE_BANDS: { key: AgeBand; label: string; note: string }[] = [
+  { key: '3-5', label: 'Ages 3–5', note: 'Gentle picture-rich guidance' },
+  { key: '6-8', label: 'Ages 6–8', note: 'Growing curiosity and rhythm' },
+  { key: '9-12', label: 'Ages 9–12', note: 'Deeper meaning and reflection' }
 ];
 
 export default function Onboarding() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const [stepIndex, setStepIndex] = useState(0);
-  const screen = ONBOARDING_BATCH_SCREENS[stepIndex];
-  const isLast = stepIndex === ONBOARDING_BATCH_SCREENS.length - 1;
+  const [screenIndex, setScreenIndex] = useState(0);
+  const [selectedAgeBand, setSelectedAgeBand] = useState<AgeBand>('6-8');
 
-  const ctaPress = useMemo(() => () => {
-    if (isLast) router.push('/(child)/today');
-    else setStepIndex((value) => Math.min(ONBOARDING_BATCH_SCREENS.length - 1, value + 1));
-  }, [isLast, router]);
+  const screen = SCREEN_FLOW[screenIndex];
+  const onNext = () => {
+    if (screen === '08') {
+      router.push('/(child)/today');
+      return;
+    }
+    setScreenIndex((v) => Math.min(v + 1, SCREEN_FLOW.length - 1));
+  };
 
   return (
     <PrototypeLandingScreen>
-      <View pointerEvents='none' style={styles.waveWrap}>
-        <LinearGradient colors={['#DDEAF8', '#CFE2F4']} style={styles.wave} />
-      </View>
-
-      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insets.top + 22, paddingBottom: Math.max(128, insets.bottom + 86) }]}>
-        <View style={styles.progressRow}>
-          {ONBOARDING_BATCH_SCREENS.map((item, index) => (
-            <View key={item.id} style={[styles.progressPill, index === stepIndex && styles.progressPillActive]} />
-          ))}
-        </View>
-
-        <LinearGradient colors={screen.heroTone} style={styles.heroCard}>
-          <View style={styles.heroChip}><Text style={styles.heroIcon}>{screen.icon}</Text></View>
-          <Text style={styles.heroTitle}>{screen.title}</Text>
-          <Text style={styles.heroSubtitle}>{screen.subtitle}</Text>
-        </LinearGradient>
-
-        <View style={styles.chipsRow}>
-          {screen.chips.map((chip) => <View key={chip} style={styles.chip}><Text style={styles.chipLabel}>{chip}</Text></View>)}
-        </View>
-
-        <View style={styles.sectionWrap}>
-          {screen.sections.map((row) => (
-            <View key={row.title} style={styles.sectionCard}>
-              <View style={styles.sectionIcon}><Text style={styles.sectionIconText}>{row.icon}</Text></View>
-              <View style={styles.sectionBodyWrap}>
-                <Text style={styles.sectionTitle}>{row.title}</Text>
-                <Text style={styles.sectionBody}>{row.body}</Text>
-              </View>
-            </View>
-          ))}
-        </View>
-
-        <TouchableOpacity onPress={() => setStepIndex((value) => Math.max(0, value - 1))} disabled={stepIndex === 0} style={[styles.backButton, stepIndex === 0 && styles.backButtonDisabled]}>
-          <Text style={styles.backButtonLabel}>Back</Text>
-        </TouchableOpacity>
-      </ScrollView>
-
-      <View style={[styles.ctaZone, { bottom: Math.max(32, insets.bottom + 12) }]}>
-        <PrototypeBottomCTA label={screen.cta} onPress={ctaPress} />
-      </View>
+      {screen === '02' ? (
+        <Screen02 insetsTop={insets.top} insetsBottom={insets.bottom} onNext={onNext} />
+      ) : (
+        <Screens03To08
+          screen={screen}
+          selectedAgeBand={selectedAgeBand}
+          onSelectAgeBand={setSelectedAgeBand}
+          insetsTop={insets.top}
+          insetsBottom={insets.bottom}
+          onBack={() => setScreenIndex((v) => Math.max(v - 1, 0))}
+          onNext={onNext}
+        />
+      )}
     </PrototypeLandingScreen>
   );
 }
 
+function Screen02({ insetsTop, insetsBottom, onNext }: { insetsTop: number; insetsBottom: number; onNext: () => void }) {
+  return (
+    <>
+      <View pointerEvents='none' style={styles.blueWaveWrap}>
+        <LinearGradient colors={['#DDEAF8', '#CFE2F4']} style={styles.blueWave} />
+      </View>
+      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insetsTop + 22, paddingBottom: Math.max(128, insetsBottom + 86) }]}>
+        <View style={styles.screen02HeroCard}>
+          <View style={styles.diyaChip}><Text style={styles.diyaText}>🪔</Text></View>
+          <Text style={styles.title}>A gentle spiritual world for children</Text>
+          <Text style={styles.subtitle}>Stories, rituals, shlokas, values and parent-child moments, created with warmth and care.</Text>
+        </View>
+        <View style={styles.rowsWrap}>
+          {SCREEN_02_VALUE_ROWS.map((row) => (
+            <View key={row.title} style={styles.screen02ValueCard}>
+              <View style={styles.iconChip}><Text style={styles.iconText}>{row.icon}</Text></View>
+              <View style={styles.valueTextWrap}>
+                <Text style={styles.valueTitle}>{row.title}</Text>
+                <Text style={styles.valueBody}>{row.body}</Text>
+              </View>
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+      <View style={[styles.ctaZone, { bottom: Math.max(32, insetsBottom + 12) }]}>
+        <PrototypeBottomCTA label='Continue' onPress={onNext} />
+      </View>
+    </>
+  );
+}
+
+function Screens03To08({ screen, selectedAgeBand, onSelectAgeBand, insetsTop, insetsBottom, onBack, onNext }: { screen: ScreenId; selectedAgeBand: AgeBand; onSelectAgeBand: (value: AgeBand) => void; insetsTop: number; insetsBottom: number; onBack: () => void; onNext: () => void }) {
+  return (
+    <>
+      <View pointerEvents='none' style={styles.cloudWrap}><LinearGradient colors={['#FFF4E3', '#F2DAB7']} style={styles.cloudBand} /></View>
+      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insetsTop + 18, paddingBottom: Math.max(128, insetsBottom + 86) }]}>
+        {screen === '03' && <Screen03 selectedAgeBand={selectedAgeBand} onSelectAgeBand={onSelectAgeBand} />}
+        {screen === '04' && <Screen04 />}
+        {screen === '05' && <Screen05 />}
+        {screen === '06' && <Screen06 />}
+        {screen === '07' && <Screen07 />}
+        {screen === '08' && <Screen08 />}
+        <Pressable onPress={onBack} style={styles.backBtn}><Text style={styles.backLabel}>Back</Text></Pressable>
+      </ScrollView>
+      <View style={[styles.ctaZone, { bottom: Math.max(32, insetsBottom + 12) }]}>
+        <PrototypeBottomCTA label={screen === '08' ? 'Enter Little Dharma' : 'Next'} onPress={onNext} />
+      </View>
+    </>
+  );
+}
+
+function Screen03({ selectedAgeBand, onSelectAgeBand }: { selectedAgeBand: AgeBand; onSelectAgeBand: (value: AgeBand) => void }) {
+  return <View><Text style={styles.stepTitle}>Pick your child’s age band</Text><Text style={styles.stepSub}>Choose one band to shape story depth and guidance tone.</Text>{AGE_BANDS.map((band) => <Pressable key={band.key} onPress={() => onSelectAgeBand(band.key)} style={[styles.selectCard, selectedAgeBand === band.key && styles.selectCardActive]}><Text style={styles.selectTitle}>{band.label}</Text><Text style={styles.selectNote}>{band.note}</Text></Pressable>)}</View>;
+}
+const Screen04 = () => <View style={styles.card}><Text style={styles.stepTitle}>Meet your gentle guide</Text><Text style={styles.stepSub}>A gentle helper introduces family moments with warmth and care.</Text><Text style={styles.bigEmoji}>🪷</Text><Text style={styles.rowNote}>“I’ll help you begin with tiny, loving steps.”</Text></View>;
+const Screen05 = () => <View style={styles.card}><Text style={styles.stepTitle}>Choose your family rhythm</Text><Text style={styles.rowNote}>☀️ Morning moments</Text><Text style={styles.rowNote}>🌙 Bedtime wind-down</Text><Text style={styles.rowNote}>🚗 On-the-go listening</Text></View>;
+const Screen06 = () => <View style={styles.card}><Text style={styles.stepTitle}>Choose values to begin</Text><Text style={styles.rowNote}>🤍 Kindness · 🕯️ Truth · 🌸 Gratitude</Text></View>;
+const Screen07 = () => <View style={styles.card}><Text style={styles.stepTitle}>Parent promise and privacy</Text><Text style={styles.rowNote}>🔒 Private by design · Parent-guided experience.</Text></View>;
+const Screen08 = () => <View style={styles.card}><Text style={styles.stepTitle}>Your Little Dharma world is ready</Text><Text style={styles.rowNote}>Stories, rituals, values, and calm reflection are ready for your family.</Text></View>;
+
 const styles = StyleSheet.create({
   scrollContent: { paddingHorizontal: 20 },
-  progressRow: { flexDirection: 'row', gap: 8, marginBottom: 14 },
-  progressPill: { height: 8, flex: 1, borderRadius: 999, backgroundColor: 'rgba(255,255,255,0.5)' },
-  progressPillActive: { backgroundColor: '#DF8E34' },
-  heroCard: { borderRadius: 30, paddingHorizontal: 20, paddingTop: 16, paddingBottom: 22, borderWidth: 1, borderColor: '#EED8BC' },
-  heroChip: { width: 42, height: 42, borderRadius: 21, alignItems: 'center', justifyContent: 'center', backgroundColor: '#FFF6E8' },
-  heroIcon: { fontSize: 22 },
-  heroTitle: { marginTop: 12, color: '#4A2A11', fontSize: 31, lineHeight: 37, fontWeight: '800' },
-  heroSubtitle: { marginTop: 10, color: '#6E4A2D', fontSize: 17, lineHeight: 24, fontWeight: '600' },
-  chipsRow: { marginTop: 14, flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  chip: { backgroundColor: 'rgba(255, 248, 238, 0.96)', borderRadius: 999, paddingHorizontal: 12, paddingVertical: 7, borderWidth: 1, borderColor: '#EED8BC' },
-  chipLabel: { color: '#5B3518', fontSize: 13, fontWeight: '700' },
-  sectionWrap: { marginTop: 16, gap: 12 },
-  sectionCard: { borderRadius: 24, paddingHorizontal: 16, paddingVertical: 14, backgroundColor: 'rgba(255, 250, 243, 0.97)', borderWidth: 1, borderColor: '#F0DFC7', flexDirection: 'row', alignItems: 'center' },
-  sectionIcon: { width: 38, height: 38, borderRadius: 19, backgroundColor: '#F6E6D6', alignItems: 'center', justifyContent: 'center' },
-  sectionIconText: { fontSize: 18 },
-  sectionBodyWrap: { flex: 1, marginLeft: 12 },
-  sectionTitle: { color: '#4A2A11', fontSize: 18, lineHeight: 23, fontWeight: '800' },
-  sectionBody: { marginTop: 2, color: '#734E30', fontSize: 15, lineHeight: 21, fontWeight: '600' },
-  backButton: { alignSelf: 'center', marginTop: 16, paddingHorizontal: 18, paddingVertical: 8, borderRadius: 16, backgroundColor: 'rgba(255,255,255,0.5)' },
-  backButtonDisabled: { opacity: 0.45 },
-  backButtonLabel: { color: '#5A3419', fontWeight: '700' },
-  waveWrap: { position: 'absolute', left: 0, right: 0, bottom: 64, height: 230 },
-  wave: { flex: 1, borderTopLeftRadius: 220, borderTopRightRadius: 220 },
-  ctaZone: { position: 'absolute', left: '6%', right: '6%' }
+  screen02HeroCard: { borderRadius: 30, paddingHorizontal: 20, paddingTop: 16, paddingBottom: 22, backgroundColor: 'rgba(255, 248, 238, 0.96)', borderWidth: 1, borderColor: '#EED8BC', shadowColor: '#5A2D13', shadowOpacity: 0.12, shadowRadius: 14, shadowOffset: { width: 0, height: 8 } },
+  diyaChip: { width: 42, height: 42, borderRadius: 21, alignItems: 'center', justifyContent: 'center', backgroundColor: '#FCECCF' }, diyaText: { fontSize: 22 },
+  title: { marginTop: 12, color: '#4A2A11', fontSize: 31, lineHeight: 37, fontWeight: '800' }, subtitle: { marginTop: 10, color: '#6E4A2D', fontSize: 17, lineHeight: 24, fontWeight: '600' }, rowsWrap: { marginTop: 16, gap: 12 },
+  screen02ValueCard: { borderRadius: 24, paddingHorizontal: 16, paddingVertical: 14, backgroundColor: 'rgba(255, 250, 243, 0.97)', borderWidth: 1, borderColor: '#F0DFC7', flexDirection: 'row', alignItems: 'center' },
+  iconChip: { width: 38, height: 38, borderRadius: 19, backgroundColor: '#F6E6D6', alignItems: 'center', justifyContent: 'center' }, iconText: { fontSize: 18 }, valueTextWrap: { flex: 1, marginLeft: 12 },
+  valueTitle: { color: '#4A2A11', fontSize: 18, lineHeight: 23, fontWeight: '800' }, valueBody: { marginTop: 2, color: '#734E30', fontSize: 15, lineHeight: 21, fontWeight: '600' },
+  blueWaveWrap: { position: 'absolute', left: 0, right: 0, bottom: 64, height: 230 }, blueWave: { flex: 1, borderTopLeftRadius: 220, borderTopRightRadius: 220 },
+  ctaZone: { position: 'absolute', left: '6%', right: '6%' },
+  cloudWrap: { position: 'absolute', left: 0, right: 0, top: 110, height: 120 }, cloudBand: { flex: 1, borderBottomLeftRadius: 120, borderBottomRightRadius: 120, opacity: 0.6 },
+  stepTitle: { color: '#4A2A11', fontSize: 30, lineHeight: 36, fontWeight: '800', marginTop: 12 }, stepSub: { marginTop: 8, color: '#6E4A2D', fontSize: 17, lineHeight: 24, fontWeight: '600', marginBottom: 14 },
+  selectCard: { borderRadius: 20, borderWidth: 1, borderColor: '#EED8BC', backgroundColor: 'rgba(255,248,238,0.9)', padding: 14, marginBottom: 10 }, selectCardActive: { borderColor: '#D0842F', backgroundColor: '#FDE8CB' },
+  selectTitle: { color: '#4A2A11', fontSize: 18, fontWeight: '800' }, selectNote: { color: '#734E30', marginTop: 4, fontWeight: '600' },
+  card: { borderRadius: 26, borderWidth: 1, borderColor: '#EED8BC', backgroundColor: 'rgba(255,248,238,0.9)', padding: 18, marginTop: 10, gap: 8 }, bigEmoji: { fontSize: 44, textAlign: 'center', marginVertical: 8 }, rowNote: { color: '#5E3A1E', fontSize: 17, lineHeight: 24, fontWeight: '700' },
+  backBtn: { alignSelf: 'center', marginTop: 16, backgroundColor: 'rgba(255,255,255,0.6)', paddingHorizontal: 18, paddingVertical: 8, borderRadius: 16 }, backLabel: { color: '#5E3A1E', fontWeight: '700' }
 });
