@@ -1,44 +1,47 @@
-# Little Dharma Onboarding + App Shell Visual Parity v1 QA (Sprint 77)
+# Little Dharma Onboarding + App Shell Visual Parity v1 QA (Sprint 77 Visual Repair)
 
 ## Scope
-Prototype references used: screens 01–08 from the 45-screen onboarding/app-shell family.
+- This is **Sprint 77 visual repair** only.
+- It improves runtime visibility/testability for prototype references **screens 01–08**.
+- It is **not full prototype parity** and **not Sprint 78**.
 
-## Implemented routes and files
-- `/` → `app/index.tsx`
-- `/onboarding` → `app/onboarding.tsx`
-- `/(parent)/profiles` → `app/(parent)/profiles.tsx`
-- shell behavior → `app/_layout.tsx`
-- audit update → `docs/LITTLE_DHARMA_IMPLEMENTED_ROUTE_VISUAL_AUDIT.md`
+## Exact onboarding access path
+1. Launch app to `/` (`app/index.tsx`).
+2. If onboarding is incomplete, tap **Begin Warm Onboarding**.
+3. If onboarding is already complete, tap **Reset Onboarding (Local QA)** and the app routes to `/onboarding`.
 
-## What was visually reconstructed
-- Warm in-app splash/entry with diya-lotus-sun-led brand mark and Little Dharma tagline.
-- Parent-first philosophy and promise cards in onboarding.
-- Child profile setup card with broad age bands and local-first language.
-- Luvlu optional helper introduction (not brand logo treatment).
-- Comfort settings preview with coming-later honesty for unimplemented settings.
-- First world preview doorway cards and onboarding-to-child bridge CTA.
-- Warm parent gate surface with “For parents / Grown-up area” framing.
+## Exact reset/testing method
+- Local reset path is in `/` completed-state card:
+  - **Reset Onboarding (Local QA)** calls `resetOnboarding()` and routes to `/onboarding`.
+- This is safe local-only testing state reset (no backend/auth/cloud sync).
 
-## What remains incomplete
-- Not full prototype parity.
-- Native splash hardening not completed.
-- Parent gate still placeholder-level security.
-- Higher-fidelity illustration/motion parity remains future work.
+## Runtime onboarding sequence (screens 01–08)
+1. Splash / warm entry
+2. Brand philosophy
+3. Parent Promise
+4. Child profile setup
+5. Luvlu Introduction
+6. Content comfort settings
+7. First World Preview
+8. Parent/grown-up gate handoff
 
-## Onboarding reset/testing
-- Complete onboarding once, then use existing parent reset flow in parent controls/dashboard to clear onboarding state.
-- Relaunch app and confirm `/` warm entry appears before re-entering onboarding.
+## Luvlu visibility checklist
+- [ ] Luvlu helper bubble appears on **Luvlu Introduction** step.
+- [ ] Luvlu helper bubble appears on **First World Preview** step.
+- [ ] Luvlu helper bubble appears on **Parent/Grown-up Gate Handoff** step.
+- [ ] Luvlu is treated as helper/guide, not brand mark.
+- [ ] Diya-lotus-sun remains the brand mark.
 
-## Manual QA checklist
-- [ ] Splash/entry feels warm and brand-led (not generic loader).
-- [ ] Brand philosophy screen shows required parent-first statement + three promise cards.
-- [ ] Parent Promise screen shows all required commitments.
-- [ ] Child profile setup avoids DOB and uses broad age bands.
-- [ ] Luvlu intro is helper-only and not logo framing.
-- [ ] Content comfort settings clearly indicate preview/coming-later where needed.
-- [ ] First world preview shows Krishna/Ganesha/Bedtime/Values doorway cards.
-- [ ] Parent gate copy reads “For parents” / “Grown-up area” with calm tone.
-- [ ] Route/debug headers are not visible.
+## Manual QA checklist for screens 01–08
+- [ ] Screen 01 warm entry uses soft gradient/card rhythm and feels welcoming.
+- [ ] Screen 02 brand philosophy includes warm stories / privacy / no-pressure framing.
+- [ ] Screen 03 Parent Promise is explicit and parent-trust-first.
+- [ ] Screen 04 child profile remains broad age-band + nickname (no DOB dependence).
+- [ ] Screen 05 Luvlu introduction is visibly present and helper-framed.
+- [ ] Screen 06 comfort settings are visible with honest coming-later treatment.
+- [ ] Screen 07 first world preview shows doorway cards and Luvlu support cue.
+- [ ] Screen 08 parent gate handoff points to typed parent route `/(parent)/profiles`.
 
-## Explicit parity statement
-This sprint is a runtime reconstruction pass and does **not** claim full prototype parity.
+## Parent gate route note
+- Typed route kept: `/(parent)/profiles`.
+- Invalid hrefs `/parent-gate` and `/(parent)/gate` are not used.

@@ -1,40 +1,37 @@
-# Little Dharma Implemented Route Visual Audit (Sprint 77)
+# Little Dharma Implemented Route Visual Audit (Sprint 77 Visual Repair)
 
-This audit reflects Sprint 77 onboarding + app shell reconstruction work and builds on the Sprint 76 visual QA repair baseline. It does **not** claim full 45-screen prototype parity.
+This audit captures the Sprint 77 visual repair pass for onboarding/app shell runtime visibility and testability (prototype screens 01–08 only).
 
-## Route-by-route audit
+## Route-by-route audit (01–08)
 
 | Prototype | Route | Status | Notes |
 |---|---|---|---|
-| 01 Splash / Distinct Brand Mark | `/` (`app/index.tsx`) | Implemented | Warm in-app splash/entry with diya-lotus-sun-led brand mark, Little Dharma title, and child-safe tagline. |
-| 02 Brand Philosophy | `/onboarding` step 1 | Implemented | Parent-first philosophy copy and three warm promise cards are now present in runtime onboarding. |
-| 03 Parent Promise | `/onboarding` step 2 | Implemented | Dedicated trust commitments are visible before profile setup. |
-| 04 Child Profile Setup | `/onboarding` step 3 | Implemented (partial visual parity) | Local-first nickname + broad age band + parent intent preserved, no DOB. |
-| 05 Luvlu Introduction | `/onboarding` step 4 | Implemented | Luvlu positioned as optional helper guide, not brand logo. |
-| 06 Content Comfort Settings | `/onboarding` step 5 | Implemented (preview mode) | Gentle mode + source notes + bedtime-friendly toggles, Festival/Shloka marked coming later. |
-| 07 First World Preview | `/onboarding` step 6 | Implemented | Krishna / Ganesha / Bedtime / Values doorway preview + world CTA path. |
-| 08 Parent Gate | `/(parent)/profiles` + `/onboarding` step 7 | Implemented (placeholder gate) | Warm “For parents / Grown-up area” gate present with honest placeholder parent word. |
+| 01 Splash / Warm Entry | `/` + `/onboarding` step 1 | Implemented | Warm gradient, rounded card rhythm, diya-lotus-sun-led brand mark, and visible route into onboarding. |
+| 02 Brand Philosophy | `/onboarding` step 2 | Implemented | Parent-first philosophy and warm promise cards are visible in runtime. |
+| 03 Parent Promise | `/onboarding` step 3 | Implemented | Parent commitments are explicit and readable before setup flow continues. |
+| 04 Child Profile Setup | `/onboarding` step 4 | Implemented | Warm setup card, nickname + broad age band + parent intent retained. |
+| 05 Luvlu Introduction | `/onboarding` step 5 | Implemented | Luvlu shown as helper guide, never as brand mark. |
+| 06 Content Comfort Settings | `/onboarding` step 6 | Implemented | Soft setting rows and coming-later honesty preserved. |
+| 07 First World Preview | `/onboarding` step 7 | Implemented | Doorway preview cards + Luvlu helper bubble visible. |
+| 08 Parent Gate Handoff | `/onboarding` step 8 + `/(parent)/profiles` | Implemented | Warm handoff copy and typed parent route remain valid. |
 
-## App shell status
-- `app/_layout.tsx` keeps route/debug headers hidden across user-facing routes.
-- Entry + onboarding surfaces now use warm safe-area gradients/cards and rounded shells.
-- Parent gate uses calm trust-first visuals; child routes keep existing immersive warm treatment.
+## App entry behavior
+- `/` no longer feels like a plain redirect.
+- Incomplete onboarding: clear CTA into onboarding.
+- Completed onboarding: clear child-world CTA plus explicit local reset/testing CTA for QA.
 
-## Known gaps (honest)
-- Native splash asset pipeline was not changed in Sprint 77; this sprint uses an in-app warm boot/entry.
-- Parent gate is still a placeholder mechanism and needs hardened parent verification in a future sprint.
-- Onboarding art richness is improved but still below full high-fidelity 45-screen reference quality.
+## Sprint boundary statement
+- This is Sprint 77 visual repair only.
+- Sprint 78+ remains not started.
+- Child Home + Story World reconstruction is not started here.
 
-## Sprint 78 recommended focus
-- Story Detail + Content Runtime Visual Integration v1:
-  - Deepen story detail visual hierarchy and chapter treatment.
-  - Bring runtime content cards, transitions, and rhythm closer to prototype-level richness.
-  - Continue app-shell polish consistency for child + parent subroutes.
+## Onboarding status
+- Onboarding is visible and testable through `/` and `/onboarding` with local reset support.
 
-
-## Onboarding status (requested deep check)
-- Onboarding exists at `/onboarding` and now includes dedicated surfaces for prototype 01–08.
-- Parent gate now has dedicated route: `/(parent)/profiles`.
 
 ## Sprint recommendation
-- **Sprint 77 — Onboarding + App Shell Visual Parity v1**
+- Sprint 77 — Onboarding + App Shell Visual Parity v1
+
+
+- Sprint 76 visual QA repair baseline remains preserved; this document extends onboarding/runtime visibility in Sprint 77 only.
+
