@@ -1,12 +1,13 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PrototypeBottomCTA, PrototypeLandingScreen } from '@/components/prototypePrimitives';
 
-const PHILOSOPHY_POINTS = [
-  { title: 'Warm, not preachy', body: 'Values through stories.' },
-  { title: 'Private by design', body: 'Parent-controlled experience.' },
-  { title: 'Low-screen friendly', body: 'Audio for bedtime and car time.' }
+const SCREEN_02_VALUE_ROWS = [
+  { icon: '🌸', title: 'Warm, not preachy', body: 'Values through stories.' },
+  { icon: '🔒', title: 'Private by design', body: 'Parent-controlled experience.' },
+  { icon: '🎧', title: 'Low-screen friendly', body: 'Audio for bedtime and car time.' }
 ] as const;
 
 export default function Onboarding() {
@@ -15,23 +16,31 @@ export default function Onboarding() {
 
   return (
     <PrototypeLandingScreen>
-      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insets.top + 28, paddingBottom: Math.max(120, insets.bottom + 84) }]}>
-        <View style={styles.card}>
-          <Text style={styles.eyebrow}>Brand Philosophy</Text>
+      <View pointerEvents='none' style={styles.blueWaveWrap}>
+        <LinearGradient colors={['#DDEAF8', '#CFE2F4']} style={styles.blueWave} />
+      </View>
+
+      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insets.top + 22, paddingBottom: Math.max(128, insets.bottom + 86) }]}> 
+        <View style={styles.screen02HeroCard}>
+          <View style={styles.diyaChip}>
+            <Text style={styles.diyaText}>🪔</Text>
+          </View>
           <Text style={styles.title}>A gentle spiritual world for children</Text>
           <Text style={styles.subtitle}>Stories, rituals, shlokas, values and parent-child moments, created with warmth and care.</Text>
+        </View>
 
-          <View style={styles.list}>
-            {PHILOSOPHY_POINTS.map((point) => (
-              <View key={point.title} style={styles.listItem}>
-                <View style={styles.dot} />
-                <View style={styles.listCopyWrap}>
-                  <Text style={styles.listTitle}>{point.title}</Text>
-                  <Text style={styles.listBody}>{point.body}</Text>
-                </View>
+        <View style={styles.rowsWrap}>
+          {SCREEN_02_VALUE_ROWS.map((row) => (
+            <View key={row.title} style={styles.screen02ValueCard}>
+              <View style={styles.iconChip}>
+                <Text style={styles.iconText}>{row.icon}</Text>
               </View>
-            ))}
-          </View>
+              <View style={styles.valueTextWrap}>
+                <Text style={styles.valueTitle}>{row.title}</Text>
+                <Text style={styles.valueBody}>{row.body}</Text>
+              </View>
+            </View>
+          ))}
         </View>
       </ScrollView>
 
@@ -44,26 +53,47 @@ export default function Onboarding() {
 
 const styles = StyleSheet.create({
   scrollContent: { paddingHorizontal: 20 },
-  card: {
-    borderRadius: 28,
+  screen02HeroCard: {
+    borderRadius: 30,
     paddingHorizontal: 20,
-    paddingVertical: 24,
-    backgroundColor: 'rgba(255, 247, 237, 0.94)',
+    paddingTop: 16,
+    paddingBottom: 22,
+    backgroundColor: 'rgba(255, 248, 238, 0.96)',
     borderWidth: 1,
-    borderColor: '#F0D6B5',
+    borderColor: '#EED8BC',
     shadowColor: '#5A2D13',
     shadowOpacity: 0.12,
     shadowRadius: 14,
     shadowOffset: { width: 0, height: 8 }
   },
-  eyebrow: { color: '#8E5A2E', fontSize: 14, fontWeight: '700', letterSpacing: 0.4, textTransform: 'uppercase' },
-  title: { marginTop: 8, color: '#4A2A11', fontSize: 29, lineHeight: 35, fontWeight: '800' },
-  subtitle: { marginTop: 12, color: '#6E4A2D', fontSize: 17, lineHeight: 24, fontWeight: '600' },
-  list: { marginTop: 22, gap: 14 },
-  listItem: { flexDirection: 'row', alignItems: 'flex-start' },
-  dot: { marginTop: 7, width: 9, height: 9, borderRadius: 5, backgroundColor: '#DD8A33' },
-  listCopyWrap: { flex: 1, marginLeft: 12 },
-  listTitle: { color: '#4A2A11', fontSize: 19, lineHeight: 24, fontWeight: '800' },
-  listBody: { marginTop: 2, color: '#734E30', fontSize: 16, lineHeight: 22, fontWeight: '600' },
+  diyaChip: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FCECCF'
+  },
+  diyaText: { fontSize: 22 },
+  title: { marginTop: 12, color: '#4A2A11', fontSize: 31, lineHeight: 37, fontWeight: '800' },
+  subtitle: { marginTop: 10, color: '#6E4A2D', fontSize: 17, lineHeight: 24, fontWeight: '600' },
+  rowsWrap: { marginTop: 16, gap: 12 },
+  screen02ValueCard: {
+    borderRadius: 24,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    backgroundColor: 'rgba(255, 250, 243, 0.97)',
+    borderWidth: 1,
+    borderColor: '#F0DFC7',
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  iconChip: { width: 38, height: 38, borderRadius: 19, backgroundColor: '#F6E6D6', alignItems: 'center', justifyContent: 'center' },
+  iconText: { fontSize: 18 },
+  valueTextWrap: { flex: 1, marginLeft: 12 },
+  valueTitle: { color: '#4A2A11', fontSize: 18, lineHeight: 23, fontWeight: '800' },
+  valueBody: { marginTop: 2, color: '#734E30', fontSize: 15, lineHeight: 21, fontWeight: '600' },
+  blueWaveWrap: { position: 'absolute', left: 0, right: 0, bottom: 64, height: 230 },
+  blueWave: { flex: 1, borderTopLeftRadius: 220, borderTopRightRadius: 220 },
   ctaZone: { position: 'absolute', left: '6%', right: '6%' }
 });
