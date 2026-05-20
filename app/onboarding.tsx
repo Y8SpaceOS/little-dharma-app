@@ -20,13 +20,15 @@ export default function Onboarding() {
         <LinearGradient colors={['#DDEAF8', '#CFE2F4']} style={styles.blueWave} />
       </View>
 
-      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insets.top + 22, paddingBottom: Math.max(128, insets.bottom + 86) }]}> 
-        <View style={styles.screen02HeroCard}>
-          <View style={styles.diyaChip}>
-            <Text style={styles.diyaText}>🪔</Text>
+      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insets.top + 20, paddingBottom: Math.max(128, insets.bottom + 86) }]}>
+        <View style={styles.heroCardHalo}>
+          <View style={styles.screen02HeroCard}>
+            <View style={styles.diyaChip}>
+              <Text style={styles.diyaText}>🪔</Text>
+            </View>
+            <Text style={styles.title}>A gentle spiritual world for children</Text>
+            <Text style={styles.subtitle}>Stories, rituals, shlokas, values and parent-child moments, created with warmth and care.</Text>
           </View>
-          <Text style={styles.title}>A gentle spiritual world for children</Text>
-          <Text style={styles.subtitle}>Stories, rituals, shlokas, values and parent-child moments, created with warmth and care.</Text>
         </View>
 
         <View style={styles.rowsWrap}>
@@ -53,12 +55,17 @@ export default function Onboarding() {
 
 const styles = StyleSheet.create({
   scrollContent: { paddingHorizontal: 20 },
+  heroCardHalo: {
+    borderRadius: 34,
+    padding: 1,
+    backgroundColor: 'rgba(245, 211, 166, 0.3)'
+  },
   screen02HeroCard: {
-    borderRadius: 30,
+    borderRadius: 33,
     paddingHorizontal: 20,
     paddingTop: 16,
     paddingBottom: 22,
-    backgroundColor: 'rgba(255, 248, 238, 0.96)',
+    backgroundColor: 'rgba(255, 248, 238, 0.97)',
     borderWidth: 1,
     borderColor: '#EED8BC',
     shadowColor: '#5A2D13',
@@ -85,6 +92,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 250, 243, 0.97)',
     borderWidth: 1,
     borderColor: '#F0DFC7',
+    shadowColor: '#5A2D13',
+    shadowOpacity: 0.07,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
     flexDirection: 'row',
     alignItems: 'center'
   },
