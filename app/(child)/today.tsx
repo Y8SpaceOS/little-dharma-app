@@ -19,10 +19,10 @@ function TodayScreenContent() {
   useEffect(() => { const s = AppState.addEventListener('change', (n) => n === 'active' && refreshThresholdVisibility()); return () => s.remove(); }, [refreshThresholdVisibility]);
 
   const paths = useMemo(() => [
-    { icon: '📖', title: 'Explore Story World', copy: 'Open warm worlds full of values and wonder.', href: '/(child)/worlds', bg: '#DDF0FF' },
-    { icon: '🪔', title: 'Continue your story', copy: 'Your journey will grow as you complete stories.', href: '/(child)/worlds', bg: '#FFF0DA' },
-    { icon: '🛤️', title: 'Dharma Journeys preview', copy: 'Follow one gentle path with calm steps.', href: '/(child)/worlds', bg: '#EAF7E8' },
-    { icon: '🌸', title: "Today's gentle value", copy: 'Kindness glows brighter each time you practice it.', href: '/(child)/worlds', bg: '#F8ECFA' }
+    { icon: '📖', title: 'Explore Story World', copy: 'Step into warm worlds full of wonder and wisdom.', href: '/(child)/worlds', bg: '#FCECC8' },
+    { icon: '🪔', title: 'Continue your story', copy: 'Your story path is waiting right where you paused.', href: '/(child)/worlds', bg: '#FDE4CF' },
+    { icon: '🛤️', title: 'Journey doorway', copy: 'Take one calm path and walk it with courage.', href: '/(child)/worlds', bg: '#E8F3DE' },
+    { icon: '🌸', title: "Today's gentle value", copy: 'Practice one small kindness in your story world today.', href: '/(child)/worlds', bg: '#F7E9FB' }
   ], []);
 
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
@@ -30,10 +30,10 @@ function TodayScreenContent() {
       <Text style={styles.brandMark}>🪔🌸☀️</Text>
       <Text style={styles.greeting}>Namaste, {name}</Text>
       <Text style={styles.headline}>Welcome to your Little Dharma Home</Text>
-      <Text style={styles.sub}>A warm Story World is ready with gentle blessings, calm stories, and playful wisdom.</Text>
+      <Text style={styles.sub}>A warm Story World is ready for you with calm stories, brave choices, and gentle joy.</Text>
     </View>
 
-    <View style={[visualStyles.helperBubble, styles.luvluCard]}><Text style={styles.helper}>🦚 Luvlu guide: Let us pick one Story World doorway and begin gently. I am your helper, not the Little Dharma logo.</Text></View>
+    <View style={[visualStyles.helperBubble, styles.luvluCard]}><Text style={styles.helper}>🦚 Luvlu whisper: Pick one doorway, take one breath, and begin with a peaceful heart.</Text></View>
 
     <View style={[visualStyles.heroCard, styles.storyWorldEntry]}>
       <Text style={styles.heroTitle}>Explore Story World</Text>
@@ -59,6 +59,6 @@ function TodayScreenContent() {
   </SafeAreaView>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:32}, homeHero:{backgroundColor:'#FFEFD1'}, brandMark:{fontSize:30}, greeting:{fontSize:16,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:30,lineHeight:35,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:15,lineHeight:22,color:visualTokens.color.mutedBrown}, luvluCard:{backgroundColor:'#DFF1FF'}, helper:{fontSize:13,color:'#1F4A75',fontWeight:'700'}, storyWorldEntry:{backgroundColor:'#F9EED8'}, heroTitle:{fontSize:28,fontWeight:'900',color:visualTokens.color.warmBrown}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:10}, card:{borderRadius:24,shadowOpacity:0.12}, cardPressed:{transform:[{scale:0.98}],shadowOpacity:0.18}, cardStack:{gap:6}, cardIcon:{fontSize:30}, cardTitle:{fontSize:18,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:2}, cardCopy:{fontSize:13,lineHeight:18,color:visualTokens.color.mutedBrown}, parentWrap:{paddingTop:4}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
+const styles = StyleSheet.create({ content:{padding:16,gap:14,paddingBottom:36}, homeHero:{backgroundColor:'#FFE4BF',paddingVertical:22}, brandMark:{fontSize:32}, greeting:{fontSize:17,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:31,lineHeight:36,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:16,lineHeight:23,color:visualTokens.color.mutedBrown}, luvluCard:{backgroundColor:'#DFF1FF'}, helper:{fontSize:14,lineHeight:20,color:'#1F4A75',fontWeight:'700'}, storyWorldEntry:{backgroundColor:'#FBEBC9',paddingVertical:22}, heroTitle:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown}, grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between',gap:12}, card:{borderRadius:24,shadowOpacity:0.12,minHeight:170,paddingVertical:18}, cardPressed:{transform:[{scale:0.98}],shadowOpacity:0.18}, cardStack:{gap:7}, cardIcon:{fontSize:32}, cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:2}, cardCopy:{fontSize:14,lineHeight:19,color:visualTokens.color.mutedBrown}, parentWrap:{paddingTop:6}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
 
 export default function TodayScreen() { return <RouteErrorBoundary surfaceName='Child Home' audience='child' primaryActionHref='/onboarding' primaryActionLabel='Go to Onboarding'><TodayScreenContent /></RouteErrorBoundary>; }
