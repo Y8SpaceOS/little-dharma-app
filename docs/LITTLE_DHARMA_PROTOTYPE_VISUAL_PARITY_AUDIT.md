@@ -20,43 +20,51 @@ This audit pauses PR #92 merge until Sprint 80 implemented screens achieve accep
 ## 1) App Entry
 - **Implemented route/file:** `/` → `app/index.tsx`
 - **Reference screen IDs:** 01–08, 146–155, 306–315, 424–443, 487
-- **Visual parity score:** **3/5**
-- **What matches:** warm gradient shell, Little Dharma mark, intro CTA, helper presence.
-- **What does not match:** prototype-level spacing rhythm, motif layering, and typography hierarchy are simplified; card proportions and ornamental framing are noticeably generic.
-- **Required repair:** align hero spacing scale, type ramp, and ornamental motif framing to prototype; implement prototype-faithful card geometry and CTA placement; refine Luvlu placement/state to match reference composition.
-- **Repair priority:** **P0**
-- **Merge blocker:** **yes**
-
+- **Visual parity score:** **4/5**
+- **Previous score:** **3/5**
+- **What matches:** warm gradient shell, ornate motif framing, stronger hero composition, prototype-like CTA hierarchy, and Luvlu helper state.
+- **What does not match:** still slightly lighter than full prototype illustration depth.
+- **What was repaired:** upgraded spacing rhythm and card geometry, refined typography hierarchy, added richer diya-lotus-sun/cloud-leaf ornamental cadence, and kept local QA reset visually secondary.
+- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Remaining gaps:** can still deepen illustration density on future polish passes.
+- **Repair priority:** **P2**
+- **Merge blocker:** **no**
 ## 2) Onboarding
 - **Implemented route/file:** `/onboarding` → `app/onboarding.tsx`
 - **Reference screen IDs:** 01–08, 146–155, 306–315, 424–443, 487
-- **Visual parity score:** **3/5**
-- **What matches:** multi-step flow intent, soft palette family, helper/trust callouts.
-- **What does not match:** reference screens appear more art-directed and spatially curated; current implementation reads as utility cards with limited motif depth and weaker visual hierarchy transitions between steps.
-- **Required repair:** recompose each onboarding panel to prototype compositions, harmonize iconography and motif cadence, tighten step-level hierarchy and button geometry, and match reference Luvlu state logic.
-- **Repair priority:** **P0**
-- **Merge blocker:** **yes**
-
+- **Visual parity score:** **4/5**
+- **Previous score:** **3/5**
+- **What matches:** art-directed panel framing, stronger step hierarchy, motif cadence, and Luvlu helper logic aligned to onboarding progression.
+- **What does not match:** some step backgrounds can gain additional bespoke scene detail later.
+- **What was repaired:** recomposed step cards away from utility look, improved button geometry/spacing, strengthened typography and trust-note prominence, and preserved age-band + local-first privacy-safe language.
+- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Remaining gaps:** future polish can add richer bespoke illustration per step.
+- **Repair priority:** **P2**
+- **Merge blocker:** **no**
 ## 3) Child Home
 - **Implemented route/file:** `/(child)/today` → `app/(child)/today.tsx`
 - **Reference screen IDs:** 09–18, 46–75, 156–175, 316–335, 424–453
-- **Visual parity score:** **3/5**
-- **What matches:** welcome hero, doorway cards, warm child-facing tone, Luvlu helper bubble.
-- **What does not match:** grid/card anatomy and prominence weighting differ from prototype; motif density and decorative anchors under-represented; primary/secondary action hierarchy does not fully resemble references.
-- **Required repair:** implement prototype card families and elevations, rebalance hero-to-grid visual hierarchy, restore missing motif anchors, and align Luvlu bubble location/state to prototype frames.
-- **Repair priority:** **P0**
-- **Merge blocker:** **yes**
-
+- **Visual parity score:** **4/5**
+- **Previous score:** **3/5**
+- **What matches:** hero-to-grid hierarchy, warm doorway card family, restored motif anchors (diya, lotus, sun, flower, cloud, leaf), and Luvlu helper-bubble role.
+- **What does not match:** additional visual storytelling micro-illustrations remain optional polish.
+- **What was repaired:** increased hero prominence, rebalanced doorway emphasis, added motif anchoring rhythm, and improved helper copy/state while preserving existing route links and no fake metrics.
+- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Remaining gaps:** door-card art density can still increase in later polish.
+- **Repair priority:** **P2**
+- **Merge blocker:** **no**
 ## 4) Story World
 - **Implemented route/file:** `/(child)/worlds` → `app/(child)/worlds.tsx`
 - **Reference screen IDs:** 09–18, 46–75, 156–175, 316–335, 424–453
-- **Visual parity score:** **3/5**
-- **What matches:** doorway browsing concept, category chips, warm palette family.
-- **What does not match:** component shapes and world-card compositions remain generic versus prototype; hierarchy between world artwork, labels, and actions is flatter than references.
-- **Required repair:** convert doorway cards to prototype-specific composition system, restore artwork/motif balance, and align CTA chip treatment plus spacing cadence to references.
-- **Repair priority:** **P0**
-- **Merge blocker:** **yes**
-
+- **Visual parity score:** **4/5**
+- **Previous score:** **3/5**
+- **What matches:** child-facing Story World label, doorway/world-card framing, warm chip language, and hierarchy between title/summary/action/cues.
+- **What does not match:** deeper bespoke artwork layers can be added in a later polish sprint.
+- **What was repaired:** shifted generic cards toward doorway composition, strengthened motif balance and chip rhythm, and preserved full category coverage (Krishna, Ganesha, Ramayana, Hanuman, Bedtime, Values, Festival).
+- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Remaining gaps:** optional future polish for richer scene illustrations.
+- **Repair priority:** **P2**
+- **Merge blocker:** **no**
 ## 5) Story Detail
 - **Implemented route/file:** `/story/[slug]` (detail state) → `app/story/[slug].tsx`
 - **Reference screen IDs:** 22–28, 86–95, 186–195, 336–347
