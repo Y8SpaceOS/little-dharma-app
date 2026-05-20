@@ -20,51 +20,55 @@ This audit pauses PR #92 merge until Sprint 80 implemented screens achieve accep
 ## 1) App Entry
 - **Implemented route/file:** `/` → `app/index.tsx`
 - **Reference screen IDs:** 01–08, 146–155, 306–315, 424–443, 487
-- **Visual parity score:** **4/5**
+- **Visual parity score:** **3/5**
 - **Previous score:** **3/5**
+- **Manual QA status:** **failed parity confirmation (PR #94 paused)**
 - **What matches:** warm gradient shell, ornate motif framing, stronger hero composition, prototype-like CTA hierarchy, and Luvlu helper state.
 - **What does not match:** still slightly lighter than full prototype illustration depth.
 - **What was repaired:** upgraded spacing rhythm and card geometry, refined typography hierarchy, added richer diya-lotus-sun/cloud-leaf ornamental cadence, and kept local QA reset visually secondary.
-- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Required repair:** rebuild from prototype HTML/source anatomy (not thematic approximation).
 - **Remaining gaps:** can still deepen illustration density on future polish passes.
-- **Repair priority:** **P2**
-- **Merge blocker:** **no**
+- **Repair priority:** **P0**
+- **Merge blocker:** **yes**
 ## 2) Onboarding
 - **Implemented route/file:** `/onboarding` → `app/onboarding.tsx`
 - **Reference screen IDs:** 01–08, 146–155, 306–315, 424–443, 487
-- **Visual parity score:** **4/5**
+- **Visual parity score:** **3/5**
 - **Previous score:** **3/5**
+- **Manual QA status:** **failed parity confirmation (PR #94 paused)**
 - **What matches:** art-directed panel framing, stronger step hierarchy, motif cadence, and Luvlu helper logic aligned to onboarding progression.
 - **What does not match:** some step backgrounds can gain additional bespoke scene detail later.
 - **What was repaired:** recomposed step cards away from utility look, improved button geometry/spacing, strengthened typography and trust-note prominence, and preserved age-band + local-first privacy-safe language.
-- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Required repair:** rebuild from prototype HTML/source anatomy (not thematic approximation).
 - **Remaining gaps:** future polish can add richer bespoke illustration per step.
-- **Repair priority:** **P2**
-- **Merge blocker:** **no**
+- **Repair priority:** **P0**
+- **Merge blocker:** **yes**
 ## 3) Child Home
 - **Implemented route/file:** `/(child)/today` → `app/(child)/today.tsx`
 - **Reference screen IDs:** 09–18, 46–75, 156–175, 316–335, 424–453
-- **Visual parity score:** **4/5**
+- **Visual parity score:** **3/5**
 - **Previous score:** **3/5**
+- **Manual QA status:** **failed parity confirmation (PR #94 paused)**
 - **What matches:** hero-to-grid hierarchy, warm doorway card family, restored motif anchors (diya, lotus, sun, flower, cloud, leaf), and Luvlu helper-bubble role.
 - **What does not match:** additional visual storytelling micro-illustrations remain optional polish.
 - **What was repaired:** increased hero prominence, rebalanced doorway emphasis, added motif anchoring rhythm, and improved helper copy/state while preserving existing route links and no fake metrics.
-- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Required repair:** rebuild from prototype HTML/source anatomy (not thematic approximation).
 - **Remaining gaps:** door-card art density can still increase in later polish.
-- **Repair priority:** **P2**
-- **Merge blocker:** **no**
+- **Repair priority:** **P0**
+- **Merge blocker:** **yes**
 ## 4) Story World
 - **Implemented route/file:** `/(child)/worlds` → `app/(child)/worlds.tsx`
 - **Reference screen IDs:** 09–18, 46–75, 156–175, 316–335, 424–453
-- **Visual parity score:** **4/5**
+- **Visual parity score:** **3/5**
 - **Previous score:** **3/5**
+- **Manual QA status:** **failed parity confirmation (PR #94 paused)**
 - **What matches:** child-facing Story World label, doorway/world-card framing, warm chip language, and hierarchy between title/summary/action/cues.
 - **What does not match:** deeper bespoke artwork layers can be added in a later polish sprint.
 - **What was repaired:** shifted generic cards toward doorway composition, strengthened motif balance and chip rhythm, and preserved full category coverage (Krishna, Ganesha, Ramayana, Hanuman, Bedtime, Values, Festival).
-- **Required repair:** completed in Sprint 80B for parity baseline.
+- **Required repair:** rebuild from prototype HTML/source anatomy (not thematic approximation).
 - **Remaining gaps:** optional future polish for richer scene illustrations.
-- **Repair priority:** **P2**
-- **Merge blocker:** **no**
+- **Repair priority:** **P0**
+- **Merge blocker:** **yes**
 ## 5) Story Detail
 - **Implemented route/file:** `/story/[slug]` (detail state) → `app/story/[slug].tsx`
 - **Reference screen IDs:** 22–28, 86–95, 186–195, 336–347
@@ -138,7 +142,18 @@ This audit pauses PR #92 merge until Sprint 80 implemented screens achieve accep
 ---
 
 ## Global Merge Gate Outcome
-- Screens below 4 requiring repair: **all 11 audited screens**.
-- Sprint 80 merge status: **blocked** until P0 parity repairs are completed and re-audited.
+- Screens below 4 requiring repair: **all 11 audited screens** (including App Entry, Onboarding, Child Home, Story World after manual QA on PR #94).
+- Sprint 80 merge status: **blocked** until prototype-led reconstruction proof (Screen 01) is manually approved and subsequent screens are rebuilt from prototype primitives.
 - Sprint 81 status in this audit: **not started**.
 - Guardrails reconfirmed: **no backend/auth/cloud sync/CMS/analytics expansion, no audio/mic/voice command features, no hard gamification additions** in this audit PR.
+
+
+## Prototype-led reconstruction workflow (PR #94 pause directive)
+- PR #94 is **paused** and must **not merge** in its current state.
+- Do not continue broad batch repair with thematic approximation, emoji motifs, or generic utility-card layouts.
+- Step 1: extract design tokens and component anatomy from prototype HTML/reference screens.
+- Step 2: implement reusable React Native prototype primitives from extracted source-of-truth structures.
+- Step 3: reconstruct **Screen 01** first as the parity proof surface.
+- Step 4: run manual screenshot QA for Screen 01; only proceed after explicit approval.
+- Step 5: continue to onboarding Screens 02–08 only after Screen 01 approval.
+- Visual parity score upgrades to 4/5+ are disallowed without manual screenshot confirmation.
