@@ -66,6 +66,15 @@ if (!todayCode.includes("href='/(child)/worlds'") && !todayCode.includes('href="
 }
 pass('Existing child home route remains app/(child)/today.tsx with existing entry points');
 
+
+if (/🪔\s*🌸\s*☀️/.test(todayCode)) fail('Top hero decorative motif cluster (🪔 🌸 ☀️) is still present');
+pass('Top hero decorative motif cluster removed');
+
+if (/[🌱🌿🍃🍀🌳🌲🎄🪴]/u.test(todayCode) && /Luvlu whisper/i.test(todayCode)) {
+  fail('Plant/tree emoji used as Luvlu marker');
+}
+pass('No plant/tree emoji used as Luvlu marker');
+
 if (/9:41|●●●|notch|battery|signal|wifi|status row|phone chrome|device frame/i.test(todayCode)) fail('Fake phone chrome detected');
 pass('No fake phone chrome');
 
