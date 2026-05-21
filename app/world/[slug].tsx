@@ -58,7 +58,7 @@ export default function WorldScreen() {
     <View style={[visualStyles.heroCard, { backgroundColor: world.hero, gap: 8 }]}> 
       <Text style={styles.icon}>{world.icon}</Text>
       <Text style={styles.title}>{world.title}</Text>
-      <Text style={styles.sub}>{journeyLike ? 'Take one calm step at a time. Every story lights the next step.' : world.subtitle}</Text>
+      <Text style={styles.sub}>{journeyLike ? 'Take one calm step at a time.' : world.subtitle}</Text>
       {journeyLike ? <View style={styles.pathStrip}><Text style={styles.pathLabel}>Journey path</Text><View style={styles.pathRow}><View style={[styles.pathDot, styles.pathDone]} /><View style={styles.pathLine} /><View style={styles.pathDot} /><View style={styles.pathLine} /><View style={styles.pathDot} /></View></View> : null}
     </View>
 
@@ -70,9 +70,9 @@ export default function WorldScreen() {
         <Text style={visualStyles.chip}>{c.duration}</Text>
         <Text style={visualStyles.chip}>Ages {c.age}</Text>
         <Text style={visualStyles.chip}>{c.value}</Text>
-        <Text style={visualStyles.chip}>{c.status === 'available' ? 'Ready' : 'Coming soon'}</Text>
+        
       </View>
-      <Text style={styles.source}>Source / tradition note appears with each story detail.</Text>
+      <Text style={styles.source}>Tradition note appears in story detail.</Text>
       {c.status === 'available' && c.storySlug ? <Link href={`/story/${c.storySlug}` as never} style={visualStyles.secondaryCta}>Read story</Link> : <View style={styles.comingSoon}><Text style={styles.comingSoonText}>{journeyLike ? 'This step opens soon' : 'Coming soon'}</Text></View>}
     </View>)}
   </ScrollView></SafeAreaView>;
