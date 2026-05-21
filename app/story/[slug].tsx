@@ -48,6 +48,9 @@ function StoryScreenContent() {
             <Text style={styles.helperLine}>Luvlu whisper: Read slowly and breathe between pages.</Text>
             <Text style={styles.parentLine}>Parent note: Gentle and child-friendly sacred storytelling.</Text>
             <Pressable style={styles.button} onPress={() => setStage('reader')}><Text style={styles.buttonText}>Begin Story</Text></Pressable>
+            <Pressable style={styles.secondaryButton} disabled accessibilityState={{ disabled: true }}>
+              <Text style={styles.secondaryButtonText}>Listen with Luvlu — Coming soon</Text>
+            </Pressable>
           </View>
         )}
 
@@ -60,7 +63,7 @@ function StoryScreenContent() {
             </View>
             <View style={styles.controls}>
               <Pressable style={[styles.button, panelIndex === 0 && styles.disabledButton]} onPress={() => setPanelIndex((prev) => Math.max(0, prev - 1))} disabled={panelIndex === 0}><Text style={styles.buttonText}>Back</Text></Pressable>
-              <Pressable style={styles.button} onPress={() => isLastSection ? setStage('complete') : setPanelIndex((prev) => Math.min(story.panels.length - 1, prev + 1))}><Text style={styles.buttonText}>{isLastSection ? 'Finish' : 'Next'}</Text></Pressable>
+              <Pressable style={styles.button} onPress={() => isLastSection ? setStage('complete') : setPanelIndex((prev) => Math.min(story.panels.length - 1, prev + 1))}><Text style={styles.buttonText}>{isLastSection ? 'Complete Story' : 'Next'}</Text></Pressable>
             </View>
           </View>
         )}
@@ -95,6 +98,8 @@ const styles = StyleSheet.create({
   metaCard: { backgroundColor: '#fff6de', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6 },
   button: { backgroundColor: tokens.colors.saffron, borderRadius: 999, paddingVertical: 12, paddingHorizontal: 18, alignItems: 'center' },
   buttonText: { color: '#fff', fontWeight: '800' },
+  secondaryButton: { borderWidth: 1, borderColor: '#c9b898', borderRadius: 999, paddingVertical: 12, paddingHorizontal: 18, alignItems: 'center', opacity: 0.75 },
+  secondaryButtonText: { color: '#6a5b45', fontWeight: '700' },
   readerCard: { backgroundColor: '#fffaf1', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.md },
   readerTitle: { fontSize: 20, fontWeight: '800', color: tokens.colors.textPrimary },
   readerText: { fontSize: 21, lineHeight: 32, color: tokens.colors.textPrimary },
