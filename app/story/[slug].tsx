@@ -40,65 +40,94 @@ function StoryScreenContent() {
   const ageBand = storyMeta?.ageBands?.join(', ') || story.ageBand;
   const section = story.panels[panelIndex];
   const isLastSection = panelIndex === story.panels.length - 1;
+  const progress = ((panelIndex + 1) / story.panels.length) * 100;
+  const storyIcon = worldLabel?.charAt(0) || story.world.charAt(0) || 'S';
 
-  const completionTitle = useMemo(() => 'You completed a beautiful story.', []);
+  const completionTitle = useMemo(() => 'Story blessing complete', []);
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={[styles.headerCard, visualStyles.roundedCard, visualStyles.warmCard]}>
-          <Text style={styles.eyebrow}>Story World</Text>
-          <Text style={styles.title}>{story.title}</Text>
-          <Text style={styles.subtitle}>{summary}</Text>
-          <View style={styles.heroMetaRow}>
-            <Text style={styles.metaBadge}>{worldLabel || story.world}</Text>
-            <Text style={styles.metaBadge}>Value: {primaryValue}</Text>
-            <Text style={styles.metaBadge}>{durationMinutes} min</Text>
-          </View>
+        <View style={styles.topbar}>
+          <Link href='/(child)/worlds' style={styles.topbarBack}>← Story World</Link>
+          <Text style={styles.topbarLabel}>Screen 22 · Story Detail</Text>
         </View>
 
         {stage === 'detail' && (
-          <View style={[styles.card, visualStyles.roundedCard]}>
-            <Text style={styles.sectionTitle}>Before you begin</Text>
-            <Text style={styles.body}>Find a cozy spot, soften your breath, and read one page at a time together.</Text>
-
-            <View style={styles.metaCard}>
-              <Text style={styles.metaLabel}>Story details</Text>
-              <Text style={styles.meta}>Age band: {ageBand}</Text>
-              <Text style={styles.meta}>Reading time: about {durationMinutes} minutes</Text>
-              <Text style={styles.meta}>Primary value: {primaryValue}</Text>
-              <Text style={styles.meta}>Story category: {worldLabel || story.world}</Text>
+          <>
+            <Text style={styles.storyCategoryLabel}>{worldLabel || story.world}</Text>
+            <View style={[styles.heroCard, visualStyles.roundedCard, visualStyles.warmCard]}>
+              <View style={styles.iconRow}>
+                <View style={styles.storyIconBadge}>
+                  <Text style={styles.storyIconText}>{storyIcon}</Text>
+                </View>
+                <Text style={styles.eyebrow}>Sacred Story Journey</Text>
+              </View>
+              <Text style={styles.title}>{story.title}</Text>
+              <Text style={styles.subtitle}>{summary}</Text>
+              <View style={styles.chipRow}>
+                <Text style={styles.metaChip}>Age {ageBand}</Text>
+                <Text style={styles.metaChip}>{durationMinutes} min read</Text>
+                <Text style={styles.metaChip}>Calm pace</Text>
+              </View>
             </View>
 
-            <View style={styles.luvluCard}>
-              <Text style={styles.luvluTitle}>Luvlu gentle helper</Text>
-              <Text style={styles.body}>Welcome. Read slowly and let each moment feel calm and kind.</Text>
-            </View>
+            <View style={[styles.card, visualStyles.roundedCard]}>
+              <View style={styles.valueSection}>
+                <Text style={styles.metaLabel}>Today’s value</Text>
+                <Text style={styles.valueTitle}>{primaryValue}</Text>
+                <Text style={styles.body}>As you read, notice how this value appears in choices, feelings, and kind actions.</Text>
+              </View>
 
-            <View style={styles.parentCard}>
-              <Text style={styles.parentTitle}>Parent note</Text>
-              <Text style={styles.body}>Sacred themes are presented with gentle language designed for child understanding and trust.</Text>
-            </View>
+              <View style={styles.parentCard}>
+                <Text style={styles.parentTitle}>Parent note</Text>
+                <Text style={styles.body}>This story keeps sacred meaning gentle, age-appropriate, and emotionally safe for shared reading.</Text>
+              </View>
 
-            <Pressable style={styles.button} onPress={() => setStage('reader')}>
-              <Text style={styles.buttonText}>Begin Story</Text>
-            </Pressable>
-            <Pressable style={styles.secondaryButton} disabled accessibilityState={{ disabled: true }}>
-              <Text style={styles.secondaryButtonText}>Listen with Luvlu — Coming soon</Text>
-            </Pressable>
-          </View>
+              <View style={styles.luvluCard}>
+                <Text style={styles.luvluTitle}>Luvlu gentle prompt</Text>
+                <Text style={styles.body}>Begin with one soft breath, then read slowly so your child can savor each scene.</Text>
+              </View>
+
+              <Pressable style={styles.button} onPress={() => setStage('reader')}>
+                <Text style={styles.buttonText}>Begin Story</Text>
+              </Pressable>
+              <Pressable style={styles.secondaryButton} disabled accessibilityState={{ disabled: true }}>
+                <Text style={styles.secondaryButtonText}>Listen with Luvlu — Coming soon</Text>
+              </Pressable>
+            </View>
+          </>
         )}
 
         {stage === 'reader' && (
           <View style={[styles.card, visualStyles.roundedCard]}>
-            <Text style={styles.sectionTitle}>Reader</Text>
-            <Text style={styles.meta}>Section {panelIndex + 1} of {story.panels.length}</Text>
+            <Text style={styles.topbarLabel}>Screen 23 · Story Reader</Text>
+            <Text style={styles.sectionTitle}>Section {panelIndex + 1} of {story.panels.length}</Text>
+            <View style={styles.progressTrack}>
+              <View style={[styles.progressFill, { width: `${progress}%` }]} />
+            </View>
+
+            {panelIndex === 0 && (
+              <View style={styles.scenicCard}>
+                <View style={styles.cloudRow}>
+                  <View style={styles.cloudPuff} />
+                  <View style={[styles.cloudPuff, styles.cloudPuffSmall]} />
+                </View>
+                <View style={styles.hillBase} />
+                <View style={styles.overlayPrompt}>
+                  <Text style={styles.overlayPromptText}>Screen 24-inspired story moment: Pause, imagine this scene, then continue reading.</Text>
+                </View>
+              </View>
+            )}
+
             <View style={styles.readerCard}>
               <Text style={styles.readerTitle}>{section.title}</Text>
               <Text style={styles.readerText}>{section.text}</Text>
             </View>
-            <Text style={styles.helperLine}>Luvlu (quiet helper): Take one soft breath and continue.</Text>
-            <Text style={styles.helperLine}>Optional: Read with a grown-up.</Text>
+
+            <View style={styles.reflectCard}>
+              <Text style={styles.reflectQuote}>“Luvlu reflection: Which part of this page felt most kind and true?”</Text>
+            </View>
 
             <View style={styles.controls}>
               <Pressable
@@ -125,17 +154,22 @@ function StoryScreenContent() {
         )}
 
         {stage === 'complete' && (
-          <View style={[styles.card, visualStyles.roundedCard]}>
+          <View style={[styles.ceremonyCard, visualStyles.roundedCard]}>
+            <Text style={styles.topbarLabel}>Completion Blessing</Text>
             <Text style={styles.sectionTitle}>{completionTitle}</Text>
-            <Text style={styles.body}>🌸 A gentle blessing for your heart. 🪔</Text>
-            <Text style={styles.body}>You practiced {primaryValue.toLowerCase()} through this story.</Text>
+            <Text style={styles.body}>You carried this story with care. May its blessing stay warm in your heart tonight.</Text>
+            <View style={styles.valueSection}>
+              <Text style={styles.metaLabel}>Value reflection</Text>
+              <Text style={styles.valueTitle}>{primaryValue}</Text>
+              <Text style={styles.body}>Where did you notice {primaryValue.toLowerCase()} in the story, and where can you practice it today?</Text>
+            </View>
             <View style={styles.luvluCard}>
-              <Text style={styles.luvluTitle}>Luvlu blessing support</Text>
-              <Text style={styles.body}>Beautiful reading. Keep this blessing with kindness and calm.</Text>
+              <Text style={styles.luvluTitle}>Luvlu calm support</Text>
+              <Text style={styles.body}>Close with one peaceful breath and one kind word for someone you love.</Text>
             </View>
             <View style={styles.parentCard}>
-              <Text style={styles.parentTitle}>Optional reflection with grown-up</Text>
-              <Text style={styles.body}>Ask your grown-up: What did this story teach us?</Text>
+              <Text style={styles.parentTitle}>Optional grown-up reflection</Text>
+              <Text style={styles.body}>Ask: Which choice in this story felt the bravest or kindest, and why?</Text>
             </View>
             <Link href='/(child)/worlds' style={styles.link}>Back to Story World</Link>
             <Link href='/(child)/today' style={styles.linkSecondary}>Back to Child Home</Link>
@@ -156,71 +190,48 @@ export default function StoryScreen() {
 
 const styles = StyleSheet.create({
   scrollContent: { padding: tokens.spacing.lg, gap: tokens.spacing.lg },
-  headerCard: { padding: tokens.spacing.lg, gap: tokens.spacing.sm },
-  card: {
-    backgroundColor: tokens.colors.cloud,
-    borderRadius: tokens.radius.card,
-    padding: tokens.spacing.lg,
-    gap: tokens.spacing.md,
-    shadowColor: '#00000020',
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 4 },
-  },
-  eyebrow: { fontSize: 14, color: tokens.colors.midnight, fontWeight: '700' },
+  topbar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  topbarBack: { fontSize: 14, fontWeight: '700', color: tokens.colors.midnight },
+  topbarLabel: { fontSize: 12, color: '#6a5b45', fontWeight: '700' },
+  storyCategoryLabel: { fontSize: 12, letterSpacing: 1, textTransform: 'uppercase', color: '#7a6444', fontWeight: '800' },
+  heroCard: { padding: tokens.spacing.lg, gap: tokens.spacing.sm },
+  iconRow: { flexDirection: 'row', alignItems: 'center', gap: tokens.spacing.sm },
+  storyIconBadge: { width: 40, height: 40, borderRadius: 20, backgroundColor: '#ffe9bf', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: '#e8cca0' },
+  storyIconText: { fontSize: 18, fontWeight: '900', color: '#6e4f2d' },
+  card: { backgroundColor: tokens.colors.cloud, borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.md },
+  ceremonyCard: { backgroundColor: '#fff5e8', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.md, borderWidth: 1, borderColor: '#efd6ae' },
+  eyebrow: { fontSize: 13, color: tokens.colors.midnight, fontWeight: '700' },
   title: { fontSize: 30, fontWeight: '900', color: tokens.colors.textPrimary },
   subtitle: { fontSize: 17, lineHeight: 25, color: tokens.colors.textPrimary },
   sectionTitle: { fontSize: 24, fontWeight: '800', color: tokens.colors.textPrimary },
   body: { fontSize: 17, lineHeight: 24, color: tokens.colors.textPrimary },
-  meta: { fontSize: 14, color: tokens.colors.midnight },
   metaLabel: { fontSize: 13, fontWeight: '700', color: '#6a5b45' },
-  heroMetaRow: { flexDirection: 'row', flexWrap: 'wrap', gap: tokens.spacing.xs },
-  metaBadge: {
-    fontSize: 13,
-    color: '#6a5b45',
-    backgroundColor: '#fff3da',
-    borderRadius: 999,
-    borderWidth: 1,
-    borderColor: '#f0d9ad',
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-  },
-  metaCard: { backgroundColor: '#fff6de', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6 },
-  luvluCard: {
-    backgroundColor: '#eef6ff',
-    borderRadius: tokens.radius.card,
-    padding: tokens.spacing.md,
-    gap: 6,
-    borderWidth: 1,
-    borderColor: '#d8e8fa',
-  },
+  chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: tokens.spacing.xs },
+  metaChip: { fontSize: 13, color: '#6a5b45', backgroundColor: '#fff3da', borderRadius: 999, borderWidth: 1, borderColor: '#f0d9ad', paddingVertical: 5, paddingHorizontal: 10 },
+  valueSection: { backgroundColor: '#fff7e7', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6, borderWidth: 1, borderColor: '#eed7ad' },
+  valueTitle: { fontSize: 22, fontWeight: '900', color: '#6b4b23' },
+  luvluCard: { backgroundColor: '#eef6ff', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6, borderWidth: 1, borderColor: '#d8e8fa' },
   luvluTitle: { fontWeight: '800', color: tokens.colors.textPrimary },
-  parentCard: {
-    backgroundColor: '#f6efe4',
-    borderRadius: tokens.radius.card,
-    padding: tokens.spacing.md,
-    gap: 6,
-    borderWidth: 1,
-    borderColor: '#e7dbc7',
-  },
+  parentCard: { backgroundColor: '#f6efe4', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6, borderWidth: 1, borderColor: '#e7dbc7' },
   parentTitle: { fontWeight: '800', color: tokens.colors.textPrimary },
   button: { backgroundColor: tokens.colors.saffron, borderRadius: 999, paddingVertical: 12, paddingHorizontal: 18, alignItems: 'center' },
   buttonText: { color: '#fff', fontWeight: '800' },
-  secondaryButton: {
-    borderWidth: 1,
-    borderColor: '#c9b898',
-    borderRadius: 999,
-    paddingVertical: 12,
-    paddingHorizontal: 18,
-    alignItems: 'center',
-    opacity: 0.6,
-    backgroundColor: '#f8f2e8',
-  },
+  secondaryButton: { borderWidth: 1, borderColor: '#c9b898', borderRadius: 999, paddingVertical: 12, paddingHorizontal: 18, alignItems: 'center', opacity: 0.6, backgroundColor: '#f8f2e8' },
   secondaryButtonText: { color: '#6a5b45', fontWeight: '700' },
-  readerCard: { backgroundColor: '#fffaf1', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.md },
-  readerTitle: { fontSize: 20, fontWeight: '800', color: tokens.colors.textPrimary },
-  readerText: { fontSize: 20, lineHeight: 30, color: tokens.colors.textPrimary },
-  helperLine: { fontSize: 14, color: tokens.colors.midnight },
+  progressTrack: { width: '100%', height: 8, borderRadius: 999, backgroundColor: '#f0e2c8', overflow: 'hidden' },
+  progressFill: { height: 8, borderRadius: 999, backgroundColor: tokens.colors.saffron },
+  scenicCard: { backgroundColor: '#eaf5ff', borderRadius: tokens.radius.card, padding: tokens.spacing.md, minHeight: 120, justifyContent: 'flex-end', overflow: 'hidden' },
+  cloudRow: { position: 'absolute', top: 16, left: 16, flexDirection: 'row', gap: 8 },
+  cloudPuff: { width: 44, height: 22, borderRadius: 22, backgroundColor: '#ffffffcc' },
+  cloudPuffSmall: { width: 28, height: 16, marginTop: 6 },
+  hillBase: { width: '150%', height: 80, borderTopLeftRadius: 90, borderTopRightRadius: 90, backgroundColor: '#b9ddaa', alignSelf: 'center', marginBottom: -25 },
+  overlayPrompt: { backgroundColor: '#fff9efdd', borderRadius: 12, borderWidth: 1, borderColor: '#eedec2', padding: 10 },
+  overlayPromptText: { fontSize: 13, lineHeight: 18, color: '#6d5839', fontWeight: '700' },
+  readerCard: { backgroundColor: '#fffaf1', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.md, borderWidth: 1, borderColor: '#f2e2c5' },
+  readerTitle: { fontSize: 22, fontWeight: '800', color: tokens.colors.textPrimary },
+  readerText: { fontSize: 21, lineHeight: 33, color: tokens.colors.textPrimary },
+  reflectCard: { backgroundColor: '#f6f0ff', borderRadius: tokens.radius.card, padding: tokens.spacing.md, borderLeftWidth: 4, borderLeftColor: '#bea6eb' },
+  reflectQuote: { fontSize: 15, lineHeight: 22, color: '#55406f', fontStyle: 'italic' },
   controls: { flexDirection: 'row', gap: tokens.spacing.sm },
   disabledButton: { opacity: 0.5 },
   link: { fontSize: 16, fontWeight: '700', color: tokens.colors.saffron },
