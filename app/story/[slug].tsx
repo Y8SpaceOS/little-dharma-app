@@ -49,14 +49,21 @@ function StoryScreenContent() {
         <View style={[styles.headerCard, visualStyles.roundedCard, visualStyles.warmCard]}>
           <Text style={styles.eyebrow}>Story World</Text>
           <Text style={styles.title}>{story.title}</Text>
-          <Text style={styles.meta}>{worldLabel || story.world} • Value: {primaryValue}</Text>
+          <Text style={styles.subtitle}>{summary}</Text>
+          <View style={styles.heroMetaRow}>
+            <Text style={styles.metaBadge}>{worldLabel || story.world}</Text>
+            <Text style={styles.metaBadge}>Value: {primaryValue}</Text>
+            <Text style={styles.metaBadge}>{durationMinutes} min</Text>
+          </View>
         </View>
 
         {stage === 'detail' && (
           <View style={[styles.card, visualStyles.roundedCard]}>
-            <Text style={styles.sectionTitle}>Warm story doorway</Text>
-            <Text style={styles.body}>{summary}</Text>
+            <Text style={styles.sectionTitle}>Before you begin</Text>
+            <Text style={styles.body}>Find a cozy spot, soften your breath, and read one page at a time together.</Text>
+
             <View style={styles.metaCard}>
+              <Text style={styles.metaLabel}>Story details</Text>
               <Text style={styles.meta}>Age band: {ageBand}</Text>
               <Text style={styles.meta}>Reading time: about {durationMinutes} minutes</Text>
               <Text style={styles.meta}>Primary value: {primaryValue}</Text>
@@ -64,13 +71,13 @@ function StoryScreenContent() {
             </View>
 
             <View style={styles.luvluCard}>
-              <Text style={styles.luvluTitle}>🦚 Luvlu guide</Text>
-              <Text style={styles.body}>Welcome. Let us read with a calm heart and respectful attention.</Text>
+              <Text style={styles.luvluTitle}>Luvlu gentle helper</Text>
+              <Text style={styles.body}>Welcome. Read slowly and let each moment feel calm and kind.</Text>
             </View>
 
             <View style={styles.parentCard}>
-              <Text style={styles.parentTitle}>For Parents</Text>
-              <Text style={styles.body}>This story keeps sacred themes warm, gentle, and child-comprehensible.</Text>
+              <Text style={styles.parentTitle}>Parent note</Text>
+              <Text style={styles.body}>Sacred themes are presented with gentle language designed for child understanding and trust.</Text>
             </View>
 
             <Pressable style={styles.button} onPress={() => setStage('reader')}>
@@ -90,7 +97,7 @@ function StoryScreenContent() {
               <Text style={styles.readerTitle}>{section.title}</Text>
               <Text style={styles.readerText}>{section.text}</Text>
             </View>
-            <Text style={styles.helperLine}>🦚 Luvlu (quiet helper): Take one soft breath and continue.</Text>
+            <Text style={styles.helperLine}>Luvlu (quiet helper): Take one soft breath and continue.</Text>
             <Text style={styles.helperLine}>Optional: Read with a grown-up.</Text>
 
             <View style={styles.controls}>
@@ -123,7 +130,7 @@ function StoryScreenContent() {
             <Text style={styles.body}>🌸 A gentle blessing for your heart. 🪔</Text>
             <Text style={styles.body}>You practiced {primaryValue.toLowerCase()} through this story.</Text>
             <View style={styles.luvluCard}>
-              <Text style={styles.luvluTitle}>🦚 Luvlu blessing support</Text>
+              <Text style={styles.luvluTitle}>Luvlu blessing support</Text>
               <Text style={styles.body}>Beautiful reading. Keep this blessing with kindness and calm.</Text>
             </View>
             <View style={styles.parentCard}>
@@ -149,7 +156,7 @@ export default function StoryScreen() {
 
 const styles = StyleSheet.create({
   scrollContent: { padding: tokens.spacing.lg, gap: tokens.spacing.lg },
-  headerCard: { padding: tokens.spacing.lg },
+  headerCard: { padding: tokens.spacing.lg, gap: tokens.spacing.sm },
   card: {
     backgroundColor: tokens.colors.cloud,
     borderRadius: tokens.radius.card,
@@ -162,17 +169,53 @@ const styles = StyleSheet.create({
   },
   eyebrow: { fontSize: 14, color: tokens.colors.midnight, fontWeight: '700' },
   title: { fontSize: 30, fontWeight: '900', color: tokens.colors.textPrimary },
+  subtitle: { fontSize: 17, lineHeight: 25, color: tokens.colors.textPrimary },
   sectionTitle: { fontSize: 24, fontWeight: '800', color: tokens.colors.textPrimary },
   body: { fontSize: 17, lineHeight: 24, color: tokens.colors.textPrimary },
   meta: { fontSize: 14, color: tokens.colors.midnight },
+  metaLabel: { fontSize: 13, fontWeight: '700', color: '#6a5b45' },
+  heroMetaRow: { flexDirection: 'row', flexWrap: 'wrap', gap: tokens.spacing.xs },
+  metaBadge: {
+    fontSize: 13,
+    color: '#6a5b45',
+    backgroundColor: '#fff3da',
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: '#f0d9ad',
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+  },
   metaCard: { backgroundColor: '#fff6de', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6 },
-  luvluCard: { backgroundColor: '#e8f5ff', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6 },
+  luvluCard: {
+    backgroundColor: '#eef6ff',
+    borderRadius: tokens.radius.card,
+    padding: tokens.spacing.md,
+    gap: 6,
+    borderWidth: 1,
+    borderColor: '#d8e8fa',
+  },
   luvluTitle: { fontWeight: '800', color: tokens.colors.textPrimary },
-  parentCard: { backgroundColor: '#f6efe4', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6 },
+  parentCard: {
+    backgroundColor: '#f6efe4',
+    borderRadius: tokens.radius.card,
+    padding: tokens.spacing.md,
+    gap: 6,
+    borderWidth: 1,
+    borderColor: '#e7dbc7',
+  },
   parentTitle: { fontWeight: '800', color: tokens.colors.textPrimary },
   button: { backgroundColor: tokens.colors.saffron, borderRadius: 999, paddingVertical: 12, paddingHorizontal: 18, alignItems: 'center' },
   buttonText: { color: '#fff', fontWeight: '800' },
-  secondaryButton: { borderWidth: 1, borderColor: '#c9b898', borderRadius: 999, paddingVertical: 12, paddingHorizontal: 18, alignItems: 'center', opacity: 0.75 },
+  secondaryButton: {
+    borderWidth: 1,
+    borderColor: '#c9b898',
+    borderRadius: 999,
+    paddingVertical: 12,
+    paddingHorizontal: 18,
+    alignItems: 'center',
+    opacity: 0.6,
+    backgroundColor: '#f8f2e8',
+  },
   secondaryButtonText: { color: '#6a5b45', fontWeight: '700' },
   readerCard: { backgroundColor: '#fffaf1', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.md },
   readerTitle: { fontSize: 20, fontWeight: '800', color: tokens.colors.textPrimary },
