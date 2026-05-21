@@ -58,8 +58,8 @@ for (const marker of readerMarkers) {
 }
 pass('Reader stage includes progress/page marker and reader block');
 
-if (/\bScreen\s*\d+/i.test(code) || code.includes('Screen 22') || code.includes('Screen 23') || code.includes('Screen 24') || code.includes('Screen ')) fail('Internal prototype screen labels must not appear in live UI strings');
-pass('No internal prototype screen labels appear in live UI strings');
+if (/\bScreen\s*\d+/i.test(code) || code.includes('Screen 22') || code.includes('Screen 23') || code.includes('Screen 24') || code.includes('Screen ') || /Story Detail|Story Reader|prototype|contract|implementation|visual parity/i.test(code)) fail('Internal/prototype language must not appear in live UI strings');
+pass('No internal prototype or implementation labels appear in live UI strings');
 
 if (!code.includes('Luvlu reflection:')) fail('Luvlu reflection prompt missing from reader experience');
 if (/logo|deity|achievement|reward|teddy|tree|plant/i.test(code)) fail('Luvlu governance violation: restricted framing detected');
