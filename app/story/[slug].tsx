@@ -50,7 +50,7 @@ function StoryScreenContent() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.topbar}>
           <Link href='/(child)/worlds' style={styles.topbarBack}>← Story World</Link>
-          <Text style={styles.topbarLabel}>Screen 22 · Story Detail</Text>
+          <Text style={styles.topbarLabel}>Story doorway</Text>
         </View>
 
         {stage === 'detail' && (
@@ -101,7 +101,7 @@ function StoryScreenContent() {
 
         {stage === 'reader' && (
           <View style={[styles.card, visualStyles.roundedCard]}>
-            <Text style={styles.topbarLabel}>Screen 23 · Story Reader</Text>
+            <Text style={styles.topbarLabel}>Reading together</Text>
             <Text style={styles.sectionTitle}>Section {panelIndex + 1} of {story.panels.length}</Text>
             <View style={styles.progressTrack}>
               <View style={[styles.progressFill, { width: `${progress}%` }]} />
@@ -115,7 +115,7 @@ function StoryScreenContent() {
                 </View>
                 <View style={styles.hillBase} />
                 <View style={styles.overlayPrompt}>
-                  <Text style={styles.overlayPromptText}>Screen 24-inspired story moment: Pause, imagine this scene, then continue reading.</Text>
+                  <Text style={styles.overlayPromptText}>Story moment: Pause, imagine this scene, then continue reading.</Text>
                 </View>
               </View>
             )}

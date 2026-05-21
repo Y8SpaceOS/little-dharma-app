@@ -46,17 +46,20 @@ if (!code.includes('useLocalSearchParams') || !code.includes('getStoryJourneyByS
 if (!code.includes("href='/(child)/worlds'") || !code.includes("href='/(child)/today'")) fail('Required return links appear missing');
 pass('Existing /story/[slug] route path, slug behavior, and return links remain intact');
 
-const detailMarkers = ['Screen 22 · Story Detail', 'Today’s value', 'Parent note', 'Begin Story', 'Listen with Luvlu — Coming soon'];
+const detailMarkers = ['Story doorway', 'Today’s value', 'Parent note', 'Begin Story', 'Listen with Luvlu — Coming soon'];
 for (const marker of detailMarkers) {
   if (!code.includes(marker)) fail(`Detail stage marker missing: ${marker}`);
 }
 pass('Detail stage includes Story Detail structure markers');
 
-const readerMarkers = ['Screen 23 · Story Reader', 'Section {panelIndex + 1} of {story.panels.length}', 'progressTrack', 'readerCard'];
+const readerMarkers = ['Reading together', 'Section {panelIndex + 1} of {story.panels.length}', 'progressTrack', 'readerCard'];
 for (const marker of readerMarkers) {
   if (!code.includes(marker)) fail(`Reader stage marker missing: ${marker}`);
 }
 pass('Reader stage includes progress/page marker and reader block');
+
+if (/\bScreen\s*\d+/i.test(code) || code.includes('Screen 22') || code.includes('Screen 23') || code.includes('Screen 24') || code.includes('Screen ')) fail('Internal prototype screen labels must not appear in live UI strings');
+pass('No internal prototype screen labels appear in live UI strings');
 
 if (!code.includes('Luvlu reflection:')) fail('Luvlu reflection prompt missing from reader experience');
 if (/logo|deity|achievement|reward|teddy|tree|plant/i.test(code)) fail('Luvlu governance violation: restricted framing detected');
