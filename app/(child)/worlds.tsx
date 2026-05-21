@@ -38,7 +38,7 @@ export default function Screen() {
       </View>
     </Pressable>)}</View>
 
-    <View style={visualStyles.helperBubble}><Text style={styles.helper}>🦚 Luvlu can help you pick a world whenever you are ready.</Text></View>
+    <View style={visualStyles.helperBubble}><Text style={styles.helper}>Luvlu can help you pick a world whenever you are ready.</Text></View>
   </ScrollView></SafeAreaView>;
 }
 
