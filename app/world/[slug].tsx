@@ -2,7 +2,15 @@ import { Link, useLocalSearchParams } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
 
-type Card = { title: string; description: string; duration: string; age: string; value: string; status: 'available' | 'coming_soon'; storySlug?: string };
+type Card = {
+  title: string;
+  description: string;
+  duration: string;
+  age: string;
+  value: string;
+  status: 'available' | 'coming_soon';
+  storySlug?: string;
+};
 type World = { icon: string; title: string; subtitle: string; hero: string; cards: Card[] };
 
 const worldMap: Record<string, World> = {
@@ -33,22 +41,29 @@ const worldMap: Record<string, World> = {
   ] }
 };
 
+const isJourneyLike = (slug: string, world: World) => /journey|ramayana/.test(slug) || /path|chapter/i.test(world.title);
+
 export default function WorldScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
-  const world = worldMap[(slug || '').toLowerCase()];
+  const normalizedSlug = (slug || '').toLowerCase();
+  const world = worldMap[normalizedSlug];
 
   if (!world) {
     return <SafeAreaView style={visualStyles.screen}><View style={[visualStyles.emptyStateCard, { margin: 16, gap: 8 }]}><Text style={styles.title}>Your world is waiting</Text><Text style={styles.sub}>Choose a doorway from Story World to begin.</Text><Link href='/(child)/worlds' style={visualStyles.primaryCta}>Back to Story World</Link></View></SafeAreaView>;
   }
 
+  const journeyLike = isJourneyLike(normalizedSlug, world);
+
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
-    <View style={[visualStyles.heroCard, { backgroundColor: world.hero, gap: 6 }]}>
+    <View style={[visualStyles.heroCard, { backgroundColor: world.hero, gap: 8 }]}> 
       <Text style={styles.icon}>{world.icon}</Text>
       <Text style={styles.title}>{world.title}</Text>
-      <Text style={styles.sub}>{world.subtitle}</Text>
+      <Text style={styles.sub}>{journeyLike ? 'Take one calm step at a time. Every story lights the next step.' : world.subtitle}</Text>
+      {journeyLike ? <View style={styles.pathStrip}><Text style={styles.pathLabel}>Journey path</Text><View style={styles.pathRow}><View style={[styles.pathDot, styles.pathDone]} /><View style={styles.pathLine} /><View style={styles.pathDot} /><View style={styles.pathLine} /><View style={styles.pathDot} /></View></View> : null}
     </View>
 
-    {world.cards.map((c) => <View key={c.title} style={visualStyles.storyCard}>
+    {world.cards.map((c, idx) => <View key={c.title} style={[visualStyles.storyCard, journeyLike ? styles.journeyCard : styles.worldCard]}>
+      {journeyLike ? <Text style={styles.stepLabel}>Step {idx + 1}</Text> : null}
       <Text style={styles.cardTitle}>{c.title}</Text>
       <Text style={styles.cardDesc}>{c.description}</Text>
       <View style={styles.row}>
@@ -58,9 +73,29 @@ export default function WorldScreen() {
         <Text style={visualStyles.chip}>{c.status === 'available' ? 'Ready' : 'Coming soon'}</Text>
       </View>
       <Text style={styles.source}>Source / tradition note appears with each story detail.</Text>
-      {c.status === 'available' && c.storySlug ? <Link href={`/story/${c.storySlug}` as never} style={visualStyles.secondaryCta}>Read story</Link> : <View style={styles.comingSoon}><Text style={styles.comingSoonText}>Coming soon</Text></View>}
+      {c.status === 'available' && c.storySlug ? <Link href={`/story/${c.storySlug}` as never} style={visualStyles.secondaryCta}>Read story</Link> : <View style={styles.comingSoon}><Text style={styles.comingSoonText}>{journeyLike ? 'This step opens soon' : 'Coming soon'}</Text></View>}
     </View>)}
   </ScrollView></SafeAreaView>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:12,paddingBottom:24}, icon:{fontSize:38}, title:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:14,lineHeight:20,color:visualTokens.color.mutedBrown,marginTop:4}, cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown}, cardDesc:{fontSize:14,lineHeight:20,color:visualTokens.color.mutedBrown}, row:{flexDirection:'row',flexWrap:'wrap',gap:6}, source:{fontSize:12,color:visualTokens.color.mutedBrown}, comingSoon:{marginTop:6,paddingVertical:10,paddingHorizontal:12,borderRadius:12,backgroundColor:'#FFF7E9',borderWidth:1,borderColor:'#E8D4B6',alignSelf:'flex-start'}, comingSoonText:{fontSize:12,fontWeight:'800',color:visualTokens.color.mutedBrown} });
+const styles = StyleSheet.create({
+  content:{padding:16,gap:12,paddingBottom:24},
+  icon:{fontSize:38},
+  title:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown},
+  sub:{fontSize:14,lineHeight:20,color:visualTokens.color.mutedBrown,marginTop:4},
+  worldCard:{backgroundColor:'#FFFDF8'},
+  journeyCard:{backgroundColor:'#F9FFF7',borderColor:'#D4E8D0',borderWidth:1},
+  stepLabel:{fontSize:12,fontWeight:'800',color:'#4A7C59',marginBottom:4},
+  cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown},
+  cardDesc:{fontSize:14,lineHeight:20,color:visualTokens.color.mutedBrown},
+  row:{flexDirection:'row',flexWrap:'wrap',gap:6},
+  source:{fontSize:12,color:visualTokens.color.mutedBrown},
+  pathStrip:{marginTop:4,padding:10,borderRadius:16,backgroundColor:'#FFFFFFB8',borderWidth:1,borderColor:'#D7E7D5',gap:8},
+  pathLabel:{fontSize:12,fontWeight:'800',color:'#4A7C59'},
+  pathRow:{flexDirection:'row',alignItems:'center'},
+  pathDot:{width:12,height:12,borderRadius:999,backgroundColor:'#CFE0CC'},
+  pathDone:{backgroundColor:'#7DBA84'},
+  pathLine:{height:3,width:28,backgroundColor:'#CFE0CC'},
+  comingSoon:{marginTop:6,paddingVertical:10,paddingHorizontal:12,borderRadius:12,backgroundColor:'#FFF7E9',borderWidth:1,borderColor:'#E8D4B6',alignSelf:'flex-start'},
+  comingSoonText:{fontSize:12,fontWeight:'800',color:visualTokens.color.mutedBrown}
+});
