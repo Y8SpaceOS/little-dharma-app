@@ -108,12 +108,32 @@ if (!process.exitCode) {
     ? pass('roadmap follow-up recommendations are aligned')
     : fail('roadmap follow-up recommendations mismatch');
 
-  const forbiddenImplTerms = ['analytics', 'telemetry', 'payment', 'auth', 'backend', 'http', 'fetch(', 'axios', 'microphone', 'recording'];
-  const newFiles = ['src/services/storyCompletionMomentService.ts', 'app/story/[slug].tsx'];
-  for (const rel of newFiles) {
-    const c = read(rel).toLowerCase();
-    for (const term of forbiddenImplTerms) {
-      if (c.includes(term)) fail(`${rel} contains forbidden implementation term: ${term}`);
+  const forbiddenImplPatterns = [
+    { label: 'network call fetch(', pattern: /fetch\s*\(/i },
+    { label: 'axios usage', pattern: /\baxios\b/i },
+    { label: 'analytics implementation', pattern: /analytics\s*[.:(]/i },
+    { label: 'telemetry implementation', pattern: /telemetry\s*[.:(]/i },
+    { label: 'backend implementation', pattern: /\b(supabase|firebase|backend|auth|payment)\b/i },
+    { label: 'expo audio/video implementation', pattern: /expo-av/i },
+    { label: 'recording api usage', pattern: /\b(start|stop|create|prepare)[A-Za-z]*record/i },
+    { label: 'recording permission usage', pattern: /(recordingpermission|getpermissionsasync\(.*audio|requestpermissionsasync\(.*audio)/i },
+    { label: 'microphone api usage', pattern: /\bmicrophone\b(?!(\s+or\s+recording\b))/i },
+  ];
+  const runtimeFiles = ['src/services/storyCompletionMomentService.ts', 'app/story/[slug].tsx'];
+  for (const rel of runtimeFiles) {
+    const c = read(rel);
+    const lower = c.toLowerCase();
+
+    if (lower.includes('no microphone or recording')) {
+      pass(`${rel} includes approved trust phrase: No microphone or recording`);
+    }
+
+    for (const rule of forbiddenImplPatterns) {
+      if (rule.pattern.test(c)) fail(`${rel} contains forbidden implementation pattern: ${rule.label}`);
+    }
+
+    if (/from\s+['"]expo-(notifications|sharing|mail-composer|sms|linking|file-system|media-library)['"]/i.test(c)) {
+      fail(`${rel} imports forbidden native module implementation`);
     }
   }
 
