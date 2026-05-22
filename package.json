@@ -28,7 +28,8 @@
     "validate:story-audio-foundation-v1": "node scripts/validate-story-audio-foundation-v1.mjs",
     "validate:ramayana-audio-v1": "node scripts/validate-ramayana-audio-v1.mjs",
     "validate:bhagavad-gita-editorial-framework-v1": "node scripts/validate-bhagavad-gita-editorial-framework-v1.mjs",
-    "validate:mahabharata-editorial-framework-v1": "node scripts/validate-mahabharata-editorial-framework-v1.mjs"
+    "validate:mahabharata-editorial-framework-v1": "node scripts/validate-mahabharata-editorial-framework-v1.mjs",
+    "validate:mahabharata-journey-outline-v1": "node scripts/validate-mahabharata-journey-outline-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
