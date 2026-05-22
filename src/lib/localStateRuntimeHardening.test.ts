@@ -125,3 +125,32 @@ describe('local state runtime hardening', () => {
     expect(saved.contactDetail).toBe('');
   });
 });
+
+import { markStoryComplete } from './storyProgress';
+import { markJourneyStoryCompleted } from './journeyProgress';
+import { getRuntimeStoryBySlug } from '@/services/journeys';
+
+describe('story runtime hardening', () => {
+  it('resolver returns null for unknown and coming-soon slugs', () => {
+    expect(getRuntimeStoryBySlug('missing-slug')).toBeNull();
+    expect(getRuntimeStoryBySlug('ganesha-opening-soon')).toBeNull();
+  });
+
+  it('completion marks story locally and journey metadata can be missing', async () => {
+    await markStoryComplete('krishna-shares-butter', 'Kindness Blossom', 'Kindness');
+    const completions = await getAllStoryCompletions();
+    expect(completions['krishna-shares-butter']).toBeTruthy();
+    await expect(markJourneyStoryCompleted('legacy-missing-journey', 'krishna-shares-butter')).resolves.toBeTruthy();
+  });
+
+  it('treasures-style filtering drops unknown stale completed slugs', async () => {
+    store.set('little_dharma_story_progress_v1', JSON.stringify({
+      'krishna-shares-butter': { completedAt: new Date().toISOString(), badgeName: 'Lotus' },
+      'stale-slug': { completedAt: new Date().toISOString(), badgeName: 'Old' }
+    }));
+    const known = new Set(['krishna-shares-butter']);
+    const completions = await getAllStoryCompletions();
+    const visible = Object.keys(completions).filter((slug) => known.has(slug));
+    expect(visible).toEqual(['krishna-shares-butter']);
+  });
+});
