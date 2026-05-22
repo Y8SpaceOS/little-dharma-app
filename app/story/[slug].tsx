@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
@@ -62,7 +62,7 @@ function StoryScreenContent() {
   const progress = ((clampedPanelIndex + 1) / safePanels.length) * 100;
   const storyIcon = worldLabel?.charAt(0) || story.world.charAt(0) || 'S';
 
-  const completionTitle = useMemo(() => 'Story blessing', []);
+  const completionTitle = 'Story blessing';
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>

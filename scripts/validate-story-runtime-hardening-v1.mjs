@@ -28,9 +28,35 @@ for (const f of reqFiles) exists(f) ? pass(`required file exists: ${f}`) : fail(
 for (const f of ['docs/qa/ROUTE_INTEGRITY_AUDIT.md','docs/qa/LOCAL_FIRST_STATE_AUDIT.md','docs/qa/LOCAL_STATE_RUNTIME_HARDENING.md','docs/qa/PARENT_SURFACE_FUNCTIONAL_READINESS.md']) exists(f) ? pass(`readiness doc exists: ${f}`) : fail(`readiness doc missing: ${f}`);
 for (const f of ['scripts/validate-route-integrity-v1.mjs','scripts/validate-local-first-state-v1.mjs','scripts/validate-local-state-runtime-hardening-v1.mjs','scripts/validate-parent-surface-readiness-v1.mjs']) exists(f) ? pass(`validator exists: ${f}`) : fail(`validator missing: ${f}`);
 
-const appFiles = fs.readdirSync(path.join(root, 'app'));
-const protoScreenPattern = /424|425|426|427|428|429|430|431|432|433|434|435|436|437|438|439|440|441|442|443|444|445|446|447|448|449|450|451|452|453|454|455|456|457|458|459|460|461|462|463|464|465|466|467|468|469|470|471|472|473|474|475|476|477|478|479|480|481|482|483|484|485|486|487/;
-if (appFiles.some((f) => protoScreenPattern.test(f))) fail('prototype screen files 424-487 detected under app/'); else pass('no 424-487 prototype runtime files in app/ root');
+const hasScreenRangeId = (value) => {
+  const matches = value.match(/\d+/g);
+  if (!matches) return false;
+  return matches.some((chunk) => {
+    const n = Number.parseInt(chunk, 10);
+    return Number.isInteger(n) && n >= 424 && n <= 487;
+  });
+};
+
+const runtimePrototypeLeakFiles = [];
+const walkForPrototypeLeaks = (startDir) => {
+  for (const ent of fs.readdirSync(path.join(root, startDir), { withFileTypes: true })) {
+    const rel = path.join(startDir, ent.name);
+    if (ent.isDirectory()) {
+      walkForPrototypeLeaks(rel);
+      continue;
+    }
+    if (!/\.(ts|tsx|js|jsx|mjs|md|json)$/i.test(ent.name)) continue;
+    if (hasScreenRangeId(rel)) runtimePrototypeLeakFiles.push(rel);
+  }
+};
+
+walkForPrototypeLeaks('app');
+walkForPrototypeLeaks('src');
+if (runtimePrototypeLeakFiles.length > 0) {
+  fail(`prototype screen files 424-487 detected recursively: ${runtimePrototypeLeakFiles.slice(0, 8).join(', ')}`);
+} else {
+  pass('no 424-487 prototype runtime files detected recursively in app/ and src/');
+}
 
 const scanDirs = ['app','src'];
 const bannedWords = ['fake phone chrome'];
