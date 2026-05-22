@@ -40,7 +40,8 @@
     "validate:story-world-trust-microcopy-v1": "node scripts/validate-story-world-trust-microcopy-v1.mjs",
     "validate:story-detail-trust-microcopy-v1": "node scripts/validate-story-detail-trust-microcopy-v1.mjs",
     "validate:completion-trust-microcopy-v1": "node scripts/validate-completion-trust-microcopy-v1.mjs",
-    "validate:audio-entry-trust-microcopy-v1": "node scripts/validate-audio-entry-trust-microcopy-v1.mjs"
+    "validate:audio-entry-trust-microcopy-v1": "node scripts/validate-audio-entry-trust-microcopy-v1.mjs",
+    "validate:parent-reflection-prompt-copy-v1": "node scripts/validate-parent-reflection-prompt-copy-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

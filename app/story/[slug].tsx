@@ -13,6 +13,7 @@ import { buildStoryAudioPlayerState, shouldShowAudioEntryPoint } from '@/service
 import { buildStoryDetailTrustMicrocopy } from '@/services/storyDetailTrustMicrocopyService';
 import { buildCompletionTrustMicrocopy } from '@/services/completionTrustMicrocopyService';
 import { buildAudioEntryTrustMicrocopy } from '@/services/audioEntryTrustMicrocopyService';
+import { buildParentReflectionPromptCopy } from '@/services/parentReflectionPromptCopyService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -73,6 +74,7 @@ function StoryScreenContent() {
   const trustMicrocopy = buildStoryDetailTrustMicrocopy();
   const completionTrustMicrocopy = buildCompletionTrustMicrocopy();
   const audioTrustMicrocopy = buildAudioEntryTrustMicrocopy();
+  const parentReflectionPromptCopy = buildParentReflectionPromptCopy();
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -203,6 +205,14 @@ function StoryScreenContent() {
               <Text style={styles.parentLine}>{completionTrustMicrocopy.restReadinessCopy}</Text>
               <Text style={styles.parentLine}>{completionTrustMicrocopy.familyReflectionCopy}</Text>
               <Text style={styles.parentLine}>{completionTrustMicrocopy.sacredCareCopy}</Text>
+            </View>
+            <View style={[styles.supportCard, styles.completionTrustCard]} accessibilityLabel={parentReflectionPromptCopy.accessibilityLabel} accessibilityHint={parentReflectionPromptCopy.accessibilityHint}>
+              <Text style={styles.valueLineStrong}>{parentReflectionPromptCopy.gentleIntroCopy}</Text>
+              <Text style={styles.parentLine}>{parentReflectionPromptCopy.optionalCopy}</Text>
+              <Text style={styles.parentLine}>{parentReflectionPromptCopy.noQuizCopy}</Text>
+              <Text style={styles.parentLine}>{parentReflectionPromptCopy.valueQuestionCopy}</Text>
+              <Text style={styles.parentLine}>{parentReflectionPromptCopy.peaceQuestionCopy}</Text>
+              <Text style={styles.parentLine}>{parentReflectionPromptCopy.returnLaterCopy}</Text>
             </View>
             {completionMoment.luvluAllowed ? <Text style={styles.luvluLine}>Luvlu says: Carry this blessing gently into your day.</Text> : null}
             {completionMoment.luvluAllowed ? (
