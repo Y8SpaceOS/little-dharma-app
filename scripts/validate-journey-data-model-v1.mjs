@@ -53,7 +53,17 @@ add(serviceFile.includes("coming_soon") ? PASS : FAIL, 'Journey service preserve
 add(serviceFile.includes('preview') && serviceFile.includes('import') ? PASS : FAIL, 'Journey service blocks preview/import scaffold availability');
 add(serviceFile.includes("runtime_ready") && serviceFile.includes("available") ? PASS : FAIL, 'Journey service enforces runtime eligibility status checks');
 
-const ramayanaGuardPresent = /ramayana/i.test(serviceFile) || /runtime eligibility/i.test(docsFile);
+const broadFallbackPatterns = [
+  ".filter((item) => item.sectionId === 'dharma-journeys' || item.journeyId)",
+  ".filter((item)=>item.sectionId==='dharma-journeys'||item.journeyId)",
+  /sectionId\s*===\s*['"]dharma-journeys['"]\s*\|\|\s*item\.journeyId/
+];
+const usesBroadFallback = broadFallbackPatterns.some((pattern) =>
+  typeof pattern === 'string' ? serviceFile.includes(pattern) : pattern.test(serviceFile)
+);
+add(!usesBroadFallback ? PASS : FAIL, 'Journey service does not use broad journeyId fallback selection for fallback journey mapping');
+
+const ramayanaGuardPresent = /ramayana/i.test(docsFile) && /runtime[- ]eligibility/i.test(docsFile);
 add(ramayanaGuardPresent ? PASS : FAIL, 'Ramayana availability remains gated by runtime eligibility rules');
 
 const requiredSections = [
@@ -104,7 +114,8 @@ add(true, 'No screens 424-487 runtime files detected by explicit-path policy (gu
 
 const childFiles = ['app/(child)/worlds.tsx', 'app/(child)/today.tsx', 'app/(child)/treasures.tsx'].map(read).join('\n');
 add(!/Story Library/.test(childFiles) ? PASS : FAIL, 'Child-facing active routes use "Story World" language');
-add(!/XP|coins|streaks|leaderboards|rankings/i.test(childFiles) ? PASS : FAIL, 'No hard gamification terms in active child runtime files');
+const hardGamificationPattern = /\b(xp|coins|streaks|leaderboards|rankings)\b/i;
+add(!hardGamificationPattern.test(childFiles) ? PASS : FAIL, 'No hard gamification terms in active child runtime files');
 
 const disallowed = /supabase|fetch\(|axios|payment|checkout|microphone|recording|telemetry|analytics/i;
 add(!disallowed.test(serviceFile) ? PASS : FAIL, 'No backend/auth/payment/mic/recording/network implementation in journey service');

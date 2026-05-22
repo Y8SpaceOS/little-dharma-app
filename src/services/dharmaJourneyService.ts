@@ -180,7 +180,7 @@ export function mapStoryWorldJourneyToDharmaJourneyV1(item: (typeof storyWorldIt
 export function getDharmaJourneys(): DharmaJourneyV1[] {
   const registryJourneys = contentRegistryJourneys.map(mapContentRegistryJourneyToDharmaJourneyV1);
   const fallbackJourneys = storyWorldItems
-    .filter((item) => item.sectionId === 'dharma-journeys' || item.journeyId)
+    .filter((item) => item.sectionId === 'dharma-journeys' || item.id.startsWith('journey-preview-'))
     .map(mapStoryWorldJourneyToDharmaJourneyV1)
     .filter((journey) => !registryJourneys.some((registryJourney) => registryJourney.slug === journey.slug));
 

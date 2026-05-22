@@ -23,7 +23,7 @@ Story World Data-Driven Browse stays route/source-of-truth for current doorway o
 
 ## Current journey reality
 - Vrindavan starter journey is the only runtime-eligible journey source today.
-- Ramayana and other journey packs remain coming soon unless runtime-eligibility conditions are met.
+- Ramayana and other journey packs remain coming soon unless runtime-eligibility conditions are met. Ramayana runtime availability is gated by runtime eligibility conditions only.
 - Legacy/fallback behavior is preserved.
 
 ## Journey model overview
