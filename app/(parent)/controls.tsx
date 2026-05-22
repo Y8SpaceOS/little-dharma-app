@@ -9,6 +9,9 @@ import {
   getParentControlsPrivacyCopy,
   getParentControlsTrustSummary,
 } from '@/services/parentControlsCopyService';
+import {
+  buildParentControlsJourneySettingsCopy,
+} from '@/services/parentControlsJourneySettingsCopyService';
 import { ChildProfile, getChildProfile } from '@/lib/childProfile';
 import {
   getParentControls,
@@ -65,6 +68,13 @@ export default function ControlsScreen() {
           <Text style={styles.title}>Dharma Journey settings</Text>
           <Text style={styles.helper}>Dharma Journeys are gentle story paths. Review Ramayana, Krishna Childhood, and future paths.</Text>
           <Link href={'/(parent)/journey-settings' as never} style={styles.link} accessibilityRole='link' accessibilityLabel='Open Journey Settings'>Open Journey Settings</Link>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.title}>Journey choices stay gentle.</Text>
+          {buildParentControlsJourneySettingsCopy().microcopyBullets.map((line) => (
+            <Text key={line} style={styles.helper}>• {line}</Text>
+          ))}
         </View>
 
         <View style={styles.card}>
