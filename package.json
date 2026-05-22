@@ -13,7 +13,8 @@
     "validate:release-candidate-gate-v0": "node scripts/validate-release-candidate-gate-v0.mjs",
     "validate:device-qa-runbook-v0": "node scripts/validate-device-qa-runbook-v0.mjs",
     "validate:device-qa-execution-v0": "node scripts/validate-device-qa-execution-v0.mjs",
-    "validate:content-model-v2": "node scripts/validate-content-model-v2.mjs"
+    "validate:content-model-v2": "node scripts/validate-content-model-v2.mjs",
+    "validate:content-registry-refactor": "node scripts/validate-content-registry-refactor.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
