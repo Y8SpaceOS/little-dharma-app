@@ -36,7 +36,8 @@
     "validate:parent-controls-copy-hardening-v1": "node scripts/validate-parent-controls-copy-hardening-v1.mjs",
     "validate:privacy-center-copy-hardening-v1": "node scripts/validate-privacy-center-copy-hardening-v1.mjs",
     "validate:parent-onboarding-trust-copy-v1": "node scripts/validate-parent-onboarding-trust-copy-v1.mjs",
-    "validate:child-home-trust-microcopy-v1": "node scripts/validate-child-home-trust-microcopy-v1.mjs"
+    "validate:child-home-trust-microcopy-v1": "node scripts/validate-child-home-trust-microcopy-v1.mjs",
+    "validate:story-world-trust-microcopy-v1": "node scripts/validate-story-world-trust-microcopy-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
