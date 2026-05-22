@@ -1,12 +1,15 @@
 import { mapVrindavanPacketToStoryModelV2, toContentModelStoryId } from '@/data/contentModelAdapters';
 import { vrindavanStoryPackets } from '@/data/seed/vrindavan';
+import { ramayanaPack1Journey, ramayanaPack1Stories, ramayanaPack1StoryPack } from '@/data/ramayanaPack1Registry';
 import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 
 export const contentRegistryVersion = 'pr119-content-registry-v1';
 
-export const contentRegistryStories: Story[] = vrindavanStoryPackets.map((packet, index) =>
+const vrindavanRegistryStories: Story[] = vrindavanStoryPackets.map((packet, index) =>
   mapVrindavanPacketToStoryModelV2(packet, index)
 );
+
+export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories];
 
 export const contentRegistryStoriesById: Record<string, Story> = Object.fromEntries(
   contentRegistryStories.map((story) => [story.id, story])
@@ -32,7 +35,8 @@ export const contentRegistryStoryPacks: StoryPack[] = [
       'No networking, telemetry, or cloud dependency in runtime story lookup.'
     ],
     sacredRespectNotes: ['Stories preserve gentle sacred framing and child-safe devotional tone.']
-  }
+  },
+  ramayanaPack1StoryPack
 ];
 
 export const contentRegistryStoryPacksById: Record<string, StoryPack> = Object.fromEntries(
@@ -51,7 +55,8 @@ export const contentRegistryJourneys: DharmaJourney[] = [
     estimatedCompletionWeeks: 3,
     status: 'runtime_ready',
     journeyType: 'guided_path'
-  }
+  },
+  ramayanaPack1Journey
 ];
 
 export const contentRegistryJourneysById: Record<string, DharmaJourney> = Object.fromEntries(
@@ -82,6 +87,7 @@ export function getContentRegistryCoverageSummary() {
     contentRegistryVersion,
     totalVrindavanSeedPackets: vrindavanStoryPackets.length,
     registeredStories: contentRegistryStories.length,
+    registeredRamayanaPack1Stories: ramayanaPack1Stories.length,
     registeredStoryPacks: contentRegistryStoryPacks.length,
     registeredJourneys: contentRegistryJourneys.length,
     missingStoryIds,
