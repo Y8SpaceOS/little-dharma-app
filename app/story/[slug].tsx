@@ -123,6 +123,7 @@ function StoryScreenContent() {
                 <Text style={styles.valueLineStrong}>Audio coming soon</Text>
                 <Text style={styles.parentLine}>{audioTrustMicrocopy.optionalListeningCopy}</Text>
                 <Text style={styles.parentLine}>{audioTrustMicrocopy.readMyselfCopy}</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.noMicRecordingCopy}</Text>
                 <Text style={styles.parentLine}>{audioTrustMicrocopy.parentApprovedCopy}</Text>
                 <Text style={styles.parentLine}>{audioTrustMicrocopy.familyListeningCopy}</Text>
                 <Text style={styles.parentLine}>{audioTrustMicrocopy.sacredCareCopy}</Text>

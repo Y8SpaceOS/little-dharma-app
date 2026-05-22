@@ -154,6 +154,15 @@ if (storyOk) {
   if (route.includes('buildAudioEntryTrustMicrocopy')) pass('UI binding added in app/story/[slug].tsx');
   else warn('UI binding deferred in app/story/[slug].tsx');
 
+  const usesAudioTrustService = route.includes('buildAudioEntryTrustMicrocopy')
+    || route.includes('audioTrustMicrocopy');
+  const rendersNoMicCopy = route.includes('audioTrustMicrocopy.noMicRecordingCopy');
+  if (usesAudioTrustService && !rendersNoMicCopy) {
+    fail('story route uses audio-entry trust microcopy but does not render audioTrustMicrocopy.noMicRecordingCopy');
+  } else if (usesAudioTrustService && rendersNoMicCopy) {
+    pass('story route renders audioTrustMicrocopy.noMicRecordingCopy in audio trust block');
+  }
+
   assertNoPattern(route, [
     /Listen Now/i, />\s*Play\s*</i, /tap to listen/i,
   ], 'story route has no new active playback CTA controls');
