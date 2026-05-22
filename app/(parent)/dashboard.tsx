@@ -5,6 +5,17 @@ import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
 import { getParentDashboardSnapshot } from '@/services/progress';
 import { getParentWeeklySummary } from '@/services/parentWeeklySummaryService';
+import {
+  getParentWeeklySummaryGentleNextStepCopy,
+  getParentWeeklySummaryGentleTitleCopy,
+  getParentWeeklySummaryLocalFirstCopy,
+  getParentWeeklySummaryNoPressureCopy,
+  getParentWeeklySummaryReturnLaterCopy,
+  getParentWeeklySummaryStoriesRememberedCopy,
+  getParentWeeklySummaryTrustIntroCopy,
+  getParentWeeklySummaryValuesConversationCopy,
+  getParentWeeklySummarySacredCareCopy,
+} from '@/services/parentWeeklySummaryCopyPolishService';
 
 function DashboardScreenContent() {
   const [summary, setSummary] = useState<Awaited<ReturnType<typeof getParentDashboardSnapshot>> | null>(null);
@@ -32,11 +43,15 @@ function DashboardScreenContent() {
     <View style={visualStyles.parentCard}><Text style={styles.section}>Journey progress</Text><Text style={styles.copy}>{journeyMetric}</Text><Text style={styles.copy}>{storiesCompleted > 0 ? 'Keep one gentle pace.' : 'Journey time will appear after stories are completed.'}</Text></View>
 
     <View style={visualStyles.parentCard}>
-      <Text style={styles.section}>This week in Little Dharma</Text>
-      <Text style={styles.copy}>Stories completed: {weeklySummary?.completedStoryCount ?? 0}</Text>
-      <Text style={styles.copy}>Values explored: {weeklySummary?.valuesExplored.join(', ') || 'None yet this week'}</Text>
-      <Text style={styles.copy}>Gentle next step: {weeklySummary?.suggestedNextStory?.title ?? 'Continue when ready'}</Text>
-      <Text style={styles.copy}>Stored on this device</Text>
+      <Text style={styles.section}>{getParentWeeklySummaryGentleTitleCopy()}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryTrustIntroCopy()}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryLocalFirstCopy()}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryNoPressureCopy()}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryStoriesRememberedCopy()}: {weeklySummary?.completedStoryCount ?? 0}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryValuesConversationCopy()}: {weeklySummary?.valuesExplored.join(', ') || 'None yet this week'}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryGentleNextStepCopy()}: {weeklySummary?.suggestedNextStory?.title ?? getParentWeeklySummaryReturnLaterCopy()}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummaryReturnLaterCopy()}</Text>
+      <Text style={styles.copy}>{getParentWeeklySummarySacredCareCopy()}</Text>
     </View>
     <View style={visualStyles.parentCard}><Text style={styles.section}>Values this week</Text><Text style={styles.copy}>{valuesTouched > 0 ? summary?.weeklyProgress.practicedValues.join(', ') : 'Values touched will appear as your child reads.'}</Text></View>
 
