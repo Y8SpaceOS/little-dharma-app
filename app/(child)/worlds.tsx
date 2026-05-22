@@ -2,23 +2,32 @@ import { useMemo, useState } from 'react';
 import { useRouter } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
+import { getStoryWorldDoorwayCards } from '@/services/storyWorldBrowseService';
 
-const doorways = [
-  { title: 'Krishna Stories', copy: 'Playful devotion, kindness, and courage.', href: '/world/krishna', tags: ['Values', 'Journeys'], bg: '#FCE9C8', ready: true },
-  { title: 'Ganesha Stories', copy: 'Wisdom and fresh beginnings with warmth.', href: '/world/ganesha', tags: ['Values'], bg: '#F8E8F2', ready: true },
-  { title: 'Ramayana Journey', copy: 'Family dharma and loving choices.', href: '/world/ramayana', tags: ['Journeys'], bg: '#E8F2FF', ready: true },
-  { title: 'Hanuman Stories', copy: 'Brave service and gentle strength.', href: '/world/hanuman', tags: ['Values', 'Journeys'], bg: '#E9F7EC', ready: true },
-  { title: 'Bedtime Stories', copy: 'Soft stories for peaceful evenings.', href: '/world/bedtime', tags: ['Bedtime'], bg: '#E8EAFF', ready: true },
-  { title: 'Values Stories', copy: 'Kindness and gratitude in daily life.', href: '/world/values', tags: ['Values'], bg: '#F8ECFA', ready: true },
-  { title: 'Festival Stories', copy: 'Seasonal stories and traditions.', href: '/world/festivals', tags: ['Festivals'], bg: '#FFF0DB', ready: false }
-];
+const doorwayPalette: Record<string, string> = {
+  'Krishna Stories': '#FCE9C8',
+  'Ganesha Stories': '#F8E8F2',
+  'Ramayana Journey': '#E8F2FF',
+  'Hanuman Stories': '#E9F7EC',
+  'Bedtime Stories': '#E8EAFF',
+  'Values Stories': '#F8ECFA',
+  'Festival Stories': '#FFF0DB'
+};
 
 const chips = ['Bedtime', 'Values', 'Journeys', 'Festivals'];
 
 export default function Screen() {
   const router = useRouter();
   const [activeChip, setActiveChip] = useState<string | null>(null);
-  const filtered = useMemo(() => (activeChip ? doorways.filter((w) => w.tags.includes(activeChip)) : doorways), [activeChip]);
+  const doorways = useMemo(() => getStoryWorldDoorwayCards().map((card) => ({
+    title: card.title,
+    copy: card.summary,
+    href: card.href,
+    tags: [card.category === 'bedtime' ? 'Bedtime' : card.category === 'festivals' ? 'Festivals' : card.isSequential ? 'Journeys' : 'Values'],
+    bg: doorwayPalette[card.title] ?? '#F9F0E3',
+    ready: card.status === 'available'
+  })), []);
+  const filtered = useMemo(() => (activeChip ? doorways.filter((w) => w.tags.includes(activeChip)) : doorways), [activeChip, doorways]);
 
   return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
     <View style={styles.hero}>
