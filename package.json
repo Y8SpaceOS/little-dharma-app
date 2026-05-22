@@ -31,7 +31,8 @@
     "validate:mahabharata-editorial-framework-v1": "node scripts/validate-mahabharata-editorial-framework-v1.mjs",
     "validate:mahabharata-journey-outline-v1": "node scripts/validate-mahabharata-journey-outline-v1.mjs",
     "validate:parent-weekly-summary-v1": "node scripts/validate-parent-weekly-summary-v1.mjs",
-    "validate:journey-detail-parent-trust-copy-v1": "node scripts/validate-journey-detail-parent-trust-copy-v1.mjs"
+    "validate:journey-detail-parent-trust-copy-v1": "node scripts/validate-journey-detail-parent-trust-copy-v1.mjs",
+    "validate:parent-sharing-copy-v1": "node scripts/validate-parent-sharing-copy-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
