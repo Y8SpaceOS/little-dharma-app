@@ -73,8 +73,8 @@ No backend/auth/cloud sync/payment/audio playback/microphone/recording pipelines
 No new routes, no prototype route activation, no UI redesign, no networked features, no story pack mass expansion, no runtime browse refactor.
 
 ## Follow-up recommendations for PR #119 and PR #120
-- PR #119: Incremental migration of Vrindavan stories to v2-backed authoring inputs with parity checks.
-- PR #120: Introduce import-ready schema tooling and editorial linting on top of v2 contracts.
+- PR #119: Content Registry Refactor.
+- PR #120: Story Import Pipeline v1.
 
 ## Final PR #118 readiness statement
 Content Model v2 contracts, documentation, adapter scaffolding, and validator gates are in place for architecture readiness while preserving existing runtime behavior.
