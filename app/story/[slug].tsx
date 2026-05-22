@@ -193,7 +193,9 @@ function StoryScreenContent() {
               <Text style={styles.parentLine}>{completionTrustMicrocopy.sacredCareCopy}</Text>
             </View>
             {completionMoment.luvluAllowed ? <Text style={styles.luvluLine}>Luvlu says: Carry this blessing gently into your day.</Text> : null}
-            <Text style={styles.parentLine}>{completionTrustMicrocopy.luvluGentleCelebrationCopy}</Text>
+            {completionMoment.luvluAllowed ? (
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.luvluGentleCelebrationCopy}</Text>
+            ) : null}
             <Text style={styles.parentLine}>{completionTrustMicrocopy.progressGentleCopy}</Text>
             <Text style={styles.parentLine}>Next gentle action: {completionMoment.nextActions[0]}</Text>
             <Text style={styles.parentLine}>{completionMoment.nextActions[1]}</Text>

@@ -119,6 +119,13 @@ if (storyOk) {
   else warn('UI binding deferred in app/story/[slug].tsx');
 
   noMatch(route, [/router\.push\(/, /router\.replace\(/], 'no new navigation behavior in story route');
+
+
+  const luvluGuardPattern = /\{completionMoment\.luvluAllowed\s*\?\s*\(\s*<Text[^>]*>\{completionTrustMicrocopy\.luvluGentleCelebrationCopy\}\<\/Text>\s*\)\s*:\s*null\s*\}/s;
+  if (route.includes('completionTrustMicrocopy.luvluGentleCelebrationCopy')) {
+    if (luvluGuardPattern.test(route)) pass('Luvlu completion trust copy is guarded by completionMoment.luvluAllowed');
+    else fail('Luvlu completion trust copy must be rendered only inside completionMoment.luvluAllowed guard');
+  }
 }
 
 if (exists(pkgPath, 'package.json')) {
