@@ -26,7 +26,8 @@
     "validate:parent-journey-progress-dashboard-v1": "node scripts/validate-parent-journey-progress-dashboard-v1.mjs",
     "validate:story-completion-moment-v1": "node scripts/validate-story-completion-moment-v1.mjs",
     "validate:story-audio-foundation-v1": "node scripts/validate-story-audio-foundation-v1.mjs",
-    "validate:ramayana-audio-v1": "node scripts/validate-ramayana-audio-v1.mjs"
+    "validate:ramayana-audio-v1": "node scripts/validate-ramayana-audio-v1.mjs",
+    "validate:bhagavad-gita-editorial-framework-v1": "node scripts/validate-bhagavad-gita-editorial-framework-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
