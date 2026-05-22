@@ -6,6 +6,7 @@ import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
+import { buildChildHomeTrustMicrocopy } from '@/services/childHomeTrustMicrocopyService';
 
 function TodayScreenContent() {
   const [nickname, setNickname] = useState<string | null>(getOnboardingState().profile?.nickname || null);
@@ -17,6 +18,8 @@ function TodayScreenContent() {
   const refreshThresholdVisibility = useCallback(() => shouldShowThreshold().then(setShowThreshold).catch(() => setShowThreshold(true)), []);
   useFocusEffect(useCallback(() => { refreshThresholdVisibility(); }, [refreshThresholdVisibility]));
   useEffect(() => { const s = AppState.addEventListener('change', (n) => n === 'active' && refreshThresholdVisibility()); return () => s.remove(); }, [refreshThresholdVisibility]);
+
+  const trustCopy = useMemo(() => buildChildHomeTrustMicrocopy(), []);
 
   const quickStarts = useMemo(() => [
     { title: 'Continue a story', copy: 'Return to where you paused.', href: '/(child)/worlds' },
@@ -31,6 +34,13 @@ function TodayScreenContent() {
     </View>
 
     <View style={[visualStyles.helperBubble, styles.luvluCard]}><Text style={styles.helper}>Luvlu whisper: Pick one doorway, take one breath, and begin with a peaceful heart.</Text></View>
+
+    <View style={[visualStyles.heroCard, styles.trustCard]} accessibilityLabel={trustCopy.accessibilityLabel} accessibilityHint={trustCopy.accessibilityHint}>
+      <Text style={styles.trustLine}>{trustCopy.calmWorldCopy}</Text>
+      <Text style={styles.trustLine}>{trustCopy.noRaceCopy}</Text>
+      <Text style={styles.trustLine}>{trustCopy.choiceCopy}</Text>
+      <Text style={styles.trustLine}>{trustCopy.luvluHelperCopy}</Text>
+    </View>
 
     <View style={[visualStyles.heroCard, styles.storyWorldEntry]}>
       <Text style={styles.heroTitle}>Explore Story World</Text>
@@ -55,6 +65,6 @@ function TodayScreenContent() {
   </SafeAreaView>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:14,paddingBottom:36}, homeHero:{backgroundColor:'#FFE4BF',paddingVertical:22}, greeting:{fontSize:17,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:31,lineHeight:36,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:16,lineHeight:23,color:visualTokens.color.mutedBrown}, luvluCard:{backgroundColor:'#DFF1FF'}, helper:{fontSize:14,lineHeight:20,color:'#1F4A75',fontWeight:'700'}, storyWorldEntry:{backgroundColor:'#FBEBC9',paddingVertical:22}, heroTitle:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown}, grid:{gap:10}, card:{borderRadius:22,shadowOpacity:0.1,minHeight:110,paddingVertical:16}, cardPressed:{transform:[{scale:0.98}],shadowOpacity:0.18}, cardStack:{gap:7},  cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:2}, cardCopy:{fontSize:14,lineHeight:19,color:visualTokens.color.mutedBrown}, parentWrap:{paddingTop:6}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
+const styles = StyleSheet.create({ content:{padding:16,gap:14,paddingBottom:36}, homeHero:{backgroundColor:'#FFE4BF',paddingVertical:22}, greeting:{fontSize:17,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:31,lineHeight:36,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:16,lineHeight:23,color:visualTokens.color.mutedBrown}, luvluCard:{backgroundColor:'#DFF1FF'}, helper:{fontSize:14,lineHeight:20,color:'#1F4A75',fontWeight:'700'}, trustCard:{backgroundColor:'#FFF6E8',gap:6,paddingVertical:16}, trustLine:{fontSize:15,lineHeight:21,color:visualTokens.color.mutedBrown,fontWeight:'700'}, storyWorldEntry:{backgroundColor:'#FBEBC9',paddingVertical:22}, heroTitle:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown}, grid:{gap:10}, card:{borderRadius:22,shadowOpacity:0.1,minHeight:110,paddingVertical:16}, cardPressed:{transform:[{scale:0.98}],shadowOpacity:0.18}, cardStack:{gap:7},  cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:2}, cardCopy:{fontSize:14,lineHeight:19,color:visualTokens.color.mutedBrown}, parentWrap:{paddingTop:6}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
 
 export default function TodayScreen() { return <RouteErrorBoundary surfaceName='Child Home' audience='child' primaryActionHref='/onboarding' primaryActionLabel='Go to Onboarding'><TodayScreenContent /></RouteErrorBoundary>; }
