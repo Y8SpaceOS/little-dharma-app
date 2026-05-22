@@ -2,6 +2,10 @@ import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import { buildPrivacyCenterCopy } from '@/services/privacyCenterCopyService';
+
+
+const privacyCenterCopy = buildPrivacyCenterCopy();
 
 const sections = [
   {
@@ -54,10 +58,14 @@ function PrivacyScreenContent() {
           </View>
         ))}
 
+
         <View style={styles.noteCard}>
-          <Text style={styles.noteTitle}>At a glance</Text>
-          <Text style={styles.noteText}>No public profile. No cloud sync in this version. Parent-guided use.</Text>
+          <Text style={styles.noteTitle}>Privacy & Trust</Text>
+          {privacyCenterCopy.parentTrustBullets.slice(0, 7).map((bullet) => (
+            <Text key={bullet} style={styles.noteText}>• {bullet}</Text>
+          ))}
         </View>
+
 
         <Link href='/(parent)/dashboard' style={styles.backLink} accessibilityRole='link' accessibilityLabel='Back to Parent Dashboard'>Back to Parent Dashboard</Link>
       </ScrollView>
