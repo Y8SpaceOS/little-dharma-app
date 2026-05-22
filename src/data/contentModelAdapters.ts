@@ -1,12 +1,26 @@
 import type { StoryJourney } from '@/types/content';
-import type { StoryWorldItem } from '@/data/storyWorld';
-import type { Story, StoryPack, ContentStatus } from '@/types/contentModel';
+import type { StoryWorldItem, StoryWorldSectionId } from '@/data/storyWorld';
+import type { Story, StoryPack, ContentStatus, StoryWorldCategory } from '@/types/contentModel';
 
 const DEFAULT_STATUS: ContentStatus = 'indexed';
 
+const STORY_WORLD_SECTION_TO_CATEGORY: Record<StoryWorldSectionId, StoryWorldCategory> = {
+  'start-here': 'values',
+  krishna: 'krishna',
+  ganesha: 'ganesha',
+  bedtime: 'bedtime',
+  values: 'values',
+  festivals: 'festivals',
+  'dharma-journeys': 'values'
+};
+
+export function toContentModelStoryId(slug: string): string {
+  return `vrindavan-${slug}`;
+}
+
 export function mapVrindavanPacketToStoryModelV2(packet: StoryJourney, index = 0): Story {
   return {
-    id: `vrindavan-${packet.story.slug}`,
+    id: toContentModelStoryId(packet.story.slug),
     slug: packet.story.slug,
     title: packet.story.title,
     shortTitle: packet.story.title,
@@ -60,9 +74,9 @@ export function mapStoryWorldItemToStoryPackPreview(item: StoryWorldItem): Story
     childFacingTitle: item.shortTitle,
     description: item.summary,
     sourceTradition: item.sourceTradition,
-    category: item.sectionId === 'krishna' ? 'krishna' : item.sectionId === 'ganesha' ? 'ganesha' : 'values',
+    category: STORY_WORLD_SECTION_TO_CATEGORY[item.sectionId],
     status: item.status,
-    storyIds: item.slug ? [item.slug] : [],
+    storyIds: item.slug ? [toContentModelStoryId(item.slug)] : [],
     recommendedAgeBands: item.ageBands.filter((age): age is '3-5' | '6-8' | '9-12' => age !== 'prefer-not-to-say'),
     contentSafetyNotes: ['Local-first content only; no account-required features.', 'Child-facing wording stays warm and non-gamified.'],
     sacredRespectNotes: ['Sacred references should preserve respectful context and avoid novelty framing.']
