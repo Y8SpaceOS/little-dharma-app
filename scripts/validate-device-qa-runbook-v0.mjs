@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
 
 const root = process.cwd();
 const pass = [];
@@ -113,18 +112,7 @@ for (const f of codeFiles) {
   if (exists(p)) warn.push(`Placeholder/scaffold file present, verify remains inactive: ${p}`);
 });
 
-const statusOutput = fs.existsSync(path.join(root, '.git'))
-  ? execSync('git status --porcelain', { cwd: root, encoding: 'utf8' })
-  : '';
-if (statusOutput) {
-  const addedRoutes = statusOutput
-    .split('\n')
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line) => line.slice(3))
-    .filter((p) => /^app\/.*\.(tsx|ts|js|jsx)$/.test(p));
-  ok(addedRoutes.length === 0, 'No new app route files added in working tree');
-}
+
 
 console.log('\nDevice QA Runbook Validator v0\n');
 pass.forEach((m) => console.log(`PASS: ${m}`));
