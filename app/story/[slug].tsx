@@ -10,6 +10,7 @@ import { visualStyles } from '@/design/visualSystem';
 import { tokens } from '@/design/tokens';
 import { buildStoryCompletionMoment } from '@/services/storyCompletionMomentService';
 import { buildStoryAudioPlayerState, shouldShowAudioEntryPoint } from '@/services/storyAudioFoundationService';
+import { buildStoryDetailTrustMicrocopy } from '@/services/storyDetailTrustMicrocopyService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -67,6 +68,7 @@ function StoryScreenContent() {
   const completionMoment = buildStoryCompletionMoment(story);
   const audioState = buildStoryAudioPlayerState(story);
   const showAudioPanel = shouldShowAudioEntryPoint(story) || audioState.availability === 'unavailable';
+  const trustMicrocopy = buildStoryDetailTrustMicrocopy();
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -100,6 +102,13 @@ function StoryScreenContent() {
               <Text style={styles.luvluLine}>Luvlu says: Take one soft breath before you begin.</Text>
             </View>
 
+            <View style={[styles.supportCard, visualStyles.roundedCard]} accessibilityLabel={trustMicrocopy.accessibilityLabel} accessibilityHint={trustMicrocopy.accessibilityHint}>
+              <Text style={styles.valueLineStrong}>{trustMicrocopy.startReadinessCopy}</Text>
+              <Text style={styles.parentLine}>{trustMicrocopy.noRaceCopy}</Text>
+              <Text style={styles.parentLine}>Read slowly.</Text>
+              <Text style={styles.parentLine}>{trustMicrocopy.familyReadingCopy}</Text>
+              <Text style={styles.parentLine}>{trustMicrocopy.sacredCareCopy}</Text>
+            </View>
 
             {showAudioPanel ? (
               <View style={[styles.supportCard, visualStyles.roundedCard]} accessibilityLabel={audioState.accessibilityLabel}>
