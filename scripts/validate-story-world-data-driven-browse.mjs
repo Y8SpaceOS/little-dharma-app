@@ -39,6 +39,21 @@ const checks = [
 ];
 for (const [label, rgx] of checks) (rgx.test(svc) ? ok : fails).push(`${rgx.test(svc) ? 'PASS' : 'FAIL'} ${label}`);
 
+
+const requiredDoorwayTitles = [
+  'Krishna Stories',
+  'Ganesha Stories',
+  'Ramayana Journey',
+  'Hanuman Stories',
+  'Bedtime Stories',
+  'Values Stories',
+  'Festival Stories'
+];
+for (const title of requiredDoorwayTitles) {
+  const presentInService = svc.includes(`'${title}'`) || svc.includes(`"${title}"`);
+  (presentInService ? ok : fails).push(`${presentInService ? 'PASS' : 'FAIL'} required doorway title preserved: ${title}`);
+}
+
 const worldScreen = read('app/(child)/worlds.tsx');
 (ok).push(worldScreen.includes('getStoryWorldBrowseSections') ? 'PASS worlds uses browse service' : (fails.push('FAIL worlds does not use browse service'), ''));
 (worldScreen.includes('Story Library') ? fails : ok).push(worldScreen.includes('Story Library') ? 'FAIL Story Library regression' : 'PASS Story World language preserved');

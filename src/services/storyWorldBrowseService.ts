@@ -113,7 +113,32 @@ export function getStoryWorldBrowseCards(): StoryWorldBrowseCard[] {
 
 export function getStoryWorldBrowseSections(): StoryWorldBrowseSection[] {
   const cards = legacyWorldItems.map(mapStoryWorldItemToBrowseCard);
-  return storyWorldSections
+  const cardByTitle = new Map(cards.map((card) => [card.title, card]));
+
+  const doorwayOrder = [
+    'Krishna Stories',
+    'Ganesha Stories',
+    'Ramayana Journey',
+    'Hanuman Stories',
+    'Bedtime Stories',
+    'Values Stories',
+    'Festival Stories'
+  ];
+
+  const orderedDoorwayCards = doorwayOrder
+    .map((title) => cardByTitle.get(title))
+    .filter((card): card is StoryWorldBrowseCard => Boolean(card));
+
+  const doorwaySection = {
+    id: 'story-world-doorways',
+    title: 'Story World',
+    subtitle: 'Choose one doorway to begin.',
+    category: 'dharma_journeys',
+    cards: orderedDoorwayCards,
+    displayOrder: 1
+  } as const;
+
+  const supplementalSections = storyWorldSections
     .filter((section) => section.id !== 'start-here')
     .map((section, index) => ({
       id: section.id,
@@ -121,9 +146,11 @@ export function getStoryWorldBrowseSections(): StoryWorldBrowseSection[] {
       subtitle: section.subtitle,
       category: sectionCategories[section.id] ?? 'values',
       cards: cards.filter((card) => card.category === (sectionCategories[section.id] ?? 'values')),
-      displayOrder: index + 1
+      displayOrder: index + 2
     }))
     .filter((section) => section.cards.length > 0);
+
+  return [doorwaySection, ...supplementalSections];
 }
 
 export function getStoryWorldBrowseCardBySlug(slug: string): StoryWorldBrowseCard | null {
