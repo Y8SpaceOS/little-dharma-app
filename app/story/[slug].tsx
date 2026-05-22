@@ -8,6 +8,7 @@ import { markStoryComplete } from '@/lib/storyProgress';
 import { getRuntimeStoryBySlug } from '@/services/journeys';
 import { visualStyles } from '@/design/visualSystem';
 import { tokens } from '@/design/tokens';
+import { buildStoryCompletionMoment } from '@/services/storyCompletionMomentService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -62,7 +63,7 @@ function StoryScreenContent() {
   const progress = ((clampedPanelIndex + 1) / safePanels.length) * 100;
   const storyIcon = worldLabel?.charAt(0) || story.world.charAt(0) || 'S';
 
-  const completionTitle = 'Story blessing';
+  const completionMoment = buildStoryCompletionMoment(story);
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -152,10 +153,17 @@ function StoryScreenContent() {
         {stage === 'complete' && (
           <View style={[styles.ceremonyCard, visualStyles.roundedCard]}>
             <Text style={styles.eyebrow}>Story blessing</Text>
-            <Text style={styles.sectionTitle}>{completionTitle}</Text>
-            <Text style={styles.body}>You carried this story with care. May its blessing stay warm in your heart.</Text>
+            <Text style={styles.sectionTitle}>{completionMoment.completionTitle}</Text>
+            <Text style={styles.body}>{completionMoment.blessingText}</Text>
             {completionWarning ? <Text style={styles.parentLine}>{completionWarning}</Text> : null}
-            <Text style={styles.valueLine}>Value reflection: Where can you practice <Text style={styles.valueLineStrong}>{primaryValue.toLowerCase()}</Text> today?</Text>
+            <Text style={styles.valueLine}>Value reflection: <Text style={styles.valueLineStrong}>{completionMoment.valueLabel}</Text></Text>
+            <Text style={styles.parentLine}>{completionMoment.reflectionPrompt}</Text>
+            {completionMoment.parentPrompt ? <Text style={styles.parentLine}>Parent-child prompt: {completionMoment.parentPrompt}</Text> : null}
+            <Text style={styles.parentLine}>Gentle motif: {completionMoment.treasureMotif}</Text>
+            <Text style={styles.parentLine}>{completionMoment.sacredRespectNote}</Text>
+            {completionMoment.luvluAllowed ? <Text style={styles.luvluLine}>Luvlu says: Carry this blessing gently into your day.</Text> : null}
+            <Text style={styles.parentLine}>Next gentle action: {completionMoment.nextActions[0]}</Text>
+            <Text style={styles.parentLine}>{completionMoment.nextActions[1]}</Text>
             <Link href='/(child)/worlds' style={styles.link}>Back to Story World</Link>
             <Link href='/(child)/today' style={styles.linkSecondary}>Back to Child Home</Link>
           </View>
