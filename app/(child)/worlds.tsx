@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
 import { getStoryWorldDoorwayCards } from '@/services/storyWorldBrowseService';
+import { buildStoryWorldTrustMicrocopy } from '@/services/storyWorldTrustMicrocopyService';
 
 const doorwayPalette: Record<string, string> = {
   'Krishna Stories': '#FCE9C8',
@@ -18,6 +19,7 @@ const chips = ['Bedtime', 'Values', 'Journeys', 'Festivals'];
 
 export default function Screen() {
   const router = useRouter();
+  const trustMicrocopy = useMemo(() => buildStoryWorldTrustMicrocopy(), []);
   const [activeChip, setActiveChip] = useState<string | null>(null);
   const doorways = useMemo(() => getStoryWorldDoorwayCards().map((card) => ({
     title: card.title,
@@ -33,6 +35,11 @@ export default function Screen() {
     <View style={styles.hero}>
       <Text style={styles.heading}>Story World</Text>
       <Text style={styles.sub}>Choose one doorway to begin.</Text>
+    </View>
+
+
+    <View style={styles.trustBlock} accessibilityLabel={trustMicrocopy.accessibilityLabel} accessibilityHint={trustMicrocopy.accessibilityHint}>
+      {trustMicrocopy.microcopyBullets.slice(0, 5).map((line) => <Text key={line} style={styles.trustCopy}>{line}</Text>)}
     </View>
 
     <View style={styles.chips}>{chips.map((chip) => <Pressable key={chip} onPress={() => setActiveChip(activeChip === chip ? null : chip)} accessibilityRole='button' accessibilityLabel={`${chip} filter`} accessibilityState={{ selected: activeChip === chip }} style={[styles.chip, activeChip === chip && styles.chipActive]}><Text style={[styles.chipText, activeChip === chip && styles.chipTextActive]}>{chip}</Text></Pressable>)}</View>
@@ -55,6 +62,8 @@ const styles = StyleSheet.create({
   heading: { fontSize: 34, fontWeight: '900', color: visualTokens.color.warmBrown },
   sub: { marginTop: 6, fontSize: 16, lineHeight: 22, color: visualTokens.color.mutedBrown },
   helper: { fontSize: 13, color: '#1F4A75', fontWeight: '700' },
+  trustBlock: { borderRadius: 16, borderWidth: 1, borderColor: '#E9D8BD', backgroundColor: '#FFF8EE', padding: 12, gap: 4 },
+  trustCopy: { fontSize: 13, lineHeight: 18, color: '#6A4522', fontWeight: '700' },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   chip: { paddingVertical: 11, paddingHorizontal: 13, borderRadius: 999, backgroundColor: '#F0E7DA', minHeight: 44, justifyContent: 'center' },
   chipActive: { backgroundColor: '#E38C29' },
