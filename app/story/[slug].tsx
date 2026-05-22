@@ -3,7 +3,9 @@ import { Link, useLocalSearchParams } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { storyWorldItems, storyWorldSections } from '@/data/storyWorld';
-import { getStoryJourneyBySlug } from '@/services/journeys';
+import { markJourneyStoryCompleted } from '@/lib/journeyProgress';
+import { markStoryComplete } from '@/lib/storyProgress';
+import { getRuntimeStoryBySlug } from '@/services/journeys';
 import { visualStyles } from '@/design/visualSystem';
 import { tokens } from '@/design/tokens';
 
@@ -11,11 +13,12 @@ type Stage = 'detail' | 'reader' | 'complete';
 
 function StoryScreenContent() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
-  const journey = slug ? getStoryJourneyBySlug(slug) : null;
+  const resolved = slug ? getRuntimeStoryBySlug(slug) : null;
   const [stage, setStage] = useState<Stage>('detail');
   const [panelIndex, setPanelIndex] = useState(0);
+  const [completionWarning, setCompletionWarning] = useState<string | null>(null);
 
-  if (!journey) {
+  if (!resolved) {
     return (
       <SafeAreaView style={visualStyles.softScreen}>
         <View style={styles.card}>
@@ -28,7 +31,23 @@ function StoryScreenContent() {
     );
   }
 
-  const { story } = journey;
+  const { story } = resolved;
+  const safePanels = Array.isArray(story.panels) ? story.panels.filter((panel) => Boolean(panel?.title && panel?.text)) : [];
+
+  if (safePanels.length === 0) {
+    return (
+      <SafeAreaView style={visualStyles.softScreen}>
+        <View style={styles.card}>
+          <Text style={styles.title}>This story is resting for now.</Text>
+          <Text style={styles.body}>This story page is being prepared. You can return safely anytime.</Text>
+          <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
+          <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  const clampedPanelIndex = Math.min(Math.max(panelIndex, 0), safePanels.length - 1);
   const storyMeta = storyWorldItems.find((item) => item.slug === story.slug);
   const worldLabel = storyMeta
     ? storyWorldSections.find((section) => section.id === storyMeta.sectionId)?.title
@@ -38,9 +57,9 @@ function StoryScreenContent() {
   const durationMinutes = storyMeta?.durationMinutes ?? 10;
   const primaryValue = storyMeta?.primaryValue || story.value;
   const ageBand = storyMeta?.ageBands?.join(', ') || story.ageBand;
-  const section = story.panels[panelIndex];
-  const isLastSection = panelIndex === story.panels.length - 1;
-  const progress = ((panelIndex + 1) / story.panels.length) * 100;
+  const section = safePanels[clampedPanelIndex];
+  const isLastSection = clampedPanelIndex >= safePanels.length - 1;
+  const progress = ((clampedPanelIndex + 1) / safePanels.length) * 100;
   const storyIcon = worldLabel?.charAt(0) || story.world.charAt(0) || 'S';
 
   const completionTitle = useMemo(() => 'Story blessing', []);
@@ -80,30 +99,16 @@ function StoryScreenContent() {
             <Pressable style={styles.button} onPress={() => setStage('reader')}>
               <Text style={styles.buttonText}>Begin Story</Text>
             </Pressable>
-            <Pressable style={styles.secondaryButton} disabled accessibilityState={{ disabled: true }}>
-              <Text style={styles.secondaryButtonText}>Listen with Luvlu — Coming soon</Text>
-            </Pressable>
           </>
         )}
 
         {stage === 'reader' && (
           <View style={[styles.readerShell, visualStyles.roundedCard]}>
             <Text style={styles.readingLabel}>Reading together</Text>
-            <Text style={styles.sectionTitle}>Section {panelIndex + 1} of {story.panels.length}</Text>
+            <Text style={styles.sectionTitle}>Section {clampedPanelIndex + 1} of {safePanels.length}</Text>
             <View style={styles.progressTrack}>
               <View style={[styles.progressFill, { width: `${progress}%` }]} />
             </View>
-
-            {panelIndex === 0 && (
-              <View style={styles.scenicCard}>
-                <View style={styles.cloudRow}>
-                  <View style={styles.cloudPuff} />
-                  <View style={[styles.cloudPuff, styles.cloudPuffSmall]} />
-                </View>
-                <View style={styles.hillBase} />
-                <Text style={styles.overlayPromptText}>Story moment: Pause, picture this scene, then continue.</Text>
-              </View>
-            )}
 
             <View style={styles.readerCard}>
               <Text style={styles.readerTitle}>{section.title}</Text>
@@ -114,20 +119,28 @@ function StoryScreenContent() {
 
             <View style={styles.controls}>
               <Pressable
-                style={[styles.button, panelIndex === 0 && styles.disabledButton]}
+                style={[styles.button, clampedPanelIndex === 0 && styles.disabledButton]}
                 onPress={() => setPanelIndex((prev) => Math.max(0, prev - 1))}
-                disabled={panelIndex === 0}
+                disabled={clampedPanelIndex === 0}
               >
                 <Text style={styles.buttonText}>Back</Text>
               </Pressable>
               <Pressable
                 style={styles.button}
-                onPress={() => {
+                onPress={async () => {
                   if (isLastSection) {
+                    try {
+                      await markStoryComplete(story.slug, story.badgeName, story.value);
+                      if (resolved.storyMeta?.journeyId) {
+                        await markJourneyStoryCompleted(resolved.storyMeta.journeyId, story.slug);
+                      }
+                    } catch {
+                      setCompletionWarning('Your story blessing is safe to continue. Progress could not be saved just now.');
+                    }
                     setStage('complete');
                     return;
                   }
-                  setPanelIndex((prev) => Math.min(story.panels.length - 1, prev + 1));
+                  setPanelIndex((prev) => Math.min(safePanels.length - 1, prev + 1));
                 }}
               >
                 <Text style={styles.buttonText}>{isLastSection ? 'Complete Story' : 'Next'}</Text>
@@ -141,9 +154,8 @@ function StoryScreenContent() {
             <Text style={styles.eyebrow}>Story blessing</Text>
             <Text style={styles.sectionTitle}>{completionTitle}</Text>
             <Text style={styles.body}>You carried this story with care. May its blessing stay warm in your heart.</Text>
+            {completionWarning ? <Text style={styles.parentLine}>{completionWarning}</Text> : null}
             <Text style={styles.valueLine}>Value reflection: Where can you practice <Text style={styles.valueLineStrong}>{primaryValue.toLowerCase()}</Text> today?</Text>
-            <Text style={styles.reflectLine}>Luvlu says: Close with one peaceful breath and one kind word.</Text>
-            <Text style={styles.parentLine}>Optional grown-up reflection: Which choice in this story felt kindest, and why?</Text>
             <Link href='/(child)/worlds' style={styles.link}>Back to Story World</Link>
             <Link href='/(child)/today' style={styles.linkSecondary}>Back to Child Home</Link>
           </View>
@@ -182,19 +194,11 @@ const styles = StyleSheet.create({
   luvluLine: { fontSize: 14, lineHeight: 21, color: '#4d5f78' },
   button: { backgroundColor: tokens.colors.saffron, borderRadius: 999, paddingVertical: 13, paddingHorizontal: 18, alignItems: 'center' },
   buttonText: { color: '#fff', fontWeight: '800' },
-  secondaryButton: { borderWidth: 1, borderColor: '#c9b898', borderRadius: 999, paddingVertical: 13, paddingHorizontal: 18, alignItems: 'center', opacity: 0.55, backgroundColor: '#f8f2e8' },
-  secondaryButtonText: { color: '#6a5b45', fontWeight: '700' },
   readerShell: { backgroundColor: '#fffdf8', padding: tokens.spacing.lg, gap: tokens.spacing.md, borderWidth: 1, borderColor: '#ebdec7' },
   readingLabel: { fontSize: 13, fontWeight: '700', color: '#6a5b45' },
   sectionTitle: { fontSize: 23, fontWeight: '800', color: tokens.colors.textPrimary },
   progressTrack: { width: '100%', height: 7, borderRadius: 999, backgroundColor: '#f0e2c8', overflow: 'hidden' },
   progressFill: { height: 7, borderRadius: 999, backgroundColor: tokens.colors.saffron },
-  scenicCard: { backgroundColor: '#eaf5ff', borderRadius: tokens.radius.card, padding: tokens.spacing.md, minHeight: 108, justifyContent: 'flex-end', overflow: 'hidden' },
-  cloudRow: { position: 'absolute', top: 14, left: 14, flexDirection: 'row', gap: 8 },
-  cloudPuff: { width: 40, height: 20, borderRadius: 20, backgroundColor: '#ffffffcc' },
-  cloudPuffSmall: { width: 26, height: 14, marginTop: 6 },
-  hillBase: { width: '150%', height: 72, borderTopLeftRadius: 90, borderTopRightRadius: 90, backgroundColor: '#b9ddaa', alignSelf: 'center', marginBottom: -22 },
-  overlayPromptText: { fontSize: 13, lineHeight: 18, color: '#6d5839', fontWeight: '700' },
   readerCard: { backgroundColor: '#fffaf1', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.sm, borderWidth: 1, borderColor: '#f2e2c5' },
   readerTitle: { fontSize: 22, fontWeight: '800', color: tokens.colors.textPrimary },
   readerText: { fontSize: 21, lineHeight: 34, color: tokens.colors.textPrimary },
