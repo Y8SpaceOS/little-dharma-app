@@ -12,6 +12,7 @@ import { buildStoryCompletionMoment } from '@/services/storyCompletionMomentServ
 import { buildStoryAudioPlayerState, shouldShowAudioEntryPoint } from '@/services/storyAudioFoundationService';
 import { buildStoryDetailTrustMicrocopy } from '@/services/storyDetailTrustMicrocopyService';
 import { buildCompletionTrustMicrocopy } from '@/services/completionTrustMicrocopyService';
+import { buildAudioEntryTrustMicrocopy } from '@/services/audioEntryTrustMicrocopyService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -71,6 +72,7 @@ function StoryScreenContent() {
   const showAudioPanel = shouldShowAudioEntryPoint(story) || audioState.availability === 'unavailable';
   const trustMicrocopy = buildStoryDetailTrustMicrocopy();
   const completionTrustMicrocopy = buildCompletionTrustMicrocopy();
+  const audioTrustMicrocopy = buildAudioEntryTrustMicrocopy();
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -113,11 +115,21 @@ function StoryScreenContent() {
             </View>
 
             {showAudioPanel ? (
-              <View style={[styles.supportCard, visualStyles.roundedCard]} accessibilityLabel={audioState.accessibilityLabel}>
+              <View
+                style={[styles.supportCard, visualStyles.roundedCard]}
+                accessibilityLabel={audioTrustMicrocopy.accessibilityLabel || audioState.accessibilityLabel}
+                accessibilityHint={audioTrustMicrocopy.accessibilityHint}
+              >
                 <Text style={styles.valueLineStrong}>Audio coming soon</Text>
-                <Text style={styles.parentLine}>Read myself</Text>
-                <Text style={styles.parentLine}>{audioState.unavailableReason || 'Listen option will appear here when parent-approved audio is ready.'}</Text>
-                <Text style={styles.parentLine}>Parent-approved and privacy-safe</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.optionalListeningCopy}</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.readMyselfCopy}</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.noMicRecordingCopy}</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.parentApprovedCopy}</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.familyListeningCopy}</Text>
+                <Text style={styles.parentLine}>{audioTrustMicrocopy.sacredCareCopy}</Text>
+                <Text style={styles.parentLine}>
+                  {audioState.canPlayNow ? audioTrustMicrocopy.parentApprovedCopy : audioTrustMicrocopy.comingSoonCopy}
+                </Text>
               </View>
             ) : null}
 
