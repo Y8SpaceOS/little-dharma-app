@@ -15,7 +15,8 @@
     "validate:device-qa-execution-v0": "node scripts/validate-device-qa-execution-v0.mjs",
     "validate:content-model-v2": "node scripts/validate-content-model-v2.mjs",
     "validate:content-registry-refactor": "node scripts/validate-content-registry-refactor.mjs",
-    "validate:story-import-pipeline-v1": "node scripts/validate-story-import-pipeline-v1.mjs"
+    "validate:story-import-pipeline-v1": "node scripts/validate-story-import-pipeline-v1.mjs",
+    "validate:editorial-qa-validator-v1": "node scripts/validate-editorial-qa-validator-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
