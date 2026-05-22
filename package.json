@@ -19,7 +19,8 @@
     "validate:editorial-qa-validator-v1": "node scripts/validate-editorial-qa-validator-v1.mjs",
     "validate:runtime-story-resolver-v2": "node scripts/validate-runtime-story-resolver-v2.mjs",
     "validate:story-world-data-driven-browse": "node scripts/validate-story-world-data-driven-browse.mjs",
-    "validate:journey-data-model-v1": "node scripts/validate-journey-data-model-v1.mjs"
+    "validate:journey-data-model-v1": "node scripts/validate-journey-data-model-v1.mjs",
+    "validate:ramayana-journey-pack-1": "node scripts/validate-ramayana-journey-pack-1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
