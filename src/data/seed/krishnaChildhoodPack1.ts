@@ -3,7 +3,7 @@ import type { Story } from '@/types/contentModel';
 export const krishnaChildhoodPack1Stories: Story[] = [
   {
     id: 'krishna-childhood-pack1-shares-butter-kindly',
-    slug: 'krishna-shares-butter-kindly',
+    slug: 'krishna-childhood-shares-butter-kindly',
     title: 'Krishna Shares Butter Kindly',
     shortTitle: 'Kind Butter Sharing',
     summary: 'Krishna invites friends to share fresh butter with gratitude and fairness.',
@@ -47,7 +47,7 @@ export const krishnaChildhoodPack1Stories: Story[] = [
   },
   {
     id: 'krishna-childhood-pack1-yashodas-gentle-lesson',
-    slug: 'yashodas-gentle-lesson',
+    slug: 'krishna-childhood-yashodas-gentle-lesson',
     title: 'Yashoda’s Gentle Lesson',
     shortTitle: 'Gentle Lesson',
     summary: 'Yashoda guides Krishna with calm love, showing that correction can be kind and steady.',
@@ -91,7 +91,7 @@ export const krishnaChildhoodPack1Stories: Story[] = [
   },
   {
     id: 'krishna-childhood-pack1-helps-a-little-calf',
-    slug: 'krishna-helps-a-little-calf',
+    slug: 'krishna-childhood-helps-a-little-calf',
     title: 'Krishna Helps a Little Calf',
     shortTitle: 'Helping the Calf',
     summary: 'Krishna notices a tired calf and offers patient care with his friends.',
@@ -135,7 +135,7 @@ export const krishnaChildhoodPack1Stories: Story[] = [
   },
   {
     id: 'krishna-childhood-pack1-the-flute-that-made-everyone-listen',
-    slug: 'the-flute-that-made-everyone-listen',
+    slug: 'krishna-childhood-flute-listening',
     title: 'The Flute That Made Everyone Listen',
     shortTitle: 'Flute of Listening',
     summary: 'Krishna’s flute brings a peaceful pause where everyone listens with quiet attention.',
@@ -179,7 +179,7 @@ export const krishnaChildhoodPack1Stories: Story[] = [
   },
   {
     id: 'krishna-childhood-pack1-friends-share-under-the-kadamba-tree',
-    slug: 'friends-share-under-the-kadamba-tree',
+    slug: 'krishna-childhood-friends-share-kadamba-tree',
     title: 'Friends Share Under the Kadamba Tree',
     shortTitle: 'Kadamba Tree Sharing',
     summary: 'Krishna and friends share food, songs, and gratitude under the shade of a kadamba tree.',

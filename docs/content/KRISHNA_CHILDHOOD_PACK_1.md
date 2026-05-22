@@ -22,6 +22,17 @@ This PR adds only a carefully scoped Pack 1 starter set (5 stories), not the ful
 ## Age-band strategy
 Primary target is ages 3–8 with `3-5` and `6-8` support, plus selective `family` suitability. Recommendations remain simple and parent-guided.
 
+
+## Story-to-Age Mapping
+
+| Story | Age Bands | Recommended Age | Why |
+|---|---|---|---|
+| Krishna Shares Butter Kindly | `3-5`, `6-8` | `3-5` | Early childhood children benefit from simple sharing routines and gratitude language around food. |
+| Yashoda’s Gentle Lesson | `3-5`, `6-8` | `6-8` | Slightly older children can reflect on calm correction, listening, and repair after excitement. |
+| Krishna Helps a Little Calf | `3-5`, `6-8` | `6-8` | Compassion with patient caregiving is ideal for guided discussion with early elementary children. |
+| The Flute That Made Everyone Listen | `3-5`, `6-8`, `family` | `6-8` | Self-regulation and mindful listening become easier to practice intentionally around this age. |
+| Friends Share Under the Kadamba Tree | `3-5`, `6-8`, `family` | `3-5` | Inclusion and welcoming language are highly accessible for younger children in group play contexts. |
+
 ## Sacred/cultural respect approach
 Krishna is presented with devotional warmth and sacred restraint, avoiding parody, irreverence, fear-heavy miracle framing, and over-comedic deity treatment.
 

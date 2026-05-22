@@ -27,9 +27,17 @@ const docsText = exists(docs) ? read(docs) : '';
 const crText = exists(contentRegistry) ? read(contentRegistry) : '';
 const vrindavanText = exists(vrindavanSeed) ? read(vrindavanSeed) : '';
 
+const storyBlocks = seedText.match(/\{[\s\S]*?status:\s*'(?:qa_ready|runtime_ready|available)'[\s\S]*?\n\s*\}/g) || [];
+const krishnaStories = storyBlocks.map((block) => ({
+  title: (block.match(/title:\s*'([^']+)'/) || [])[1] ?? '',
+  slug: (block.match(/slug:\s*'([^']+)'/) || [])[1] ?? '',
+  ageBandsRaw: (block.match(/ageBands:\s*\[([^\]]+)\]/) || [])[1] ?? '',
+  recommendedAgeBand: (block.match(/recommendedAgeBand:\s*'([^']+)'/) || [])[1] ?? ''
+}));
+
 add(/krishnaChildhoodPack1Stories/.test(crText) && /krishnaChildhoodPack1StoryPack/.test(crText) && /krishnaChildhoodPack1Journey/.test(crText) ? PASS : FAIL, 'Content registry imports/uses Krishna Childhood Pack 1');
 
-const storyCount = (seedText.match(/status:\s*'(qa_ready|runtime_ready|available)'/g) || []).length;
+const storyCount = krishnaStories.length;
 add(storyCount >= 3 && storyCount <= 5 ? PASS : FAIL, `Krishna story count between 3 and 5 (found ${storyCount})`);
 
 const requiredFields = ['id', 'slug', 'title', 'shortTitle', 'summary', 'sourceTradition', 'sourceTextOrTraditionNote', 'storyPackId', 'journeyId', 'journeyOrder', 'ageBands', 'recommendedAgeBand', 'durationMinutes', 'primaryValue', 'secondaryValues', 'characters', 'panels', 'parentNote', 'reflectionPrompt', 'ritualPrompt', 'completionBlessing', 'sacredRespectLevel', 'illustrationPrompt', 'audioMetadata', 'status'];
@@ -43,6 +51,26 @@ add(!/storyPackId:\s*'((?!krishna-childhood-pack-1).)*'/.test(seedText) ? PASS :
 add(!/journeyId:\s*'((?!krishna-childhood-pack-1).)*'/.test(seedText) ? PASS : FAIL, 'All stories use journeyId krishna-childhood-pack-1');
 add(/category:\s*'krishna'/.test(regText) ? PASS : FAIL, 'Story pack category is krishna');
 add(/id:\s*'krishna-childhood-pack-1'/.test(regText) && /krishnaChildhoodPack1Journey/.test(regText) ? PASS : FAIL, 'Journey exists for krishna-childhood-pack-1');
+
+const prefixedSlugs = krishnaStories.filter((story) => story.slug.startsWith('krishna-childhood-')).length;
+add(prefixedSlugs === storyCount ? PASS : FAIL, 'All Krishna slugs are clearly namespaced with krishna-childhood- prefix');
+
+const vrindavanSlugs = [...vrindavanText.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
+const collisions = krishnaStories.filter((story) => vrindavanSlugs.includes(story.slug)).map((s) => s.slug);
+add(collisions.length === 0 ? PASS : FAIL, `No slug collisions with Vrindavan slugs${collisions.length ? ` (${collisions.join(', ')})` : ''}`);
+
+const normalizeTokens = (slug) => slug.replace(/^krishna-childhood-/, '').replace(/^krishna-/, '').split('-').filter((t) => !['a', 'the'].includes(t));
+const closeMatches = [];
+for (const story of krishnaStories) {
+  const a = normalizeTokens(story.slug);
+  for (const vSlug of vrindavanSlugs) {
+    const b = normalizeTokens(vSlug);
+    const overlap = a.filter((t) => b.includes(t));
+    const ratio = overlap.length / Math.max(a.length, b.length || 1);
+    if (ratio >= 0.75) closeMatches.push(`${story.slug} ~ ${vSlug}`);
+  }
+}
+add(closeMatches.length === 0 ? PASS : FAIL, `No too-close slug ambiguity with Vrindavan slugs${closeMatches.length ? ` (${closeMatches.join('; ')})` : ''}`);
 
 const bannedGamification = /\b(xp|coins|streaks|leaderboards|rankings)\b/i;
 add(!bannedGamification.test(seedText) ? PASS : FAIL, 'No hard gamification terms in Krishna stories');
@@ -60,31 +88,19 @@ add(/runtimeAvailabilityGated:\s*true/.test(regText) ? PASS : FAIL, 'Runtime ava
 add(vrindavanText.includes('vrindavan') ? PASS : FAIL, 'Existing Vrindavan seed file remains present and not overwritten');
 
 const sections = [
-  'PR title and purpose',
-  'Roadmap alignment',
-  'Why Krishna Childhood Pack 1 follows Ramayana Pack 1',
-  'Content scope',
-  'Stories included',
-  'Age-band strategy',
-  'Sacred/cultural respect approach',
-  'Parent trust approach',
-  'Editorial QA expectations',
-  'Runtime availability rules',
-  'Relationship to Content Model v2',
-  'Relationship to Content Registry',
-  'Relationship to Editorial QA Validator v1',
-  'Relationship to Runtime Story Resolver v2',
-  'Relationship to Journey Data Model v1',
-  'Relationship to existing Vrindavan content',
-  'Local-first/no-backend assumptions',
-  'What this PR changes',
-  'What this PR does not do',
-  'Follow-up recommendations for PR #127 and PR #128',
-  'Final PR #126 readiness statement'
+  'PR title and purpose', 'Roadmap alignment', 'Why Krishna Childhood Pack 1 follows Ramayana Pack 1', 'Content scope', 'Stories included', 'Age-band strategy', 'Story-to-Age Mapping', 'Sacred/cultural respect approach', 'Parent trust approach', 'Editorial QA expectations', 'Runtime availability rules', 'Relationship to Content Model v2', 'Relationship to Content Registry', 'Relationship to Editorial QA Validator v1', 'Relationship to Runtime Story Resolver v2', 'Relationship to Journey Data Model v1', 'Relationship to existing Vrindavan content', 'Local-first/no-backend assumptions', 'What this PR changes', 'What this PR does not do', 'Follow-up recommendations for PR #127 and PR #128', 'Final PR #126 readiness statement'
 ];
 sections.forEach((s) => add(docsText.includes(s) ? PASS : FAIL, `Docs section present: ${s}`));
 add(docsText.includes('PR #127: Ganesha Wisdom Pack 1') ? PASS : FAIL, 'Follow-up includes PR #127 roadmap item');
 add(docsText.includes('PR #128: Parent Journey Progress Dashboard v1') ? PASS : FAIL, 'Follow-up includes PR #128 roadmap item');
+
+const mappingSection = (docsText.split('## Story-to-Age Mapping')[1] || '').split('## Sacred/cultural respect approach')[0] || '';
+add(mappingSection.includes('| Story | Age Bands | Recommended Age | Why |') ? PASS : FAIL, 'Story-to-Age Mapping table header exists');
+for (const story of krishnaStories) {
+  add(mappingSection.includes(story.title) ? PASS : FAIL, `Story-to-Age Mapping includes: ${story.title}`);
+  add(story.ageBandsRaw.trim().length > 0 ? PASS : FAIL, `${story.title} has ageBands`);
+  add(story.recommendedAgeBand.trim().length > 0 ? PASS : FAIL, `${story.title} has recommendedAgeBand`);
+}
 
 add(!exists('app/world/krishna-childhood-pack-1.tsx') ? PASS : FAIL, 'No new app routes for Krishna pack');
 const worlds = exists('app/(child)/worlds.tsx') ? read('app/(child)/worlds.tsx') : '';
@@ -96,9 +112,7 @@ add(!/screen[-_ ]?(42[4-9]|4[3-8][0-9]|487)/i.test(appEntries + srcEntries) ? PA
 const childRoutes = ['app/(child)/worlds.tsx', 'app/(child)/today.tsx', 'app/(child)/treasures.tsx'].filter(exists).map(read).join('\n');
 add(!/Story Library/i.test(childRoutes) ? PASS : FAIL, 'Child-facing active routes use Story World language');
 
-if ((seedText.match(/status:\s*'qa_ready'/g) || []).length === storyCount) {
-  add(WARN, 'All Krishna stories are qa_ready and may not be runtime available yet (acceptable for PR #126).');
-}
+if ((seedText.match(/status:\s*'qa_ready'/g) || []).length === storyCount) add(WARN, 'All Krishna stories are qa_ready and may not be runtime available yet (acceptable for PR #126).');
 
 for (const check of checks) console.log(`${check.s}: ${check.m}`);
 if (checks.some((c) => c.s === FAIL)) process.exit(1);
