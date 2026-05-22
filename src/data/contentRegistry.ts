@@ -1,6 +1,7 @@
 import { mapVrindavanPacketToStoryModelV2, toContentModelStoryId } from '@/data/contentModelAdapters';
 import { vrindavanStoryPackets } from '@/data/seed/vrindavan';
 import { ramayanaPack1Journey, ramayanaPack1Stories, ramayanaPack1StoryPack } from '@/data/ramayanaPack1Registry';
+import { krishnaChildhoodPack1Journey, krishnaChildhoodPack1Stories, krishnaChildhoodPack1StoryPack } from '@/data/krishnaChildhoodPack1Registry';
 import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 
 export const contentRegistryVersion = 'pr119-content-registry-v1';
@@ -9,7 +10,7 @@ const vrindavanRegistryStories: Story[] = vrindavanStoryPackets.map((packet, ind
   mapVrindavanPacketToStoryModelV2(packet, index)
 );
 
-export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories];
+export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories, ...krishnaChildhoodPack1Stories];
 
 export const contentRegistryStoriesById: Record<string, Story> = Object.fromEntries(
   contentRegistryStories.map((story) => [story.id, story])
@@ -36,7 +37,8 @@ export const contentRegistryStoryPacks: StoryPack[] = [
     ],
     sacredRespectNotes: ['Stories preserve gentle sacred framing and child-safe devotional tone.']
   },
-  ramayanaPack1StoryPack
+  ramayanaPack1StoryPack,
+  krishnaChildhoodPack1StoryPack
 ];
 
 export const contentRegistryStoryPacksById: Record<string, StoryPack> = Object.fromEntries(
@@ -56,7 +58,8 @@ export const contentRegistryJourneys: DharmaJourney[] = [
     status: 'runtime_ready',
     journeyType: 'guided_path'
   },
-  ramayanaPack1Journey
+  ramayanaPack1Journey,
+  krishnaChildhoodPack1Journey
 ];
 
 export const contentRegistryJourneysById: Record<string, DharmaJourney> = Object.fromEntries(
@@ -88,6 +91,7 @@ export function getContentRegistryCoverageSummary() {
     totalVrindavanSeedPackets: vrindavanStoryPackets.length,
     registeredStories: contentRegistryStories.length,
     registeredRamayanaPack1Stories: ramayanaPack1Stories.length,
+    registeredKrishnaChildhoodPack1Stories: krishnaChildhoodPack1Stories.length,
     registeredStoryPacks: contentRegistryStoryPacks.length,
     registeredJourneys: contentRegistryJourneys.length,
     missingStoryIds,
