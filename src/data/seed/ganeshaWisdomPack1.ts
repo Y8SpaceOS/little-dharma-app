@@ -1,0 +1,224 @@
+import type { Story } from '@/types/contentModel';
+
+export const ganeshaWisdomPack1Stories: Story[] = [
+  {
+    id: 'ganesha-wisdom-pack1-listening-ears',
+    slug: 'ganesha-wisdom-listening-ears',
+    title: 'Ganesha’s Listening Ears',
+    shortTitle: 'Listening Ears',
+    summary: 'Ganesha teaches children that wise listening begins with a calm body and kind attention.',
+    sourceTradition: 'Ganesha Wisdom Stories',
+    sourceTextOrTraditionNote: 'Child-safe retelling inspired by devotional Ganesha oral wisdom traditions.',
+    storyPackId: 'ganesha-wisdom-pack-1',
+    journeyId: 'ganesha-wisdom-pack-1',
+    journeyOrder: 1,
+    ageBands: ['3-5', '6-8'],
+    recommendedAgeBand: '3-5',
+    durationMinutes: 6,
+    primaryValue: 'Listening',
+    secondaryValues: ['Patience', 'Respect'],
+    characters: ['Ganesha', 'Children', 'Village elder'],
+    panels: [
+      { id: 'p1', title: 'Morning Circle', text: 'Children gathered with Ganesha beneath a banyan tree as the day began quietly.' },
+      { id: 'p2', title: 'Two Kinds of Ears', text: 'Ganesha said that outer ears hear sounds, and inner ears hear feelings.' },
+      { id: 'p3', title: 'One Gentle Breath', text: 'Before speaking, each child took one soft breath and listened to a friend fully.' },
+      { id: 'p4', title: 'Hearts Feel Seen', text: 'By sunset, everyone noticed that careful listening made their circle feel peaceful and close.' }
+    ],
+    parentNote: {
+      sourceContext: 'Frames Ganesha as a model of grounded attention and emotional listening.',
+      valueExplained: 'Children build empathy when they pause and listen without interrupting.',
+      discussionPrompt: 'What helps us listen with both ears and heart at home?',
+      practicePrompt: 'Try a one-breath pause before each person speaks during family sharing time.',
+      cautionNote: 'Avoid forcing silence; invite listening as a caring choice.'
+    },
+    reflectionPrompt: 'How does a calm breath help us listen better?',
+    ritualPrompt: 'Touch your ears gently and say, “May I listen with kindness.”',
+    completionBlessing: 'May your listening bring understanding and gentle friendship.',
+    sacredRespectLevel: 'deity_focal',
+    illustrationPrompt: {
+      sceneSummary: 'Ganesha and children seated beneath a banyan tree in a peaceful listening circle.',
+      styleGuidance: 'Warm devotional atmosphere, child-safe expressions, culturally grounded details.',
+      culturalGuardrails: ['Depict Ganesha with sacred dignity and calm presence.', 'Keep village setting respectful and sincere.'],
+      deityTreatment: 'Reverential focal presentation with warmth and restraint.',
+      avoidList: ['No cartoon parody cues.', 'No slapstick expressions.', 'No gamification symbols.']
+    },
+    audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'warm-storyteller', pacing: 'slow', noMicRequired: true },
+    status: 'qa_ready'
+  },
+  {
+    id: 'ganesha-wisdom-pack1-modak-of-gratitude',
+    slug: 'ganesha-wisdom-modak-of-gratitude',
+    title: 'The Modak of Gratitude',
+    shortTitle: 'Modak Gratitude',
+    summary: 'A shared modak becomes a lesson in thanking many hands, hearts, and gifts of nature.',
+    sourceTradition: 'Ganesha Wisdom Stories',
+    sourceTextOrTraditionNote: 'Child-safe retelling inspired by gratitude motifs in Ganesha devotional culture.',
+    storyPackId: 'ganesha-wisdom-pack-1',
+    journeyId: 'ganesha-wisdom-pack-1',
+    journeyOrder: 2,
+    ageBands: ['3-5', '6-8', 'family'],
+    recommendedAgeBand: '6-8',
+    durationMinutes: 6,
+    primaryValue: 'Gratitude',
+    secondaryValues: ['Sharing', 'Mindfulness'],
+    characters: ['Ganesha', 'Children', 'Grandmother cook'],
+    panels: [
+      { id: 'p1', title: 'Kitchen Fragrance', text: 'A grandmother prepared warm modaks while children watched with happy curiosity.' },
+      { id: 'p2', title: 'Ganesha’s Question', text: 'Ganesha asked, “How many gifts helped this sweet arrive on our plate?”' },
+      { id: 'p3', title: 'Many Thank-Yous', text: 'Children thanked farmers, rain, grain, family care, and the earth before eating.' },
+      { id: 'p4', title: 'Sweetness Multiplies', text: 'They found that gratitude made even a small bite feel full of joy.' }
+    ],
+    parentNote: {
+      sourceContext: 'Connects Ganesha and modak symbolism to gratitude, not indulgence or reward culture.',
+      valueExplained: 'Naming helpers behind food nurtures humility and appreciation.',
+      discussionPrompt: 'Who are three people or forces of nature that helped your meal today?',
+      practicePrompt: 'Offer one shared gratitude sentence before snack or dinner.',
+      cautionNote: 'Avoid using sweets as behavioral leverage; keep gratitude relational and sincere.'
+    },
+    reflectionPrompt: 'What changes when we say thank you before we eat?',
+    ritualPrompt: 'Place palms together and whisper one thank-you before each meal.',
+    completionBlessing: 'May gratitude sweeten your words, meals, and relationships.',
+    sacredRespectLevel: 'sacred_story',
+    illustrationPrompt: {
+      sceneSummary: 'Family kitchen with Ganesha and children sharing modaks after a gratitude pause.',
+      styleGuidance: 'Golden warm tones, devotional gentleness, everyday cultural realism.',
+      culturalGuardrails: ['Respect food traditions without caricature.', 'Keep Ganesha depiction devotional and composed.'],
+      deityTreatment: 'Sacred storytelling presence with calm, loving warmth.',
+      avoidList: ['No food-shaming cues.', 'No exaggerated comedy.', 'No reward charts or points icons.']
+    },
+    audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'gentle-guide', pacing: 'steady', noMicRequired: true },
+    status: 'qa_ready'
+  },
+  {
+    id: 'ganesha-wisdom-pack1-patient-river',
+    slug: 'ganesha-wisdom-patient-river',
+    title: 'Ganesha and the Patient River',
+    shortTitle: 'Patient River',
+    summary: 'At the riverbank, Ganesha teaches that patience moves us forward one steady step at a time.',
+    sourceTradition: 'Ganesha Wisdom Stories',
+    sourceTextOrTraditionNote: 'Child-safe retelling inspired by patience teachings in devotional storytelling traditions.',
+    storyPackId: 'ganesha-wisdom-pack-1',
+    journeyId: 'ganesha-wisdom-pack-1',
+    journeyOrder: 3,
+    ageBands: ['6-8', 'family'],
+    recommendedAgeBand: '6-8',
+    durationMinutes: 7,
+    primaryValue: 'Patience',
+    secondaryValues: ['Perseverance', 'Calm'],
+    characters: ['Ganesha', 'Children', 'Boat keeper'],
+    panels: [
+      { id: 'p1', title: 'Waiting at the River', text: 'Children wanted to cross quickly, but the river moved at its own gentle rhythm.' },
+      { id: 'p2', title: 'Ganesha Smiles', text: 'Ganesha reminded them that rushing hearts miss the wisdom of the moment.' },
+      { id: 'p3', title: 'Step, Breathe, Step', text: 'They practiced waiting, breathing, and taking one careful step when the path was ready.' },
+      { id: 'p4', title: 'Calm Arrival', text: 'When they reached the far bank, children felt proud of patient effort and steady trust.' }
+    ],
+    parentNote: {
+      sourceContext: 'Uses river imagery to model patient regulation and timing awareness.',
+      valueExplained: 'Patience is easier when broken into small actionable steps.',
+      discussionPrompt: 'Where in our day do we need “step, breathe, step” the most?',
+      practicePrompt: 'Use a short waiting ritual while putting on shoes or preparing to leave home.',
+      cautionNote: 'Do not shame impatience; normalize it and guide toward calm practice.'
+    },
+    reflectionPrompt: 'Why can slow and steady sometimes be the wisest way?',
+    ritualPrompt: 'Say, “Step, breathe, step,” together when waiting feels hard.',
+    completionBlessing: 'May patience carry you safely through every changing stream.',
+    sacredRespectLevel: 'sacred_story',
+    illustrationPrompt: {
+      sceneSummary: 'Ganesha and children near a calm riverbank practicing patient steps.',
+      styleGuidance: 'Soft natural palette, serene devotional mood, grounded cultural setting.',
+      culturalGuardrails: ['Avoid dramatic danger framing.', 'Maintain reverent deity portrayal.'],
+      deityTreatment: 'Sacred guide presence with quiet strength and compassion.',
+      avoidList: ['No peril-heavy visuals.', 'No slapstick splashing humor.', 'No competitive framing.']
+    },
+    audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'steady-guide', pacing: 'steady', noMicRequired: true },
+    status: 'qa_ready'
+  },
+  {
+    id: 'ganesha-wisdom-pack1-little-obstacle-big-breath',
+    slug: 'ganesha-wisdom-big-breath',
+    title: 'The Little Obstacle and the Big Breath',
+    shortTitle: 'Big Breath',
+    summary: 'A small problem becomes manageable when children pause, breathe, and ask for wise help.',
+    sourceTradition: 'Ganesha Wisdom Stories',
+    sourceTextOrTraditionNote: 'Child-safe retelling inspired by Ganesha as remover of obstacles through wisdom and steadiness.',
+    storyPackId: 'ganesha-wisdom-pack-1',
+    journeyId: 'ganesha-wisdom-pack-1',
+    journeyOrder: 4,
+    ageBands: ['3-5', '6-8'],
+    recommendedAgeBand: '6-8',
+    durationMinutes: 6,
+    primaryValue: 'Self-Regulation',
+    secondaryValues: ['Courage', 'Problem Solving'],
+    characters: ['Ganesha', 'Children'],
+    panels: [
+      { id: 'p1', title: 'Blocked Path', text: 'A toy cart wheel got stuck, and children felt frustrated right away.' },
+      { id: 'p2', title: 'Pause with Ganesha', text: 'Ganesha invited everyone to take a big breath before trying again.' },
+      { id: 'p3', title: 'Wise Small Steps', text: 'They looked carefully, moved one pebble, and asked each other for gentle help.' },
+      { id: 'p4', title: 'Obstacle Becomes Teacher', text: 'The cart rolled forward, and children learned that calm teamwork solves small obstacles.' }
+    ],
+    parentNote: {
+      sourceContext: 'Presents obstacle-removal as practical wisdom, not spectacle.',
+      valueExplained: 'Breathing and collaborative problem solving reduce overwhelm in young children.',
+      discussionPrompt: 'What is one “little obstacle” we can solve calmly today?',
+      practicePrompt: 'Use a “big breath, small step” phrase during transitions or frustration moments.',
+      cautionNote: 'Keep guidance encouraging; avoid criticism when children get stuck.'
+    },
+    reflectionPrompt: 'What can we do first when a problem feels big?',
+    ritualPrompt: 'Place one hand on belly, breathe in slowly, and say, “I can take one wise step.”',
+    completionBlessing: 'May each breath open a clear path for your next kind step.',
+    sacredRespectLevel: 'deity_focal',
+    illustrationPrompt: {
+      sceneSummary: 'Ganesha guiding children as they calmly solve a stuck toy cart wheel together.',
+      styleGuidance: 'Child-safe home courtyard scene, grounded devotional warmth, clear emotional regulation cues.',
+      culturalGuardrails: ['Honor Ganesha with dignity and sacred calm.', 'Keep obstacle small and non-threatening.'],
+      deityTreatment: 'Reverent focal guide with compassionate presence.',
+      avoidList: ['No miracle spectacle framing.', 'No mocking frustration faces.', 'No game level-up motifs.']
+    },
+    audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'calm-storyteller', pacing: 'medium', noMicRequired: true },
+    status: 'qa_ready'
+  },
+  {
+    id: 'ganesha-wisdom-pack1-first-step',
+    slug: 'ganesha-wisdom-first-step',
+    title: 'The First Step with Ganesha',
+    shortTitle: 'First Step',
+    summary: 'Children begin a new task with Ganesha’s blessing, learning confidence through humble first steps.',
+    sourceTradition: 'Ganesha Wisdom Stories',
+    sourceTextOrTraditionNote: 'Child-safe retelling inspired by beginning-invocation traditions associated with Ganesha.',
+    storyPackId: 'ganesha-wisdom-pack-1',
+    journeyId: 'ganesha-wisdom-pack-1',
+    journeyOrder: 5,
+    ageBands: ['3-5', '6-8', 'family'],
+    recommendedAgeBand: '3-5',
+    durationMinutes: 5,
+    primaryValue: 'Courage',
+    secondaryValues: ['Humility', 'Focus'],
+    characters: ['Ganesha', 'Children', 'Parent'],
+    panels: [
+      { id: 'p1', title: 'A New Beginning', text: 'A child felt unsure before starting to write their first careful letters.' },
+      { id: 'p2', title: 'Simple Prayer', text: 'With Ganesha in mind, the family paused for one quiet blessing moment.' },
+      { id: 'p3', title: 'Tiny First Step', text: 'The child drew one letter slowly, then another, with growing confidence.' },
+      { id: 'p4', title: 'Joy in Beginning', text: 'They celebrated effort, remembering every journey begins with one sincere step.' }
+    ],
+    parentNote: {
+      sourceContext: 'Introduces beginning rituals as supportive emotional anchors for children.',
+      valueExplained: 'Small starts reduce pressure and build confidence for learning tasks.',
+      discussionPrompt: 'What new thing are you ready to begin with one small step?',
+      practicePrompt: 'Create a family “first step” ritual before schoolwork or new activities.',
+      cautionNote: 'Focus on effort and steadiness, not speed or perfection.'
+    },
+    reflectionPrompt: 'How can one small step help us begin something new?',
+    ritualPrompt: 'Before a new task, whisper: “With wisdom and kindness, I begin.”',
+    completionBlessing: 'May each new beginning open with courage, clarity, and grace.',
+    sacredRespectLevel: 'sacred_story',
+    illustrationPrompt: {
+      sceneSummary: 'Child beginning a writing task with a calm family blessing and gentle Ganesha presence.',
+      styleGuidance: 'Soft home setting, devotional warmth, respectful and non-dramatic sacred tone.',
+      culturalGuardrails: ['Keep the ritual moment simple and sincere.', 'Avoid spectacle and caricature.'],
+      deityTreatment: 'Sacred storytelling accompaniment with reverent restraint.',
+      avoidList: ['No perfection-pressure symbolism.', 'No reward scoreboard visuals.', 'No comedic deity framing.']
+    },
+    audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'warm-guide', pacing: 'slow', noMicRequired: true },
+    status: 'qa_ready'
+  }
+];
