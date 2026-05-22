@@ -61,6 +61,12 @@ if (!process.exitCode) {
     ? pass('service contains sacred context guard terms for Luvlu blocking')
     : fail('service missing sacred context Luvlu guard terms');
 
+  if (service.includes('if (!level) return false;')) {
+    pass('service conservatively blocks Luvlu when sacredRespectLevel is missing');
+  } else {
+    fail('service must block Luvlu when sacredRespectLevel is missing');
+  }
+
   const allowedMotifs = ['diya', 'flower', 'blessing', 'lotus', 'peacock-feather'];
   const motifMatch = service.match(/'diya'|'flower'|'blessing'|'lotus'|'peacock-feather'/g) || [];
   motifMatch.length > 0 && motifMatch.every((m) => allowedMotifs.includes(m.replace(/'/g, '')))

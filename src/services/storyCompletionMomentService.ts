@@ -72,12 +72,14 @@ export function getCompletionNextActions(story: CompletionStoryLike): string[] {
 }
 
 export function shouldShowLuvluOnCompletion(story: CompletionStoryLike): boolean {
-  const level = story.sacredRespectLevel || 'general';
+  const level = story.sacredRespectLevel;
+  if (!level) return false;
   return level === 'general' || level === 'sacred_story';
 }
 
 function getSacredRespectNote(story: CompletionStoryLike): string {
-  const level = story.sacredRespectLevel || 'general';
+  const level = story.sacredRespectLevel;
+  if (!level) return 'Completion is shared softly with care and respect.';
   switch (level) {
     case 'deity_focal':
       return 'Completion is shared with stillness and reverence.';
