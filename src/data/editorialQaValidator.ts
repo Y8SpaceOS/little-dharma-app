@@ -85,31 +85,31 @@ export function validateImportedStoryEditorialQa(story: ImportedStoryDraft, poli
     add('warning', 'illustration_guardrail', 'illustrationPrompt.avoidList should include anti-gamified and anti-cartoonish deity guardrails.', 'Add explicit avoidList guardrails for reward visuals and cartoonish deity treatment.', 'illustrationPrompt.avoidList');
   }
 
-  return buildResult(findings, [story]);
+  return buildResult(findings, [story], policy);
 }
 
 export function validateImportManifestEditorialQa(manifest: ContentImportManifest, policy: EditorialQaPolicy = defaultEditorialQaPolicy): EditorialQaResult {
   const results = manifest.stories.map((story) => validateImportedStoryEditorialQa(story, policy));
   const findings = results.flatMap((x) => x.findings);
-  return buildResult(findings, manifest.stories);
+  return buildResult(findings, manifest.stories, policy);
 }
 
 export function getEditorialQaSummary(result: EditorialQaResult): string {
   return `Editorial QA ${result.valid ? 'PASS' : 'FAIL'}: ${result.errorCount} error(s), ${result.warningCount} warning(s), ${result.infoCount} info across ${result.storyCount} stor${result.storyCount === 1 ? 'y' : 'ies'}. Runtime approved: ${result.approvedForRuntime ? 'yes' : 'no'}.`;
 }
 
-export function isStoryRuntimeEligibleByEditorialQa(story: ImportedStoryDraft, result: EditorialQaResult): boolean {
-  return defaultEditorialQaPolicy.runtimeEligibleStatuses.includes(story.status) && !story.id.includes('preview') && result.approvedForRuntime;
+export function isStoryRuntimeEligibleByEditorialQa(story: ImportedStoryDraft, result: EditorialQaResult, policy: EditorialQaPolicy = defaultEditorialQaPolicy): boolean {
+  return policy.runtimeEligibleStatuses.includes(story.status) && !story.id.includes('preview') && result.approvedForRuntime;
 }
 
-function buildResult(findings: EditorialQaFinding[], stories: ImportedStoryDraft[]): EditorialQaResult {
+function buildResult(findings: EditorialQaFinding[], stories: ImportedStoryDraft[], policy: EditorialQaPolicy): EditorialQaResult {
   const errorCount = findings.filter((f) => f.severity === 'error').length;
   const warningCount = findings.filter((f) => f.severity === 'warning').length;
   const infoCount = findings.filter((f) => f.severity === 'info').length;
   const runtimeReadyCandidateCount = stories.filter((s) => s.status === 'runtime_ready').length;
   const qaReadyCount = stories.filter((s) => s.status === 'qa_ready').length;
   const indexedCount = stories.filter((s) => s.status === 'indexed').length;
-  const approvedForRuntime = errorCount === 0 && stories.every((story) => defaultEditorialQaPolicy.runtimeEligibleStatuses.includes(story.status) && !story.id.includes('preview'));
+  const approvedForRuntime = errorCount === 0 && stories.every((story) => policy.runtimeEligibleStatuses.includes(story.status) && !story.id.includes('preview'));
   return { valid: errorCount === 0, approvedForRuntime, findings, errorCount, warningCount, infoCount, storyCount: stories.length, runtimeReadyCandidateCount, qaReadyCount, indexedCount };
 }
 

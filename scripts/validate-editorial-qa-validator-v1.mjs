@@ -47,7 +47,18 @@ containsPatternInFiles(runtimeFiles, /fake phone chrome|status bar mock|iphone f
 const editorialScopeFiles = ['src/data/editorialQaValidator.ts','src/data/editorialQaPolicy.ts','src/types/editorialQa.ts','src/data/imports/vrindavanPreviewImportManifest.ts'];
 containsPatternInFiles(editorialScopeFiles, /fetch\(|axios|stripe|checkout\(|expo-av|expo-audio|startAudioRecording|startRecording|microphone|recording/i) ? logFail('Active network/payment/mic/recording implementation introduced in editorial QA scope files.') : logPass('No active network/payment/mic/recording implementation introduced in editorial QA scope files.');
 containsPatternInFiles(childFacingScopeFiles, /\bstory library\b/i) ? logFail('Story Library phrase detected in child-facing active routes/import examples.') : logPass('Story World phrasing guardrail passes (no Story Library regression).');
-containsPatternInFiles(['src/data/imports/vrindavanPreviewImportManifest.ts'], /\bxp\b|coins?|streaks?|leaderboards?|rankings?|level up|win reward/i) ? logFail('Hard gamification terms found in preview import example.') : logPass('No hard gamification terms found in preview import example.');
+const activeChildRuntimeFiles = [
+  'app/(child)/today.tsx',
+  'app/(child)/worlds.tsx',
+  'app/(child)/treasures.tsx',
+  'app/(child)/bedtime.tsx',
+  'app/(child)/chant.tsx',
+  'app/world/[slug].tsx',
+  'app/story/[slug].tsx'
+].filter(exists);
+const hardGamificationPattern = /\bxp\b|coins?|streaks?|leaderboards?|rankings?|level up|win reward/i;
+containsPatternInFiles(activeChildRuntimeFiles, hardGamificationPattern) ? logFail('Hard gamification terms found in active child runtime files.') : logPass('No hard gamification terms found in active child runtime files.');
+containsPatternInFiles(['src/data/imports/vrindavanPreviewImportManifest.ts'], hardGamificationPattern) ? logFail('Hard gamification terms found in preview import example.') : logPass('No hard gamification terms found in preview import example.');
 /resolveRuntimeStory|runtime resolver v2|storyworld.*render.*migrate/i.test(exists('src/data/storyWorld.ts') ? read('src/data/storyWorld.ts') : '') ? logFail('Potential active runtime resolver replacement or Story World rendering migration detected.') : logPass('No active runtime resolver replacement or Story World visible rendering migration detected.');
 logPass(`App route file count snapshot: ${changedRoutes.length} (no route additions asserted by git diff check in CI/manual review).`);
 
