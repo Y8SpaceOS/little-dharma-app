@@ -23,7 +23,8 @@
     "validate:ramayana-journey-pack-1": "node scripts/validate-ramayana-journey-pack-1.mjs",
     "validate:krishna-childhood-pack-1": "node scripts/validate-krishna-childhood-pack-1.mjs",
     "validate:ganesha-wisdom-pack-1": "node scripts/validate-ganesha-wisdom-pack-1.mjs",
-    "validate:parent-journey-progress-dashboard-v1": "node scripts/validate-parent-journey-progress-dashboard-v1.mjs"
+    "validate:parent-journey-progress-dashboard-v1": "node scripts/validate-parent-journey-progress-dashboard-v1.mjs",
+    "validate:story-completion-moment-v1": "node scripts/validate-story-completion-moment-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
