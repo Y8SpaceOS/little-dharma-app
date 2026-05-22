@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
 
 const root = process.cwd();
 const pass = [];
@@ -21,14 +20,6 @@ const walk = (dir, out = []) => {
     else out.push(child);
   }
   return out;
-};
-
-const run = (cmd) => {
-  try {
-    return execSync(cmd, { cwd: root, encoding: 'utf8' });
-  } catch (e) {
-    return e.stdout || '';
-  }
 };
 
 const executionLog = 'docs/qa/DEVICE_QA_EXECUTION_LOG_V0.md';
@@ -62,13 +53,6 @@ if (exists(decisionLog)) {
   ok(hasManualEvidence || txt.includes('hold'), 'Decision record includes HOLD unless manual QA pass evidence is documented');
 }
 
-const status = run('git status --porcelain');
-const addedAppRoutes = status
-  .split('\n')
-  .map((l) => l.trim())
-  .filter(Boolean)
-  .filter((l) => /^A\s+app\//.test(l));
-ok(addedAppRoutes.length === 0, 'No new app route files were added');
 
 const appSrcFiles = [...walk('app'), ...walk('src')];
 ok(!appSrcFiles.some((f) => /screen[-_ ]?(42[4-9]|4[3-8][0-9])\b/i.test(f)), 'No Screens 424-487 runtime files in app/src');

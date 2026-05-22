@@ -48,16 +48,13 @@ Each issue must include decision/next action (fix now, defer, accepted risk, etc
 ## Issue table
 | Issue ID | Severity | Status | Owner | Device / OS | Network condition | Install state | Route / surface | Reproduction steps | Expected result | Actual result | Evidence link | Decision / next action |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| DQA-20260522-001 | P0 | New | Unassigned | Pending manual execution | Pending | Pending | Pending | Pending manual device execution | Core route/flow should behave as designed | Pending manual device execution | Pending | Await first matrix run |
-| DQA-20260522-002 | P1 | New | Unassigned | Pending manual execution | Pending | Pending | Pending | Pending manual device execution | Parent/child key journey should complete | Pending manual device execution | Pending | Await first matrix run |
-| DQA-20260522-003 | P2 | New | Unassigned | Pending manual execution | Pending | Pending | Pending | Pending manual device execution | Non-blocking UI/copy should remain clear | Pending manual device execution | Pending | Await first matrix run |
-| DQA-20260522-004 | P3 | New | Unassigned | Pending manual execution | Pending | Pending | Pending | Pending manual device execution | Backlog quality expectations documented | Pending manual device execution | Pending | Await first matrix run |
+| EXAMPLE-DO-NOT-COUNT | P2 | Example | QA Owner (Example) | Example Device / OS | Offline | Fresh install | Story World (example) | 1) Open app 2) Navigate to Story World | Story cards should be tappable | Example only — replace with real finding | example-link | Example only — remove when real issues are logged |
 
 ## Current P0/P1/P2/P3 summary
-- P0: Placeholder row exists; no actual validated P0 findings yet.
-- P1: Placeholder row exists; no actual validated P1 findings yet.
-- P2: Placeholder row exists; no actual validated P2 findings yet.
-- P3: Placeholder row exists; no actual validated P3 findings yet.
+- P0: No logged issues yet.
+- P1: No logged issues yet.
+- P2: No logged issues yet (example row does not count).
+- P3: No logged issues yet.
 - Manual issue discovery status: Pending manual device execution.
 
 ## Sign-off impact summary
