@@ -33,7 +33,8 @@
     "validate:parent-weekly-summary-v1": "node scripts/validate-parent-weekly-summary-v1.mjs",
     "validate:journey-detail-parent-trust-copy-v1": "node scripts/validate-journey-detail-parent-trust-copy-v1.mjs",
     "validate:parent-sharing-copy-v1": "node scripts/validate-parent-sharing-copy-v1.mjs",
-    "validate:parent-controls-copy-hardening-v1": "node scripts/validate-parent-controls-copy-hardening-v1.mjs"
+    "validate:parent-controls-copy-hardening-v1": "node scripts/validate-parent-controls-copy-hardening-v1.mjs",
+    "validate:privacy-center-copy-hardening-v1": "node scripts/validate-privacy-center-copy-hardening-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
