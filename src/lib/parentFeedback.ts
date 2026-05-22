@@ -50,7 +50,11 @@ export async function loadParentFeedbackDraft(): Promise<ParentFeedbackDraft> {
         parsed.overallSentiment === 'Concerned'
           ? parsed.overallSentiment
           : 'Mixed',
-      permissionToContact: parsed.permissionToContact === 'yes' ? 'yes' : 'no'
+      permissionToContact: parsed.permissionToContact === 'yes' ? 'yes' : 'no',
+      contactDetail:
+        parsed.permissionToContact === 'yes' && typeof parsed.contactDetail === 'string'
+          ? parsed.contactDetail
+          : ''
     };
   } catch {
     return EMPTY_PARENT_FEEDBACK_DRAFT;
@@ -60,8 +64,14 @@ export async function loadParentFeedbackDraft(): Promise<ParentFeedbackDraft> {
 export async function saveParentFeedbackDraft(draft: Omit<ParentFeedbackDraft, 'updatedAt'>) {
   const nextDraft: ParentFeedbackDraft = {
     ...draft,
+    contactDetail: draft.permissionToContact === 'yes' ? draft.contactDetail : '',
     updatedAt: new Date().toISOString()
   };
   await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(nextDraft));
   return nextDraft;
+}
+
+export async function clearParentFeedbackDraft() {
+  await AsyncStorage.removeItem(STORAGE_KEY);
+  return EMPTY_PARENT_FEEDBACK_DRAFT;
 }

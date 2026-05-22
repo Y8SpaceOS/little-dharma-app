@@ -13,12 +13,28 @@ export type StoryCompletionRecord = {
 
 const STORAGE_KEY = 'little_dharma_story_progress_v1';
 
+function normalizeStoryCompletions(input: unknown): StoryCompletionRecord {
+  if (!input || typeof input !== 'object') return {};
+  const out: StoryCompletionRecord = {};
+  for (const [slug, entry] of Object.entries(input as Record<string, unknown>)) {
+    if (!entry || typeof entry !== 'object') continue;
+    const candidate = entry as Partial<StoryCompletionEntry>;
+    if (typeof candidate.completedAt !== 'string' || typeof candidate.badgeName !== 'string') continue;
+    out[slug] = {
+      completedAt: candidate.completedAt,
+      badgeName: candidate.badgeName,
+      valueWord: typeof candidate.valueWord === 'string' ? candidate.valueWord : undefined
+    };
+  }
+  return out;
+}
+
 async function readStoryCompletions(): Promise<StoryCompletionRecord> {
   const raw = await AsyncStorage.getItem(STORAGE_KEY);
   if (!raw) return {};
 
   try {
-    return JSON.parse(raw) as StoryCompletionRecord;
+    return normalizeStoryCompletions(JSON.parse(raw));
   } catch {
     return {};
   }
@@ -26,6 +42,14 @@ async function readStoryCompletions(): Promise<StoryCompletionRecord> {
 
 export async function getAllStoryCompletions() {
   return readStoryCompletions();
+}
+
+export async function pruneStoryCompletions(validStorySlugs: Iterable<string>) {
+  const current = await readStoryCompletions();
+  const validSet = new Set(validStorySlugs);
+  const pruned = Object.fromEntries(Object.entries(current).filter(([slug]) => validSet.has(slug)));
+  await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(pruned));
+  return pruned;
 }
 
 export async function getStoryCompletion(storySlug: string) {
