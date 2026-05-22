@@ -26,9 +26,9 @@ export default function Screen() {
       <Text style={styles.sub}>Choose one doorway to begin.</Text>
     </View>
 
-    <View style={styles.chips}>{chips.map((chip) => <Pressable key={chip} onPress={() => setActiveChip(activeChip === chip ? null : chip)} style={[styles.chip, activeChip === chip && styles.chipActive]}><Text style={[styles.chipText, activeChip === chip && styles.chipTextActive]}>{chip}</Text></Pressable>)}</View>
+    <View style={styles.chips}>{chips.map((chip) => <Pressable key={chip} onPress={() => setActiveChip(activeChip === chip ? null : chip)} accessibilityRole='button' accessibilityLabel={`${chip} filter`} accessibilityState={{ selected: activeChip === chip }} style={[styles.chip, activeChip === chip && styles.chipActive]}><Text style={[styles.chipText, activeChip === chip && styles.chipTextActive]}>{chip}</Text></Pressable>)}</View>
 
-    <View style={styles.grid}>{filtered.map((d) => <Pressable key={d.title} onPress={() => router.push(d.href as never)} style={({ pressed }) => [styles.worldCard, { backgroundColor: d.bg }, pressed && styles.cardPressed]}>
+    <View style={styles.grid}>{filtered.map((d) => <Pressable key={d.title} onPress={() => router.push(d.href as never)} accessibilityRole='button' accessibilityLabel={d.title} accessibilityHint={d.ready ? 'Open story world doorway' : 'More stories coming soon'} style={({ pressed }) => [styles.worldCard, { backgroundColor: d.bg }, pressed && styles.cardPressed]}>
       <View style={styles.cardStack}>
         <Text style={styles.cardTitle}>{d.title}</Text>
         <Text style={styles.cardCopy}>{d.copy}</Text>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   sub: { marginTop: 6, fontSize: 16, lineHeight: 22, color: visualTokens.color.mutedBrown },
   helper: { fontSize: 13, color: '#1F4A75', fontWeight: '700' },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  chip: { paddingVertical: 9, paddingHorizontal: 13, borderRadius: 999, backgroundColor: '#F0E7DA' },
+  chip: { paddingVertical: 11, paddingHorizontal: 13, borderRadius: 999, backgroundColor: '#F0E7DA', minHeight: 44, justifyContent: 'center' },
   chipActive: { backgroundColor: '#E38C29' },
   chipText: { fontWeight: '700', color: '#6A4522' },
   chipTextActive: { color: '#fff' },

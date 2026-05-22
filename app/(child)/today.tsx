@@ -35,12 +35,12 @@ function TodayScreenContent() {
     <View style={[visualStyles.heroCard, styles.storyWorldEntry]}>
       <Text style={styles.heroTitle}>Explore Story World</Text>
       <Text style={styles.sub}>Choose one world and begin.</Text>
-      <Link href='/(child)/worlds' style={visualStyles.primaryCta}>Open Story World</Link>
+      <Link href='/(child)/worlds' style={visualStyles.primaryCta} accessibilityRole='link' accessibilityLabel='Open Story World'>Open Story World</Link>
     </View>
 
     <Text style={visualStyles.sectionHeader}>Quick starts</Text>
     <View style={styles.grid}>
-      {quickStarts.map((p) => <Pressable key={p.title} onPress={() => router.push(p.href as never)} style={({ pressed }) => [visualStyles.doorwayCard, styles.card, pressed && styles.cardPressed]}>
+      {quickStarts.map((p) => <Pressable key={p.title} onPress={() => router.push(p.href as never)} accessibilityRole='button' accessibilityLabel={p.title} accessibilityHint={p.copy} style={({ pressed }) => [visualStyles.doorwayCard, styles.card, pressed && styles.cardPressed]}>
         <View style={styles.cardStack}>
           <Text style={styles.cardTitle}>{p.title}</Text>
           <Text style={styles.cardCopy}>{p.copy}</Text>
@@ -48,10 +48,10 @@ function TodayScreenContent() {
       </Pressable>)}
     </View>
 
-    <View style={styles.parentWrap}><Link href='/(parent)/dashboard' style={visualStyles.secondaryCta}>Open Parent Space</Link></View>
+    <View style={styles.parentWrap}><Link href='/(parent)/dashboard' style={visualStyles.secondaryCta} accessibilityRole='link' accessibilityLabel='Open Parent Space'>Open Parent Space</Link></View>
   </ScrollView>
 
-  {showThreshold && <View style={styles.overlay}><View style={[visualStyles.heroCard, { alignItems: 'center' }]}><Text style={styles.headline}>Enter gently</Text><Text style={styles.sub}>Take one breath before story time.</Text><Text onPress={() => { setShowThreshold(false); markThresholdEntered().catch(() => undefined); }} style={[visualStyles.primaryCta, { marginTop: 12 }]}>Enter Today's Journey</Text></View></View>}
+  {showThreshold && <View style={styles.overlay}><View style={[visualStyles.heroCard, { alignItems: 'center' }]}><Text style={styles.headline}>Enter gently</Text><Text style={styles.sub}>Take one breath before story time.</Text><Text onPress={() => { setShowThreshold(false); markThresholdEntered().catch(() => undefined); }} accessibilityRole='button' accessibilityLabel="Enter today's journey" style={[visualStyles.primaryCta, { marginTop: 12, minHeight: 44, paddingVertical: 12 }]}>Enter Today's Journey</Text></View></View>}
   </SafeAreaView>;
 }
 

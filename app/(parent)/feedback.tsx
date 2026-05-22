@@ -98,13 +98,13 @@ function ParentFeedbackContent() {
 
     <Text style={styles.sectionTitle}>Permission to contact (optional)</Text>
     <View style={styles.sentimentRow}>
-      <Text onPress={() => setField('permissionToContact', 'yes')} style={[styles.chip, draft.permissionToContact === 'yes' ? styles.chipActive : null]} accessibilityRole='button' accessibilityLabel='Allow founder follow-up contact'>Yes</Text>
-      <Text onPress={() => setField('permissionToContact', 'no')} style={[styles.chip, draft.permissionToContact === 'no' ? styles.chipActive : null]} accessibilityRole='button' accessibilityLabel='Do not allow founder follow-up contact'>No</Text>
+      <Text onPress={() => setField('permissionToContact', 'yes')} accessibilityState={{ selected: draft.permissionToContact === 'yes' }} style={[styles.chip, draft.permissionToContact === 'yes' ? styles.chipActive : null]} accessibilityRole='button' accessibilityLabel='Allow founder follow-up contact'>Yes</Text>
+      <Text onPress={() => setField('permissionToContact', 'no')} accessibilityState={{ selected: draft.permissionToContact === 'no' }} style={[styles.chip, draft.permissionToContact === 'no' ? styles.chipActive : null]} accessibilityRole='button' accessibilityLabel='Do not allow founder follow-up contact'>No</Text>
     </View>
 
     <TextInput style={styles.input} placeholder='Contact detail (optional, local only)' value={draft.contactDetail} onChangeText={(text) => setField('contactDetail', text)} accessibilityLabel='Optional contact detail local only' accessibilityHint='Stored only on this device in this version' />
 
-    <Text onPress={onSave} style={[styles.saveButton, !canSave ? styles.saveDisabled : null]} accessibilityRole='button' accessibilityLabel='Save parent feedback on device'>Save Feedback on This Device</Text>
+    <Text onPress={onSave} style={[styles.saveButton, !canSave ? styles.saveDisabled : null]} accessibilityRole='button' accessibilityLabel='Save parent feedback on device' accessibilityState={{ disabled: !canSave }}>Save Feedback on This Device</Text>
     {saveHint ? <Text style={styles.helper}>{saveHint}</Text> : null}
     {saveMessage ? <Text style={styles.confirmation}>{saveMessage}</Text> : null}
     <Text onPress={onClearDraft} style={styles.clearButton} accessibilityRole='button' accessibilityLabel='Clear local parent feedback draft'>Clear Local Draft</Text>
