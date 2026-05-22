@@ -39,23 +39,26 @@ const checks = [
 ];
 for (const [label, rgx] of checks) (rgx.test(svc) ? ok : fails).push(`${rgx.test(svc) ? 'PASS' : 'FAIL'} ${label}`);
 
-
-const requiredDoorwayTitles = [
-  'Krishna Stories',
-  'Ganesha Stories',
-  'Ramayana Journey',
-  'Hanuman Stories',
-  'Bedtime Stories',
-  'Values Stories',
-  'Festival Stories'
-];
+const requiredDoorwayTitles = ['Krishna Stories','Ganesha Stories','Ramayana Journey','Hanuman Stories','Bedtime Stories','Values Stories','Festival Stories'];
 for (const title of requiredDoorwayTitles) {
   const presentInService = svc.includes(`'${title}'`) || svc.includes(`"${title}"`);
   (presentInService ? ok : fails).push(`${presentInService ? 'PASS' : 'FAIL'} required doorway title preserved: ${title}`);
 }
 
+const doorwayOrderMatch = svc.match(/const doorwayOrder = \[([\s\S]*?)\] as const;/);
+if (!doorwayOrderMatch) {
+  fails.push('FAIL doorwayOrder definition missing');
+} else {
+  const doorwayEntries = [...doorwayOrderMatch[1].matchAll(/'([^']+)'/g)].map((m) => m[1]);
+  const exactOrder = JSON.stringify(doorwayEntries) === JSON.stringify(requiredDoorwayTitles);
+  (exactOrder ? ok : fails).push(exactOrder ? 'PASS doorway order matches required 7 titles' : 'FAIL doorway order does not match required 7 titles');
+  const uniqueCount = new Set(doorwayEntries).size === requiredDoorwayTitles.length && doorwayEntries.length === requiredDoorwayTitles.length;
+  (uniqueCount ? ok : fails).push(uniqueCount ? 'PASS doorway titles appear exactly once in doorway order' : 'FAIL doorway titles are duplicated/missing in doorway order');
+}
+
 const worldScreen = read('app/(child)/worlds.tsx');
-(ok).push(worldScreen.includes('getStoryWorldBrowseSections') ? 'PASS worlds uses browse service' : (fails.push('FAIL worlds does not use browse service'), ''));
+(worldScreen.includes('getStoryWorldDoorwayCards') ? ok : fails).push(worldScreen.includes('getStoryWorldDoorwayCards') ? 'PASS worlds uses doorway card source' : 'FAIL worlds does not use doorway card source');
+(!worldScreen.includes('getStoryWorldBrowseSections().flatMap') ? ok : fails).push(!worldScreen.includes('getStoryWorldBrowseSections().flatMap') ? 'PASS worlds avoids section flattening duplicates' : 'FAIL worlds still flatMaps all browse sections');
 (worldScreen.includes('Story Library') ? fails : ok).push(worldScreen.includes('Story Library') ? 'FAIL Story Library regression' : 'PASS Story World language preserved');
 const hardGamificationInWorldCopy = /\b(XP|coins|streaks|leaderboards|rankings)\b/i.test(worldScreen.replace(/hard gamification terms/g, ''));
 (hardGamificationInWorldCopy ? fails : ok).push(hardGamificationInWorldCopy ? 'FAIL hard gamification terms present' : 'PASS no hard gamification terms');

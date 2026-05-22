@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { useRouter } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { visualStyles, visualTokens } from '@/design/visualSystem';
-import { getStoryWorldBrowseSections } from '@/services/storyWorldBrowseService';
+import { getStoryWorldDoorwayCards } from '@/services/storyWorldBrowseService';
 
 const doorwayPalette: Record<string, string> = {
   'Krishna Stories': '#FCE9C8',
@@ -19,7 +19,7 @@ const chips = ['Bedtime', 'Values', 'Journeys', 'Festivals'];
 export default function Screen() {
   const router = useRouter();
   const [activeChip, setActiveChip] = useState<string | null>(null);
-  const doorways = useMemo(() => getStoryWorldBrowseSections().flatMap((section) => section.cards).map((card) => ({
+  const doorways = useMemo(() => getStoryWorldDoorwayCards().map((card) => ({
     title: card.title,
     copy: card.summary,
     href: card.href,

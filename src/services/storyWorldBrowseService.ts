@@ -1,5 +1,4 @@
 import { contentRegistryStories } from '@/data/contentRegistry';
-import { storyWorldSections } from '@/data/storyWorld';
 import { getRuntimeStoryEligibility } from '@/services/runtimeStoryResolverV2';
 import type { Story } from '@/types/contentModel';
 import type { StoryWorldBrowseCard, StoryWorldBrowseSection, StoryWorldBrowseStatus, StoryWorldBrowseSummary } from '@/types/storyWorldBrowse';
@@ -26,14 +25,15 @@ const legacyWorldItems: LegacyWorldItem[] = [
   { id: 'festivals', title: 'Festival Stories', copy: 'Seasonal stories and traditions.', href: '/world/festivals', tags: ['Festivals'], ready: false, bg: '#FFF0DB' }
 ];
 
-const sectionCategories: Record<string, StoryWorldBrowseSection['category']> = {
-  krishna: 'krishna',
-  ganesha: 'ganesha',
-  bedtime: 'bedtime',
-  values: 'values',
-  festivals: 'festivals',
-  'dharma-journeys': 'dharma_journeys'
-};
+const doorwayOrder = [
+  'Krishna Stories',
+  'Ganesha Stories',
+  'Ramayana Journey',
+  'Hanuman Stories',
+  'Bedtime Stories',
+  'Values Stories',
+  'Festival Stories'
+] as const;
 
 function mapLegacyCategory(item: LegacyWorldItem): StoryWorldBrowseCard['category'] {
   if (item.id === 'ramayana') return 'ramayana';
@@ -103,54 +103,31 @@ export function mapStoryWorldItemToBrowseCard(item: LegacyWorldItem): StoryWorld
   };
 }
 
+export function getStoryWorldDoorwayCards(): StoryWorldBrowseCard[] {
+  const cards = legacyWorldItems.map(mapStoryWorldItemToBrowseCard);
+  const cardByTitle = new Map(cards.map((card) => [card.title, card]));
+  return doorwayOrder
+    .map((title) => cardByTitle.get(title))
+    .filter((card): card is StoryWorldBrowseCard => Boolean(card));
+}
+
 export function getStoryWorldBrowseCards(): StoryWorldBrowseCard[] {
   const runtimeCards = contentRegistryStories
     .map(mapRegistryStoryToBrowseCard)
     .filter((card) => card.isRuntimeAvailable && card.status !== 'locked_preview');
-  const worldCards = legacyWorldItems.map(mapStoryWorldItemToBrowseCard);
+  const worldCards = getStoryWorldDoorwayCards();
   return [...worldCards, ...runtimeCards];
 }
 
 export function getStoryWorldBrowseSections(): StoryWorldBrowseSection[] {
-  const cards = legacyWorldItems.map(mapStoryWorldItemToBrowseCard);
-  const cardByTitle = new Map(cards.map((card) => [card.title, card]));
-
-  const doorwayOrder = [
-    'Krishna Stories',
-    'Ganesha Stories',
-    'Ramayana Journey',
-    'Hanuman Stories',
-    'Bedtime Stories',
-    'Values Stories',
-    'Festival Stories'
-  ];
-
-  const orderedDoorwayCards = doorwayOrder
-    .map((title) => cardByTitle.get(title))
-    .filter((card): card is StoryWorldBrowseCard => Boolean(card));
-
-  const doorwaySection = {
+  return [{
     id: 'story-world-doorways',
     title: 'Story World',
     subtitle: 'Choose one doorway to begin.',
     category: 'dharma_journeys',
-    cards: orderedDoorwayCards,
+    cards: getStoryWorldDoorwayCards(),
     displayOrder: 1
-  } as const;
-
-  const supplementalSections = storyWorldSections
-    .filter((section) => section.id !== 'start-here')
-    .map((section, index) => ({
-      id: section.id,
-      title: section.title,
-      subtitle: section.subtitle,
-      category: sectionCategories[section.id] ?? 'values',
-      cards: cards.filter((card) => card.category === (sectionCategories[section.id] ?? 'values')),
-      displayOrder: index + 2
-    }))
-    .filter((section) => section.cards.length > 0);
-
-  return [doorwaySection, ...supplementalSections];
+  }];
 }
 
 export function getStoryWorldBrowseCardBySlug(slug: string): StoryWorldBrowseCard | null {
