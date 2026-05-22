@@ -14,6 +14,7 @@ import { getChildProfile } from './childProfile';
 import { getAllStoryCompletions, pruneStoryCompletions } from './storyProgress';
 import { getAllJourneyProgress } from './journeyProgress';
 import { clearParentFeedbackDraft, loadParentFeedbackDraft, saveParentFeedbackDraft } from './parentFeedback';
+import { getParentControls, setBedtimeReducedPromptsEnabled, setLuvluHelperPromptsEnabled } from './parentControls';
 
 beforeEach(() => store.clear());
 
@@ -23,7 +24,6 @@ describe('local state runtime hardening', () => {
     const state = await loadOnboardingState();
     expect(state).toEqual({ onboardingComplete: false, profile: null });
   });
-
 
   it('does not keep onboardingComplete true when profile normalizes to null', async () => {
     store.set('little_dharma_onboarding_state_v1', JSON.stringify({ onboardingComplete: true, profile: { childName: 'Kid' } }));
@@ -58,11 +58,8 @@ describe('local state runtime hardening', () => {
     expect(progress.good.updatedAtLocal).toBe('1970-01-01T00:00:00.000Z');
   });
 
-
   it('keys journey progress map by normalized journeyId', async () => {
-    store.set('little_dharma_journey_progress_v1', JSON.stringify({
-      legacyKey: { journeyId: 'canonical-id', completedStoryIds: [] }
-    }));
+    store.set('little_dharma_journey_progress_v1', JSON.stringify({ legacyKey: { journeyId: 'canonical-id', completedStoryIds: [] } }));
     const progress = await getAllJourneyProgress();
     expect(Object.keys(progress)).toEqual(['canonical-id']);
   });
@@ -72,7 +69,6 @@ describe('local state runtime hardening', () => {
     const pruned = await pruneStoryCompletions(['known']);
     expect(pruned).toEqual({ known: { completedAt: 'now', badgeName: 'Lotus', valueWord: undefined } });
   });
-
 
   it('normalizes malformed parent feedback text fields without object spread', async () => {
     store.set('little_dharma_parent_feedback_v1', JSON.stringify({
@@ -100,5 +96,32 @@ describe('local state runtime hardening', () => {
     const draft = await loadParentFeedbackDraft();
     expect(draft.contactDetail).toBe('');
     expect(draft.permissionToContact).toBe('no');
+  });
+
+  it('returns safe parent controls defaults for missing or corrupted storage', async () => {
+    let controls = await getParentControls();
+    expect(controls.luvluHelperPromptsEnabled).toBe(true);
+    expect(controls.bedtimeReducedPromptsEnabled).toBe(false);
+
+    store.set('little_dharma_parent_controls_v1', '{bad-json');
+    controls = await getParentControls();
+    expect(controls.luvluHelperPromptsEnabled).toBe(true);
+    expect(controls.bedtimeReducedPromptsEnabled).toBe(false);
+  });
+
+  it('persists parent controls toggles locally', async () => {
+    await setLuvluHelperPromptsEnabled(false);
+    await setBedtimeReducedPromptsEnabled(true);
+    const controls = await getParentControls();
+    expect(controls.luvluHelperPromptsEnabled).toBe(false);
+    expect(controls.bedtimeReducedPromptsEnabled).toBe(true);
+  });
+
+  it('drops contact detail when permissionToContact is no on save', async () => {
+    const saved = await saveParentFeedbackDraft({
+      parentName: 'A', childAgeBand: '6-8', childEnjoyed: '', confusingMoments: '', safetyTrustConcern: '', authenticityConcern: '', bugLayoutIssue: '',
+      overallSentiment: 'Mixed', permissionToContact: 'no', contactDetail: 'email@example.com'
+    });
+    expect(saved.contactDetail).toBe('');
   });
 });

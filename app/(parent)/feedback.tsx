@@ -4,7 +4,7 @@ import { SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View } from 'rea
 import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
 import { getOnboardingState } from '@/lib/onboardingState';
-import { EMPTY_PARENT_FEEDBACK_DRAFT, loadParentFeedbackDraft, saveParentFeedbackDraft, type ParentFeedbackDraft, type ParentFeedbackSentiment } from '@/lib/parentFeedback';
+import { EMPTY_PARENT_FEEDBACK_DRAFT, clearParentFeedbackDraft, loadParentFeedbackDraft, saveParentFeedbackDraft, type ParentFeedbackDraft, type ParentFeedbackSentiment } from '@/lib/parentFeedback';
 
 const sentimentOptions: ParentFeedbackSentiment[] = ['Very positive', 'Mostly positive', 'Mixed', 'Concerned'];
 
@@ -13,6 +13,7 @@ function ParentFeedbackContent() {
   const [draft, setDraft] = useState<ParentFeedbackDraft>({ ...EMPTY_PARENT_FEEDBACK_DRAFT, childAgeBand: defaultAgeBand });
   const [saveMessage, setSaveMessage] = useState('');
   const [saveHint, setSaveHint] = useState('');
+  const [clearMessage, setClearMessage] = useState('');
   const hasUserEditedRef = useRef(false);
 
   useEffect(() => {
@@ -36,6 +37,7 @@ function ParentFeedbackContent() {
     setDraft((prev) => ({ ...prev, [key]: value }));
     setSaveMessage('');
     setSaveHint('');
+    setClearMessage('');
   };
 
   const onSave = async () => {
@@ -59,16 +61,25 @@ function ParentFeedbackContent() {
     });
     setDraft(saved);
     setSaveHint('');
-    setSaveMessage(`Saved on this device at ${new Date(saved.updatedAt).toLocaleString()}. Ready to share manually with the founder when helpful.`);
+    setClearMessage('');
+    setSaveMessage(`Saved on this device at ${new Date(saved.updatedAt).toLocaleString()}. Draft prepared locally for manual sharing when helpful.`);
   };
 
+
+  const onClearDraft = async () => {
+    const cleared = await clearParentFeedbackDraft();
+    setDraft({ ...cleared, childAgeBand: defaultAgeBand });
+    setSaveHint('');
+    setSaveMessage('');
+    setClearMessage('Local feedback draft cleared on this device.');
+  };
   return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
     <Text style={styles.heading}>Parent Feedback Capture</Text>
     <Text style={styles.subheading}>This is for parent feedback, not child chat. No public profile or community post is created.</Text>
 
     <View style={styles.noteCard}>
-      <Text style={styles.noteLine}>Feedback is kept on this device in this version.</Text>
-      <Text style={styles.noteLine}>Only share personal contact details if you are comfortable.</Text>
+      <Text style={styles.noteLine}>Feedback draft is kept on this device in this version.</Text>
+      <Text style={styles.noteLine}>There is no backend submission yet. Use save to prepare notes locally.</Text>
       <Text style={styles.noteLine}>Please do not include sensitive child information.</Text>
     </View>
 
@@ -96,6 +107,8 @@ function ParentFeedbackContent() {
     <Text onPress={onSave} style={[styles.saveButton, !canSave ? styles.saveDisabled : null]} accessibilityRole='button' accessibilityLabel='Save parent feedback on device'>Save Feedback on This Device</Text>
     {saveHint ? <Text style={styles.helper}>{saveHint}</Text> : null}
     {saveMessage ? <Text style={styles.confirmation}>{saveMessage}</Text> : null}
+    <Text onPress={onClearDraft} style={styles.clearButton} accessibilityRole='button' accessibilityLabel='Clear local parent feedback draft'>Clear Local Draft</Text>
+    {clearMessage ? <Text style={styles.helper}>{clearMessage}</Text> : null}
 
     <Link href='/(parent)/dashboard' style={styles.backLink} accessibilityRole='link' accessibilityLabel='Back to Parent Dashboard'>Back to Parent Dashboard</Link>
   </ScrollView></SafeAreaView>;
@@ -115,6 +128,7 @@ const styles = StyleSheet.create({
   chipActive: { backgroundColor: '#1E2C50', color: '#FFFFFF' },
   saveButton: { backgroundColor: '#C9F1DE', color: '#0D5132', textAlign: 'center', fontWeight: '700', borderRadius: tokens.radius.button, padding: 14 },
   saveDisabled: { opacity: 0.6 },
+  clearButton: { backgroundColor: '#FCE3E3', color: '#6A1F1F', textAlign: 'center', fontWeight: '700', borderRadius: tokens.radius.button, padding: 14 },
   helper: { color: '#5A6A92', lineHeight: 20 },
   confirmation: { color: '#1E2C50', fontWeight: '600', lineHeight: 20 },
   backLink: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: tokens.radius.button, textAlign: 'center', color: '#1E2C50', fontWeight: '700' }
