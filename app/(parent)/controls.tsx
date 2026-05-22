@@ -9,7 +9,9 @@ import {
   getParentControlsPrivacyCopy,
   getParentControlsTrustSummary,
 } from '@/services/parentControlsCopyService';
-import { getParentControlsJourneySettingsBullets } from '@/services/parentControlsJourneySettingsCopyService';
+import {
+  buildParentControlsJourneySettingsCopy,
+} from '@/services/parentControlsJourneySettingsCopyService';
 import { ChildProfile, getChildProfile } from '@/lib/childProfile';
 import {
   getParentControls,
@@ -69,8 +71,8 @@ export default function ControlsScreen() {
         </View>
 
         <View style={styles.card}>
-          <Text style={styles.title}>Journey settings copy</Text>
-          {getParentControlsJourneySettingsBullets().map((line) => (
+          <Text style={styles.title}>Journey choices stay gentle.</Text>
+          {buildParentControlsJourneySettingsCopy().microcopyBullets.map((line) => (
             <Text key={line} style={styles.helper}>• {line}</Text>
           ))}
         </View>
