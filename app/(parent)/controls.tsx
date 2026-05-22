@@ -3,6 +3,12 @@ import { useFocusEffect } from '@react-navigation/native';
 import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { tokens } from '@/design/tokens';
+import {
+  getParentControlsContentReadinessCopy,
+  getParentControlsNoPressureCopy,
+  getParentControlsPrivacyCopy,
+  getParentControlsTrustSummary,
+} from '@/services/parentControlsCopyService';
 import { ChildProfile, getChildProfile } from '@/lib/childProfile';
 import {
   getParentControls,
@@ -91,6 +97,15 @@ export default function ControlsScreen() {
           <Text style={styles.title}>Reset and local data</Text>
           <Text style={styles.helper}>Reset actions remain in Parent Dashboard with confirmation before clearing onboarding and child profile on this device.</Text>
           <Link href='/(parent)/dashboard' style={styles.link}>Open Parent Dashboard reset options</Link>
+        </View>
+
+
+        <View style={styles.privacyCard}>
+          <Text style={styles.privacyTitle}>Parent controls</Text>
+          <Text style={styles.privacyText}>{getParentControlsTrustSummary()}</Text>
+          <Text style={styles.privacyText}>{getParentControlsPrivacyCopy()}</Text>
+          <Text style={styles.privacyText}>{getParentControlsNoPressureCopy()}</Text>
+          <Text style={styles.privacyText}>{getParentControlsContentReadinessCopy()}</Text>
         </View>
 
         <View style={styles.privacyCard}>
