@@ -11,7 +11,8 @@
     "seed": "tsx src/data/seed/seed.ts",
     "validate:visual-transformation-block-v1": "node scripts/validate-visual-transformation-block-v1.mjs",
     "validate:release-candidate-gate-v0": "node scripts/validate-release-candidate-gate-v0.mjs",
-    "validate:device-qa-runbook-v0": "node scripts/validate-device-qa-runbook-v0.mjs"
+    "validate:device-qa-runbook-v0": "node scripts/validate-device-qa-runbook-v0.mjs",
+    "validate:device-qa-execution-v0": "node scripts/validate-device-qa-execution-v0.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
