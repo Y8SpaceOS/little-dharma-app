@@ -104,8 +104,8 @@ Uses the same calm parent-facing voice established in weekly summary copy polish
 Does not add toggles, switches, fake controls, new settings state, backend/cloud sync, analytics/telemetry, notifications/reminders, sharing/social, AI personalization, new routes, journey progress changes, story completion changes, or runtime/audio changes.
 
 ## Follow-up recommendations for PR #149 and PR #150
-- PR #149: Expand validation coverage for parent-surface copy consistency snapshots.
-- PR #150: Add cross-surface trust copy inventory to prevent wording drift.
+- PR #149: My Treasures Trust Copy v1
+- PR #150: Story World Empty/Coming Soon Trust Copy v1
 
 ## Final PR #148 readiness statement
 PR #148 is ready as a copy-only, static read-only parent-controls update that preserves existing behavior and honors all no-feature-expansion constraints.

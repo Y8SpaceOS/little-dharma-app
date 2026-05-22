@@ -121,9 +121,15 @@ pkg.includes('validate:parent-controls-journey-settings-copy-v1')
   ? pass('Package script registered.')
   : fail('Missing package script registration.');
 
-docs.includes('PR #149') && docs.includes('PR #150')
-  ? pass('Roadmap follow-up naming matches PR #149 and PR #150.')
-  : fail('Roadmap follow-up naming mismatch for PR #149 and PR #150.');
+const requiredFollowUps = [
+  'PR #149: My Treasures Trust Copy v1',
+  'PR #150: Story World Empty/Coming Soon Trust Copy v1',
+];
+for (const followUp of requiredFollowUps) {
+  docs.includes(followUp)
+    ? pass(`Roadmap follow-up present: ${followUp}`)
+    : fail(`Roadmap follow-up missing/mismatch: ${followUp}`);
+}
 
 for (const line of checks) console.log(line);
 const failed = checks.filter((line) => line.startsWith('FAIL')).length;
