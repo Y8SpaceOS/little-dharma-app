@@ -11,6 +11,7 @@ import { tokens } from '@/design/tokens';
 import { buildStoryCompletionMoment } from '@/services/storyCompletionMomentService';
 import { buildStoryAudioPlayerState, shouldShowAudioEntryPoint } from '@/services/storyAudioFoundationService';
 import { buildStoryDetailTrustMicrocopy } from '@/services/storyDetailTrustMicrocopyService';
+import { buildCompletionTrustMicrocopy } from '@/services/completionTrustMicrocopyService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -69,6 +70,7 @@ function StoryScreenContent() {
   const audioState = buildStoryAudioPlayerState(story);
   const showAudioPanel = shouldShowAudioEntryPoint(story) || audioState.availability === 'unavailable';
   const trustMicrocopy = buildStoryDetailTrustMicrocopy();
+  const completionTrustMicrocopy = buildCompletionTrustMicrocopy();
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -183,7 +185,18 @@ function StoryScreenContent() {
             {completionMoment.parentPrompt ? <Text style={styles.parentLine}>Parent-child prompt: {completionMoment.parentPrompt}</Text> : null}
             <Text style={styles.parentLine}>Gentle motif: {completionMoment.treasureMotif}</Text>
             <Text style={styles.parentLine}>{completionMoment.sacredRespectNote}</Text>
+            <View style={[styles.supportCard, styles.completionTrustCard]} accessibilityLabel={completionTrustMicrocopy.accessibilityLabel} accessibilityHint={completionTrustMicrocopy.accessibilityHint}>
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.calmFinishCopy}</Text>
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.noScoreCopy}</Text>
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.restReadinessCopy}</Text>
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.familyReflectionCopy}</Text>
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.sacredCareCopy}</Text>
+            </View>
             {completionMoment.luvluAllowed ? <Text style={styles.luvluLine}>Luvlu says: Carry this blessing gently into your day.</Text> : null}
+            {completionMoment.luvluAllowed ? (
+              <Text style={styles.parentLine}>{completionTrustMicrocopy.luvluGentleCelebrationCopy}</Text>
+            ) : null}
+            <Text style={styles.parentLine}>{completionTrustMicrocopy.progressGentleCopy}</Text>
             <Text style={styles.parentLine}>Next gentle action: {completionMoment.nextActions[0]}</Text>
             <Text style={styles.parentLine}>{completionMoment.nextActions[1]}</Text>
             <Link href='/(child)/worlds' style={styles.link}>Back to Story World</Link>
@@ -218,6 +231,7 @@ const styles = StyleSheet.create({
   chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: tokens.spacing.xs },
   metaChip: { fontSize: 13, color: '#6a5b45', backgroundColor: '#fff3da', borderRadius: 999, borderWidth: 1, borderColor: '#f0d9ad', paddingVertical: 5, paddingHorizontal: 10 },
   supportCard: { backgroundColor: '#fffdf8', borderWidth: 1, borderColor: '#ebdec7', padding: tokens.spacing.md, gap: tokens.spacing.xs },
+  completionTrustCard: { marginTop: tokens.spacing.xs },
   valueLine: { fontSize: 16, lineHeight: 24, color: tokens.colors.textPrimary },
   valueLineStrong: { fontWeight: '900', color: '#6b4b23' },
   parentLine: { fontSize: 14, lineHeight: 21, color: '#6b5f4d' },
