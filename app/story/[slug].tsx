@@ -9,6 +9,7 @@ import { getRuntimeStoryBySlug } from '@/services/journeys';
 import { visualStyles } from '@/design/visualSystem';
 import { tokens } from '@/design/tokens';
 import { buildStoryCompletionMoment } from '@/services/storyCompletionMomentService';
+import { buildStoryAudioPlayerState, shouldShowAudioEntryPoint } from '@/services/storyAudioFoundationService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -64,6 +65,8 @@ function StoryScreenContent() {
   const storyIcon = worldLabel?.charAt(0) || story.world.charAt(0) || 'S';
 
   const completionMoment = buildStoryCompletionMoment(story);
+  const audioState = buildStoryAudioPlayerState(story);
+  const showAudioPanel = shouldShowAudioEntryPoint(story) || audioState.availability === 'unavailable';
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -96,6 +99,16 @@ function StoryScreenContent() {
               <Text style={styles.parentLine}>Parent note: Gentle, age-appropriate sacred storytelling for shared reading.</Text>
               <Text style={styles.luvluLine}>Luvlu says: Take one soft breath before you begin.</Text>
             </View>
+
+
+            {showAudioPanel ? (
+              <View style={[styles.supportCard, visualStyles.roundedCard]} accessibilityLabel={audioState.accessibilityLabel}>
+                <Text style={styles.valueLineStrong}>Audio coming soon</Text>
+                <Text style={styles.parentLine}>Read myself</Text>
+                <Text style={styles.parentLine}>{audioState.unavailableReason || 'Listen option will appear here when parent-approved audio is ready.'}</Text>
+                <Text style={styles.parentLine}>Parent-approved and privacy-safe</Text>
+              </View>
+            ) : null}
 
             <Pressable style={styles.button} onPress={() => setStage('reader')}>
               <Text style={styles.buttonText}>Begin Story</Text>
