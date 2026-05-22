@@ -41,7 +41,7 @@ const trackedFiles = fs.existsSync(path.join(root, '.git'))
   ? execSync('git ls-files', { cwd: root, encoding: 'utf8' }).split('\n').filter(Boolean)
   : [];
 
-const runtimePrototypeLeak = trackedFiles.some((f) => /^app\/.+42[4-9]|^app\/.+4[3-8][0-9]|^app\/.+48[0-7]/i.test(f) || /^src\/.+42[4-9]|^src\/.+4[3-8][0-9]|^src\/.+48[0-7]/i.test(f));
+const runtimePrototypeLeak = trackedFiles.some((f) => /^(app|src)\/.*(?:screen|screens|prototype)?[-_ ]?(42[4-9]|4[3-7][0-9]|48[0-7])(?:\D|$)/i.test(f));
 runtimePrototypeLeak ? fail('Screens 424–487 runtime file leakage detected') : pass('No Screens 424–487 runtime files detected');
 
 const appSrcFiles = trackedFiles.filter((f) => /^(app|src)\/.*\.(ts|tsx|js|jsx|mjs|cjs)$/.test(f));

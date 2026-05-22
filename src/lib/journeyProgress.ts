@@ -31,10 +31,10 @@ export function normalizeJourneyProgressEntry(entry: unknown): JourneyProgress |
 function normalizeJourneyProgressMap(input: unknown): JourneyProgressMap {
   if (!input || typeof input !== 'object') return {};
   const out: JourneyProgressMap = {};
-  for (const [key, value] of Object.entries(input as Record<string, unknown>)) {
+  for (const [, value] of Object.entries(input as Record<string, unknown>)) {
     const normalized = normalizeJourneyProgressEntry(value);
     if (!normalized) continue;
-    out[key] = normalized;
+    out[normalized.journeyId] = normalized;
   }
   return out;
 }

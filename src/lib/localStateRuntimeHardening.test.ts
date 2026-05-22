@@ -24,6 +24,13 @@ describe('local state runtime hardening', () => {
     expect(state).toEqual({ onboardingComplete: false, profile: null });
   });
 
+
+  it('does not keep onboardingComplete true when profile normalizes to null', async () => {
+    store.set('little_dharma_onboarding_state_v1', JSON.stringify({ onboardingComplete: true, profile: { childName: 'Kid' } }));
+    const state = await loadOnboardingState();
+    expect(state).toEqual({ onboardingComplete: false, profile: null });
+  });
+
   it('normalizes invalid child profile enum values and missing fields', async () => {
     store.set('little_dharma_child_profile_v1', JSON.stringify({ ageBand: 'invalid', parentIntent: 'wrong', setupCompleted: 1 }));
     const profile = await getChildProfile();
@@ -51,10 +58,37 @@ describe('local state runtime hardening', () => {
     expect(progress.good.updatedAtLocal).toBe('1970-01-01T00:00:00.000Z');
   });
 
+
+  it('keys journey progress map by normalized journeyId', async () => {
+    store.set('little_dharma_journey_progress_v1', JSON.stringify({
+      legacyKey: { journeyId: 'canonical-id', completedStoryIds: [] }
+    }));
+    const progress = await getAllJourneyProgress();
+    expect(Object.keys(progress)).toEqual(['canonical-id']);
+  });
+
   it('prunes stale story slugs when helper is called', async () => {
     store.set('little_dharma_story_progress_v1', JSON.stringify({ known: { completedAt: 'now', badgeName: 'Lotus' }, old: { completedAt: 'now', badgeName: 'Diya' } }));
     const pruned = await pruneStoryCompletions(['known']);
     expect(pruned).toEqual({ known: { completedAt: 'now', badgeName: 'Lotus', valueWord: undefined } });
+  });
+
+
+  it('normalizes malformed parent feedback text fields without object spread', async () => {
+    store.set('little_dharma_parent_feedback_v1', JSON.stringify({
+      parentName: { unsafe: true },
+      childAgeBand: 12,
+      childEnjoyed: null,
+      permissionToContact: 'yes',
+      contactDetail: ['not-a-string'],
+      updatedAt: { now: true }
+    }));
+    const draft = await loadParentFeedbackDraft();
+    expect(draft.parentName).toBe('');
+    expect(draft.childAgeBand).toBe('');
+    expect(draft.childEnjoyed).toBe('');
+    expect(draft.contactDetail).toBe('');
+    expect(draft.updatedAt).toBe('');
   });
 
   it('clears parent feedback draft', async () => {

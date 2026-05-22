@@ -85,9 +85,10 @@ export async function loadOnboardingState() {
 
   try {
     const parsed = JSON.parse(raw) as Partial<OnboardingState>;
+    const normalizedProfile = normalizeOnboardingProfile(parsed.profile);
     onboardingState = {
-      onboardingComplete: parsed.onboardingComplete === true,
-      profile: normalizeOnboardingProfile(parsed.profile)
+      onboardingComplete: parsed.onboardingComplete === true && normalizedProfile !== null,
+      profile: normalizedProfile
     };
   } catch {
     onboardingState = { onboardingComplete: false, profile: null };
@@ -98,9 +99,10 @@ export async function loadOnboardingState() {
 }
 
 export async function completeOnboarding(nextProfile: OnboardingProfile) {
+  const normalizedProfile = normalizeOnboardingProfile(nextProfile);
   onboardingState = {
-    onboardingComplete: true,
-    profile: normalizeOnboardingProfile(nextProfile)
+    onboardingComplete: normalizedProfile !== null,
+    profile: normalizedProfile
   };
   await persistState();
   notify();
