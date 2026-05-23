@@ -35,7 +35,7 @@ if (moduloSignals.some((m)=>src.includes(m) && src.includes('runtimeEntries'))) 
 const mustStrings = ['parentSourceContext','parentDiscussionPrompt','reflectionPrompt','durationMinutes','ageBands','primaryValue','secondaryValues','characters','narrationScript','voiceDirection','pronunciationNotes','pacingNotes','sacredRespectNotes'];
 for (const s of mustStrings) if (src.includes(s)) pass(`required field pattern present: ${s}`); else fail(`required field pattern missing: ${s}`);
 
-const banned = ['story library','leaderboard','achievement','unlock','coins','began with loving care','guided the moment gently','krishna responded with','by evening in'];
+const banned = ['story library','leaderboard','achievement','unlock','coins','began with loving care','guided the moment gently','krishna responded with','by evening in','is at the heart of','respond with care, naming the moment','the event unfolds with concrete details','not rumor or fear','the scene closes with gratitude','gentle lesson for gokul families','is narrated in a warm devotional tone with clear references'];
 const lsrc = src.toLowerCase();
 for (const b of banned) if (lsrc.includes(b)) fail(`banned language found: ${b}`);
 
