@@ -14,6 +14,7 @@ import { buildStoryDetailTrustMicrocopy } from '@/services/storyDetailTrustMicro
 import { buildCompletionTrustMicrocopy } from '@/services/completionTrustMicrocopyService';
 import { buildAudioEntryTrustMicrocopy } from '@/services/audioEntryTrustMicrocopyService';
 import { buildParentReflectionPromptCopy } from '@/services/parentReflectionPromptCopyService';
+import { buildStoryReaderGentlePaceCopy } from '@/services/storyReaderGentlePaceCopyService';
 
 type Stage = 'detail' | 'reader' | 'complete';
 
@@ -75,6 +76,7 @@ function StoryScreenContent() {
   const completionTrustMicrocopy = buildCompletionTrustMicrocopy();
   const audioTrustMicrocopy = buildAudioEntryTrustMicrocopy();
   const parentReflectionPromptCopy = buildParentReflectionPromptCopy();
+  const gentlePaceCopy = buildStoryReaderGentlePaceCopy();
 
   return (
     <SafeAreaView style={visualStyles.softScreen}>
@@ -155,6 +157,19 @@ function StoryScreenContent() {
             </View>
 
             <Text style={styles.reflectLine}>Luvlu reflection: Which part of this page felt most kind?</Text>
+
+            <View
+              style={[styles.supportCard, styles.gentlePaceCard]}
+              accessibilityLabel={gentlePaceCopy.accessibilityLabel}
+              accessibilityHint={gentlePaceCopy.accessibilityHint}
+            >
+              <Text style={styles.parentLine}>{gentlePaceCopy.readSlowlyCopy}</Text>
+              <Text style={styles.parentLine}>{gentlePaceCopy.oneCalmPageCopy}</Text>
+              <Text style={styles.parentLine}>{gentlePaceCopy.storiesCanWaitCopy}</Text>
+              <Text style={styles.parentLine}>{gentlePaceCopy.noRaceCopy}</Text>
+              <Text style={styles.parentLine}>{gentlePaceCopy.pauseReturnCopy}</Text>
+              <Text style={styles.parentLine}>{gentlePaceCopy.sacredCareCopy}</Text>
+            </View>
 
             <View style={styles.controls}>
               <Pressable
@@ -254,6 +269,7 @@ const styles = StyleSheet.create({
   metaChip: { fontSize: 13, color: '#6a5b45', backgroundColor: '#fff3da', borderRadius: 999, borderWidth: 1, borderColor: '#f0d9ad', paddingVertical: 5, paddingHorizontal: 10 },
   supportCard: { backgroundColor: '#fffdf8', borderWidth: 1, borderColor: '#ebdec7', padding: tokens.spacing.md, gap: tokens.spacing.xs },
   completionTrustCard: { marginTop: tokens.spacing.xs },
+  gentlePaceCard: { marginTop: tokens.spacing.xs },
   valueLine: { fontSize: 16, lineHeight: 24, color: tokens.colors.textPrimary },
   valueLineStrong: { fontWeight: '900', color: '#6b4b23' },
   parentLine: { fontSize: 14, lineHeight: 21, color: '#6b5f4d' },
