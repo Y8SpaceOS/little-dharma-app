@@ -83,21 +83,19 @@ function assertDoesNotContainImplementationTokens(content, tokens, label) {
 }
 
 function assertForbiddenTermsOnlyInNegativeContext(content, label) {
-  const lowered = content.toLowerCase();
+  const quotedStrings = Array.from(content.matchAll(/'([^'\\]*(?:\\.[^'\\]*)*)'|"([^"\\]*(?:\\.[^"\\]*)*)"/g)).map((m) => (m[1] ?? m[2] ?? '').toLowerCase());
+  const lowered = quotedStrings.join('\n');
   const negatives = ['no ', 'not ', 'without ', 'never ', 'does not', 'is not', "isn't", 'avoid', 'disabled'];
 
   for (const term of forbiddenTerms) {
-    if (term === 'tracking') continue;
     let index = lowered.indexOf(term);
     while (index !== -1) {
-      const sentenceStart = Math.max(lowered.lastIndexOf('.', index), lowered.lastIndexOf('\n', index), lowered.lastIndexOf(';', index));
-      const nextDot = lowered.indexOf('.', index);
-      const nextNl = lowered.indexOf('\n', index);
-      const ends = [nextDot, nextNl].filter((v) => v !== -1);
-      const sentenceEnd = ends.length ? Math.min(...ends) : Math.min(lowered.length, index + 160);
-      const context = lowered.slice(Math.max(0, sentenceStart), sentenceEnd + 1);
+      const lineStart = lowered.lastIndexOf('\n', index) + 1;
+      const lineEndRaw = lowered.indexOf('\n', index);
+      const lineEnd = lineEndRaw === -1 ? lowered.length : lineEndRaw;
+      const context = lowered.slice(lineStart, lineEnd);
       const isNegative = negatives.some((neg) => context.includes(neg));
-      const isAllowedTrackingPhrase = term === 'tracking' && /(no analytics|no telemetry|no analytics or telemetry|telemetry tracking|current scope)/.test(context);
+      const isAllowedTrackingPhrase = term === 'tracking' && /(no tracking|not tracking|no analytics or telemetry tracking|no analytics\/telemetry tracking)/.test(context);
       if (!isNegative && !isAllowedTrackingPhrase) fail(`${label} forbidden term lacks negative context: ${term}`);
       index = lowered.indexOf(term, index + term.length);
     }
@@ -106,21 +104,28 @@ function assertForbiddenTermsOnlyInNegativeContext(content, label) {
 }
 
 function assertNoRouteChangesByName() {
-  const changed = execSync('git diff --name-only --cached -- . && git diff --name-only -- .', { cwd: root, encoding: 'utf8' })
+  const hasHeadParent = execSync('git rev-parse --verify --quiet HEAD~1 >/dev/null; echo $?', { cwd: root, encoding: 'utf8' }).trim() === '0';
+  const diffRange = hasHeadParent ? 'HEAD~1..HEAD' : 'HEAD';
+  const changed = execSync(`git diff --name-only ${diffRange}`, { cwd: root, encoding: 'utf8' })
     .split('\n')
     .map((line) => line.trim())
     .filter(Boolean);
 
   const routeChanges = changed.filter((file) => /^app\//.test(file));
   routeChanges.length === 0
-    ? pass('No app route files changed by this PR.')
-    : fail(`Route files changed: ${routeChanges.join(', ')}`);
+    ? pass(`No app route files changed in commit diff (${diffRange}).`)
+    : fail(`Route files changed in commit diff (${diffRange}): ${routeChanges.join(', ')}`);
 
-  const newParentRoutes = changed.filter((file) => /^app\/\(parent\)\//.test(file));
-  const newChildRoutes = changed.filter((file) => /^app\/\(child\)\//.test(file));
+  const parentRouteChanges = changed.filter((file) => /^app\/\(parent\)\//.test(file));
+  const childRouteChanges = changed.filter((file) => /^app\/\(child\)\//.test(file));
 
-  newParentRoutes.length === 0 ? pass('No parent route changes detected.') : fail(`Parent route changes detected: ${newParentRoutes.join(', ')}`);
-  newChildRoutes.length === 0 ? pass('No child route changes detected.') : fail(`Child route changes detected: ${newChildRoutes.join(', ')}`);
+  parentRouteChanges.length === 0
+    ? pass(`No parent route changes detected in commit diff (${diffRange}).`)
+    : fail(`Parent route changes detected in commit diff (${diffRange}): ${parentRouteChanges.join(', ')}`);
+
+  childRouteChanges.length === 0
+    ? pass(`No child route changes detected in commit diff (${diffRange}).`)
+    : fail(`Child route changes detected in commit diff (${diffRange}): ${childRouteChanges.join(', ')}`);
 }
 
 const inventoryPath = 'src/services/parentTrustCopyInventoryService.ts';
