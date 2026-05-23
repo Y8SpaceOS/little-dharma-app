@@ -153,4 +153,19 @@ describe('story runtime hardening', () => {
     const visible = Object.keys(completions).filter((slug) => known.has(slug));
     expect(visible).toEqual(['krishna-shares-butter']);
   });
+
+  it('journeys/story world/treasures modules import without throwing', async () => {
+    await expect(import('@/services/journeys')).resolves.toBeTruthy();
+    await expect(import('@/data/storyWorld')).resolves.toBeTruthy();
+    await expect(import('../../app/(child)/treasures')).resolves.toBeTruthy();
+  });
+
+  it('returns [] fallback when vrindavan seed export is missing at runtime', async () => {
+    vi.resetModules();
+    vi.doMock('@/data/seed/vrindavan', () => ({ vrindavanStoryPackets: undefined }));
+    const { getVrindavanJourneyPath: getFallbackPath } = await import('@/services/journeys');
+    expect(getFallbackPath()).toEqual([]);
+    vi.doUnmock('@/data/seed/vrindavan');
+    vi.resetModules();
+  });
 });
