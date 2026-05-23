@@ -43,7 +43,8 @@
     "validate:audio-entry-trust-microcopy-v1": "node scripts/validate-audio-entry-trust-microcopy-v1.mjs",
     "validate:parent-reflection-prompt-copy-v1": "node scripts/validate-parent-reflection-prompt-copy-v1.mjs",
     "validate:parent-weekly-summary-copy-polish-v1": "node scripts/validate-parent-weekly-summary-copy-polish-v1.mjs",
-    "validate:parent-controls-journey-settings-copy-v1": "node scripts/validate-parent-controls-journey-settings-copy-v1.mjs"
+    "validate:parent-controls-journey-settings-copy-v1": "node scripts/validate-parent-controls-journey-settings-copy-v1.mjs",
+    "validate:my-treasures-trust-copy-v1": "node scripts/validate-my-treasures-trust-copy-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
