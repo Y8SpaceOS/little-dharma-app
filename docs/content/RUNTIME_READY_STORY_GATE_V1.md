@@ -116,4 +116,4 @@ Does not add stories/packs/routes or promote qa_ready to runtime-ready.
 PR #157 introduces runtime-ready gate contract and validation-only behavior with no runtime mutations.
 
 ## PR #207 target alignment
-Gate report counter impact includes `pr207RuntimeReadyTarget` to keep readiness work aligned to PR #207.
+Gate report counter impact includes `pr207RuntimeReadyTarget: 450` to keep readiness work aligned to PR #207 (450+ runtime-ready stories).
