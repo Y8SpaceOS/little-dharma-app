@@ -32,10 +32,20 @@ if (src.includes('titles.slice(0,45).map')) fail('runtime candidates use generat
 const moduloSignals = ['[i%5]','[i % 5]','[i%10]','[i % 10]','% 5','% 10'];
 if (moduloSignals.some((m)=>src.includes(m) && src.includes('runtimeEntries'))) fail('runtime candidates include modulo-token generation signals'); else pass('no modulo-token shell generation in runtime entries');
 
+
+if (/Krishna childhood moment\s*\d+/i.test(src) || /krishna childhood moment \d+/i.test(src)) fail('generic Krishna childhood moment numbered placeholder found'); else pass('no numbered Krishna childhood moment placeholders');
+if (/specific_krishna_childhood_event_\d+/i.test(src)) pass('specific event ids used, no generic moment placeholders');
+
+const runtimeBlock = src.split('const runtimeEntries: AuthoredRuntimeEntry[] = [')[1]?.split('];')[0] ?? '';
+const runtimeBanned = ['begins with a clear moment','each make a caring choice','moves the story forward','named places, friends, and family actions','daily village life','the story ends with a practical value','children can imitate','is at the heart of','respond with care, naming the moment','the event unfolds with concrete details','not rumor or fear','the scene closes with gratitude','gentle lesson for gokul families','is narrated in a warm devotional tone with clear references'];
+for (const phrase of runtimeBanned) if (runtimeBlock.toLowerCase().includes(phrase)) fail(`runtime candidate generic phrase found: ${phrase}`);
+
+if (runtimeBlock.includes('.map(') || runtimeBlock.includes('titles.slice(0,45).map') || runtimeBlock.includes('titles.map(')) fail('runtime entries generated from map/slice map'); else pass('runtime entries authored as explicit objects');
+
 const mustStrings = ['parentSourceContext','parentDiscussionPrompt','reflectionPrompt','durationMinutes','ageBands','primaryValue','secondaryValues','characters','narrationScript','voiceDirection','pronunciationNotes','pacingNotes','sacredRespectNotes'];
 for (const s of mustStrings) if (src.includes(s)) pass(`required field pattern present: ${s}`); else fail(`required field pattern missing: ${s}`);
 
-const banned = ['story library','leaderboard','achievement','unlock','coins','began with loving care','guided the moment gently','krishna responded with','by evening in','is at the heart of','respond with care, naming the moment','the event unfolds with concrete details','not rumor or fear','the scene closes with gratitude','gentle lesson for gokul families','is narrated in a warm devotional tone with clear references'];
+const banned = ['story library','leaderboard','achievement','unlock','coins','begins with a clear moment','each make a caring choice','moves the story forward','named places, friends, and family actions','daily village life','the story ends with a practical value','children can imitate','is at the heart of','respond with care, naming the moment','the event unfolds with concrete details','not rumor or fear','the scene closes with gratitude','gentle lesson for gokul families','is narrated in a warm devotional tone with clear references'];
 const lsrc = src.toLowerCase();
 for (const b of banned) if (lsrc.includes(b)) fail(`banned language found: ${b}`);
 
@@ -48,6 +58,7 @@ if (repeatedPanels) fail('too many repeated panel-opening patterns'); else pass(
 const narrationMatches = [...src.matchAll(/narrationScript: `([^`]+)`/g)].map((m) => m[1].toLowerCase().split(' ').slice(0,5).join(' '));
 const narrCount = new Map(); narrationMatches.forEach((k)=>narrCount.set(k,(narrCount.get(k)||0)+1));
 if ([...narrCount.values()].some((n)=>n>6)) fail('too many repeated narration openings'); else pass('narration diversity guard passed');
+if (/retold as a krishna childhood micro-story with specific people, place, and event details\./i.test(runtimeBlock) && (runtimeBlock.match(/retold as a krishna childhood micro-story with specific people, place, and event details\./ig)||[]).length > 10) warn('summaries are repetitive though explicit');
 
 if ((src.match(/journeyId: 'krishna-childhood-pack-1'/g) || []).length > 0) pass('canonical journey referenced'); else fail('canonical journey mapping missing');
 if (registry.includes('krishnaChildhoodExpansionRecoveryPackV1StoryPack')) pass('pack registered in content registry'); else fail('pack not registered in content registry');
