@@ -13,7 +13,7 @@ This pack includes audio-script candidates that satisfy required audioScript met
 Deliver 100 indexed Ramayana story experiences with staged quality readiness.
 
 ## What this pack adds
-100 indexed stories, 40 runtime-ready candidates, and 25 audio-script-ready candidates mapped to Ramayana Journey / ramayana_journey.
+100 indexed stories, 40 QA-staged runtime candidates with complete story panels, and 25 audio-script-ready candidates mapped to canonical Ramayana Journey / ramayana_journey.
 
 ## What this pack does not add
 No route/UI/backend/telemetry/sharing/notification/AI/audio-playback changes.
@@ -27,7 +27,7 @@ No route/UI/backend/telemetry/sharing/notification/AI/audio-playback changes.
 25
 
 ## Ramayana Journey mapping
-All stories map to `journeyId: ramayana-expansion-recovery-pack-v1` with unique journeyOrder 1..100.
+All stories map to canonical `journeyId: ramayana-journey-pack-1` with unique expansion journeyOrder values for this pack.
 
 ## Story World category mapping
 All stories map to `primaryCategoryId: ramayana_journey` and secondary `ramayana_journey`.
@@ -45,19 +45,19 @@ Sacred characters and concepts are handled with devotional respect, no parody, n
 Non-graphic, non-revenge, low-intensity retelling language.
 
 ## Parent note strategy
-Runtime candidates include parentNote.sourceContext and parent discussion prompts.
+Runtime candidates include story-specific parentNote.sourceContext and discussion prompts tied to each arc moment.
 
 ## Reflection prompt strategy
 Runtime candidates include reflection prompts tied to daily family practice.
 
 ## Audio script strategy
-25 candidates include complete narration, voice direction, pronunciation, and pacing notes.
+25 candidates include story-specific narration, voice direction, pronunciation, and pacing notes.
 
 ## Pronunciation strategy
 Explicit pronunciation guidance includes Rama, Sita, Lakshmana, Hanuman, Ayodhya, Vishwamitra, Janaka, Mithila, Dandaka, Kishkindha, Lanka, Ravana, Vibhishana.
 
 ## Runtime gate compatibility
-Runtime eligibility remains gate-driven; no resolver bypass.
+Runtime eligibility remains gate-driven; candidates stay `qa_ready` until quality and resolver gates approve runtime promotion.
 
 ## Audio gate compatibility
 Audio candidates follow Audio-Ready Script Gate v1 blocking/quality expectations.
