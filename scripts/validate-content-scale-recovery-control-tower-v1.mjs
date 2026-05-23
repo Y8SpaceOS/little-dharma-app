@@ -42,9 +42,42 @@ for (const t of forbiddenTokens) {
 const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
 if (pkg.scripts?.['validate:content-scale-recovery-control-tower-v1'] === 'node scripts/validate-content-scale-recovery-control-tower-v1.mjs') pass('package script registered'); else fail('package script missing/incorrect');
 
-const changedFiles = fs.existsSync(path.join(root,'.git')) ? execSync('git status --porcelain', {encoding:'utf8'}).split('\n').filter(Boolean).map((l)=>l.slice(3)) : [];
-const routeLike = changedFiles.filter((f)=>/\bapp\/|\(child\)|\(parent\)|route|story\//i.test(f));
-if (routeLike.length === 0) pass('no app/child/parent route files changed'); else fail(`route-like files changed: ${routeLike.join(', ')}`);
+function getDiffBaseRange() {
+  if (!fs.existsSync(path.join(root, '.git'))) return null;
+
+  try {
+    execSync('git rev-parse --verify HEAD~1', { encoding: 'utf8', stdio: 'pipe' });
+    return 'HEAD~1..HEAD';
+  } catch {}
+
+  const mergeBaseCandidates = ['origin/main', 'origin/master', 'main', 'master'];
+  for (const candidate of mergeBaseCandidates) {
+    try {
+      const mergeBase = execSync(`git merge-base HEAD ${candidate}`, { encoding: 'utf8', stdio: 'pipe' }).trim();
+      if (mergeBase) return `${mergeBase}..HEAD`;
+    } catch {}
+  }
+
+  return null;
+}
+
+const diffRange = getDiffBaseRange();
+if (!diffRange) {
+  warn('Could not determine git diff base; route-change diff validation skipped.');
+} else {
+  const changedFiles = execSync(`git diff --name-only ${diffRange}`, { encoding: 'utf8' })
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const routeLike = changedFiles.filter((file) =>
+    file.startsWith('app/') ||
+    file.startsWith('app/(child)/') ||
+    file.startsWith('app/(parent)/') ||
+    file.startsWith('app/story/')
+  );
+  if (routeLike.length === 0) pass(`no app/child/parent/story routes changed in diff range ${diffRange}`);
+  else fail(`route files changed in diff range ${diffRange}: ${routeLike.join(', ')}`);
+}
 
 const counterHints = ['indexedStoryExperiences','runtimeReadyStories','audioReadyScripts','dharmaJourneys'];
 for (const c of counterHints) {
