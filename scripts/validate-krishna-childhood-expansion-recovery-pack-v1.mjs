@@ -27,10 +27,15 @@ if (src.includes("status: runtime ? 'qa_ready' : 'indexed'")) pass('runtime cand
 if (src.includes("journeyId: 'krishna-childhood-pack-1'")) pass('canonical journey mapping found'); else fail('canonical journey mapping missing');
 if (src.includes("primaryCategoryId: 'krishna_stories'")) pass('category mapping found'); else fail('category mapping missing');
 
+
+if (src.includes('titles.slice(0,45).map')) fail('runtime candidates use generated map shell pattern'); else pass('runtime candidates are not map-generated from titles.slice');
+const moduloSignals = ['[i%5]','[i % 5]','[i%10]','[i % 10]','% 5','% 10'];
+if (moduloSignals.some((m)=>src.includes(m) && src.includes('runtimeEntries'))) fail('runtime candidates include modulo-token generation signals'); else pass('no modulo-token shell generation in runtime entries');
+
 const mustStrings = ['parentSourceContext','parentDiscussionPrompt','reflectionPrompt','durationMinutes','ageBands','primaryValue','secondaryValues','characters','narrationScript','voiceDirection','pronunciationNotes','pacingNotes','sacredRespectNotes'];
 for (const s of mustStrings) if (src.includes(s)) pass(`required field pattern present: ${s}`); else fail(`required field pattern missing: ${s}`);
 
-const banned = ['story library','leaderboard','achievement','unlock','coins'];
+const banned = ['story library','leaderboard','achievement','unlock','coins','began with loving care','guided the moment gently','krishna responded with','by evening in'];
 const lsrc = src.toLowerCase();
 for (const b of banned) if (lsrc.includes(b)) fail(`banned language found: ${b}`);
 
@@ -48,7 +53,16 @@ if ((src.match(/journeyId: 'krishna-childhood-pack-1'/g) || []).length > 0) pass
 if (registry.includes('krishnaChildhoodExpansionRecoveryPackV1StoryPack')) pass('pack registered in content registry'); else fail('pack not registered in content registry');
 
 try {
-  const changed = execSync('git diff --name-only', { encoding: 'utf8' }).trim().split('\n').filter(Boolean);
+  let changedRaw = '';
+  try { changedRaw = execSync('git diff --name-only HEAD~1..HEAD', { encoding: 'utf8' }).trim(); } catch {}
+  if (!changedRaw) {
+    try {
+      let base = '';
+      try { base = execSync('git merge-base HEAD origin/main', { encoding: 'utf8' }).trim(); } catch { base = execSync('git merge-base HEAD main', { encoding: 'utf8' }).trim(); }
+      changedRaw = execSync(`git diff --name-only ${base}..HEAD`, { encoding: 'utf8' }).trim();
+    } catch {}
+  }
+  const changed = changedRaw.split('\n').filter(Boolean);
   if (changed.some((f) => f.match(/\.(mp3|wav|m4a|aac|ogg)$/i))) fail('audio files changed'); else pass('no audio files changed');
   const routeChanges = changed.filter((f) => f.startsWith('app/') || f.includes('/routes/'));
   if (routeChanges.length) fail(`route files changed: ${routeChanges.join(', ')}`); else pass('no route files changed');

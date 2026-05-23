@@ -1,4 +1,4 @@
-# PR #161: Krishna Childhood Expansion Recovery Pack v1
+# PR #161 Sprint delivered via GitHub PR #162: Krishna Childhood Expansion Recovery Pack v1
 
 ## PR title and purpose
 Deliver a recovery-aligned Krishna Childhood content expansion with 120 indexed story experiences, including 45 QA-staged runtime candidates and 30 audio-script-ready candidates.
@@ -118,7 +118,7 @@ Does not alter app routes, resolver logic, progression logic, or service-level r
 - PR #162: Ganesha + Hanuman Expansion Pack v1
 - PR #163: Bedtime + Values Expansion Pack v1
 
-## Final PR #161 readiness statement
+## Final PR #161 sprint readiness statement (implemented in PR #162)
 This pack is structured for staged rollout and validation under existing gates.
 
 ## PR #207 target alignment
