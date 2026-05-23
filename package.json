@@ -46,7 +46,8 @@
     "validate:parent-controls-journey-settings-copy-v1": "node scripts/validate-parent-controls-journey-settings-copy-v1.mjs",
     "validate:my-treasures-trust-copy-v1": "node scripts/validate-my-treasures-trust-copy-v1.mjs",
     "validate:story-world-empty-coming-soon-trust-copy-v1": "node scripts/validate-story-world-empty-coming-soon-trust-copy-v1.mjs",
-    "validate:story-reader-gentle-pace-copy-v1": "node scripts/validate-story-reader-gentle-pace-copy-v1.mjs"
+    "validate:story-reader-gentle-pace-copy-v1": "node scripts/validate-story-reader-gentle-pace-copy-v1.mjs",
+    "validate:parent-trust-copy-inventory-v1": "node scripts/validate-parent-trust-copy-inventory-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
