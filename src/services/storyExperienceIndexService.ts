@@ -63,9 +63,9 @@ function mapJourneyStatus(entry: { journeyId?: string; journeyOrder?: number; is
 }
 
 function mapStatus(entry: { readinessStatus: StoryExperienceReadinessStatus; audioStatus: StoryExperienceAudioStatus; isPublishedLocal: boolean }): StoryExperienceStatus {
-  if (entry.isPublishedLocal) return 'published_local';
   if (entry.audioStatus === 'script_ready' || entry.audioStatus === 'audio_ready' || entry.audioStatus === 'audio_available') return 'audio_script_ready';
   if (entry.readinessStatus === 'runtime_ready') return 'runtime_ready';
+  if (entry.isPublishedLocal) return 'published_local';
   if (entry.readinessStatus === 'qa_ready') return 'qa_ready';
   return 'indexed';
 }
@@ -77,11 +77,12 @@ export function getStoryExperienceIndexEntries(): StoryExperienceIndexEntry[] {
     const readinessStatus = mapReadiness(story, runtimeEligibility.canRender);
     const audioStatus = mapAudioStatus(story);
     const hasAudioScript = audioStatus === 'script_ready' || audioStatus === 'audio_ready' || audioStatus === 'audio_available';
-    const isPublishedLocal = story.status === 'runtime_ready' || story.status === 'available' || story.status === 'qa_ready';
+    const isPublishedLocal = story.status === 'runtime_ready' || story.status === 'available' || runtimeEligibility.canRender;
     const limitations = [
       'Category mapping is inferred from storyPackId when no explicit Story World category taxonomy field exists.',
       'Audio script readiness uses conservative narrationScriptStatus mapping and does not infer from placeholders.',
-      'Journey coverage depends on current journeyId and journeyOrder metadata in local registry stories.'
+      'Journey coverage depends on current journeyId and journeyOrder metadata in local registry stories.',
+      'Published-local counting excludes qa_ready-only status unless resolver-confirmed runtime-eligible.'
     ];
 
     return {

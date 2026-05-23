@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { execSync } from 'node:child_process';
 
 const root = process.cwd();
 const req = [
@@ -28,17 +29,28 @@ const pkg = JSON.parse(fs.readFileSync('package.json','utf8'));
 service.includes('contentRegistryStories')&&service.includes('contentRegistryStoryPacks')?pass('service uses content registry'):fail('service must use content registry');
 service.includes('getRuntimeStoryEligibility')&&service.includes('canRender')?pass('service uses Runtime Story Resolver eligibility'):fail('resolver eligibility integration missing');
 (service.includes('confidenceNotes')&&service.includes('limitations'))?pass('confidence/limitation notes present'):fail('confidence/limitation notes missing');
+service.includes("story.status === 'qa_ready' ||") ? fail('qa_ready must not be directly counted as published_local') : pass('qa_ready is not directly counted as published_local');
 ['AsyncStorage','markStoryComplete','markJourneyStoryCompleted','setJourneyProgress','pruneStoryCompletions','getAllStoryCompletions','getAllJourneyProgress'].forEach((b)=>service.includes(b)?fail(`forbidden usage: ${b}`):pass(`forbidden usage absent: ${b}`));
 ['supabase','fetch(','axios','notification','share','whatsapp','sms','email','analytics','telemetry','reward','gamification','ai '].forEach((k)=>service.toLowerCase().includes(k)?fail(`forbidden impl hint in service: ${k}`):pass(`forbidden impl hint absent: ${k}`));
 ['PR #207 target alignment','No backend/no tracking assumptions','No notifications/no sharing assumptions','No AI personalization assumptions','No reward/gamification assumptions','Runtime behavior preservation rules','Story completion behavior preservation rules','Journey progress behavior preservation rules','Story reader/audio preservation rules','PR #156: Bulk Content Import Pipeline v2','PR #157: Runtime-Ready Story Gate v1'].forEach((h)=>docs.includes(h)?pass(`docs section: ${h}`):fail(`docs missing: ${h}`));
 pkg.scripts?.['validate:story-experience-index-model-v1']=== 'node scripts/validate-story-experience-index-model-v1.mjs' ? pass('package script registered'): fail('package script missing');
 
-pass('no route changes detected by static validator scope (enforced by allowed-file policy).');
+const changedFiles = getChangedFiles();
+const forbiddenRoutePrefixes = ['app/', 'app/(child)/', 'app/(parent)/', 'app/story/'];
+const routeChanges = changedFiles.filter((file) => forbiddenRoutePrefixes.some((prefix) => file.startsWith(prefix)));
+if (routeChanges.length > 0) {
+  fail(`route changes detected in diff base: ${routeChanges.join(', ')}`);
+} else {
+  pass('no route changes detected in commit diff');
+}
 
 try {
   const mod = await import(pathToFileURL(path.join(root,'src/services/storyExperienceIndexService.ts')).href);
   const counters = mod.getStoryExperienceIndexCounters();
   console.log('INFO counters', counters);
+  if (counters.publishedLocalStoryExperiences > counters.runtimeReadyStoryExperiences) {
+    warn('published-local count exceeds runtime-ready count; verify repo-defined reasoning is documented in limitations/confidence notes.');
+  }
   warn('Some counts may be low-confidence while category taxonomy remains inferred from pack IDs.');
 } catch {
   warn('Could not print counters directly from TS module in validator runtime.');
@@ -48,3 +60,30 @@ if (failed) process.exit(1);
 pass('Story Experience Index Model v1 validation complete');
 
 function pathToFileURL(p){ return new URL(`file://${p}`); }
+
+function getChangedFiles() {
+  const tryCmd = (cmd) => {
+    try {
+      return execSync(cmd, { cwd: root, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+    } catch {
+      return '';
+    }
+  };
+
+  const hasHead1 = tryCmd('git rev-parse --verify HEAD~1');
+  if (hasHead1) {
+    const out = tryCmd('git diff --name-only HEAD~1..HEAD');
+    if (out) return out.split('\n').map((s) => s.trim()).filter(Boolean);
+    return [];
+  }
+
+  const baseMain = tryCmd('git merge-base HEAD main') || tryCmd('git merge-base HEAD master');
+  if (baseMain) {
+    const out = tryCmd(`git diff --name-only ${baseMain}..HEAD`);
+    if (out) return out.split('\n').map((s) => s.trim()).filter(Boolean);
+    return [];
+  }
+
+  warn('Unable to determine git diff base for route-change guard; skipping diff route check.');
+  return [];
+}
