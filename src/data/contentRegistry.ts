@@ -3,6 +3,7 @@ import { vrindavanStoryPackets } from '@/data/seed/vrindavan';
 import { ramayanaPack1Journey, ramayanaPack1Stories, ramayanaPack1StoryPack } from '@/data/ramayanaPack1Registry';
 import { krishnaChildhoodPack1Journey, krishnaChildhoodPack1Stories, krishnaChildhoodPack1StoryPack } from '@/data/krishnaChildhoodPack1Registry';
 import { ganeshaWisdomPack1Journey, ganeshaWisdomPack1Stories, ganeshaWisdomPack1StoryPack } from '@/data/ganeshaWisdomPack1Registry';
+import { ramayanaExpansionRecoveryPackV1Stories, ramayanaExpansionRecoveryPackV1StoryPack } from '@/data/ramayanaExpansionRecoveryPackV1';
 import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 
 export const contentRegistryVersion = 'pr119-content-registry-v1';
@@ -11,7 +12,7 @@ const vrindavanRegistryStories: Story[] = vrindavanStoryPackets.map((packet, ind
   mapVrindavanPacketToStoryModelV2(packet, index)
 );
 
-export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories, ...krishnaChildhoodPack1Stories, ...ganeshaWisdomPack1Stories];
+export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories, ...krishnaChildhoodPack1Stories, ...ganeshaWisdomPack1Stories, ...ramayanaExpansionRecoveryPackV1Stories];
 
 export const contentRegistryStoriesById: Record<string, Story> = Object.fromEntries(
   contentRegistryStories.map((story) => [story.id, story])
@@ -40,7 +41,8 @@ export const contentRegistryStoryPacks: StoryPack[] = [
   },
   ramayanaPack1StoryPack,
   krishnaChildhoodPack1StoryPack,
-  ganeshaWisdomPack1StoryPack
+  ganeshaWisdomPack1StoryPack,
+  ramayanaExpansionRecoveryPackV1StoryPack
 ];
 
 export const contentRegistryStoryPacksById: Record<string, StoryPack> = Object.fromEntries(
@@ -96,6 +98,7 @@ export function getContentRegistryCoverageSummary() {
     registeredRamayanaPack1Stories: ramayanaPack1Stories.length,
     registeredKrishnaChildhoodPack1Stories: krishnaChildhoodPack1Stories.length,
     registeredGaneshaWisdomPack1Stories: ganeshaWisdomPack1Stories.length,
+    registeredRamayanaExpansionRecoveryPackV1Stories: ramayanaExpansionRecoveryPackV1Stories.length,
     registeredStoryPacks: contentRegistryStoryPacks.length,
     registeredJourneys: contentRegistryJourneys.length,
     missingStoryIds,
