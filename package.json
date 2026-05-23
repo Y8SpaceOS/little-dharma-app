@@ -54,7 +54,8 @@
     "validate:bulk-content-import-pipeline-v2": "node scripts/validate-bulk-content-import-pipeline-v2.mjs",
     "validate:runtime-ready-story-gate-v1": "node scripts/validate-runtime-ready-story-gate-v1.mjs",
     "validate:audio-ready-script-gate-v1": "node scripts/validate-audio-ready-script-gate-v1.mjs",
-    "validate:ramayana-expansion-recovery-pack-v1": "node scripts/validate-ramayana-expansion-recovery-pack-v1.mjs"
+    "validate:ramayana-expansion-recovery-pack-v1": "node scripts/validate-ramayana-expansion-recovery-pack-v1.mjs",
+    "validate:krishna-childhood-expansion-recovery-pack-v1": "node scripts/validate-krishna-childhood-expansion-recovery-pack-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
