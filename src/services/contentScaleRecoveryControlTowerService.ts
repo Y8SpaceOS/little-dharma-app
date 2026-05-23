@@ -1,6 +1,7 @@
 import { contentRegistryStoryPacks, contentRegistryStories } from '@/data/contentRegistry';
 import { getDharmaJourneys } from '@/services/dharmaJourneyService';
 import { getRuntimeStoryEligibility } from '@/services/runtimeStoryResolverV2';
+import { getStoryExperienceIndexCounters } from '@/services/storyExperienceIndexService';
 
 export const contentScaleRecoveryControlTowerModelVersion = 'pr154-content-scale-recovery-control-tower-v1';
 
@@ -52,8 +53,7 @@ function getCategoryCoverageModel() {
 export function getContentScaleRecoveryTargets() { return pr207Targets; }
 
 export function getContentScaleRecoveryCounters() {
-  const runtimeEligibleStories = contentRegistryStories.filter((story) => getRuntimeStoryEligibility(story).canRender);
-  const audioReadyStories = contentRegistryStories.filter((story) => story.audioMetadata.narrationScriptStatus === 'runtime_ready' || story.audioMetadata.narrationScriptStatus === 'available');
+  const storyExperienceCounters = getStoryExperienceIndexCounters();
   const journeys = getDharmaJourneys();
   const strongJourneys = journeys.filter((j) => j.isRuntimeAvailable && j.totalStories >= 8);
   const categoryCoverageModel = getCategoryCoverageModel();
@@ -61,9 +61,9 @@ export function getContentScaleRecoveryCounters() {
   const categoriesComingSoon = categoryCoverageModel.categoryCoverage.filter((category) => !category.hasRuntimeReadyContent).map((category) => category.name);
 
   return {
-    indexedStoryExperiences: counter('indexedStoryExperiences', contentRegistryStories.length, 'high', ['src/data/contentRegistry.ts']),
-    runtimeReadyStories: counter('runtimeReadyStories', runtimeEligibleStories.length, 'high', ['src/data/contentRegistry.ts', 'src/services/runtimeStoryResolverV2.ts']),
-    audioReadyScripts: counter('audioReadyScripts', audioReadyStories.length, 'high', ['src/data/contentRegistry.ts']),
+    indexedStoryExperiences: counter('indexedStoryExperiences', storyExperienceCounters.indexedStoryExperiences, 'high', ['src/services/storyExperienceIndexService.ts', 'src/data/contentRegistry.ts']),
+    runtimeReadyStories: counter('runtimeReadyStories', storyExperienceCounters.runtimeReadyStoryExperiences, 'high', ['src/services/storyExperienceIndexService.ts', 'src/services/runtimeStoryResolverV2.ts', 'src/data/contentRegistry.ts']),
+    audioReadyScripts: counter('audioReadyScripts', storyExperienceCounters.audioScriptReadyStoryExperiences, 'medium', ['src/services/storyExperienceIndexService.ts', 'src/data/contentRegistry.ts'], 'Audio script readiness is conservatively mapped from current narrationScriptStatus values.'),
     dharmaJourneys: counter('dharmaJourneys', journeys.length, 'high', ['src/services/dharmaJourneyService.ts', 'src/data/storyWorld.ts']),
     strongDharmaJourneys: counter('strongDharmaJourneys', strongJourneys.length, 'medium', ['src/services/dharmaJourneyService.ts'], 'Strength is conservatively inferred as runtime-available with at least 8 indexed stories.'),
     storyWorldCategories: counter('storyWorldCategories', requiredCategoryCoverage.length, 'medium', ['src/data/storyWorld.ts', 'src/services/storyWorldBrowseService.ts'], 'Detection is roadmap-category based rather than strict schema-mapped taxonomy.'),

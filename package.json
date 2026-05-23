@@ -49,7 +49,8 @@
     "validate:story-reader-gentle-pace-copy-v1": "node scripts/validate-story-reader-gentle-pace-copy-v1.mjs",
     "validate:parent-trust-copy-inventory-v1": "node scripts/validate-parent-trust-copy-inventory-v1.mjs",
     "validate:parent-facing-copy-snapshot-v1": "node scripts/validate-parent-facing-copy-snapshot-v1.mjs",
-    "validate:content-scale-recovery-control-tower-v1": "node scripts/validate-content-scale-recovery-control-tower-v1.mjs"
+    "validate:content-scale-recovery-control-tower-v1": "node scripts/validate-content-scale-recovery-control-tower-v1.mjs",
+    "validate:story-experience-index-model-v1": "node scripts/validate-story-experience-index-model-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
