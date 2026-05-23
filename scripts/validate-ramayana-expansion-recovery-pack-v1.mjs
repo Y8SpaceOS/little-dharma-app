@@ -3,6 +3,7 @@ import path from 'node:path';
 import { execSync } from 'node:child_process';
 
 const src = fs.readFileSync(path.join(process.cwd(),'src/data/ramayanaExpansionRecoveryPackV1.ts'),'utf8');
+const registrySrc = fs.readFileSync(path.join(process.cwd(),'src/data/contentRegistry.ts'),'utf8');
 const doc = path.join(process.cwd(),'docs/content/RAMAYANA_EXPANSION_RECOVERY_PACK_V1.md');
 const fail=(m)=>{console.error(`FAIL ${m}`);process.exitCode=1}; const pass=(m)=>console.log(`PASS ${m}`);
 if(!fs.existsSync(doc)) fail('doc missing'); else pass('doc exists');
@@ -13,6 +14,13 @@ if(src.includes("status: runtimeCandidate ? 'qa_ready' : 'indexed'")) pass('runt
 const banned=['the day begins with a thoughtful choice','a challenge appears','with patience and cooperation','by sunset','at the start of this ramayana moment','dharma-led response'];
 const lc=src.toLowerCase(); for(const t of banned){ if(lc.includes(t)) fail(`generic skeleton found: ${t}`);} pass('no banned generic skeleton phrases');
 if(!src.includes("journeyId: 'ramayana-journey-pack-1'")) fail('canonical journey mapping missing'); else pass('canonical journey mapping present');
+
+const journeyRefs = [...registrySrc.matchAll(/([a-zA-Z0-9]+Journey)/g)].map((m) => m[1]);
+const refCounts = new Map();
+journeyRefs.forEach((j) => refCounts.set(j, (refCounts.get(j) || 0) + 1));
+if ((refCounts.get('ramayanaExpansionRecoveryPackV1Journey') || 0) > 0) fail('expansion journey should not be separately registered in contentRegistryJourneys');
+else pass('no duplicate canonical Ramayana journey registration from expansion pack');
+
 const openerMatches=[...src.matchAll(/\[`']([^`'\n]{20,120})[,\]]/g)].map(m=>m[1].toLowerCase().trim());
 const openingCounts=new Map(); for(const o of openerMatches){ const k=o.split(' ').slice(0,4).join(' '); openingCounts.set(k,(openingCounts.get(k)||0)+1);} 
 const repeated=[...openingCounts.entries()].filter(([,v])=>v>6); if(repeated.length) fail(`too many repeated panel openings: ${repeated.map(([k,v])=>`${k}:${v}`).join('; ')}`); else pass('panel opening diversity pass');
