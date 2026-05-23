@@ -12,6 +12,10 @@ import {
   type StoryCompletionRecord
 } from '@/lib/storyProgress';
 import { getVrindavanJourneyPath } from '@/services/journeys';
+import {
+  buildMyTreasuresTrustCopy,
+  getMyTreasuresMemoryCopy,
+} from '@/services/myTreasuresTrustCopyService';
 
 function TreasuresScreenContent() {
   const [completions, setCompletions] = useState<StoryCompletionRecord>({});
@@ -79,6 +83,8 @@ function TreasuresScreenContent() {
     return earnedTreasures[earnedTreasures.length - 1] ?? null;
   }, [completions, earnedTreasures]);
 
+  const trustCopy = useMemo(() => buildMyTreasuresTrustCopy(), []);
+
   const groupedByValue = useMemo(() => {
     const sections = new Map<string, { heading: string; icon: string; cards: typeof earnedTreasures }>();
 
@@ -117,7 +123,13 @@ function TreasuresScreenContent() {
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.title}>My Treasures ✨</Text>
-        <Text style={styles.subtitle}>Your Story Memories and values are held here with care.</Text>
+        <Text style={styles.subtitle}>{getMyTreasuresMemoryCopy()}</Text>
+
+        <View style={styles.trustCard} accessibilityLabel={trustCopy.accessibilityLabel} accessibilityHint={trustCopy.accessibilityHint}>
+          {trustCopy.microcopyBullets.map((line) => (
+            <Text key={line} style={styles.trustCopy}>• {line}</Text>
+          ))}
+        </View>
 
         <View style={styles.heroCard}>
           {isLoading ? (
@@ -233,6 +245,8 @@ const styles = StyleSheet.create({
   title: { fontSize: 34, fontWeight: '800', color: '#50311A' },
   subtitle: { fontSize: 16, lineHeight: 22, color: '#6D4B2C' },
   heroCard: { backgroundColor: '#FFE7C2', borderRadius: 24, borderWidth: 1, borderColor: '#F5CB8D', padding: tokens.spacing.lg, gap: 8 },
+  trustCard: { backgroundColor: '#F4FBF6', borderRadius: 16, borderWidth: 1, borderColor: '#CFE7D4', padding: tokens.spacing.md, gap: 6 },
+  trustCopy: { fontSize: 14, lineHeight: 20, color: '#355D3D' },
   heroEyebrow: { fontSize: 12, letterSpacing: 1, textTransform: 'uppercase', fontWeight: '700', color: '#7A4A25' },
   heroTitle: { fontSize: 22, fontWeight: '800', color: '#4A2B17' },
   heroCopy: { fontSize: 14, lineHeight: 20, color: '#6D4B2C' },
