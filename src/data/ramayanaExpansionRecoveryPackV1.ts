@@ -16,48 +16,38 @@ type ExtendedStory = Story & {
 };
 
 type RuntimeBlueprint = {
-  title: string;
-  shortTitle: string;
-  summary: string;
-  characters: string[];
-  primaryValue: string;
-  secondaryValues: string[];
-  panels: [string, string, string, string];
-  parentContext: string;
-  discussionPrompt: string;
-  reflectionPrompt: string;
-  narrationScript: string;
+  title: string; shortTitle: string; summary: string; characters: string[]; primaryValue: string; secondaryValues: string[];
+  panels: [string, string, string, string]; parentContext: string; discussionPrompt: string; reflectionPrompt: string; narrationScript: string;
 };
 
 const arcTitles = [
-  'Ayodhya and King Dasharatha', 'The birth of Rama', 'Rama and his brothers', 'Learning from Guru Vashishta', 'Vishwamitra visits Ayodhya', 'Rama protects the sages', 'Rama and Lakshmana travel with Vishwamitra', 'The bow of Shiva', 'Sita’s swayamvara', 'Rama and Sita’s wedding', 'Life in Ayodhya', 'Kaikeyi’s boons', 'Rama accepts exile calmly', 'Sita chooses to go with Rama', 'Lakshmana’s devotion', 'The people of Ayodhya grieve', 'Bharata’s sorrow', 'Bharata keeps Rama’s sandals', 'Life in the forest', 'Meeting the sages', 'Shabari waits with devotion', 'The golden deer', 'Sita is taken to Lanka', 'Jatayu’s courage', 'Rama searches for Sita', 'Meeting Hanuman', 'Sugriva and friendship', 'Hanuman learns of Sita', 'Hanuman leaps to Lanka', 'Hanuman finds Sita', 'Sita’s courage in Ashoka Vatika', 'Hanuman brings Rama’s ring', 'Hanuman returns with hope', 'The bridge to Lanka', 'The vanaras work together', 'Vibhishana chooses dharma', 'Rama shows compassion', 'Lakshmana’s courage', 'Hanuman brings the healing herb', 'Goodness wins over pride', 'Sita returns with dignity', 'Return to Ayodhya', 'Lamps of welcome', 'Rama Rajya and responsibility', 'Truthfulness in Rama’s life', 'Sita’s strength', 'Lakshmana’s service', 'Hanuman’s humility', 'Bharata’s loyalty', 'Shabari’s patience', 'Jatayu’s sacrifice', 'Vibhishana’s courage', 'The value of keeping promises', 'The value of listening to elders', 'The value of serving family', 'The value of choosing dharma', 'The value of patience in difficulty', 'The value of friendship', 'The value of courage with kindness', 'The value of humility after success', 'Forest kindness story', 'Rama comforts others', 'Sita’s faith in difficult times', 'Hanuman speaks gently', 'Lakshmana protects with care', 'Sugriva learns responsibility', 'Angada’s courage', 'Sampati gives hope', 'The ocean crossing', 'Building together', 'Prayers before action', 'Rama’s gentle leadership', 'Hanuman remembers his strength', 'Sita keeps hope alive', 'Ravana’s pride as a warning', 'Mandodari’s wisdom', 'Vibhishana speaks truth', 'Rama forgives where possible', 'The joy of returning home', 'Diwali and Rama’s return', 'Why we light diyas', 'Why families tell Ramayana', 'Rama as a caring son', 'Sita as courage and grace', 'Hanuman as devotion and service', 'Lakshmana as loyal helper', 'Bharata as selfless brother', 'Shabari as patient devotee', 'Jatayu as brave protector', 'Vibhishana as truth-speaker', 'Choosing right over easy', 'Keeping calm during change', 'Helping without showing off', 'Listening before acting', 'Being brave without being harsh', 'Respecting promises', 'Serving with love', 'Hope during long journeys', 'Coming home with gratitude', 'The Ramayana’s gentle lessons'
+  'Ayodhya and King Dasharatha','The birth of Rama','Rama and his brothers','Learning from Guru Vashishta','Vishwamitra visits Ayodhya','Rama protects the sages','Rama and Lakshmana travel with Vishwamitra','The bow of Shiva','Sita’s swayamvara','Rama and Sita’s wedding','Life in Ayodhya','Kaikeyi’s boons','Rama accepts exile calmly','Sita chooses to go with Rama','Lakshmana’s devotion','The people of Ayodhya grieve','Bharata’s sorrow','Bharata keeps Rama’s sandals','Life in the forest','Meeting the sages','Shabari waits with devotion','The golden deer','Sita is taken to Lanka','Jatayu’s courage','Rama searches for Sita','Meeting Hanuman','Sugriva and friendship','Hanuman learns of Sita','Hanuman leaps to Lanka','Hanuman finds Sita','Sita’s courage in Ashoka Vatika','Hanuman brings Rama’s ring','Hanuman returns with hope','The bridge to Lanka','The vanaras work together','Vibhishana chooses dharma','Rama shows compassion','Lakshmana’s courage','Hanuman brings the healing herb','Goodness wins over pride','Sita returns with dignity','Return to Ayodhya','Lamps of welcome','Rama Rajya and responsibility','Truthfulness in Rama’s life','Sita’s strength','Lakshmana’s service','Hanuman’s humility','Bharata’s loyalty','Shabari’s patience','Jatayu’s sacrifice','Vibhishana’s courage','The value of keeping promises','The value of listening to elders','The value of serving family','The value of choosing dharma','The value of patience in difficulty','The value of friendship','The value of courage with kindness','The value of humility after success','Forest kindness story','Rama comforts others','Sita’s faith in difficult times','Hanuman speaks gently','Lakshmana protects with care','Sugriva learns responsibility','Angada’s courage','Sampati gives hope','The ocean crossing','Building together','Prayers before action','Rama’s gentle leadership','Hanuman remembers his strength','Sita keeps hope alive','Ravana’s pride as a warning','Mandodari’s wisdom','Vibhishana speaks truth','Rama forgives where possible','The joy of returning home','Diwali and Rama’s return','Why we light diyas','Why families tell Ramayana','Rama as a caring son','Sita as courage and grace','Hanuman as devotion and service','Lakshmana as loyal helper','Bharata as selfless brother','Shabari as patient devotee','Jatayu as brave protector','Vibhishana as truth-speaker','Choosing right over easy','Keeping calm during change','Helping without showing off','Listening before acting','Being brave without being harsh','Respecting promises','Serving with love','Hope during long journeys','Coming home with gratitude','The Ramayana’s gentle lessons'
 ] as const;
 
 const sacredNamesGuidance = 'Pronounce clearly: Rama (RAH-muh), Sita (SEE-tah), Lakshmana (LUKSH-muh-nuh), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya), Vishwamitra (VISH-wah-mih-truh), Janaka (JAH-nuh-kuh), Mithila (MIH-thih-lah), Dandaka (DUN-duh-kuh), Kishkindha (KISH-kin-dhaa), Lanka (LUN-kaa), Ravana (RAH-vuh-nuh), Vibhishana (VEE-bhee-shuh-nuh).';
 
-const runtimeBlueprints: RuntimeBlueprint[] = [
-  ...arcTitles.slice(0, 40).map((title, i) => ({
-    title,
-    shortTitle: title.split(' ').slice(0, 3).join(' '),
-    summary: `${title} retold as a complete child-safe Ramayana micro-story with dharma-led choices.`,
-    characters: ['Rama', 'Sita', 'Lakshmana', 'Hanuman', 'Family and friends'].slice(0, 3 + (i % 3)),
-    primaryValue: ['Dharma', 'Kindness', 'Patience', 'Service', 'Truthfulness'][i % 5],
-    secondaryValues: [
-      ['Humility', 'Devotion', 'Courage', 'Family Care', 'Wisdom'][i % 5],
-      ['Listening', 'Steadiness', 'Hope', 'Responsibility', 'Compassion'][i % 5]
-    ],
-    panels: [
-      `In ${title.toLowerCase()}, the day begins with a thoughtful choice and calm hearts in the Ramayana journey.`,
-      `A challenge appears, and the family listens carefully before acting so everyone feels safe and respected.`,
-      `With patience and cooperation, they choose a dharma-led response that protects dignity without harshness.`,
-      `By sunset, the moment ends in gratitude, and children can see how goodness grows through steady actions.`
-    ] as [string, string, string, string],
-    parentContext: `${title} is framed as a values-first scene with sacred respect, non-graphic language, and family warmth.`,
-    discussionPrompt: `In ${title}, which choice showed the most dharma, and how can our family practice that today?`,
-    reflectionPrompt: `What gentle action from ${title} can we repeat at home this week?`,
-    narrationScript: `${title}. At the start of this Ramayana moment, everyone pauses and listens with respect. A challenge arrives, yet no one rushes into anger. Instead, loving guidance leads each step. With patience, courage, and humility, the family chooses what is right over what is easy. The story closes with gratitude, calm hearts, and renewed hope for the next part of the journey.`
-  }))
-];
+const runtimeBlueprints: RuntimeBlueprint[] = arcTitles.slice(0, 40).map((title, i) => ({
+  title,
+  shortTitle: title.split(' ').slice(0, 3).join(' '),
+  summary: `${title} retold as a specific child-safe Ramayana micro-story with place, people, and event clarity.`,
+  characters: [
+    ['King Dasharatha','Rama','Ayodhya'],['Rama','Kausalya','Dasharatha'],['Rama','Lakshmana','Bharata'],['Guru Vashishta','Rama','Lakshmana'],['Vishwamitra','Dasharatha','Rama'],['Rama','Lakshmana','Forest sages'],['Vishwamitra','Rama','Lakshmana'],['Rama','Sita','Janaka'],['Sita','Rama','Janaka'],['Rama','Sita','Families of Mithila'],['Rama','Sita','Ayodhya families'],['Kaikeyi','Dasharatha','Rama'],['Rama','Kaikeyi','Dasharatha'],['Sita','Rama','Lakshmana'],['Lakshmana','Rama','Sita'],['Ayodhya citizens','Rama','Bharata'],['Bharata','Rama','Dasharatha'],['Bharata','Rama','Nandigrama'],['Rama','Sita','Lakshmana'],['Rama','Forest sages','Lakshmana'],['Shabari','Rama','Lakshmana'],['Rama','Sita','Lakshmana'],['Sita','Ravana','Lanka'],['Jatayu','Rama','Sita'],['Rama','Lakshmana','Forest friends'],['Hanuman','Rama','Lakshmana'],['Sugriva','Rama','Hanuman'],['Hanuman','Sugriva','Rama'],['Hanuman','Ocean','Lanka'],['Hanuman','Sita','Ashoka Vatika'],['Sita','Trijata','Hanuman'],['Hanuman','Rama','Sita'],['Hanuman','Rama','Vanara friends'],['Rama','Nala','Vanara team'],['Vanara team','Hanuman','Nila'],['Vibhishana','Rama','Ravana'],['Rama','Vibhishana','Lakshmana'],['Lakshmana','Rama','Hanuman'],['Hanuman','Sushena','Lakshmana'],['Rama','Sita','Ayodhya']
+  ][i] as string[],
+  primaryValue: ['Family Care','Gratitude','Brotherhood','Learning','Trust','Protection','Discipline','Humility','Faith','Unity','Responsibility','Duty','Calm Acceptance','Partnership','Service','Empathy','Loyalty','Steadfastness','Simplicity','Respect','Devotion','Discernment','Courage','Sacrifice','Perseverance','Friendship','Cooperation','Hope','Confidence','Sensitivity','Inner Strength','Assurance','Encouragement','Teamwork','Shared Effort','Truthfulness','Compassion','Bravery','Healing Service','Goodness'][i],
+  secondaryValues: ['Kindness','Patience'],
+  panels: [
+    [`In Ayodhya, King Dasharatha opened court and heard each family with care.`,`Temple bells welcomed Rama’s birth, and Queen Kausalya offered thanks.`,`Rama and his brothers practiced together in the palace yard.`,`Guru Vashishta began lessons under a banyan tree in Ayodhya.`,`Sage Vishwamitra arrived in Ayodhya and was welcomed by Dasharatha.`,`Forest sages asked Rama for gentle protection during sacred prayers.`,`Rama and Lakshmana walked beside Vishwamitra toward the forest hermitages.`,`At Mithila, King Janaka showed the great bow of Shiva to assembled guests.`,`In Mithila’s hall, Sita watched quietly as princes tried to lift the bow.`,`Rama and Sita stood before elders as songs filled Mithila’s courtyards.`,`Rama and Sita greeted workers and elders across Ayodhya’s markets.`,`Kaikeyi reminded Dasharatha of two old promises from a past battle.`,`Rama listened calmly when Kaikeyi announced the forest exile.`,`Sita told Rama she would join him in forest life.`,`Lakshmana packed simple tools and vowed to serve in exile.`,`Ayodhya’s people followed Rama’s chariot with tearful prayers.`,`Bharata returned and learned of Dasharatha’s passing and Rama’s exile.`,`At Chitrakoot, Bharata placed Rama’s sandals on a royal seat.`,`In Dandaka forest, Rama, Sita, and Lakshmana built a leaf hut.`,`Sages in forest hermitages welcomed Rama with blessings and guidance.`,`Shabari swept her path daily, waiting for Rama’s arrival.`,`A shining deer appeared near the forest cottage and drew Sita’s gaze.`,`Ravana carried Sita to Lanka and placed her in Ashoka Vatika.`,`Jatayu rose into the sky to stop Ravana’s chariot.`,`Rama searched riverbanks and groves calling Sita’s name.`,`At Rishyamukha hill, Hanuman met Rama in humble disguise.`,`Sugriva shared his sorrow with Rama on Kishkindha’s rocky hill.`,`Hanuman listened as Rama described Sita and gave a trusted mission.`,`Hanuman stood at the seashore, preparing for the leap to Lanka.`,`In Ashoka Vatika, Hanuman saw Sita beneath the shimshapa tree.`,`Sita sat in Ashoka Vatika, holding hope in Rama’s promise.`,`Hanuman bowed and offered Rama’s ring to Sita.`,`Hanuman returned across the ocean with Sita’s message.`,`Nala and Nila organized stones as Rama’s team began the bridge.`,`Vanara friends formed lines, passing stones and logs by hand.`,`Vibhishana advised Ravana to choose peace and return Sita.`,`Rama welcomed Vibhishana and promised fair protection.`,`Lakshmana stood steady beside Rama, guarding the camp with care.`,`Hanuman flew for the healing herb when Lakshmana was wounded.`,`Rama chose dignity and restraint as the conflict ended in Lanka.`][i],
+    [`He told young Rama that a kingdom is strongest when rulers listen first.`,`Dasharatha asked that sweets be shared with every neighborhood, rich and poor.`,`When Lakshmana missed a target, Bharata encouraged him warmly.`,`He taught that strength without wisdom can trouble others.`,`The sage requested Rama and Lakshmana’s help for peaceful rituals.`,`Rama promised safety without anger or cruelty.`,`The sage taught mantras for focus, kindness, and courage.`,`Many princes strained, but the bow would not move.`,`Rama stepped forward only after Janaka’s permission.`,`Janaka blessed the couple and honored both families.`,`Children watched as Rama stopped to help an elder carry grain.`,`The court grew silent as Dasharatha struggled with grief.`,`He bowed to Dasharatha and prepared without blame.`,`She spoke of shared dharma, not comfort alone.`,`He chose wakefulness so Rama and Sita could rest safely.`,`Rama asked everyone to return peacefully and care for one another.`,`He traveled to meet Rama, refusing the throne for himself.`,`He vowed to govern only as Rama’s trustee.`,`Sita planted herbs while Lakshmana gathered water and wood.`,`Rama heard each sage’s concern before offering help.`,`She gathered sweet berries and checked each one for ripeness.`,`Rama followed it, and the forest grew suddenly quiet.`,`She refused fear and remembered Rama’s strength and truth.`,`Though injured, Jatayu gave Rama the direction toward Lanka.`,`A clue from trees, footprints, and birds kept the brothers moving.`,`Hanuman’s respectful words eased Lakshmana’s caution and Rama’s sorrow.`,`Rama and Sugriva formed a promise of mutual support.`,`Hanuman repeated every detail so no message would be lost.`,`He remembered Jambavan’s encouragement and discovered his hidden strength.`,`He waited until she felt safe before speaking Rama’s name.`,`She protected her dignity with calm, fearless words.`,`He described Rama’s love and Lakshmana’s devotion.`,`Rama embraced Hanuman and thanked him with deep affection.`,`Each stone was set with care and coordinated rhythm.`,`Even small helpers were thanked for each contribution.`,`Ravana ignored him, but Vibhishana would not abandon dharma.`,`He judged by character, not by family ties.`,`Rama praised Lakshmana’s alertness and gentle discipline.`,`Sushena guided Hanuman toward the Sanjeevani mountain.`,`He chose compassion over pride and restored peace with humility.`][i],
+    [`A farmer left relieved after Dasharatha arranged fair grain support.`,`Families lit lamps along the Sarayu to honor the newborn prince.`,`Rama suggested they trade turns and learn each other’s strengths.`,`Rama asked how truth should guide daily speech and action.`,`Dasharatha’s concern softened when Rama answered with calm readiness.`,`Lakshmana followed Rama’s example of courage guided by discipline.`,`At night, the brothers guarded the hermitage quietly.`,`Rama lifted the bow with reverence, and the hall gasped.`,`The bow moved in Rama’s hands, and hope filled Sita’s heart.`,`Rama and Sita took vows of respect, service, and truth.`,`Ayodhya remembered that small acts of care build trust.`,`Rama comforted Kaikeyi and promised no bitterness.`,`Lakshmana saw that dharma can be firm and gentle together.`,`Rama smiled, grateful for Sita’s courage and companionship.`,`Sita thanked Lakshmana for his tireless care.`,`Their sorrow turned into prayers for Rama’s safe return.`,`At Chitrakoot, Bharata begged Rama to return and lead.`,`In Nandigrama, Bharata lived simply, keeping the sandals honored.`,`Forest neighbors shared fruit, stories, and evening prayers.`,`Sages blessed Rama for protecting peace without harshness.`,`When Rama arrived, Shabari offered berries with folded hands.`,`A cry echoed from the forest, and Sita worried for Rama.`,`In Lanka, Sita held to truth and refused Ravana’s pride.`,`Jatayu fell near a clearing, brave and faithful to dharma.`,`Meeting Kabandha and Shabari’s memory pointed Rama toward Kishkindha.`,`Hanuman carried them to Sugriva with sincerity and clarity.`,`Sugriva regained confidence after Rama defended justice.`,`The vanara search groups received clear routes and deadlines.`,`He crossed the sea with focus, prayer, and humility.`,`Hanuman offered words of reassurance, not haste.`,`She entrusted Hanuman with a message of steady hope.`,`Sita sent a jewel token and a message for Rama.`,`The vanaras cheered as hope replaced uncertainty.`,`Rama offered prayer before the next day’s work.`,`The bridge grew section by section across the ocean.`,`He walked to Rama’s camp seeking refuge in truth.`,`Rama reminded all that mercy can protect the future.`,`Lakshmana encouraged younger warriors who felt afraid.`,`Hanuman brought the mountain when time was short.`,`Those around him learned that goodness can be strong and gentle.`][i],
+    [`Rama remembered that day as his first lesson in compassionate leadership.`,`Ayodhya slept peacefully, grateful for Rama’s arrival.`,`The brothers ended the day closer, kinder, and more united.`,`The princes bowed, carrying Vashishta’s wisdom into life.`,`Rama and Lakshmana departed with blessings from Ayodhya.`,`The sages resumed prayers in safety and gratitude.`,`Rama and Lakshmana reached the next hermitage with growing confidence.`,`Sita’s swayamvara moved forward with reverence and joy.`,`Janaka blessed Sita and Rama as families celebrated.`,`Mithila and Ayodhya celebrated a union rooted in dharma.`,`Families in Ayodhya copied Rama’s kindness in their own homes.`,`The promise set the path that would test every heart.`,`The forest path began with dignity, not resentment.`,`Their shared exile became a journey of trust.`,`Lakshmana’s service brought peace to the forest home.`,`Ayodhya waited with love, not anger.`,`Rama upheld dharma, and Bharata upheld loyalty.`,`Rama’s sandals guided the kingdom in his absence.`,`Their simple life showed joy can live without luxury.`,`The forest communities felt seen, protected, and respected.`,`Rama accepted Shabari’s offering with deep affection.`,`The choice led to the next turning point in the journey.`,`Sita’s courage in Lanka became a light for all.`,`Rama honored Jatayu like a beloved elder.`,`The search became clearer, and hope returned.`,`A new friendship began that would change the journey.`,`Kishkindha gained peace through trust and friendship.`,`Hanuman set out with steady devotion and purpose.`,`Lanka appeared ahead as Hanuman prepared for careful entry.`,`Sita received Rama’s message and felt renewed strength.`,`Her courage inspired Hanuman’s return mission.`,`Hanuman left Ashoka Vatika with reverence and urgency.`,`The camp prepared wisely for the next steps.`,`The bridge stood as a sign of shared faith and effort.`,`Together they reached Lanka with unity and discipline.`,`Vibhishana chose conscience over comfort.`,`The camp grew calmer under Rama’s compassionate leadership.`,`Lakshmana’s courage strengthened everyone’s resolve.`,`Lakshmana recovered, and gratitude filled the camp.`,`The lesson endured: pride falls, but goodness endures.`][i]
+  ] as [string,string,string,string],
+  parentContext: `Story-specific retelling of ${title} with named place, characters, and dharma-centered choices.`,
+  discussionPrompt: `In ${title}, which moment best showed courage with kindness?`,
+  reflectionPrompt: `What can our family learn from ${title} today?`,
+  narrationScript: [
+    'In Ayodhya, Dasharatha shows Rama that leadership means listening with care.', 'Ayodhya celebrates Rama’s birth with lamps, prayer, and shared sweets.', 'Rama and his brothers choose teamwork over competition in the training yard.', 'Guru Vashishta teaches that wisdom must guide strength.', 'Vishwamitra’s visit brings a sacred duty and Rama’s calm acceptance.', 'Rama protects the sages so forest prayers can continue peacefully.', 'Rama and Lakshmana journey with Vishwamitra and grow in discipline.', 'At Mithila, Rama approaches Shiva’s bow with humility and reverence.', 'Sita’s swayamvara reveals patience, hope, and trust in dharma.', 'Rama and Sita’s wedding unites families in truth and service.', 'Life in Ayodhya shows Rama’s everyday kindness to all people.', 'Kaikeyi’s boons begin a painful but dharma-led turning point.', 'Rama accepts exile calmly and preserves family dignity.', 'Sita chooses exile from love, courage, and shared duty.', 'Lakshmana serves with devotion throughout forest life.', 'Ayodhya grieves yet keeps faith in Rama’s return.', 'Bharata’s sorrow becomes loyal service to dharma.', 'Bharata keeps Rama’s sandals as a sacred trust.', 'Forest life teaches simplicity, prayer, and mutual care.', 'Rama meets sages and listens to every need with respect.', 'Shabari waits in devotion and offers love with humility.', 'The golden deer draws attention and opens a difficult turn.', 'Sita is taken to Lanka yet remains courageous and steadfast.', 'Jatayu’s courage protects dharma even at great cost.', 'Rama searches for Sita with grief, love, and resolve.'
+  ][i] ?? `${title} retold with respectful detail, named places, and child-safe sacred tone.`
+}));
 
 const genericValues = ['Dharma', 'Kindness', 'Patience', 'Service', 'Truthfulness', 'Devotion', 'Humility', 'Courage'];
 
@@ -67,107 +57,36 @@ export const ramayanaExpansionRecoveryPackV1Stories: ExtendedStory[] = arcTitles
   const audioCandidate = n <= 25;
   const storyId = `ramayana-expansion-v1-${String(n).padStart(3, '0')}`;
   const runtimeBlueprint = runtimeCandidate ? runtimeBlueprints[index] : null;
-
   const primaryValue = runtimeBlueprint?.primaryValue ?? genericValues[index % genericValues.length];
   const secondaryValues = runtimeBlueprint?.secondaryValues ?? [genericValues[(index + 1) % genericValues.length], genericValues[(index + 2) % genericValues.length]];
 
   const story: ExtendedStory = {
-    id: storyId,
-    storyId,
-    slug: storyId,
-    title: arc,
+    id: storyId, storyId, slug: storyId, title: arc,
     shortTitle: runtimeBlueprint?.shortTitle ?? arc.split(' ').slice(0, 3).join(' '),
     summary: runtimeBlueprint?.summary ?? `${arc} in a respectful Ramayana index entry focused on child-safe values.`,
-    sourceTradition: 'Ramayana',
-    sourceTextOrTraditionNote: 'Respectful and simplified Ramayana retelling for family listening and reflection.',
-    storyPackId: 'ramayana-expansion-recovery-pack-v1',
-    primaryCategoryId: 'ramayana_journey',
-    secondaryCategoryIds: ['ramayana_journey'],
-    journeyId: 'ramayana-journey-pack-1',
-    journeyOrder: 100 + n,
-    ageBands: n % 3 === 0 ? ['3-5', '6-8'] : ['6-8', '9-12'],
-    recommendedAgeBand: '6-8',
-    durationMinutes: runtimeCandidate ? 7 : 5,
-    primaryValue,
-    secondaryValues,
-    characters: runtimeBlueprint?.characters ?? ['Rama', 'Sita', 'Lakshmana'],
-    panels: runtimeCandidate
-      ? runtimeBlueprint!.panels.map((text, p) => ({ id: `p${p + 1}`, title: `Moment ${p + 1}`, text }))
-      : [{ id: 'p1', title: 'Indexed Summary', text: `${arc} is indexed for Ramayana Journey expansion with respectful sacred framing.` }],
-    parentNote: runtimeCandidate
-      ? {
-          sourceContext: runtimeBlueprint!.parentContext,
-          valueExplained: `${primaryValue} is modeled through calm choices, listening, and caring action.`,
-          discussionPrompt: runtimeBlueprint!.discussionPrompt,
-          practicePrompt: 'Invite one family member to choose a gentle act of service today.',
-          cautionNote: 'Keep sacred names and scenes dignified; avoid fear-heavy framing.'
-        }
-      : {
-          sourceContext: `${arc} is indexed and awaiting deeper narrative expansion before runtime promotion.`,
-          valueExplained: 'This entry preserves values metadata for future QA enrichment.',
-          discussionPrompt: 'What value do we notice in this Ramayana moment?',
-          practicePrompt: 'Name one caring action for today.',
-          cautionNote: 'Use warm, respectful sacred language.'
-        },
-    reflectionPrompt: runtimeCandidate ? runtimeBlueprint!.reflectionPrompt : 'How does this Ramayana entry point us toward patient and kind choices?',
-    ritualPrompt: 'Take one calm breath and offer gratitude for wisdom, family, and dharma.',
-    completionBlessing: 'May this Ramayana lesson bring peace, courage, and gentle strength.',
-    sacredRespectLevel: n % 4 === 0 ? 'deity_focal' : 'sacred_story',
-    sacredRespectNotes: 'Sacred names, figures, and places are presented with devotional care and non-trivial tone.',
-    illustrationPrompt: {
-      sceneSummary: `${arc} in a warm, child-safe sacred setting with respectful expressions.`,
-      styleGuidance: 'Soft colors, calm body language, devotional respect, non-violent atmosphere.',
-      culturalGuardrails: ['Do not caricature sacred figures.', 'Avoid slapstick or over-cartoonish treatment.'],
-      deityTreatment: 'Show Rama, Sita, and Hanuman with reverence and calm dignity.',
-      avoidList: ['No graphic violence.', 'No revenge framing.', 'No game rewards, ranks, or streak cues.']
-    },
-    audioMetadata: {
-      audioAvailable: false,
-      voiceOptions: ['warm-indian-female', 'warm-indian-male'],
-      narrationScriptStatus: audioCandidate ? 'qa_ready' : 'indexed',
-      preferredVoiceStyle: 'warm-indian',
-      pacing: 'steady',
-      noMicRequired: true
-    },
+    sourceTradition: 'Ramayana', sourceTextOrTraditionNote: 'Respectful and simplified Ramayana retelling for family listening and reflection.',
+    storyPackId: 'ramayana-expansion-recovery-pack-v1', primaryCategoryId: 'ramayana_journey', secondaryCategoryIds: ['ramayana_journey'],
+    journeyId: 'ramayana-journey-pack-1', journeyOrder: 100 + n, ageBands: n % 3 === 0 ? ['3-5', '6-8'] : ['6-8', '9-12'], recommendedAgeBand: '6-8', durationMinutes: runtimeCandidate ? 7 : 5,
+    primaryValue, secondaryValues, characters: runtimeBlueprint?.characters ?? ['Rama', 'Sita', 'Lakshmana'],
+    panels: runtimeCandidate ? runtimeBlueprint!.panels.map((text, p) => ({ id: `p${p + 1}`, title: `Moment ${p + 1}`, text })) : [{ id: 'p1', title: 'Indexed Summary', text: `${arc} is indexed for Ramayana Journey expansion with respectful sacred framing.` }],
+    parentNote: runtimeCandidate ? { sourceContext: runtimeBlueprint!.parentContext, valueExplained: `${primaryValue} is modeled through specific Ramayana actions in this scene.`, discussionPrompt: runtimeBlueprint!.discussionPrompt, practicePrompt: 'Choose one gentle action inspired by this story and do it together.', cautionNote: 'Use respectful sacred framing and avoid fear-heavy language.' } : { sourceContext: `${arc} is indexed and awaiting deeper narrative expansion before runtime promotion.`, valueExplained: 'This entry preserves values metadata for future QA enrichment.', discussionPrompt: 'What value do we notice in this Ramayana moment?', practicePrompt: 'Name one caring action for today.', cautionNote: 'Use warm, respectful sacred language.' },
+    reflectionPrompt: runtimeCandidate ? runtimeBlueprint!.reflectionPrompt : 'How does this Ramayana entry point us toward patient and kind choices?', ritualPrompt: 'Take one calm breath and offer gratitude for wisdom, family, and dharma.', completionBlessing: 'May this Ramayana lesson bring peace, courage, and gentle strength.', sacredRespectLevel: n % 4 === 0 ? 'deity_focal' : 'sacred_story', sacredRespectNotes: 'Sacred names, figures, and places are presented with devotional care and non-trivial tone.',
+    illustrationPrompt: { sceneSummary: `${arc} in a warm, child-safe sacred setting with respectful expressions.`, styleGuidance: 'Soft colors, calm body language, devotional respect, non-violent atmosphere.', culturalGuardrails: ['Do not caricature sacred figures.', 'Avoid slapstick or over-cartoonish treatment.'], deityTreatment: 'Show Rama, Sita, and Hanuman with reverence and calm dignity.', avoidList: ['No graphic violence.', 'No revenge framing.', 'No game rewards, ranks, or streak cues.'] },
+    audioMetadata: { audioAvailable: false, voiceOptions: ['warm-indian-female', 'warm-indian-male'], narrationScriptStatus: audioCandidate ? 'qa_ready' : 'indexed', preferredVoiceStyle: 'warm-indian', pacing: 'steady', noMicRequired: true },
     status: runtimeCandidate ? 'qa_ready' : 'indexed'
   };
 
   if (audioCandidate) {
-    story.audioScript = {
-      narrationScript: runtimeBlueprints[index].narrationScript,
-      voiceDirection: 'Warm, calm, child-safe devotional tone. Do not imitate celebrities or deities. No child voice capture, microphone, or recording prompts.',
-      pronunciationNotes: sacredNamesGuidance,
-      pacingNotes: 'Read at a gentle family pace with pauses after each key value moment; avoid race, speed, or streak framing.',
-      audioReadinessIntent: 'ready'
-    };
+    story.audioScript = { narrationScript: runtimeBlueprints[index].narrationScript, voiceDirection: 'Warm, calm, child-safe devotional tone. Do not imitate celebrities or deities. No child voice capture, microphone, or recording prompts.', pronunciationNotes: sacredNamesGuidance, pacingNotes: 'Read at a gentle family pace with pauses after key moments; avoid race, speed, or streak framing.', audioReadinessIntent: 'ready' };
   }
 
   return story;
 });
 
 export const ramayanaExpansionRecoveryPackV1StoryPack: StoryPack = {
-  id: 'ramayana-expansion-recovery-pack-v1',
-  title: 'Ramayana Expansion Recovery Pack v1',
-  childFacingTitle: 'Ramayana Journey Expansion',
-  description: 'Recovery-aligned Ramayana expansion with indexed, QA-ready runtime candidates, and audio-script-ready candidates.',
-  sourceTradition: 'Ramayana',
-  category: 'ramayana',
-  status: 'qa_ready',
-  storyIds: ramayanaExpansionRecoveryPackV1Stories.map((story) => story.id),
-  recommendedAgeBands: ['3-5', '6-8', '9-12'],
-  contentSafetyNotes: ['Child-safe and non-graphic framing.', 'No backend, tracking, notifications, sharing, or AI personalization.'],
-  sacredRespectNotes: ['Sacred content remains respectful, non-cartoonish, and devotion-aware.']
+  id: 'ramayana-expansion-recovery-pack-v1', title: 'Ramayana Expansion Recovery Pack v1', childFacingTitle: 'Ramayana Journey Expansion', description: 'Recovery-aligned Ramayana expansion with indexed, QA-ready runtime candidates, and audio-script-ready candidates.', sourceTradition: 'Ramayana', category: 'ramayana', status: 'qa_ready', storyIds: ramayanaExpansionRecoveryPackV1Stories.map((story) => story.id), recommendedAgeBands: ['3-5', '6-8', '9-12'], contentSafetyNotes: ['Child-safe and non-graphic framing.', 'No backend, tracking, notifications, sharing, or AI personalization.'], sacredRespectNotes: ['Sacred content remains respectful, non-cartoonish, and devotion-aware.']
 };
 
 export const ramayanaExpansionRecoveryPackV1Journey: DharmaJourney = {
-  id: 'ramayana-journey-pack-1',
-  title: 'Ramayana Journey Pack 1',
-  childFacingTitle: 'Ramayana Story World Journey',
-  description: 'Expansion stories mapped into the canonical Ramayana journey path.',
-  sourceTradition: 'Ramayana',
-  recommendedAgeBands: ['3-5', '6-8', '9-12'],
-  storyIds: ramayanaExpansionRecoveryPackV1Stories.map((story) => story.id),
-  estimatedCompletionWeeks: 8,
-  status: 'qa_ready',
-  journeyType: 'guided_path'
+  id: 'ramayana-journey-pack-1', title: 'Ramayana Journey Pack 1', childFacingTitle: 'Ramayana Story World Journey', description: 'Expansion stories mapped into the canonical Ramayana journey path.', sourceTradition: 'Ramayana', recommendedAgeBands: ['3-5', '6-8', '9-12'], storyIds: ramayanaExpansionRecoveryPackV1Stories.map((story) => story.id), estimatedCompletionWeeks: 8, status: 'qa_ready', journeyType: 'guided_path'
 };
