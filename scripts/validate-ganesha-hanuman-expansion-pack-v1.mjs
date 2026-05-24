@@ -29,6 +29,14 @@ const hUnique = new Set(packStoryIds.filter((id)=>id.startsWith('hanuman-'))).si
 if (gUnique === 50) pass('exactly 50 unique Ganesha IDs'); else fail('Ganesha unique ID count is not 50');
 if (hUnique === 50) pass('exactly 50 unique Hanuman IDs'); else fail('Hanuman unique ID count is not 50');
 
+const idBindingCount = (src.match(/id:\s*entry\.storyId/g) || []).length;
+const slugBindingCount = (src.match(/slug:\s*entry\.storyId/g) || []).length;
+if (idBindingCount >= 1) pass('mapped story id values are bound to storyId'); else fail('mapped story id binding missing');
+if (slugBindingCount >= 1) pass('mapped story slug values are bound to storyId'); else fail('mapped story slug binding missing');
+if (packIdSet.size === 100 && idBindingCount >= 1 && slugBindingCount >= 1) {
+  pass('no duplicate id/slug inside pack (derived from unique storyId set)');
+}
+
 const slugMatches = [...src.matchAll(/slug: entry\.storyId|slug: '([^']+)'/g)].map((m)=>m[1]).filter(Boolean);
 if (slugMatches.length) {
   const sset = new Set(slugMatches);
@@ -45,9 +53,23 @@ for (const f of otherDataFiles) {
 const overlapping = [...packIdSet].filter((id)=>otherIds.has(id));
 if (overlapping.length) fail(`pack introduces duplicate IDs against existing data: ${overlapping.slice(0,5).join(', ')}`); else pass('no duplicate IDs against existing data files');
 
+if (registry.includes('contentRegistryStoriesById') && registry.includes('Object.fromEntries(')) {
+  if (overlapping.length === 0 && packIdSet.size === 100) {
+    pass('contentRegistryStoriesById overwrite risk check passed for new pack IDs');
+  } else {
+    fail('contentRegistryStoriesById overwrite risk detected for new pack IDs');
+  }
+}
+
 if (!src.includes('audioMetadata: {')) fail('audioMetadata missing on mapped stories'); else pass('audioMetadata mapping present');
 if (src.includes("narrationScriptStatus: entry.audioScript ? 'qa_ready' : 'indexed'")) pass('audio metadata narrationScriptStatus aligned'); else fail('audio metadata narrationScriptStatus mapping missing');
 if (src.includes('audioAvailable: false') && src.includes('noMicRequired: true')) pass('safe default audio metadata values present'); else fail('safe default audio metadata values missing');
+try {
+  execSync("npx --yes tsx -e \"import { buildStoryExperienceIndex } from './src/services/storyExperienceIndexService.ts'; const out = buildStoryExperienceIndex(); if (!out?.entries?.length) throw new Error('empty index'); console.log(out.entries.length);\"", { stdio: 'pipe', encoding: 'utf8' });
+  pass('Story Experience Index builds without throwing after pack registration');
+} catch (error) {
+  fail(`Story Experience Index build failed: ${String(error)}`);
+}
 
 const indexed = (src.match(/storyId: '(ganesha|hanuman)-exp-v1-/g) || []).length;
 const ganesha = (src.match(/storyId: 'ganesha-exp-v1-/g) || []).length;
