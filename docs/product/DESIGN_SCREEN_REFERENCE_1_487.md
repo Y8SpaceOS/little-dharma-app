@@ -6,6 +6,16 @@ This document makes the 1-487 Little Dharma screen reference system part of the 
 
 The screen packs should guide design and implementation, but they must not automatically become app routes. Every implementation sprint still requires explicit approval.
 
+## Target look-and-feel bar
+
+The product intent is for the real Little Dharma app to look and feel like the 1-487 screen reference system.
+
+This does not mean implementing all 487 screens as routes. It means the shipped app should progressively adopt the same level of warmth, color, child-friendliness, visual richness, cultural respect, Luvlu subtlety, motion softness, Story World depth, parent trust, and joyful devotional atmosphere shown in the screen packs.
+
+When future UI work is planned, the question should not be only whether a screen technically works. The question should be whether the real app is moving closer to the 1-487 design standard.
+
+The 1-487 screen system should therefore be treated as the product's visual and experiential north star. Exact implementation must still happen through approved roadmap sprints, selected components, and manual QA.
+
 ## Why this matters
 
 Little Dharma should not regress into a generic content app. The screen reference system defines the warmth, child-friendly density, Story World structure, Dharma Journey feel, parent trust surfaces, Luvlu behavior, motion language, and cultural restraint needed for the final product.
@@ -116,6 +126,7 @@ Do not use the screen packs to override product principles, local-first architec
 ## Universal design rules from the screen system
 
 - Preserve warm Indian child-friendly visual language.
+- The real app should progressively move toward the same look-and-feel quality shown in the 1-487 screen system.
 - Use large rounded cards and soft shadows.
 - Prefer cream, saffron, lotus, sky, leaf, gold, and peacock accents.
 - Use `Story World`, not `Story Library`, in child-facing copy.
