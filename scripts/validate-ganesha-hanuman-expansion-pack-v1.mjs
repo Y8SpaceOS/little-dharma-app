@@ -19,6 +19,36 @@ const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
 const registry = fs.readFileSync(registryPath, 'utf8');
 if (!pkg.scripts?.['validate:ganesha-hanuman-expansion-pack-v1']) fail('package script missing'); else pass('package script registered');
 
+
+const packStoryIds = [...src.matchAll(/storyId: '(ganesha|hanuman)-exp-v1-(\d+)'/g)].map((m)=>`${m[1]}-exp-v1-${m[2]}`);
+const packIdSet = new Set(packStoryIds);
+if (packStoryIds.length !== packIdSet.size) fail('duplicate storyId exists inside pack'); else pass('no duplicate storyId inside pack');
+if (packIdSet.size === 100) pass('exactly 100 unique story IDs in pack'); else fail('pack does not contain exactly 100 unique story IDs');
+const gUnique = new Set(packStoryIds.filter((id)=>id.startsWith('ganesha-'))).size;
+const hUnique = new Set(packStoryIds.filter((id)=>id.startsWith('hanuman-'))).size;
+if (gUnique === 50) pass('exactly 50 unique Ganesha IDs'); else fail('Ganesha unique ID count is not 50');
+if (hUnique === 50) pass('exactly 50 unique Hanuman IDs'); else fail('Hanuman unique ID count is not 50');
+
+const slugMatches = [...src.matchAll(/slug: entry\.storyId|slug: '([^']+)'/g)].map((m)=>m[1]).filter(Boolean);
+if (slugMatches.length) {
+  const sset = new Set(slugMatches);
+  if (sset.size !== slugMatches.length) fail('duplicate slug exists inside pack'); else pass('no duplicate explicit slug in pack');
+}
+
+const otherDataFiles = fs.readdirSync(path.join(root, 'src/data')).filter((f)=>f.endsWith('.ts') && f !== 'ganeshaHanumanExpansionRecoveryPackV1.ts');
+const otherIds = new Set();
+for (const f of otherDataFiles) {
+  const c = fs.readFileSync(path.join(root, 'src/data', f), 'utf8');
+  for (const m of c.matchAll(/storyId:\s*'([^']+)'/g)) otherIds.add(m[1]);
+  for (const m of c.matchAll(/id:\s*'([^']+)'/g)) if (m[1].includes('exp-v1-') || m[1].includes('pack1-') || m[1].includes('vrindavan')) otherIds.add(m[1]);
+}
+const overlapping = [...packIdSet].filter((id)=>otherIds.has(id));
+if (overlapping.length) fail(`pack introduces duplicate IDs against existing data: ${overlapping.slice(0,5).join(', ')}`); else pass('no duplicate IDs against existing data files');
+
+if (!src.includes('audioMetadata: {')) fail('audioMetadata missing on mapped stories'); else pass('audioMetadata mapping present');
+if (src.includes("narrationScriptStatus: entry.audioScript ? 'qa_ready' : 'indexed'")) pass('audio metadata narrationScriptStatus aligned'); else fail('audio metadata narrationScriptStatus mapping missing');
+if (src.includes('audioAvailable: false') && src.includes('noMicRequired: true')) pass('safe default audio metadata values present'); else fail('safe default audio metadata values missing');
+
 const indexed = (src.match(/storyId: '(ganesha|hanuman)-exp-v1-/g) || []).length;
 const ganesha = (src.match(/storyId: 'ganesha-exp-v1-/g) || []).length;
 const hanuman = (src.match(/storyId: 'hanuman-exp-v1-/g) || []).length;
