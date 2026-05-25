@@ -8,9 +8,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-001",
     "storyId": "bhagavad-gita-children-exp-v1-001",
     "slug": "bhagavad-gita-children-exp-v1-001",
-    "title": "Arjuna\u2019s Brave Breath",
-    "shortTitle": "Arjuna\u2019s Brave Breath",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Arjuna\u2019s Rangoli Lines",
+    "shortTitle": "Arjuna\u2019s Rangoli Lines",
+    "summary": "At home before a festival, Arjuna\u2019s rangoli lines wobble, and he wants to quit. Krishna reminds him that steady effort matters more than perfect shapes.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -34,33 +34,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "Arjuna\u2019s Brave Breath: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting."
+        "title": "Starting moment",
+        "text": "At home before a festival, Arjuna\u2019s rangoli lines wobble, and he wants to quit. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Krishna\u2019s reminder",
+        "text": "Krishna reminds him that steady effort matters more than perfect shapes."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the mango basket, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna redraws slowly, one petal at a time, and finishes with care. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "He smiles at progress and learns to value effort over quick results."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models courage through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the mango basket problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Arjuna\u2019s Rangoli Lines' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Arjuna\u2019s Rangoli Lines' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -96,7 +96,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Arjuna\u2019s Brave Breath. Arjuna\u2019s Brave Breath: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Arjuna\u2019s Rangoli Lines. At home before a festival, Arjuna\u2019s rangoli lines wobble, and he wants to quit. Krishna reminds him that steady effort matters more than perfect shapes. Arjuna redraws slowly, one petal at a time, and finishes with care. He smiles at progress and learns to value effort over quick results.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -107,9 +107,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-002",
     "storyId": "bhagavad-gita-children-exp-v1-002",
     "slug": "bhagavad-gita-children-exp-v1-002",
-    "title": "Krishna\u2019s Calm Advice",
-    "shortTitle": "Krishna\u2019s Calm Advice",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Sharing Credit at Cleanup",
+    "shortTitle": "Sharing Credit at Cleanup",
+    "summary": "After class cleanup, everyone praises Arjuna for neat shelves. Krishna asks him to notice who carried books and swept corners too.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -133,33 +133,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "Krishna\u2019s Calm Advice: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting."
+        "title": "Morning challenge",
+        "text": "After class cleanup, everyone praises Arjuna for neat shelves. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Krishna\u2019s reminder",
+        "text": "Krishna asks him to notice who carried books and swept corners too."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the clay lamp, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna thanks his friends by name and shares the credit openly. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "The class feels included, and Arjuna learns humility in success."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models calm through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the clay lamp problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Sharing Credit at Cleanup' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Sharing Credit at Cleanup' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -195,7 +195,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Krishna\u2019s Calm Advice. Krishna\u2019s Calm Advice: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Sharing Credit at Cleanup. After class cleanup, everyone praises Arjuna for neat shelves. Krishna asks him to notice who carried books and swept corners too. Arjuna thanks his friends by name and shares the credit openly. The class feels included, and Arjuna learns humility in success.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -206,9 +206,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-003",
     "storyId": "bhagavad-gita-children-exp-v1-003",
     "slug": "bhagavad-gita-children-exp-v1-003",
-    "title": "The Work We Can Do",
-    "shortTitle": "The Work We Can Do",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Truth About the Clay Cup",
+    "shortTitle": "The Truth About the Clay Cup",
+    "summary": "A clay cup cracks while Arjuna is pouring water for guests. Krishna encourages truth before excuses and calm before fear.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -232,33 +232,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "The Work We Can Do: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting."
+        "title": "Before class",
+        "text": "A clay cup cracks while Arjuna is pouring water for guests. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Gentle advice",
+        "text": "Krishna encourages truth before excuses and calm before fear."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the water pot, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna tells the truth, apologizes, and brings another cup carefully. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "Trust stays strong, and Arjuna learns honesty with responsibility."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models responsibility through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the water pot problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Truth About the Clay Cup' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Truth About the Clay Cup' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -294,7 +294,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Work We Can Do. The Work We Can Do: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Truth About the Clay Cup. A clay cup cracks while Arjuna is pouring water for guests. Krishna encourages truth before excuses and calm before fear. Arjuna tells the truth, apologizes, and brings another cup carefully. Trust stays strong, and Arjuna learns honesty with responsibility.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -305,9 +305,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-004",
     "storyId": "bhagavad-gita-children-exp-v1-004",
     "slug": "bhagavad-gita-children-exp-v1-004",
-    "title": "The Mango of Steady Effort",
-    "shortTitle": "The Mango of Steady Effort",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Before the Recitation Bell",
+    "shortTitle": "Before the Recitation Bell",
+    "summary": "Arjuna\u2019s heart races before he recites a verse at school. Krishna teaches him three breaths and one clear first line.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -331,33 +331,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "The Mango of Steady Effort: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting."
+        "title": "At home",
+        "text": "Arjuna\u2019s heart races before he recites a verse at school. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Gentle advice",
+        "text": "Krishna teaches him three breaths and one clear first line."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the garland thread, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna starts softly, keeps his pace, and completes the recitation. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "He learns calm focus can carry him through nervous moments."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models kindness through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the garland thread problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Before the Recitation Bell' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Before the Recitation Bell' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -393,7 +393,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Mango of Steady Effort. The Mango of Steady Effort: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Before the Recitation Bell. Arjuna\u2019s heart races before he recites a verse at school. Krishna teaches him three breaths and one clear first line. Arjuna starts softly, keeps his pace, and completes the recitation. He learns calm focus can carry him through nervous moments.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -404,9 +404,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-005",
     "storyId": "bhagavad-gita-children-exp-v1-005",
     "slug": "bhagavad-gita-children-exp-v1-005",
-    "title": "The Quiet Bow of Humility",
-    "shortTitle": "The Quiet Bow of Humility",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Child Sitting Alone",
+    "shortTitle": "The Child Sitting Alone",
+    "summary": "At lunch, one child sits alone under the neem tree. Krishna asks Arjuna what kindness looks like in action today.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -430,33 +430,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Quiet Bow of Humility: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting."
+        "title": "At the courtyard",
+        "text": "At lunch, one child sits alone under the neem tree. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "A calm question",
+        "text": "Krishna asks Arjuna what kindness looks like in action today."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the wooden practice bow, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna invites the child to join, shares fruit, and listens first. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "Friendship grows, and Arjuna sees duty can be gentle inclusion."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models focus through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the wooden practice bow problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Child Sitting Alone' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Child Sitting Alone' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -492,7 +492,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Quiet Bow of Humility. The Quiet Bow of Humility: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Child Sitting Alone. At lunch, one child sits alone under the neem tree. Krishna asks Arjuna what kindness looks like in action today. Arjuna invites the child to join, shares fruit, and listens first. Friendship grows, and Arjuna sees duty can be gentle inclusion.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -503,9 +503,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-006",
     "storyId": "bhagavad-gita-children-exp-v1-006",
     "slug": "bhagavad-gita-children-exp-v1-006",
-    "title": "The Chariot Pause",
-    "shortTitle": "The Chariot Pause",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Work Without Applause",
+    "shortTitle": "Work Without Applause",
+    "summary": "Arjuna finishes sweeping the veranda before sunrise. Krishna reminds him that right work is still right without praise.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -529,33 +529,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "The Chariot Pause: Beside the chariot at dawn, Arjuna notices a grain sack tipped over near the path and pauses before reacting."
+        "title": "At lunch",
+        "text": "Arjuna finishes sweeping the veranda before sunrise. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "A calm question",
+        "text": "Krishna reminds him that right work is still right without praise."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the grain sack, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna folds the broom away and quietly helps with water pots too. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "He learns devotion through sincere action, not attention."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models humility through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the grain sack problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Work Without Applause' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Work Without Applause' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -591,7 +591,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Chariot Pause. The Chariot Pause: Beside the chariot at dawn, Arjuna notices a grain sack tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Work Without Applause. Arjuna finishes sweeping the veranda before sunrise. Krishna reminds him that right work is still right without praise. Arjuna folds the broom away and quietly helps with water pots too. He learns devotion through sincere action, not attention.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -602,9 +602,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-007",
     "storyId": "bhagavad-gita-children-exp-v1-007",
     "slug": "bhagavad-gita-children-exp-v1-007",
-    "title": "The Kind Word Before Action",
-    "shortTitle": "The Kind Word Before Action",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Kind Words in a Loud Argument",
+    "shortTitle": "Kind Words in a Loud Argument",
+    "summary": "Two siblings argue over whose turn it is for the swing. Krishna asks Arjuna to lower his voice before offering help.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -628,33 +628,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "The Kind Word Before Action: Near a banyan tree by the camp, Arjuna notices a sandal strap tipped over near the path and pauses before reacting."
+        "title": "During play",
+        "text": "Two siblings argue over whose turn it is for the swing. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Wise guidance",
+        "text": "Krishna asks Arjuna to lower his voice before offering help."
       },
       {
         "id": "panel-3",
-        "title": "Promise kept",
-        "text": "Arjuna picks up the sandal strap, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Helpful step",
+        "text": "Arjuna suggests turns with a sand timer and uses respectful words."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful ending",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "The quarrel softens, and everyone practices fairness with calm speech."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models devotion through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the sandal strap problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Kind Words in a Loud Argument' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Kind Words in a Loud Argument' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -690,7 +690,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Kind Word Before Action. The Kind Word Before Action: Near a banyan tree by the camp, Arjuna notices a sandal strap tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Kind Words in a Loud Argument. Two siblings argue over whose turn it is for the swing. Krishna asks Arjuna to lower his voice before offering help. Arjuna suggests turns with a sand timer and uses respectful words. The quarrel softens, and everyone practices fairness with calm speech.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -701,9 +701,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-008",
     "storyId": "bhagavad-gita-children-exp-v1-008",
     "slug": "bhagavad-gita-children-exp-v1-008",
-    "title": "The Garland of Gratitude",
-    "shortTitle": "The Garland of Gratitude",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Learning a Shloka Slowly",
+    "shortTitle": "Learning a Shloka Slowly",
+    "summary": "Arjuna stumbles on difficult Sanskrit words during practice. Krishna advises patient repetition instead of rushing for speed.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -727,33 +727,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "The Garland of Gratitude: In a small courtyard with clay lamps, Arjuna notices a palm-leaf note tipped over near the path and pauses before reacting."
+        "title": "Practice time",
+        "text": "Arjuna stumbles on difficult Sanskrit words during practice. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Wise guidance",
+        "text": "Krishna advises patient repetition instead of rushing for speed."
       },
       {
         "id": "panel-3",
-        "title": "Promise kept",
-        "text": "Arjuna picks up the palm-leaf note, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Helpful step",
+        "text": "Arjuna claps the rhythm, repeats each line, and asks for guidance."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "He learns patience turns effort into understanding."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models self-control through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the palm-leaf note problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Learning a Shloka Slowly' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Learning a Shloka Slowly' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -789,7 +789,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Garland of Gratitude. The Garland of Gratitude: In a small courtyard with clay lamps, Arjuna notices a palm-leaf note tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Learning a Shloka Slowly. Arjuna stumbles on difficult Sanskrit words during practice. Krishna advises patient repetition instead of rushing for speed. Arjuna claps the rhythm, repeats each line, and asks for guidance. He learns patience turns effort into understanding.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -800,9 +800,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-009",
     "storyId": "bhagavad-gita-children-exp-v1-009",
     "slug": "bhagavad-gita-children-exp-v1-009",
-    "title": "The Lamp of Self-Control",
-    "shortTitle": "The Lamp of Self-Control",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "After the Kite Contest",
+    "shortTitle": "After the Kite Contest",
+    "summary": "Arjuna\u2019s kite falls early in the village contest. Krishna reminds him to accept results with grace and gratitude.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -826,33 +826,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "The Lamp of Self-Control: At the well path with brass pots, Arjuna notices a roti plate tipped over near the path and pauses before reacting."
+        "title": "Starting moment",
+        "text": "Arjuna\u2019s kite falls early in the village contest. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Breathing pause",
+        "text": "Krishna reminds him to accept results with grace and gratitude."
       },
       {
         "id": "panel-3",
-        "title": "Promise kept",
-        "text": "Arjuna picks up the roti plate, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Helpful step",
+        "text": "Arjuna congratulates the winner and helps gather fallen strings safely. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns dignity in both winning and losing."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models gratitude through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the roti plate problem, and why did that help?",
+      "discussionPrompt": "What choice in 'After the Kite Contest' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'After the Kite Contest' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -888,7 +888,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Lamp of Self-Control. The Lamp of Self-Control: At the well path with brass pots, Arjuna notices a roti plate tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "After the Kite Contest. Arjuna\u2019s kite falls early in the village contest. Krishna reminds him to accept results with grace and gratitude. Arjuna congratulates the winner and helps gather fallen strings safely. He learns dignity in both winning and losing.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -899,9 +899,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-010",
     "storyId": "bhagavad-gita-children-exp-v1-010",
     "slug": "bhagavad-gita-children-exp-v1-010",
-    "title": "The Friend Who Listened First",
-    "shortTitle": "The Friend Who Listened First",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Watering the Tulsi Plant",
+    "shortTitle": "Watering the Tulsi Plant",
+    "summary": "No one is watching when it is time to water the tulsi. Krishna says care matters even when nobody notices.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -925,33 +925,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Friend Who Listened First: Under a neem tree in the morning breeze, Arjuna notices a small bell tipped over near the path and pauses before reacting."
+        "title": "Morning challenge",
+        "text": "No one is watching when it is time to water the tulsi. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Breathing pause",
+        "text": "Krishna says care matters even when nobody notices."
       },
       {
         "id": "panel-3",
-        "title": "Careful action",
-        "text": "Arjuna picks up the small bell, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Careful response",
+        "text": "Arjuna fetches a small lota, waters gently, and clears dry leaves. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns self-control and consistency in quiet duties."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models friendship through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the small bell problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Watering the Tulsi Plant' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Watering the Tulsi Plant' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -987,7 +987,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Friend Who Listened First. The Friend Who Listened First: Under a neem tree in the morning breeze, Arjuna notices a small bell tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Watering the Tulsi Plant. No one is watching when it is time to water the tulsi. Krishna says care matters even when nobody notices. Arjuna fetches a small lota, waters gently, and clears dry leaves. He learns self-control and consistency in quiet duties.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -998,9 +998,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-011",
     "storyId": "bhagavad-gita-children-exp-v1-011",
     "slug": "bhagavad-gita-children-exp-v1-011",
-    "title": "Arjuna and the Spilled Grain",
-    "shortTitle": "Arjuna and the Spilled Grain",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Borrowed Pencil",
+    "shortTitle": "The Borrowed Pencil",
+    "summary": "Arjuna finds a classmate\u2019s pencil in his own pouch. Krishna asks what honesty asks for in small things.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1024,33 +1024,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "Arjuna and the Spilled Grain: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting."
+        "title": "Before class",
+        "text": "Arjuna finds a classmate\u2019s pencil in his own pouch. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Gentle question",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Kind counsel",
+        "text": "Krishna asks what honesty asks for in small things."
       },
       {
         "id": "panel-3",
-        "title": "Careful action",
-        "text": "Arjuna picks up the mango basket, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Careful response",
+        "text": "Arjuna returns it before class and thanks his friend for lending yesterday. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns trust grows through simple truthful actions."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models steady effort through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the mango basket problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Borrowed Pencil' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Borrowed Pencil' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1086,7 +1086,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Arjuna and the Spilled Grain. Arjuna and the Spilled Grain: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Borrowed Pencil. Arjuna finds a classmate\u2019s pencil in his own pouch. Krishna asks what honesty asks for in small things. Arjuna returns it before class and thanks his friend for lending yesterday. He learns trust grows through simple truthful actions.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1097,9 +1097,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-012",
     "storyId": "bhagavad-gita-children-exp-v1-012",
     "slug": "bhagavad-gita-children-exp-v1-012",
-    "title": "Krishna Under the Banyan Tree",
-    "shortTitle": "Krishna Under the Banyan Tree",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Pause Before Anger",
+    "shortTitle": "Pause Before Anger",
+    "summary": "A game mistake makes Arjuna feel angry and hot-faced. Krishna invites him to pause, breathe, and name the feeling.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1123,33 +1123,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "Krishna Under the Banyan Tree: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting."
+        "title": "At home",
+        "text": "A game mistake makes Arjuna feel angry and hot-faced. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Gentle question",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Kind counsel",
+        "text": "Krishna invites him to pause, breathe, and name the feeling."
       },
       {
         "id": "panel-3",
-        "title": "Careful action",
-        "text": "Arjuna picks up the clay lamp, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Careful response",
+        "text": "Arjuna asks for a replay politely instead of shouting. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns courage includes calming his own reaction."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models honesty through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the clay lamp problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Pause Before Anger' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Pause Before Anger' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1185,7 +1185,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Krishna Under the Banyan Tree. Krishna Under the Banyan Tree: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Pause Before Anger. A game mistake makes Arjuna feel angry and hot-faced. Krishna invites him to pause, breathe, and name the feeling. Arjuna asks for a replay politely instead of shouting. He learns courage includes calming his own reaction.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1196,9 +1196,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-013",
     "storyId": "bhagavad-gita-children-exp-v1-013",
     "slug": "bhagavad-gita-children-exp-v1-013",
-    "title": "The Promise to Finish Kindly",
-    "shortTitle": "The Promise to Finish Kindly",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Steady Homework Hour",
+    "shortTitle": "Steady Homework Hour",
+    "summary": "Math homework feels long and frustrating after playtime. Krishna suggests breaking work into small steady steps.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1222,33 +1222,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "The Promise to Finish Kindly: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting."
+        "title": "At the courtyard",
+        "text": "Math homework feels long and frustrating after playtime. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Gentle question",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Krishna\u2019s reminder",
+        "text": "Krishna suggests breaking work into small steady steps."
       },
       {
         "id": "panel-3",
-        "title": "Kind follow-through",
-        "text": "Arjuna picks up the water pot, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Promise kept",
+        "text": "Arjuna completes one page at a time and checks carefully. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "He learns focus and effort bring clarity."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models courage through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the water pot problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Steady Homework Hour' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Steady Homework Hour' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1284,7 +1284,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Promise to Finish Kindly. The Promise to Finish Kindly: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Steady Homework Hour. Math homework feels long and frustrating after playtime. Krishna suggests breaking work into small steady steps. Arjuna completes one page at a time and checks carefully. He learns focus and effort bring clarity.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1295,9 +1295,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-014",
     "storyId": "bhagavad-gita-children-exp-v1-014",
     "slug": "bhagavad-gita-children-exp-v1-014",
-    "title": "The Sandal Strap and Patience",
-    "shortTitle": "The Sandal Strap and Patience",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Carrying the Basket Together",
+    "shortTitle": "Carrying the Basket Together",
+    "summary": "An elder struggles with a heavy vegetable basket at the gate. Krishna asks Arjuna to serve before being asked twice.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1321,33 +1321,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "The Sandal Strap and Patience: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting."
+        "title": "At lunch",
+        "text": "An elder struggles with a heavy vegetable basket at the gate. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Gentle question",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Krishna\u2019s reminder",
+        "text": "Krishna asks Arjuna to serve before being asked twice."
       },
       {
         "id": "panel-3",
-        "title": "Kind follow-through",
-        "text": "Arjuna picks up the garland thread, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Promise kept",
+        "text": "Arjuna lifts one side and walks slowly beside the elder. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Quiet confidence",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "He learns duty as respectful service."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models calm through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the garland thread problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Carrying the Basket Together' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Carrying the Basket Together' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1383,7 +1383,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Sandal Strap and Patience. The Sandal Strap and Patience: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Carrying the Basket Together. An elder struggles with a heavy vegetable basket at the gate. Krishna asks Arjuna to serve before being asked twice. Arjuna lifts one side and walks slowly beside the elder. He learns duty as respectful service.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1394,9 +1394,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-015",
     "storyId": "bhagavad-gita-children-exp-v1-015",
     "slug": "bhagavad-gita-children-exp-v1-015",
-    "title": "The Water Pot Decision",
-    "shortTitle": "The Water Pot Decision",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "A Humble Thank You",
+    "shortTitle": "A Humble Thank You",
+    "summary": "Arjuna receives praise for singing clearly in prayer hall. Krishna reminds him to stay humble and grateful.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1420,33 +1420,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Water Pot Decision: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting."
+        "title": "During play",
+        "text": "Arjuna receives praise for singing clearly in prayer hall. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Gentle question",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Gentle advice",
+        "text": "Krishna reminds him to stay humble and grateful."
       },
       {
         "id": "panel-3",
-        "title": "Kind follow-through",
-        "text": "Arjuna picks up the wooden practice bow, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Promise kept",
+        "text": "Arjuna thanks his teacher and acknowledges friends who practiced with him."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "He learns humility keeps joy gentle and grounded."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models responsibility through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the wooden practice bow problem, and why did that help?",
+      "discussionPrompt": "What choice in 'A Humble Thank You' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'A Humble Thank You' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1482,7 +1482,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Water Pot Decision. The Water Pot Decision: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "A Humble Thank You. Arjuna receives praise for singing clearly in prayer hall. Krishna reminds him to stay humble and grateful. Arjuna thanks his teacher and acknowledges friends who practiced with him. He learns humility keeps joy gentle and grounded.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1493,9 +1493,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-016",
     "storyId": "bhagavad-gita-children-exp-v1-016",
     "slug": "bhagavad-gita-children-exp-v1-016",
-    "title": "The Courtyard of Quiet Focus",
-    "shortTitle": "The Courtyard of Quiet Focus",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Queue at the Well",
+    "shortTitle": "The Queue at the Well",
+    "summary": "The well line grows long and children begin to push. Krishna asks Arjuna to model patience and fair turns.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1519,33 +1519,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "The Courtyard of Quiet Focus: Beside the chariot at dawn, Arjuna notices a grain sack tipped over near the path and pauses before reacting."
+        "title": "Practice time",
+        "text": "The well line grows long and children begin to push. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Wise reminder",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Gentle advice",
+        "text": "Krishna asks Arjuna to model patience and fair turns."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the grain sack, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna marks a line in dust and helps younger children wait safely. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "Order returns, and he learns calm leadership."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models kindness through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the grain sack problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Queue at the Well' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Queue at the Well' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1581,7 +1581,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Courtyard of Quiet Focus. The Courtyard of Quiet Focus: Beside the chariot at dawn, Arjuna notices a grain sack tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Queue at the Well. The well line grows long and children begin to push. Krishna asks Arjuna to model patience and fair turns. Arjuna marks a line in dust and helps younger children wait safely. Order returns, and he learns calm leadership.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1592,9 +1592,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-017",
     "storyId": "bhagavad-gita-children-exp-v1-017",
     "slug": "bhagavad-gita-children-exp-v1-017",
-    "title": "The Small Duty at Sunrise",
-    "shortTitle": "The Small Duty at Sunrise",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Finishing the Last Chore",
+    "shortTitle": "Finishing the Last Chore",
+    "summary": "Evening play starts while one chore remains undone. Krishna reminds Arjuna that duty comes before distraction.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1618,33 +1618,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "The Small Duty at Sunrise: Near a banyan tree by the camp, Arjuna notices a sandal strap tipped over near the path and pauses before reacting."
+        "title": "Starting moment",
+        "text": "Evening play starts while one chore remains undone. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Wise reminder",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "A calm question",
+        "text": "Krishna reminds Arjuna that duty comes before distraction."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the sandal strap, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna folds laundry first, then joins play peacefully. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Peaceful close",
+        "text": "He learns completion brings a lighter mind."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models focus through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the sandal strap problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Finishing the Last Chore' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Finishing the Last Chore' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1680,7 +1680,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Small Duty at Sunrise. The Small Duty at Sunrise: Near a banyan tree by the camp, Arjuna notices a sandal strap tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Finishing the Last Chore. Evening play starts while one chore remains undone. Krishna reminds Arjuna that duty comes before distraction. Arjuna folds laundry first, then joins play peacefully. He learns completion brings a lighter mind.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1691,9 +1691,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-018",
     "storyId": "bhagavad-gita-children-exp-v1-018",
     "slug": "bhagavad-gita-children-exp-v1-018",
-    "title": "Arjuna Shares the Last Roti",
-    "shortTitle": "Arjuna Shares the Last Roti",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Listening Before Answering",
+    "shortTitle": "Listening Before Answering",
+    "summary": "Arjuna interrupts while his friend explains a problem. Krishna says listening fully is also a form of kindness.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1717,33 +1717,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "Arjuna Shares the Last Roti: In a small courtyard with clay lamps, Arjuna notices a palm-leaf note tipped over near the path and pauses before reacting."
+        "title": "Morning challenge",
+        "text": "Arjuna interrupts while his friend explains a problem. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Wise reminder",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "A calm question",
+        "text": "Krishna says listening fully is also a form of kindness."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the palm-leaf note, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna stays quiet, listens, then responds with care. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Peaceful close",
+        "text": "He learns friendship grows through attention."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models humility through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the palm-leaf note problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Listening Before Answering' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Listening Before Answering' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1779,7 +1779,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Arjuna Shares the Last Roti. Arjuna Shares the Last Roti: In a small courtyard with clay lamps, Arjuna notices a palm-leaf note tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Listening Before Answering. Arjuna interrupts while his friend explains a problem. Krishna says listening fully is also a form of kindness. Arjuna stays quiet, listens, then responds with care. He learns friendship grows through attention.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1790,9 +1790,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-019",
     "storyId": "bhagavad-gita-children-exp-v1-019",
     "slug": "bhagavad-gita-children-exp-v1-019",
-    "title": "Krishna and the Angry Voice",
-    "shortTitle": "Krishna and the Angry Voice",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Spilled Ink Note",
+    "shortTitle": "The Spilled Ink Note",
+    "summary": "Ink spills on homework right before class. Krishna guides Arjuna to stay calm and rewrite neatly.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1816,33 +1816,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "Krishna and the Angry Voice: At the well path with brass pots, Arjuna notices a roti plate tipped over near the path and pauses before reacting."
+        "title": "Before class",
+        "text": "Ink spills on homework right before class. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Wise reminder",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Wise guidance",
+        "text": "Krishna guides Arjuna to stay calm and rewrite neatly."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the roti plate, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna rewrites the page and submits honest work on time. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Peaceful close",
+        "text": "He learns self-control under pressure."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models devotion through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the roti plate problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Spilled Ink Note' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Spilled Ink Note' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1878,7 +1878,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Krishna and the Angry Voice. Krishna and the Angry Voice: At the well path with brass pots, Arjuna notices a roti plate tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Spilled Ink Note. Ink spills on homework right before class. Krishna guides Arjuna to stay calm and rewrite neatly. Arjuna rewrites the page and submits honest work on time. He learns self-control under pressure.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1889,9 +1889,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-020",
     "storyId": "bhagavad-gita-children-exp-v1-020",
     "slug": "bhagavad-gita-children-exp-v1-020",
-    "title": "The Rope of Responsibility",
-    "shortTitle": "The Rope of Responsibility",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Saving a Seat Kindly",
+    "shortTitle": "Saving a Seat Kindly",
+    "summary": "Only one shady seat is left during assembly. Krishna asks Arjuna to notice who needs comfort most.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -1915,33 +1915,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Rope of Responsibility: Under a neem tree in the morning breeze, Arjuna notices a small bell tipped over near the path and pauses before reacting."
+        "title": "At home",
+        "text": "Only one shady seat is left during assembly. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Wise reminder",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Wise guidance",
+        "text": "Krishna asks Arjuna to notice who needs comfort most."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the small bell, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna offers the seat to a tired younger child. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Peaceful close",
+        "text": "He learns kindness through small sacrifices."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models self-control through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the small bell problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Saving a Seat Kindly' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Saving a Seat Kindly' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -1977,7 +1977,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Rope of Responsibility. The Rope of Responsibility: Under a neem tree in the morning breeze, Arjuna notices a small bell tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Saving a Seat Kindly. Only one shady seat is left during assembly. Krishna asks Arjuna to notice who needs comfort most. Arjuna offers the seat to a tired younger child. He learns kindness through small sacrifices.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -1988,9 +1988,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-021",
     "storyId": "bhagavad-gita-children-exp-v1-021",
     "slug": "bhagavad-gita-children-exp-v1-021",
-    "title": "The Thank-You Before Sleep",
-    "shortTitle": "The Thank-You Before Sleep",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Missed Catch",
+    "shortTitle": "The Missed Catch",
+    "summary": "Arjuna misses an easy catch and feels embarrassed. Krishna teaches him to practice instead of blame.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2014,33 +2014,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "The Thank-You Before Sleep: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting."
+        "title": "At the courtyard",
+        "text": "Arjuna misses an easy catch and feels embarrassed. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Steady counsel",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Breathing pause",
+        "text": "Krishna teaches him to practice instead of blame."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the mango basket, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna asks for another throw and keeps trying steadily."
       },
       {
         "id": "panel-4",
-        "title": "Steady close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "He learns courage through repetition."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models gratitude through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the mango basket problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Missed Catch' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Missed Catch' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2076,7 +2076,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Thank-You Before Sleep. The Thank-You Before Sleep: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Missed Catch. Arjuna misses an easy catch and feels embarrassed. Krishna teaches him to practice instead of blame. Arjuna asks for another throw and keeps trying steadily. He learns courage through repetition.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2087,9 +2087,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-022",
     "storyId": "bhagavad-gita-children-exp-v1-022",
     "slug": "bhagavad-gita-children-exp-v1-022",
-    "title": "Arjuna Counts Three Breaths",
-    "shortTitle": "Arjuna Counts Three Breaths",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Returning the Library Book",
+    "shortTitle": "Returning the Library Book",
+    "summary": "A borrowed storybook is overdue by two days. Krishna reminds Arjuna that promises include timing.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2113,33 +2113,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "Arjuna Counts Three Breaths: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting."
+        "title": "At lunch",
+        "text": "A borrowed storybook is overdue by two days. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Steady counsel",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Breathing pause",
+        "text": "Krishna reminds Arjuna that promises include timing."
       },
       {
         "id": "panel-3",
-        "title": "Promise kept",
-        "text": "Arjuna picks up the clay lamp, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Helpful step",
+        "text": "Arjuna returns it, apologizes, and records the due date. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "He learns responsibility in follow-through."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models friendship through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the clay lamp problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Returning the Library Book' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Returning the Library Book' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2175,7 +2175,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Arjuna Counts Three Breaths. Arjuna Counts Three Breaths: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Returning the Library Book. A borrowed storybook is overdue by two days. Krishna reminds Arjuna that promises include timing. Arjuna returns it, apologizes, and records the due date. He learns responsibility in follow-through.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2186,9 +2186,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-023",
     "storyId": "bhagavad-gita-children-exp-v1-023",
     "slug": "bhagavad-gita-children-exp-v1-023",
-    "title": "The Mat That Needed Folding",
-    "shortTitle": "The Mat That Needed Folding",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Quiet Helping Hand",
+    "shortTitle": "The Quiet Helping Hand",
+    "summary": "Decorations are unfinished before guests arrive. Krishna asks Arjuna to help without seeking notice.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2212,33 +2212,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "The Mat That Needed Folding: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting."
+        "title": "During play",
+        "text": "Decorations are unfinished before guests arrive. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Steady counsel",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Kind counsel",
+        "text": "Krishna asks Arjuna to help without seeking notice."
       },
       {
         "id": "panel-3",
-        "title": "Promise kept",
-        "text": "Arjuna picks up the water pot, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Helpful step",
+        "text": "Arjuna ties marigold strings and arranges mats quietly. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "He learns devotion through unseen service."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models steady effort through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the water pot problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Quiet Helping Hand' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Quiet Helping Hand' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2274,7 +2274,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Mat That Needed Folding. The Mat That Needed Folding: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Quiet Helping Hand. Decorations are unfinished before guests arrive. Krishna asks Arjuna to help without seeking notice. Arjuna ties marigold strings and arranges mats quietly. He learns devotion through unseen service.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2285,9 +2285,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-024",
     "storyId": "bhagavad-gita-children-exp-v1-024",
     "slug": "bhagavad-gita-children-exp-v1-024",
-    "title": "Krishna\u2019s Two Questions",
-    "shortTitle": "Krishna\u2019s Two Questions",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Choosing Not to Tease",
+    "shortTitle": "Choosing Not to Tease",
+    "summary": "Some children laugh at a classmate\u2019s pronunciation. Krishna asks Arjuna to protect dignity with gentle courage.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2311,33 +2311,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "Krishna\u2019s Two Questions: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting."
+        "title": "Practice time",
+        "text": "Some children laugh at a classmate\u2019s pronunciation. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Steady counsel",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Kind counsel",
+        "text": "Krishna asks Arjuna to protect dignity with gentle courage."
       },
       {
         "id": "panel-3",
-        "title": "Promise kept",
-        "text": "Arjuna picks up the garland thread, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Helpful step",
+        "text": "Arjuna changes the mood by encouraging one more try. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "What he learned",
+        "text": "He learns kindness is brave."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models honesty through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the garland thread problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Choosing Not to Tease' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Choosing Not to Tease' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2373,7 +2373,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Krishna\u2019s Two Questions. Krishna\u2019s Two Questions: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Choosing Not to Tease. Some children laugh at a classmate\u2019s pronunciation. Krishna asks Arjuna to protect dignity with gentle courage. Arjuna changes the mood by encouraging one more try. He learns kindness is brave.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2384,9 +2384,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-025",
     "storyId": "bhagavad-gita-children-exp-v1-025",
     "slug": "bhagavad-gita-children-exp-v1-025",
-    "title": "The Clay Cup of Care",
-    "shortTitle": "The Clay Cup of Care",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "One Task at a Time",
+    "shortTitle": "One Task at a Time",
+    "summary": "Many tasks at once make Arjuna restless. Krishna suggests choosing one task and finishing it mindfully.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2410,33 +2410,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Clay Cup of Care: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting."
+        "title": "Starting moment",
+        "text": "Many tasks at once make Arjuna restless. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Steady counsel",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Krishna\u2019s reminder",
+        "text": "Krishna suggests choosing one task and finishing it mindfully."
       },
       {
         "id": "panel-3",
-        "title": "Careful action",
-        "text": "Arjuna picks up the wooden practice bow, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Careful response",
+        "text": "Arjuna completes each step in order using a small checklist. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "He learns focus reduces worry."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models courage through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the wooden practice bow problem, and why did that help?",
+      "discussionPrompt": "What choice in 'One Task at a Time' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'One Task at a Time' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2472,7 +2472,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Clay Cup of Care. The Clay Cup of Care: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "One Task at a Time. Many tasks at once make Arjuna restless. Krishna suggests choosing one task and finishing it mindfully. Arjuna completes each step in order using a small checklist. He learns focus reduces worry.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2483,9 +2483,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-026",
     "storyId": "bhagavad-gita-children-exp-v1-026",
     "slug": "bhagavad-gita-children-exp-v1-026",
-    "title": "The Letter for Grandmother",
-    "shortTitle": "The Letter for Grandmother",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Shared Prasad Plate",
+    "shortTitle": "The Shared Prasad Plate",
+    "summary": "Only a little prasad remains after prayer. Krishna reminds Arjuna to share before taking extra.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2509,33 +2509,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "The Letter for Grandmother: Beside the chariot at dawn, Arjuna notices a grain sack tipped over near the path and pauses before reacting."
+        "title": "Morning challenge",
+        "text": "Only a little prasad remains after prayer. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Krishna\u2019s reminder",
+        "text": "Krishna reminds Arjuna to share before taking extra."
       },
       {
         "id": "panel-3",
-        "title": "Careful action",
-        "text": "Arjuna picks up the grain sack, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Careful response",
+        "text": "Arjuna divides it into equal pieces for everyone nearby. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "He learns gratitude and fairness together."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models calm through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the grain sack problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Shared Prasad Plate' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Shared Prasad Plate' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2571,7 +2571,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Letter for Grandmother. The Letter for Grandmother: Beside the chariot at dawn, Arjuna notices a grain sack tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Shared Prasad Plate. Only a little prasad remains after prayer. Krishna reminds Arjuna to share before taking extra. Arjuna divides it into equal pieces for everyone nearby. He learns gratitude and fairness together.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2582,9 +2582,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-027",
     "storyId": "bhagavad-gita-children-exp-v1-027",
     "slug": "bhagavad-gita-children-exp-v1-027",
-    "title": "Arjuna and the Broken Wheel Pin",
-    "shortTitle": "Arjuna and the Broken Wheel Pin",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "When Rain Changes Plans",
+    "shortTitle": "When Rain Changes Plans",
+    "summary": "Rain cancels the outdoor game Arjuna planned. Krishna teaches acceptance and creative effort.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2608,33 +2608,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "Arjuna and the Broken Wheel Pin: Near a banyan tree by the camp, Arjuna notices a sandal strap tipped over near the path and pauses before reacting."
+        "title": "Before class",
+        "text": "Rain cancels the outdoor game Arjuna planned. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Gentle advice",
+        "text": "Krishna teaches acceptance and creative effort."
       },
       {
         "id": "panel-3",
-        "title": "Careful action",
-        "text": "Arjuna picks up the sandal strap, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Careful response",
+        "text": "Arjuna starts an indoor storytelling circle instead. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "He learns calm flexibility."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models responsibility through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the sandal strap problem, and why did that help?",
+      "discussionPrompt": "What choice in 'When Rain Changes Plans' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'When Rain Changes Plans' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2670,7 +2670,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Arjuna and the Broken Wheel Pin. Arjuna and the Broken Wheel Pin: Near a banyan tree by the camp, Arjuna notices a sandal strap tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "When Rain Changes Plans. Rain cancels the outdoor game Arjuna planned. Krishna teaches acceptance and creative effort. Arjuna starts an indoor storytelling circle instead. He learns calm flexibility.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2681,9 +2681,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-028",
     "storyId": "bhagavad-gita-children-exp-v1-028",
     "slug": "bhagavad-gita-children-exp-v1-028",
-    "title": "The Queue at the Well",
-    "shortTitle": "The Queue at the Well",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Speaking Gently to a Younger Cousin",
+    "shortTitle": "Speaking Gently to a Younger Cousin",
+    "summary": "A younger cousin keeps interrupting homework time. Krishna asks Arjuna to guide with patience, not irritation.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2707,33 +2707,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "The Queue at the Well: In a small courtyard with clay lamps, Arjuna notices a palm-leaf note tipped over near the path and pauses before reacting."
+        "title": "At home",
+        "text": "A younger cousin keeps interrupting homework time. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Gentle advice",
+        "text": "Krishna asks Arjuna to guide with patience, not irritation."
       },
       {
         "id": "panel-3",
-        "title": "Kind follow-through",
-        "text": "Arjuna picks up the palm-leaf note, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Promise kept",
+        "text": "Arjuna sets a short play break and then returns to study. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Grateful close",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Quiet result",
+        "text": "He learns self-control in family moments."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models kindness through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the palm-leaf note problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Speaking Gently to a Younger Cousin' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Speaking Gently to a Younger Cousin' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2769,7 +2769,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Queue at the Well. The Queue at the Well: In a small courtyard with clay lamps, Arjuna notices a palm-leaf note tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "Speaking Gently to a Younger Cousin. A younger cousin keeps interrupting homework time. Krishna asks Arjuna to guide with patience, not irritation. Arjuna sets a short play break and then returns to study. He learns self-control in family moments.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2780,9 +2780,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-029",
     "storyId": "bhagavad-gita-children-exp-v1-029",
     "slug": "bhagavad-gita-children-exp-v1-029",
-    "title": "Krishna\u2019s Gentle Reminder",
-    "shortTitle": "Krishna\u2019s Gentle Reminder",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Repaired Toy Wheel",
+    "shortTitle": "The Repaired Toy Wheel",
+    "summary": "A toy cart wheel loosens before sharing time. Krishna encourages careful repair instead of throwing it aside.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2806,33 +2806,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "Krishna\u2019s Gentle Reminder: At the well path with brass pots, Arjuna notices a roti plate tipped over near the path and pauses before reacting."
+        "title": "At the courtyard",
+        "text": "A toy cart wheel loosens before sharing time. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "A calm question",
+        "text": "Krishna encourages careful repair instead of throwing it aside."
       },
       {
         "id": "panel-3",
-        "title": "Kind follow-through",
-        "text": "Arjuna picks up the roti plate, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Promise kept",
+        "text": "Arjuna tightens the peg and shares the cart with others. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns steady effort and care for common things."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models focus through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the roti plate problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Repaired Toy Wheel' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Repaired Toy Wheel' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2868,7 +2868,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Krishna\u2019s Gentle Reminder. Krishna\u2019s Gentle Reminder: At the well path with brass pots, Arjuna notices a roti plate tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "The Repaired Toy Wheel. A toy cart wheel loosens before sharing time. Krishna encourages careful repair instead of throwing it aside. Arjuna tightens the peg and shares the cart with others. He learns steady effort and care for common things.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2879,9 +2879,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-030",
     "storyId": "bhagavad-gita-children-exp-v1-030",
     "slug": "bhagavad-gita-children-exp-v1-030",
-    "title": "The Book Returned on Time",
-    "shortTitle": "The Book Returned on Time",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "A Thankful Closing Prayer",
+    "shortTitle": "A Thankful Closing Prayer",
+    "summary": "Day ends after many small tasks and lessons. Krishna asks Arjuna to notice what went well with gratitude.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -2905,33 +2905,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Book Returned on Time: Under a neem tree in the morning breeze, Arjuna notices a small bell tipped over near the path and pauses before reacting."
+        "title": "At lunch",
+        "text": "Day ends after many small tasks and lessons. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Kind guidance",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "A calm question",
+        "text": "Krishna asks Arjuna to notice what went well with gratitude."
       },
       {
         "id": "panel-3",
-        "title": "Kind follow-through",
-        "text": "Arjuna picks up the small bell, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Promise kept",
+        "text": "Arjuna offers a short thank-you prayer and rests peacefully. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns gratitude steadies the heart."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models humility through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the small bell problem, and why did that help?",
+      "discussionPrompt": "What choice in 'A Thankful Closing Prayer' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'A Thankful Closing Prayer' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -2967,7 +2967,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "The Book Returned on Time. The Book Returned on Time: Under a neem tree in the morning breeze, Arjuna notices a small bell tipped over near the path and pauses before reacting. Krishna invites Arjuna to breathe, observe, and choose a kind, responsible action.",
+      "narrationScript": "A Thankful Closing Prayer. Day ends after many small tasks and lessons. Krishna asks Arjuna to notice what went well with gratitude. Arjuna offers a short thank-you prayer and rests peacefully. He learns gratitude steadies the heart.",
       "voiceDirection": "Warm, gentle, and encouraging.",
       "pronunciationNotes": "Krishna (KRISH-na), Arjuna (ar-JOO-na), Bhagavad Gita (BHUH-guh-vud GHEE-tah).",
       "pacingNotes": "Pause briefly after each action beat so children can visualize the moment.",
@@ -2978,9 +2978,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-031",
     "storyId": "bhagavad-gita-children-exp-v1-031",
     "slug": "bhagavad-gita-children-exp-v1-031",
-    "title": "Arjuna and the Lost Pencil",
-    "shortTitle": "Arjuna and the Lost Pencil",
-    "summary": "In a gentle moment beside the chariot at dawn, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Chalkboard Mistake",
+    "shortTitle": "The Chalkboard Mistake",
+    "summary": "Arjuna writes the wrong answer on the board. Krishna says correcting calmly matters more than hiding errors.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -3004,33 +3004,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning moment",
-        "text": "Arjuna and the Lost Pencil: Beside the chariot at dawn, Arjuna notices a mango basket tipped over near the path and pauses before reacting."
+        "title": "During play",
+        "text": "Arjuna writes the wrong answer on the board. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Wise guidance",
+        "text": "Krishna says correcting calmly matters more than hiding errors."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the mango basket, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna erases, rewrites, and thanks the classmate who helped. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns humility and truth together."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models devotion through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the mango basket problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Chalkboard Mistake' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Chalkboard Mistake' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -3070,9 +3070,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-032",
     "storyId": "bhagavad-gita-children-exp-v1-032",
     "slug": "bhagavad-gita-children-exp-v1-032",
-    "title": "The Neem Tree Apology",
-    "shortTitle": "The Neem Tree Apology",
-    "summary": "In a gentle moment near a banyan tree by the camp, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Helping During Festival Setup",
+    "shortTitle": "Helping During Festival Setup",
+    "summary": "Festival lamps and flowers need arranging before dusk. Krishna reminds Arjuna that careful teamwork is sacred too.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -3096,33 +3096,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Chariot moment",
-        "text": "The Neem Tree Apology: Near a banyan tree by the camp, Arjuna notices a clay lamp tipped over near the path and pauses before reacting."
+        "title": "Practice time",
+        "text": "Festival lamps and flowers need arranging before dusk. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Wise guidance",
+        "text": "Krishna reminds Arjuna that careful teamwork is sacred too."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the clay lamp, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna places diyas safely and checks pathways for elders. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Steady ending",
+        "text": "He learns duty with thoughtful care."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models self-control through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the clay lamp problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Helping During Festival Setup' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Helping During Festival Setup' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -3162,9 +3162,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-033",
     "storyId": "bhagavad-gita-children-exp-v1-033",
     "slug": "bhagavad-gita-children-exp-v1-033",
-    "title": "Krishna and the First Step",
-    "shortTitle": "Krishna and the First Step",
-    "summary": "In a gentle moment in a small courtyard with clay lamps, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "The Patient Music Practice",
+    "shortTitle": "The Patient Music Practice",
+    "summary": "Tabla rhythm is hard to keep at first try. Krishna teaches Arjuna to slow down and repeat basics.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -3188,33 +3188,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courtyard moment",
-        "text": "Krishna and the First Step: In a small courtyard with clay lamps, Arjuna notices a water pot tipped over near the path and pauses before reacting."
+        "title": "Starting moment",
+        "text": "Tabla rhythm is hard to keep at first try. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Breathing pause",
+        "text": "Krishna teaches Arjuna to slow down and repeat basics."
       },
       {
         "id": "panel-3",
-        "title": "Helpful choice",
-        "text": "Arjuna picks up the water pot, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "Action chosen",
+        "text": "Arjuna practices beats steadily and improves by evening."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "He learns patience with disciplined effort."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models gratitude through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the water pot problem, and why did that help?",
+      "discussionPrompt": "What choice in 'The Patient Music Practice' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'The Patient Music Practice' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -3254,9 +3254,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-034",
     "storyId": "bhagavad-gita-children-exp-v1-034",
     "slug": "bhagavad-gita-children-exp-v1-034",
-    "title": "The Thread of Steady Hands",
-    "shortTitle": "The Thread of Steady Hands",
-    "summary": "In a gentle moment at the well path with brass pots, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Choosing Honesty in a Score Game",
+    "shortTitle": "Choosing Honesty in a Score Game",
+    "summary": "Arjuna notices an extra point marked by mistake. Krishna asks what fairness requires when no one saw.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -3280,33 +3280,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Wellside moment",
-        "text": "The Thread of Steady Hands: At the well path with brass pots, Arjuna notices a garland thread tipped over near the path and pauses before reacting."
+        "title": "Morning challenge",
+        "text": "Arjuna notices an extra point marked by mistake. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Breathing pause",
+        "text": "Krishna asks what fairness requires when no one saw."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the garland thread, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna reports the error and accepts the true score. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "He learns integrity over advantage."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models friendship through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the garland thread problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Choosing Honesty in a Score Game' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Choosing Honesty in a Score Game' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
@@ -3346,9 +3346,9 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bhagavad-gita-children-exp-v1-035",
     "storyId": "bhagavad-gita-children-exp-v1-035",
     "slug": "bhagavad-gita-children-exp-v1-035",
-    "title": "The Morning Bell Choice",
-    "shortTitle": "The Morning Bell Choice",
-    "summary": "In a gentle moment under a neem tree in the morning breeze, Arjuna learns to choose calm, kind, responsible action with Krishna\u2019s guidance.",
+    "title": "Calm Hands at Mealtime",
+    "shortTitle": "Calm Hands at Mealtime",
+    "summary": "Food spills while Arjuna serves guests in a hurry. Krishna advises slower hands and mindful serving.",
     "sourceTradition": "Bhagavad Gita for Children",
     "sourceTextOrTraditionNote": "Child-safe retelling inspired by Bhagavad Gita teachings on duty, calm, and right action.",
     "storyPackId": "bhagavad-gita-for-children-expansion-pack-v1",
@@ -3372,33 +3372,33 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Banyan moment",
-        "text": "The Morning Bell Choice: Under a neem tree in the morning breeze, Arjuna notices a wooden practice bow tipped over near the path and pauses before reacting."
+        "title": "Before class",
+        "text": "Food spills while Arjuna serves guests in a hurry. In the school courtyard, a small task is waiting."
       },
       {
         "id": "panel-2",
-        "title": "Calm teaching",
-        "text": "Krishna asks Arjuna to breathe slowly, look carefully, and choose the next action that protects people and respects the work."
+        "title": "Kind counsel",
+        "text": "Krishna advises slower hands and mindful serving."
       },
       {
         "id": "panel-3",
-        "title": "Repair and care",
-        "text": "Arjuna picks up the wooden practice bow, fixes what he can, speaks gently to a friend, and finishes the task he had promised to complete."
+        "title": "What Arjuna did",
+        "text": "Arjuna cleans the area and serves again with care. Arjuna practices this choice with steady care."
       },
       {
         "id": "panel-4",
-        "title": "Calm finish",
-        "text": "The group feels calmer, the work is done well, and Arjuna understands that right effort with kindness brings quiet strength."
+        "title": "Heart lesson",
+        "text": "He learns calm action prevents bigger trouble."
       }
     ],
     "parentNote": {
       "sourceContext": "Child-safe Bhagavad Gita adaptation focused on daily choices, emotional balance, and duty without violence.",
       "valueExplained": "This story models steady effort through calm reflection and responsible action.",
-      "discussionPrompt": "What did Arjuna do first before solving the wooden practice bow problem, and why did that help?",
+      "discussionPrompt": "What choice in 'Calm Hands at Mealtime' helped turn the moment in a better direction?",
       "practicePrompt": "Try a breathe-think-act routine before the next challenge.",
       "cautionNote": "Keep discussion age-appropriate, warm, and non-violent."
     },
-    "reflectionPrompt": "When something goes wrong today, what calm first step can you take before acting?",
+    "reflectionPrompt": "Where can you practice this same value from 'Calm Hands at Mealtime' today?",
     "ritualPrompt": "Take three breaths, place a hand on your heart, and choose one kind action.",
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",

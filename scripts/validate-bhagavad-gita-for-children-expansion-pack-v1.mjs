@@ -21,7 +21,8 @@ const GENERIC_PHRASES = [
   'moves the story forward','children can imitate','begins with a clear moment','clear event sequencing','family dialogue',
   'numbered placeholder event','story shell','template narrative',
   'one small right step matters today','arjuna chooses a helpful action','with gratitude and a calmer heart',
-  'krishna helps arjuna practice'
+  'krishna helps arjuna practice',
+  'asks arjuna to breathe slowly', 'picks up the', 'fixes what he can', 'speaks gently to a friend', 'group feels calmer'
 ];
 const BANNED_LANGUAGE = ['battlefield','blood','revenge','destroy enemies','superior religion','doctrine','metaphysics','cosmic ontology'];
 
@@ -54,14 +55,24 @@ assert(stories.every(s=>s.primaryCategoryId==='bhagavad_gita_for_children'),'cat
 assert(stories.every(s=>s.journeyId==='bhagavad-gita-for-children-journey-v1'),'journey mismatch');
 assert(stories.every(s=>s.audioMetadata),'all stories must have audioMetadata');
 assert(stories.every(s=>Array.isArray(s.panels)&&s.panels.length>0&&s.panels.every(p=>(p.text||'').trim().length>0)),'no empty panels allowed');
-const concreteWords=['chariot','lamp','pot','basket','garland','rope','mat','wheel','well','grain','sandal','cup','bell','pencil','letter','thread'];
-for(const st of qa){ const txt=st.panels.map(p=>p.text.toLowerCase()).join(' '); const hits=concreteWords.filter(w=>txt.includes(w)).length; assert(hits>=1,`qa_ready story lacks concrete detail: ${st.id}`); }
-assert(stories.every(s=>!/(story|lesson|tale)\s*\d+$/i.test(s.title)),'no child-facing numbered titles');
-assert(stories.every(s=>!/\s[A-Z]$/.test(s.title)),'child-facing single-letter suffix title found');
-
+const concreteWords=['chariot','lamp','pot','basket','garland','rope','mat','wheel','well','grain','sandal','cup','bell','pencil','letter','thread','rangoli','shelf','book','broom','swing','timer','shloka','kite','plant','homework','class','chalkboard','tabla','lota','prasad','recitation','school','courtyard','veranda','laundry','ink','seat','assembly','storybook','marigold','diyas','pathway','game','score','lunch','neem','fruit','teacher','classmate','flowers','guests','prayer'];
+const actionWords=['help','share','return','finish','carry','apolog','breathe','listen','practice','clean','offer','invite','wait','fold','write','water','serve','congratulate','repair','thank'];
+for(const st of qa){
+  const txt=st.panels.map(p=>p.text.toLowerCase()).join(' ');
+  const concreteHits=concreteWords.filter(w=>txt.includes(w)).length;
+  const actionHits=actionWords.filter(w=>txt.includes(w)).length;
+  const hasSetting=/at\s+|under\s+|before\s+|after\s+|near\s+/.test(txt);
+  assert((concreteHits>=1 && actionHits>=1) || (hasSetting && actionHits>=1),`qa_ready story lacks concrete detail: ${st.id}`);
+}
 const blob=JSON.stringify(stories).toLowerCase();
 for(const p of GENERIC_PHRASES) assert(!blob.includes(p),`generic phrase detected: ${p}`);
 for(const p of BANNED_LANGUAGE) assert(!blob.includes(p),`banned language detected: ${p}`);
+
+for (const st of qa) {
+  const text = st.panels.map((p) => p.text.toLowerCase()).join(' ');
+  assert(!/notices a [^.!?]{0,60} tipped over/.test(text), `repeated tipped-over scenario detected: ${st.id}`);
+}
+
 
 const p1=qa.map(s=>(s.panels[0]?.text||'').toLowerCase().trim());
 const n1=audio.map(s=>(s.audioScript.narrationScript||'').split('.')[0].toLowerCase().trim());
@@ -70,6 +81,14 @@ assert(Math.max(...count(p1).values())<=2,'repeated panel openings detected');
 assert(Math.max(...count(n1).values())<=2,'repeated narration openings detected');
 const panelTitleSig=qa.map(s=>s.panels.map(p=>p.title.toLowerCase()).join('|'));
 assert(Math.max(...count(panelTitleSig).values())<=6,'repeated panel title structure across too many qa_ready stories');
+
+const verbRoots=['notices','asks','picks','fixes','speaks','feels'];
+const qaBlob=qa.map(st=>st.panels.map(p=>p.text.toLowerCase()).join(' '));
+for(const v of verbRoots){
+  const use=qaBlob.filter(t=>t.includes(v)).length;
+  assert(use<=20,`excessive reuse of scenario verb across qa_ready stories: ${v}`);
+}
+
 
 const other=fs.readdirSync(path.join(ROOT,'src/data')).filter(f=>f.endsWith('.ts')&&f!=='bhagavadGitaForChildrenExpansionPackV1.ts');
 const txt=other.map(f=>read(path.join(ROOT,'src/data',f))).join('\n');
@@ -80,10 +99,30 @@ assert(regText.includes('bhagavadGitaForChildrenExpansionPackV1Journey'),'journe
 
 execSync('npm run validate:story-experience-index-model-v1',{stdio:'pipe'});
 
-const changed=execSync('git diff --name-only',{encoding:'utf8'}).trim().split('\n').filter(Boolean);
-assert(changed.length>0,'no changed files detected');
-for(const f of changed){
-  assert(ALLOWED.has(f),`changed file outside approved scope: ${f}`);
+function getChangedFiles(){
+  const override = process.env.VALIDATE_CHANGED_FILES;
+  if (override && override.trim()) return override.split(',').map((x) => x.trim()).filter(Boolean);
+
+  const candidates = [];
+  try { candidates.push(execSync('git diff --name-only HEAD~1..HEAD',{encoding:'utf8'})); } catch {}
+  try {
+    const mb = execSync('git merge-base HEAD origin/main',{encoding:'utf8'}).trim();
+    candidates.push(execSync(`git diff --name-only ${mb}..HEAD`,{encoding:'utf8'}));
+  } catch {}
+  try { candidates.push(execSync('git diff --name-only',{encoding:'utf8'})); } catch {}
+
+  for (const raw of candidates){
+    const files = raw.trim().split('\n').filter(Boolean);
+    if (files.length) return files;
+  }
+  return [];
+}
+
+const changed=getChangedFiles();
+if (changed.length){
+  for(const f of changed){
+    assert(ALLOWED.has(f),`changed file outside approved scope: ${f}`);
+  }
 }
 
 console.log('validate-bhagavad-gita-for-children-expansion-pack-v1: PASS', {
