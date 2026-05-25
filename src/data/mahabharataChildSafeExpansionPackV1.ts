@@ -10,7 +10,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-001",
     "title": "Arjuna Shares the Seat",
     "shortTitle": "Arjuna Shares the Seat",
-    "summary": "In this child-safe Mahabharata retelling, Arjuna makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Arjuna faces a concrete everyday moment: a crowded gurukul bench has one younger student standing with books in both hands. Arjuna shifts his mat, tucks his bow practice rope aside, and invites the younger child to sit beside him. The lesson starts peacefully, and Arjuna learns that friendship begins with making room f",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -58,16 +58,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows friendship through simple choices and gentle consequences.",
-      "discussionPrompt": "Arjuna Shares the Seat: Which moment showed Arjuna choosing dharma, and what consequence followed for the group? (1)",
+      "discussionPrompt": "In Arjuna Shares the Seat, Arjuna shifts his mat, tucks his bow practice rope aside, and invites the younger child to sit beside him. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Arjuna Shares the Seat, what first step would you take to make the moment kinder? (1)",
+    "reflectionPrompt": "After Arjuna Shares the Seat, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 1 from Arjuna Shares the Seat: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
+      "sceneSummary": "Arjuna Shares the Seat: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -112,7 +112,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-002",
     "title": "Bhima Waits His Turn",
     "shortTitle": "Bhima Waits His Turn",
-    "summary": "In this child-safe Mahabharata retelling, Bhima makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Bhima faces a concrete everyday moment: at the well, a line of children waits with clay pots while Bhima reaches forward to fill his first. Bhima steps back, lets three younger children fill first, then helps lift their pots onto the ledge. Everyone reaches class on time, and Bhima discovers patience can be strong and ",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -160,16 +160,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows patience through simple choices and gentle consequences.",
-      "discussionPrompt": "Bhima Waits His Turn: Which moment showed Bhima choosing dharma, and what consequence followed for the group? (2)",
+      "discussionPrompt": "In Bhima Waits His Turn, Bhima steps back, lets three younger children fill first, then helps lift their pots onto the ledge. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Bhima Waits His Turn, what first step would you take to make the moment kinder? (2)",
+    "reflectionPrompt": "After Bhima Waits His Turn, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 2 from Bhima Waits His Turn: specific child-safe setting with clear props and gentle resolution led by Bhima.",
+      "sceneSummary": "Bhima Waits His Turn: specific child-safe setting with clear props and gentle resolution led by Bhima.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -214,7 +214,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-003",
     "title": "Draupadi’s Kind Word",
     "shortTitle": "Draupadi’s Kind Word",
-    "summary": "In this child-safe Mahabharata retelling, Draupadi makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Draupadi faces a concrete everyday moment: two cousins argue on the kitchen steps over who chopped the vegetables better. Draupadi thanks both children for helping and says the meal needs both careful chopping and quick hands. The argument softens into teamwork, and Draupadi sees how one kind sentence can change a room",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -262,16 +262,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows kindness through simple choices and gentle consequences.",
-      "discussionPrompt": "Draupadi’s Kind Word: Which moment showed Draupadi choosing dharma, and what consequence followed for the group? (3)",
+      "discussionPrompt": "In Draupadi’s Kind Word, Draupadi thanks both children for helping and says the meal needs both careful chopping and quick hands. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Draupadi’s Kind Word, what first step would you take to make the moment kinder? (3)",
+    "reflectionPrompt": "After Draupadi’s Kind Word, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 3 from Draupadi’s Kind Word: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
+      "sceneSummary": "Draupadi’s Kind Word: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -316,7 +316,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-004",
     "title": "Yudhishthira Tells the Truth",
     "shortTitle": "Yudhishthira Tells the Truth",
-    "summary": "In this child-safe Mahabharata retelling, Yudhishthira makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Yudhishthira faces a concrete everyday moment: a writing slate goes missing before recitation, and Yudhishthira remembers moving it during cleanup. Yudhishthira admits he placed the slate near the window, apologizes, and fetches it himself. Trust stays intact, and Yudhishthira learns truth is easiest before worry grows",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -364,16 +364,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows truth through simple choices and gentle consequences.",
-      "discussionPrompt": "Yudhishthira Tells the Truth: Which moment showed Yudhishthira choosing dharma, and what consequence followed for the group? (4)",
+      "discussionPrompt": "In Yudhishthira Tells the Truth, Yudhishthira admits he placed the slate near the window, apologizes, and fetches it himself. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Yudhishthira Tells the Truth, what first step would you take to make the moment kinder? (4)",
+    "reflectionPrompt": "After Yudhishthira Tells the Truth, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 4 from Yudhishthira Tells the Truth: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
+      "sceneSummary": "Yudhishthira Tells the Truth: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -418,7 +418,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-005",
     "title": "Nakula Returns the Bracelet",
     "shortTitle": "Nakula Returns the Bracelet",
-    "summary": "In this child-safe Mahabharata retelling, Nakula makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Nakula faces a concrete everyday moment: near the well steps, Nakula finds a silver bracelet half-hidden under marigold leaves. Nakula checks with elders, finds it belongs to a visiting auntie, and returns it quietly without asking for praise. Relief spreads through the courtyard, and Nakula feels the joy of honest res",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -466,16 +466,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows responsibility through simple choices and gentle consequences.",
-      "discussionPrompt": "Nakula Returns the Bracelet: Which moment showed Nakula choosing dharma, and what consequence followed for the group? (5)",
+      "discussionPrompt": "In Nakula Returns the Bracelet, Nakula checks with elders, finds it belongs to a visiting auntie, and returns it quietly without asking for praise. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Nakula Returns the Bracelet, what first step would you take to make the moment kinder? (5)",
+    "reflectionPrompt": "After Nakula Returns the Bracelet, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 5 from Nakula Returns the Bracelet: specific child-safe setting with clear props and gentle resolution led by Nakula.",
+      "sceneSummary": "Nakula Returns the Bracelet: specific child-safe setting with clear props and gentle resolution led by Nakula.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -520,7 +520,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-006",
     "title": "Sahadeva Listens First",
     "shortTitle": "Sahadeva Listens First",
-    "summary": "In this child-safe Mahabharata retelling, Sahadeva makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Sahadeva faces a concrete everyday moment: a younger student asks for advice about balancing study and chores but speaks in a rush. Sahadeva waits, asks two clarifying questions, and then suggests a simple evening schedule. The child smiles with confidence, and Sahadeva learns wisdom starts with patient listening.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -568,16 +568,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows wisdom through simple choices and gentle consequences.",
-      "discussionPrompt": "Sahadeva Listens First: Which moment showed Sahadeva choosing dharma, and what consequence followed for the group? (6)",
+      "discussionPrompt": "In Sahadeva Listens First, Sahadeva waits, asks two clarifying questions, and then suggests a simple evening schedule. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Sahadeva Listens First, what first step would you take to make the moment kinder? (6)",
+    "reflectionPrompt": "After Sahadeva Listens First, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 6 from Sahadeva Listens First: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
+      "sceneSummary": "Sahadeva Listens First: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -622,7 +622,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-007",
     "title": "The Promise at the Banyan Tree",
     "shortTitle": "The Promise at the Banyan Tree",
-    "summary": "In this child-safe Mahabharata retelling, Arjuna makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Arjuna faces a concrete everyday moment: during the afternoon task period, Arjuna notices a specific challenge in the courtyard: tools are short and two children are waiting. Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. The prayer circle begins on time, and eve",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -670,16 +670,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows fairness through simple choices and gentle consequences.",
-      "discussionPrompt": "The Promise at the Banyan Tree: Which moment showed Arjuna choosing dharma, and what consequence followed for the group? (7)",
+      "discussionPrompt": "In The Promise at the Banyan Tree, Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you take to make the moment kinder? (7)",
+    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 7 from The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
+      "sceneSummary": "The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -724,7 +724,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-008",
     "title": "Kunti’s Bowl of Rice",
     "shortTitle": "Kunti’s Bowl of Rice",
-    "summary": "In this child-safe Mahabharata retelling, Bhima makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Bhima faces a concrete everyday moment: before evening prayer, Bhima sees a practical problem in the study hall when supplies are unevenly shared. Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. Children feel respected at the meal, and fairness becomes visible to everyone.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -772,16 +772,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows fairness through simple choices and gentle consequences.",
-      "discussionPrompt": "Kunti’s Bowl of Rice: Which moment showed Bhima choosing dharma, and what consequence followed for the group? (8)",
+      "discussionPrompt": "In Kunti’s Bowl of Rice, Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you take to make the moment kinder? (8)",
+    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 8 from Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
+      "sceneSummary": "Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -826,7 +826,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-009",
     "title": "Krishna’s Fair Turn Game",
     "shortTitle": "Krishna’s Fair Turn Game",
-    "summary": "In this child-safe Mahabharata retelling, Yudhishthira makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Yudhishthira faces a concrete everyday moment: during the afternoon task period, Yudhishthira notices a specific challenge in the courtyard: tools are short and two children are waiting. Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. The game stays joyful",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -874,16 +874,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows dharma through simple choices and gentle consequences.",
-      "discussionPrompt": "Krishna’s Fair Turn Game: Which moment showed Yudhishthira choosing dharma, and what consequence followed for the group? (9)",
+      "discussionPrompt": "In Krishna’s Fair Turn Game, Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you take to make the moment kinder? (9)",
+    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 9 from Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
+      "sceneSummary": "Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -928,7 +928,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-010",
     "title": "Vidura’s Quiet Lamp Lesson",
     "shortTitle": "Vidura’s Quiet Lamp Lesson",
-    "summary": "In this child-safe Mahabharata retelling, Nakula makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Nakula faces a concrete everyday moment: before evening prayer, Nakula sees a practical problem in the study hall when supplies are unevenly shared. Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. A small adjustment helps learning, and care becomes everyone’s habit.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -976,16 +976,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows humility through simple choices and gentle consequences.",
-      "discussionPrompt": "Vidura’s Quiet Lamp Lesson: Which moment showed Nakula choosing dharma, and what consequence followed for the group? (10)",
+      "discussionPrompt": "In Vidura’s Quiet Lamp Lesson, Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you take to make the moment kinder? (10)",
+    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 10 from Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
+      "sceneSummary": "Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1030,7 +1030,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-011",
     "title": "Bhima Carries Two Baskets",
     "shortTitle": "Bhima Carries Two Baskets",
-    "summary": "In this child-safe Mahabharata retelling, Draupadi makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Draupadi faces a concrete everyday moment: during the afternoon task period, Draupadi notices a specific challenge in the courtyard: tools are short and two children are waiting. Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. Work finishes faster, and strength feels be",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1078,16 +1078,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows friendship through simple choices and gentle consequences.",
-      "discussionPrompt": "Bhima Carries Two Baskets: Which moment showed Draupadi choosing dharma, and what consequence followed for the group? (11)",
+      "discussionPrompt": "In Bhima Carries Two Baskets, Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you take to make the moment kinder? (11)",
+    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 11 from Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
+      "sceneSummary": "Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1132,7 +1132,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-012",
     "title": "Draupadi Shares the Aprons",
     "shortTitle": "Draupadi Shares the Aprons",
-    "summary": "In this child-safe Mahabharata retelling, Sahadeva makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Sahadeva faces a concrete everyday moment: before evening prayer, Sahadeva sees a practical problem in the study hall when supplies are unevenly shared. Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. Kitchen seva flows smoothly, and humility leads by example.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1180,16 +1180,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows patience through simple choices and gentle consequences.",
-      "discussionPrompt": "Draupadi Shares the Aprons: Which moment showed Sahadeva choosing dharma, and what consequence followed for the group? (12)",
+      "discussionPrompt": "In Draupadi Shares the Aprons, Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you take to make the moment kinder? (12)",
+    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 12 from Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
+      "sceneSummary": "Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1234,7 +1234,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-013",
     "title": "The Promise at the Banyan Tree",
     "shortTitle": "The Promise at the Banyan Tree",
-    "summary": "In this child-safe Mahabharata retelling, Arjuna makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Arjuna faces a concrete everyday moment: during the afternoon task period, Arjuna notices a specific challenge in the courtyard: tools are short and two children are waiting. Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. The prayer circle begins on time, and eve",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1282,16 +1282,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows kindness through simple choices and gentle consequences.",
-      "discussionPrompt": "The Promise at the Banyan Tree: Which moment showed Arjuna choosing dharma, and what consequence followed for the group? (13)",
+      "discussionPrompt": "In The Promise at the Banyan Tree, Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you take to make the moment kinder? (13)",
+    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 13 from The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
+      "sceneSummary": "The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1336,7 +1336,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-014",
     "title": "Kunti’s Bowl of Rice",
     "shortTitle": "Kunti’s Bowl of Rice",
-    "summary": "In this child-safe Mahabharata retelling, Bhima makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Bhima faces a concrete everyday moment: before evening prayer, Bhima sees a practical problem in the study hall when supplies are unevenly shared. Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. Children feel respected at the meal, and fairness becomes visible to everyone.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1384,16 +1384,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows truth through simple choices and gentle consequences.",
-      "discussionPrompt": "Kunti’s Bowl of Rice: Which moment showed Bhima choosing dharma, and what consequence followed for the group? (14)",
+      "discussionPrompt": "In Kunti’s Bowl of Rice, Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you take to make the moment kinder? (14)",
+    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 14 from Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
+      "sceneSummary": "Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1438,7 +1438,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-015",
     "title": "Krishna’s Fair Turn Game",
     "shortTitle": "Krishna’s Fair Turn Game",
-    "summary": "In this child-safe Mahabharata retelling, Yudhishthira makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Yudhishthira faces a concrete everyday moment: during the afternoon task period, Yudhishthira notices a specific challenge in the courtyard: tools are short and two children are waiting. Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. The game stays joyful",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1486,16 +1486,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows responsibility through simple choices and gentle consequences.",
-      "discussionPrompt": "Krishna’s Fair Turn Game: Which moment showed Yudhishthira choosing dharma, and what consequence followed for the group? (15)",
+      "discussionPrompt": "In Krishna’s Fair Turn Game, Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you take to make the moment kinder? (15)",
+    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 15 from Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
+      "sceneSummary": "Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1540,7 +1540,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-016",
     "title": "Vidura’s Quiet Lamp Lesson",
     "shortTitle": "Vidura’s Quiet Lamp Lesson",
-    "summary": "In this child-safe Mahabharata retelling, Nakula makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Nakula faces a concrete everyday moment: before evening prayer, Nakula sees a practical problem in the study hall when supplies are unevenly shared. Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. A small adjustment helps learning, and care becomes everyone’s habit.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1588,16 +1588,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows wisdom through simple choices and gentle consequences.",
-      "discussionPrompt": "Vidura’s Quiet Lamp Lesson: Which moment showed Nakula choosing dharma, and what consequence followed for the group? (16)",
+      "discussionPrompt": "In Vidura’s Quiet Lamp Lesson, Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you take to make the moment kinder? (16)",
+    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 16 from Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
+      "sceneSummary": "Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1642,7 +1642,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-017",
     "title": "Bhima Carries Two Baskets",
     "shortTitle": "Bhima Carries Two Baskets",
-    "summary": "In this child-safe Mahabharata retelling, Draupadi makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Draupadi faces a concrete everyday moment: during the afternoon task period, Draupadi notices a specific challenge in the courtyard: tools are short and two children are waiting. Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. Work finishes faster, and strength feels be",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1690,16 +1690,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows fairness through simple choices and gentle consequences.",
-      "discussionPrompt": "Bhima Carries Two Baskets: Which moment showed Draupadi choosing dharma, and what consequence followed for the group? (17)",
+      "discussionPrompt": "In Bhima Carries Two Baskets, Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you take to make the moment kinder? (17)",
+    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 17 from Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
+      "sceneSummary": "Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1744,7 +1744,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-018",
     "title": "Draupadi Shares the Aprons",
     "shortTitle": "Draupadi Shares the Aprons",
-    "summary": "In this child-safe Mahabharata retelling, Sahadeva makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Sahadeva faces a concrete everyday moment: before evening prayer, Sahadeva sees a practical problem in the study hall when supplies are unevenly shared. Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. Kitchen seva flows smoothly, and humility leads by example.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1792,16 +1792,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows fairness through simple choices and gentle consequences.",
-      "discussionPrompt": "Draupadi Shares the Aprons: Which moment showed Sahadeva choosing dharma, and what consequence followed for the group? (18)",
+      "discussionPrompt": "In Draupadi Shares the Aprons, Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you take to make the moment kinder? (18)",
+    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 18 from Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
+      "sceneSummary": "Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1846,7 +1846,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-019",
     "title": "The Promise at the Banyan Tree",
     "shortTitle": "The Promise at the Banyan Tree",
-    "summary": "In this child-safe Mahabharata retelling, Arjuna makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Arjuna faces a concrete everyday moment: during the afternoon task period, Arjuna notices a specific challenge in the courtyard: tools are short and two children are waiting. Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. The prayer circle begins on time, and eve",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1894,16 +1894,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows dharma through simple choices and gentle consequences.",
-      "discussionPrompt": "The Promise at the Banyan Tree: Which moment showed Arjuna choosing dharma, and what consequence followed for the group? (19)",
+      "discussionPrompt": "In The Promise at the Banyan Tree, Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you take to make the moment kinder? (19)",
+    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 19 from The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
+      "sceneSummary": "The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -1948,7 +1948,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-020",
     "title": "Kunti’s Bowl of Rice",
     "shortTitle": "Kunti’s Bowl of Rice",
-    "summary": "In this child-safe Mahabharata retelling, Bhima makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Bhima faces a concrete everyday moment: before evening prayer, Bhima sees a practical problem in the study hall when supplies are unevenly shared. Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. Children feel respected at the meal, and fairness becomes visible to everyone.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -1996,16 +1996,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows humility through simple choices and gentle consequences.",
-      "discussionPrompt": "Kunti’s Bowl of Rice: Which moment showed Bhima choosing dharma, and what consequence followed for the group? (20)",
+      "discussionPrompt": "In Kunti’s Bowl of Rice, Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you take to make the moment kinder? (20)",
+    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 20 from Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
+      "sceneSummary": "Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2050,7 +2050,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-021",
     "title": "Krishna’s Fair Turn Game",
     "shortTitle": "Krishna’s Fair Turn Game",
-    "summary": "In this child-safe Mahabharata retelling, Yudhishthira makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Yudhishthira faces a concrete everyday moment: during the afternoon task period, Yudhishthira notices a specific challenge in the courtyard: tools are short and two children are waiting. Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. The game stays joyful",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2098,16 +2098,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows friendship through simple choices and gentle consequences.",
-      "discussionPrompt": "Krishna’s Fair Turn Game: Which moment showed Yudhishthira choosing dharma, and what consequence followed for the group? (21)",
+      "discussionPrompt": "In Krishna’s Fair Turn Game, Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you take to make the moment kinder? (21)",
+    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 21 from Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
+      "sceneSummary": "Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2152,7 +2152,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-022",
     "title": "Vidura’s Quiet Lamp Lesson",
     "shortTitle": "Vidura’s Quiet Lamp Lesson",
-    "summary": "In this child-safe Mahabharata retelling, Nakula makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Nakula faces a concrete everyday moment: before evening prayer, Nakula sees a practical problem in the study hall when supplies are unevenly shared. Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. A small adjustment helps learning, and care becomes everyone’s habit.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2200,16 +2200,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows patience through simple choices and gentle consequences.",
-      "discussionPrompt": "Vidura’s Quiet Lamp Lesson: Which moment showed Nakula choosing dharma, and what consequence followed for the group? (22)",
+      "discussionPrompt": "In Vidura’s Quiet Lamp Lesson, Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you take to make the moment kinder? (22)",
+    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 22 from Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
+      "sceneSummary": "Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2254,7 +2254,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-023",
     "title": "Bhima Carries Two Baskets",
     "shortTitle": "Bhima Carries Two Baskets",
-    "summary": "In this child-safe Mahabharata retelling, Draupadi makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Draupadi faces a concrete everyday moment: during the afternoon task period, Draupadi notices a specific challenge in the courtyard: tools are short and two children are waiting. Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. Work finishes faster, and strength feels be",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2302,16 +2302,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows kindness through simple choices and gentle consequences.",
-      "discussionPrompt": "Bhima Carries Two Baskets: Which moment showed Draupadi choosing dharma, and what consequence followed for the group? (23)",
+      "discussionPrompt": "In Bhima Carries Two Baskets, Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you take to make the moment kinder? (23)",
+    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 23 from Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
+      "sceneSummary": "Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2356,7 +2356,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-024",
     "title": "Draupadi Shares the Aprons",
     "shortTitle": "Draupadi Shares the Aprons",
-    "summary": "In this child-safe Mahabharata retelling, Sahadeva makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Sahadeva faces a concrete everyday moment: before evening prayer, Sahadeva sees a practical problem in the study hall when supplies are unevenly shared. Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. Kitchen seva flows smoothly, and humility leads by example.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2404,16 +2404,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows truth through simple choices and gentle consequences.",
-      "discussionPrompt": "Draupadi Shares the Aprons: Which moment showed Sahadeva choosing dharma, and what consequence followed for the group? (24)",
+      "discussionPrompt": "In Draupadi Shares the Aprons, Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you take to make the moment kinder? (24)",
+    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 24 from Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
+      "sceneSummary": "Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2458,7 +2458,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-025",
     "title": "The Promise at the Banyan Tree",
     "shortTitle": "The Promise at the Banyan Tree",
-    "summary": "In this child-safe Mahabharata retelling, Arjuna makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Arjuna faces a concrete everyday moment: during the afternoon task period, Arjuna notices a specific challenge in the courtyard: tools are short and two children are waiting. Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. The prayer circle begins on time, and eve",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2506,16 +2506,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows responsibility through simple choices and gentle consequences.",
-      "discussionPrompt": "The Promise at the Banyan Tree: Which moment showed Arjuna choosing dharma, and what consequence followed for the group? (25)",
+      "discussionPrompt": "In The Promise at the Banyan Tree, Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you take to make the moment kinder? (25)",
+    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 25 from The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
+      "sceneSummary": "The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2560,7 +2560,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-026",
     "title": "Kunti’s Bowl of Rice",
     "shortTitle": "Kunti’s Bowl of Rice",
-    "summary": "In this child-safe Mahabharata retelling, Bhima makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Bhima faces a concrete everyday moment: before evening prayer, Bhima sees a practical problem in the study hall when supplies are unevenly shared. Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. Children feel respected at the meal, and fairness becomes visible to everyone.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2608,16 +2608,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows wisdom through simple choices and gentle consequences.",
-      "discussionPrompt": "Kunti’s Bowl of Rice: Which moment showed Bhima choosing dharma, and what consequence followed for the group? (26)",
+      "discussionPrompt": "In Kunti’s Bowl of Rice, Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you take to make the moment kinder? (26)",
+    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 26 from Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
+      "sceneSummary": "Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2655,7 +2655,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-027",
     "title": "Krishna’s Fair Turn Game",
     "shortTitle": "Krishna’s Fair Turn Game",
-    "summary": "In this child-safe Mahabharata retelling, Yudhishthira makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Yudhishthira faces a concrete everyday moment: during the afternoon task period, Yudhishthira notices a specific challenge in the courtyard: tools are short and two children are waiting. Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. The game stays joyful",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2703,16 +2703,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows fairness through simple choices and gentle consequences.",
-      "discussionPrompt": "Krishna’s Fair Turn Game: Which moment showed Yudhishthira choosing dharma, and what consequence followed for the group? (27)",
+      "discussionPrompt": "In Krishna’s Fair Turn Game, Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you take to make the moment kinder? (27)",
+    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 27 from Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
+      "sceneSummary": "Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2750,7 +2750,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-028",
     "title": "Vidura’s Quiet Lamp Lesson",
     "shortTitle": "Vidura’s Quiet Lamp Lesson",
-    "summary": "In this child-safe Mahabharata retelling, Nakula makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Nakula faces a concrete everyday moment: before evening prayer, Nakula sees a practical problem in the study hall when supplies are unevenly shared. Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. A small adjustment helps learning, and care becomes everyone’s habit.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2798,16 +2798,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows fairness through simple choices and gentle consequences.",
-      "discussionPrompt": "Vidura’s Quiet Lamp Lesson: Which moment showed Nakula choosing dharma, and what consequence followed for the group? (28)",
+      "discussionPrompt": "In Vidura’s Quiet Lamp Lesson, Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you take to make the moment kinder? (28)",
+    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 28 from Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
+      "sceneSummary": "Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2845,7 +2845,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-029",
     "title": "Bhima Carries Two Baskets",
     "shortTitle": "Bhima Carries Two Baskets",
-    "summary": "In this child-safe Mahabharata retelling, Draupadi makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Draupadi faces a concrete everyday moment: during the afternoon task period, Draupadi notices a specific challenge in the courtyard: tools are short and two children are waiting. Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. Work finishes faster, and strength feels be",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2893,16 +2893,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows dharma through simple choices and gentle consequences.",
-      "discussionPrompt": "Bhima Carries Two Baskets: Which moment showed Draupadi choosing dharma, and what consequence followed for the group? (29)",
+      "discussionPrompt": "In Bhima Carries Two Baskets, Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you take to make the moment kinder? (29)",
+    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 29 from Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
+      "sceneSummary": "Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -2940,7 +2940,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-030",
     "title": "Draupadi Shares the Aprons",
     "shortTitle": "Draupadi Shares the Aprons",
-    "summary": "In this child-safe Mahabharata retelling, Sahadeva makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Sahadeva faces a concrete everyday moment: before evening prayer, Sahadeva sees a practical problem in the study hall when supplies are unevenly shared. Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. Kitchen seva flows smoothly, and humility leads by example.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -2988,16 +2988,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows humility through simple choices and gentle consequences.",
-      "discussionPrompt": "Draupadi Shares the Aprons: Which moment showed Sahadeva choosing dharma, and what consequence followed for the group? (30)",
+      "discussionPrompt": "In Draupadi Shares the Aprons, Draupadi sahadeva hands clean aprons to the last two children before taking one for herself. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you take to make the moment kinder? (30)",
+    "reflectionPrompt": "After Draupadi Shares the Aprons, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 30 from Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
+      "sceneSummary": "Draupadi Shares the Aprons: specific child-safe setting with clear props and gentle resolution led by Sahadeva.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -3035,7 +3035,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-031",
     "title": "The Promise at the Banyan Tree",
     "shortTitle": "The Promise at the Banyan Tree",
-    "summary": "In this child-safe Mahabharata retelling, Arjuna makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Arjuna faces a concrete everyday moment: during the afternoon task period, Arjuna notices a specific challenge in the courtyard: tools are short and two children are waiting. Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. The prayer circle begins on time, and eve",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -3083,16 +3083,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows friendship through simple choices and gentle consequences.",
-      "discussionPrompt": "The Promise at the Banyan Tree: Which moment showed Arjuna choosing dharma, and what consequence followed for the group? (31)",
+      "discussionPrompt": "In The Promise at the Banyan Tree, Arjuna keeps his promise to bring reading mats before prayer and arrives early despite wanting to play. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you take to make the moment kinder? (31)",
+    "reflectionPrompt": "After The Promise at the Banyan Tree, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 31 from The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
+      "sceneSummary": "The Promise at the Banyan Tree: specific child-safe setting with clear props and gentle resolution led by Arjuna.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -3130,7 +3130,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-032",
     "title": "Kunti’s Bowl of Rice",
     "shortTitle": "Kunti’s Bowl of Rice",
-    "summary": "In this child-safe Mahabharata retelling, Bhima makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Bhima faces a concrete everyday moment: before evening prayer, Bhima sees a practical problem in the study hall when supplies are unevenly shared. Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. Children feel respected at the meal, and fairness becomes visible to everyone.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -3178,16 +3178,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows patience through simple choices and gentle consequences.",
-      "discussionPrompt": "Kunti’s Bowl of Rice: Which moment showed Bhima choosing dharma, and what consequence followed for the group? (32)",
+      "discussionPrompt": "In Kunti’s Bowl of Rice, Kunti bhima serves equal scoops of rice even when her favorite cousin asks for extra first. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you take to make the moment kinder? (32)",
+    "reflectionPrompt": "After Kunti’s Bowl of Rice, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 32 from Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
+      "sceneSummary": "Kunti’s Bowl of Rice: specific child-safe setting with clear props and gentle resolution led by Bhima.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -3225,7 +3225,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-033",
     "title": "Krishna’s Fair Turn Game",
     "shortTitle": "Krishna’s Fair Turn Game",
-    "summary": "In this child-safe Mahabharata retelling, Yudhishthira makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Yudhishthira faces a concrete everyday moment: during the afternoon task period, Yudhishthira notices a specific challenge in the courtyard: tools are short and two children are waiting. Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. The game stays joyful",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -3273,16 +3273,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows kindness through simple choices and gentle consequences.",
-      "discussionPrompt": "Krishna’s Fair Turn Game: Which moment showed Yudhishthira choosing dharma, and what consequence followed for the group? (33)",
+      "discussionPrompt": "In Krishna’s Fair Turn Game, Krishna yudhishthira redraws the turn list in a circle so each child gets the spinning top once before repeats. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you take to make the moment kinder? (33)",
+    "reflectionPrompt": "After Krishna’s Fair Turn Game, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 33 from Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
+      "sceneSummary": "Krishna’s Fair Turn Game: specific child-safe setting with clear props and gentle resolution led by Yudhishthira.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -3320,7 +3320,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-034",
     "title": "Vidura’s Quiet Lamp Lesson",
     "shortTitle": "Vidura’s Quiet Lamp Lesson",
-    "summary": "In this child-safe Mahabharata retelling, Nakula makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Nakula faces a concrete everyday moment: before evening prayer, Nakula sees a practical problem in the study hall when supplies are unevenly shared. Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. A small adjustment helps learning, and care becomes everyone’s habit.",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -3368,16 +3368,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows truth through simple choices and gentle consequences.",
-      "discussionPrompt": "Vidura’s Quiet Lamp Lesson: Which moment showed Nakula choosing dharma, and what consequence followed for the group? (34)",
+      "discussionPrompt": "In Vidura’s Quiet Lamp Lesson, Vidura nakula lights one extra study lamp for a child who cannot see the chalk clearly from the back. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you take to make the moment kinder? (34)",
+    "reflectionPrompt": "After Vidura’s Quiet Lamp Lesson, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 34 from Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
+      "sceneSummary": "Vidura’s Quiet Lamp Lesson: specific child-safe setting with clear props and gentle resolution led by Nakula.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",
@@ -3415,7 +3415,7 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "mahabharata-child-safe-exp-v1-035",
     "title": "Bhima Carries Two Baskets",
     "shortTitle": "Bhima Carries Two Baskets",
-    "summary": "In this child-safe Mahabharata retelling, Draupadi makes a values-based choice in a specific family or gurukul moment.",
+    "summary": "Draupadi faces a concrete everyday moment: during the afternoon task period, Draupadi notices a specific challenge in the courtyard: tools are short and two children are waiting. Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. Work finishes faster, and strength feels be",
     "sourceTradition": "Mahabharata (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe values retelling inspired by the Mahabharata, framed with warmth and non-violent guidance.",
     "storyPackId": "mahabharata-child-safe-expansion-pack-v1",
@@ -3463,16 +3463,16 @@ export const mahabharataChildSafeExpansionPackV1Stories: ExtendedStory[] = [
     "parentNote": {
       "sourceContext": "Child-safe Mahabharata values retelling focused on daily family and learning moments.",
       "valueExplained": "This story shows responsibility through simple choices and gentle consequences.",
-      "discussionPrompt": "Bhima Carries Two Baskets: Which moment showed Draupadi choosing dharma, and what consequence followed for the group? (35)",
+      "discussionPrompt": "In Bhima Carries Two Baskets, Bhima draupadi carries one basket for himself and one for a smaller student up the veranda steps. How did that choice affect others right away?",
       "practicePrompt": "Invite your child to pause, breathe, and choose one kind next step.",
       "cautionNote": "Keep the conversation child-facing, warm, and non-violent."
     },
-    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you take to make the moment kinder? (35)",
+    "reflectionPrompt": "After Bhima Carries Two Baskets, what first step would you try if you faced a similar moment of choice?",
     "ritualPrompt": "Take three slow breaths and choose one truthful action.",
     "completionBlessing": "May your heart stay brave, kind, and steady in dharma.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Scene 35 from Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
+      "sceneSummary": "Bhima Carries Two Baskets: specific child-safe setting with clear props and gentle resolution led by Draupadi.",
       "styleGuidance": "Emotionally warm, respectful, non-violent framing.",
       "culturalGuardrails": [
         "Respect sacred figures",

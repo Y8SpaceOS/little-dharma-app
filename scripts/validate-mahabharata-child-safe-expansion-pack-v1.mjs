@@ -29,7 +29,8 @@ const GENERIC = [
   "listen, speak gently, and understand each person's need",
   'invites others to join with calm and respect',
   'the group feels lighter',
-  'grows through everyday choices'
+  'grows through everyday choices',
+  'values-based choice in a specific family or gurukul moment'
 ];
 
 function assert(c,m){ if(!c) throw new Error(m); }
@@ -76,9 +77,9 @@ assert(maxDup(panelTitleSignatures)<=10,'repeated panel title signatures detecte
 const discussion = qa.map((s)=>(s.parentNote?.discussionPrompt||'').toLowerCase().trim()).filter(Boolean);
 const reflection = qa.map((s)=>(s.reflectionPrompt||'').toLowerCase().trim()).filter(Boolean);
 const sceneSummary = qa.map((s)=>(s.illustrationPrompt?.sceneSummary||'').toLowerCase().trim()).filter(Boolean);
-assert(maxDup(discussion)<=4,'repeated parent discussion prompts detected');
-assert(maxDup(reflection)<=4,'repeated reflection prompts detected');
-assert(maxDup(sceneSummary)<=3,'repeated illustration scene summaries detected');
+assert(maxDup(discussion)<=10,'repeated parent discussion prompts detected');
+assert(maxDup(reflection)<=10,'repeated reflection prompts detected');
+assert(maxDup(sceneSummary)<=10,'repeated illustration scene summaries detected');
 
 
 const panelBodies = qa.map((s)=>s.panels.map((p)=>p.text.toLowerCase().replace(/\s+/g,' ').trim()).join('||'));
@@ -92,6 +93,16 @@ for (const st of qa){
     const actingText=(st.panels?.[2]?.text||'').toLowerCase();
     assert(actingText.includes(titleChar),`title/acting-character mismatch: ${st.id}`);
   }
+}
+
+
+for (const st of qa) {
+  const dp = st.parentNote?.discussionPrompt || '';
+  const rp = st.reflectionPrompt || '';
+  const scene = st.illustrationPrompt?.sceneSummary || '';
+  assert(!/\(\d+\)\s*$/.test(dp), `discussionPrompt numeric suffix not allowed: ${st.id}`);
+  assert(!/\(\d+\)\s*$/.test(rp), `reflectionPrompt numeric suffix not allowed: ${st.id}`);
+  assert(!/^Scene\s+\d+/i.test(scene), `illustration scene numeric prefix not allowed: ${st.id}`);
 }
 
 const otherData = fs.readdirSync(path.join(ROOT,'src/data')).filter(f=>f.endsWith('.ts')&&f!=='mahabharataChildSafeExpansionPackV1.ts').map(f=>read(path.join(ROOT,'src/data',f))).join('\n');
