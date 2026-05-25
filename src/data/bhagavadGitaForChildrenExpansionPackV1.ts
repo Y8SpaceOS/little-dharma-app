@@ -35,7 +35,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Starting moment",
-        "text": "At home before a festival, Arjuna\u2019s rangoli lines wobble, and he wants to quit. In the school courtyard, a small task is waiting."
+        "text": "At home before a festival, Arjuna\u2019s rangoli lines wobble, and he wants to quit."
       },
       {
         "id": "panel-2",
@@ -45,7 +45,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna redraws slowly, one petal at a time, and finishes with care. Arjuna practices this choice with steady care."
+        "text": "Arjuna redraws slowly, one petal at a time, and finishes with care."
       },
       {
         "id": "panel-4",
@@ -65,7 +65,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Festival morning at home, child drawing rangoli with focused care.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -134,7 +134,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning challenge",
-        "text": "After class cleanup, everyone praises Arjuna for neat shelves. In the school courtyard, a small task is waiting."
+        "text": "After class cleanup, everyone praises Arjuna for neat shelves."
       },
       {
         "id": "panel-2",
@@ -144,7 +144,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna thanks his friends by name and shares the credit openly. Arjuna practices this choice with steady care."
+        "text": "Arjuna thanks his friends by name and shares the credit openly."
       },
       {
         "id": "panel-4",
@@ -164,7 +164,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Classroom study scene focused on steady effort and honest correction.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -233,7 +233,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Before class",
-        "text": "A clay cup cracks while Arjuna is pouring water for guests. In the school courtyard, a small task is waiting."
+        "text": "A clay cup cracks while Arjuna is pouring water for guests."
       },
       {
         "id": "panel-2",
@@ -243,7 +243,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna tells the truth, apologizes, and brings another cup carefully. Arjuna practices this choice with steady care."
+        "text": "Arjuna tells the truth, apologizes, and brings another cup carefully."
       },
       {
         "id": "panel-4",
@@ -263,7 +263,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Home guest-serving moment with a cracked clay cup and truthful repair.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -332,7 +332,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At home",
-        "text": "Arjuna\u2019s heart races before he recites a verse at school. In the school courtyard, a small task is waiting."
+        "text": "Arjuna\u2019s heart races before he recites a verse at school. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -342,7 +342,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna starts softly, keeps his pace, and completes the recitation. Arjuna practices this choice with steady care."
+        "text": "Arjuna starts softly, keeps his pace, and completes the recitation."
       },
       {
         "id": "panel-4",
@@ -362,7 +362,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "School recitation moment with calm breathing and gentle confidence.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -431,7 +431,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At the courtyard",
-        "text": "At lunch, one child sits alone under the neem tree. In the school courtyard, a small task is waiting."
+        "text": "At lunch, one child sits alone under the neem tree. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -441,7 +441,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna invites the child to join, shares fruit, and listens first. Arjuna practices this choice with steady care."
+        "text": "Arjuna invites the child to join, shares fruit, and listens first."
       },
       {
         "id": "panel-4",
@@ -461,7 +461,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Lunch break under a neem tree where kindness includes a left-out friend.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -530,7 +530,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At lunch",
-        "text": "Arjuna finishes sweeping the veranda before sunrise. In the school courtyard, a small task is waiting."
+        "text": "Arjuna finishes sweeping the veranda before sunrise."
       },
       {
         "id": "panel-2",
@@ -540,7 +540,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna folds the broom away and quietly helps with water pots too. Arjuna practices this choice with steady care."
+        "text": "Arjuna folds the broom away and quietly helps with water pots too."
       },
       {
         "id": "panel-4",
@@ -560,7 +560,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Early morning home chore scene with quiet sweeping and sincere effort.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -629,7 +629,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "During play",
-        "text": "Two siblings argue over whose turn it is for the swing. In the school courtyard, a small task is waiting."
+        "text": "Two siblings argue over whose turn it is for the swing."
       },
       {
         "id": "panel-2",
@@ -659,7 +659,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -728,7 +728,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Practice time",
-        "text": "Arjuna stumbles on difficult Sanskrit words during practice. In the school courtyard, a small task is waiting."
+        "text": "Arjuna stumbles on difficult Sanskrit words during practice. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -758,7 +758,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -827,7 +827,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Starting moment",
-        "text": "Arjuna\u2019s kite falls early in the village contest. In the school courtyard, a small task is waiting."
+        "text": "Arjuna\u2019s kite falls early in the village contest."
       },
       {
         "id": "panel-2",
@@ -837,7 +837,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Helpful step",
-        "text": "Arjuna congratulates the winner and helps gather fallen strings safely. Arjuna practices this choice with steady care."
+        "text": "Arjuna congratulates the winner and helps gather fallen strings safely."
       },
       {
         "id": "panel-4",
@@ -857,7 +857,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Open field kite contest scene with graceful acceptance and gratitude.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -926,7 +926,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning challenge",
-        "text": "No one is watching when it is time to water the tulsi. In the school courtyard, a small task is waiting."
+        "text": "No one is watching when it is time to water the tulsi."
       },
       {
         "id": "panel-2",
@@ -936,7 +936,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Careful response",
-        "text": "Arjuna fetches a small lota, waters gently, and clears dry leaves. Arjuna practices this choice with steady care."
+        "text": "Arjuna fetches a small lota, waters gently, and clears dry leaves."
       },
       {
         "id": "panel-4",
@@ -956,7 +956,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Home guest-serving moment with a cracked clay cup and truthful repair.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1025,7 +1025,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Before class",
-        "text": "Arjuna finds a classmate\u2019s pencil in his own pouch. In the school courtyard, a small task is waiting."
+        "text": "Arjuna finds a classmate\u2019s pencil in his own pouch."
       },
       {
         "id": "panel-2",
@@ -1035,7 +1035,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Careful response",
-        "text": "Arjuna returns it before class and thanks his friend for lending yesterday. Arjuna practices this choice with steady care."
+        "text": "Arjuna returns it before class and thanks his friend for lending yesterday."
       },
       {
         "id": "panel-4",
@@ -1055,7 +1055,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Classroom study scene focused on steady effort and honest correction.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1124,7 +1124,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At home",
-        "text": "A game mistake makes Arjuna feel angry and hot-faced. In the school courtyard, a small task is waiting."
+        "text": "A game mistake makes Arjuna feel angry and hot-faced. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1134,7 +1134,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Careful response",
-        "text": "Arjuna asks for a replay politely instead of shouting. Arjuna practices this choice with steady care."
+        "text": "Arjuna asks for a replay politely instead of shouting."
       },
       {
         "id": "panel-4",
@@ -1154,7 +1154,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1223,7 +1223,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At the courtyard",
-        "text": "Math homework feels long and frustrating after playtime. In the school courtyard, a small task is waiting."
+        "text": "Math homework feels long and frustrating after playtime. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1233,7 +1233,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Promise kept",
-        "text": "Arjuna completes one page at a time and checks carefully. Arjuna practices this choice with steady care."
+        "text": "Arjuna completes one page at a time and checks carefully."
       },
       {
         "id": "panel-4",
@@ -1253,7 +1253,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Classroom study scene focused on steady effort and honest correction.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1322,7 +1322,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At lunch",
-        "text": "An elder struggles with a heavy vegetable basket at the gate. In the school courtyard, a small task is waiting."
+        "text": "An elder struggles with a heavy vegetable basket at the gate."
       },
       {
         "id": "panel-2",
@@ -1332,7 +1332,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Promise kept",
-        "text": "Arjuna lifts one side and walks slowly beside the elder. Arjuna practices this choice with steady care."
+        "text": "Arjuna lifts one side and walks slowly beside the elder."
       },
       {
         "id": "panel-4",
@@ -1352,7 +1352,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Pathside service scene helping an elder carry a heavy basket safely.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1421,7 +1421,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "During play",
-        "text": "Arjuna receives praise for singing clearly in prayer hall. In the school courtyard, a small task is waiting."
+        "text": "Arjuna receives praise for singing clearly in prayer hall. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1451,7 +1451,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1520,7 +1520,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Practice time",
-        "text": "The well line grows long and children begin to push. In the school courtyard, a small task is waiting."
+        "text": "The well line grows long and children begin to push."
       },
       {
         "id": "panel-2",
@@ -1530,7 +1530,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna marks a line in dust and helps younger children wait safely. Arjuna practices this choice with steady care."
+        "text": "Arjuna marks a line in dust and helps younger children wait safely."
       },
       {
         "id": "panel-4",
@@ -1550,7 +1550,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Village well queue scene with patience, fairness, and calm guidance.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1619,7 +1619,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Starting moment",
-        "text": "Evening play starts while one chore remains undone. In the school courtyard, a small task is waiting."
+        "text": "Evening play starts while one chore remains undone. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1629,7 +1629,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna folds laundry first, then joins play peacefully. Arjuna practices this choice with steady care."
+        "text": "Arjuna folds laundry first, then joins play peacefully."
       },
       {
         "id": "panel-4",
@@ -1649,7 +1649,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1718,7 +1718,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning challenge",
-        "text": "Arjuna interrupts while his friend explains a problem. In the school courtyard, a small task is waiting."
+        "text": "Arjuna interrupts while his friend explains a problem. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1728,7 +1728,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna stays quiet, listens, then responds with care. Arjuna practices this choice with steady care."
+        "text": "Arjuna stays quiet, listens, then responds with care."
       },
       {
         "id": "panel-4",
@@ -1748,7 +1748,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1817,7 +1817,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Before class",
-        "text": "Ink spills on homework right before class. In the school courtyard, a small task is waiting."
+        "text": "Ink spills on homework right before class. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1827,7 +1827,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna rewrites the page and submits honest work on time. Arjuna practices this choice with steady care."
+        "text": "Arjuna rewrites the page and submits honest work on time."
       },
       {
         "id": "panel-4",
@@ -1847,7 +1847,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Classroom study scene focused on steady effort and honest correction.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -1916,7 +1916,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At home",
-        "text": "Only one shady seat is left during assembly. In the school courtyard, a small task is waiting."
+        "text": "Only one shady seat is left during assembly. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -1926,7 +1926,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna offers the seat to a tired younger child. Arjuna practices this choice with steady care."
+        "text": "Arjuna offers the seat to a tired younger child."
       },
       {
         "id": "panel-4",
@@ -1946,7 +1946,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2015,7 +2015,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At the courtyard",
-        "text": "Arjuna misses an easy catch and feels embarrassed. In the school courtyard, a small task is waiting."
+        "text": "Arjuna misses an easy catch and feels embarrassed. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -2045,7 +2045,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2114,7 +2114,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At lunch",
-        "text": "A borrowed storybook is overdue by two days. In the school courtyard, a small task is waiting."
+        "text": "A borrowed storybook is overdue by two days."
       },
       {
         "id": "panel-2",
@@ -2124,7 +2124,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Helpful step",
-        "text": "Arjuna returns it, apologizes, and records the due date. Arjuna practices this choice with steady care."
+        "text": "Arjuna returns it, apologizes, and records the due date."
       },
       {
         "id": "panel-4",
@@ -2144,7 +2144,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2213,7 +2213,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "During play",
-        "text": "Decorations are unfinished before guests arrive. In the school courtyard, a small task is waiting."
+        "text": "Decorations are unfinished before guests arrive. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -2223,7 +2223,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Helpful step",
-        "text": "Arjuna ties marigold strings and arranges mats quietly. Arjuna practices this choice with steady care."
+        "text": "Arjuna ties marigold strings and arranges mats quietly."
       },
       {
         "id": "panel-4",
@@ -2243,7 +2243,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2312,7 +2312,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Practice time",
-        "text": "Some children laugh at a classmate\u2019s pronunciation. In the school courtyard, a small task is waiting."
+        "text": "Some children laugh at a classmate\u2019s pronunciation. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -2322,7 +2322,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Helpful step",
-        "text": "Arjuna changes the mood by encouraging one more try. Arjuna practices this choice with steady care."
+        "text": "Arjuna changes the mood by encouraging one more try."
       },
       {
         "id": "panel-4",
@@ -2342,7 +2342,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Classroom study scene focused on steady effort and honest correction.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2411,7 +2411,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Starting moment",
-        "text": "Many tasks at once make Arjuna restless. In the school courtyard, a small task is waiting."
+        "text": "Many tasks at once make Arjuna restless. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -2421,7 +2421,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Careful response",
-        "text": "Arjuna completes each step in order using a small checklist. Arjuna practices this choice with steady care."
+        "text": "Arjuna completes each step in order using a small checklist."
       },
       {
         "id": "panel-4",
@@ -2441,7 +2441,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2510,7 +2510,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning challenge",
-        "text": "Only a little prasad remains after prayer. In the school courtyard, a small task is waiting."
+        "text": "Only a little prasad remains after prayer."
       },
       {
         "id": "panel-2",
@@ -2520,7 +2520,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Careful response",
-        "text": "Arjuna divides it into equal pieces for everyone nearby. Arjuna practices this choice with steady care."
+        "text": "Arjuna divides it into equal pieces for everyone nearby."
       },
       {
         "id": "panel-4",
@@ -2540,7 +2540,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Prayer-hall sharing moment with fair prasad portions and gratitude.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2609,7 +2609,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Before class",
-        "text": "Rain cancels the outdoor game Arjuna planned. In the school courtyard, a small task is waiting."
+        "text": "Rain cancels the outdoor game Arjuna planned. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -2619,7 +2619,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Careful response",
-        "text": "Arjuna starts an indoor storytelling circle instead. Arjuna practices this choice with steady care."
+        "text": "Arjuna starts an indoor storytelling circle instead. He completes the next needed step with patient hands."
       },
       {
         "id": "panel-4",
@@ -2639,7 +2639,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2708,7 +2708,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At home",
-        "text": "A younger cousin keeps interrupting homework time. In the school courtyard, a small task is waiting."
+        "text": "A younger cousin keeps interrupting homework time. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -2718,7 +2718,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Promise kept",
-        "text": "Arjuna sets a short play break and then returns to study. Arjuna practices this choice with steady care."
+        "text": "Arjuna sets a short play break and then returns to study."
       },
       {
         "id": "panel-4",
@@ -2738,7 +2738,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2807,7 +2807,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At the courtyard",
-        "text": "A toy cart wheel loosens before sharing time. In the school courtyard, a small task is waiting."
+        "text": "A toy cart wheel loosens before sharing time."
       },
       {
         "id": "panel-2",
@@ -2817,7 +2817,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Promise kept",
-        "text": "Arjuna tightens the peg and shares the cart with others. Arjuna practices this choice with steady care."
+        "text": "Arjuna tightens the peg and shares the cart with others."
       },
       {
         "id": "panel-4",
@@ -2837,7 +2837,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -2906,7 +2906,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "At lunch",
-        "text": "Day ends after many small tasks and lessons. In the school courtyard, a small task is waiting."
+        "text": "Day ends after many small tasks and lessons."
       },
       {
         "id": "panel-2",
@@ -2916,7 +2916,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Promise kept",
-        "text": "Arjuna offers a short thank-you prayer and rests peacefully. Arjuna practices this choice with steady care."
+        "text": "Arjuna offers a short thank-you prayer and rests peacefully."
       },
       {
         "id": "panel-4",
@@ -2936,7 +2936,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -3005,7 +3005,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "During play",
-        "text": "Arjuna writes the wrong answer on the board. In the school courtyard, a small task is waiting."
+        "text": "Arjuna writes the wrong answer on the board. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -3015,7 +3015,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna erases, rewrites, and thanks the classmate who helped. Arjuna practices this choice with steady care."
+        "text": "Arjuna erases, rewrites, and thanks the classmate who helped."
       },
       {
         "id": "panel-4",
@@ -3035,7 +3035,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Classroom study scene focused on steady effort and honest correction.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -3097,7 +3097,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Practice time",
-        "text": "Festival lamps and flowers need arranging before dusk. In the school courtyard, a small task is waiting."
+        "text": "Festival lamps and flowers need arranging before dusk."
       },
       {
         "id": "panel-2",
@@ -3107,7 +3107,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "Action chosen",
-        "text": "Arjuna places diyas safely and checks pathways for elders. Arjuna practices this choice with steady care."
+        "text": "Arjuna places diyas safely and checks pathways for elders."
       },
       {
         "id": "panel-4",
@@ -3127,7 +3127,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -3189,7 +3189,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Starting moment",
-        "text": "Tabla rhythm is hard to keep at first try. In the school courtyard, a small task is waiting."
+        "text": "Tabla rhythm is hard to keep at first try."
       },
       {
         "id": "panel-2",
@@ -3219,7 +3219,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Music practice corner where patient rhythm builds confidence.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -3281,7 +3281,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning challenge",
-        "text": "Arjuna notices an extra point marked by mistake. In the school courtyard, a small task is waiting."
+        "text": "Arjuna notices an extra point marked by mistake. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -3291,7 +3291,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna reports the error and accepts the true score. Arjuna practices this choice with steady care."
+        "text": "Arjuna reports the error and accepts the true score."
       },
       {
         "id": "panel-4",
@@ -3311,7 +3311,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
@@ -3373,7 +3373,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Before class",
-        "text": "Food spills while Arjuna serves guests in a hurry. In the school courtyard, a small task is waiting."
+        "text": "Food spills while Arjuna serves guests in a hurry. A small clay lamp glows nearby."
       },
       {
         "id": "panel-2",
@@ -3383,7 +3383,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-3",
         "title": "What Arjuna did",
-        "text": "Arjuna cleans the area and serves again with care. Arjuna practices this choice with steady care."
+        "text": "Arjuna cleans the area and serves again with care."
       },
       {
         "id": "panel-4",
@@ -3403,7 +3403,7 @@ export const bhagavadGitaForChildrenExpansionPackV1Stories: ExtendedStory[] = [
     "completionBlessing": "May your heart stay calm, kind, and steady in right effort.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Child-safe chariot-side guidance moment with warm sunrise tones.",
+      "sceneSummary": "Child-safe daily life setting where Krishna\u2019s guidance supports calm, kind action.",
       "styleGuidance": "Warm, respectful, calm expressions; no battle intensity.",
       "culturalGuardrails": [
         "Respect sacred names",
