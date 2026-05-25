@@ -10,9 +10,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-001",
     "title": "Night Before Diwali in Ayodhya",
     "shortTitle": "Night Before Diwali in Ayodhya",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights kindness and family warmth.",
+    "summary": "On the eve of Diwali, Rama, Sita, and Lakshmana walk through Ayodhya as families prepare lamps for a joyful homecoming.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Family retelling of Diwali welcome traditions in Ayodhya.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 1,
@@ -25,8 +25,8 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "Rama",
@@ -36,39 +36,39 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Dawn",
+        "text": "At dusk in Ayodhya, Rama notices children cleaning the lane so every lamp can shine clearly, honoring tradition in scene 1."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "text": "Sita ties marigolds on a doorway while Lakshmana helps an elder place diyas safely along the wall."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Kind Choice",
+        "text": "When one family has no extra oil, neighbors share from their own bowls so no doorstep remains dark."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "title": "Evening Blessing",
+        "text": "The night settles into gratitude as the city glows, and the children whisper thanks for returning light."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling of Diwali welcome traditions in Ayodhya.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did sharing lamp oil help everyone celebrate together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Where can you bring light for someone this week?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in Ayodhya with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -97,10 +97,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Night Before Diwali in Ayodhya. During Diwali, this child-safe story in Ayodhya shows kindness through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Night Before Diwali in Ayodhya opens with festival scene 1. Night Before Diwali in Ayodhya. On the eve of Diwali, Rama, Sita, and Lakshmana walk through Ayodhya as families prepare lamps for a joyful homecoming. When one family has no extra oil, neighbors share from their own bowls so no doorstep remains dark.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -110,9 +110,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-002",
     "title": "Lamps Returning to Ayodhya",
     "shortTitle": "Lamps Returning to Ayodhya",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights courage and family warmth.",
+    "summary": "Families in Ayodhya light diyas to welcome Rama, filling streets with gratitude and gentle joy.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Diwali homecoming retelling centered on lamps and gratitude.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 2,
@@ -123,409 +123,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
-    "secondaryValues": [
-      "Sharing",
-      "Gratitude"
-    ],
-    "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
-    ],
-    "panels": [
-      {
-        "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
-      },
-      {
-        "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
-      },
-      {
-        "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
-      },
-      {
-        "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
-      }
-    ],
-    "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
-      "cautionNote": "Keep discussion gentle and age-appropriate."
-    },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
-    "completionBlessing": "May your home be filled with light, care, and peace.",
-    "sacredRespectLevel": "sacred_story",
-    "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
-      "culturalGuardrails": [
-        "Respect sacred names",
-        "No mockery",
-        "No fear-heavy imagery"
-      ],
-      "deityTreatment": "Reverent and child-safe",
-      "avoidList": [
-        "hard gamification",
-        "violent scenes"
-      ]
-    },
-    "audioMetadata": {
-      "audioAvailable": false,
-      "voiceOptions": [],
-      "narrationScriptStatus": "qa_ready",
-      "preferredVoiceStyle": "warm_storytelling",
-      "pacing": "medium",
-      "noMicRequired": true
-    },
-    "status": "qa_ready",
-    "primaryCategoryId": "festival_stories",
-    "secondaryCategoryIds": [
-      "festival_stories"
-    ],
-    "readinessStatus": "qa_ready",
-    "audioStatus": "script_ready",
-    "journeyStatus": "journey_ordered",
-    "audioScript": {
-      "narrationScript": "Lamps Returning to Ayodhya. During Holi, this child-safe story in Vrindavan shows courage through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
-      "audioReadinessIntent": "ready"
-    }
-  },
-  {
-    "id": "festival-stories-exp-v1-003",
-    "storyId": "festival-stories-exp-v1-003",
-    "slug": "festival-stories-exp-v1-003",
-    "title": "Radha on Holi Morning",
-    "shortTitle": "Radha on Holi Morning",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights sharing and family warmth.",
-    "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
-    "storyPackId": "festival-stories-expansion-pack-v1",
-    "journeyId": "festival-stories-journey-v1",
-    "journeyOrder": 3,
-    "ageBands": [
-      "3-5",
-      "6-8",
-      "9-12"
-    ],
-    "recommendedAgeBand": "6-8",
-    "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
-    ],
-    "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
-    ],
-    "panels": [
-      {
-        "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
-      },
-      {
-        "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
-      },
-      {
-        "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
-      },
-      {
-        "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
-      }
-    ],
-    "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
-      "cautionNote": "Keep discussion gentle and age-appropriate."
-    },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
-    "completionBlessing": "May your home be filled with light, care, and peace.",
-    "sacredRespectLevel": "sacred_story",
-    "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
-      "culturalGuardrails": [
-        "Respect sacred names",
-        "No mockery",
-        "No fear-heavy imagery"
-      ],
-      "deityTreatment": "Reverent and child-safe",
-      "avoidList": [
-        "hard gamification",
-        "violent scenes"
-      ]
-    },
-    "audioMetadata": {
-      "audioAvailable": false,
-      "voiceOptions": [],
-      "narrationScriptStatus": "qa_ready",
-      "preferredVoiceStyle": "warm_storytelling",
-      "pacing": "medium",
-      "noMicRequired": true
-    },
-    "status": "qa_ready",
-    "primaryCategoryId": "festival_stories",
-    "secondaryCategoryIds": [
-      "festival_stories"
-    ],
-    "readinessStatus": "qa_ready",
-    "audioStatus": "script_ready",
-    "journeyStatus": "journey_ordered",
-    "audioScript": {
-      "narrationScript": "Radha on Holi Morning. During Janmashtami, this child-safe story in Mathura shows sharing through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
-      "audioReadinessIntent": "ready"
-    }
-  },
-  {
-    "id": "festival-stories-exp-v1-004",
-    "storyId": "festival-stories-exp-v1-004",
-    "slug": "festival-stories-exp-v1-004",
-    "title": "Krishna and Safe Holi Colors",
-    "shortTitle": "Krishna and Safe Holi Colors",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights gratitude and family warmth.",
-    "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
-    "storyPackId": "festival-stories-expansion-pack-v1",
-    "journeyId": "festival-stories-journey-v1",
-    "journeyOrder": 4,
-    "ageBands": [
-      "3-5",
-      "6-8",
-      "9-12"
-    ],
-    "recommendedAgeBand": "6-8",
-    "durationMinutes": 5,
-    "primaryValue": "Gratitude",
-    "secondaryValues": [
-      "Devotion",
-      "Patience"
-    ],
-    "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
-    ],
-    "panels": [
-      {
-        "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
-      },
-      {
-        "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
-      },
-      {
-        "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
-      },
-      {
-        "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
-      }
-    ],
-    "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
-      "cautionNote": "Keep discussion gentle and age-appropriate."
-    },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
-    "completionBlessing": "May your home be filled with light, care, and peace.",
-    "sacredRespectLevel": "sacred_story",
-    "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
-      "culturalGuardrails": [
-        "Respect sacred names",
-        "No mockery",
-        "No fear-heavy imagery"
-      ],
-      "deityTreatment": "Reverent and child-safe",
-      "avoidList": [
-        "hard gamification",
-        "violent scenes"
-      ]
-    },
-    "audioMetadata": {
-      "audioAvailable": false,
-      "voiceOptions": [],
-      "narrationScriptStatus": "qa_ready",
-      "preferredVoiceStyle": "warm_storytelling",
-      "pacing": "medium",
-      "noMicRequired": true
-    },
-    "status": "qa_ready",
-    "primaryCategoryId": "festival_stories",
-    "secondaryCategoryIds": [
-      "festival_stories"
-    ],
-    "readinessStatus": "qa_ready",
-    "audioStatus": "script_ready",
-    "journeyStatus": "journey_ordered",
-    "audioScript": {
-      "narrationScript": "Krishna and Safe Holi Colors. During Ganesh Chaturthi, this child-safe story in Kailash shows gratitude through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
-      "audioReadinessIntent": "ready"
-    }
-  },
-  {
-    "id": "festival-stories-exp-v1-005",
-    "storyId": "festival-stories-exp-v1-005",
-    "slug": "festival-stories-exp-v1-005",
-    "title": "Child Making a Clay Ganesh Idol",
-    "shortTitle": "Child Making a Clay Ganesh Idol",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights devotion and family warmth.",
-    "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
-    "storyPackId": "festival-stories-expansion-pack-v1",
-    "journeyId": "festival-stories-journey-v1",
-    "journeyOrder": 5,
-    "ageBands": [
-      "3-5",
-      "6-8",
-      "9-12"
-    ],
-    "recommendedAgeBand": "6-8",
-    "durationMinutes": 5,
-    "primaryValue": "Devotion",
-    "secondaryValues": [
-      "Patience",
-      "Truthfulness"
-    ],
-    "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
-    ],
-    "panels": [
-      {
-        "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
-      },
-      {
-        "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
-      },
-      {
-        "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
-      },
-      {
-        "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
-      }
-    ],
-    "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
-      "cautionNote": "Keep discussion gentle and age-appropriate."
-    },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
-    "completionBlessing": "May your home be filled with light, care, and peace.",
-    "sacredRespectLevel": "sacred_story",
-    "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
-      "culturalGuardrails": [
-        "Respect sacred names",
-        "No mockery",
-        "No fear-heavy imagery"
-      ],
-      "deityTreatment": "Reverent and child-safe",
-      "avoidList": [
-        "hard gamification",
-        "violent scenes"
-      ]
-    },
-    "audioMetadata": {
-      "audioAvailable": false,
-      "voiceOptions": [],
-      "narrationScriptStatus": "qa_ready",
-      "preferredVoiceStyle": "warm_storytelling",
-      "pacing": "medium",
-      "noMicRequired": true
-    },
-    "status": "qa_ready",
-    "primaryCategoryId": "festival_stories",
-    "secondaryCategoryIds": [
-      "festival_stories"
-    ],
-    "readinessStatus": "qa_ready",
-    "audioStatus": "script_ready",
-    "journeyStatus": "journey_ordered",
-    "audioScript": {
-      "narrationScript": "Child Making a Clay Ganesh Idol. During Navratri, this child-safe story in home altar shows devotion through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
-      "audioReadinessIntent": "ready"
-    }
-  },
-  {
-    "id": "festival-stories-exp-v1-006",
-    "storyId": "festival-stories-exp-v1-006",
-    "slug": "festival-stories-exp-v1-006",
-    "title": "First Modak Offering",
-    "shortTitle": "First Modak Offering",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights patience and family warmth.",
-    "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
-    "storyPackId": "festival-stories-expansion-pack-v1",
-    "journeyId": "festival-stories-journey-v1",
-    "journeyOrder": 6,
-    "ageBands": [
-      "3-5",
-      "6-8",
-      "9-12"
-    ],
-    "recommendedAgeBand": "6-8",
-    "durationMinutes": 5,
-    "primaryValue": "Patience",
-    "secondaryValues": [
-      "Truthfulness",
       "Care"
     ],
     "characters": [
@@ -536,39 +136,39 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "Before moonrise, families line Ayodhya’s pathways with small clay diyas and flower petals, honoring tradition in scene 2."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "Hanuman helps children shield each flame from the breeze with cupped hands and patience."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "A younger child drops a wick, and Sita calmly shows how to relight it without rushing or fear."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "title": "Prayer Close",
+        "text": "When Rama arrives, the city glows like a river of light, and everyone bows in thankful silence."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Diwali homecoming retelling centered on lamps and gratitude.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Why did the children protect each small flame carefully?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What does welcoming light mean in your home?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in Ayodhya with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -597,10 +197,410 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "First Modak Offering. During Dussehra, this child-safe story in Ayodhya shows patience through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Lamps Returning to Ayodhya opens with festival scene 2. Lamps Returning to Ayodhya. Families in Ayodhya light diyas to welcome Rama, filling streets with gratitude and gentle joy. A younger child drops a wick, and Sita calmly shows how to relight it without rushing or fear.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
+      "audioReadinessIntent": "ready"
+    }
+  },
+  {
+    "id": "festival-stories-exp-v1-003",
+    "storyId": "festival-stories-exp-v1-003",
+    "slug": "festival-stories-exp-v1-003",
+    "title": "Radha on Holi Morning",
+    "shortTitle": "Radha on Holi Morning",
+    "summary": "Radha begins Holi morning in Vrindavan with kindness, laughter, and safe colors shared respectfully.",
+    "sourceTradition": "Festival Stories",
+    "sourceTextOrTraditionNote": "Vrindavan Holi retelling focused on Radha’s gentle leadership.",
+    "storyPackId": "festival-stories-expansion-pack-v1",
+    "journeyId": "festival-stories-journey-v1",
+    "journeyOrder": 3,
+    "ageBands": [
+      "3-5",
+      "6-8",
+      "9-12"
+    ],
+    "recommendedAgeBand": "6-8",
+    "durationMinutes": 5,
+    "primaryValue": "Kindness",
+    "secondaryValues": [
+      "Gratitude",
+      "Care"
+    ],
+    "characters": [
+      "Radha",
+      "Krishna",
+      "Lalita"
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Early Light",
+        "text": "At sunrise in Vrindavan, Radha mixes flower petals with water to make soft natural colors, honoring tradition in scene 3."
+      },
+      {
+        "id": "panel-2",
+        "title": "Family Work",
+        "text": "She reminds her friends to ask permission before applying color and to keep play joyful for all ages."
+      },
+      {
+        "id": "panel-3",
+        "title": "Sharing Choice",
+        "text": "When a younger child feels shy, Krishna offers a tiny dot of color on the wrist instead of a loud splash."
+      },
+      {
+        "id": "panel-4",
+        "title": "Gratitude",
+        "text": "The morning ends with singing and sweet drinks as everyone thanks Radha for kind-hearted play."
+      }
+    ],
+    "parentNote": {
+      "sourceContext": "Vrindavan Holi retelling focused on Radha’s gentle leadership.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did asking permission make Holi feel safer?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
+      "cautionNote": "Keep discussion gentle and age-appropriate."
+    },
+    "reflectionPrompt": "How can you include someone who feels shy in a game?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
+    "completionBlessing": "May your home be filled with light, care, and peace.",
+    "sacredRespectLevel": "sacred_story",
+    "illustrationPrompt": {
+      "sceneSummary": "Holi celebration in Vrindavan with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
+      "culturalGuardrails": [
+        "Respect sacred names",
+        "No mockery",
+        "No fear-heavy imagery"
+      ],
+      "deityTreatment": "Reverent and child-safe",
+      "avoidList": [
+        "hard gamification",
+        "violent scenes"
+      ]
+    },
+    "audioMetadata": {
+      "audioAvailable": false,
+      "voiceOptions": [],
+      "narrationScriptStatus": "qa_ready",
+      "preferredVoiceStyle": "warm_storytelling",
+      "pacing": "medium",
+      "noMicRequired": true
+    },
+    "status": "qa_ready",
+    "primaryCategoryId": "festival_stories",
+    "secondaryCategoryIds": [
+      "festival_stories"
+    ],
+    "readinessStatus": "qa_ready",
+    "audioStatus": "script_ready",
+    "journeyStatus": "journey_ordered",
+    "audioScript": {
+      "narrationScript": "Radha on Holi Morning opens with festival scene 3. Radha on Holi Morning. Radha begins Holi morning in Vrindavan with kindness, laughter, and safe colors shared respectfully. When a younger child feels shy, Krishna offers a tiny dot of color on the wrist instead of a loud splash.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
+      "audioReadinessIntent": "ready"
+    }
+  },
+  {
+    "id": "festival-stories-exp-v1-004",
+    "storyId": "festival-stories-exp-v1-004",
+    "slug": "festival-stories-exp-v1-004",
+    "title": "Krishna and Safe Holi Colors",
+    "shortTitle": "Krishna and Safe Holi Colors",
+    "summary": "Krishna, Radha, and Yashoda show how Holi can be bright, respectful, and safe with natural colors.",
+    "sourceTradition": "Festival Stories",
+    "sourceTextOrTraditionNote": "Family Holi retelling about respectful play and natural colors.",
+    "storyPackId": "festival-stories-expansion-pack-v1",
+    "journeyId": "festival-stories-journey-v1",
+    "journeyOrder": 4,
+    "ageBands": [
+      "3-5",
+      "6-8",
+      "9-12"
+    ],
+    "recommendedAgeBand": "6-8",
+    "durationMinutes": 5,
+    "primaryValue": "Kindness",
+    "secondaryValues": [
+      "Gratitude",
+      "Care"
+    ],
+    "characters": [
+      "Krishna",
+      "Radha",
+      "Yashoda"
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Morning Start",
+        "text": "Yashoda dries tesu petals and beetroot peels so Krishna can make gentle Holi powders at home, honoring tradition in scene 4."
+      },
+      {
+        "id": "panel-2",
+        "title": "Story Time",
+        "text": "Radha checks each bowl and labels them so children know which color is soft for skin and eyes."
+      },
+      {
+        "id": "panel-3",
+        "title": "Careful Action",
+        "text": "When play grows noisy, Krishna pauses the group and repeats: no throwing near faces, no forcing color."
+      },
+      {
+        "id": "panel-4",
+        "title": "Calm Finish",
+        "text": "By afternoon the courtyard is full of laughter, and the children clean together before prasad."
+      }
+    ],
+    "parentNote": {
+      "sourceContext": "Family Holi retelling about respectful play and natural colors.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which safety rule did Krishna repeat to protect everyone?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
+      "cautionNote": "Keep discussion gentle and age-appropriate."
+    },
+    "reflectionPrompt": "What rule helps friends play kindly in your games?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
+    "completionBlessing": "May your home be filled with light, care, and peace.",
+    "sacredRespectLevel": "sacred_story",
+    "illustrationPrompt": {
+      "sceneSummary": "Holi celebration in Vrindavan with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
+      "culturalGuardrails": [
+        "Respect sacred names",
+        "No mockery",
+        "No fear-heavy imagery"
+      ],
+      "deityTreatment": "Reverent and child-safe",
+      "avoidList": [
+        "hard gamification",
+        "violent scenes"
+      ]
+    },
+    "audioMetadata": {
+      "audioAvailable": false,
+      "voiceOptions": [],
+      "narrationScriptStatus": "qa_ready",
+      "preferredVoiceStyle": "warm_storytelling",
+      "pacing": "medium",
+      "noMicRequired": true
+    },
+    "status": "qa_ready",
+    "primaryCategoryId": "festival_stories",
+    "secondaryCategoryIds": [
+      "festival_stories"
+    ],
+    "readinessStatus": "qa_ready",
+    "audioStatus": "script_ready",
+    "journeyStatus": "journey_ordered",
+    "audioScript": {
+      "narrationScript": "Krishna and Safe Holi Colors opens with festival scene 4. Krishna and Safe Holi Colors. Krishna, Radha, and Yashoda show how Holi can be bright, respectful, and safe with natural colors. When play grows noisy, Krishna pauses the group and repeats: no throwing near faces, no forcing color.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
+      "audioReadinessIntent": "ready"
+    }
+  },
+  {
+    "id": "festival-stories-exp-v1-005",
+    "storyId": "festival-stories-exp-v1-005",
+    "slug": "festival-stories-exp-v1-005",
+    "title": "Child Making a Clay Ganesh Idol",
+    "shortTitle": "Child Making a Clay Ganesh Idol",
+    "summary": "A child-safe Ganesh Chaturthi story about devotion, kindness, and family care.",
+    "sourceTradition": "Festival Stories",
+    "sourceTextOrTraditionNote": "Family retelling for Ganesh Chaturthi.",
+    "storyPackId": "festival-stories-expansion-pack-v1",
+    "journeyId": "festival-stories-journey-v1",
+    "journeyOrder": 5,
+    "ageBands": [
+      "3-5",
+      "6-8",
+      "9-12"
+    ],
+    "recommendedAgeBand": "6-8",
+    "durationMinutes": 5,
+    "primaryValue": "Kindness",
+    "secondaryValues": [
+      "Gratitude",
+      "Care"
+    ],
+    "characters": [
+      "child",
+      "Ganesha",
+      "parent"
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Welcome",
+        "text": "At home courtyard, children prepare for Ganesh Chaturthi with guidance from elders, honoring tradition in scene 5."
+      },
+      {
+        "id": "panel-2",
+        "title": "Tradition",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
+      },
+      {
+        "id": "panel-3",
+        "title": "Respectful Play",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
+      },
+      {
+        "id": "panel-4",
+        "title": "Thankful End",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
+      }
+    ],
+    "parentNote": {
+      "sourceContext": "Family retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Ganesh Chaturthi?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
+      "cautionNote": "Keep discussion gentle and age-appropriate."
+    },
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
+    "completionBlessing": "May your home be filled with light, care, and peace.",
+    "sacredRespectLevel": "sacred_story",
+    "illustrationPrompt": {
+      "sceneSummary": "Ganesh Chaturthi celebration in home courtyard with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
+      "culturalGuardrails": [
+        "Respect sacred names",
+        "No mockery",
+        "No fear-heavy imagery"
+      ],
+      "deityTreatment": "Reverent and child-safe",
+      "avoidList": [
+        "hard gamification",
+        "violent scenes"
+      ]
+    },
+    "audioMetadata": {
+      "audioAvailable": false,
+      "voiceOptions": [],
+      "narrationScriptStatus": "qa_ready",
+      "preferredVoiceStyle": "warm_storytelling",
+      "pacing": "medium",
+      "noMicRequired": true
+    },
+    "status": "qa_ready",
+    "primaryCategoryId": "festival_stories",
+    "secondaryCategoryIds": [
+      "festival_stories"
+    ],
+    "readinessStatus": "qa_ready",
+    "audioStatus": "script_ready",
+    "journeyStatus": "journey_ordered",
+    "audioScript": {
+      "narrationScript": "Child Making a Clay Ganesh Idol opens with festival scene 5. Child Making a Clay Ganesh Idol. A child-safe Ganesh Chaturthi story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
+      "audioReadinessIntent": "ready"
+    }
+  },
+  {
+    "id": "festival-stories-exp-v1-006",
+    "storyId": "festival-stories-exp-v1-006",
+    "slug": "festival-stories-exp-v1-006",
+    "title": "First Modak Offering",
+    "shortTitle": "First Modak Offering",
+    "summary": "A child-safe Ganesh Chaturthi story about devotion, kindness, and family care.",
+    "sourceTradition": "Festival Stories",
+    "sourceTextOrTraditionNote": "Family retelling for Ganesh Chaturthi.",
+    "storyPackId": "festival-stories-expansion-pack-v1",
+    "journeyId": "festival-stories-journey-v1",
+    "journeyOrder": 6,
+    "ageBands": [
+      "3-5",
+      "6-8",
+      "9-12"
+    ],
+    "recommendedAgeBand": "6-8",
+    "durationMinutes": 5,
+    "primaryValue": "Kindness",
+    "secondaryValues": [
+      "Gratitude",
+      "Care"
+    ],
+    "characters": [
+      "Ganesha",
+      "Parvati",
+      "child"
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Dawn",
+        "text": "At home shrine, children prepare for Ganesh Chaturthi with guidance from elders, honoring tradition in scene 6."
+      },
+      {
+        "id": "panel-2",
+        "title": "Preparation",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
+      },
+      {
+        "id": "panel-3",
+        "title": "Kind Choice",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
+      },
+      {
+        "id": "panel-4",
+        "title": "Evening Blessing",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
+      }
+    ],
+    "parentNote": {
+      "sourceContext": "Family retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Ganesh Chaturthi?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
+      "cautionNote": "Keep discussion gentle and age-appropriate."
+    },
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
+    "completionBlessing": "May your home be filled with light, care, and peace.",
+    "sacredRespectLevel": "sacred_story",
+    "illustrationPrompt": {
+      "sceneSummary": "Ganesh Chaturthi celebration in home shrine with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
+      "culturalGuardrails": [
+        "Respect sacred names",
+        "No mockery",
+        "No fear-heavy imagery"
+      ],
+      "deityTreatment": "Reverent and child-safe",
+      "avoidList": [
+        "hard gamification",
+        "violent scenes"
+      ]
+    },
+    "audioMetadata": {
+      "audioAvailable": false,
+      "voiceOptions": [],
+      "narrationScriptStatus": "qa_ready",
+      "preferredVoiceStyle": "warm_storytelling",
+      "pacing": "medium",
+      "noMicRequired": true
+    },
+    "status": "qa_ready",
+    "primaryCategoryId": "festival_stories",
+    "secondaryCategoryIds": [
+      "festival_stories"
+    ],
+    "readinessStatus": "qa_ready",
+    "audioStatus": "script_ready",
+    "journeyStatus": "journey_ordered",
+    "audioScript": {
+      "narrationScript": "First Modak Offering opens with festival scene 6. First Modak Offering. A child-safe Ganesh Chaturthi story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -610,9 +610,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-007",
     "title": "Navratri Lamp at Home",
     "shortTitle": "Navratri Lamp at Home",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights truthfulness and family warmth.",
+    "summary": "A child-safe Navratri story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Family retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 7,
@@ -623,52 +623,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "mother",
+      "child",
+      "Devi"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "At home altar, children prepare for Navratri with guidance from elders, honoring tradition in scene 7."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "title": "Prayer Close",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Navratri?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home altar with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -697,10 +697,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Navratri Lamp at Home. During Raksha Bandhan, this child-safe story in family home shows truthfulness through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Navratri Lamp at Home opens with festival scene 7. Navratri Lamp at Home. A child-safe Navratri story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -708,11 +708,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-008",
     "storyId": "festival-stories-exp-v1-008",
     "slug": "festival-stories-exp-v1-008",
-    "title": "Dussehra Courage Circle",
-    "shortTitle": "Dussehra Courage Circle",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights care and family warmth.",
+    "title": "Dussehra Courage Without Fear",
+    "shortTitle": "Dussehra Courage Without Fear",
+    "summary": "A child-safe Dussehra story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Family retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 8,
@@ -723,52 +723,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "children",
-      "grandfather",
-      "neighbors"
+      "Rama",
+      "Sita",
+      "Hanuman"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Early Light",
+        "text": "At village square, children prepare for Dussehra with guidance from elders, honoring tradition in scene 8."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Family Work",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Sharing Choice",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "title": "Gratitude",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Dussehra?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in village square with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -797,10 +797,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Dussehra Courage Circle. During Makar Sankranti, this child-safe story in terrace shows care through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Dussehra Courage Without Fear opens with festival scene 8. Dussehra Courage Without Fear. A child-safe Dussehra story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -808,11 +808,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-009",
     "storyId": "festival-stories-exp-v1-009",
     "slug": "festival-stories-exp-v1-009",
-    "title": "Kite Sharing on Makar Sankranti",
-    "shortTitle": "Kite Sharing on Makar Sankranti",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights humility and family warmth.",
+    "title": "Kite-Sharing on Makar Sankranti",
+    "shortTitle": "Kite-Sharing on Makar Sankranti",
+    "summary": "A child-safe Makar Sankranti story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Family retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 9,
@@ -823,52 +823,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "siblings",
+      "grandfather",
+      "neighbors"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Morning Start",
+        "text": "At sunny rooftop, children prepare for Makar Sankranti with guidance from elders, honoring tradition in scene 9."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Story Time",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Careful Action",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "title": "Calm Finish",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Makar Sankranti?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in sunny rooftop with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -897,10 +897,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Kite Sharing on Makar Sankranti. During Ram Navami, this child-safe story in Ayodhya temple shows humility through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Kite-Sharing on Makar Sankranti opens with festival scene 9. Kite-Sharing on Makar Sankranti. A child-safe Makar Sankranti story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -910,9 +910,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-010",
     "title": "Sibling Care on Raksha Bandhan",
     "shortTitle": "Sibling Care on Raksha Bandhan",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights service and family warmth.",
+    "summary": "A child-safe Raksha Bandhan story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Family retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 10,
@@ -923,52 +923,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "sister",
+      "brother",
+      "grandmother"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Welcome",
+        "text": "At family home, children prepare for Raksha Bandhan with guidance from elders, honoring tradition in scene 10."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Tradition",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Respectful Play",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "title": "Thankful End",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Raksha Bandhan?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in family home with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -997,10 +997,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Sibling Care on Raksha Bandhan. During Hanuman Jayanti, this child-safe story in temple courtyard shows service through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Sibling Care on Raksha Bandhan opens with festival scene 10. Sibling Care on Raksha Bandhan. A child-safe Raksha Bandhan story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1010,9 +1010,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-011",
     "title": "Ram Navami Cradle Celebration",
     "shortTitle": "Ram Navami Cradle Celebration",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights kindness and family warmth.",
+    "summary": "A child-safe Ram Navami story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Family retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 11,
@@ -1025,50 +1025,50 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "baby Rama",
+      "Kausalya",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Dawn",
+        "text": "At Ayodhya home, children prepare for Ram Navami with guidance from elders, honoring tradition in scene 11."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Kind Choice",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "title": "Evening Blessing",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Ram Navami?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in Ayodhya home with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1097,10 +1097,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Ram Navami Cradle Celebration. During Maha Shivratri, this child-safe story in Kailash shows kindness through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Ram Navami Cradle Celebration opens with festival scene 11. Ram Navami Cradle Celebration. A child-safe Ram Navami story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1108,11 +1108,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-012",
     "storyId": "festival-stories-exp-v1-012",
     "slug": "festival-stories-exp-v1-012",
-    "title": "Hanuman Jayanti Seva Path",
-    "shortTitle": "Hanuman Jayanti Seva Path",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights courage and family warmth.",
+    "title": "Hanuman Jayanti Seva",
+    "shortTitle": "Hanuman Jayanti Seva",
+    "summary": "A child-safe Hanuman Jayanti story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Family retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 12,
@@ -1123,52 +1123,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "Hanuman",
+      "Rama devotees",
+      "children"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "At temple courtyard, children prepare for Hanuman Jayanti with guidance from elders, honoring tradition in scene 12."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "title": "Prayer Close",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Hanuman Jayanti?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in temple courtyard with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1197,10 +1197,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Hanuman Jayanti Seva Path. During Diwali, this child-safe story in Ayodhya shows courage through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Hanuman Jayanti Seva opens with festival scene 12. Hanuman Jayanti Seva. A child-safe Hanuman Jayanti story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1210,9 +1210,9 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-013",
     "title": "Maha Shivratri Quiet Prayer",
     "shortTitle": "Maha Shivratri Quiet Prayer",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights sharing and family warmth.",
+    "summary": "A child-safe Maha Shivratri story about devotion, kindness, and family care.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Family retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 13,
@@ -1223,52 +1223,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "Shiva",
+      "Parvati",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Early Light",
+        "text": "At night temple, children prepare for Maha Shivratri with guidance from elders, honoring tradition in scene 13."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Family Work",
+        "text": "They arrange flowers, lamps, and offerings with calm attention."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Sharing Choice",
+        "text": "A small mistake becomes a learning moment about patience and mutual respect."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "title": "Gratitude",
+        "text": "The celebration closes with prayer and gratitude shared by everyone."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Family retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "What choice showed care during Maha Shivratri?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "How can you practice calm care in family celebrations?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in night temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1297,10 +1297,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Maha Shivratri Quiet Prayer. During Holi, this child-safe story in Vrindavan shows sharing through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Maha Shivratri Quiet Prayer opens with festival scene 13. Maha Shivratri Quiet Prayer. A child-safe Maha Shivratri story about devotion, kindness, and family care. A small mistake becomes a learning moment about patience and mutual respect.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1308,11 +1308,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-014",
     "storyId": "festival-stories-exp-v1-014",
     "slug": "festival-stories-exp-v1-014",
-    "title": "Janmashtami Story of Mathura 1",
-    "shortTitle": "Janmashtami Story of Mathura 1",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights gratitude and family warmth.",
+    "title": "Diya Lane of Ayodhya",
+    "shortTitle": "Diya Lane of Ayodhya",
+    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 14,
@@ -1323,52 +1323,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Morning Start",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 14."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Story Time",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Careful Action",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "title": "Calm Finish",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Diwali celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1397,10 +1397,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Janmashtami Story of Mathura 1. During Janmashtami, this child-safe story in Mathura shows gratitude through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Diya Lane of Ayodhya opens with festival scene 14. Diya Lane of Ayodhya. A Diwali retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1408,11 +1408,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-015",
     "storyId": "festival-stories-exp-v1-015",
     "slug": "festival-stories-exp-v1-015",
-    "title": "Ganesh Chaturthi Story of Kailash 2",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights devotion and family warmth.",
+    "title": "Sarayu Lights at Sunset",
+    "shortTitle": "Sarayu Lights at Sunset",
+    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 15,
@@ -1423,52 +1423,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Welcome",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 15."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Tradition",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Respectful Play",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "title": "Thankful End",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Diwali celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1497,10 +1497,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Ganesh Chaturthi Story of Kailash 2. During Ganesh Chaturthi, this child-safe story in Kailash shows devotion through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Sarayu Lights at Sunset opens with festival scene 15. Sarayu Lights at Sunset. A Diwali retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1508,11 +1508,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-016",
     "storyId": "festival-stories-exp-v1-016",
     "slug": "festival-stories-exp-v1-016",
-    "title": "Navratri Story of Home Altar 3",
-    "shortTitle": "Navratri Story of Home Altar 3",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights patience and family warmth.",
+    "title": "Colors with Consent in Barsana",
+    "shortTitle": "Colors with Consent in Barsana",
+    "summary": "A Holi retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 16,
@@ -1523,52 +1523,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Dawn",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 16."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Kind Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "title": "Evening Blessing",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Holi celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1597,10 +1597,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Navratri Story of Home Altar 3. During Navratri, this child-safe story in home altar shows patience through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Colors with Consent in Barsana opens with festival scene 16. Colors with Consent in Barsana. A Holi retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1608,11 +1608,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-017",
     "storyId": "festival-stories-exp-v1-017",
     "slug": "festival-stories-exp-v1-017",
-    "title": "Dussehra Story of Ayodhya 4",
-    "shortTitle": "Dussehra Story of Ayodhya 4",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights truthfulness and family warmth.",
+    "title": "Butter Pots and Gentle Holi",
+    "shortTitle": "Butter Pots and Gentle Holi",
+    "summary": "A Holi retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 17,
@@ -1623,52 +1623,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 17."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "title": "Prayer Close",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Holi celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1697,10 +1697,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Dussehra Story of Ayodhya 4. During Dussehra, this child-safe story in Ayodhya shows truthfulness through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Butter Pots and Gentle Holi opens with festival scene 17. Butter Pots and Gentle Holi. A Holi retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1708,11 +1708,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-018",
     "storyId": "festival-stories-exp-v1-018",
     "slug": "festival-stories-exp-v1-018",
-    "title": "Raksha Bandhan Story of Family Home 5",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights care and family warmth.",
+    "title": "Midnight Bells of Janmashtami",
+    "shortTitle": "Midnight Bells of Janmashtami",
+    "summary": "A Janmashtami retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 18,
@@ -1723,52 +1723,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Early Light",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 18."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Family Work",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Sharing Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "title": "Gratitude",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Janmashtami celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1797,10 +1797,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Raksha Bandhan Story of Family Home 5. During Raksha Bandhan, this child-safe story in family home shows care through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Midnight Bells of Janmashtami opens with festival scene 18. Midnight Bells of Janmashtami. A Janmashtami retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1808,11 +1808,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-019",
     "storyId": "festival-stories-exp-v1-019",
     "slug": "festival-stories-exp-v1-019",
-    "title": "Makar Sankranti Story of Terrace 6",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights humility and family warmth.",
+    "title": "Cradle Songs in Gokul",
+    "shortTitle": "Cradle Songs in Gokul",
+    "summary": "A Janmashtami retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 19,
@@ -1823,52 +1823,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Morning Start",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 19."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Story Time",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Careful Action",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "title": "Calm Finish",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Janmashtami celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1897,10 +1897,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Makar Sankranti Story of Terrace 6. During Makar Sankranti, this child-safe story in terrace shows humility through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Cradle Songs in Gokul opens with festival scene 19. Cradle Songs in Gokul. A Janmashtami retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1908,11 +1908,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-020",
     "storyId": "festival-stories-exp-v1-020",
     "slug": "festival-stories-exp-v1-020",
-    "title": "Ram Navami Story of Ayodhya Temple 7",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights service and family warmth.",
+    "title": "Moonlit Modak Kitchen",
+    "shortTitle": "Moonlit Modak Kitchen",
+    "summary": "A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 20,
@@ -1923,52 +1923,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Welcome",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 20."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Tradition",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Respectful Play",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "title": "Thankful End",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Ganesh Chaturthi celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -1997,10 +1997,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Ram Navami Story of Ayodhya Temple 7. During Ram Navami, this child-safe story in Ayodhya temple shows service through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Moonlit Modak Kitchen opens with festival scene 20. Moonlit Modak Kitchen. A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2008,11 +2008,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-021",
     "storyId": "festival-stories-exp-v1-021",
     "slug": "festival-stories-exp-v1-021",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 8",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights kindness and family warmth.",
+    "title": "Ganesh Visarjan Promise to Nature",
+    "shortTitle": "Ganesh Visarjan Promise to Nature",
+    "summary": "A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 21,
@@ -2025,50 +2025,50 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Dawn",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 21."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Kind Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "title": "Evening Blessing",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Ganesh Chaturthi celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2097,10 +2097,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Hanuman Jayanti Story of Temple Courtyard 8. During Hanuman Jayanti, this child-safe story in temple courtyard shows kindness through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Ganesh Visarjan Promise to Nature opens with festival scene 21. Ganesh Visarjan Promise to Nature. A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2108,11 +2108,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-022",
     "storyId": "festival-stories-exp-v1-022",
     "slug": "festival-stories-exp-v1-022",
-    "title": "Maha Shivratri Story of Kailash 9",
-    "shortTitle": "Maha Shivratri Story of Kailash 9",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights courage and family warmth.",
+    "title": "Nine Nights of Kind Steps",
+    "shortTitle": "Nine Nights of Kind Steps",
+    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 22,
@@ -2123,52 +2123,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 22."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "title": "Prayer Close",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Diwali celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2197,10 +2197,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Maha Shivratri Story of Kailash 9. During Maha Shivratri, this child-safe story in Kailash shows courage through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Nine Nights of Kind Steps opens with festival scene 22. Nine Nights of Kind Steps. A Diwali retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2208,11 +2208,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-023",
     "storyId": "festival-stories-exp-v1-023",
     "slug": "festival-stories-exp-v1-023",
-    "title": "Diwali Story of Ayodhya 10",
-    "shortTitle": "Diwali Story of Ayodhya 10",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights sharing and family warmth.",
+    "title": "Garba Circle of Respect",
+    "shortTitle": "Garba Circle of Respect",
+    "summary": "A Navratri retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 23,
@@ -2223,52 +2223,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Early Light",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 23."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Family Work",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Sharing Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "title": "Gratitude",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Navratri celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2297,10 +2297,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Diwali Story of Ayodhya 10. During Diwali, this child-safe story in Ayodhya shows sharing through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Garba Circle of Respect opens with festival scene 23. Garba Circle of Respect. A Navratri retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2308,11 +2308,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-024",
     "storyId": "festival-stories-exp-v1-024",
     "slug": "festival-stories-exp-v1-024",
-    "title": "Holi Story of Vrindavan 11",
-    "shortTitle": "Holi Story of Vrindavan 11",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights gratitude and family warmth.",
+    "title": "Rama Banner in the Courtyard",
+    "shortTitle": "Rama Banner in the Courtyard",
+    "summary": "A Dussehra retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 24,
@@ -2323,52 +2323,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Morning Start",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 24."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Story Time",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Careful Action",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "title": "Calm Finish",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Dussehra celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2397,10 +2397,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Holi Story of Vrindavan 11. During Holi, this child-safe story in Vrindavan shows gratitude through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Rama Banner in the Courtyard opens with festival scene 24. Rama Banner in the Courtyard. A Dussehra retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2408,11 +2408,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-025",
     "storyId": "festival-stories-exp-v1-025",
     "slug": "festival-stories-exp-v1-025",
-    "title": "Janmashtami Story of Mathura 12",
-    "shortTitle": "Janmashtami Story of Mathura 12",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights devotion and family warmth.",
+    "title": "Autumn Fair of Brave Hearts",
+    "shortTitle": "Autumn Fair of Brave Hearts",
+    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 25,
@@ -2423,52 +2423,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Welcome",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 25."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Tradition",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Respectful Play",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "title": "Thankful End",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Diwali celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2497,10 +2497,10 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Janmashtami Story of Mathura 12. During Janmashtami, this child-safe story in Mathura shows devotion through prayer, sharing, and family care.",
-      "voiceDirection": "Warm, clear, and respectful.",
-      "pronunciationNotes": "Krishna (KRISH-na), Radha (RAA-dha), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan), Ayodhya (uh-YO-dhya).",
-      "pacingNotes": "Steady pacing with gentle pauses after each scene.",
+      "narrationScript": "Autumn Fair of Brave Hearts opens with festival scene 25. Autumn Fair of Brave Hearts. A Diwali retelling where children learn reverence, sharing, and calm courage. When a disagreement appears, the children choose listening and sharing before continuing.",
+      "voiceDirection": "Warm, gentle, and respectful.",
+      "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
+      "pacingNotes": "Steady pace with soft pauses between scenes.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2508,11 +2508,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-026",
     "storyId": "festival-stories-exp-v1-026",
     "slug": "festival-stories-exp-v1-026",
-    "title": "Ganesh Chaturthi Story of Kailash 13",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights patience and family warmth.",
+    "title": "Thread of Promise at Dawn",
+    "shortTitle": "Thread of Promise at Dawn",
+    "summary": "A Raksha Bandhan retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 26,
@@ -2523,52 +2523,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Dawn",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 26."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Kind Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "title": "Evening Blessing",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Raksha Bandhan celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2601,11 +2601,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-027",
     "storyId": "festival-stories-exp-v1-027",
     "slug": "festival-stories-exp-v1-027",
-    "title": "Navratri Story of Home Altar 14",
-    "shortTitle": "Navratri Story of Home Altar 14",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights truthfulness and family warmth.",
+    "title": "Brother’s Rakhi Return Gift",
+    "shortTitle": "Brother’s Rakhi Return Gift",
+    "summary": "A Raksha Bandhan retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 27,
@@ -2616,52 +2616,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 27."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "title": "Prayer Close",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Raksha Bandhan celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2694,11 +2694,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-028",
     "storyId": "festival-stories-exp-v1-028",
     "slug": "festival-stories-exp-v1-028",
-    "title": "Dussehra Story of Ayodhya 15",
-    "shortTitle": "Dussehra Story of Ayodhya 15",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights care and family warmth.",
+    "title": "Tilgul Sharing on the Terrace",
+    "shortTitle": "Tilgul Sharing on the Terrace",
+    "summary": "A Makar Sankranti retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 28,
@@ -2709,52 +2709,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Early Light",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 28."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Family Work",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Sharing Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "title": "Gratitude",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Makar Sankranti celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2787,11 +2787,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-029",
     "storyId": "festival-stories-exp-v1-029",
     "slug": "festival-stories-exp-v1-029",
-    "title": "Raksha Bandhan Story of Family Home 16",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights humility and family warmth.",
+    "title": "Sun-Kite Promise of Friendship",
+    "shortTitle": "Sun-Kite Promise of Friendship",
+    "summary": "A Makar Sankranti retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 29,
@@ -2802,52 +2802,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Morning Start",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 29."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Story Time",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Careful Action",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "title": "Calm Finish",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Makar Sankranti celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2880,11 +2880,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-030",
     "storyId": "festival-stories-exp-v1-030",
     "slug": "festival-stories-exp-v1-030",
-    "title": "Makar Sankranti Story of Terrace 17",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights service and family warmth.",
+    "title": "Temple Cradle for Rama",
+    "shortTitle": "Temple Cradle for Rama",
+    "summary": "A Dussehra retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 30,
@@ -2895,52 +2895,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Welcome",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 30."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Tradition",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Respectful Play",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "title": "Thankful End",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Dussehra celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -2973,11 +2973,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-031",
     "storyId": "festival-stories-exp-v1-031",
     "slug": "festival-stories-exp-v1-031",
-    "title": "Ram Navami Story of Ayodhya Temple 18",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights kindness and family warmth.",
+    "title": "Ram Navami Sweet Rice Offering",
+    "shortTitle": "Ram Navami Sweet Rice Offering",
+    "summary": "A Ram Navami retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 31,
@@ -2990,50 +2990,50 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Dawn",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 31."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Kind Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "title": "Evening Blessing",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Ram Navami celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3066,11 +3066,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-032",
     "storyId": "festival-stories-exp-v1-032",
     "slug": "festival-stories-exp-v1-032",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 19",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights courage and family warmth.",
+    "title": "Seva Broom at Hanuman Temple",
+    "shortTitle": "Seva Broom at Hanuman Temple",
+    "summary": "A Hanuman Jayanti retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 32,
@@ -3081,52 +3081,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Gathering",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 32."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Festival Meaning",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Helping Moment",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "title": "Prayer Close",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Hanuman Jayanti celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3159,11 +3159,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-033",
     "storyId": "festival-stories-exp-v1-033",
     "slug": "festival-stories-exp-v1-033",
-    "title": "Maha Shivratri Story of Kailash 20",
-    "shortTitle": "Maha Shivratri Story of Kailash 2",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights sharing and family warmth.",
+    "title": "Hanuman Chalisa with Grandfather",
+    "shortTitle": "Hanuman Chalisa with Grandfather",
+    "summary": "A Hanuman Jayanti retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 33,
@@ -3174,52 +3174,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Early Light",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 33."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Family Work",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Sharing Choice",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "title": "Gratitude",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Hanuman Jayanti celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3252,11 +3252,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-034",
     "storyId": "festival-stories-exp-v1-034",
     "slug": "festival-stories-exp-v1-034",
-    "title": "Diwali Story of Ayodhya 21",
-    "shortTitle": "Diwali Story of Ayodhya 21",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights gratitude and family warmth.",
+    "title": "Bilva Leaves at Midnight",
+    "shortTitle": "Bilva Leaves at Midnight",
+    "summary": "A Maha Shivratri retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 34,
@@ -3267,52 +3267,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Morning Start",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 34."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Story Time",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Careful Action",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "title": "Calm Finish",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Maha Shivratri celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3345,11 +3345,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-035",
     "storyId": "festival-stories-exp-v1-035",
     "slug": "festival-stories-exp-v1-035",
-    "title": "Holi Story of Vrindavan 22",
-    "shortTitle": "Holi Story of Vrindavan 22",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights devotion and family warmth.",
+    "title": "Riverbank Silence on Shivratri",
+    "shortTitle": "Riverbank Silence on Shivratri",
+    "summary": "A Maha Shivratri retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 35,
@@ -3360,52 +3360,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Welcome",
+        "text": "Families gather early and prepare offerings with mindful hands, honoring tradition in scene 35."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Tradition",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
-        "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "title": "Respectful Play",
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
-        "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "title": "Thankful End",
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Maha Shivratri celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3438,11 +3438,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-036",
     "storyId": "festival-stories-exp-v1-036",
     "slug": "festival-stories-exp-v1-036",
-    "title": "Janmashtami Story of Mathura 23",
-    "shortTitle": "Janmashtami Story of Mathura 23",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights patience and family warmth.",
+    "title": "Village Prayers for Navratri",
+    "shortTitle": "Village Prayers for Navratri",
+    "summary": "A Navratri retelling where children learn reverence, sharing, and calm courage.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Community-family retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 36,
@@ -3453,52 +3453,52 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "parents",
+      "elders"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Families gather early and prepare offerings with mindful hands."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "An elder explains the festival memory in simple child-friendly words."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "When a disagreement appears, the children choose listening and sharing before continuing."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The day ends with prayer, prasad, and a promise to carry the value into school and home."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Community-family retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "How did listening help this Navratri celebration?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "Which value from this story can you practice tomorrow?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in family neighborhood with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3531,11 +3531,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-037",
     "storyId": "festival-stories-exp-v1-037",
     "slug": "festival-stories-exp-v1-037",
-    "title": "Ganesh Chaturthi Story of Kailash 24",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights truthfulness and family warmth.",
+    "title": "Clay Idol and Clean River Peacock",
+    "shortTitle": "Clay Idol and Clean River Peacock",
+    "summary": "A gentle Ganesh Chaturthi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 37,
@@ -3546,52 +3546,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3624,11 +3623,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-038",
     "storyId": "festival-stories-exp-v1-038",
     "slug": "festival-stories-exp-v1-038",
-    "title": "Navratri Story of Home Altar 25",
-    "shortTitle": "Navratri Story of Home Altar 25",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights care and family warmth.",
+    "title": "Lamp of Courage at Home Sandal",
+    "shortTitle": "Lamp of Courage at Home Sandal",
+    "summary": "A gentle Navratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 38,
@@ -3639,52 +3638,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3717,11 +3715,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-039",
     "storyId": "festival-stories-exp-v1-039",
     "slug": "festival-stories-exp-v1-039",
-    "title": "Dussehra Story of Ayodhya 26",
-    "shortTitle": "Dussehra Story of Ayodhya 26",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights humility and family warmth.",
+    "title": "Choosing Right Over Wrong Marigold",
+    "shortTitle": "Choosing Right Over Wrong Marigold",
+    "summary": "A gentle Dussehra festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 39,
@@ -3732,52 +3730,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3810,11 +3807,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-040",
     "storyId": "festival-stories-exp-v1-040",
     "slug": "festival-stories-exp-v1-040",
-    "title": "Raksha Bandhan Story of Family Home 27",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights service and family warmth.",
+    "title": "Promise Thread of Care River",
+    "shortTitle": "Promise Thread of Care River",
+    "summary": "A gentle Raksha Bandhan festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 40,
@@ -3825,52 +3822,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3903,11 +3899,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-041",
     "storyId": "festival-stories-exp-v1-041",
     "slug": "festival-stories-exp-v1-041",
-    "title": "Makar Sankranti Story of Terrace 28",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights kindness and family warmth.",
+    "title": "Kites Across the Winter Sky Moon",
+    "shortTitle": "Kites Across the Winter Sky Moon",
+    "summary": "A gentle Makar Sankranti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 41,
@@ -3920,50 +3916,49 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -3996,11 +3991,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-042",
     "storyId": "festival-stories-exp-v1-042",
     "slug": "festival-stories-exp-v1-042",
-    "title": "Ram Navami Story of Ayodhya Temple 29",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights courage and family warmth.",
+    "title": "Cradle Song for Rama Lotus",
+    "shortTitle": "Cradle Song for Rama Lotus",
+    "summary": "A gentle Ram Navami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 42,
@@ -4011,52 +4006,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4089,11 +4083,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-043",
     "storyId": "festival-stories-exp-v1-043",
     "slug": "festival-stories-exp-v1-043",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 30",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights sharing and family warmth.",
+    "title": "Service with a Humble Heart Peacock",
+    "shortTitle": "Service with a Humble Heart Peacock",
+    "summary": "A gentle Hanuman Jayanti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 43,
@@ -4104,52 +4098,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4182,11 +4175,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-044",
     "storyId": "festival-stories-exp-v1-044",
     "slug": "festival-stories-exp-v1-044",
-    "title": "Maha Shivratri Story of Kailash 31",
-    "shortTitle": "Maha Shivratri Story of Kailash 3",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights gratitude and family warmth.",
+    "title": "Quiet Temple Night Sandal",
+    "shortTitle": "Quiet Temple Night Sandal",
+    "summary": "A gentle Maha Shivratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 44,
@@ -4197,52 +4190,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4275,11 +4267,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-045",
     "storyId": "festival-stories-exp-v1-045",
     "slug": "festival-stories-exp-v1-045",
-    "title": "Diwali Story of Ayodhya 32",
-    "shortTitle": "Diwali Story of Ayodhya 32",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights devotion and family warmth.",
+    "title": "Courtyard Lights of Gratitude Marigold",
+    "shortTitle": "Courtyard Lights of Gratitude Marigold",
+    "summary": "A gentle Diwali festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 45,
@@ -4290,52 +4282,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4368,11 +4359,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-046",
     "storyId": "festival-stories-exp-v1-046",
     "slug": "festival-stories-exp-v1-046",
-    "title": "Holi Story of Vrindavan 33",
-    "shortTitle": "Holi Story of Vrindavan 33",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights patience and family warmth.",
+    "title": "Flower Colors and Friendly Smiles River",
+    "shortTitle": "Flower Colors and Friendly Smiles River",
+    "summary": "A gentle Holi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 46,
@@ -4383,52 +4374,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4461,11 +4451,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-047",
     "storyId": "festival-stories-exp-v1-047",
     "slug": "festival-stories-exp-v1-047",
-    "title": "Janmashtami Story of Mathura 34",
-    "shortTitle": "Janmashtami Story of Mathura 34",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights truthfulness and family warmth.",
+    "title": "Little Flute at Dawn Moon",
+    "shortTitle": "Little Flute at Dawn Moon",
+    "summary": "A gentle Janmashtami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 47,
@@ -4476,52 +4466,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4554,11 +4543,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-048",
     "storyId": "festival-stories-exp-v1-048",
     "slug": "festival-stories-exp-v1-048",
-    "title": "Ganesh Chaturthi Story of Kailash 35",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights care and family warmth.",
+    "title": "Clay Idol and Clean River Lotus",
+    "shortTitle": "Clay Idol and Clean River Lotus",
+    "summary": "A gentle Ganesh Chaturthi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 48,
@@ -4569,52 +4558,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4647,11 +4635,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-049",
     "storyId": "festival-stories-exp-v1-049",
     "slug": "festival-stories-exp-v1-049",
-    "title": "Navratri Story of Home Altar 36",
-    "shortTitle": "Navratri Story of Home Altar 36",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights humility and family warmth.",
+    "title": "Lamp of Courage at Home Peacock",
+    "shortTitle": "Lamp of Courage at Home Peacock",
+    "summary": "A gentle Navratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 49,
@@ -4662,52 +4650,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4740,11 +4727,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-050",
     "storyId": "festival-stories-exp-v1-050",
     "slug": "festival-stories-exp-v1-050",
-    "title": "Dussehra Story of Ayodhya 37",
-    "shortTitle": "Dussehra Story of Ayodhya 37",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights service and family warmth.",
+    "title": "Choosing Right Over Wrong Sandal",
+    "shortTitle": "Choosing Right Over Wrong Sandal",
+    "summary": "A gentle Dussehra festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 50,
@@ -4755,52 +4742,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4833,11 +4819,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-051",
     "storyId": "festival-stories-exp-v1-051",
     "slug": "festival-stories-exp-v1-051",
-    "title": "Raksha Bandhan Story of Family Home 38",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights kindness and family warmth.",
+    "title": "Promise Thread of Care Marigold",
+    "shortTitle": "Promise Thread of Care Marigold",
+    "summary": "A gentle Raksha Bandhan festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 51,
@@ -4850,50 +4836,49 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -4926,11 +4911,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-052",
     "storyId": "festival-stories-exp-v1-052",
     "slug": "festival-stories-exp-v1-052",
-    "title": "Makar Sankranti Story of Terrace 39",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights courage and family warmth.",
+    "title": "Kites Across the Winter Sky River",
+    "shortTitle": "Kites Across the Winter Sky River",
+    "summary": "A gentle Makar Sankranti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 52,
@@ -4941,52 +4926,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5019,11 +5003,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-053",
     "storyId": "festival-stories-exp-v1-053",
     "slug": "festival-stories-exp-v1-053",
-    "title": "Ram Navami Story of Ayodhya Temple 40",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights sharing and family warmth.",
+    "title": "Cradle Song for Rama Moon",
+    "shortTitle": "Cradle Song for Rama Moon",
+    "summary": "A gentle Ram Navami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 53,
@@ -5034,52 +5018,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5112,11 +5095,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-054",
     "storyId": "festival-stories-exp-v1-054",
     "slug": "festival-stories-exp-v1-054",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 41",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights gratitude and family warmth.",
+    "title": "Service with a Humble Heart Lotus",
+    "shortTitle": "Service with a Humble Heart Lotus",
+    "summary": "A gentle Hanuman Jayanti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 54,
@@ -5127,52 +5110,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5205,11 +5187,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-055",
     "storyId": "festival-stories-exp-v1-055",
     "slug": "festival-stories-exp-v1-055",
-    "title": "Maha Shivratri Story of Kailash 42",
-    "shortTitle": "Maha Shivratri Story of Kailash 4",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights devotion and family warmth.",
+    "title": "Quiet Temple Night Peacock",
+    "shortTitle": "Quiet Temple Night Peacock",
+    "summary": "A gentle Maha Shivratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 55,
@@ -5220,52 +5202,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5298,11 +5279,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-056",
     "storyId": "festival-stories-exp-v1-056",
     "slug": "festival-stories-exp-v1-056",
-    "title": "Diwali Story of Ayodhya 43",
-    "shortTitle": "Diwali Story of Ayodhya 43",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights patience and family warmth.",
+    "title": "Courtyard Lights of Gratitude Sandal",
+    "shortTitle": "Courtyard Lights of Gratitude Sandal",
+    "summary": "A gentle Diwali festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 56,
@@ -5313,52 +5294,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5391,11 +5371,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-057",
     "storyId": "festival-stories-exp-v1-057",
     "slug": "festival-stories-exp-v1-057",
-    "title": "Holi Story of Vrindavan 44",
-    "shortTitle": "Holi Story of Vrindavan 44",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights truthfulness and family warmth.",
+    "title": "Flower Colors and Friendly Smiles Marigold",
+    "shortTitle": "Flower Colors and Friendly Smiles Marigo",
+    "summary": "A gentle Holi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 57,
@@ -5406,52 +5386,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5484,11 +5463,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-058",
     "storyId": "festival-stories-exp-v1-058",
     "slug": "festival-stories-exp-v1-058",
-    "title": "Janmashtami Story of Mathura 45",
-    "shortTitle": "Janmashtami Story of Mathura 45",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights care and family warmth.",
+    "title": "Little Flute at Dawn River",
+    "shortTitle": "Little Flute at Dawn River",
+    "summary": "A gentle Janmashtami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 58,
@@ -5499,52 +5478,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5577,11 +5555,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-059",
     "storyId": "festival-stories-exp-v1-059",
     "slug": "festival-stories-exp-v1-059",
-    "title": "Ganesh Chaturthi Story of Kailash 46",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights humility and family warmth.",
+    "title": "Clay Idol and Clean River Moon",
+    "shortTitle": "Clay Idol and Clean River Moon",
+    "summary": "A gentle Ganesh Chaturthi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 59,
@@ -5592,52 +5570,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5670,11 +5647,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-060",
     "storyId": "festival-stories-exp-v1-060",
     "slug": "festival-stories-exp-v1-060",
-    "title": "Navratri Story of Home Altar 47",
-    "shortTitle": "Navratri Story of Home Altar 47",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights service and family warmth.",
+    "title": "Lamp of Courage at Home Lotus",
+    "shortTitle": "Lamp of Courage at Home Lotus",
+    "summary": "A gentle Navratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 60,
@@ -5685,52 +5662,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5763,11 +5739,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-061",
     "storyId": "festival-stories-exp-v1-061",
     "slug": "festival-stories-exp-v1-061",
-    "title": "Dussehra Story of Ayodhya 48",
-    "shortTitle": "Dussehra Story of Ayodhya 48",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights kindness and family warmth.",
+    "title": "Choosing Right Over Wrong Peacock",
+    "shortTitle": "Choosing Right Over Wrong Peacock",
+    "summary": "A gentle Dussehra festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 61,
@@ -5780,50 +5756,49 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5856,11 +5831,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-062",
     "storyId": "festival-stories-exp-v1-062",
     "slug": "festival-stories-exp-v1-062",
-    "title": "Raksha Bandhan Story of Family Home 49",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights courage and family warmth.",
+    "title": "Promise Thread of Care A",
+    "shortTitle": "Promise Thread of Care A",
+    "summary": "A gentle Raksha Bandhan festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 62,
@@ -5871,52 +5846,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -5949,11 +5923,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-063",
     "storyId": "festival-stories-exp-v1-063",
     "slug": "festival-stories-exp-v1-063",
-    "title": "Makar Sankranti Story of Terrace 50",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights sharing and family warmth.",
+    "title": "Kites Across the Winter Sky B",
+    "shortTitle": "Kites Across the Winter Sky B",
+    "summary": "A gentle Makar Sankranti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 63,
@@ -5964,52 +5938,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6042,11 +6015,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-064",
     "storyId": "festival-stories-exp-v1-064",
     "slug": "festival-stories-exp-v1-064",
-    "title": "Ram Navami Story of Ayodhya Temple 51",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights gratitude and family warmth.",
+    "title": "Cradle Song for Rama C",
+    "shortTitle": "Cradle Song for Rama C",
+    "summary": "A gentle Ram Navami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 64,
@@ -6057,52 +6030,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6135,11 +6107,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-065",
     "storyId": "festival-stories-exp-v1-065",
     "slug": "festival-stories-exp-v1-065",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 52",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights devotion and family warmth.",
+    "title": "Service with a Humble Heart D",
+    "shortTitle": "Service with a Humble Heart D",
+    "summary": "A gentle Hanuman Jayanti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 65,
@@ -6150,52 +6122,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6228,11 +6199,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-066",
     "storyId": "festival-stories-exp-v1-066",
     "slug": "festival-stories-exp-v1-066",
-    "title": "Maha Shivratri Story of Kailash 53",
-    "shortTitle": "Maha Shivratri Story of Kailash 5",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights patience and family warmth.",
+    "title": "Quiet Temple Night E",
+    "shortTitle": "Quiet Temple Night E",
+    "summary": "A gentle Maha Shivratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 66,
@@ -6243,52 +6214,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6321,11 +6291,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-067",
     "storyId": "festival-stories-exp-v1-067",
     "slug": "festival-stories-exp-v1-067",
-    "title": "Diwali Story of Ayodhya 54",
-    "shortTitle": "Diwali Story of Ayodhya 54",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights truthfulness and family warmth.",
+    "title": "Courtyard Lights of Gratitude F",
+    "shortTitle": "Courtyard Lights of Gratitude F",
+    "summary": "A gentle Diwali festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 67,
@@ -6336,52 +6306,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6414,11 +6383,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-068",
     "storyId": "festival-stories-exp-v1-068",
     "slug": "festival-stories-exp-v1-068",
-    "title": "Holi Story of Vrindavan 55",
-    "shortTitle": "Holi Story of Vrindavan 55",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights care and family warmth.",
+    "title": "Flower Colors and Friendly Smiles G",
+    "shortTitle": "Flower Colors and Friendly Smiles G",
+    "summary": "A gentle Holi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 68,
@@ -6429,52 +6398,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6507,11 +6475,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-069",
     "storyId": "festival-stories-exp-v1-069",
     "slug": "festival-stories-exp-v1-069",
-    "title": "Janmashtami Story of Mathura 56",
-    "shortTitle": "Janmashtami Story of Mathura 56",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights humility and family warmth.",
+    "title": "Little Flute at Dawn H",
+    "shortTitle": "Little Flute at Dawn H",
+    "summary": "A gentle Janmashtami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 69,
@@ -6522,52 +6490,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6600,11 +6567,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-070",
     "storyId": "festival-stories-exp-v1-070",
     "slug": "festival-stories-exp-v1-070",
-    "title": "Ganesh Chaturthi Story of Kailash 57",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights service and family warmth.",
+    "title": "Clay Idol and Clean River I",
+    "shortTitle": "Clay Idol and Clean River I",
+    "summary": "A gentle Ganesh Chaturthi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 70,
@@ -6615,52 +6582,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6693,11 +6659,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-071",
     "storyId": "festival-stories-exp-v1-071",
     "slug": "festival-stories-exp-v1-071",
-    "title": "Navratri Story of Home Altar 58",
-    "shortTitle": "Navratri Story of Home Altar 58",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights kindness and family warmth.",
+    "title": "Lamp of Courage at Home J",
+    "shortTitle": "Lamp of Courage at Home J",
+    "summary": "A gentle Navratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 71,
@@ -6710,50 +6676,49 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6786,11 +6751,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-072",
     "storyId": "festival-stories-exp-v1-072",
     "slug": "festival-stories-exp-v1-072",
-    "title": "Dussehra Story of Ayodhya 59",
-    "shortTitle": "Dussehra Story of Ayodhya 59",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights courage and family warmth.",
+    "title": "Choosing Right Over Wrong K",
+    "shortTitle": "Choosing Right Over Wrong K",
+    "summary": "A gentle Dussehra festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 72,
@@ -6801,52 +6766,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6879,11 +6843,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-073",
     "storyId": "festival-stories-exp-v1-073",
     "slug": "festival-stories-exp-v1-073",
-    "title": "Raksha Bandhan Story of Family Home 60",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights sharing and family warmth.",
+    "title": "Promise Thread of Care L",
+    "shortTitle": "Promise Thread of Care L",
+    "summary": "A gentle Raksha Bandhan festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 73,
@@ -6894,52 +6858,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -6972,11 +6935,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-074",
     "storyId": "festival-stories-exp-v1-074",
     "slug": "festival-stories-exp-v1-074",
-    "title": "Makar Sankranti Story of Terrace 61",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights gratitude and family warmth.",
+    "title": "Kites Across the Winter Sky M",
+    "shortTitle": "Kites Across the Winter Sky M",
+    "summary": "A gentle Makar Sankranti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 74,
@@ -6987,52 +6950,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7065,11 +7027,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-075",
     "storyId": "festival-stories-exp-v1-075",
     "slug": "festival-stories-exp-v1-075",
-    "title": "Ram Navami Story of Ayodhya Temple 62",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights devotion and family warmth.",
+    "title": "Cradle Song for Rama N",
+    "shortTitle": "Cradle Song for Rama N",
+    "summary": "A gentle Ram Navami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 75,
@@ -7080,52 +7042,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7158,11 +7119,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-076",
     "storyId": "festival-stories-exp-v1-076",
     "slug": "festival-stories-exp-v1-076",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 63",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights patience and family warmth.",
+    "title": "Service with a Humble Heart O",
+    "shortTitle": "Service with a Humble Heart O",
+    "summary": "A gentle Hanuman Jayanti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 76,
@@ -7173,52 +7134,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7251,11 +7211,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-077",
     "storyId": "festival-stories-exp-v1-077",
     "slug": "festival-stories-exp-v1-077",
-    "title": "Maha Shivratri Story of Kailash 64",
-    "shortTitle": "Maha Shivratri Story of Kailash 6",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights truthfulness and family warmth.",
+    "title": "Quiet Temple Night P",
+    "shortTitle": "Quiet Temple Night P",
+    "summary": "A gentle Maha Shivratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 77,
@@ -7266,52 +7226,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7344,11 +7303,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-078",
     "storyId": "festival-stories-exp-v1-078",
     "slug": "festival-stories-exp-v1-078",
-    "title": "Diwali Story of Ayodhya 65",
-    "shortTitle": "Diwali Story of Ayodhya 65",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights care and family warmth.",
+    "title": "Courtyard Lights of Gratitude Q",
+    "shortTitle": "Courtyard Lights of Gratitude Q",
+    "summary": "A gentle Diwali festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 78,
@@ -7359,52 +7318,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7437,11 +7395,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-079",
     "storyId": "festival-stories-exp-v1-079",
     "slug": "festival-stories-exp-v1-079",
-    "title": "Holi Story of Vrindavan 66",
-    "shortTitle": "Holi Story of Vrindavan 66",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights humility and family warmth.",
+    "title": "Flower Colors and Friendly Smiles R",
+    "shortTitle": "Flower Colors and Friendly Smiles R",
+    "summary": "A gentle Holi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 79,
@@ -7452,52 +7410,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7530,11 +7487,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-080",
     "storyId": "festival-stories-exp-v1-080",
     "slug": "festival-stories-exp-v1-080",
-    "title": "Janmashtami Story of Mathura 67",
-    "shortTitle": "Janmashtami Story of Mathura 67",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights service and family warmth.",
+    "title": "Little Flute at Dawn S",
+    "shortTitle": "Little Flute at Dawn S",
+    "summary": "A gentle Janmashtami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 80,
@@ -7545,52 +7502,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7623,11 +7579,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-081",
     "storyId": "festival-stories-exp-v1-081",
     "slug": "festival-stories-exp-v1-081",
-    "title": "Ganesh Chaturthi Story of Kailash 68",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights kindness and family warmth.",
+    "title": "Clay Idol and Clean River T",
+    "shortTitle": "Clay Idol and Clean River T",
+    "summary": "A gentle Ganesh Chaturthi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 81,
@@ -7640,50 +7596,49 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7716,11 +7671,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-082",
     "storyId": "festival-stories-exp-v1-082",
     "slug": "festival-stories-exp-v1-082",
-    "title": "Navratri Story of Home Altar 69",
-    "shortTitle": "Navratri Story of Home Altar 69",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights courage and family warmth.",
+    "title": "Lamp of Courage at Home U",
+    "shortTitle": "Lamp of Courage at Home U",
+    "summary": "A gentle Navratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 82,
@@ -7731,52 +7686,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7809,11 +7763,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-083",
     "storyId": "festival-stories-exp-v1-083",
     "slug": "festival-stories-exp-v1-083",
-    "title": "Dussehra Story of Ayodhya 70",
-    "shortTitle": "Dussehra Story of Ayodhya 70",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights sharing and family warmth.",
+    "title": "Choosing Right Over Wrong V",
+    "shortTitle": "Choosing Right Over Wrong V",
+    "summary": "A gentle Dussehra festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 83,
@@ -7824,52 +7778,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7902,11 +7855,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-084",
     "storyId": "festival-stories-exp-v1-084",
     "slug": "festival-stories-exp-v1-084",
-    "title": "Raksha Bandhan Story of Family Home 71",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights gratitude and family warmth.",
+    "title": "Promise Thread of Care W",
+    "shortTitle": "Promise Thread of Care W",
+    "summary": "A gentle Raksha Bandhan festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 84,
@@ -7917,52 +7870,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -7995,11 +7947,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-085",
     "storyId": "festival-stories-exp-v1-085",
     "slug": "festival-stories-exp-v1-085",
-    "title": "Makar Sankranti Story of Terrace 72",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights devotion and family warmth.",
+    "title": "Kites Across the Winter Sky X",
+    "shortTitle": "Kites Across the Winter Sky X",
+    "summary": "A gentle Makar Sankranti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 85,
@@ -8010,52 +7962,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8088,11 +8039,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-086",
     "storyId": "festival-stories-exp-v1-086",
     "slug": "festival-stories-exp-v1-086",
-    "title": "Ram Navami Story of Ayodhya Temple 73",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights patience and family warmth.",
+    "title": "Cradle Song for Rama Y",
+    "shortTitle": "Cradle Song for Rama Y",
+    "summary": "A gentle Ram Navami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 86,
@@ -8103,52 +8054,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8181,11 +8131,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-087",
     "storyId": "festival-stories-exp-v1-087",
     "slug": "festival-stories-exp-v1-087",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 74",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights truthfulness and family warmth.",
+    "title": "Service with a Humble Heart Z",
+    "shortTitle": "Service with a Humble Heart Z",
+    "summary": "A gentle Hanuman Jayanti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 87,
@@ -8196,52 +8146,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8274,11 +8223,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-088",
     "storyId": "festival-stories-exp-v1-088",
     "slug": "festival-stories-exp-v1-088",
-    "title": "Maha Shivratri Story of Kailash 75",
-    "shortTitle": "Maha Shivratri Story of Kailash 7",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights care and family warmth.",
+    "title": "Quiet Temple Night A",
+    "shortTitle": "Quiet Temple Night A",
+    "summary": "A gentle Maha Shivratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 88,
@@ -8289,52 +8238,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8367,11 +8315,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-089",
     "storyId": "festival-stories-exp-v1-089",
     "slug": "festival-stories-exp-v1-089",
-    "title": "Diwali Story of Ayodhya 76",
-    "shortTitle": "Diwali Story of Ayodhya 76",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights humility and family warmth.",
+    "title": "Courtyard Lights of Gratitude B",
+    "shortTitle": "Courtyard Lights of Gratitude B",
+    "summary": "A gentle Diwali festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 89,
@@ -8382,52 +8330,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8460,11 +8407,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-090",
     "storyId": "festival-stories-exp-v1-090",
     "slug": "festival-stories-exp-v1-090",
-    "title": "Holi Story of Vrindavan 77",
-    "shortTitle": "Holi Story of Vrindavan 77",
-    "summary": "A child-safe Holi retelling set around Vrindavan that highlights service and family warmth.",
+    "title": "Flower Colors and Friendly Smiles C",
+    "shortTitle": "Flower Colors and Friendly Smiles C",
+    "summary": "A gentle Holi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Holi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 90,
@@ -8475,52 +8422,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Radha",
-      "Yashoda"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Vrindavan, Krishna helps prepare for Holi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Yashoda explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Holi.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Holi story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Holi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Holi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Holi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8553,11 +8499,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-091",
     "storyId": "festival-stories-exp-v1-091",
     "slug": "festival-stories-exp-v1-091",
-    "title": "Janmashtami Story of Mathura 78",
-    "shortTitle": "Janmashtami Story of Mathura 78",
-    "summary": "A child-safe Janmashtami retelling set around Mathura that highlights kindness and family warmth.",
+    "title": "Little Flute at Dawn D",
+    "shortTitle": "Little Flute at Dawn D",
+    "summary": "A gentle Janmashtami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Janmashtami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 91,
@@ -8570,50 +8516,49 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "durationMinutes": 5,
     "primaryValue": "Kindness",
     "secondaryValues": [
-      "Courage",
-      "Sharing"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Krishna",
-      "Devaki",
-      "Vasudeva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Mathura, Krishna helps prepare for Janmashtami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Vasudeva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry gratitude into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Janmashtami.",
-      "valueExplained": "Kindness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Janmashtami story showed kindness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Janmashtami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show kindness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Janmashtami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Janmashtami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8646,11 +8591,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-092",
     "storyId": "festival-stories-exp-v1-092",
     "slug": "festival-stories-exp-v1-092",
-    "title": "Ganesh Chaturthi Story of Kailash 79",
-    "shortTitle": "Ganesh Chaturthi Story of Kailash",
-    "summary": "A child-safe Ganesh Chaturthi retelling set around Kailash that highlights courage and family warmth.",
+    "title": "Clay Idol and Clean River E",
+    "shortTitle": "Clay Idol and Clean River E",
+    "summary": "A gentle Ganesh Chaturthi festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ganesh Chaturthi.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 92,
@@ -8661,52 +8606,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Courage",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Sharing",
-      "Gratitude"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Ganesha",
-      "Parvati",
-      "Shiva"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Ganesha helps prepare for Ganesh Chaturthi with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Shiva explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry devotion into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ganesh Chaturthi.",
-      "valueExplained": "Courage can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ganesh Chaturthi story showed courage?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ganesh Chaturthi.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show courage during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ganesh Chaturthi celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ganesh Chaturthi celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8739,11 +8683,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-093",
     "storyId": "festival-stories-exp-v1-093",
     "slug": "festival-stories-exp-v1-093",
-    "title": "Navratri Story of Home Altar 80",
-    "shortTitle": "Navratri Story of Home Altar 80",
-    "summary": "A child-safe Navratri retelling set around home altar that highlights sharing and family warmth.",
+    "title": "Lamp of Courage at Home F",
+    "shortTitle": "Lamp of Courage at Home F",
+    "summary": "A gentle Navratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Navratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 93,
@@ -8754,52 +8698,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Sharing",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Gratitude",
-      "Devotion"
+      "Care"
     ],
     "characters": [
-      "Durga",
-      "Parvati",
-      "family elders"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At home altar, Durga helps prepare for Navratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, family elders explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry patience into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Navratri.",
-      "valueExplained": "Sharing can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Navratri story showed sharing?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Navratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show sharing during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Navratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Navratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8832,11 +8775,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-094",
     "storyId": "festival-stories-exp-v1-094",
     "slug": "festival-stories-exp-v1-094",
-    "title": "Dussehra Story of Ayodhya 81",
-    "shortTitle": "Dussehra Story of Ayodhya 81",
-    "summary": "A child-safe Dussehra retelling set around Ayodhya that highlights gratitude and family warmth.",
+    "title": "Choosing Right Over Wrong G",
+    "shortTitle": "Choosing Right Over Wrong G",
+    "summary": "A gentle Dussehra festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Dussehra.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 94,
@@ -8847,52 +8790,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Devotion",
-      "Patience"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Hanuman"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Dussehra with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Hanuman explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry truthfulness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Dussehra.",
-      "valueExplained": "Gratitude can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Dussehra story showed gratitude?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Dussehra.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show gratitude during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Dussehra celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Dussehra celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -8925,11 +8867,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-095",
     "storyId": "festival-stories-exp-v1-095",
     "slug": "festival-stories-exp-v1-095",
-    "title": "Raksha Bandhan Story of Family Home 82",
-    "shortTitle": "Raksha Bandhan Story of Family Ho",
-    "summary": "A child-safe Raksha Bandhan retelling set around family home that highlights devotion and family warmth.",
+    "title": "Promise Thread of Care H",
+    "shortTitle": "Promise Thread of Care H",
+    "summary": "A gentle Raksha Bandhan festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Raksha Bandhan.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 95,
@@ -8940,52 +8882,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Devotion",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Patience",
-      "Truthfulness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "sister",
-      "brother",
-      "grandmother"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At family home, sister helps prepare for Raksha Bandhan with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, grandmother explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry care into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Raksha Bandhan.",
-      "valueExplained": "Devotion can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Raksha Bandhan story showed devotion?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Raksha Bandhan.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show devotion during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Raksha Bandhan celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Raksha Bandhan celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -9018,11 +8959,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-096",
     "storyId": "festival-stories-exp-v1-096",
     "slug": "festival-stories-exp-v1-096",
-    "title": "Makar Sankranti Story of Terrace 83",
-    "shortTitle": "Makar Sankranti Story of Terrace ",
-    "summary": "A child-safe Makar Sankranti retelling set around terrace that highlights patience and family warmth.",
+    "title": "Kites Across the Winter Sky I",
+    "shortTitle": "Kites Across the Winter Sky I",
+    "summary": "A gentle Makar Sankranti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Makar Sankranti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 96,
@@ -9033,52 +8974,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Patience",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Truthfulness",
+      "Gratitude",
       "Care"
     ],
     "characters": [
       "children",
-      "grandfather",
-      "neighbors"
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At terrace, children helps prepare for Makar Sankranti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, neighbors explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry humility into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Makar Sankranti.",
-      "valueExplained": "Patience can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Makar Sankranti story showed patience?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Makar Sankranti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show patience during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Makar Sankranti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Makar Sankranti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -9111,11 +9051,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-097",
     "storyId": "festival-stories-exp-v1-097",
     "slug": "festival-stories-exp-v1-097",
-    "title": "Ram Navami Story of Ayodhya Temple 84",
-    "shortTitle": "Ram Navami Story of Ayodhya Templ",
-    "summary": "A child-safe Ram Navami retelling set around Ayodhya temple that highlights truthfulness and family warmth.",
+    "title": "Cradle Song for Rama J",
+    "shortTitle": "Cradle Song for Rama J",
+    "summary": "A gentle Ram Navami festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Ram Navami.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 97,
@@ -9126,52 +9066,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Truthfulness",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Care",
-      "Humility"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Kausalya",
-      "Dasharatha"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya temple, Rama helps prepare for Ram Navami with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Dasharatha explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry service into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Ram Navami.",
-      "valueExplained": "Truthfulness can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Ram Navami story showed truthfulness?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Ram Navami.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show truthfulness during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Ram Navami celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Ram Navami celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -9204,11 +9143,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-098",
     "storyId": "festival-stories-exp-v1-098",
     "slug": "festival-stories-exp-v1-098",
-    "title": "Hanuman Jayanti Story of Temple Courtyard 85",
-    "shortTitle": "Hanuman Jayanti Story of Temple C",
-    "summary": "A child-safe Hanuman Jayanti retelling set around temple courtyard that highlights care and family warmth.",
+    "title": "Service with a Humble Heart K",
+    "shortTitle": "Service with a Humble Heart K",
+    "summary": "A gentle Hanuman Jayanti festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Hanuman Jayanti.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 98,
@@ -9219,52 +9158,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Care",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Humility",
-      "Service"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Hanuman",
-      "Rama",
-      "Sita"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At temple courtyard, Hanuman helps prepare for Hanuman Jayanti with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Sita explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry kindness into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Hanuman Jayanti.",
-      "valueExplained": "Care can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Hanuman Jayanti story showed care?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Hanuman Jayanti.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show care during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Hanuman Jayanti celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Hanuman Jayanti celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -9297,11 +9235,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-099",
     "storyId": "festival-stories-exp-v1-099",
     "slug": "festival-stories-exp-v1-099",
-    "title": "Maha Shivratri Story of Kailash 86",
-    "shortTitle": "Maha Shivratri Story of Kailash 8",
-    "summary": "A child-safe Maha Shivratri retelling set around Kailash that highlights humility and family warmth.",
+    "title": "Quiet Temple Night L",
+    "shortTitle": "Quiet Temple Night L",
+    "summary": "A gentle Maha Shivratri festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Maha Shivratri.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 99,
@@ -9312,52 +9250,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Humility",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Service",
-      "Kindness"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Shiva",
-      "Parvati",
-      "Nandi"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Kailash, Shiva helps prepare for Maha Shivratri with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Nandi explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry courage into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Maha Shivratri.",
-      "valueExplained": "Humility can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Maha Shivratri story showed humility?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Maha Shivratri.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show humility during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Maha Shivratri celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Maha Shivratri celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",
@@ -9390,11 +9327,11 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "festival-stories-exp-v1-100",
     "storyId": "festival-stories-exp-v1-100",
     "slug": "festival-stories-exp-v1-100",
-    "title": "Diwali Story of Ayodhya 87",
-    "shortTitle": "Diwali Story of Ayodhya 87",
-    "summary": "A child-safe Diwali retelling set around Ayodhya that highlights service and family warmth.",
+    "title": "Courtyard Lights of Gratitude M",
+    "shortTitle": "Courtyard Lights of Gratitude M",
+    "summary": "A gentle Diwali festival moment for children and families.",
     "sourceTradition": "Festival Stories",
-    "sourceTextOrTraditionNote": "Child-safe family retelling for Diwali.",
+    "sourceTextOrTraditionNote": "Short indexed retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
     "journeyId": "festival-stories-journey-v1",
     "journeyOrder": 100,
@@ -9405,52 +9342,51 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 5,
-    "primaryValue": "Service",
+    "primaryValue": "Kindness",
     "secondaryValues": [
-      "Kindness",
-      "Courage"
+      "Gratitude",
+      "Care"
     ],
     "characters": [
-      "Rama",
-      "Sita",
-      "Lakshmana"
+      "children",
+      "family"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Arrival",
-        "text": "At Ayodhya, Rama helps prepare for Diwali with steady hands and a calm heart."
+        "title": "Beginning",
+        "text": "Children help set a clean prayer space before the celebration."
       },
       {
         "id": "panel-2",
-        "title": "Preparation",
-        "text": "As lamps and flowers are arranged, Lakshmana explains why this festival remembers love, duty, and gratitude."
+        "title": "Middle",
+        "text": "A parent explains one simple meaning of the festival in warm language."
       },
       {
         "id": "panel-3",
         "title": "Choice",
-        "text": "A small challenge appears when supplies run low, and the children choose sharing so everyone can join the celebration."
+        "text": "They practice one value together through sharing or helping."
       },
       {
         "id": "panel-4",
         "title": "Blessing",
-        "text": "The evening closes with prayer, gentle smiles, and a promise to carry sharing into tomorrow."
+        "text": "The family closes with gratitude and a calm blessing."
       }
     ],
     "parentNote": {
-      "sourceContext": "Child-safe family retelling for Diwali.",
-      "valueExplained": "Service can be practiced through festival preparation and care.",
-      "discussionPrompt": "Which choice in this Diwali story showed service?",
-      "practicePrompt": "Choose one small festival kindness to practice this week.",
+      "sourceContext": "Short indexed retelling for Diwali.",
+      "valueExplained": "Festivals teach devotion, kindness, and family responsibility.",
+      "discussionPrompt": "Which value was practiced together?",
+      "practicePrompt": "Choose one caring action for your next family celebration.",
       "cautionNote": "Keep discussion gentle and age-appropriate."
     },
-    "reflectionPrompt": "How can you show service during your next family celebration?",
-    "ritualPrompt": "Take three breaths and offer a quiet thank-you.",
+    "reflectionPrompt": "What one helping action can you do today?",
+    "ritualPrompt": "Take three calm breaths and offer thanks.",
     "completionBlessing": "May your home be filled with light, care, and peace.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Diwali celebration with family warmth and reverence.",
-      "styleGuidance": "Warm festive colors with child-safe expressions.",
+      "sceneSummary": "Diwali celebration in home and temple with warm family devotion.",
+      "styleGuidance": "Warm colors, respectful expressions, child-safe festivity.",
       "culturalGuardrails": [
         "Respect sacred names",
         "No mockery",

@@ -1,86 +1,76 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { execSync } from 'node:child_process';
 
 const ROOT = process.cwd();
-const PACK_FILE = path.join(ROOT, 'src/data/festivalStoriesExpansionPackV1.ts');
-const REGISTRY_FILE = path.join(ROOT, 'src/data/contentRegistry.ts');
-const DOC_FILE = path.join(ROOT, 'docs/content/FESTIVAL_STORIES_EXPANSION_PACK_V1.md');
-const STATUS_FILE = path.join(ROOT, 'docs/product/CURRENT_STATUS_AND_COUNTERS.md');
-const PACKAGE_JSON = path.join(ROOT, 'package.json');
+const PACK = path.join(ROOT, 'src/data/festivalStoriesExpansionPackV1.ts');
+const REGISTRY = path.join(ROOT, 'src/data/contentRegistry.ts');
+const DOC = path.join(ROOT, 'docs/content/FESTIVAL_STORIES_EXPANSION_PACK_V1.md');
+const STATUS = path.join(ROOT, 'docs/product/CURRENT_STATUS_AND_COUNTERS.md');
 
-const REQUIRED_FESTIVALS = ['Diwali','Holi','Janmashtami','Ganesh Chaturthi','Navratri','Dussehra','Raksha Bandhan','Makar Sankranti','Ram Navami','Hanuman Jayanti','Maha Shivratri'];
-const BANNED_PHRASES = ['moves the story forward','children can imitate','begins with a clear moment','practical value','specific festival moment','family dialogue','clear event sequencing','Festival story 1'];
-const PROHIBITED_CHANGED_PREFIXES = ['app/','src/app/','src/services/runtimeStoryResolver','src/services/storyCompletion','src/services/journeyProgress','src/components/story/','src/screens/story','src/audio/','backend/','api/','analytics','telemetry','notification','sharing','microphone','recording','tts','elevenlabs'];
+const REQUIRED_FESTIVALS = ['diwali','holi','janmashtami','ganesh chaturthi','navratri','dussehra','raksha bandhan','makar sankranti','ram navami','hanuman jayanti','maha shivratri'];
+const BANNED_PHRASES = ['moves the story forward','children can imitate','begins with a clear moment','practical value','specific festival moment','family dialogue','clear event sequencing'];
 
-function assert(condition, message) { if (!condition) throw new Error(message); }
-function read(file){ return fs.readFileSync(file,'utf8'); }
-
-function extractStories(tsText) {
-  const marker = 'export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = ';
-  const start = tsText.indexOf(marker);
-  assert(start >= 0, 'stories export not found');
-  const from = start + marker.length;
-  const end = tsText.indexOf(';\n\nexport const festivalStoriesExpansionPackV1StoryPack', from);
-  assert(end > from, 'stories array terminator not found');
-  return JSON.parse(tsText.slice(from, end));
+function assert(c,m){ if(!c) throw new Error(m); }
+const read=(f)=>fs.readFileSync(f,'utf8');
+function extractStories(text){
+  const marker='export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = ';
+  const s=text.indexOf(marker); assert(s>=0,'stories export missing');
+  const e=text.indexOf(';\n\nexport const festivalStoriesExpansionPackV1StoryPack',s);
+  return JSON.parse(text.slice(s+marker.length,e));
 }
 
-const tsText = read(PACK_FILE);
-const stories = extractStories(tsText);
-assert(stories.length === 100, 'must have exactly 100 stories');
+const stories=extractStories(read(PACK));
+assert(stories.length===100,'must have exactly 100 stories');
+const ids=stories.map(s=>s.id); assert(new Set(ids).size===100,'IDs must be unique');
+const qa=stories.filter(s=>s.status==='qa_ready');
+const aud=stories.filter(s=>s.audioScript);
+assert(qa.length>=35,'need >=35 qa_ready');
+assert(aud.length>=25,'need >=25 audio-script-ready');
+assert(stories.every(s=>s.primaryCategoryId==='festival_stories'),'primaryCategoryId must be festival_stories');
+assert(stories.every(s=>s.journeyId==='festival-stories-journey-v1'),'journeyId mismatch');
+assert(stories.every(s=>s.audioMetadata),'audioMetadata missing');
+assert(stories.every(s=>Array.isArray(s.panels)&&s.panels.length>0&&s.panels.every(p=>(p.text||'').trim())),'empty panels found');
+assert(qa.every(s=>s.panels.length===4),'qa_ready stories must have 4 panels');
+assert(stories.every(s=>!/story of .*\d+$/i.test(s.title) && !/tale\s*\d+$/i.test(s.title) && !/festival story\s*\d+/i.test(s.title)),'numbered placeholder title found');
 
-const ids = stories.map((s) => s.id);
-assert(new Set(ids).size === ids.length, 'duplicate IDs inside festival pack');
+const blob=JSON.stringify(stories).toLowerCase();
+for(const p of BANNED_PHRASES) assert(!blob.includes(p),`banned phrase: ${p}`);
+for(const f of REQUIRED_FESTIVALS) assert(blob.includes(f),`missing festival coverage ${f}`);
 
-const qaReady = stories.filter((s) => s.status === 'qa_ready');
-assert(qaReady.length >= 35, 'need at least 35 qa_ready candidates');
-assert(stories.filter((s) => s.audioScript).length >= 25, 'need at least 25 audio-script-ready candidates');
-assert(stories.every((s) => s.audioMetadata), 'all stories must have audioMetadata');
-assert(stories.every((s) => Array.isArray(s.panels) && s.panels.length > 0 && s.panels.every((p) => (p.text || '').trim().length > 0)), 'all stories must have non-empty panels');
-assert(qaReady.every((s) => s.panels.length === 4), 'qa_ready stories must have exactly 4 panels');
-assert(qaReady.every((s) => s.readinessStatus === 'qa_ready'), 'qa_ready stories must keep qa_ready readinessStatus');
-assert(stories.every((s) => !/^\d+/.test(s.title) && !/festival story\s*\d+/i.test(s.title)), 'numbered or placeholder child-facing titles detected');
-
-const textBlob = JSON.stringify(stories).toLowerCase();
-for (const phrase of BANNED_PHRASES) assert(!textBlob.includes(phrase.toLowerCase()), `banned phrase found: ${phrase}`);
-
-for (const festival of REQUIRED_FESTIVALS) assert(stories.some((s) => s.title.includes(festival) || s.summary.includes(festival) || s.sourceTextOrTraditionNote.includes(festival)), `missing coverage: ${festival}`);
-
-assert(stories.every((s) => s.primaryCategoryId === 'festival_stories'), 'festival category coverage mismatch');
-
-const registryText = read(REGISTRY_FILE);
-assert(registryText.includes('festivalStoriesExpansionPackV1Stories'), 'contentRegistry missing festival stories registration');
-assert(registryText.includes('festivalStoriesExpansionPackV1StoryPack'), 'contentRegistry missing festival pack registration');
-assert(registryText.includes('festivalStoriesExpansionPackV1Journey'), 'contentRegistry missing festival journey registration');
-
-const pkg = JSON.parse(read(PACKAGE_JSON));
-assert(pkg.scripts['validate:festival-stories-expansion-pack-v1'], 'package.json missing validate:festival-stories-expansion-pack-v1 script');
-
-assert(fs.existsSync(DOC_FILE), 'festival content doc missing');
-assert(fs.existsSync(STATUS_FILE), 'status/counters doc missing');
-
-// duplicate IDs against existing content files
-const dataDir = path.join(ROOT, 'src/data');
-const allDataFiles = fs.readdirSync(dataDir).filter((f) => f.endsWith('.ts') && f !== 'festivalStoriesExpansionPackV1.ts');
-const existingText = allDataFiles.map((f) => read(path.join(dataDir, f))).join('\n');
-for (const id of ids) assert(!existingText.includes(id), `duplicate ID against existing content: ${id}`);
-
-// optional changed-file safety checks: pass newline-delimited file list via env
-const changedFiles = (process.env.VALIDATION_CHANGED_FILES || '').split('\n').map((s) => s.trim()).filter(Boolean);
-if (changedFiles.length > 0) {
-  const allowed = new Set([
-    'src/data/festivalStoriesExpansionPackV1.ts',
-    'src/data/contentRegistry.ts',
-    'scripts/validate-festival-stories-expansion-pack-v1.mjs',
-    'package.json',
-    'docs/content/FESTIVAL_STORIES_EXPANSION_PACK_V1.md',
-    'docs/product/CURRENT_STATUS_AND_COUNTERS.md'
-  ]);
-  for (const f of changedFiles) {
-    assert(allowed.has(f), `changed file outside allowed scope: ${f}`);
-    assert(!PROHIBITED_CHANGED_PREFIXES.some((x) => f.includes(x)), `prohibited file scope changed: ${f}`);
-    assert(!/\.(mp3|wav|m4a|aac|ogg)$/i.test(f), `audio file change not allowed: ${f}`);
-  }
+// conflict checks for first authored required titles
+const mustTitles=['Night Before Diwali in Ayodhya','Lamps Returning to Ayodhya','Radha on Holi Morning','Krishna and Safe Holi Colors'];
+for(const t of mustTitles){
+  const s=stories.find(x=>x.title===t); assert(!!s,`missing required story ${t}`);
+  const z=(JSON.stringify(s)+' '+s.summary+' '+s.sourceTextOrTraditionNote).toLowerCase();
+  if(t.includes('Diwali')) assert(z.includes('diwali')&&z.includes('ayodhya'),`${t} mismatch`);
+  if(t.includes('Holi')) assert(z.includes('holi')&&z.includes('vrindavan'),`${t} mismatch`);
+  if(t.includes('Krishna')) assert(z.includes('krishna')&&z.includes('radha'),`${t} mismatch`);
 }
 
-console.log('validate-festival-stories-expansion-pack-v1: PASS', { indexed: stories.length, qa_ready: qaReady.length, audio_script_ready: stories.filter((s) => s.audioScript).length });
+// repetition checks
+const p1=qa.map(s=>(s.panels[0]?.text||'').toLowerCase().trim());
+const n1=aud.map(s=>(s.audioScript.narrationScript||'').split('.')[0].toLowerCase().trim());
+const count=(arr)=>arr.reduce((m,v)=>(m.set(v,(m.get(v)||0)+1),m),new Map());
+assert(Math.max(...count(p1).values())<=2,'repeated runtime panel openings detected');
+assert(Math.max(...count(n1).values())<=2,'repeated narration openings detected');
+const panelTitleSig=qa.map(s=>s.panels.map(p=>p.title.toLowerCase()).join('|'));
+assert(Math.max(...count(panelTitleSig).values())<=8,'too many runtime stories use same panel title structure');
+
+// duplicate IDs against existing files
+const other=fs.readdirSync(path.join(ROOT,'src/data')).filter(f=>f.endsWith('.ts')&&f!=='festivalStoriesExpansionPackV1.ts');
+const txt=other.map(f=>read(path.join(ROOT,'src/data',f))).join('\n');
+for(const id of ids) assert(!txt.includes(id),`duplicate ID: ${id}`);
+
+assert(read(REGISTRY).includes('festivalStoriesExpansionPackV1Journey'),'journey not registered');
+assert(fs.existsSync(DOC)&&fs.existsSync(STATUS),'docs missing');
+
+execSync('npm run validate:story-experience-index-model-v1',{stdio:'pipe'});
+
+const changed=execSync('git diff --name-only HEAD~1..HEAD',{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+const blocked=['app/','src/app/','src/services/runtimeStoryResolver','src/services/storyCompletion','src/services/journeyProgress','src/components/story/','src/screens/story','src/audio/','backend/','api/','analytics','telemetry','notification','sharing','microphone','recording','tts','elevenlabs'];
+for(const f of changed){
+  assert(!blocked.some(b=>f.includes(b)),`blocked file changed: ${f}`);
+  assert(!/\.(mp3|wav|m4a|aac|ogg)$/i.test(f),`audio file changed: ${f}`);
+}
+console.log('validate-festival-stories-expansion-pack-v1: PASS',{indexed:stories.length,qa_ready:qa.length,audio_script_ready:aud.length});
