@@ -8,6 +8,7 @@ import { krishnaChildhoodExpansionRecoveryPackV1Stories, krishnaChildhoodExpansi
 import { ganeshaHanumanExpansionRecoveryPackV1Stories, ganeshaHanumanExpansionRecoveryPackV1StoryPack } from '@/data/ganeshaHanumanExpansionRecoveryPackV1';
 import { bedtimeValuesExpansionPackV1Stories, bedtimeValuesExpansionPackV1StoryPack, bedtimeValuesExpansionPackV1Journey } from '@/data/bedtimeValuesExpansionPackV1';
 import { festivalStoriesExpansionPackV1Stories, festivalStoriesExpansionPackV1StoryPack, festivalStoriesExpansionPackV1Journey } from '@/data/festivalStoriesExpansionPackV1';
+import { bhagavadGitaForChildrenExpansionPackV1Stories, bhagavadGitaForChildrenExpansionPackV1StoryPack, bhagavadGitaForChildrenExpansionPackV1Journey } from '@/data/bhagavadGitaForChildrenExpansionPackV1';
 import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 
 export const contentRegistryVersion = 'pr119-content-registry-v1';
@@ -16,7 +17,7 @@ const vrindavanRegistryStories: Story[] = vrindavanStoryPackets.map((packet, ind
   mapVrindavanPacketToStoryModelV2(packet, index)
 );
 
-export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories, ...krishnaChildhoodPack1Stories, ...ganeshaWisdomPack1Stories, ...ramayanaExpansionRecoveryPackV1Stories, ...krishnaChildhoodExpansionRecoveryPackV1Stories, ...ganeshaHanumanExpansionRecoveryPackV1Stories, ...bedtimeValuesExpansionPackV1Stories, ...festivalStoriesExpansionPackV1Stories];
+export const contentRegistryStories: Story[] = [...vrindavanRegistryStories, ...ramayanaPack1Stories, ...krishnaChildhoodPack1Stories, ...ganeshaWisdomPack1Stories, ...ramayanaExpansionRecoveryPackV1Stories, ...krishnaChildhoodExpansionRecoveryPackV1Stories, ...ganeshaHanumanExpansionRecoveryPackV1Stories, ...bedtimeValuesExpansionPackV1Stories, ...festivalStoriesExpansionPackV1Stories, ...bhagavadGitaForChildrenExpansionPackV1Stories];
 
 export const contentRegistryStoriesById: Record<string, Story> = Object.fromEntries(
   contentRegistryStories.map((story) => [story.id, story])
@@ -50,7 +51,8 @@ export const contentRegistryStoryPacks: StoryPack[] = [
   krishnaChildhoodExpansionRecoveryPackV1StoryPack,
   ganeshaHanumanExpansionRecoveryPackV1StoryPack,
   bedtimeValuesExpansionPackV1StoryPack,
-  festivalStoriesExpansionPackV1StoryPack
+  festivalStoriesExpansionPackV1StoryPack,
+  bhagavadGitaForChildrenExpansionPackV1StoryPack
 ];
 
 export const contentRegistryStoryPacksById: Record<string, StoryPack> = Object.fromEntries(
@@ -74,7 +76,8 @@ export const contentRegistryJourneys: DharmaJourney[] = [
   krishnaChildhoodPack1Journey,
   ganeshaWisdomPack1Journey,
   bedtimeValuesExpansionPackV1Journey,
-  festivalStoriesExpansionPackV1Journey
+  festivalStoriesExpansionPackV1Journey,
+  bhagavadGitaForChildrenExpansionPackV1Journey
 ];
 
 export const contentRegistryJourneysById: Record<string, DharmaJourney> = Object.fromEntries(
@@ -113,6 +116,7 @@ export function getContentRegistryCoverageSummary() {
     registeredGaneshaHanumanExpansionRecoveryPackV1Stories: ganeshaHanumanExpansionRecoveryPackV1Stories.length,
     registeredBedtimeValuesExpansionPackV1Stories: bedtimeValuesExpansionPackV1Stories.length,
     registeredFestivalStoriesExpansionPackV1Stories: festivalStoriesExpansionPackV1Stories.length,
+    registeredBhagavadGitaForChildrenExpansionPackV1Stories: bhagavadGitaForChildrenExpansionPackV1Stories.length,
     registeredStoryPacks: contentRegistryStoryPacks.length,
     registeredJourneys: contentRegistryJourneys.length,
     missingStoryIds,

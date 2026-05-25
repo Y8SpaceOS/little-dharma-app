@@ -72,3 +72,9 @@ Add a dedicated counter audit PR after several more content packs:
 ## PR #169 update
 
 - Festival Stories Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
+
+
+## PR #170 update
+
+- Bhagavad Gita for Children Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 30 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
+- Recovery totals after PR #170 are approximately 620 indexed, 225+ QA-staged runtime candidates, and 160 audio-script-ready candidates.
