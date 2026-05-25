@@ -58,7 +58,8 @@
     "validate:krishna-childhood-expansion-recovery-pack-v1": "node scripts/validate-krishna-childhood-expansion-recovery-pack-v1.mjs",
     "validate:ganesha-hanuman-expansion-pack-v1": "node scripts/validate-ganesha-hanuman-expansion-pack-v1.mjs",
     "validate:bedtime-values-expansion-pack-v1": "node scripts/validate-bedtime-values-expansion-pack-v1.mjs",
-    "validate:festival-stories-expansion-pack-v1": "node scripts/validate-festival-stories-expansion-pack-v1.mjs"
+    "validate:festival-stories-expansion-pack-v1": "node scripts/validate-festival-stories-expansion-pack-v1.mjs",
+    "validate:bhagavad-gita-for-children-expansion-pack-v1": "node scripts/validate-bhagavad-gita-for-children-expansion-pack-v1.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
