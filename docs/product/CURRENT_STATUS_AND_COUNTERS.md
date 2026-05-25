@@ -78,3 +78,9 @@ Add a dedicated counter audit PR after several more content packs:
 
 - Bhagavad Gita for Children Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 30 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
 - Recovery totals after PR #170 are approximately 620 indexed, 225+ QA-staged runtime candidates, and 160 audio-script-ready candidates.
+
+
+## PR #171 update
+
+- Mahabharata Child-Safe Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
+- Recovery totals after PR #171 are approximately 720 indexed, 260+ QA-staged runtime candidates, and 185 audio-script-ready candidates.
