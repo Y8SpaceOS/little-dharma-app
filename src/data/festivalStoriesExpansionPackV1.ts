@@ -37,22 +37,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Dawn",
-        "text": "Night Before Diwali in Ayodhya: In Ayodhya lane, the family begins Diwali preparations with specific tasks shared between children and elders."
+        "text": "Night Before Diwali in Ayodhya: In Ayodhya lane, the family begins Diwali preparations with ."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "A parent retells the heart of Diwali using names, places, and one devotional practice the children can follow respectfully."
+        "text": " Diwali using names, places, and  respectfully."
       },
       {
         "id": "panel-3",
         "title": "Kind Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": ", and the children choose patience, sharing, and respectful speech before continuing the celebration."
       },
       {
         "id": "panel-4",
         "title": "Evening Blessing",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Diwali to practice tomorrow."
+        "text": "The celebration ends with prayer and prasad, and  from Diwali to practice tomorrow."
       }
     ],
     "parentNote": {
@@ -97,7 +97,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Night Before Diwali in Ayodhya. On the eve of Diwali, Rama, Sita, and Lakshmana walk through Ayodhya as families prepare lamps for a joyful homecoming. In Ayodhya lane, the family begins Diwali preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Night Before Diwali in Ayodhya. On the eve of Diwali, Rama, Sita, and Lakshmana walk through Ayodhya as families prepare lamps for a joyful homecoming. Night Before Diwali in Ayodhya: In Ayodhya lane, the family begins Diwali preparations with . , and the children choose patience, sharing, and respectful speech before continuing the celebration.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -137,22 +137,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Gathering",
-        "text": "Lamps Returning to Ayodhya: In Ayodhya lane, the family begins Diwali preparations with specific tasks shared between children and elders."
+        "text": "Lamps Returning to Ayodhya: In Ayodhya lane, the family begins Diwali preparations with ."
       },
       {
         "id": "panel-2",
         "title": "Festival Meaning",
-        "text": "A parent retells the heart of Diwali using names, places, and one devotional practice the children can follow respectfully."
+        "text": " Diwali using names, places, and  respectfully."
       },
       {
         "id": "panel-3",
         "title": "Helping Moment",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": ", and the children choose patience, sharing, and respectful speech before continuing the celebration."
       },
       {
         "id": "panel-4",
         "title": "Prayer Close",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Diwali to practice tomorrow."
+        "text": "The celebration ends with prayer and prasad, and  from Diwali to practice tomorrow."
       }
     ],
     "parentNote": {
@@ -197,7 +197,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Lamps Returning to Ayodhya. Families in Ayodhya light diyas to welcome Rama, filling streets with gratitude and gentle joy. In Ayodhya lane, the family begins Diwali preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Lamps Returning to Ayodhya. Families in Ayodhya light diyas to welcome Rama, filling streets with gratitude and gentle joy. Lamps Returning to Ayodhya: In Ayodhya lane, the family begins Diwali preparations with . , and the children choose patience, sharing, and respectful speech before continuing the celebration.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -237,22 +237,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Early Light",
-        "text": "Radha on Holi Morning: In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders."
+        "text": "Radha on Holi Morning: In Vrindavan courtyard, the family begins Holi preparations with ."
       },
       {
         "id": "panel-2",
         "title": "Family Work",
-        "text": "A parent retells the heart of Holi using names, places, and one devotional practice the children can follow respectfully."
+        "text": " Holi using names, places, and  respectfully."
       },
       {
         "id": "panel-3",
         "title": "Sharing Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": ", and the children choose patience, sharing, and respectful speech before continuing the celebration."
       },
       {
         "id": "panel-4",
         "title": "Gratitude",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Holi to practice tomorrow."
+        "text": "The celebration ends with prayer and prasad, and  from Holi to practice tomorrow."
       }
     ],
     "parentNote": {
@@ -297,7 +297,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Radha on Holi Morning. Radha begins Holi morning in Vrindavan with kindness, laughter, and safe colors shared respectfully. In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Radha on Holi Morning. Radha begins Holi morning in Vrindavan with kindness, laughter, and safe colors shared respectfully. Radha on Holi Morning: In Vrindavan courtyard, the family begins Holi preparations with . , and the children choose patience, sharing, and respectful speech before continuing the celebration.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -337,22 +337,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning Start",
-        "text": "Krishna and Safe Holi Colors: In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders."
+        "text": "Krishna and Safe Holi Colors: In Vrindavan courtyard, the family begins Holi preparations with ."
       },
       {
         "id": "panel-2",
         "title": "Story Time",
-        "text": "A parent retells the heart of Holi using names, places, and one devotional practice the children can follow respectfully."
+        "text": " Holi using names, places, and  respectfully."
       },
       {
         "id": "panel-3",
         "title": "Careful Action",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": ", and the children choose patience, sharing, and respectful speech before continuing the celebration."
       },
       {
         "id": "panel-4",
         "title": "Calm Finish",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Holi to practice tomorrow."
+        "text": "The celebration ends with prayer and prasad, and  from Holi to practice tomorrow."
       }
     ],
     "parentNote": {
@@ -397,7 +397,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Krishna and Safe Holi Colors. Krishna, Radha, and Yashoda show how Holi can be bright, respectful, and safe with natural colors. In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Krishna and Safe Holi Colors. Krishna, Radha, and Yashoda show how Holi can be bright, respectful, and safe with natural colors. Krishna and Safe Holi Colors: In Vrindavan courtyard, the family begins Holi preparations with . , and the children choose patience, sharing, and respectful speech before continuing the celebration.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -497,7 +497,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Child Making a Clay Ganesh Idol. A child and parent shape a clay Ganesha idol together, learning patience, reverence, and nature-safe care. At a low wooden table, a child kneads river clay while a parent shows how to shape Ganesha’s round belly and gentle trunk. When the trunk cracks, the child feels upset; the parent adds a little water and teaches patient repair with soft fingers.",
+      "narrationScript": "Child Making a Clay Ganesh Idol. A child and parent shape a clay Ganesha idol together, learning patience, reverence, and nature-safe care. Child Making a Clay Ganesh Idol: At a low wooden table, a child kneads river clay while a parent shows how to shape Ganesha’s round belly and gentle trunk. When the trunk cracks, the child feels upset; the parent adds a little water and teaches patient repair with soft fingers.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -510,7 +510,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-006",
     "title": "First Modak Offering",
     "shortTitle": "First Modak Offering",
-    "summary": "A child-safe Ganesh Chaturthi story about devotion, kindness, and family care.",
+    "summary": "During Ganesh Chaturthi, Parvati guides a child making first modaks with rice flour, jaggery, and coconut for Ganesha.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -537,22 +537,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Dawn",
-        "text": "First Modak Offering: In family shrine room, the family begins Ganesh Chaturthi preparations with specific tasks shared between children and elders."
+        "text": "In the kitchen, rice flour dough is kneaded while coconut and jaggery cook into a sweet filling for modaks."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "A parent retells the heart of Ganesh Chaturthi using names, places, and one devotional practice the children can follow respectfully."
+        "text": "Parvati shows how to fold each modak pleat before placing them on a brass plate before Ganesha."
       },
       {
         "id": "panel-3",
         "title": "Kind Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "One modak tears open, so the child reshapes it patiently and saves it for family sharing instead of hiding the mistake."
       },
       {
         "id": "panel-4",
         "title": "Evening Blessing",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Ganesh Chaturthi to practice tomorrow."
+        "text": "After a short prayer, the first modak is offered to Ganesha and the rest are shared as warm prasad with neighbors."
       }
     ],
     "parentNote": {
@@ -597,7 +597,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "First Modak Offering. A child-safe Ganesh Chaturthi story about devotion, kindness, and family care. In family shrine room, the family begins Ganesh Chaturthi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "First Modak Offering. During Ganesh Chaturthi, Parvati guides a child making first modaks with rice flour, jaggery, and coconut for Ganesha. In the kitchen, rice flour dough is kneaded while coconut and jaggery cook into a sweet filling for modaks. One modak tears open, so the child reshapes it patiently and saves it for family sharing instead of hiding the mistake.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -610,7 +610,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-007",
     "title": "Navratri Lamp at Home",
     "shortTitle": "Navratri Lamp at Home",
-    "summary": "A child-safe Navratri story about devotion, kindness, and family care.",
+    "summary": "At home during Navratri, a family lights a diya for Devi and practices calm courage through evening aarti.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -637,22 +637,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Gathering",
-        "text": "Navratri Lamp at Home: In lamp-lit home altar, the family begins Navratri preparations with specific tasks shared between children and elders."
+        "text": "At the home altar, a small diya is lit before Devi while marigold petals are arranged in a neat circle."
       },
       {
         "id": "panel-2",
         "title": "Festival Meaning",
-        "text": "A parent retells the heart of Navratri using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family claps softly through aarti, and an older cousin explains that courage can be gentle and steady."
       },
       {
         "id": "panel-3",
         "title": "Helping Moment",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When the flame flickers, the children shield it together and relight with care rather than panic."
       },
       {
         "id": "panel-4",
         "title": "Prayer Close",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Navratri to practice tomorrow."
+        "text": "They end by bowing quietly and promising to carry Devi’s calm courage into school and play."
       }
     ],
     "parentNote": {
@@ -697,7 +697,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Navratri Lamp at Home. A child-safe Navratri story about devotion, kindness, and family care. In lamp-lit home altar, the family begins Navratri preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Navratri Lamp at Home. At home during Navratri, a family lights a diya for Devi and practices calm courage through evening aarti. At the home altar, a small diya is lit before Devi while marigold petals are arranged in a neat circle. When the flame flickers, the children shield it together and relight with care rather than panic.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -710,7 +710,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-008",
     "title": "Dussehra Courage Without Fear",
     "shortTitle": "Dussehra Courage Without Fear",
-    "summary": "A child-safe Dussehra story about devotion, kindness, and family care.",
+    "summary": "A child-safe Dussehra story where Rama’s courage is remembered through a symbolic lesson of good over wrong.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -737,22 +737,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Early Light",
-        "text": "Dussehra Courage Without Fear: In village square, the family begins Dussehra preparations with specific tasks shared between children and elders."
+        "text": "In the village square, children build a small paper Ravana effigy to represent anger, pride, and hurtful words."
       },
       {
         "id": "panel-2",
         "title": "Family Work",
-        "text": "A parent retells the heart of Dussehra using names, places, and one devotional practice the children can follow respectfully."
+        "text": "An elder retells how Rama chose dharma with courage, focus, and compassion for others."
       },
       {
         "id": "panel-3",
         "title": "Sharing Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "Before lighting the effigy, each child writes one unkind habit to let go and one kind habit to practice."
       },
       {
         "id": "panel-4",
         "title": "Gratitude",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Dussehra to practice tomorrow."
+        "text": "As the tiny effigy burns, families cheer for good over wrong and share sweets in a peaceful closing."
       }
     ],
     "parentNote": {
@@ -797,7 +797,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Dussehra Courage Without Fear. A child-safe Dussehra story about devotion, kindness, and family care. In village square, the family begins Dussehra preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Dussehra Courage Without Fear. A child-safe Dussehra story where Rama’s courage is remembered through a symbolic lesson of good over wrong. In the village square, children build a small paper Ravana effigy to represent anger, pride, and hurtful words. Before lighting the effigy, each child writes one unkind habit to let go and one kind habit to practice.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -810,7 +810,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-009",
     "title": "Kite-Sharing on Makar Sankranti",
     "shortTitle": "Kite-Sharing on Makar Sankranti",
-    "summary": "A child-safe Makar Sankranti story about devotion, kindness, and family care.",
+    "summary": "On Makar Sankranti, children share kites and til-gud on a sunny rooftop, learning generosity and joy.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -837,22 +837,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning Start",
-        "text": "Kite-Sharing on Makar Sankranti: In sunny rooftop, the family begins Makar Sankranti preparations with specific tasks shared between children and elders."
+        "text": "Under bright winter sunlight, siblings carry kites and spools to the terrace for Makar Sankranti."
       },
       {
         "id": "panel-2",
         "title": "Story Time",
-        "text": "A parent retells the heart of Makar Sankranti using names, places, and one devotional practice the children can follow respectfully."
+        "text": "Grandmother passes til-gud laddus and reminds everyone that sweet words matter as much as sweet treats."
       },
       {
         "id": "panel-3",
         "title": "Careful Action",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When one child’s kite string snaps, another offers a spare spool so play can continue together."
       },
       {
         "id": "panel-4",
         "title": "Calm Finish",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Makar Sankranti to practice tomorrow."
+        "text": "By sunset they exchange laddus with neighbors and thank the sun for warmth and harvest."
       }
     ],
     "parentNote": {
@@ -897,7 +897,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Kite-Sharing on Makar Sankranti. A child-safe Makar Sankranti story about devotion, kindness, and family care. In sunny rooftop, the family begins Makar Sankranti preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Kite-Sharing on Makar Sankranti. On Makar Sankranti, children share kites and til-gud on a sunny rooftop, learning generosity and joy. Under bright winter sunlight, siblings carry kites and spools to the terrace for Makar Sankranti. When one child’s kite string snaps, another offers a spare spool so play can continue together.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -910,7 +910,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-010",
     "title": "Sibling Care on Raksha Bandhan",
     "shortTitle": "Sibling Care on Raksha Bandhan",
-    "summary": "A child-safe Raksha Bandhan story about devotion, kindness, and family care.",
+    "summary": "On Raksha Bandhan, siblings tie rakhi and promise mutual care, respect, and support.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -937,22 +937,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Welcome",
-        "text": "Sibling Care on Raksha Bandhan: In family veranda, the family begins Raksha Bandhan preparations with specific tasks shared between children and elders."
+        "text": "In the veranda, a sister ties a rakhi on her brother’s wrist while he places a small rakhi on hers too."
       },
       {
         "id": "panel-2",
         "title": "Tradition",
-        "text": "A parent retells the heart of Raksha Bandhan using names, places, and one devotional practice the children can follow respectfully."
+        "text": "They exchange simple vows: speak kindly, help with chores, and stand by each other at school."
       },
       {
         "id": "panel-3",
         "title": "Respectful Play",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "A disagreement about gifts is resolved when they choose a shared charity box instead of competing."
       },
       {
         "id": "panel-4",
         "title": "Thankful End",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Raksha Bandhan to practice tomorrow."
+        "text": "The family seals the promise with kheer and blessings for mutual care throughout the year."
       }
     ],
     "parentNote": {
@@ -997,7 +997,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Sibling Care on Raksha Bandhan. A child-safe Raksha Bandhan story about devotion, kindness, and family care. In family veranda, the family begins Raksha Bandhan preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Sibling Care on Raksha Bandhan. On Raksha Bandhan, siblings tie rakhi and promise mutual care, respect, and support. In the veranda, a sister ties a rakhi on her brother’s wrist while he places a small rakhi on hers too. A disagreement about gifts is resolved when they choose a shared charity box instead of competing.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1010,7 +1010,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-011",
     "title": "Ram Navami Cradle Celebration",
     "shortTitle": "Ram Navami Cradle Celebration",
-    "summary": "A child-safe Ram Navami story about devotion, kindness, and family care.",
+    "summary": "Ram Navami is celebrated with baby Rama’s cradle, prayers, and family joy in a child-safe devotional setting.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Ram Navami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1037,22 +1037,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Dawn",
-        "text": "Ram Navami Cradle Celebration: In Ram shrine hall, the family begins Ram Navami preparations with specific tasks shared between children and elders."
+        "text": "At the shrine hall, a decorated cradle for baby Rama is lined with yellow cloth and jasmine strings."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "A parent retells the heart of Ram Navami using names, places, and one devotional practice the children can follow respectfully."
+        "text": "Children sing a soft lullaby while elders recite short verses about Rama’s birth in Ayodhya."
       },
       {
         "id": "panel-3",
         "title": "Kind Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "A toddler reaches for the cradle flowers, and the older children gently guide tiny hands with respect."
       },
       {
         "id": "panel-4",
         "title": "Evening Blessing",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Ram Navami to practice tomorrow."
+        "text": "After prayer, fruit and panakam are shared as the family celebrates Rama’s birth with gratitude."
       }
     ],
     "parentNote": {
@@ -1097,7 +1097,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Ram Navami Cradle Celebration. A child-safe Ram Navami story about devotion, kindness, and family care. In Ram shrine hall, the family begins Ram Navami preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Ram Navami Cradle Celebration. Ram Navami is celebrated with baby Rama’s cradle, prayers, and family joy in a child-safe devotional setting. At the shrine hall, a decorated cradle for baby Rama is lined with yellow cloth and jasmine strings. A toddler reaches for the cradle flowers, and the older children gently guide tiny hands with respect.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1110,7 +1110,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-012",
     "title": "Hanuman Jayanti Seva",
     "shortTitle": "Hanuman Jayanti Seva",
-    "summary": "A child-safe Hanuman Jayanti story about devotion, kindness, and family care.",
+    "summary": "For Hanuman Jayanti, children practice seva while chanting Rama’s name with humility.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Hanuman Jayanti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1137,22 +1137,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Gathering",
-        "text": "Hanuman Jayanti Seva: In Hanuman temple courtyard, the family begins Hanuman Jayanti preparations with specific tasks shared between children and elders."
+        "text": "At Hanuman temple, children fill water pots and sweep the path before devotees arrive."
       },
       {
         "id": "panel-2",
         "title": "Festival Meaning",
-        "text": "A parent retells the heart of Hanuman Jayanti using names, places, and one devotional practice the children can follow respectfully."
+        "text": "A sevak teaches them to chant 'Sri Rama' softly while working so service stays humble."
       },
       {
         "id": "panel-3",
         "title": "Helping Moment",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When praise comes, they thank Hanuman and keep serving instead of showing off."
       },
       {
         "id": "panel-4",
         "title": "Prayer Close",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Hanuman Jayanti to practice tomorrow."
+        "text": "The morning ends with banana prasad and a promise to serve quietly at home too."
       }
     ],
     "parentNote": {
@@ -1197,7 +1197,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Hanuman Jayanti Seva. A child-safe Hanuman Jayanti story about devotion, kindness, and family care. In Hanuman temple courtyard, the family begins Hanuman Jayanti preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Hanuman Jayanti Seva. For Hanuman Jayanti, children practice seva while chanting Rama’s name with humility. At Hanuman temple, children fill water pots and sweep the path before devotees arrive. When praise comes, they thank Hanuman and keep serving instead of showing off.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1210,7 +1210,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-013",
     "title": "Maha Shivratri Quiet Prayer",
     "shortTitle": "Maha Shivratri Quiet Prayer",
-    "summary": "A child-safe Maha Shivratri story about devotion, kindness, and family care.",
+    "summary": "A Maha Shivratri night story of Shiva devotion with bilva leaves, quiet prayer, and calm attention.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Family retelling for Maha Shivratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1237,22 +1237,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Early Light",
-        "text": "Maha Shivratri Quiet Prayer: In night temple hall, the family begins Maha Shivratri preparations with specific tasks shared between children and elders."
+        "text": "At a night temple, bilva leaves are rinsed and placed beside cool water for Shiva abhishek."
       },
       {
         "id": "panel-2",
         "title": "Family Work",
-        "text": "A parent retells the heart of Maha Shivratri using names, places, and one devotional practice the children can follow respectfully."
+        "text": "Parvati stories are told in hushed voices while children hold lamps away from crowded steps."
       },
       {
         "id": "panel-3",
         "title": "Sharing Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "A leaf drops, and the youngest child carefully picks it up and offers it again with folded hands."
       },
       {
         "id": "panel-4",
         "title": "Gratitude",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Maha Shivratri to practice tomorrow."
+        "text": "They finish in still silence, feeling peaceful devotion before walking home under moonlight."
       }
     ],
     "parentNote": {
@@ -1297,7 +1297,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Maha Shivratri Quiet Prayer. A child-safe Maha Shivratri story about devotion, kindness, and family care. In night temple hall, the family begins Maha Shivratri preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Maha Shivratri Quiet Prayer. A Maha Shivratri night story of Shiva devotion with bilva leaves, quiet prayer, and calm attention. At a night temple, bilva leaves are rinsed and placed beside cool water for Shiva abhishek. A leaf drops, and the youngest child carefully picks it up and offers it again with folded hands.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1310,7 +1310,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-014",
     "title": "Diya Lane of Ayodhya",
     "shortTitle": "Diya Lane of Ayodhya",
-    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Diwali micro-retelling focused on diyas, Rama homecoming, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1337,22 +1337,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning Start",
-        "text": "Diya Lane of Ayodhya: In Ayodhya lane, the family begins Diwali preparations with specific tasks shared between children and elders."
+        "text": "During Diwali, children prepare diyas while elders set up mustard-oil lamps near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Story Time",
-        "text": "A parent retells the heart of Diwali using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls Rama homecoming and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Careful Action",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Calm Finish",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Diwali to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying rangoli memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1397,7 +1397,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Diya Lane of Ayodhya. A Diwali retelling where children learn reverence, sharing, and calm courage. In Ayodhya lane, the family begins Diwali preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Diya Lane of Ayodhya. A Diwali micro-retelling focused on diyas, Rama homecoming, and family values. During Diwali, children prepare diyas while elders set up mustard-oil lamps near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1410,7 +1410,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-015",
     "title": "Sarayu Lights at Sunset",
     "shortTitle": "Sarayu Lights at Sunset",
-    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Diwali micro-retelling focused on diyas, Rama homecoming, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1437,22 +1437,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Welcome",
-        "text": "Sarayu Lights at Sunset: In Sarayu ghat, the family begins Diwali preparations with specific tasks shared between children and elders."
+        "text": "During Diwali, children prepare diyas while elders set up mustard-oil lamps near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Tradition",
-        "text": "A parent retells the heart of Diwali using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls Rama homecoming and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Respectful Play",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Thankful End",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Diwali to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying rangoli memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1497,7 +1497,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Sarayu Lights at Sunset. A Diwali retelling where children learn reverence, sharing, and calm courage. In Sarayu ghat, the family begins Diwali preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Sarayu Lights at Sunset. A Diwali micro-retelling focused on diyas, Rama homecoming, and family values. During Diwali, children prepare diyas while elders set up mustard-oil lamps near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1510,7 +1510,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-016",
     "title": "Colors with Consent in Barsana",
     "shortTitle": "Colors with Consent in Barsana",
-    "summary": "A Holi retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Holi micro-retelling focused on flower colors, Radha and Krishna, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1537,22 +1537,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Dawn",
-        "text": "Colors with Consent in Barsana: In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders."
+        "text": "During Holi, children prepare flower colors while elders set up permission before color near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "A parent retells the heart of Holi using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls Radha and Krishna and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Kind Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Evening Blessing",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Holi to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying tesu petals memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1597,7 +1597,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Colors with Consent in Barsana. A Holi retelling where children learn reverence, sharing, and calm courage. In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Colors with Consent in Barsana. A Holi micro-retelling focused on flower colors, Radha and Krishna, and family values. During Holi, children prepare flower colors while elders set up permission before color near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1610,7 +1610,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-017",
     "title": "Butter Pots and Gentle Holi",
     "shortTitle": "Butter Pots and Gentle Holi",
-    "summary": "A Holi retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Holi micro-retelling focused on flower colors, Radha and Krishna, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Holi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1637,22 +1637,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Gathering",
-        "text": "Butter Pots and Gentle Holi: In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders."
+        "text": "During Holi, children prepare flower colors while elders set up permission before color near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Festival Meaning",
-        "text": "A parent retells the heart of Holi using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls Radha and Krishna and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Helping Moment",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Prayer Close",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Holi to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying tesu petals memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1697,7 +1697,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Butter Pots and Gentle Holi. A Holi retelling where children learn reverence, sharing, and calm courage. In Vrindavan courtyard, the family begins Holi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Butter Pots and Gentle Holi. A Holi micro-retelling focused on flower colors, Radha and Krishna, and family values. During Holi, children prepare flower colors while elders set up permission before color near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1710,7 +1710,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-018",
     "title": "Midnight Bells of Janmashtami",
     "shortTitle": "Midnight Bells of Janmashtami",
-    "summary": "A Janmashtami retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Janmashtami micro-retelling focused on midnight bell, butter pot, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1737,22 +1737,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Early Light",
-        "text": "Midnight Bells of Janmashtami: In Gokul temple courtyard, the family begins Janmashtami preparations with specific tasks shared between children and elders."
+        "text": "During Janmashtami, children prepare midnight bell while elders set up Mathura to Gokul memory near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Family Work",
-        "text": "A parent retells the heart of Janmashtami using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls butter pot and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Sharing Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Gratitude",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Janmashtami to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying cradle for Krishna memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1797,7 +1797,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Midnight Bells of Janmashtami. A Janmashtami retelling where children learn reverence, sharing, and calm courage. In Gokul temple courtyard, the family begins Janmashtami preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Midnight Bells of Janmashtami. A Janmashtami micro-retelling focused on midnight bell, butter pot, and family values. During Janmashtami, children prepare midnight bell while elders set up Mathura to Gokul memory near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1810,7 +1810,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-019",
     "title": "Cradle Songs in Gokul",
     "shortTitle": "Cradle Songs in Gokul",
-    "summary": "A Janmashtami retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Janmashtami micro-retelling focused on midnight bell, butter pot, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Janmashtami.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1837,22 +1837,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning Start",
-        "text": "Cradle Songs in Gokul: In Gokul temple courtyard, the family begins Janmashtami preparations with specific tasks shared between children and elders."
+        "text": "During Janmashtami, children prepare midnight bell while elders set up Mathura to Gokul memory near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Story Time",
-        "text": "A parent retells the heart of Janmashtami using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls butter pot and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Careful Action",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Calm Finish",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Janmashtami to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying cradle for Krishna memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1897,7 +1897,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Cradle Songs in Gokul. A Janmashtami retelling where children learn reverence, sharing, and calm courage. In Gokul temple courtyard, the family begins Janmashtami preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Cradle Songs in Gokul. A Janmashtami micro-retelling focused on midnight bell, butter pot, and family values. During Janmashtami, children prepare midnight bell while elders set up Mathura to Gokul memory near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -1910,7 +1910,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-020",
     "title": "Moonlit Modak Kitchen",
     "shortTitle": "Moonlit Modak Kitchen",
-    "summary": "A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Ganesh Chaturthi micro-retelling focused on clay idol, durva grass, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -1937,22 +1937,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Welcome",
-        "text": "Moonlit Modak Kitchen: In family shrine room, the family begins Ganesh Chaturthi preparations with specific tasks shared between children and elders."
+        "text": "During Ganesh Chaturthi, children prepare clay idol while elders set up nature-safe visarjan near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Tradition",
-        "text": "A parent retells the heart of Ganesh Chaturthi using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls durva grass and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Respectful Play",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Thankful End",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Ganesh Chaturthi to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying modak plate memories into everyday life."
       }
     ],
     "parentNote": {
@@ -1997,7 +1997,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Moonlit Modak Kitchen. A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage. In family shrine room, the family begins Ganesh Chaturthi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Moonlit Modak Kitchen. A Ganesh Chaturthi micro-retelling focused on clay idol, durva grass, and family values. During Ganesh Chaturthi, children prepare clay idol while elders set up nature-safe visarjan near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -2010,7 +2010,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-021",
     "title": "Ganesh Visarjan Promise to Nature",
     "shortTitle": "Ganesh Visarjan Promise to Nature",
-    "summary": "A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Ganesh Chaturthi micro-retelling focused on clay idol, durva grass, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Ganesh Chaturthi.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2037,22 +2037,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Dawn",
-        "text": "Ganesh Visarjan Promise to Nature: In family shrine room, the family begins Ganesh Chaturthi preparations with specific tasks shared between children and elders."
+        "text": "During Ganesh Chaturthi, children prepare clay idol while elders set up nature-safe visarjan near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "A parent retells the heart of Ganesh Chaturthi using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls durva grass and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Kind Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Evening Blessing",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Ganesh Chaturthi to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying modak plate memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2097,7 +2097,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Ganesh Visarjan Promise to Nature. A Ganesh Chaturthi retelling where children learn reverence, sharing, and calm courage. In family shrine room, the family begins Ganesh Chaturthi preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Ganesh Visarjan Promise to Nature. A Ganesh Chaturthi micro-retelling focused on clay idol, durva grass, and family values. During Ganesh Chaturthi, children prepare clay idol while elders set up nature-safe visarjan near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -2110,7 +2110,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-022",
     "title": "Nine Nights of Kind Steps",
     "shortTitle": "Nine Nights of Kind Steps",
-    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Festival micro-retelling focused on altar, sharing, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2137,22 +2137,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Gathering",
-        "text": "Nine Nights of Kind Steps: In home courtyard, the family begins Diwali preparations with specific tasks shared between children and elders."
+        "text": "During Festival, children prepare altar while elders set up kindness near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Festival Meaning",
-        "text": "A parent retells the heart of Diwali using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls sharing and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Helping Moment",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Prayer Close",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Diwali to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying prayer memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2197,7 +2197,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Nine Nights of Kind Steps. A Diwali retelling where children learn reverence, sharing, and calm courage. In home courtyard, the family begins Diwali preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Nine Nights of Kind Steps. A Festival micro-retelling focused on altar, sharing, and family values. During Festival, children prepare altar while elders set up kindness near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -2210,7 +2210,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-023",
     "title": "Garba Circle of Respect",
     "shortTitle": "Garba Circle of Respect",
-    "summary": "A Navratri retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Navratri micro-retelling focused on diya, Devi altar, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Navratri.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2237,22 +2237,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Early Light",
-        "text": "Garba Circle of Respect: In lamp-lit home altar, the family begins Navratri preparations with specific tasks shared between children and elders."
+        "text": "During Navratri, children prepare diya while elders set up courage and compassion near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Family Work",
-        "text": "A parent retells the heart of Navratri using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls Devi altar and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Sharing Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Gratitude",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Navratri to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying garba circle memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2297,7 +2297,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Garba Circle of Respect. A Navratri retelling where children learn reverence, sharing, and calm courage. In lamp-lit home altar, the family begins Navratri preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Garba Circle of Respect. A Navratri micro-retelling focused on diya, Devi altar, and family values. During Navratri, children prepare diya while elders set up courage and compassion near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -2310,7 +2310,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-024",
     "title": "Rama Banner in the Courtyard",
     "shortTitle": "Rama Banner in the Courtyard",
-    "summary": "A Dussehra retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Dussehra micro-retelling focused on Rama, good over wrong, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2337,22 +2337,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning Start",
-        "text": "Rama Banner in the Courtyard: In village square, the family begins Dussehra preparations with specific tasks shared between children and elders."
+        "text": "During Dussehra, children prepare Rama while elders set up child-safe lesson near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Story Time",
-        "text": "A parent retells the heart of Dussehra using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls good over wrong and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Careful Action",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Calm Finish",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Dussehra to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying symbolic Ravana memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2397,7 +2397,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Rama Banner in the Courtyard. A Dussehra retelling where children learn reverence, sharing, and calm courage. In village square, the family begins Dussehra preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Rama Banner in the Courtyard. A Dussehra micro-retelling focused on Rama, good over wrong, and family values. During Dussehra, children prepare Rama while elders set up child-safe lesson near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -2410,7 +2410,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-025",
     "title": "Autumn Fair of Brave Hearts",
     "shortTitle": "Autumn Fair of Brave Hearts",
-    "summary": "A Diwali retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Dussehra micro-retelling focused on Rama, good over wrong, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Diwali.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2437,22 +2437,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Welcome",
-        "text": "Autumn Fair of Brave Hearts: In village square, the family begins Dussehra preparations with specific tasks shared between children and elders."
+        "text": "During Dussehra, children prepare Rama while elders set up child-safe lesson near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Tradition",
-        "text": "A parent retells the heart of Dussehra using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls good over wrong and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Respectful Play",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Thankful End",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Dussehra to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying symbolic Ravana memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2497,7 +2497,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
     "audioScript": {
-      "narrationScript": "Autumn Fair of Brave Hearts. A Diwali retelling where children learn reverence, sharing, and calm courage. In village square, the family begins Dussehra preparations with specific tasks shared between children and elders. A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration.",
+      "narrationScript": "Autumn Fair of Brave Hearts. A Dussehra micro-retelling focused on Rama, good over wrong, and family values. During Dussehra, children prepare Rama while elders set up child-safe lesson near the home altar. When supplies run short, children share turns and help younger ones take part calmly.",
       "voiceDirection": "Warm, gentle, and respectful.",
       "pronunciationNotes": "Ayodhya (uh-YO-dhya), Vrindavan (VRIN-da-van), Ganesha (guh-NAY-sha), Hanuman (HUH-noo-maan).",
       "pacingNotes": "Steady pace with soft pauses between scenes.",
@@ -2510,7 +2510,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-026",
     "title": "Thread of Promise at Dawn",
     "shortTitle": "Thread of Promise at Dawn",
-    "summary": "A Raksha Bandhan retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Raksha Bandhan micro-retelling focused on rakhi thread, tilak, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2537,22 +2537,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Dawn",
-        "text": "Thread of Promise at Dawn: In family veranda, the family begins Raksha Bandhan preparations with specific tasks shared between children and elders."
+        "text": "During Raksha Bandhan, children prepare rakhi thread while elders set up mutual care near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Preparation",
-        "text": "A parent retells the heart of Raksha Bandhan using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls tilak and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Kind Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Evening Blessing",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Raksha Bandhan to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying sibling promise memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2603,7 +2603,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-027",
     "title": "Brother’s Rakhi Return Gift",
     "shortTitle": "Brother’s Rakhi Return Gift",
-    "summary": "A Raksha Bandhan retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Raksha Bandhan micro-retelling focused on rakhi thread, tilak, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Raksha Bandhan.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2630,22 +2630,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Gathering",
-        "text": "Brother’s Rakhi Return Gift: In family veranda, the family begins Raksha Bandhan preparations with specific tasks shared between children and elders."
+        "text": "During Raksha Bandhan, children prepare rakhi thread while elders set up mutual care near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Festival Meaning",
-        "text": "A parent retells the heart of Raksha Bandhan using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls tilak and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Helping Moment",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Prayer Close",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Raksha Bandhan to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying sibling promise memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2696,7 +2696,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-028",
     "title": "Tilgul Sharing on the Terrace",
     "shortTitle": "Tilgul Sharing on the Terrace",
-    "summary": "A Makar Sankranti retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Makar Sankranti micro-retelling focused on kite, til-gud, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2723,22 +2723,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Early Light",
-        "text": "Tilgul Sharing on the Terrace: In sunny rooftop, the family begins Makar Sankranti preparations with specific tasks shared between children and elders."
+        "text": "During Makar Sankranti, children prepare kite while elders set up sharing spools near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Family Work",
-        "text": "A parent retells the heart of Makar Sankranti using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls til-gud and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Sharing Choice",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Gratitude",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Makar Sankranti to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying sunlight memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2789,7 +2789,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-029",
     "title": "Sun-Kite Promise of Friendship",
     "shortTitle": "Sun-Kite Promise of Friendship",
-    "summary": "A Makar Sankranti retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Makar Sankranti micro-retelling focused on kite, til-gud, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Makar Sankranti.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2816,22 +2816,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Morning Start",
-        "text": "Sun-Kite Promise of Friendship: In sunny rooftop, the family begins Makar Sankranti preparations with specific tasks shared between children and elders."
+        "text": "During Makar Sankranti, children prepare kite while elders set up sharing spools near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Story Time",
-        "text": "A parent retells the heart of Makar Sankranti using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls til-gud and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Careful Action",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Calm Finish",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Makar Sankranti to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying sunlight memories into everyday life."
       }
     ],
     "parentNote": {
@@ -2882,7 +2882,7 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
     "slug": "festival-stories-exp-v1-030",
     "title": "Temple Cradle for Rama",
     "shortTitle": "Temple Cradle for Rama",
-    "summary": "A Dussehra retelling where children learn reverence, sharing, and calm courage.",
+    "summary": "A Ram Navami micro-retelling focused on baby Rama cradle, Ayodhya birth story, and family values.",
     "sourceTradition": "Festival Stories",
     "sourceTextOrTraditionNote": "Community-family retelling for Dussehra.",
     "storyPackId": "festival-stories-expansion-pack-v1",
@@ -2909,22 +2909,22 @@ export const festivalStoriesExpansionPackV1Stories: ExtendedStory[] = [
       {
         "id": "panel-1",
         "title": "Welcome",
-        "text": "Temple Cradle for Rama: In Ram shrine hall, the family begins Ram Navami preparations with specific tasks shared between children and elders."
+        "text": "During Ram Navami, children prepare baby Rama cradle while elders set up family bhajan near the home altar."
       },
       {
         "id": "panel-2",
         "title": "Tradition",
-        "text": "A parent retells the heart of Ram Navami using names, places, and one devotional practice the children can follow respectfully."
+        "text": "The family recalls Ayodhya birth story and explains why reverence and kindness belong together."
       },
       {
         "id": "panel-3",
         "title": "Respectful Play",
-        "text": "A real moment of choice appears, and the children choose patience, sharing, and respectful speech before continuing the celebration."
+        "text": "When supplies run short, children share turns and help younger ones take part calmly."
       },
       {
         "id": "panel-4",
         "title": "Thankful End",
-        "text": "The celebration ends with prayer and prasad, and the family names one value from Ram Navami to practice tomorrow."
+        "text": "The celebration closes with prayer and prasad, carrying panakam memories into everyday life."
       }
     ],
     "parentNote": {

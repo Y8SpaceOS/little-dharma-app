@@ -10,7 +10,7 @@ const STATUS = path.join(ROOT, 'docs/product/CURRENT_STATUS_AND_COUNTERS.md');
 
 const REQUIRED_FESTIVALS = ['diwali','holi','janmashtami','ganesh chaturthi','navratri','dussehra','raksha bandhan','makar sankranti','ram navami','hanuman jayanti','maha shivratri'];
 const BANNED_PHRASES = ['moves the story forward','children can imitate','begins with a clear moment','practical value','specific festival moment','family dialogue','clear event sequencing'];
-const HARD_FAIL_PHRASES = ['honoring tradition in scene','opens with festival scene','families gather early and prepare offerings','an elder explains the festival memory','when a disagreement appears','the day ends with prayer, prasad'];
+const HARD_FAIL_PHRASES = ['honoring tradition in scene','opens with festival scene','families gather early and prepare offerings','an elder explains the festival memory','when a disagreement appears','the day ends with prayer, prasad','specific tasks shared between children and elders','a parent retells the heart of','a real moment of choice appears','one devotional practice the children can follow','the family names one value'];
 
 function assert(c,m){ if(!c) throw new Error(m); }
 const read=(f)=>fs.readFileSync(f,'utf8');
