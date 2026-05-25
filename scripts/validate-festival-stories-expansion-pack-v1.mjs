@@ -10,6 +10,7 @@ const STATUS = path.join(ROOT, 'docs/product/CURRENT_STATUS_AND_COUNTERS.md');
 
 const REQUIRED_FESTIVALS = ['diwali','holi','janmashtami','ganesh chaturthi','navratri','dussehra','raksha bandhan','makar sankranti','ram navami','hanuman jayanti','maha shivratri'];
 const BANNED_PHRASES = ['moves the story forward','children can imitate','begins with a clear moment','practical value','specific festival moment','family dialogue','clear event sequencing'];
+const HARD_FAIL_PHRASES = ['honoring tradition in scene','opens with festival scene','families gather early and prepare offerings','an elder explains the festival memory','when a disagreement appears','the day ends with prayer, prasad'];
 
 function assert(c,m){ if(!c) throw new Error(m); }
 const read=(f)=>fs.readFileSync(f,'utf8');
@@ -36,6 +37,7 @@ assert(stories.every(s=>!/story of .*\d+$/i.test(s.title) && !/tale\s*\d+$/i.tes
 
 const blob=JSON.stringify(stories).toLowerCase();
 for(const p of BANNED_PHRASES) assert(!blob.includes(p),`banned phrase: ${p}`);
+for(const p of HARD_FAIL_PHRASES) assert(!blob.includes(p),`hard-fail phrase: ${p}`);
 for(const f of REQUIRED_FESTIVALS) assert(blob.includes(f),`missing festival coverage ${f}`);
 
 // conflict checks for first authored required titles
@@ -56,6 +58,7 @@ assert(Math.max(...count(p1).values())<=2,'repeated runtime panel openings detec
 assert(Math.max(...count(n1).values())<=2,'repeated narration openings detected');
 const panelTitleSig=qa.map(s=>s.panels.map(p=>p.title.toLowerCase()).join('|'));
 assert(Math.max(...count(panelTitleSig).values())<=8,'too many runtime stories use same panel title structure');
+
 
 // duplicate IDs against existing files
 const other=fs.readdirSync(path.join(ROOT,'src/data')).filter(f=>f.endsWith('.ts')&&f!=='festivalStoriesExpansionPackV1.ts');
