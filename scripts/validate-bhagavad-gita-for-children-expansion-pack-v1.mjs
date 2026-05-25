@@ -19,7 +19,9 @@ const ALLOWED = new Set([
 
 const GENERIC_PHRASES = [
   'moves the story forward','children can imitate','begins with a clear moment','clear event sequencing','family dialogue',
-  'numbered placeholder event','story shell','template narrative'
+  'numbered placeholder event','story shell','template narrative',
+  'one small right step matters today','arjuna chooses a helpful action','with gratitude and a calmer heart',
+  'krishna helps arjuna practice'
 ];
 const BANNED_LANGUAGE = ['battlefield','blood','revenge','destroy enemies','superior religion','doctrine','metaphysics','cosmic ontology'];
 
@@ -52,7 +54,10 @@ assert(stories.every(s=>s.primaryCategoryId==='bhagavad_gita_for_children'),'cat
 assert(stories.every(s=>s.journeyId==='bhagavad-gita-for-children-journey-v1'),'journey mismatch');
 assert(stories.every(s=>s.audioMetadata),'all stories must have audioMetadata');
 assert(stories.every(s=>Array.isArray(s.panels)&&s.panels.length>0&&s.panels.every(p=>(p.text||'').trim().length>0)),'no empty panels allowed');
+const concreteWords=['chariot','lamp','pot','basket','garland','rope','mat','wheel','well','grain','sandal','cup','bell','pencil','letter','thread'];
+for(const st of qa){ const txt=st.panels.map(p=>p.text.toLowerCase()).join(' '); const hits=concreteWords.filter(w=>txt.includes(w)).length; assert(hits>=1,`qa_ready story lacks concrete detail: ${st.id}`); }
 assert(stories.every(s=>!/(story|lesson|tale)\s*\d+$/i.test(s.title)),'no child-facing numbered titles');
+assert(stories.every(s=>!/\s[A-Z]$/.test(s.title)),'child-facing single-letter suffix title found');
 
 const blob=JSON.stringify(stories).toLowerCase();
 for(const p of GENERIC_PHRASES) assert(!blob.includes(p),`generic phrase detected: ${p}`);
@@ -63,6 +68,8 @@ const n1=audio.map(s=>(s.audioScript.narrationScript||'').split('.')[0].toLowerC
 const count=(arr)=>arr.reduce((m,v)=>(m.set(v,(m.get(v)||0)+1),m),new Map());
 assert(Math.max(...count(p1).values())<=2,'repeated panel openings detected');
 assert(Math.max(...count(n1).values())<=2,'repeated narration openings detected');
+const panelTitleSig=qa.map(s=>s.panels.map(p=>p.title.toLowerCase()).join('|'));
+assert(Math.max(...count(panelTitleSig).values())<=6,'repeated panel title structure across too many qa_ready stories');
 
 const other=fs.readdirSync(path.join(ROOT,'src/data')).filter(f=>f.endsWith('.ts')&&f!=='bhagavadGitaForChildrenExpansionPackV1.ts');
 const txt=other.map(f=>read(path.join(ROOT,'src/data',f))).join('\n');
