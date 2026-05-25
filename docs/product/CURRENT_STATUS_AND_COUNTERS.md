@@ -24,7 +24,7 @@ As of the project conversation handoff:
 | Ramayana Expansion Recovery Pack v1 | 100 | 40 | 25 |
 | Krishna Childhood Expansion Recovery Pack v1 | 120 | 45 | 30 |
 | Ganesha + Hanuman Expansion Pack v1 | 100 | 35+ | 25 |
-| Total recovery additions | 320 | 120+ | 80 |
+| Total recovery additions | 420 | 155+ | 105 |
 
 ## PR #207 target
 
@@ -62,3 +62,8 @@ Add a dedicated counter audit PR after several more content packs:
 - Count journey coverage.
 - Count category coverage.
 - Report exact gap to PR #207.
+
+
+## PR #168 update
+
+- Bedtime + Values Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode.
