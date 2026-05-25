@@ -67,3 +67,8 @@ Add a dedicated counter audit PR after several more content packs:
 ## PR #168 update
 
 - Bedtime + Values Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode.
+
+
+## PR #169 update
+
+- Festival Stories Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
