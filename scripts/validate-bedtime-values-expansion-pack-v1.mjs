@@ -33,6 +33,10 @@ if(stories.some(s => !s.panels || s.panels.length===0)) throw new Error('empty p
 // numbered generated titles forbidden
 if(stories.some(s=>/bedtime values story\s*\d+/i.test(s.title))) throw new Error('numbered generated titles detected');
 
+if(stories.some(s=>/moonlight kindness tale\s*\d+/i.test(s.title))) throw new Error('moonlight kindness placeholder titles detected');
+if(stories.some(s=>/(story|tale)\s*\d+/i.test(s.title))) throw new Error('numbered child-facing title pattern detected');
+
+
 // duplicates against existing content files (excluding pack)
 const otherFiles=execSync("rg --files src/data | rg -v 'bedtimeValuesExpansionPackV1.ts'",{encoding:'utf8'}).trim().split('\n').filter(Boolean);
 const otherText=otherFiles.map(f=>fs.readFileSync(f,'utf8')).join('\n');
@@ -40,6 +44,12 @@ for(const id of ids){ if(otherText.includes(id)) throw new Error(`duplicate ID a
 
 // quality checks runtime candidates
 const runtime=stories.filter(s=>s.status==='qa_ready');
+
+const indexedOnly=stories.filter(s=>s.status==='indexed');
+const indexedOpenings=indexedOnly.map(s=>(s.panels?.[0]?.text||'').toLowerCase().replace(/\d+/g,'').trim());
+const irep=new Map(); indexedOpenings.forEach(o=>irep.set(o,(irep.get(o)||0)+1));
+if([...irep.values()].some(v=>v>8)) throw new Error('excessive indexed-only panel opening repetition detected');
+
 const banned=['moves the story forward','children can imitate','is at the heart of','begins with a clear moment','numbered placeholder event','clear event sequencing','family dialogue','practical value','specific bedtime moment','specific values moment','titles.map','titles.slice'];
 const all=JSON.stringify(runtime).toLowerCase();
 for(const b of banned){ if(all.includes(b)) throw new Error('banned phrase '+b); }

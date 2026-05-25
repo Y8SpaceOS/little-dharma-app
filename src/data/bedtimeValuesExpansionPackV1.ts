@@ -3372,11 +3372,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-036",
     "storyId": "bedtime-values-exp-v1-036",
     "slug": "bedtime-values-exp-v1-036",
-    "title": "Moonlight kindness tale 1",
-    "shortTitle": "Moonlight kindness tale 1",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Grandmother’s Tulsi Goodnight",
+    "shortTitle": "Grandmother’s Tulsi Goodnight",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 36,
@@ -3398,23 +3398,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Grandmother’s Tulsi Goodnight into the morning."
       }
     ],
     "parentNote": {
@@ -3463,11 +3463,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-037",
     "storyId": "bedtime-values-exp-v1-037",
     "slug": "bedtime-values-exp-v1-037",
-    "title": "Moonlight kindness tale 2",
-    "shortTitle": "Moonlight kindness tale 2",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Krishna Covers the Calf",
+    "shortTitle": "Krishna Covers the Calf",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 37,
@@ -3489,23 +3489,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Krishna Covers the Calf into the morning."
       }
     ],
     "parentNote": {
@@ -3554,11 +3554,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-038",
     "storyId": "bedtime-values-exp-v1-038",
     "slug": "bedtime-values-exp-v1-038",
-    "title": "Moonlight kindness tale 3",
-    "shortTitle": "Moonlight kindness tale 3",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Parvati’s Quiet Blanket",
+    "shortTitle": "Parvati’s Quiet Blanket",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 38,
@@ -3580,23 +3580,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Parvati’s Quiet Blanket into the morning."
       }
     ],
     "parentNote": {
@@ -3645,11 +3645,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-039",
     "storyId": "bedtime-values-exp-v1-039",
     "slug": "bedtime-values-exp-v1-039",
-    "title": "Moonlight kindness tale 4",
-    "shortTitle": "Moonlight kindness tale 4",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Rama Returns the Garden Rake",
+    "shortTitle": "Rama Returns the Garden Rake",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 39,
@@ -3671,23 +3671,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Rama Returns the Garden Rake into the morning."
       }
     ],
     "parentNote": {
@@ -3736,11 +3736,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-040",
     "storyId": "bedtime-values-exp-v1-040",
     "slug": "bedtime-values-exp-v1-040",
-    "title": "Moonlight kindness tale 5",
-    "shortTitle": "Moonlight kindness tale 5",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Sita Thanks the Night Breeze",
+    "shortTitle": "Sita Thanks the Night Breeze",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 40,
@@ -3762,23 +3762,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Sita Thanks the Night Breeze into the morning."
       }
     ],
     "parentNote": {
@@ -3827,11 +3827,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-041",
     "storyId": "bedtime-values-exp-v1-041",
     "slug": "bedtime-values-exp-v1-041",
-    "title": "Moonlight kindness tale 6",
-    "shortTitle": "Moonlight kindness tale 6",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Ganesha Shares the Last Modak",
+    "shortTitle": "Ganesha Shares the Last Modak",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 41,
@@ -3853,23 +3853,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Under a soft lamp in the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Ganesha Shares the Last Modak into the morning."
       }
     ],
     "parentNote": {
@@ -3918,11 +3918,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-042",
     "storyId": "bedtime-values-exp-v1-042",
     "slug": "bedtime-values-exp-v1-042",
-    "title": "Moonlight kindness tale 7",
-    "shortTitle": "Moonlight kindness tale 7",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Hanuman Folds the Prayer Cloth",
+    "shortTitle": "Hanuman Folds the Prayer Cloth",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 42,
@@ -3944,23 +3944,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Near the doorway of the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Hanuman Folds the Prayer Cloth into the morning."
       }
     ],
     "parentNote": {
@@ -4009,11 +4009,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-043",
     "storyId": "bedtime-values-exp-v1-043",
     "slug": "bedtime-values-exp-v1-043",
-    "title": "Moonlight kindness tale 8",
-    "shortTitle": "Moonlight kindness tale 8",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Yashoda’s Warm Milk Circle",
+    "shortTitle": "Yashoda’s Warm Milk Circle",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 43,
@@ -4035,23 +4035,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "By the window in the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Yashoda’s Warm Milk Circle into the morning."
       }
     ],
     "parentNote": {
@@ -4100,11 +4100,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-044",
     "storyId": "bedtime-values-exp-v1-044",
     "slug": "bedtime-values-exp-v1-044",
-    "title": "Moonlight kindness tale 9",
-    "shortTitle": "Moonlight kindness tale 9",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Nanda’s Courtyard Goodnight",
+    "shortTitle": "Nanda’s Courtyard Goodnight",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 44,
@@ -4126,23 +4126,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As night birds call near the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Nanda’s Courtyard Goodnight into the morning."
       }
     ],
     "parentNote": {
@@ -4191,11 +4191,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-045",
     "storyId": "bedtime-values-exp-v1-045",
     "slug": "bedtime-values-exp-v1-045",
-    "title": "Moonlight kindness tale 10",
-    "shortTitle": "Moonlight kindness tale 10",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Lakshmana Stacks the Firewood",
+    "shortTitle": "Lakshmana Stacks the Firewood",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 45,
@@ -4217,23 +4217,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Before the final goodnight in the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Lakshmana Stacks the Firewood into the morning."
       }
     ],
     "parentNote": {
@@ -4282,11 +4282,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-046",
     "storyId": "bedtime-values-exp-v1-046",
     "slug": "bedtime-values-exp-v1-046",
-    "title": "Moonlight kindness tale 11",
-    "shortTitle": "Moonlight kindness tale 11",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Auntie Mends the Storybook",
+    "shortTitle": "Auntie Mends the Storybook",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 46,
@@ -4308,23 +4308,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Auntie Mends the Storybook into the morning."
       }
     ],
     "parentNote": {
@@ -4373,11 +4373,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-047",
     "storyId": "bedtime-values-exp-v1-047",
     "slug": "bedtime-values-exp-v1-047",
-    "title": "Moonlight kindness tale 12",
-    "shortTitle": "Moonlight kindness tale 12",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Grandfather’s Small Arati",
+    "shortTitle": "Grandfather’s Small Arati",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 47,
@@ -4399,23 +4399,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Grandfather’s Small Arati into the morning."
       }
     ],
     "parentNote": {
@@ -4464,11 +4464,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-048",
     "storyId": "bedtime-values-exp-v1-048",
     "slug": "bedtime-values-exp-v1-048",
-    "title": "Moonlight kindness tale 13",
-    "shortTitle": "Moonlight kindness tale 13",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Siblings Return the Wooden Cart",
+    "shortTitle": "Siblings Return the Wooden Cart",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 48,
@@ -4490,23 +4490,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Siblings Return the Wooden Cart into the morning."
       }
     ],
     "parentNote": {
@@ -4555,11 +4555,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-049",
     "storyId": "bedtime-values-exp-v1-049",
     "slug": "bedtime-values-exp-v1-049",
-    "title": "Moonlight kindness tale 14",
-    "shortTitle": "Moonlight kindness tale 14",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Krishna Waits for His Turn",
+    "shortTitle": "Krishna Waits for His Turn",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 49,
@@ -4581,23 +4581,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Krishna Waits for His Turn into the morning."
       }
     ],
     "parentNote": {
@@ -4646,11 +4646,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-050",
     "storyId": "bedtime-values-exp-v1-050",
     "slug": "bedtime-values-exp-v1-050",
-    "title": "Moonlight kindness tale 15",
-    "shortTitle": "Moonlight kindness tale 15",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Parvati Hears Both Children",
+    "shortTitle": "Parvati Hears Both Children",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 50,
@@ -4672,23 +4672,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Parvati Hears Both Children into the morning."
       }
     ],
     "parentNote": {
@@ -4737,11 +4737,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-051",
     "storyId": "bedtime-values-exp-v1-051",
     "slug": "bedtime-values-exp-v1-051",
-    "title": "Moonlight kindness tale 16",
-    "shortTitle": "Moonlight kindness tale 16",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Hanuman Brings Water First",
+    "shortTitle": "Hanuman Brings Water First",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 51,
@@ -4763,23 +4763,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Under a soft lamp in the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Hanuman Brings Water First into the morning."
       }
     ],
     "parentNote": {
@@ -4828,11 +4828,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-052",
     "storyId": "bedtime-values-exp-v1-052",
     "slug": "bedtime-values-exp-v1-052",
-    "title": "Moonlight kindness tale 17",
-    "shortTitle": "Moonlight kindness tale 17",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Sita’s Jasmine Thanks",
+    "shortTitle": "Sita’s Jasmine Thanks",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 52,
@@ -4854,23 +4854,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Near the doorway of the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Sita’s Jasmine Thanks into the morning."
       }
     ],
     "parentNote": {
@@ -4919,11 +4919,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-053",
     "storyId": "bedtime-values-exp-v1-053",
     "slug": "bedtime-values-exp-v1-053",
-    "title": "Moonlight kindness tale 18",
-    "shortTitle": "Moonlight kindness tale 18",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Rama Greets the Cook Kindly",
+    "shortTitle": "Rama Greets the Cook Kindly",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 53,
@@ -4945,23 +4945,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "By the window in the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Rama Greets the Cook Kindly into the morning."
       }
     ],
     "parentNote": {
@@ -5010,11 +5010,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-054",
     "storyId": "bedtime-values-exp-v1-054",
     "slug": "bedtime-values-exp-v1-054",
-    "title": "Moonlight kindness tale 19",
-    "shortTitle": "Moonlight kindness tale 19",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Yashoda’s Rainy Doorstep",
+    "shortTitle": "Yashoda’s Rainy Doorstep",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 54,
@@ -5036,23 +5036,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As night birds call near the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Yashoda’s Rainy Doorstep into the morning."
       }
     ],
     "parentNote": {
@@ -5101,11 +5101,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-055",
     "storyId": "bedtime-values-exp-v1-055",
     "slug": "bedtime-values-exp-v1-055",
-    "title": "Moonlight kindness tale 20",
-    "shortTitle": "Moonlight kindness tale 20",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Ganesha Writes Tomorrow’s Tasks",
+    "shortTitle": "Ganesha Writes Tomorrow’s Tasks",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 55,
@@ -5127,23 +5127,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Before the final goodnight in the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Ganesha Writes Tomorrow’s Tasks into the morning."
       }
     ],
     "parentNote": {
@@ -5192,11 +5192,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-056",
     "storyId": "bedtime-values-exp-v1-056",
     "slug": "bedtime-values-exp-v1-056",
-    "title": "Moonlight kindness tale 21",
-    "shortTitle": "Moonlight kindness tale 21",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Family Lamp in Pune",
+    "shortTitle": "Family Lamp in Pune",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 56,
@@ -5218,23 +5218,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Family Lamp in Pune into the morning."
       }
     ],
     "parentNote": {
@@ -5283,11 +5283,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-057",
     "storyId": "bedtime-values-exp-v1-057",
     "slug": "bedtime-values-exp-v1-057",
-    "title": "Moonlight kindness tale 22",
-    "shortTitle": "Moonlight kindness tale 22",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Bedtime Mango Sharing",
+    "shortTitle": "Bedtime Mango Sharing",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 57,
@@ -5309,23 +5309,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Bedtime Mango Sharing into the morning."
       }
     ],
     "parentNote": {
@@ -5374,11 +5374,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-058",
     "storyId": "bedtime-values-exp-v1-058",
     "slug": "bedtime-values-exp-v1-058",
-    "title": "Moonlight kindness tale 23",
-    "shortTitle": "Moonlight kindness tale 23",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Calm Voices in the Veranda",
+    "shortTitle": "Calm Voices in the Veranda",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 58,
@@ -5400,23 +5400,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Calm Voices in the Veranda into the morning."
       }
     ],
     "parentNote": {
@@ -5465,11 +5465,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-059",
     "storyId": "bedtime-values-exp-v1-059",
     "slug": "bedtime-values-exp-v1-059",
-    "title": "Moonlight kindness tale 24",
-    "shortTitle": "Moonlight kindness tale 24",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Kind Hands at the Wash Bowl",
+    "shortTitle": "Kind Hands at the Wash Bowl",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 59,
@@ -5491,23 +5491,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Kind Hands at the Wash Bowl into the morning."
       }
     ],
     "parentNote": {
@@ -5556,11 +5556,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-060",
     "storyId": "bedtime-values-exp-v1-060",
     "slug": "bedtime-values-exp-v1-060",
-    "title": "Moonlight kindness tale 25",
-    "shortTitle": "Moonlight kindness tale 25",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Truth Before the Pillow",
+    "shortTitle": "Truth Before the Pillow",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 60,
@@ -5582,23 +5582,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Truth Before the Pillow into the morning."
       }
     ],
     "parentNote": {
@@ -5647,11 +5647,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-061",
     "storyId": "bedtime-values-exp-v1-061",
     "slug": "bedtime-values-exp-v1-061",
-    "title": "Moonlight kindness tale 26",
-    "shortTitle": "Moonlight kindness tale 26",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Borrowed Cup Comes Back",
+    "shortTitle": "The Borrowed Cup Comes Back",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 61,
@@ -5673,23 +5673,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Under a soft lamp in the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Borrowed Cup Comes Back into the morning."
       }
     ],
     "parentNote": {
@@ -5738,11 +5738,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-062",
     "storyId": "bedtime-values-exp-v1-062",
     "slug": "bedtime-values-exp-v1-062",
-    "title": "Moonlight kindness tale 27",
-    "shortTitle": "Moonlight kindness tale 27",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Soft Steps After Prayer",
+    "shortTitle": "Soft Steps After Prayer",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 62,
@@ -5764,23 +5764,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Near the doorway of the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Soft Steps After Prayer into the morning."
       }
     ],
     "parentNote": {
@@ -5829,11 +5829,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-063",
     "storyId": "bedtime-values-exp-v1-063",
     "slug": "bedtime-values-exp-v1-063",
-    "title": "Moonlight kindness tale 28",
-    "shortTitle": "Moonlight kindness tale 28",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "A Flower for Tomorrow",
+    "shortTitle": "A Flower for Tomorrow",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 63,
@@ -5855,23 +5855,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "By the window in the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from A Flower for Tomorrow into the morning."
       }
     ],
     "parentNote": {
@@ -5920,11 +5920,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-064",
     "storyId": "bedtime-values-exp-v1-064",
     "slug": "bedtime-values-exp-v1-064",
-    "title": "Moonlight kindness tale 29",
-    "shortTitle": "Moonlight kindness tale 29",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Neat Shoe Row",
+    "shortTitle": "The Neat Shoe Row",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 64,
@@ -5946,23 +5946,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As night birds call near the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Neat Shoe Row into the morning."
       }
     ],
     "parentNote": {
@@ -6011,11 +6011,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-065",
     "storyId": "bedtime-values-exp-v1-065",
     "slug": "bedtime-values-exp-v1-065",
-    "title": "Moonlight kindness tale 30",
-    "shortTitle": "Moonlight kindness tale 30",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "A Quiet Sorry and Repair",
+    "shortTitle": "A Quiet Sorry and Repair",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 65,
@@ -6037,23 +6037,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Before the final goodnight in the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from A Quiet Sorry and Repair into the morning."
       }
     ],
     "parentNote": {
@@ -6102,11 +6102,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-066",
     "storyId": "bedtime-values-exp-v1-066",
     "slug": "bedtime-values-exp-v1-066",
-    "title": "Moonlight kindness tale 31",
-    "shortTitle": "Moonlight kindness tale 31",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Grandma’s Copper Cup",
+    "shortTitle": "Grandma’s Copper Cup",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 66,
@@ -6128,23 +6128,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Grandma’s Copper Cup into the morning."
       }
     ],
     "parentNote": {
@@ -6193,11 +6193,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-067",
     "storyId": "bedtime-values-exp-v1-067",
     "slug": "bedtime-values-exp-v1-067",
-    "title": "Moonlight kindness tale 32",
-    "shortTitle": "Moonlight kindness tale 32",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Moon Over Gokul Rooftops",
+    "shortTitle": "Moon Over Gokul Rooftops",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 67,
@@ -6219,23 +6219,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Moon Over Gokul Rooftops into the morning."
       }
     ],
     "parentNote": {
@@ -6284,11 +6284,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-068",
     "storyId": "bedtime-values-exp-v1-068",
     "slug": "bedtime-values-exp-v1-068",
-    "title": "Moonlight kindness tale 33",
-    "shortTitle": "Moonlight kindness tale 33",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Little Bell at Kailash",
+    "shortTitle": "Little Bell at Kailash",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 68,
@@ -6310,23 +6310,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Little Bell at Kailash into the morning."
       }
     ],
     "parentNote": {
@@ -6375,11 +6375,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-069",
     "storyId": "bedtime-values-exp-v1-069",
     "slug": "bedtime-values-exp-v1-069",
-    "title": "Moonlight kindness tale 34",
-    "shortTitle": "Moonlight kindness tale 34",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Ayodhya Window Blessing",
+    "shortTitle": "Ayodhya Window Blessing",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 69,
@@ -6401,23 +6401,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Ayodhya Window Blessing into the morning."
       }
     ],
     "parentNote": {
@@ -6466,11 +6466,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-070",
     "storyId": "bedtime-values-exp-v1-070",
     "slug": "bedtime-values-exp-v1-070",
-    "title": "Moonlight kindness tale 35",
-    "shortTitle": "Moonlight kindness tale 35",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Folded Quilt Promise",
+    "shortTitle": "The Folded Quilt Promise",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 70,
@@ -6492,23 +6492,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Folded Quilt Promise into the morning."
       }
     ],
     "parentNote": {
@@ -6557,11 +6557,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-071",
     "storyId": "bedtime-values-exp-v1-071",
     "slug": "bedtime-values-exp-v1-071",
-    "title": "Moonlight kindness tale 36",
-    "shortTitle": "Moonlight kindness tale 36",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Neem Tree Goodnight",
+    "shortTitle": "Neem Tree Goodnight",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 71,
@@ -6583,23 +6583,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Under a soft lamp in the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Neem Tree Goodnight into the morning."
       }
     ],
     "parentNote": {
@@ -6648,11 +6648,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-072",
     "storyId": "bedtime-values-exp-v1-072",
     "slug": "bedtime-values-exp-v1-072",
-    "title": "Moonlight kindness tale 37",
-    "shortTitle": "Moonlight kindness tale 37",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Butter Bowl Returned",
+    "shortTitle": "Butter Bowl Returned",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 72,
@@ -6674,23 +6674,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Near the doorway of the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Butter Bowl Returned into the morning."
       }
     ],
     "parentNote": {
@@ -6739,11 +6739,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-073",
     "storyId": "bedtime-values-exp-v1-073",
     "slug": "bedtime-values-exp-v1-073",
-    "title": "Moonlight kindness tale 38",
-    "shortTitle": "Moonlight kindness tale 38",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Last Date Shared",
+    "shortTitle": "The Last Date Shared",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 73,
@@ -6765,23 +6765,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "By the window in the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Last Date Shared into the morning."
       }
     ],
     "parentNote": {
@@ -6830,11 +6830,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-074",
     "storyId": "bedtime-values-exp-v1-074",
     "slug": "bedtime-values-exp-v1-074",
-    "title": "Moonlight kindness tale 39",
-    "shortTitle": "Moonlight kindness tale 39",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Kind Word at Lights-Out",
+    "shortTitle": "Kind Word at Lights-Out",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 74,
@@ -6856,23 +6856,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As night birds call near the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Kind Word at Lights-Out into the morning."
       }
     ],
     "parentNote": {
@@ -6921,11 +6921,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-075",
     "storyId": "bedtime-values-exp-v1-075",
     "slug": "bedtime-values-exp-v1-075",
-    "title": "Moonlight kindness tale 40",
-    "shortTitle": "Moonlight kindness tale 40",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Tulsi Leaf Gratitude",
+    "shortTitle": "Tulsi Leaf Gratitude",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 75,
@@ -6947,23 +6947,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Before the final goodnight in the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Tulsi Leaf Gratitude into the morning."
       }
     ],
     "parentNote": {
@@ -7012,11 +7012,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-076",
     "storyId": "bedtime-values-exp-v1-076",
     "slug": "bedtime-values-exp-v1-076",
-    "title": "Moonlight kindness tale 41",
-    "shortTitle": "Moonlight kindness tale 41",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Rama’s Gentle Goodnight",
+    "shortTitle": "Rama’s Gentle Goodnight",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 76,
@@ -7038,23 +7038,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Rama’s Gentle Goodnight into the morning."
       }
     ],
     "parentNote": {
@@ -7103,11 +7103,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-077",
     "storyId": "bedtime-values-exp-v1-077",
     "slug": "bedtime-values-exp-v1-077",
-    "title": "Moonlight kindness tale 42",
-    "shortTitle": "Moonlight kindness tale 42",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Sita’s Calm Star Wish",
+    "shortTitle": "Sita’s Calm Star Wish",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 77,
@@ -7129,23 +7129,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Sita’s Calm Star Wish into the morning."
       }
     ],
     "parentNote": {
@@ -7194,11 +7194,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-078",
     "storyId": "bedtime-values-exp-v1-078",
     "slug": "bedtime-values-exp-v1-078",
-    "title": "Moonlight kindness tale 43",
-    "shortTitle": "Moonlight kindness tale 43",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Hanuman’s Service Mat",
+    "shortTitle": "Hanuman’s Service Mat",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 78,
@@ -7220,23 +7220,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Hanuman’s Service Mat into the morning."
       }
     ],
     "parentNote": {
@@ -7285,11 +7285,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-079",
     "storyId": "bedtime-values-exp-v1-079",
     "slug": "bedtime-values-exp-v1-079",
-    "title": "Moonlight kindness tale 44",
-    "shortTitle": "Moonlight kindness tale 44",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Parvati’s Evening Checklist",
+    "shortTitle": "Parvati’s Evening Checklist",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 79,
@@ -7311,23 +7311,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Parvati’s Evening Checklist into the morning."
       }
     ],
     "parentNote": {
@@ -7376,11 +7376,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-080",
     "storyId": "bedtime-values-exp-v1-080",
     "slug": "bedtime-values-exp-v1-080",
-    "title": "Moonlight kindness tale 45",
-    "shortTitle": "Moonlight kindness tale 45",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Krishna’s Clean Hands",
+    "shortTitle": "Krishna’s Clean Hands",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 80,
@@ -7402,23 +7402,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Krishna’s Clean Hands into the morning."
       }
     ],
     "parentNote": {
@@ -7467,11 +7467,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-081",
     "storyId": "bedtime-values-exp-v1-081",
     "slug": "bedtime-values-exp-v1-081",
-    "title": "Moonlight kindness tale 46",
-    "shortTitle": "Moonlight kindness tale 46",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Ganesha and the Door Latch",
+    "shortTitle": "Ganesha and the Door Latch",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 81,
@@ -7493,23 +7493,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Under a soft lamp in the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Ganesha and the Door Latch into the morning."
       }
     ],
     "parentNote": {
@@ -7558,11 +7558,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-082",
     "storyId": "bedtime-values-exp-v1-082",
     "slug": "bedtime-values-exp-v1-082",
-    "title": "Moonlight kindness tale 47",
-    "shortTitle": "Moonlight kindness tale 47",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Family Thanks the Monsoon",
+    "shortTitle": "Family Thanks the Monsoon",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 82,
@@ -7584,23 +7584,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Near the doorway of the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Family Thanks the Monsoon into the morning."
       }
     ],
     "parentNote": {
@@ -7649,11 +7649,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-083",
     "storyId": "bedtime-values-exp-v1-083",
     "slug": "bedtime-values-exp-v1-083",
-    "title": "Moonlight kindness tale 48",
-    "shortTitle": "Moonlight kindness tale 48",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Lantern by the Courtyard Gate",
+    "shortTitle": "Lantern by the Courtyard Gate",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 83,
@@ -7675,23 +7675,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "By the window in the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Lantern by the Courtyard Gate into the morning."
       }
     ],
     "parentNote": {
@@ -7740,11 +7740,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-084",
     "storyId": "bedtime-values-exp-v1-084",
     "slug": "bedtime-values-exp-v1-084",
-    "title": "Moonlight kindness tale 49",
-    "shortTitle": "Moonlight kindness tale 49",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Warm Shawl Turn",
+    "shortTitle": "The Warm Shawl Turn",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 84,
@@ -7766,23 +7766,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As night birds call near the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Warm Shawl Turn into the morning."
       }
     ],
     "parentNote": {
@@ -7831,11 +7831,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-085",
     "storyId": "bedtime-values-exp-v1-085",
     "slug": "bedtime-values-exp-v1-085",
-    "title": "Moonlight kindness tale 50",
-    "shortTitle": "Moonlight kindness tale 50",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Goodnight at the Cow Shed",
+    "shortTitle": "Goodnight at the Cow Shed",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 85,
@@ -7857,23 +7857,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Before the final goodnight in the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Goodnight at the Cow Shed into the morning."
       }
     ],
     "parentNote": {
@@ -7922,11 +7922,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-086",
     "storyId": "bedtime-values-exp-v1-086",
     "slug": "bedtime-values-exp-v1-086",
-    "title": "Moonlight kindness tale 51",
-    "shortTitle": "Moonlight kindness tale 51",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "A Small Truth in the Kitchen",
+    "shortTitle": "A Small Truth in the Kitchen",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 86,
@@ -7948,23 +7948,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from A Small Truth in the Kitchen into the morning."
       }
     ],
     "parentNote": {
@@ -8013,11 +8013,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-087",
     "storyId": "bedtime-values-exp-v1-087",
     "slug": "bedtime-values-exp-v1-087",
-    "title": "Moonlight kindness tale 52",
-    "shortTitle": "Moonlight kindness tale 52",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Quiet Bucket Line",
+    "shortTitle": "The Quiet Bucket Line",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 87,
@@ -8039,23 +8039,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Quiet Bucket Line into the morning."
       }
     ],
     "parentNote": {
@@ -8104,11 +8104,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-088",
     "storyId": "bedtime-values-exp-v1-088",
     "slug": "bedtime-values-exp-v1-088",
-    "title": "Moonlight kindness tale 53",
-    "shortTitle": "Moonlight kindness tale 53",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Grandpa’s Story Pause",
+    "shortTitle": "Grandpa’s Story Pause",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 88,
@@ -8130,23 +8130,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Grandpa’s Story Pause into the morning."
       }
     ],
     "parentNote": {
@@ -8195,11 +8195,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-089",
     "storyId": "bedtime-values-exp-v1-089",
     "slug": "bedtime-values-exp-v1-089",
-    "title": "Moonlight kindness tale 54",
-    "shortTitle": "Moonlight kindness tale 54",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Shared Blanket, Shared Smile",
+    "shortTitle": "Shared Blanket, Shared Smile",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 89,
@@ -8221,23 +8221,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Shared Blanket, Shared Smile into the morning."
       }
     ],
     "parentNote": {
@@ -8286,11 +8286,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-090",
     "storyId": "bedtime-values-exp-v1-090",
     "slug": "bedtime-values-exp-v1-090",
-    "title": "Moonlight kindness tale 55",
-    "shortTitle": "Moonlight kindness tale 55",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Lamp Wick Lesson",
+    "shortTitle": "Lamp Wick Lesson",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 90,
@@ -8312,23 +8312,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Lamp Wick Lesson into the morning."
       }
     ],
     "parentNote": {
@@ -8377,11 +8377,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-091",
     "storyId": "bedtime-values-exp-v1-091",
     "slug": "bedtime-values-exp-v1-091",
-    "title": "Moonlight kindness tale 56",
-    "shortTitle": "Moonlight kindness tale 56",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Tomorrow’s Kindness Note",
+    "shortTitle": "Tomorrow’s Kindness Note",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 91,
@@ -8403,23 +8403,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Under a soft lamp in the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Tomorrow’s Kindness Note into the morning."
       }
     ],
     "parentNote": {
@@ -8468,11 +8468,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-092",
     "storyId": "bedtime-values-exp-v1-092",
     "slug": "bedtime-values-exp-v1-092",
-    "title": "Moonlight kindness tale 57",
-    "shortTitle": "Moonlight kindness tale 57",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Jasmine Bowl by the Bed",
+    "shortTitle": "Jasmine Bowl by the Bed",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 92,
@@ -8494,23 +8494,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Near the doorway of the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Jasmine Bowl by the Bed into the morning."
       }
     ],
     "parentNote": {
@@ -8559,11 +8559,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-093",
     "storyId": "bedtime-values-exp-v1-093",
     "slug": "bedtime-values-exp-v1-093",
-    "title": "Moonlight kindness tale 58",
-    "shortTitle": "Moonlight kindness tale 58",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Returned Library Book",
+    "shortTitle": "The Returned Library Book",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 93,
@@ -8585,23 +8585,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "By the window in the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Returned Library Book into the morning."
       }
     ],
     "parentNote": {
@@ -8650,11 +8650,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-094",
     "storyId": "bedtime-values-exp-v1-094",
     "slug": "bedtime-values-exp-v1-094",
-    "title": "Moonlight kindness tale 59",
-    "shortTitle": "Moonlight kindness tale 59",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Ayodhya Bedtime Bell",
+    "shortTitle": "Ayodhya Bedtime Bell",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 94,
@@ -8676,23 +8676,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As night birds call near the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Ayodhya Bedtime Bell into the morning."
       }
     ],
     "parentNote": {
@@ -8741,11 +8741,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-095",
     "storyId": "bedtime-values-exp-v1-095",
     "slug": "bedtime-values-exp-v1-095",
-    "title": "Moonlight kindness tale 60",
-    "shortTitle": "Moonlight kindness tale 60",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Kailash Snow-Night Prayer",
+    "shortTitle": "Kailash Snow-Night Prayer",
+    "summary": "A gentle bedtime values story set in kitchen near the tulsi plant, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in kitchen near the tulsi plant details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 95,
@@ -8767,23 +8767,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "Before the final goodnight in the kitchen near the tulsi plant, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—setting aside prayer flowers—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Kailash Snow-Night Prayer into the morning."
       }
     ],
     "parentNote": {
@@ -8832,11 +8832,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-096",
     "storyId": "bedtime-values-exp-v1-096",
     "slug": "bedtime-values-exp-v1-096",
-    "title": "Moonlight kindness tale 61",
-    "shortTitle": "Moonlight kindness tale 61",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Gokul Courtyard Moonlight",
+    "shortTitle": "Gokul Courtyard Moonlight",
+    "summary": "A gentle bedtime values story set in Gokul courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Gokul courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 96,
@@ -8858,23 +8858,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "At dusk in Gokul courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—returning a cup—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Gokul Courtyard Moonlight into the morning."
       }
     ],
     "parentNote": {
@@ -8923,11 +8923,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-097",
     "storyId": "bedtime-values-exp-v1-097",
     "slug": "bedtime-values-exp-v1-097",
-    "title": "Moonlight kindness tale 62",
-    "shortTitle": "Moonlight kindness tale 62",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Pune Balcony Goodnight",
+    "shortTitle": "Pune Balcony Goodnight",
+    "summary": "A gentle bedtime values story set in Kailash prayer room, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Kailash prayer room details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 97,
@@ -8949,23 +8949,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "As moonlight reaches the Kailash prayer room, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—folding a blanket edge—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Pune Balcony Goodnight into the morning."
       }
     ],
     "parentNote": {
@@ -9014,11 +9014,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-098",
     "storyId": "bedtime-values-exp-v1-098",
     "slug": "bedtime-values-exp-v1-098",
-    "title": "Moonlight kindness tale 63",
-    "shortTitle": "Moonlight kindness tale 63",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "The Careful Water Pot",
+    "shortTitle": "The Careful Water Pot",
+    "summary": "A gentle bedtime values story set in Ayodhya veranda, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Ayodhya veranda details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 98,
@@ -9040,23 +9040,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "After evening prayer in the Ayodhya veranda, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—placing sandals in a row—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from The Careful Water Pot into the morning."
       }
     ],
     "parentNote": {
@@ -9105,11 +9105,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-099",
     "storyId": "bedtime-values-exp-v1-099",
     "slug": "bedtime-values-exp-v1-099",
-    "title": "Moonlight kindness tale 64",
-    "shortTitle": "Moonlight kindness tale 64",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "Soft Voices, Strong Hearts",
+    "shortTitle": "Soft Voices, Strong Hearts",
+    "summary": "A gentle bedtime values story set in Pune apartment balcony, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in Pune apartment balcony details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 99,
@@ -9131,23 +9131,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "In the quiet corner of the Pune apartment balcony, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—covering food for morning—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to kindness with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from Soft Voices, Strong Hearts into the morning."
       }
     ],
     "parentNote": {
@@ -9196,11 +9196,11 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "id": "bedtime-values-exp-v1-100",
     "storyId": "bedtime-values-exp-v1-100",
     "slug": "bedtime-values-exp-v1-100",
-    "title": "Moonlight kindness tale 65",
-    "shortTitle": "Moonlight kindness tale 65",
-    "summary": "Indexed bedtime-values story for future editorial expansion.",
+    "title": "One More Thank You",
+    "shortTitle": "One More Thank You",
+    "summary": "A gentle bedtime values story set in village neem courtyard, highlighting one specific family action before sleep.",
     "sourceTradition": "Bedtime and Values",
-    "sourceTextOrTraditionNote": "Indexed metadata entry.",
+    "sourceTextOrTraditionNote": "Indexed bedtime retelling grounded in village neem courtyard details and child-safe dharmic home practice.",
     "storyPackId": "bedtime-values-expansion-pack-v1",
     "journeyId": "bedtime-values-journey-v1",
     "journeyOrder": 100,
@@ -9222,23 +9222,23 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening detail",
-        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+        "title": "Evening place",
+        "text": "When the house settles in the village neem courtyard, a small bedtime task begins while night sounds grow softer."
       },
       {
         "id": "panel-2",
-        "title": "Small choice",
-        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+        "title": "Specific action",
+        "text": "A child and elder focus on one clear action—wiping the lamp tray—so others feel cared for before sleep."
       },
       {
         "id": "panel-3",
-        "title": "Family support",
-        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+        "title": "Value link",
+        "text": "They connect the action to patience with a short, truthful sentence about why small duties matter in family life."
       },
       {
         "id": "panel-4",
-        "title": "Quiet close",
-        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+        "title": "Restful close",
+        "text": "After a brief gratitude prayer, everyone rests, carrying tomorrow’s intention from One More Thank You into the morning."
       }
     ],
     "parentNote": {
