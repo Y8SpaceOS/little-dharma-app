@@ -1,4 +1,4 @@
-import type { Story, StoryPack } from '@/types/contentModel';
+import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 import type { StoryExperienceCategoryId } from '@/types/storyExperienceIndex';
 
 type ExtendedStory = Story & { storyId: string; primaryCategoryId: StoryExperienceCategoryId; secondaryCategoryIds: StoryExperienceCategoryId[]; readinessStatus: 'metadata_only' | 'qa_ready'; audioStatus: 'script_needed' | 'script_ready'; journeyStatus: 'journey_ordered'; audioScript?: { narrationScript: string; voiceDirection: string; pronunciationNotes: string; pacingNotes: string; audioReadinessIntent: 'ready' }; };
@@ -3395,7 +3395,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3465,7 +3486,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3535,7 +3577,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3605,7 +3668,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3675,7 +3759,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3745,7 +3850,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3815,7 +3941,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3885,7 +4032,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -3955,7 +4123,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4025,7 +4214,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4095,7 +4305,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4165,7 +4396,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4235,7 +4487,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4305,7 +4578,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4375,7 +4669,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4445,7 +4760,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4515,7 +4851,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4585,7 +4942,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4655,7 +5033,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4725,7 +5124,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4795,7 +5215,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4865,7 +5306,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -4935,7 +5397,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5005,7 +5488,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5075,7 +5579,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5145,7 +5670,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5215,7 +5761,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5285,7 +5852,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5355,7 +5943,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5425,7 +6034,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5495,7 +6125,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5565,7 +6216,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5635,7 +6307,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5705,7 +6398,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5775,7 +6489,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5845,7 +6580,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5915,7 +6671,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -5985,7 +6762,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6055,7 +6853,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6125,7 +6944,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6195,7 +7035,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6265,7 +7126,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6335,7 +7217,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6405,7 +7308,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6475,7 +7399,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6545,7 +7490,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6615,7 +7581,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6685,7 +7672,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6755,7 +7763,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6825,7 +7854,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6895,7 +7945,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -6965,7 +8036,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7035,7 +8127,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7105,7 +8218,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7175,7 +8309,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7245,7 +8400,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7315,7 +8491,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7385,7 +8582,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7455,7 +8673,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7525,7 +8764,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7595,7 +8855,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Kailash room, the family settles for bedtime while water cup is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7665,7 +8946,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Ayodhya courtyard, the family settles for bedtime while storybook is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7735,7 +9037,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Pune apartment, the family settles for bedtime while blanket edge is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7805,7 +9128,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In village veranda, the family settles for bedtime while flower bowl is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses kindness with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7875,7 +9219,28 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
       "Child",
       "Parent"
     ],
-    "panels": [],
+    "panels": [
+      {
+        "id": "panel-1",
+        "title": "Evening detail",
+        "text": "In Gokul lane, the family settles for bedtime while lamp tray is placed carefully near the sleeping mat."
+      },
+      {
+        "id": "panel-2",
+        "title": "Small choice",
+        "text": "A child notices a small need before sleep and chooses patience with a gentle action and respectful words."
+      },
+      {
+        "id": "panel-3",
+        "title": "Family support",
+        "text": "An elder guides the moment with calm voice, linking the bedtime action to gratitude, truth, and care for others."
+      },
+      {
+        "id": "panel-4",
+        "title": "Quiet close",
+        "text": "After a short prayer and thank-you, everyone rests peacefully and carries one value into tomorrow morning."
+      }
+    ],
     "parentNote": {
       "sourceContext": "Indexed metadata entry.",
       "valueExplained": "Values are practiced through bedtime choices.",
@@ -7919,5 +9284,19 @@ export const bedtimeValuesExpansionPackV1Stories: ExtendedStory[] = [
     "journeyStatus": "journey_ordered"
   }
 ] as ExtendedStory[];
+
+export const bedtimeValuesExpansionPackV1Journey: DharmaJourney = {
+  id: 'bedtime-values-journey-v1',
+  title: 'Bedtime Values Journey',
+  childFacingTitle: 'Bedtime & Values Journey',
+  description: 'A local-first bedtime journey focused on calm, gratitude, truthfulness, kindness, and family reflection.',
+  sourceTradition: 'Bedtime and Values',
+  recommendedAgeBands: ['3-5', '6-8'],
+  storyIds: bedtimeValuesExpansionPackV1Stories.map((story) => story.id),
+  estimatedCompletionWeeks: 8,
+  status: 'indexed',
+  journeyType: 'theme_path'
+};
+
 
 export const bedtimeValuesExpansionPackV1StoryPack: StoryPack = { id: 'bedtime-values-expansion-pack-v1', title: 'Bedtime + Values Expansion Pack v1', childFacingTitle: 'Bedtime & Values Story Basket', description: 'Local-first bedtime and values content expansion with staged QA-ready candidates.', sourceTradition: 'Bedtime and Values', category: 'bedtime', status: 'indexed', storyIds: bedtimeValuesExpansionPackV1Stories.map((story) => story.id), recommendedAgeBands: ['3-5','6-8'], contentSafetyNotes: ['Local-first only.', 'No runtime promotion in this pack.'], sacredRespectNotes: ['Warm, respectful child-safe framing of sacred names and family life.'] };

@@ -28,6 +28,7 @@ if(stories.filter(s=>s.audioScript).length<25) throw new Error('need >=25 audio 
 if(!stories.some(s=>s.primaryCategoryId==='bedtime_stories')||!stories.some(s=>s.primaryCategoryId==='values_stories')) throw new Error('missing category coverage');
 if(!stories.every(s=>s.journeyId==='bedtime-values-journey-v1')) throw new Error('journey mapping missing');
 if(!stories.every(s=>s.audioMetadata)) throw new Error('audioMetadata missing');
+if(stories.some(s => !s.panels || s.panels.length===0)) throw new Error('empty panels are not allowed');
 
 // numbered generated titles forbidden
 if(stories.some(s=>/bedtime values story\s*\d+/i.test(s.title))) throw new Error('numbered generated titles detected');
@@ -69,6 +70,9 @@ execSync('npm run validate:story-experience-index-model-v1',{stdio:'pipe'});
 let diff='';
 try { diff=execSync('git diff --name-only HEAD~1..HEAD',{encoding:'utf8'}); }
 catch { const mb=execSync('git merge-base HEAD origin/main',{encoding:'utf8'}).trim(); diff=execSync(`git diff --name-only ${mb}..HEAD`,{encoding:'utf8'}); }
+const registryText=fs.readFileSync('src/data/contentRegistry.ts','utf8');
+if(!registryText.includes('bedtimeValuesExpansionPackV1Journey')) throw new Error('bedtime-values-journey-v1 is not registered in contentRegistryJourneys');
+
 const changed=diff.trim().split('\n').filter(Boolean);
 if(changed.some(f=>f.match(/\.(mp3|wav|m4a|aac|ogg)$/i))) throw new Error('audio file added/changed');
 if(changed.some(f=>BLOCKED.some(b=>f.includes(b)))) throw new Error('blocked runtime/story/audio/backend behavior file changed');

@@ -6,7 +6,7 @@ import { ganeshaWisdomPack1Journey, ganeshaWisdomPack1Stories, ganeshaWisdomPack
 import { ramayanaExpansionRecoveryPackV1Stories, ramayanaExpansionRecoveryPackV1StoryPack } from '@/data/ramayanaExpansionRecoveryPackV1';
 import { krishnaChildhoodExpansionRecoveryPackV1Stories, krishnaChildhoodExpansionRecoveryPackV1StoryPack } from '@/data/krishnaChildhoodExpansionRecoveryPackV1';
 import { ganeshaHanumanExpansionRecoveryPackV1Stories, ganeshaHanumanExpansionRecoveryPackV1StoryPack } from '@/data/ganeshaHanumanExpansionRecoveryPackV1';
-import { bedtimeValuesExpansionPackV1Stories, bedtimeValuesExpansionPackV1StoryPack } from '@/data/bedtimeValuesExpansionPackV1';
+import { bedtimeValuesExpansionPackV1Stories, bedtimeValuesExpansionPackV1StoryPack, bedtimeValuesExpansionPackV1Journey } from '@/data/bedtimeValuesExpansionPackV1';
 import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 
 export const contentRegistryVersion = 'pr119-content-registry-v1';
@@ -70,7 +70,8 @@ export const contentRegistryJourneys: DharmaJourney[] = [
   },
   ramayanaPack1Journey,
   krishnaChildhoodPack1Journey,
-  ganeshaWisdomPack1Journey
+  ganeshaWisdomPack1Journey,
+  bedtimeValuesExpansionPackV1Journey
 ];
 
 export const contentRegistryJourneysById: Record<string, DharmaJourney> = Object.fromEntries(
