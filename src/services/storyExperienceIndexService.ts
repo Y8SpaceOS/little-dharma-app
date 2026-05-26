@@ -21,7 +21,7 @@ const pr207Targets = {
 } as const;
 
 const categoryIds: StoryExperienceCategoryId[] = [
-  'krishna_stories', 'ramayana_journey', 'ganesha_stories', 'hanuman_stories', 'bedtime_stories', 'values_stories', 'festival_stories', 'bhagavad_gita_for_children', 'mahabharata_child_safe', 'panchatantra_hitopadesha'
+  'krishna_stories', 'ramayana_journey', 'ganesha_stories', 'hanuman_stories', 'bedtime_stories', 'values_stories', 'festival_stories', 'bhagavad_gita_for_children', 'mahabharata_child_safe', 'panchatantra_hitopadesha', 'shloka_mantra_meanings'
 ];
 
 function inferCategoryIdFromStoryPackId(storyPackId: string): StoryExperienceCategoryId {
@@ -33,6 +33,7 @@ function inferCategoryIdFromStoryPackId(storyPackId: string): StoryExperienceCat
   if (storyPackId.includes('gita')) return 'bhagavad_gita_for_children';
   if (storyPackId.includes('mahabharata')) return 'mahabharata_child_safe';
   if (storyPackId.includes('panchatantra') || storyPackId.includes('hitopadesha')) return 'panchatantra_hitopadesha';
+  if (storyPackId.includes('shloka-mantra-meaning')) return 'shloka_mantra_meanings';
   if (storyPackId.includes('krishna') || storyPackId.includes('vrindavan')) return 'krishna_stories';
   return 'values_stories';
 }

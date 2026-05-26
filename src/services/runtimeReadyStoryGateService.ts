@@ -12,7 +12,7 @@ import type {
 } from '@/types/runtimeReadyStoryGate';
 
 export const runtimeReadyStoryGateModelVersion: RuntimeReadyStoryGateModelVersion = 'pr157-runtime-ready-story-gate-v1';
-const allowedCategoryIds: StoryExperienceCategoryId[] = ['krishna_stories','ramayana_journey','ganesha_stories','hanuman_stories','bedtime_stories','values_stories','festival_stories','bhagavad_gita_for_children','mahabharata_child_safe','panchatantra_hitopadesha'];
+const allowedCategoryIds: StoryExperienceCategoryId[] = ['krishna_stories','ramayana_journey','ganesha_stories','hanuman_stories','bedtime_stories','values_stories','festival_stories','bhagavad_gita_for_children','mahabharata_child_safe','panchatantra_hitopadesha', 'shloka_mantra_meanings'];
 
 export function buildRuntimeReadyStoryGateConfig(): RuntimeReadyGateConfig { return { modelVersion: runtimeReadyStoryGateModelVersion, allowedCategoryIds, maxPanelCharacters: 650, pr207RuntimeReadyTarget: 450, blockedTerms: { exactChildAge: ['years old','year-old','age 4','age 5','age 6','age 7','age 8','age 9','age 10','age 11','age 12'], gamification: ['points','leaderboard','xp','reward streak','unlock badge','high score'], storyLibrary: ['story library'], backendTrackingSharingNotifications: ['analytics','telemetry','track event','push notification','email reminder','sms reminder','whatsapp','share link','referral code','invite code','backend sync'], sacredTrivialization: ['magic cheat code deity','funny god prank','cartoon god battle royale','silly puja speedrun'], performanceScoreLanguage: ['score','rank','report card','performance grade','quiz result'] } }; }
 
@@ -112,5 +112,5 @@ function getJourneyId(story: RuntimeReadyGateStoryInput) { return (story as any)
 function getJourneyOrder(story: RuntimeReadyGateStoryInput) { return (story as any).journeyOrder; }
 function getJourneyStatus(story: RuntimeReadyGateStoryInput) { return (story as any).journeyStatus; }
 function getCurrentStatus(story: RuntimeReadyGateStoryInput) { return String((story as any).status || (story as any).readinessStatus || 'indexed'); }
-function inferCategoryFromStoryPackId(storyPackId: string): StoryExperienceCategoryId | undefined { const key = storyPackId.toLowerCase(); if (key.includes('ramayana')) return 'ramayana_journey'; if (key.includes('krishna')) return 'krishna_stories'; if (key.includes('hanuman')) return 'hanuman_stories'; if (key.includes('ganesha')) return 'ganesha_stories'; return undefined; }
+function inferCategoryFromStoryPackId(storyPackId: string): StoryExperienceCategoryId | undefined { const key = storyPackId.toLowerCase(); if (key.includes('ramayana')) return 'ramayana_journey'; if (key.includes('krishna')) return 'krishna_stories'; if (key.includes('hanuman')) return 'hanuman_stories'; if (key.includes('ganesha')) return 'ganesha_stories'; if (key.includes('shloka-mantra-meaning')) return 'shloka_mantra_meanings'; return undefined; }
 function getAllText(story: RuntimeReadyGateStoryInput): string { return JSON.stringify(story); }
