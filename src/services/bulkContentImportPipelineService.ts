@@ -22,7 +22,7 @@ const allowedCategoryIds: StoryExperienceCategoryId[] = [
   'festival_stories',
   'bhagavad_gita_for_children',
   'mahabharata_child_safe',
-  'panchatantra_hitopadesha'
+  'panchatantra_hitopadesha', 'shloka_mantra_meanings'
 ];
 
 const pr207Targets = { indexedStoryExperiencesTarget: 1000, runtimeReadyStoriesTarget: 450, audioReadyScriptsTarget: 350 } as const;
