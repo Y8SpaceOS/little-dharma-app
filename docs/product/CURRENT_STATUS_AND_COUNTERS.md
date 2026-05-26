@@ -84,3 +84,9 @@ Add a dedicated counter audit PR after several more content packs:
 
 - Mahabharata Child-Safe Expansion Pack v1 added 100 indexed stories, 35 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
 - Recovery totals after PR #171 are approximately 720 indexed, 260+ QA-staged runtime candidates, and 185 audio-script-ready candidates.
+
+
+## PR #172 update
+
+- Shloka + Mantra Meaning Expansion Pack v1 added 75 indexed stories, 25 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
+- Approximate totals after PR #172 are 795 indexed, 285+ QA-staged runtime candidates, and 210 audio-script-ready candidates.
