@@ -7,9 +7,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-001",
     "storyId": "shloka-mantra-meaning-exp-v1-001",
     "slug": "shloka-mantra-meaning-exp-v1-001",
-    "title": "Morning Gratitude Mantra Meaning",
-    "shortTitle": "Morning Gratitude",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Gayatri Mantra Meaning: Light for Clear Thinking",
+    "shortTitle": "Gayatri Mantra Meaning",
+    "summary": "It teaches us to choose clear thoughts, kind decisions, and steady attention while learning.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -21,52 +21,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Wisdom",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Morning Gratitude — Sacred Context",
-        "text": "A parent introduces the morning gratitude shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "At sunrise, a child folds hands with a parent and learns that this mantra asks for bright understanding in the mind."
       },
       {
         "id": "panel-2",
-        "title": "Morning Gratitude — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It teaches us to choose clear thoughts, kind decisions, and steady attention while learning."
       },
       {
         "id": "panel-3",
-        "title": "Morning Gratitude — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "Before school, the child chooses one wise action: listen fully before answering."
       },
       {
         "id": "panel-4",
-        "title": "Morning Gratitude — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What is one choice you can make today that shows clear thinking and kindness?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of gayatri mantra in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward wisdom through simple, practical actions.",
+      "discussionPrompt": "How can your family invite “inner light” before study time today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What is one choice you can make today that shows clear thinking and kindness?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on morning gratitude with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about gayatri mantra with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -75,7 +74,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -96,12 +94,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Morning Gratitude Mantra Meaning. This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of gratitude. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Gayatri Mantra Meaning: Light for Clear Thinking. It teaches us to choose clear thoughts, kind decisions, and steady attention while learning. Before school, the child chooses one wise action: listen fully before answering. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -109,9 +107,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-002",
     "storyId": "shloka-mantra-meaning-exp-v1-002",
     "slug": "shloka-mantra-meaning-exp-v1-002",
-    "title": "Peace Before Study Mantra Meaning",
-    "shortTitle": "Peace Before Study",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Om Meaning: Quiet Start for a Busy Mind",
+    "shortTitle": "Om Meaning",
+    "summary": "It reminds children to pause, breathe, and begin with calm awareness.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -123,52 +121,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Peace Before Study — Sacred Context",
-        "text": "A parent introduces the peace before study shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A parent explains Om as a sacred sound used to settle the heart before speaking or studying."
       },
       {
         "id": "panel-2",
-        "title": "Peace Before Study — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It reminds children to pause, breathe, and begin with calm awareness."
       },
       {
         "id": "panel-3",
-        "title": "Peace Before Study — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "When feeling rushed, the child takes three soft breaths before opening a notebook."
       },
       {
         "id": "panel-4",
-        "title": "Peace Before Study — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "When your mind feels busy, what simple pause helps you feel steady again?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of om in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "When does your child feel most rushed, and how can a short pause help?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "When your mind feels busy, what simple pause helps you feel steady again?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on peace before study with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about om with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -177,7 +174,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -198,12 +194,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Peace Before Study Mantra Meaning. This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of focus. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Om Meaning: Quiet Start for a Busy Mind. It reminds children to pause, breathe, and begin with calm awareness. When feeling rushed, the child takes three soft breaths before opening a notebook. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -211,9 +207,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-003",
     "storyId": "shloka-mantra-meaning-exp-v1-003",
     "slug": "shloka-mantra-meaning-exp-v1-003",
-    "title": "Kind Speech Mantra Meaning",
-    "shortTitle": "Kind Speech",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Saraswati Vandana Meaning: Respect for Learning",
+    "shortTitle": "Saraswati Vandana Meaning",
+    "summary": "The meaning encourages respect for books, teachers, and careful study habits.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -225,52 +221,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Respect",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Kind Speech — Sacred Context",
-        "text": "A parent introduces the kind speech shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "Before homework, a family lights a diya and remembers learning is a gift."
       },
       {
         "id": "panel-2",
-        "title": "Kind Speech — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning encourages respect for books, teachers, and careful study habits."
       },
       {
         "id": "panel-3",
-        "title": "Kind Speech — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child arranges pencils neatly and begins work without complaint."
       },
       {
         "id": "panel-4",
-        "title": "Kind Speech — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one respectful habit can you practice while learning today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of saraswati vandana in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward respect through simple, practical actions.",
+      "discussionPrompt": "How can you connect this meaning to caring for school materials?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one respectful habit can you practice while learning today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on kind speech with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about saraswati vandana with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -279,7 +274,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -300,12 +294,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Kind Speech Mantra Meaning. This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of kindness. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Saraswati Vandana Meaning: Respect for Learning. The meaning encourages respect for books, teachers, and careful study habits. The child arranges pencils neatly and begins work without complaint. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -313,9 +307,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-004",
     "storyId": "shloka-mantra-meaning-exp-v1-004",
     "slug": "shloka-mantra-meaning-exp-v1-004",
-    "title": "Service With Humility Mantra Meaning",
-    "shortTitle": "Service With Humility",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Ganesh Shloka Meaning: Begin With Humility",
+    "shortTitle": "Ganesh Shloka Meaning",
+    "summary": "The meaning is to begin gently, ask for guidance, and stay patient through mistakes.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -330,49 +324,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Humility",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Service With Humility — Sacred Context",
-        "text": "A parent introduces the service with humility shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "At the start of a new project, a parent shares a Ganesh prayer for wise beginnings."
       },
       {
         "id": "panel-2",
-        "title": "Service With Humility — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is to begin gently, ask for guidance, and stay patient through mistakes."
       },
       {
         "id": "panel-3",
-        "title": "Service With Humility — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child erases a rushed drawing and starts again without frustration."
       },
       {
         "id": "panel-4",
-        "title": "Service With Humility — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What helps you begin again with patience when the first try fails?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of ganesh shloka in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward humility through simple, practical actions.",
+      "discussionPrompt": "How do you help your child restart calmly when something is hard?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What helps you begin again with patience when the first try fails?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on service with humility with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about ganesh shloka with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -381,7 +374,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -402,12 +394,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Service With Humility Mantra Meaning. This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of humility. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Ganesh Shloka Meaning: Begin With Humility. The meaning is to begin gently, ask for guidance, and stay patient through mistakes. The child erases a rushed drawing and starts again without frustration. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -415,9 +407,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-005",
     "storyId": "shloka-mantra-meaning-exp-v1-005",
     "slug": "shloka-mantra-meaning-exp-v1-005",
-    "title": "Calm Breathing Prayer Mantra Meaning",
-    "shortTitle": "Calm Breathing Prayer",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Shanti Mantra Meaning: Peace for Everyone",
+    "shortTitle": "Shanti Mantra Meaning",
+    "summary": "It teaches wishing peace for self, family, nature, and all beings.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -429,52 +421,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Calm",
+    "primaryValue": "Peace",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Calm Breathing Prayer — Sacred Context",
-        "text": "A parent introduces the calm breathing prayer shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "At bedtime, siblings hear a peace mantra and imagine calm spreading outward."
       },
       {
         "id": "panel-2",
-        "title": "Calm Breathing Prayer — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It teaches wishing peace for self, family, nature, and all beings."
       },
       {
         "id": "panel-3",
-        "title": "Calm Breathing Prayer — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child ends a disagreement by speaking one peaceful sentence."
       },
       {
         "id": "panel-4",
-        "title": "Calm Breathing Prayer — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "Who can you wish peace for tonight, and how will you show it?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of shanti mantra in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward peace through simple, practical actions.",
+      "discussionPrompt": "How can this mantra support calmer sibling moments at home?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "Who can you wish peace for tonight, and how will you show it?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on calm breathing prayer with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about shanti mantra with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -483,7 +474,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -504,12 +494,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Calm Breathing Prayer Mantra Meaning. This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of calm. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Shanti Mantra Meaning: Peace for Everyone. It teaches wishing peace for self, family, nature, and all beings. The child ends a disagreement by speaking one peaceful sentence. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -517,9 +507,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-006",
     "storyId": "shloka-mantra-meaning-exp-v1-006",
     "slug": "shloka-mantra-meaning-exp-v1-006",
-    "title": "Respect for Parents Mantra Meaning",
-    "shortTitle": "Respect for Parents",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Karagre Vasate Lakshmi Meaning: Thankful Hands in the Morning",
+    "shortTitle": "Karagre Vasate Lakshmi Meaning",
+    "summary": "The meaning turns morning into gratitude for helpful action, not just achievement.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -531,52 +521,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Gratitude",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respect for Parents — Sacred Context",
-        "text": "A parent introduces the respect for parents shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "After waking, a parent shows the child their hands and says these hands can do good work."
       },
       {
         "id": "panel-2",
-        "title": "Respect for Parents — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning turns morning into gratitude for helpful action, not just achievement."
       },
       {
         "id": "panel-3",
-        "title": "Respect for Parents — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child makes their bed and carries water to the table."
       },
       {
         "id": "panel-4",
-        "title": "Respect for Parents — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What kind thing can your hands do before breakfast today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of karagre vasate lakshmi in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward gratitude through simple, practical actions.",
+      "discussionPrompt": "How can morning routines include gratitude through action?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What kind thing can your hands do before breakfast today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respect for parents with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about karagre vasate lakshmi with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -585,7 +574,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -606,12 +594,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Respect for Parents Mantra Meaning. This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of respect. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Karagre Vasate Lakshmi Meaning: Thankful Hands in the Morning. The meaning turns morning into gratitude for helpful action, not just achievement. The child makes their bed and carries water to the table. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -619,9 +607,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-007",
     "storyId": "shloka-mantra-meaning-exp-v1-007",
     "slug": "shloka-mantra-meaning-exp-v1-007",
-    "title": "Light in the Heart Mantra Meaning",
-    "shortTitle": "Light in the Heart",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Guru Brahma Meaning: Gratitude for Teachers",
+    "shortTitle": "Guru Brahma Meaning",
+    "summary": "It means learning grows through patience, respect, and thankful listening.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -633,52 +621,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Gratitude",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Light in the Heart — Sacred Context",
-        "text": "A parent introduces the light in the heart shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "On the way to school, a child hears a verse honoring teachers and guides."
       },
       {
         "id": "panel-2",
-        "title": "Light in the Heart — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It means learning grows through patience, respect, and thankful listening."
       },
       {
         "id": "panel-3",
-        "title": "Light in the Heart — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child thanks a teacher after class for explaining a difficult lesson."
       },
       {
         "id": "panel-4",
-        "title": "Light in the Heart — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "Who helped you learn this week, and how will you thank them?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of guru brahma in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward gratitude through simple, practical actions.",
+      "discussionPrompt": "How can you model gratitude for mentors in daily life?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "Who helped you learn this week, and how will you thank them?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on light in the heart with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about guru brahma with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -687,7 +674,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -708,12 +694,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Light in the Heart Mantra Meaning. This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of devotion. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Guru Brahma Meaning: Gratitude for Teachers. It means learning grows through patience, respect, and thankful listening. The child thanks a teacher after class for explaining a difficult lesson. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -721,9 +707,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-008",
     "storyId": "shloka-mantra-meaning-exp-v1-008",
     "slug": "shloka-mantra-meaning-exp-v1-008",
-    "title": "Friendship Blessing Mantra Meaning",
-    "shortTitle": "Friendship Blessing",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Asato Ma Sadgamaya Meaning: Choosing Truth and Light",
+    "shortTitle": "Asato Ma Sadgamaya Meaning",
+    "summary": "It encourages children to prefer honesty, clarity, and wise direction.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -735,52 +721,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Truth",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Friendship Blessing — Sacred Context",
-        "text": "A parent introduces the friendship blessing shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A parent explains this line as moving from confusion toward truthful choices."
       },
       {
         "id": "panel-2",
-        "title": "Friendship Blessing — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It encourages children to prefer honesty, clarity, and wise direction."
       },
       {
         "id": "panel-3",
-        "title": "Friendship Blessing — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child admits spilling water instead of hiding it."
       },
       {
         "id": "panel-4",
-        "title": "Friendship Blessing — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "When is it hard to tell the truth, and what helps you do it anyway?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of asato ma sadgamaya in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward truth through simple, practical actions.",
+      "discussionPrompt": "How can you praise honesty without creating fear?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "When is it hard to tell the truth, and what helps you do it anyway?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on friendship blessing with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about asato ma sadgamaya with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -789,7 +774,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -810,12 +794,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Friendship Blessing Mantra Meaning. This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of kindness. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Asato Ma Sadgamaya Meaning: Choosing Truth and Light. It encourages children to prefer honesty, clarity, and wise direction. The child admits spilling water instead of hiding it. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -823,9 +807,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-009",
     "storyId": "shloka-mantra-meaning-exp-v1-009",
     "slug": "shloka-mantra-meaning-exp-v1-009",
-    "title": "Patience in Waiting Mantra Meaning",
-    "shortTitle": "Patience in Waiting",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Twameva Mata Cha Pita Meaning: Trust and Belonging",
+    "shortTitle": "Twameva Mata Cha Pita Meaning",
+    "summary": "The meaning gives emotional safety: you are supported, guided, and never alone.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -837,52 +821,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Devotion",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Patience in Waiting — Sacred Context",
-        "text": "A parent introduces the patience in waiting shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "At prayer time, a child learns this verse speaks of divine care like family love."
       },
       {
         "id": "panel-2",
-        "title": "Patience in Waiting — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning gives emotional safety: you are supported, guided, and never alone."
       },
       {
         "id": "panel-3",
-        "title": "Patience in Waiting — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child shares a worry with a parent instead of staying silent."
       },
       {
         "id": "panel-4",
-        "title": "Patience in Waiting — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "Who helps you feel safe when you are worried?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of twameva mata in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward devotion through simple, practical actions.",
+      "discussionPrompt": "How can this meaning support emotional openness in children?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "Who helps you feel safe when you are worried?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on patience in waiting with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about twameva mata with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -891,7 +874,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -912,12 +894,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Patience in Waiting Mantra Meaning. This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of focus. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Twameva Mata Cha Pita Meaning: Trust and Belonging. The meaning gives emotional safety: you are supported, guided, and never alone. The child shares a worry with a parent instead of staying silent. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -925,9 +907,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-010",
     "storyId": "shloka-mantra-meaning-exp-v1-010",
     "slug": "shloka-mantra-meaning-exp-v1-010",
-    "title": "Gratitude for Food Mantra Meaning",
-    "shortTitle": "Gratitude for Food",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Vakratunda Mahakaya Meaning: Courage in Difficult Tasks",
+    "shortTitle": "Vakratunda Mahakaya Meaning",
+    "summary": "It means ask for strength to remove inner obstacles like fear and distraction.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -939,52 +921,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Courage",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Gratitude for Food — Sacred Context",
-        "text": "A parent introduces the gratitude for food shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "Before an exam, a parent shares a short Ganesh verse for courage and focus."
       },
       {
         "id": "panel-2",
-        "title": "Gratitude for Food — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It means ask for strength to remove inner obstacles like fear and distraction."
       },
       {
         "id": "panel-3",
-        "title": "Gratitude for Food — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child starts the hardest question first with a calm breath."
       },
       {
         "id": "panel-4",
-        "title": "Gratitude for Food — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What is one hard task you can begin with courage today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of vakratunda mahakaya in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward courage through simple, practical actions.",
+      "discussionPrompt": "How can you teach courage as steadiness rather than pressure?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What is one hard task you can begin with courage today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on gratitude for food with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about vakratunda mahakaya with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -993,7 +974,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1014,12 +994,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Gratitude for Food Mantra Meaning. This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of gratitude. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Vakratunda Mahakaya Meaning: Courage in Difficult Tasks. It means ask for strength to remove inner obstacles like fear and distraction. The child starts the hardest question first with a calm breath. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1027,9 +1007,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-011",
     "storyId": "shloka-mantra-meaning-exp-v1-011",
     "slug": "shloka-mantra-meaning-exp-v1-011",
-    "title": "Courage With Kindness Mantra Meaning",
-    "shortTitle": "Courage With Kindness",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Mahamrityunjaya Meaning (Child-Safe): Prayer for Healing and Strength",
+    "shortTitle": "Mahamrityunjaya Meaning (Child-Safe)",
+    "summary": "The meaning is care, healing hope, and inner bravery during difficult days.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1041,52 +1021,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Strength",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Courage With Kindness — Sacred Context",
-        "text": "A parent introduces the courage with kindness shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A family uses child-safe language to frame this mantra as wishing health and resilience."
       },
       {
         "id": "panel-2",
-        "title": "Courage With Kindness — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is care, healing hope, and inner bravery during difficult days."
       },
       {
         "id": "panel-3",
-        "title": "Courage With Kindness — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child makes a get-well card for a grandparent."
       },
       {
         "id": "panel-4",
-        "title": "Courage With Kindness — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What gentle action can you do for someone who needs strength?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of mahamrityunjaya in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward strength through simple, practical actions.",
+      "discussionPrompt": "How can children express care when someone is unwell?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What gentle action can you do for someone who needs strength?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on courage with kindness with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about mahamrityunjaya with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1095,7 +1074,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1116,12 +1094,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Courage With Kindness Mantra Meaning. This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of devotion. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Mahamrityunjaya Meaning (Child-Safe): Prayer for Healing and Strength. The meaning is care, healing hope, and inner bravery during difficult days. The child makes a get-well card for a grandparent. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1129,9 +1107,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-012",
     "storyId": "shloka-mantra-meaning-exp-v1-012",
     "slug": "shloka-mantra-meaning-exp-v1-012",
-    "title": "Truthful Words Mantra Meaning",
-    "shortTitle": "Truthful Words",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Lokah Samastah Meaning: Kind Wishes for the World",
+    "shortTitle": "Lokah Samastah Meaning",
+    "summary": "It teaches broad-hearted kindness beyond one’s own home.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1143,52 +1121,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Kindness",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Truthful Words — Sacred Context",
-        "text": "A parent introduces the truthful words shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "After dinner, a child hears a line about wellbeing for all beings."
       },
       {
         "id": "panel-2",
-        "title": "Truthful Words — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It teaches broad-hearted kindness beyond one’s own home."
       },
       {
         "id": "panel-3",
-        "title": "Truthful Words — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child fills a water bowl for birds on the balcony."
       },
       {
         "id": "panel-4",
-        "title": "Truthful Words — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What can you do today for someone outside your usual circle?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of lokah samastah in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward kindness through simple, practical actions.",
+      "discussionPrompt": "How can this meaning inspire family service in simple ways?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What can you do today for someone outside your usual circle?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on truthful words with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about lokah samastah with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1197,7 +1174,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1218,12 +1194,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Truthful Words Mantra Meaning. This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of respect. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Lokah Samastah Meaning: Kind Wishes for the World. It teaches broad-hearted kindness beyond one’s own home. The child fills a water bowl for birds on the balcony. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1231,9 +1207,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-013",
     "storyId": "shloka-mantra-meaning-exp-v1-013",
     "slug": "shloka-mantra-meaning-exp-v1-013",
-    "title": "Helping Hands Mantra Meaning",
-    "shortTitle": "Helping Hands",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Ram Raksha Opening Meaning: Feeling Protected by Goodness",
+    "shortTitle": "Ram Raksha Opening Meaning",
+    "summary": "It means keep your mind on right action and compassionate strength.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1245,52 +1221,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Faith",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Helping Hands — Sacred Context",
-        "text": "A parent introduces the helping hands shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A parent explains the opening as remembering courage, duty, and protection through goodness."
       },
       {
         "id": "panel-2",
-        "title": "Helping Hands — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It means keep your mind on right action and compassionate strength."
       },
       {
         "id": "panel-3",
-        "title": "Helping Hands — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses not to join teasing in class."
       },
       {
         "id": "panel-4",
-        "title": "Helping Hands — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What brave and kind choice can you make when others pressure you?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of ram raksha in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward faith through simple, practical actions.",
+      "discussionPrompt": "How can sacred meaning guide social choices at school?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What brave and kind choice can you make when others pressure you?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on helping hands with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about ram raksha with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1299,7 +1274,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1320,12 +1294,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Helping Hands Mantra Meaning. This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of kindness. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Ram Raksha Opening Meaning: Feeling Protected by Goodness. It means keep your mind on right action and compassionate strength. The child chooses not to join teasing in class. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1333,9 +1307,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-014",
     "storyId": "shloka-mantra-meaning-exp-v1-014",
     "slug": "shloka-mantra-meaning-exp-v1-014",
-    "title": "Evening Reflection Mantra Meaning",
-    "shortTitle": "Evening Reflection",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Hanuman Prayer Meaning: Strength in Service",
+    "shortTitle": "Hanuman Prayer Meaning",
+    "summary": "The meaning is power with humility and service-minded action.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1347,52 +1321,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Calm",
+    "primaryValue": "Service",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening Reflection — Sacred Context",
-        "text": "A parent introduces the evening reflection shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "During sports practice, a child hears that Hanuman’s strength is for helping, not showing off."
       },
       {
         "id": "panel-2",
-        "title": "Evening Reflection — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is power with humility and service-minded action."
       },
       {
         "id": "panel-3",
-        "title": "Evening Reflection — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child helps a teammate who fell instead of celebrating alone."
       },
       {
         "id": "panel-4",
-        "title": "Evening Reflection — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "When can your strength help someone else today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of hanuman prayer in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward service through simple, practical actions.",
+      "discussionPrompt": "How can you connect strength to service in daily routines?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "When can your strength help someone else today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on evening reflection with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about hanuman prayer with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1401,7 +1374,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1422,12 +1394,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Evening Reflection Mantra Meaning. This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of calm. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Hanuman Prayer Meaning: Strength in Service. The meaning is power with humility and service-minded action. The child helps a teammate who fell instead of celebrating alone. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1435,9 +1407,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-015",
     "storyId": "shloka-mantra-meaning-exp-v1-015",
     "slug": "shloka-mantra-meaning-exp-v1-015",
-    "title": "Gentle Discipline Mantra Meaning",
-    "shortTitle": "Gentle Discipline",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Krishna Smarana Meaning: Joy With Responsibility",
+    "shortTitle": "Krishna Smarana Meaning",
+    "summary": "It means play with heart, but keep promises and care for others.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1449,52 +1421,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Joy",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Gentle Discipline — Sacred Context",
-        "text": "A parent introduces the gentle discipline shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A parent shares a short remembrance and explains joy should also include responsibility."
       },
       {
         "id": "panel-2",
-        "title": "Gentle Discipline — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It means play with heart, but keep promises and care for others."
       },
       {
         "id": "panel-3",
-        "title": "Gentle Discipline — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child finishes chores before playtime without reminders."
       },
       {
         "id": "panel-4",
-        "title": "Gentle Discipline — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What promise will you keep today before play?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of krishna remembrance in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward joy through simple, practical actions.",
+      "discussionPrompt": "How do you balance joy and responsibility at home?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What promise will you keep today before play?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on gentle discipline with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about krishna remembrance with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1503,7 +1474,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1524,12 +1494,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Gentle Discipline Mantra Meaning. This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of focus. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Krishna Smarana Meaning: Joy With Responsibility. It means play with heart, but keep promises and care for others. The child finishes chores before playtime without reminders. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1537,9 +1507,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-016",
     "storyId": "shloka-mantra-meaning-exp-v1-016",
     "slug": "shloka-mantra-meaning-exp-v1-016",
-    "title": "Compassion for All Mantra Meaning",
-    "shortTitle": "Compassion for All",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Shivoham (Child-Safe) Meaning: Quiet Dignity and Self-Respect",
+    "shortTitle": "Shivoham (Child-Safe) Meaning",
+    "summary": "The meaning supports self-respect without pride over others.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1551,52 +1521,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Self Respect",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Compassion for All — Sacred Context",
-        "text": "A parent introduces the compassion for all shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A parent adapts the idea gently: you carry dignity and should act with integrity."
       },
       {
         "id": "panel-2",
-        "title": "Compassion for All — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning supports self-respect without pride over others."
       },
       {
         "id": "panel-3",
-        "title": "Compassion for All — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child apologizes for harsh words and repairs the moment."
       },
       {
         "id": "panel-4",
-        "title": "Compassion for All — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What action today will match your best self?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of shivoham in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward self respect through simple, practical actions.",
+      "discussionPrompt": "How can self-respect be taught as responsibility, not superiority?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What action today will match your best self?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on compassion for all with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about shivoham with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1605,7 +1574,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1626,12 +1594,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Compassion for All Mantra Meaning. This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of kindness. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Shivoham (Child-Safe) Meaning: Quiet Dignity and Self-Respect. The meaning supports self-respect without pride over others. The child apologizes for harsh words and repairs the moment. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1639,9 +1607,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-017",
     "storyId": "shloka-mantra-meaning-exp-v1-017",
     "slug": "shloka-mantra-meaning-exp-v1-017",
-    "title": "Respect for Teachers Mantra Meaning",
-    "shortTitle": "Respect for Teachers",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Annapurna Prayer Meaning: Gratitude Before Meals",
+    "shortTitle": "Annapurna Prayer Meaning",
+    "summary": "The meaning builds gratitude, non-waste, and care for shared resources.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1653,52 +1621,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Gratitude",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respect for Teachers — Sacred Context",
-        "text": "A parent introduces the respect for teachers shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "At mealtime, the family pauses to thank everyone who helped bring food."
       },
       {
         "id": "panel-2",
-        "title": "Respect for Teachers — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning builds gratitude, non-waste, and care for shared resources."
       },
       {
         "id": "panel-3",
-        "title": "Respect for Teachers — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child serves a small portion first and avoids wasting food."
       },
       {
         "id": "panel-4",
-        "title": "Respect for Teachers — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What is one way you can show gratitude for food today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of annapurna prayer in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward gratitude through simple, practical actions.",
+      "discussionPrompt": "How can meal prayers support mindful eating habits?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What is one way you can show gratitude for food today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respect for teachers with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about annapurna prayer with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1707,7 +1674,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1728,12 +1694,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Respect for Teachers Mantra Meaning. This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of respect. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Annapurna Prayer Meaning: Gratitude Before Meals. The meaning builds gratitude, non-waste, and care for shared resources. The child serves a small portion first and avoids wasting food. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1741,9 +1707,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-018",
     "storyId": "shloka-mantra-meaning-exp-v1-018",
     "slug": "shloka-mantra-meaning-exp-v1-018",
-    "title": "Thankful Bedtime Mantra Meaning",
-    "shortTitle": "Thankful Bedtime",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Deepa Jyoti Meaning: Lamp of Learning",
+    "shortTitle": "Deepa Jyoti Meaning",
+    "summary": "The meaning links light with focus, clarity, and peaceful effort.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1755,52 +1721,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Focus",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Thankful Bedtime — Sacred Context",
-        "text": "A parent introduces the thankful bedtime shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "During evening study, a child watches a lamp and remembers learning needs attention."
       },
       {
         "id": "panel-2",
-        "title": "Thankful Bedtime — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning links light with focus, clarity, and peaceful effort."
       },
       {
         "id": "panel-3",
-        "title": "Thankful Bedtime — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child keeps one task open and puts other distractions away."
       },
       {
         "id": "panel-4",
-        "title": "Thankful Bedtime — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What helps your attention stay bright while studying?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of deepa jyoti in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward focus through simple, practical actions.",
+      "discussionPrompt": "How can home study spaces reinforce calm concentration?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What helps your attention stay bright while studying?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on thankful bedtime with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about deepa jyoti with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1809,7 +1774,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1830,12 +1794,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Thankful Bedtime Mantra Meaning. This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of gratitude. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Deepa Jyoti Meaning: Lamp of Learning. The meaning links light with focus, clarity, and peaceful effort. The child keeps one task open and puts other distractions away. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1843,9 +1807,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-019",
     "storyId": "shloka-mantra-meaning-exp-v1-019",
     "slug": "shloka-mantra-meaning-exp-v1-019",
-    "title": "Steady Mind Mantra Meaning",
-    "shortTitle": "Steady Mind",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Bhoomi Pranam Meaning: Respect for Earth",
+    "shortTitle": "Bhoomi Pranam Meaning",
+    "summary": "The meaning encourages ecological respect and careful use of nature.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1857,52 +1821,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Respect",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Steady Mind — Sacred Context",
-        "text": "A parent introduces the steady mind shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "Before stepping outside, a parent teaches gratitude for the ground that supports us."
       },
       {
         "id": "panel-2",
-        "title": "Steady Mind — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning encourages ecological respect and careful use of nature."
       },
       {
         "id": "panel-3",
-        "title": "Steady Mind — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child switches off an unused tap and closes it fully."
       },
       {
         "id": "panel-4",
-        "title": "Steady Mind — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one action shows respect for Earth today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of bhoomi pranam in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward respect through simple, practical actions.",
+      "discussionPrompt": "How can this meaning shape environmental habits at home?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one action shows respect for Earth today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on steady mind with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about bhoomi pranam with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -1911,7 +1874,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -1932,12 +1894,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Steady Mind Mantra Meaning. This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of focus. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Bhoomi Pranam Meaning: Respect for Earth. The meaning encourages ecological respect and careful use of nature. The child switches off an unused tap and closes it fully. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -1945,9 +1907,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-020",
     "storyId": "shloka-mantra-meaning-exp-v1-020",
     "slug": "shloka-mantra-meaning-exp-v1-020",
-    "title": "Humble Success Mantra Meaning",
-    "shortTitle": "Humble Success",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Namaste Meaning: Seeing Goodness in Others",
+    "shortTitle": "Namaste Meaning",
+    "summary": "The meaning encourages respectful greetings and gentle speech.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -1959,52 +1921,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Respect",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Humble Success — Sacred Context",
-        "text": "A parent introduces the humble success shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child asks what namaste means; a parent explains it as honoring goodness in each person."
       },
       {
         "id": "panel-2",
-        "title": "Humble Success — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning encourages respectful greetings and gentle speech."
       },
       {
         "id": "panel-3",
-        "title": "Humble Success — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child greets a new classmate kindly."
       },
       {
         "id": "panel-4",
-        "title": "Humble Success — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "Who can you greet with extra kindness today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of namaste in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward respect through simple, practical actions.",
+      "discussionPrompt": "How can greetings become moments of inclusion for children?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "Who can you greet with extra kindness today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on humble success with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about namaste with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2013,7 +1974,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2034,12 +1994,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Humble Success Mantra Meaning. This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of humility. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Namaste Meaning: Seeing Goodness in Others. The meaning encourages respectful greetings and gentle speech. The child greets a new classmate kindly. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2047,9 +2007,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-021",
     "storyId": "shloka-mantra-meaning-exp-v1-021",
     "slug": "shloka-mantra-meaning-exp-v1-021",
-    "title": "Listening Heart Mantra Meaning",
-    "shortTitle": "Listening Heart",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Maitri Prayer Meaning: Friendship Without Exclusion",
+    "shortTitle": "Maitri Prayer Meaning",
+    "summary": "It means include others and avoid cliques or hurtful exclusion.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2061,52 +2021,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Friendship",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Listening Heart — Sacred Context",
-        "text": "A parent introduces the listening heart shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "At school pickup, a parent teaches a short friendship prayer."
       },
       {
         "id": "panel-2",
-        "title": "Listening Heart — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "It means include others and avoid cliques or hurtful exclusion."
       },
       {
         "id": "panel-3",
-        "title": "Listening Heart — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child invites a quiet classmate into a game."
       },
       {
         "id": "panel-4",
-        "title": "Listening Heart — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "Who can you include today so they feel welcome?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of maitri prayer in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward friendship through simple, practical actions.",
+      "discussionPrompt": "How can you coach inclusion when social groups form?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "Who can you include today so they feel welcome?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on listening heart with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about maitri prayer with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2115,7 +2074,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2136,12 +2094,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Listening Heart Mantra Meaning. This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of respect. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Maitri Prayer Meaning: Friendship Without Exclusion. It means include others and avoid cliques or hurtful exclusion. The child invites a quiet classmate into a game. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2149,9 +2107,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-022",
     "storyId": "shloka-mantra-meaning-exp-v1-022",
     "slug": "shloka-mantra-meaning-exp-v1-022",
-    "title": "Calm in Disagreement Mantra Meaning",
-    "shortTitle": "Calm in Disagreement",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Dhyana Shloka Meaning: Attention Before Action",
+    "shortTitle": "Dhyana Shloka Meaning",
+    "summary": "The meaning is simple: calm attention improves both learning and behavior.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2163,52 +2121,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Calm",
+    "primaryValue": "Focus",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Calm in Disagreement — Sacred Context",
-        "text": "A parent introduces the calm in disagreement shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "Before art class, a child learns to settle attention before beginning."
       },
       {
         "id": "panel-2",
-        "title": "Calm in Disagreement — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is simple: calm attention improves both learning and behavior."
       },
       {
         "id": "panel-3",
-        "title": "Calm in Disagreement — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child looks at instructions fully before starting the activity."
       },
       {
         "id": "panel-4",
-        "title": "Calm in Disagreement — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What changes when you pause before acting?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of dhyana shloka in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward focus through simple, practical actions.",
+      "discussionPrompt": "How can brief centering moments reduce impulsive mistakes?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What changes when you pause before acting?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on calm in disagreement with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about dhyana shloka with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2217,7 +2174,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2238,12 +2194,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Calm in Disagreement Mantra Meaning. This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of calm. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Dhyana Shloka Meaning: Attention Before Action. The meaning is simple: calm attention improves both learning and behavior. The child looks at instructions fully before starting the activity. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2251,9 +2207,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-023",
     "storyId": "shloka-mantra-meaning-exp-v1-023",
     "slug": "shloka-mantra-meaning-exp-v1-023",
-    "title": "Prayer for Wisdom Mantra Meaning",
-    "shortTitle": "Prayer for Wisdom",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Bhaja Govindam (Child-Safe) Meaning: Choose What Truly Matters",
+    "shortTitle": "Bhaja Govindam (Child-Safe) Meaning",
+    "summary": "The meaning is to value goodness, learning, and devotion over ego.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2265,52 +2221,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Wisdom",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Prayer for Wisdom — Sacred Context",
-        "text": "A parent introduces the prayer for wisdom shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A parent gives a child-safe interpretation: do not chase only praise or comparison."
       },
       {
         "id": "panel-2",
-        "title": "Prayer for Wisdom — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is to value goodness, learning, and devotion over ego."
       },
       {
         "id": "panel-3",
-        "title": "Prayer for Wisdom — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child congratulates a friend who scored higher."
       },
       {
         "id": "panel-4",
-        "title": "Prayer for Wisdom — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What matters more than winning in your day today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of bhaja govindam in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward wisdom through simple, practical actions.",
+      "discussionPrompt": "How can this message reduce comparison anxiety in children?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What matters more than winning in your day today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on prayer for wisdom with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about bhaja govindam with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2319,7 +2274,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2340,12 +2294,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Prayer for Wisdom Mantra Meaning. This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of devotion. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Bhaja Govindam (Child-Safe) Meaning: Choose What Truly Matters. The meaning is to value goodness, learning, and devotion over ego. The child congratulates a friend who scored higher. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2353,9 +2307,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-024",
     "storyId": "shloka-mantra-meaning-exp-v1-024",
     "slug": "shloka-mantra-meaning-exp-v1-024",
-    "title": "Family Harmony Mantra Meaning",
-    "shortTitle": "Family Harmony",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Durga Prayer Meaning: Brave Heart, Gentle Hands",
+    "shortTitle": "Durga Prayer Meaning",
+    "summary": "The meaning highlights courage joined with care and self-control.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2367,52 +2321,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Bravery",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Family Harmony — Sacred Context",
-        "text": "A parent introduces the family harmony shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child learns bravery can be protective and compassionate, not aggressive."
       },
       {
         "id": "panel-2",
-        "title": "Family Harmony — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning highlights courage joined with care and self-control."
       },
       {
         "id": "panel-3",
-        "title": "Family Harmony — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child stands up for a friend using respectful words."
       },
       {
         "id": "panel-4",
-        "title": "Family Harmony — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "How can you be brave and gentle at the same time today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of durga prayer in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward bravery through simple, practical actions.",
+      "discussionPrompt": "How do you teach assertiveness without harshness?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "How can you be brave and gentle at the same time today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on family harmony with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about durga prayer with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2421,7 +2374,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2442,12 +2394,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Family Harmony Mantra Meaning. This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of kindness. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Durga Prayer Meaning: Brave Heart, Gentle Hands. The meaning highlights courage joined with care and self-control. The child stands up for a friend using respectful words. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2455,9 +2407,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-025",
     "storyId": "shloka-mantra-meaning-exp-v1-025",
     "slug": "shloka-mantra-meaning-exp-v1-025",
-    "title": "Careful Action Mantra Meaning",
-    "shortTitle": "Careful Action",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Surya Gratitude Meaning: Start the Day With Purpose",
+    "shortTitle": "Surya Gratitude Meaning",
+    "summary": "The meaning encourages purposeful routines and thankful beginnings.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2469,52 +2421,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Purpose",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Careful Action — Sacred Context",
-        "text": "A parent introduces the careful action shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "In the morning sun, a parent explains gratitude for energy and a fresh start."
       },
       {
         "id": "panel-2",
-        "title": "Careful Action — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning encourages purposeful routines and thankful beginnings."
       },
       {
         "id": "panel-3",
-        "title": "Careful Action — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child writes one intention for the day before leaving home."
       },
       {
         "id": "panel-4",
-        "title": "Careful Action — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What intention will guide your day with kindness?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of surya gratitude in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward purpose through simple, practical actions.",
+      "discussionPrompt": "How can families create meaningful morning intentions?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What intention will guide your day with kindness?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on careful action with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about surya gratitude with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2523,7 +2474,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2544,12 +2494,12 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "qa_ready",
     "audioStatus": "script_ready",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims.",
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure.",
     "audioScript": {
-      "narrationScript": "Careful Action Mantra Meaning. This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. A parent helps the child reflect on one gentle action of focus. The focus is calm understanding, gratitude, and devotion, without pressure to recite perfectly.",
-      "voiceDirection": "Warm, grounded, and reverent.",
-      "pronunciationNotes": "No pronunciation scoring. Keep words simple and child-safe.",
-      "pacingNotes": "Leave short pauses for parent-child reflection after each sentence.",
+      "narrationScript": "Surya Gratitude Meaning: Start the Day With Purpose. The meaning encourages purposeful routines and thankful beginnings. The child writes one intention for the day before leaving home. Reflect together with gratitude and calm understanding.",
+      "voiceDirection": "Warm and respectful.",
+      "pronunciationNotes": "No scoring; focus on understanding meaning.",
+      "pacingNotes": "Short pauses for parent-child reflection.",
       "audioReadinessIntent": "ready"
     }
   },
@@ -2557,9 +2507,9 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "id": "shloka-mantra-meaning-exp-v1-026",
     "storyId": "shloka-mantra-meaning-exp-v1-026",
     "slug": "shloka-mantra-meaning-exp-v1-026",
-    "title": "Joyful Gratitude Mantra Meaning",
-    "shortTitle": "Joyful Gratitude",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 01",
+    "shortTitle": "Sacred Meaning Reflection 01",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2571,52 +2521,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Joyful Gratitude — Sacred Context",
-        "text": "A parent introduces the joyful gratitude shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Joyful Gratitude — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Joyful Gratitude — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Joyful Gratitude — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on joyful gratitude with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2625,7 +2574,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2646,15 +2594,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-027",
     "storyId": "shloka-mantra-meaning-exp-v1-027",
     "slug": "shloka-mantra-meaning-exp-v1-027",
-    "title": "Sacred Quiet Time Mantra Meaning",
-    "shortTitle": "Sacred Quiet Time",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 02",
+    "shortTitle": "Sacred Meaning Reflection 02",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2669,49 +2617,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Sacred Quiet Time — Sacred Context",
-        "text": "A parent introduces the sacred quiet time shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Sacred Quiet Time — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Sacred Quiet Time — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Sacred Quiet Time — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on sacred quiet time with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2720,7 +2667,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2741,15 +2687,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-028",
     "storyId": "shloka-mantra-meaning-exp-v1-028",
     "slug": "shloka-mantra-meaning-exp-v1-028",
-    "title": "Kind Morning Start Mantra Meaning",
-    "shortTitle": "Kind Morning Start",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 03",
+    "shortTitle": "Sacred Meaning Reflection 03",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2761,52 +2707,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Kind Morning Start — Sacred Context",
-        "text": "A parent introduces the kind morning start shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Kind Morning Start — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Kind Morning Start — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Kind Morning Start — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on kind morning start with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2815,7 +2760,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2836,15 +2780,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-029",
     "storyId": "shloka-mantra-meaning-exp-v1-029",
     "slug": "shloka-mantra-meaning-exp-v1-029",
-    "title": "Respectful Greetings Mantra Meaning",
-    "shortTitle": "Respectful Greetings",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 04",
+    "shortTitle": "Sacred Meaning Reflection 04",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2856,52 +2800,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respectful Greetings — Sacred Context",
-        "text": "A parent introduces the respectful greetings shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Respectful Greetings — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Respectful Greetings — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Respectful Greetings — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respectful greetings with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -2910,7 +2853,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -2931,15 +2873,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-030",
     "storyId": "shloka-mantra-meaning-exp-v1-030",
     "slug": "shloka-mantra-meaning-exp-v1-030",
-    "title": "Serving Without Pride Mantra Meaning",
-    "shortTitle": "Serving Without Pride",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 05",
+    "shortTitle": "Sacred Meaning Reflection 05",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -2951,52 +2893,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Serving Without Pride — Sacred Context",
-        "text": "A parent introduces the serving without pride shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Serving Without Pride — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Serving Without Pride — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Serving Without Pride — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on serving without pride with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3005,7 +2946,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3026,15 +2966,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-031",
     "storyId": "shloka-mantra-meaning-exp-v1-031",
     "slug": "shloka-mantra-meaning-exp-v1-031",
-    "title": "Inner Light Reminder Mantra Meaning",
-    "shortTitle": "Inner Light Reminder",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 06",
+    "shortTitle": "Sacred Meaning Reflection 06",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3046,52 +2986,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Inner Light Reminder — Sacred Context",
-        "text": "A parent introduces the inner light reminder shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Inner Light Reminder — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Inner Light Reminder — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Inner Light Reminder — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on inner light reminder with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3100,7 +3039,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3121,15 +3059,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-032",
     "storyId": "shloka-mantra-meaning-exp-v1-032",
     "slug": "shloka-mantra-meaning-exp-v1-032",
-    "title": "Peaceful Transitions Mantra Meaning",
-    "shortTitle": "Peaceful Transitions",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 07",
+    "shortTitle": "Sacred Meaning Reflection 07",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3144,49 +3082,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Peaceful Transitions — Sacred Context",
-        "text": "A parent introduces the peaceful transitions shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Peaceful Transitions — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Peaceful Transitions — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful Transitions — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on peaceful transitions with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3195,7 +3132,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3216,15 +3152,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-033",
     "storyId": "shloka-mantra-meaning-exp-v1-033",
     "slug": "shloka-mantra-meaning-exp-v1-033",
-    "title": "Thoughtful Choices Mantra Meaning",
-    "shortTitle": "Thoughtful Choices",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 08",
+    "shortTitle": "Sacred Meaning Reflection 08",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3236,52 +3172,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Thoughtful Choices — Sacred Context",
-        "text": "A parent introduces the thoughtful choices shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Thoughtful Choices — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Thoughtful Choices — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Thoughtful Choices — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on thoughtful choices with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3290,7 +3225,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3311,15 +3245,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-034",
     "storyId": "shloka-mantra-meaning-exp-v1-034",
     "slug": "shloka-mantra-meaning-exp-v1-034",
-    "title": "Gentle Forgiveness Mantra Meaning",
-    "shortTitle": "Gentle Forgiveness",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 09",
+    "shortTitle": "Sacred Meaning Reflection 09",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3331,52 +3265,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Gentle Forgiveness — Sacred Context",
-        "text": "A parent introduces the gentle forgiveness shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Gentle Forgiveness — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Gentle Forgiveness — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Gentle Forgiveness — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on gentle forgiveness with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3385,7 +3318,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3406,15 +3338,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-035",
     "storyId": "shloka-mantra-meaning-exp-v1-035",
     "slug": "shloka-mantra-meaning-exp-v1-035",
-    "title": "Thankful Learning Mantra Meaning",
-    "shortTitle": "Thankful Learning",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 10",
+    "shortTitle": "Sacred Meaning Reflection 10",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3426,52 +3358,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Thankful Learning — Sacred Context",
-        "text": "A parent introduces the thankful learning shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Thankful Learning — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Thankful Learning — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Thankful Learning — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on thankful learning with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3480,7 +3411,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3501,15 +3431,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-036",
     "storyId": "shloka-mantra-meaning-exp-v1-036",
     "slug": "shloka-mantra-meaning-exp-v1-036",
-    "title": "Sharing Happily Mantra Meaning",
-    "shortTitle": "Sharing Happily",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 11",
+    "shortTitle": "Sacred Meaning Reflection 11",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3521,52 +3451,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Sharing Happily — Sacred Context",
-        "text": "A parent introduces the sharing happily shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Sharing Happily — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Sharing Happily — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Sharing Happily — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on sharing happily with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3575,7 +3504,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3596,15 +3524,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-037",
     "storyId": "shloka-mantra-meaning-exp-v1-037",
     "slug": "shloka-mantra-meaning-exp-v1-037",
-    "title": "Mindful Speaking Mantra Meaning",
-    "shortTitle": "Mindful Speaking",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 12",
+    "shortTitle": "Sacred Meaning Reflection 12",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3616,52 +3544,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Mindful Speaking — Sacred Context",
-        "text": "A parent introduces the mindful speaking shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Mindful Speaking — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Mindful Speaking — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Mindful Speaking — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on mindful speaking with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3670,7 +3597,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3691,15 +3617,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-038",
     "storyId": "shloka-mantra-meaning-exp-v1-038",
     "slug": "shloka-mantra-meaning-exp-v1-038",
-    "title": "Quiet Confidence Mantra Meaning",
-    "shortTitle": "Quiet Confidence",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 13",
+    "shortTitle": "Sacred Meaning Reflection 13",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3711,52 +3637,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Quiet Confidence — Sacred Context",
-        "text": "A parent introduces the quiet confidence shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Quiet Confidence — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Quiet Confidence — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Quiet Confidence — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on quiet confidence with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3765,7 +3690,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3786,15 +3710,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-039",
     "storyId": "shloka-mantra-meaning-exp-v1-039",
     "slug": "shloka-mantra-meaning-exp-v1-039",
-    "title": "Prayer Before Meals Mantra Meaning",
-    "shortTitle": "Prayer Before Meals",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 14",
+    "shortTitle": "Sacred Meaning Reflection 14",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3806,52 +3730,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Prayer Before Meals — Sacred Context",
-        "text": "A parent introduces the prayer before meals shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Prayer Before Meals — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Prayer Before Meals — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Prayer Before Meals — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on prayer before meals with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3860,7 +3783,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3881,15 +3803,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-040",
     "storyId": "shloka-mantra-meaning-exp-v1-040",
     "slug": "shloka-mantra-meaning-exp-v1-040",
-    "title": "Compassionate Strength Mantra Meaning",
-    "shortTitle": "Compassionate Strength",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 15",
+    "shortTitle": "Sacred Meaning Reflection 15",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3901,52 +3823,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Compassionate Strength — Sacred Context",
-        "text": "A parent introduces the compassionate strength shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Compassionate Strength — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Compassionate Strength — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Compassionate Strength — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on compassionate strength with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -3955,7 +3876,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -3976,15 +3896,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-041",
     "storyId": "shloka-mantra-meaning-exp-v1-041",
     "slug": "shloka-mantra-meaning-exp-v1-041",
-    "title": "Study With Attention Mantra Meaning",
-    "shortTitle": "Study With Attention",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 16",
+    "shortTitle": "Sacred Meaning Reflection 16",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -3996,52 +3916,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Study With Attention — Sacred Context",
-        "text": "A parent introduces the study with attention shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Study With Attention — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Study With Attention — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Study With Attention — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on study with attention with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4050,7 +3969,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4071,15 +3989,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-042",
     "storyId": "shloka-mantra-meaning-exp-v1-042",
     "slug": "shloka-mantra-meaning-exp-v1-042",
-    "title": "Calm Before Sleep Mantra Meaning",
-    "shortTitle": "Calm Before Sleep",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 17",
+    "shortTitle": "Sacred Meaning Reflection 17",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4094,49 +4012,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Calm Before Sleep — Sacred Context",
-        "text": "A parent introduces the calm before sleep shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Calm Before Sleep — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Calm Before Sleep — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Calm Before Sleep — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on calm before sleep with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4145,7 +4062,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4166,15 +4082,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-043",
     "storyId": "shloka-mantra-meaning-exp-v1-043",
     "slug": "shloka-mantra-meaning-exp-v1-043",
-    "title": "Respect for Nature Mantra Meaning",
-    "shortTitle": "Respect for Nature",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 18",
+    "shortTitle": "Sacred Meaning Reflection 18",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4186,52 +4102,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respect for Nature — Sacred Context",
-        "text": "A parent introduces the respect for nature shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Respect for Nature — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Respect for Nature — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Respect for Nature — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respect for nature with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4240,7 +4155,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4261,15 +4175,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-044",
     "storyId": "shloka-mantra-meaning-exp-v1-044",
     "slug": "shloka-mantra-meaning-exp-v1-044",
-    "title": "Devotion in Daily Life Mantra Meaning",
-    "shortTitle": "Devotion in Daily Life",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 19",
+    "shortTitle": "Sacred Meaning Reflection 19",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4281,52 +4195,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Devotion in Daily Life — Sacred Context",
-        "text": "A parent introduces the devotion in daily life shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Devotion in Daily Life — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Devotion in Daily Life — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Devotion in Daily Life — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on devotion in daily life with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4335,7 +4248,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4356,15 +4268,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-045",
     "storyId": "shloka-mantra-meaning-exp-v1-045",
     "slug": "shloka-mantra-meaning-exp-v1-045",
-    "title": "Soft Voice Practice Mantra Meaning",
-    "shortTitle": "Soft Voice Practice",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 20",
+    "shortTitle": "Sacred Meaning Reflection 20",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4376,52 +4288,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Soft Voice Practice — Sacred Context",
-        "text": "A parent introduces the soft voice practice shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Soft Voice Practice — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Soft Voice Practice — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Soft Voice Practice — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on soft voice practice with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4430,7 +4341,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4451,15 +4361,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-046",
     "storyId": "shloka-mantra-meaning-exp-v1-046",
     "slug": "shloka-mantra-meaning-exp-v1-046",
-    "title": "Steady During Change Mantra Meaning",
-    "shortTitle": "Steady During Change",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 21",
+    "shortTitle": "Sacred Meaning Reflection 21",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4471,52 +4381,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Steady During Change — Sacred Context",
-        "text": "A parent introduces the steady during change shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Steady During Change — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Steady During Change — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Steady During Change — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on steady during change with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4525,7 +4434,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4546,15 +4454,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-047",
     "storyId": "shloka-mantra-meaning-exp-v1-047",
     "slug": "shloka-mantra-meaning-exp-v1-047",
-    "title": "Grateful for Helpers Mantra Meaning",
-    "shortTitle": "Grateful for Helpers",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 22",
+    "shortTitle": "Sacred Meaning Reflection 22",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4566,52 +4474,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Grateful for Helpers — Sacred Context",
-        "text": "A parent introduces the grateful for helpers shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Grateful for Helpers — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Grateful for Helpers — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Grateful for Helpers — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on grateful for helpers with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4620,7 +4527,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4641,15 +4547,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-048",
     "storyId": "shloka-mantra-meaning-exp-v1-048",
     "slug": "shloka-mantra-meaning-exp-v1-048",
-    "title": "Peaceful Family Circle Mantra Meaning",
-    "shortTitle": "Peaceful Family Circle",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 23",
+    "shortTitle": "Sacred Meaning Reflection 23",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4664,49 +4570,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Peaceful Family Circle — Sacred Context",
-        "text": "A parent introduces the peaceful family circle shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Peaceful Family Circle — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Peaceful Family Circle — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Peaceful Family Circle — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on peaceful family circle with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4715,7 +4620,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4736,15 +4640,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-049",
     "storyId": "shloka-mantra-meaning-exp-v1-049",
     "slug": "shloka-mantra-meaning-exp-v1-049",
-    "title": "Humility in Teamwork Mantra Meaning",
-    "shortTitle": "Humility in Teamwork",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 24",
+    "shortTitle": "Sacred Meaning Reflection 24",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4756,52 +4660,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Humility in Teamwork — Sacred Context",
-        "text": "A parent introduces the humility in teamwork shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Humility in Teamwork — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Humility in Teamwork — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Humility in Teamwork — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on humility in teamwork with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4810,7 +4713,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4831,15 +4733,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-050",
     "storyId": "shloka-mantra-meaning-exp-v1-050",
     "slug": "shloka-mantra-meaning-exp-v1-050",
-    "title": "Respectful Disagreement Mantra Meaning",
-    "shortTitle": "Respectful Disagreement",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 25",
+    "shortTitle": "Sacred Meaning Reflection 25",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4851,52 +4753,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respectful Disagreement — Sacred Context",
-        "text": "A parent introduces the respectful disagreement shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Respectful Disagreement — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Respectful Disagreement — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Respectful Disagreement — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respectful disagreement with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -4905,7 +4806,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -4926,15 +4826,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-051",
     "storyId": "shloka-mantra-meaning-exp-v1-051",
     "slug": "shloka-mantra-meaning-exp-v1-051",
-    "title": "Devotional Thank You Mantra Meaning",
-    "shortTitle": "Devotional Thank You",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 26",
+    "shortTitle": "Sacred Meaning Reflection 26",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -4946,52 +4846,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Devotional Thank You — Sacred Context",
-        "text": "A parent introduces the devotional thank you shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Devotional Thank You — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Devotional Thank You — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Devotional Thank You — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on devotional thank you with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5000,7 +4899,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5021,15 +4919,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-052",
     "storyId": "shloka-mantra-meaning-exp-v1-052",
     "slug": "shloka-mantra-meaning-exp-v1-052",
-    "title": "Kindness to Siblings Mantra Meaning",
-    "shortTitle": "Kindness to Siblings",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 27",
+    "shortTitle": "Sacred Meaning Reflection 27",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5041,52 +4939,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Kindness to Siblings — Sacred Context",
-        "text": "A parent introduces the kindness to siblings shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Kindness to Siblings — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Kindness to Siblings — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Kindness to Siblings — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on kindness to siblings with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5095,7 +4992,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5116,15 +5012,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-053",
     "storyId": "shloka-mantra-meaning-exp-v1-053",
     "slug": "shloka-mantra-meaning-exp-v1-053",
-    "title": "Concentration Prayer Mantra Meaning",
-    "shortTitle": "Concentration Prayer",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 28",
+    "shortTitle": "Sacred Meaning Reflection 28",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5136,52 +5032,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Concentration Prayer — Sacred Context",
-        "text": "A parent introduces the concentration prayer shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Concentration Prayer — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Concentration Prayer — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Concentration Prayer — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on concentration prayer with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5190,7 +5085,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5211,15 +5105,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-054",
     "storyId": "shloka-mantra-meaning-exp-v1-054",
     "slug": "shloka-mantra-meaning-exp-v1-054",
-    "title": "Gentle Apology Mantra Meaning",
-    "shortTitle": "Gentle Apology",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 29",
+    "shortTitle": "Sacred Meaning Reflection 29",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5231,52 +5125,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Gentle Apology — Sacred Context",
-        "text": "A parent introduces the gentle apology shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Gentle Apology — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Gentle Apology — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Gentle Apology — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on gentle apology with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5285,7 +5178,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5306,15 +5198,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-055",
     "storyId": "shloka-mantra-meaning-exp-v1-055",
     "slug": "shloka-mantra-meaning-exp-v1-055",
-    "title": "Evening Gratitude Lamp Mantra Meaning",
-    "shortTitle": "Evening Gratitude Lamp",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 30",
+    "shortTitle": "Sacred Meaning Reflection 30",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5326,52 +5218,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Evening Gratitude Lamp — Sacred Context",
-        "text": "A parent introduces the evening gratitude lamp shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Evening Gratitude Lamp — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Evening Gratitude Lamp — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Evening Gratitude Lamp — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on evening gratitude lamp with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5380,7 +5271,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5401,15 +5291,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-056",
     "storyId": "shloka-mantra-meaning-exp-v1-056",
     "slug": "shloka-mantra-meaning-exp-v1-056",
-    "title": "Calm When Upset Mantra Meaning",
-    "shortTitle": "Calm When Upset",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 31",
+    "shortTitle": "Sacred Meaning Reflection 31",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5424,49 +5314,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Calm When Upset — Sacred Context",
-        "text": "A parent introduces the calm when upset shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Calm When Upset — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Calm When Upset — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Calm When Upset — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on calm when upset with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5475,7 +5364,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5496,15 +5384,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-057",
     "storyId": "shloka-mantra-meaning-exp-v1-057",
     "slug": "shloka-mantra-meaning-exp-v1-057",
-    "title": "Respecting Sacred Spaces Mantra Meaning",
-    "shortTitle": "Respecting Sacred Spaces",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 32",
+    "shortTitle": "Sacred Meaning Reflection 32",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5516,52 +5404,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respecting Sacred Spaces — Sacred Context",
-        "text": "A parent introduces the respecting sacred spaces shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Respecting Sacred Spaces — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Respecting Sacred Spaces — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Respecting Sacred Spaces — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respecting sacred spaces with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5570,7 +5457,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5591,15 +5477,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-058",
     "storyId": "shloka-mantra-meaning-exp-v1-058",
     "slug": "shloka-mantra-meaning-exp-v1-058",
-    "title": "Prayer for Good Intent Mantra Meaning",
-    "shortTitle": "Prayer for Good Intent",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 33",
+    "shortTitle": "Sacred Meaning Reflection 33",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5611,52 +5497,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Prayer for Good Intent — Sacred Context",
-        "text": "A parent introduces the prayer for good intent shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Prayer for Good Intent — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Prayer for Good Intent — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Prayer for Good Intent — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on prayer for good intent with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5665,7 +5550,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5686,15 +5570,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-059",
     "storyId": "shloka-mantra-meaning-exp-v1-059",
     "slug": "shloka-mantra-meaning-exp-v1-059",
-    "title": "Thoughtful Listening Mantra Meaning",
-    "shortTitle": "Thoughtful Listening",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 34",
+    "shortTitle": "Sacred Meaning Reflection 34",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5706,52 +5590,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Thoughtful Listening — Sacred Context",
-        "text": "A parent introduces the thoughtful listening shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Thoughtful Listening — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Thoughtful Listening — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Thoughtful Listening — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on thoughtful listening with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5760,7 +5643,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5781,15 +5663,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-060",
     "storyId": "shloka-mantra-meaning-exp-v1-060",
     "slug": "shloka-mantra-meaning-exp-v1-060",
-    "title": "Compassion in Play Mantra Meaning",
-    "shortTitle": "Compassion in Play",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 35",
+    "shortTitle": "Sacred Meaning Reflection 35",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5801,52 +5683,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Compassion in Play — Sacred Context",
-        "text": "A parent introduces the compassion in play shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Compassion in Play — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Compassion in Play — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Compassion in Play — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on compassion in play with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5855,7 +5736,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5876,15 +5756,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-061",
     "storyId": "shloka-mantra-meaning-exp-v1-061",
     "slug": "shloka-mantra-meaning-exp-v1-061",
-    "title": "Humble Leadership Mantra Meaning",
-    "shortTitle": "Humble Leadership",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 36",
+    "shortTitle": "Sacred Meaning Reflection 36",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5896,52 +5776,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Humble Leadership — Sacred Context",
-        "text": "A parent introduces the humble leadership shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Humble Leadership — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Humble Leadership — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Humble Leadership — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on humble leadership with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -5950,7 +5829,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -5971,15 +5849,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-062",
     "storyId": "shloka-mantra-meaning-exp-v1-062",
     "slug": "shloka-mantra-meaning-exp-v1-062",
-    "title": "Thankful Wake-Up Mantra Meaning",
-    "shortTitle": "Thankful Wake-Up",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 37",
+    "shortTitle": "Sacred Meaning Reflection 37",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -5991,52 +5869,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Thankful Wake-Up — Sacred Context",
-        "text": "A parent introduces the thankful wake-up shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Thankful Wake-Up — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Thankful Wake-Up — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Thankful Wake-Up — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on thankful wake-up with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6045,7 +5922,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6066,15 +5942,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-063",
     "storyId": "shloka-mantra-meaning-exp-v1-063",
     "slug": "shloka-mantra-meaning-exp-v1-063",
-    "title": "Quiet Reflection Minute Mantra Meaning",
-    "shortTitle": "Quiet Reflection Minute",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 38",
+    "shortTitle": "Sacred Meaning Reflection 38",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6089,49 +5965,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Quiet Reflection Minute — Sacred Context",
-        "text": "A parent introduces the quiet reflection minute shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Quiet Reflection Minute — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Quiet Reflection Minute — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Quiet Reflection Minute — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on quiet reflection minute with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6140,7 +6015,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6161,15 +6035,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-064",
     "storyId": "shloka-mantra-meaning-exp-v1-064",
     "slug": "shloka-mantra-meaning-exp-v1-064",
-    "title": "Respect for Elders Mantra Meaning",
-    "shortTitle": "Respect for Elders",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 39",
+    "shortTitle": "Sacred Meaning Reflection 39",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6181,52 +6055,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respect for Elders — Sacred Context",
-        "text": "A parent introduces the respect for elders shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Respect for Elders — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Respect for Elders — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Respect for Elders — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respect for elders with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6235,7 +6108,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6256,15 +6128,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-065",
     "storyId": "shloka-mantra-meaning-exp-v1-065",
     "slug": "shloka-mantra-meaning-exp-v1-065",
-    "title": "Devotion Through Service Mantra Meaning",
-    "shortTitle": "Devotion Through Service",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 40",
+    "shortTitle": "Sacred Meaning Reflection 40",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6276,52 +6148,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Devotion Through Service — Sacred Context",
-        "text": "A parent introduces the devotion through service shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Devotion Through Service — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Devotion Through Service — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Devotion Through Service — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on devotion through service with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6330,7 +6201,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6351,15 +6221,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-066",
     "storyId": "shloka-mantra-meaning-exp-v1-066",
     "slug": "shloka-mantra-meaning-exp-v1-066",
-    "title": "Kind Words First Mantra Meaning",
-    "shortTitle": "Kind Words First",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 41",
+    "shortTitle": "Sacred Meaning Reflection 41",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6371,52 +6241,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Kind Words First — Sacred Context",
-        "text": "A parent introduces the kind words first shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Kind Words First — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Kind Words First — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Kind Words First — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on kind words first with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6425,7 +6294,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6446,15 +6314,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-067",
     "storyId": "shloka-mantra-meaning-exp-v1-067",
     "slug": "shloka-mantra-meaning-exp-v1-067",
-    "title": "Focus Before Homework Mantra Meaning",
-    "shortTitle": "Focus Before Homework",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 42",
+    "shortTitle": "Sacred Meaning Reflection 42",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6466,52 +6334,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Focus Before Homework — Sacred Context",
-        "text": "A parent introduces the focus before homework shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Focus Before Homework — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Focus Before Homework — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Focus Before Homework — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on focus before homework with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6520,7 +6387,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6541,15 +6407,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-068",
     "storyId": "shloka-mantra-meaning-exp-v1-068",
     "slug": "shloka-mantra-meaning-exp-v1-068",
-    "title": "Gratitude for Friends Mantra Meaning",
-    "shortTitle": "Gratitude for Friends",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 43",
+    "shortTitle": "Sacred Meaning Reflection 43",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6561,52 +6427,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Gratitude for Friends — Sacred Context",
-        "text": "A parent introduces the gratitude for friends shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Gratitude for Friends — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Gratitude for Friends — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Gratitude for Friends — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on gratitude for friends with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6615,7 +6480,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6636,15 +6500,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-069",
     "storyId": "shloka-mantra-meaning-exp-v1-069",
     "slug": "shloka-mantra-meaning-exp-v1-069",
-    "title": "Calm Travel Prayer Mantra Meaning",
-    "shortTitle": "Calm Travel Prayer",
-    "summary": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 44",
+    "shortTitle": "Sacred Meaning Reflection 44",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6659,49 +6523,48 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Calm Travel Prayer — Sacred Context",
-        "text": "A parent introduces the calm travel prayer shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Calm Travel Prayer — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice calm with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Calm Travel Prayer — Daily Practice",
-        "text": "The child tries one small action of calm, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Calm Travel Prayer — Reflection",
-        "text": "Together, parent and child reflect on how calm can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is calm, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice calm with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of calm feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on calm travel prayer with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6710,7 +6573,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6731,15 +6593,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-070",
     "storyId": "shloka-mantra-meaning-exp-v1-070",
     "slug": "shloka-mantra-meaning-exp-v1-070",
-    "title": "Humble Celebration Mantra Meaning",
-    "shortTitle": "Humble Celebration",
-    "summary": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 45",
+    "shortTitle": "Sacred Meaning Reflection 45",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6751,52 +6613,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Humility",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Humble Celebration — Sacred Context",
-        "text": "A parent introduces the humble celebration shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Humble Celebration — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice humility with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Humble Celebration — Daily Practice",
-        "text": "The child tries one small action of humility, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Humble Celebration — Reflection",
-        "text": "Together, parent and child reflect on how humility can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is humility, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice humility with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of humility feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on humble celebration with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6805,7 +6666,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6826,15 +6686,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-071",
     "storyId": "shloka-mantra-meaning-exp-v1-071",
     "slug": "shloka-mantra-meaning-exp-v1-071",
-    "title": "Respecting Differences Mantra Meaning",
-    "shortTitle": "Respecting Differences",
-    "summary": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 46",
+    "shortTitle": "Sacred Meaning Reflection 46",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6846,52 +6706,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Respect",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Respecting Differences — Sacred Context",
-        "text": "A parent introduces the respecting differences shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Respecting Differences — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice respect with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Respecting Differences — Daily Practice",
-        "text": "The child tries one small action of respect, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Respecting Differences — Reflection",
-        "text": "Together, parent and child reflect on how respect can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is respect, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice respect with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of respect feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on respecting differences with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6900,7 +6759,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -6921,15 +6779,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-072",
     "storyId": "shloka-mantra-meaning-exp-v1-072",
     "slug": "shloka-mantra-meaning-exp-v1-072",
-    "title": "Devotional Pause Mantra Meaning",
-    "shortTitle": "Devotional Pause",
-    "summary": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 47",
+    "shortTitle": "Sacred Meaning Reflection 47",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -6941,52 +6799,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Devotion",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Devotional Pause — Sacred Context",
-        "text": "A parent introduces the devotional pause shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Devotional Pause — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice devotion with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Devotional Pause — Daily Practice",
-        "text": "The child tries one small action of devotion, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Devotional Pause — Reflection",
-        "text": "Together, parent and child reflect on how devotion can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is devotion, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice devotion with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of devotion feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on devotional pause with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -6995,7 +6852,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -7016,15 +6872,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-073",
     "storyId": "shloka-mantra-meaning-exp-v1-073",
     "slug": "shloka-mantra-meaning-exp-v1-073",
-    "title": "Kind Farewell Mantra Meaning",
-    "shortTitle": "Kind Farewell",
-    "summary": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 48",
+    "shortTitle": "Sacred Meaning Reflection 48",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -7036,52 +6892,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Kindness",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Kind Farewell — Sacred Context",
-        "text": "A parent introduces the kind farewell shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Kind Farewell — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice kindness with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Kind Farewell — Daily Practice",
-        "text": "The child tries one small action of kindness, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Kind Farewell — Reflection",
-        "text": "Together, parent and child reflect on how kindness can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is kindness, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice kindness with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of kindness feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on kind farewell with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -7090,7 +6945,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -7111,15 +6965,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-074",
     "storyId": "shloka-mantra-meaning-exp-v1-074",
     "slug": "shloka-mantra-meaning-exp-v1-074",
-    "title": "Focused Breathing Mantra Meaning",
-    "shortTitle": "Focused Breathing",
-    "summary": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 49",
+    "shortTitle": "Sacred Meaning Reflection 49",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -7131,52 +6985,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Focus",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Focused Breathing — Sacred Context",
-        "text": "A parent introduces the focused breathing shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Focused Breathing — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice focus with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Focused Breathing — Daily Practice",
-        "text": "The child tries one small action of focus, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Focused Breathing — Reflection",
-        "text": "Together, parent and child reflect on how focus can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is focus, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice focus with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of focus feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on focused breathing with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -7185,7 +7038,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -7206,15 +7058,15 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   },
   {
     "id": "shloka-mantra-meaning-exp-v1-075",
     "storyId": "shloka-mantra-meaning-exp-v1-075",
     "slug": "shloka-mantra-meaning-exp-v1-075",
-    "title": "Grateful Good Night Mantra Meaning",
-    "shortTitle": "Grateful Good Night",
-    "summary": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life. It is presented as gentle understanding, not performance.",
+    "title": "Sacred Meaning Reflection 50",
+    "shortTitle": "Sacred Meaning Reflection 50",
+    "summary": "The meaning is explained in simple language so children understand values in daily life.",
     "sourceTradition": "Shloka and Mantra Meaning (Child-Safe)",
     "sourceTextOrTraditionNote": "Child-safe meaning adaptation with parent-guided context and sacred respect.",
     "storyPackId": "shloka-mantra-meaning-expansion-pack-v1",
@@ -7226,52 +7078,51 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     ],
     "recommendedAgeBand": "6-8",
     "durationMinutes": 4,
-    "primaryValue": "Gratitude",
+    "primaryValue": "Calm",
     "secondaryValues": [
       "Devotion",
-      "Gratitude"
+      "Kindness"
     ],
     "characters": [
       "Child",
-      "Parent",
-      "Family"
+      "Parent"
     ],
     "panels": [
       {
         "id": "panel-1",
-        "title": "Grateful Good Night — Sacred Context",
-        "text": "A parent introduces the grateful good night shloka/mantra in a warm and respectful way."
+        "title": "Sacred Meaning Context",
+        "text": "A child and parent revisit a short sacred line with respectful attention."
       },
       {
         "id": "panel-2",
-        "title": "Grateful Good Night — Simple Meaning",
-        "text": "This shloka/mantra reminds children to practice gratitude with gratitude, calm, and respect in everyday life."
+        "title": "Simple Child Meaning",
+        "text": "The meaning is explained in simple language so children understand values in daily life."
       },
       {
         "id": "panel-3",
-        "title": "Grateful Good Night — Daily Practice",
-        "text": "The child tries one small action of gratitude, such as speaking gently, waiting calmly, or helping at home."
+        "title": "Daily Reflection Action",
+        "text": "The child chooses one gentle action connected to the day’s value."
       },
       {
         "id": "panel-4",
-        "title": "Grateful Good Night — Reflection",
-        "text": "Together, parent and child reflect on how gratitude can make the day more peaceful and kind."
+        "title": "Family Reflection",
+        "text": "What one calm and kind action will you choose today?"
       }
     ],
     "parentNote": {
-      "sourceContext": "This item explains sacred meaning in simple child-facing language while preserving respect.",
-      "valueExplained": "The focus is gratitude, gratitude, calm attention, and devotion in daily life.",
-      "discussionPrompt": "What is one moment today where your child can practice gratitude with care and respect?",
-      "practicePrompt": "Invite a short pause, one deep breath, and one gentle action.",
-      "cautionNote": "Avoid pressure, perfection language, or performance framing."
+      "sourceContext": "This entry explains the meaning focus of daily prayer meaning in child-safe language with sacred respect.",
+      "valueExplained": "Children are guided toward calm through simple, practical actions.",
+      "discussionPrompt": "Which small family routine can reinforce this value today?",
+      "practicePrompt": "Pause, breathe, and choose one respectful action.",
+      "cautionNote": "No ritual pressure, no performance framing, and no fear/shame language."
     },
-    "reflectionPrompt": "Which one small step of gratitude feels kind and possible for you today?",
-    "ritualPrompt": "Sit quietly for a few breaths and share one gratitude thought.",
-    "completionBlessing": "May your heart stay calm, kind, and devoted.",
+    "reflectionPrompt": "What one calm and kind action will you choose today?",
+    "ritualPrompt": "Take three calm breaths and share one gratitude thought.",
+    "completionBlessing": "May understanding grow with calm, kindness, and devotion.",
     "sacredRespectLevel": "sacred_story",
     "illustrationPrompt": {
-      "sceneSummary": "Parent-guided child reflection on grateful good night with peaceful home setting.",
-      "styleGuidance": "Warm, respectful, child-safe, non-performative.",
+      "sceneSummary": "Parent-guided conversation about daily prayer meaning with warm home setting.",
+      "styleGuidance": "Warm, respectful, child-safe.",
       "culturalGuardrails": [
         "Respect sacred traditions",
         "No mockery",
@@ -7280,7 +7131,6 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
       "deityTreatment": "Reverent and subtle",
       "avoidList": [
         "ritual pressure",
-        "competition framing",
         "pronunciation scoring",
         "fear or shame"
       ]
@@ -7301,7 +7151,7 @@ export const shlokaMantraMeaningExpansionPackV1Stories: ExtendedStory[] = [
     "readinessStatus": "metadata_only",
     "audioStatus": "script_needed",
     "journeyStatus": "journey_ordered",
-    "sacredRespectNotes": "Meaning-first sacred guidance only. No chanting pressure, no performance framing, no magical claims."
+    "sacredRespectNotes": "Meaning narration only; no chanting performance or ritual pressure."
   }
 ];
 

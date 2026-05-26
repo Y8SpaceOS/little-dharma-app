@@ -16,7 +16,8 @@ export type StoryExperienceCategoryId =
   | 'festival_stories'
   | 'bhagavad_gita_for_children'
   | 'mahabharata_child_safe'
-  | 'panchatantra_hitopadesha';
+  | 'panchatantra_hitopadesha'
+  | 'shloka_mantra_meanings';
 
 export type StoryExperienceJourneyStatus = 'none' | 'journey_indexed' | 'journey_ordered' | 'journey_runtime_ready' | 'journey_outline_only';
 
