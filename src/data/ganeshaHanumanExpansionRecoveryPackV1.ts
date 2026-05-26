@@ -1,4 +1,4 @@
-import type { Story, StoryPack } from '@/types/contentModel';
+import type { DharmaJourney, Story, StoryPack } from '@/types/contentModel';
 import type { StoryExperienceCategoryId } from '@/types/storyExperienceIndex';
 
 type ExtendedStory = Story & { storyId: string; primaryCategoryId: StoryExperienceCategoryId; secondaryCategoryIds: StoryExperienceCategoryId[]; sacredRespectNotes?: string; audioScript?: { narrationScript: string; voiceDirection: string; pronunciationNotes: string; pacingNotes: string; audioReadinessIntent: 'ready' }; };
@@ -914,3 +914,30 @@ const indexedOnlyStories: RuntimeSeed[] = [
 export const ganeshaHanumanExpansionRecoveryPackV1Stories: ExtendedStory[] = [...runtimeStories, ...indexedOnlyStories].map((entry) => ({ id: entry.storyId, storyId: entry.storyId, slug: entry.storyId, title: entry.title, shortTitle: entry.shortTitle, summary: entry.summary, sourceTradition: entry.sourceTradition, sourceTextOrTraditionNote: entry.sacredRespectNotes, recommendedAgeBand: '5-8', ritualPrompt: entry.reflectionPrompt, parentTip: entry.parentNote.discussionPrompt, lzTheme: 'wisdom', audioAvailable: false, coverImage: 'ganesha-hanuman-pack-v1', icon: 'lotus', theme: 'kindness', mood: 'calm', length: 'medium', ageGroup: '5-8', tags: entry.secondaryValues, deity: entry.sourceTradition, tradition: entry.sourceTradition, festival: 'none', location: 'India', moral: entry.primaryValue, content: entry.panels.map((text, index) => ({ type: 'paragraph', text, id: `${entry.storyId}-p-${index + 1}` })), reflection: { question: entry.reflectionPrompt, prompt: entry.reflectionPrompt, action: entry.parentNote.discussionPrompt }, createdAt: '2026-05-23', updatedAt: '2026-05-23', source: entry.parentNote.sourceContext, values: [entry.primaryValue, ...entry.secondaryValues], difficulty: 'easy', status: entry.status, primaryCategoryId: entry.primaryCategoryId, secondaryCategoryIds: entry.secondaryCategoryIds, storyPackId, journeyId: entry.journeyId, journeyOrder: entry.journeyOrder, ageBands: entry.ageBands, durationMinutes: entry.durationMinutes, primaryValue: entry.primaryValue, secondaryValues: entry.secondaryValues, characters: entry.characters, readinessStatus: entry.readinessStatus, audioStatus: entry.audioStatus, audioMetadata: { audioAvailable: false, voiceOptions: ['warm-indian-female','warm-indian-male'], narrationScriptStatus: entry.audioScript ? 'qa_ready' : 'indexed', preferredVoiceStyle: 'warm-indian', pacing: 'steady', noMicRequired: true }, journeyStatus: entry.journeyStatus, sacredRespectNotes: entry.sacredRespectNotes, parentNote: entry.parentNote, reflectionPrompt: entry.reflectionPrompt, panels: entry.panels.map((text) => ({ text })), audioScript: entry.audioScript })) as unknown as ExtendedStory[];
 
 export const ganeshaHanumanExpansionRecoveryPackV1StoryPack: StoryPack = { id: storyPackId, title: 'Ganesha + Hanuman Expansion Recovery Pack v1', childFacingTitle: 'Ganesha and Hanuman Story Journey', description: 'Recovery-aligned local-first content pack adding indexed, QA-staged, and audio-script-ready devotional stories.', sourceTradition: 'Ganesha + Hanuman', category: 'ganesha', status: 'indexed', storyIds: ganeshaHanumanExpansionRecoveryPackV1Stories.map((s) => s.id), recommendedAgeBands: ['3-5','6-8'], contentSafetyNotes: ['QA-staged only: no runtime resolver bypass.', 'No backend, tracking, sharing, or notification dependency.'], sacredRespectNotes: ['Sacred content remains respectful, warm, and child-safe.'] };
+
+
+export const ganeshaHanumanExpansionRecoveryPackV1GaneshaJourney: DharmaJourney = {
+  id: ganeshaJourneyId,
+  title: 'Ganesha Wisdom Journey',
+  childFacingTitle: 'Ganesha Story Journey',
+  description: 'Child-safe guided journey for Ganesha stories in the expansion recovery pack.',
+  sourceTradition: 'Ganesha',
+  recommendedAgeBands: ['3-5','6-8'],
+  storyIds: ganeshaHanumanExpansionRecoveryPackV1Stories.filter((s) => s.journeyId === ganeshaJourneyId).map((s) => s.id),
+  estimatedCompletionWeeks: 8,
+  status: 'qa_ready',
+  journeyType: 'guided_path'
+};
+
+export const ganeshaHanumanExpansionRecoveryPackV1HanumanJourney: DharmaJourney = {
+  id: hanumanJourneyId,
+  title: 'Hanuman Journey',
+  childFacingTitle: 'Hanuman Story Journey',
+  description: 'Child-safe guided journey for Hanuman stories in the expansion recovery pack.',
+  sourceTradition: 'Hanuman',
+  recommendedAgeBands: ['3-5','6-8'],
+  storyIds: ganeshaHanumanExpansionRecoveryPackV1Stories.filter((s) => s.journeyId === hanumanJourneyId).map((s) => s.id),
+  estimatedCompletionWeeks: 8,
+  status: 'qa_ready',
+  journeyType: 'guided_path'
+};
