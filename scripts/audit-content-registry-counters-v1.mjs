@@ -33,9 +33,9 @@ const readinessCounts = countBy(contentRegistryStories, 'readinessStatus');
 const audioCounts = countBy(contentRegistryStories, 'audioStatus');
 const categoryCounts = countBy(contentRegistryStories, 'primaryCategoryId');
 
-const qaReadyCount = (readinessCounts.qa_ready || 0) + (statusCounts.qa_ready || 0);
-const runtimeReadyCount = (readinessCounts.runtime_ready || 0) + (statusCounts.runtime_ready || 0) + (statusCounts.available || 0);
-const audioScriptReadyCount = (audioCounts.script_ready || 0) + (audioCounts.audio_ready || 0) + (audioCounts.audio_available || 0);
+const qaReadyCount = contentRegistryStories.filter((s) => s.status === 'qa_ready' || s.readinessStatus === 'qa_ready').length;
+const runtimeReadyCount = contentRegistryStories.filter((s) => s.status === 'runtime_ready' || s.status === 'available' || s.readinessStatus === 'runtime_ready').length;
+const audioScriptReadyCount = contentRegistryStories.filter((s) => ['script_ready', 'audio_ready', 'audio_available'].includes(String(s.audioStatus))).length;
 const publishedLocalCount = contentRegistryStories.filter((s) => ['runtime_ready','available'].includes(String(s.status))).length;
 
 const summary = getContentRegistryCoverageSummary();
@@ -53,6 +53,7 @@ if (duplicatePackIds.length) errors.push(`Duplicate pack IDs: ${duplicatePackIds
 if (duplicateJourneyIds.length) errors.push(`Duplicate journey IDs: ${duplicateJourneyIds.join(', ')}`);
 if (missingJourneyRefs.length) errors.push(`Stories reference missing journey IDs: ${missingJourneyRefs.join(', ')}`);
 if (missingPackRefs.length) errors.push(`Stories reference missing pack IDs: ${missingPackRefs.join(', ')}`);
+if (orphanJourneyIds.length) errors.push(`Orphan journey IDs: ${orphanJourneyIds.join(', ')}`);
 if (nonCanonicalCategories.length) errors.push(`Non-canonical category IDs: ${nonCanonicalCategories.join(', ')}`);
 if (runtimeReadyCount > 0) errors.push(`Runtime-ready stories detected (${runtimeReadyCount}); this governance gate expects zero runtime-ready stories.`);
 if (sacredViolations.length) errors.push(`Sacred-content audio/voice behavior violations: ${sacredViolations.slice(0, 20).join(', ')}${sacredViolations.length > 20 ? '…' : ''}`);
