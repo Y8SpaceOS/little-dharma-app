@@ -104,9 +104,9 @@ Audit source: `npm run validate:content-registry-counters-v1` using canonical re
 
 ### Category breakdown (`primaryCategoryId`)
 
-- missing: 36
+- krishna_stories: 141
+- missing: 15
 - ramayana_journey: 100
-- krishna_stories: 120
 - ganesha_stories: 50
 - hanuman_stories: 50
 - bedtime_stories: 50
@@ -121,14 +121,14 @@ Audit source: `npm run validate:content-registry-counters-v1` using canonical re
 - status.indexed: 531
 - status.qa_ready: 300
 - readinessStatus.qa_ready: 200
-- readinessStatus.metadata_only: 375
-- readinessStatus.missing: 256
+- readinessStatus.metadata_only: 396
+- readinessStatus.missing: 235
 
 ### Audio readiness breakdown
 
 - audioStatus.script_ready: 155
-- audioStatus.script_needed: 420
-- audioStatus.missing: 256
+- audioStatus.script_needed: 441
+- audioStatus.missing: 235
 - audio_script_ready_count: 155
 
 ### Journey coverage
@@ -150,9 +150,9 @@ Audit source: `npm run validate:content-registry-counters-v1` using canonical re
 
 ### Known limitations
 
-- 36 legacy stories in registry do not yet carry `primaryCategoryId`, `readinessStatus`, or `audioStatus` on the record itself; they appear as `missing` in category/readiness/audio breakdowns.
+- 220 stories in registry still do not yet carry explicit `readinessStatus` and `audioStatus` on the record itself; these continue to appear under `missing` until their owning packs are normalized in future PRs.
 - `getContentRegistryCoverageSummary()` does not enumerate story-pack IDs directly, so pack coverage is validated structurally in this audit script rather than summary-text matching.
 
 ### Next recommended content-system action
 
-Normalize the 36 legacy registry stories to explicit Story Experience Index fields (`primaryCategoryId`, `readinessStatus`, `audioStatus`) so all governance counters are fully field-backed and no longer reported under `missing`.
+Continue phased metadata normalization for remaining legacy packs so `readinessStatus.missing` and `audioStatus.missing` converge to zero without changing runtime behavior or promoting stories to `runtime_ready`.

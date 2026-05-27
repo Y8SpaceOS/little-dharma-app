@@ -62,6 +62,10 @@ export type Story = {
   sourceTradition: string;
   sourceTextOrTraditionNote: string;
   storyPackId: string;
+  primaryCategoryId?: string;
+  readinessStatus?: 'metadata_only' | 'qa_ready' | 'runtime_ready' | 'blocked' | 'deprecated';
+  audioStatus?: 'script_needed' | 'script_ready' | 'audio_ready' | 'audio_available';
+  journeyStatus?: 'journey_ordered' | 'journey_optional' | 'journey_missing' | 'journey_unordered';
   journeyId?: string;
   journeyOrder?: number;
   ageBands: AgeBand[];
