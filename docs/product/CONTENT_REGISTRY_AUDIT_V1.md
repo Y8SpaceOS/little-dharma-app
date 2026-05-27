@@ -39,3 +39,9 @@ The script reads `contentRegistryStories`, `contentRegistryStoryPacks`, and `con
 ## Why approximate counters should be avoided
 
 Approximate counts drift after repeated expansion-pack merges and hide registry integrity regressions (missing journey links, duplicate IDs, or category drift). After this PR, exact audited counters are required for product-status reporting and PR #207 progress tracking.
+
+
+## Current normalization note
+
+- PR #174 normalized 21 Vrindavan legacy registry stories with explicit `primaryCategoryId`, `readinessStatus`, `audioStatus`, and `journeyStatus` metadata using conservative defaults (`krishna_stories`, `metadata_only`, `script_needed`).
+- Integrity gates remain unchanged: no runtime-ready promotion and no new audio assets.
