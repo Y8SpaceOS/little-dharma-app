@@ -90,3 +90,69 @@ Add a dedicated counter audit PR after several more content packs:
 
 - Shloka + Mantra Meaning Expansion Pack v1 added 75 indexed stories, 25 QA-staged runtime candidates, and 25 audio-script-ready candidates in local-first mode with no runtime-ready promotion.
 - Approximate totals after PR #172 are 795 indexed, 285+ QA-staged runtime candidates, and 210 audio-script-ready candidates.
+
+
+## Content Registry Audit after PR #172
+
+Audit source: `npm run validate:content-registry-counters-v1` using canonical registry exports.
+
+### Exact totals
+
+- Total registered stories: **831**
+- Total story packs: **12**
+- Total journeys: **11**
+
+### Category breakdown (`primaryCategoryId`)
+
+- missing: 36
+- ramayana_journey: 100
+- krishna_stories: 120
+- ganesha_stories: 50
+- hanuman_stories: 50
+- bedtime_stories: 50
+- values_stories: 50
+- festival_stories: 100
+- bhagavad_gita_for_children: 100
+- mahabharata_child_safe: 100
+- shloka_mantra_meanings: 75
+
+### Status breakdown
+
+- status.indexed: 531
+- status.qa_ready: 300
+- readinessStatus.qa_ready: 200
+- readinessStatus.metadata_only: 375
+- readinessStatus.missing: 256
+
+### Audio readiness breakdown
+
+- audioStatus.script_ready: 155
+- audioStatus.script_needed: 420
+- audioStatus.missing: 256
+- audio_script_ready_count: 155
+
+### Journey coverage
+
+- Journey-linked stories: 831
+- Stories without `journeyId`: 0
+- Missing journey references: 0
+- Orphan journeys: 0
+
+### Integrity gate snapshot
+
+- duplicate story IDs: none
+- duplicate pack IDs: none
+- duplicate journey IDs: none
+- missing pack references: none
+- non-canonical categories: none
+- runtime-ready stories: 0
+- published-local stories: 0
+
+### Known limitations
+
+- 36 legacy stories in registry do not yet carry `primaryCategoryId`, `readinessStatus`, or `audioStatus` on the record itself; they appear as `missing` in category/readiness/audio breakdowns.
+- `getContentRegistryCoverageSummary()` does not enumerate story-pack IDs directly, so pack coverage is validated structurally in this audit script rather than summary-text matching.
+
+### Next recommended content-system action
+
+Normalize the 36 legacy registry stories to explicit Story Experience Index fields (`primaryCategoryId`, `readinessStatus`, `audioStatus`) so all governance counters are fully field-backed and no longer reported under `missing`.

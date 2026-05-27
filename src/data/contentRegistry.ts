@@ -5,7 +5,7 @@ import { krishnaChildhoodPack1Journey, krishnaChildhoodPack1Stories, krishnaChil
 import { ganeshaWisdomPack1Journey, ganeshaWisdomPack1Stories, ganeshaWisdomPack1StoryPack } from '@/data/ganeshaWisdomPack1Registry';
 import { ramayanaExpansionRecoveryPackV1Stories, ramayanaExpansionRecoveryPackV1StoryPack } from '@/data/ramayanaExpansionRecoveryPackV1';
 import { krishnaChildhoodExpansionRecoveryPackV1Stories, krishnaChildhoodExpansionRecoveryPackV1StoryPack } from '@/data/krishnaChildhoodExpansionRecoveryPackV1';
-import { ganeshaHanumanExpansionRecoveryPackV1Stories, ganeshaHanumanExpansionRecoveryPackV1StoryPack } from '@/data/ganeshaHanumanExpansionRecoveryPackV1';
+import { ganeshaHanumanExpansionRecoveryPackV1Stories, ganeshaHanumanExpansionRecoveryPackV1StoryPack, ganeshaHanumanExpansionRecoveryPackV1GaneshaJourney, ganeshaHanumanExpansionRecoveryPackV1HanumanJourney } from '@/data/ganeshaHanumanExpansionRecoveryPackV1';
 import { bedtimeValuesExpansionPackV1Stories, bedtimeValuesExpansionPackV1StoryPack, bedtimeValuesExpansionPackV1Journey } from '@/data/bedtimeValuesExpansionPackV1';
 import { festivalStoriesExpansionPackV1Stories, festivalStoriesExpansionPackV1StoryPack, festivalStoriesExpansionPackV1Journey } from '@/data/festivalStoriesExpansionPackV1';
 import { bhagavadGitaForChildrenExpansionPackV1Stories, bhagavadGitaForChildrenExpansionPackV1StoryPack, bhagavadGitaForChildrenExpansionPackV1Journey } from '@/data/bhagavadGitaForChildrenExpansionPackV1';
@@ -79,6 +79,8 @@ export const contentRegistryJourneys: DharmaJourney[] = [
   ramayanaPack1Journey,
   krishnaChildhoodPack1Journey,
   ganeshaWisdomPack1Journey,
+  ganeshaHanumanExpansionRecoveryPackV1GaneshaJourney,
+  ganeshaHanumanExpansionRecoveryPackV1HanumanJourney,
   bedtimeValuesExpansionPackV1Journey,
   festivalStoriesExpansionPackV1Journey,
   bhagavadGitaForChildrenExpansionPackV1Journey,
