@@ -48,3 +48,4 @@
 - The stale P1 concern about `/journey-map/[journeyId]` is addressed by the child-facing journey map route.
 - The PR Testing section should list the final passing commands: `npm run typecheck`, `npm run lint`, `npm run test`, `npm run validate:story-experience-index-model-v1`, `npm run validate:runtime-ready-story-gate-v1`, `npm run validate:bulk-content-import-pipeline-v2`, and `npm run validate:content-registry-counters-v1`.
 - No further product or code changes are required before merge.
+- GitHub cleanup: resolve the stale P1 review thread and keep the PR Testing section aligned to the passing Quality Gates above.
