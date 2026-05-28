@@ -18,7 +18,10 @@ export type StoryWorldBrowseCard = {
   isRuntimeAvailable: boolean;
   isSequential: boolean;
   journeyId: string | null;
+  journeyTag: string | null;
   storyPackId: string | null;
+  hasAudioMetadata: boolean;
+  localFirstHint: string;
   accessibilityLabel: string;
   accessibilityHint: string;
 };
