@@ -55,7 +55,7 @@ export function mapRegistryStoryToBrowseCard(story: Story): StoryWorldBrowseCard
     shortTitle: story.shortTitle,
     summary: story.summary,
     category: getStoryCategory(story),
-    href: isRuntimeAvailable ? `/story/${story.slug}` : '/(child)/worlds',
+    href: story.journeyId ? `/journey-map/${story.journeyId}` : isRuntimeAvailable ? `/story/${story.slug}` : '/(child)/worlds',
     status,
     durationMinutes: story.durationMinutes,
     primaryValue: story.primaryValue,
@@ -69,7 +69,7 @@ export function mapRegistryStoryToBrowseCard(story: Story): StoryWorldBrowseCard
     hasAudioMetadata: story.audioMetadata.audioAvailable || story.audioStatus === 'script_ready' || story.audioStatus === 'audio_ready' || story.audioStatus === 'audio_available',
     localFirstHint: 'Local-first and family-safe on this device.',
     accessibilityLabel: story.title,
-    accessibilityHint: isRuntimeAvailable ? 'Open story' : 'Story details are being prepared'
+    accessibilityHint: story.journeyId ? 'Open Dharma Journey map' : isRuntimeAvailable ? 'Open story' : 'Story details are being prepared'
   };
 }
 
