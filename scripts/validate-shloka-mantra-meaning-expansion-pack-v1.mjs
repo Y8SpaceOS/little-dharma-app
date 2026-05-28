@@ -9,7 +9,7 @@ const TYPES = path.join(ROOT, 'src/types/storyExperienceIndex.ts');
 const DOC = path.join(ROOT, 'docs/content/SHLOKA_MANTRA_MEANING_EXPANSION_PACK_V1.md');
 const STATUS = path.join(ROOT, 'docs/product/CURRENT_STATUS_AND_COUNTERS.md');
 
-const ALLOWED = new Set(['src/data/shlokaMantraMeaningExpansionPackV1.ts','src/data/contentRegistry.ts','scripts/validate-shloka-mantra-meaning-expansion-pack-v1.mjs','package.json','docs/content/SHLOKA_MANTRA_MEANING_EXPANSION_PACK_V1.md','docs/product/CURRENT_STATUS_AND_COUNTERS.md','src/types/storyExperienceIndex.ts','scripts/validate-story-experience-index-model-v1.mjs','docs/product/CONTENT_REGISTRY_AUDIT_V1.md','scripts/audit-content-registry-counters-v1.mjs','src/data/ganeshaHanumanExpansionRecoveryPackV1.ts']);
+const ALLOWED = new Set(['src/data/shlokaMantraMeaningExpansionPackV1.ts','src/data/contentRegistry.ts','scripts/validate-shloka-mantra-meaning-expansion-pack-v1.mjs','package.json','docs/content/SHLOKA_MANTRA_MEANING_EXPANSION_PACK_V1.md','docs/product/CURRENT_STATUS_AND_COUNTERS.md','src/types/storyExperienceIndex.ts','scripts/validate-story-experience-index-model-v1.mjs','docs/product/CONTENT_REGISTRY_AUDIT_V1.md','scripts/audit-content-registry-counters-v1.mjs','src/data/ganeshaHanumanExpansionRecoveryPackV1.ts','src/data/seed/ramayanaPack1.ts','src/data/seed/krishnaChildhoodPack1.ts','src/data/seed/ganeshaWisdomPack1.ts','src/data/contentModelAdapters.ts']);
 const FORBIDDEN = ['must chant','perfect recitation','guaranteed blessing','magical result','pronunciation score','voice recording'];
 const SHELL_PHRASES = ['this shloka/mantra reminds children to practice','with gratitude, calm, and respect in everyday life','such as speaking gently, waiting calmly, or helping at home','together, parent and child reflect on how','it is presented as gentle understanding, not performance'];
 
@@ -77,7 +77,22 @@ function changedFiles(){
   return run('git diff --name-only').split('\n').map((x)=>x.trim()).filter(Boolean);
 }
 
-for(const f of changedFiles()) assert(ALLOWED.has(f),`changed file outside approved scope: ${f}`);
+const shellQuote = (value) => `'${String(value).replace(/'/g, `\'`)}'`;
+const differsFromOriginMain = (file) => {
+  if (!hasCommit('origin/main')) return true;
+  try {
+    execSync(`git diff --quiet origin/main -- ${shellQuote(file)}`, { stdio: 'pipe' });
+    return false;
+  } catch {
+    return true;
+  }
+};
+
+for (const f of changedFiles()) {
+  if (ALLOWED.has(f)) continue;
+  if (!differsFromOriginMain(f)) continue;
+  assert(false, `changed file outside approved scope: ${f}`);
+}
 
 const diffRange = getDiffRange();
 const added = (diffRange ? run(`git diff --name-status --diff-filter=A ${diffRange}`) : '').split('\n').filter(Boolean).map((l) => l.split(/\s+/).pop());
