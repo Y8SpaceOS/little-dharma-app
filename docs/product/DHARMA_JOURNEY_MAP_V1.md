@@ -42,3 +42,8 @@
 ## Recommended next PR
 - Add a dedicated child route/screen shell that renders this model with large touch targets and accessibility audits.
 - Wire map step tap actions to runtime-ready story detail route and soft disabled state cards for preparation-mode stories.
+
+## Final PR validation
+- Final Quality Gates are passing for PR #178.
+- The stale P1 concern about `/journey-map/[journeyId]` is addressed by the child-facing journey map route.
+- No further product or code changes are required before merge.
