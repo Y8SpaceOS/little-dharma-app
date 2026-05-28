@@ -42,7 +42,10 @@ export const krishnaChildhoodPack1Stories: Story[] = [
       deityTreatment: 'Deity-focal presentation with playful warmth and sacred restraint.',
       avoidList: ['No slapstick teasing cues.', 'No caricature deity styling.', 'No reward counters or game motifs.']
     },
+    primaryCategoryId: 'krishna_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'warm-storyteller', pacing: 'slow', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -86,7 +89,10 @@ export const krishnaChildhoodPack1Stories: Story[] = [
       deityTreatment: 'Krishna shown with childlike warmth and reverential restraint.',
       avoidList: ['No shame-heavy posture.', 'No threatening imagery.', 'No comedic mockery.']
     },
+    primaryCategoryId: 'krishna_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'gentle-guide', pacing: 'steady', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -130,7 +136,10 @@ export const krishnaChildhoodPack1Stories: Story[] = [
       deityTreatment: 'Deity-focal with humble compassion and calm presence.',
       avoidList: ['No distress-heavy animal imagery.', 'No exaggerated comedy.', 'No game-like achievement symbols.']
     },
+    primaryCategoryId: 'krishna_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'steady-guide', pacing: 'steady', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -174,7 +183,10 @@ export const krishnaChildhoodPack1Stories: Story[] = [
       deityTreatment: 'Sacred focal depiction with gentle radiance and restraint.',
       avoidList: ['No trance-like fear cues.', 'No chaotic cartoon effects.', 'No competition visuals.']
     },
+    primaryCategoryId: 'krishna_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'calm-storyteller', pacing: 'slow', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -218,7 +230,10 @@ export const krishnaChildhoodPack1Stories: Story[] = [
       deityTreatment: 'Krishna portrayed with warmth, humility, and sacred composure.',
       avoidList: ['No teasing-for-laughs framing.', 'No trophy/points imagery.', 'No loud caricature styling.']
     },
+    primaryCategoryId: 'krishna_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'warm-guide', pacing: 'medium', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   }
 ];
