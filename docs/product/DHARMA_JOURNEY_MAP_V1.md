@@ -40,10 +40,11 @@
 - Story availability language uses “prepared with care” for non-runtime steps.
 
 ## Recommended next PR
-- Add a dedicated child route/screen shell that renders this model with large touch targets and accessibility audits.
-- Wire map step tap actions to runtime-ready story detail route and soft disabled state cards for preparation-mode stories.
+- Add visual QA evidence for the journey map on device sizes used in child-facing flows.
+- Add parent-facing explanation copy for how gentle journey progress is represented without competitive mechanics.
 
 ## Final PR validation
 - Final Quality Gates are passing for PR #178.
 - The stale P1 concern about `/journey-map/[journeyId]` is addressed by the child-facing journey map route.
+- The PR Testing section should list the final passing commands: `npm run typecheck`, `npm run lint`, `npm run test`, `npm run validate:story-experience-index-model-v1`, `npm run validate:runtime-ready-story-gate-v1`, `npm run validate:bulk-content-import-pipeline-v2`, and `npm run validate:content-registry-counters-v1`.
 - No further product or code changes are required before merge.
