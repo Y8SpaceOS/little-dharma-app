@@ -1,4 +1,4 @@
-# Dharma Journey Map v1 (PR #178)
+# Dharma Journey Map v1 (PR #178) + Polish/Safe Interaction v1 (PR #179)
 
 ## Supported journeys
 - Krishna Childhood Journey (`krishna-childhood-journey-pack-1`)
@@ -7,27 +7,56 @@
 
 ## What the map shows
 - Journey title and child-facing description.
+- A warm journey context line that invites the child to follow one gentle step at a time.
+- Subtle parent-trust copy that stays local-first and care-focused without dashboard or corporate language.
 - Ordered story steps from `contentRegistryJourneys.storyIds` using existing story metadata.
-- Each step includes title, summary, value, age bands, and duration when available.
+- Each step includes step number, path marker, story title, one-line summary, value, age band, duration, readiness state, and a gentle trust label.
 - Gentle path markers (diya, flower, lotus dot) for child-friendly wayfinding.
+- A soft connector treatment between steps so the screen feels like a path rather than a flat list.
 - Step states: `completed`, `available`, `coming_soon`, `being_prepared`, and `missing`.
 - If a step is not runtime eligible, it uses “Being prepared with care.”
 
-## Navigation behavior
-- Story cards with `journeyId` may route to `/journey-map/{journeyId}`.
-- Runtime-ready stories keep direct story access through existing story routes.
-- Existing story navigation is preserved for non-journey stories.
+## PR #179 visual polish
+- The hero keeps the child-facing journey title and description while adding a warmer context line: follow one step at a time, with room to pause and wonder.
+- The path uses a vertical rail, soft connector, and existing marker emojis (`diya`, `flower`, `lotus_dot`) to make the sequence feel gentle and guided.
+- Step cards have clearer hierarchy: step number and readiness state first, then story title, summary, value, age band, duration, and trust label.
+- Disabled cards remain warm and visible rather than looking broken or punitive.
+
+## Safe step interaction rules
+- A step is tappable only when the journey map service marks it as runtime-safe (`isTappable: true`).
+- Runtime-safe means the story passes the existing runtime story eligibility gate and resolves to `available` or `completed` journey-map state.
+- `available` steps route to their existing local story reader route.
+- `completed` steps may be revisited through the same local story route.
+- Non-runtime-ready, coming-soon, missing, or being-prepared steps are never routed to Story World as a confusing fallback.
+- Disabled steps do nothing on tap.
+
+## Disabled step behavior
+- Disabled step state copy says: “Being prepared with care.”
+- Disabled accessibility hints explain that the step is not ready yet.
+- Disabled cards keep readable contrast, large touch-target sizing, and warm visual treatment.
+- Disabled cards do not promote `runtime_ready`, change story status, add locks, or imply a reward mechanic.
 
 ## Empty and fallback behavior
-- Missing `journeyOrder` is tolerated and never crashes rendering.
-- If no ordered stories are found, the map renders a warm fallback message.
-- Missing story metadata degrades safely through map-level fallback and non-crashing step generation.
+- Missing journey ID renders a warm not-found state instead of crashing.
+- Unsupported journey ID renders an unsupported-but-safe state and does not expose steps.
+- A supported journey with no steps renders: “This Dharma Journey is being prepared with care.”
+- Missing story metadata uses gentle fallback labels and never crashes the screen.
+- Missing `journeyOrder` is tolerated and sorts safely after ordered stories.
 
-## Intentionally not included in v1
+## Accessibility behavior
+- The journey hero has a header accessibility label with the child-facing title, description, and gentle path context.
+- Each step announces step number, title, readiness state, value, age band, and duration.
+- Disabled steps set the accessibility disabled state and explain that the step is being prepared with care.
+- Step cards preserve large touch targets and readable contrast.
+
+## Intentionally not included in v1 / PR #179
+- No new stories.
+- No story text changes.
+- No promotion to `runtime_ready`.
 - No XP, coins, streaks, rankings, leaderboards, energy bars, loot, or paid locks.
 - No lock-gate mechanics or addictive progression loops.
-- No audio playback, chanting, TTS, microphone, voice recording, or pronunciation scoring.
-- No backend, account, analytics, or tracking dependency.
+- No audio files, audio playback, chanting, TTS, microphone, voice recording, or pronunciation scoring.
+- No backend, account, analytics, tracking, or network dependency.
 
 ## Progress-state limitations
 - Progress is local and gentle (`gentle_local_stub`).
@@ -40,12 +69,11 @@
 - Story availability language uses “prepared with care” for non-runtime steps.
 
 ## Recommended next PR
-- Add visual QA evidence for the journey map on device sizes used in child-facing flows.
-- Add parent-facing explanation copy for how gentle journey progress is represented without competitive mechanics.
+- Add device visual QA evidence for the polished journey map on small and large child-facing screen sizes.
+- Add a lightweight regression validator for journey-map safe interaction copy and disabled-route behavior.
+- Consider a parent-facing explainer for gentle journey progress that does not introduce competitive mechanics.
 
 ## Final PR validation
-- Final Quality Gates are passing for PR #178.
-- The stale P1 concern about `/journey-map/[journeyId]` is addressed by the child-facing journey map route.
-- The PR Testing section should list the final passing commands: `npm run typecheck`, `npm run lint`, `npm run test`, `npm run validate:story-experience-index-model-v1`, `npm run validate:runtime-ready-story-gate-v1`, `npm run validate:bulk-content-import-pipeline-v2`, and `npm run validate:content-registry-counters-v1`.
-- No further product or code changes are required before merge.
-- GitHub cleanup: resolve the stale P1 review thread and keep the PR Testing section aligned to the passing Quality Gates above.
+- PR #179 should run: `npm run typecheck`, `npm run lint`, `npm run test`, `npm run validate:story-experience-index-model-v1`, `npm run validate:runtime-ready-story-gate-v1`, `npm run validate:bulk-content-import-pipeline-v2`, and `npm run validate:content-registry-counters-v1`.
+- The PR Testing section should list the final command results.
+- No product or code changes outside journey-map visual polish, safe interaction, fallback state hardening, accessibility, and documentation are required for this PR.

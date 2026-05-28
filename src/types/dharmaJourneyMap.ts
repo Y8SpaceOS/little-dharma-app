@@ -13,10 +13,11 @@ export type DharmaJourneyMapStep = {
   summary: string;
   primaryValue: string;
   ageBands: AgeBand[];
-  durationMinutes: number;
+  durationMinutes: number | null;
   state: DharmaJourneyMapStepState;
   pathMarker: DharmaJourneyMapPathMarker;
   href: string;
+  isTappable: boolean;
   trustLabel: string;
 };
 
