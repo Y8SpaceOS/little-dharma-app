@@ -44,4 +44,5 @@ Approximate counts drift after repeated expansion-pack merges and hide registry 
 ## Current normalization note
 
 - PR #174 normalized 21 Vrindavan legacy registry stories with explicit `primaryCategoryId`, `readinessStatus`, `audioStatus`, and `journeyStatus` metadata using conservative defaults (`krishna_stories`, `metadata_only`, `script_needed`).
+- PR #175 normalized the remaining 15 category-missing registry stories (Ramayana Pack 1, Krishna Childhood Pack 1, Ganesha Wisdom Pack 1) with conservative canonical `primaryCategoryId` mapping and safe defaults `readinessStatus: metadata_only` + `audioStatus: script_needed`.
 - Integrity gates remain unchanged: no runtime-ready promotion and no new audio assets.

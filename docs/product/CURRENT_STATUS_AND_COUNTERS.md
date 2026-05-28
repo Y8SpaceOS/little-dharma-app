@@ -104,10 +104,9 @@ Audit source: `npm run validate:content-registry-counters-v1` using canonical re
 
 ### Category breakdown (`primaryCategoryId`)
 
-- krishna_stories: 141
-- missing: 15
-- ramayana_journey: 100
-- ganesha_stories: 50
+- krishna_stories: 146
+- ramayana_journey: 105
+- ganesha_stories: 55
 - hanuman_stories: 50
 - bedtime_stories: 50
 - values_stories: 50
@@ -121,14 +120,14 @@ Audit source: `npm run validate:content-registry-counters-v1` using canonical re
 - status.indexed: 531
 - status.qa_ready: 300
 - readinessStatus.qa_ready: 200
-- readinessStatus.metadata_only: 396
-- readinessStatus.missing: 235
+- readinessStatus.metadata_only: 411
+- readinessStatus.missing: 220
 
 ### Audio readiness breakdown
 
 - audioStatus.script_ready: 155
-- audioStatus.script_needed: 441
-- audioStatus.missing: 235
+- audioStatus.script_needed: 456
+- audioStatus.missing: 220
 - audio_script_ready_count: 155
 
 ### Journey coverage

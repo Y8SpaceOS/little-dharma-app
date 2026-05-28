@@ -42,7 +42,10 @@ export const ganeshaWisdomPack1Stories: Story[] = [
       deityTreatment: 'Reverential focal presentation with warmth and restraint.',
       avoidList: ['No cartoon parody cues.', 'No slapstick expressions.', 'No gamification symbols.']
     },
+    primaryCategoryId: 'ganesha_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'warm-storyteller', pacing: 'slow', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -86,7 +89,10 @@ export const ganeshaWisdomPack1Stories: Story[] = [
       deityTreatment: 'Sacred storytelling presence with calm, loving warmth.',
       avoidList: ['No food-shaming cues.', 'No exaggerated comedy.', 'No reward charts or points icons.']
     },
+    primaryCategoryId: 'ganesha_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'gentle-guide', pacing: 'steady', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -130,7 +136,10 @@ export const ganeshaWisdomPack1Stories: Story[] = [
       deityTreatment: 'Sacred guide presence with quiet strength and compassion.',
       avoidList: ['No peril-heavy visuals.', 'No slapstick splashing humor.', 'No competitive framing.']
     },
+    primaryCategoryId: 'ganesha_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'steady-guide', pacing: 'steady', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -174,7 +183,10 @@ export const ganeshaWisdomPack1Stories: Story[] = [
       deityTreatment: 'Reverent focal guide with compassionate presence.',
       avoidList: ['No miracle spectacle framing.', 'No mocking frustration faces.', 'No game level-up motifs.']
     },
+    primaryCategoryId: 'ganesha_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'calm-storyteller', pacing: 'medium', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   },
   {
@@ -218,7 +230,10 @@ export const ganeshaWisdomPack1Stories: Story[] = [
       deityTreatment: 'Sacred storytelling accompaniment with reverent restraint.',
       avoidList: ['No perfection-pressure symbolism.', 'No reward scoreboard visuals.', 'No comedic deity framing.']
     },
+    primaryCategoryId: 'ganesha_stories',
     audioMetadata: { audioAvailable: false, voiceOptions: ['calm-narrator'], narrationScriptStatus: 'qa_ready', preferredVoiceStyle: 'warm-guide', pacing: 'slow', noMicRequired: true },
+    readinessStatus: 'metadata_only',
+    audioStatus: 'script_needed',
     status: 'qa_ready'
   }
 ];
