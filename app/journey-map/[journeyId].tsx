@@ -1,7 +1,9 @@
 import { useMemo } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { visualStyles, visualTokens } from '@/design/visualSystem';
+import { GradientScreen } from '@/components/dharmaKit';
+import { useReducedMotion } from '@/lib/useReducedMotion';
+import { palette, text } from '@/design/visualSystem';
 import { getDharmaJourneyMapByJourneyId } from '@/services/dharmaJourneyMapService';
 import type { DharmaJourneyMapModel, DharmaJourneyMapStep } from '@/types/dharmaJourneyMap';
 
@@ -23,14 +25,14 @@ function getStepStateCopy(step: DharmaJourneyMapStep): { title: string; hint: st
 }
 
 function EmptyJourneyState({ title, copy }: { title: string; copy: string }) {
-  return <SafeAreaView style={visualStyles.screen}>
+  return <GradientScreen gradient="body"><SafeAreaView style={styles.safe}>
     <View style={styles.center} accessibilityRole="summary" accessibilityLabel={`${title}. ${copy}`}>
       <Text style={styles.emptyMarker}>🪷</Text>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.subtitle}>{copy}</Text>
       <Text style={styles.trust}>Being prepared with care.</Text>
     </View>
-  </SafeAreaView>;
+  </SafeAreaView></GradientScreen>;
 }
 
 function JourneyHero({ map }: { map: DharmaJourneyMapModel }) {
@@ -48,6 +50,7 @@ function JourneyHero({ map }: { map: DharmaJourneyMapModel }) {
 }
 
 function StepCard({ step, isLast, onOpen }: { step: DharmaJourneyMapStep; isLast: boolean; onOpen: (step: DharmaJourneyMapStep) => void }) {
+  const reduceMotion = useReducedMotion();
   const state = getStepStateCopy(step);
   const marker = markerEmoji[step.pathMarker] ?? markerEmoji.lotus_dot;
   const ageBand = step.ageBands.length ? step.ageBands.join(', ') : 'All ages';
@@ -65,7 +68,7 @@ function StepCard({ step, isLast, onOpen }: { step: DharmaJourneyMapStep; isLast
         if (!state.disabled) onOpen(step);
       }}
       disabled={state.disabled}
-      style={({ pressed }) => [styles.stepCard, state.disabled && styles.stepCardDisabled, pressed && !state.disabled && styles.stepCardPressed]}
+      style={({ pressed }) => [styles.stepCard, state.disabled && styles.stepCardDisabled, !reduceMotion && pressed && !state.disabled && styles.stepCardPressed]}
       accessibilityRole="button"
       accessibilityState={{ disabled: state.disabled }}
       accessibilityLabel={`Step ${step.order}. ${step.title}. ${state.title}. Value: ${step.primaryValue}. Age: ${ageBand}. Duration: ${duration}.`}
@@ -112,7 +115,7 @@ export default function DharmaJourneyMapScreen() {
     return <EmptyJourneyState title={map.childFacingTitle || map.journeyTitle || 'Dharma Journey'} copy="This Dharma Journey is being prepared with care before it opens for families." />;
   }
 
-  return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
+  return <GradientScreen gradient="body"><SafeAreaView style={styles.safe}><ScrollView contentContainerStyle={styles.content}>
     <JourneyHero map={map} />
 
     {map.fallbackMessage ? <View style={styles.fallback} accessibilityRole="summary" accessibilityLabel={`Warm update. ${map.fallbackMessage}`}>
@@ -131,17 +134,18 @@ export default function DharmaJourneyMapScreen() {
       <Text style={styles.fallbackTitle}>Gentle path coming soon</Text>
       <Text style={styles.fallbackCopy}>This Dharma Journey is being prepared with care.</Text>
     </View>}
-  </ScrollView></SafeAreaView>;
+  </ScrollView></SafeAreaView></GradientScreen>;
 }
 
 const styles = StyleSheet.create({
+  safe: { flex: 1 },
   content: { padding: 16, gap: 16, paddingBottom: 36 },
   center: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 24, gap: 10 },
   emptyMarker: { fontSize: 34, marginBottom: 2 },
   hero: { borderRadius: 28, padding: 18, backgroundColor: '#FFF2DD', borderWidth: 1, borderColor: '#F4D9AD', gap: 7, shadowColor: '#7B4D1D', shadowOpacity: 0.08, shadowRadius: 12, shadowOffset: { width: 0, height: 6 }, elevation: 1 },
   kicker: { fontSize: 13, fontWeight: '800', color: '#7B4D1D', letterSpacing: 0.3 },
-  title: { fontSize: 30, fontWeight: '900', color: visualTokens.color.warmBrown },
-  subtitle: { fontSize: 15, lineHeight: 22, color: visualTokens.color.mutedBrown },
+  title: { ...text.display, color: palette.ink },
+  subtitle: { ...text.body, color: palette.muted },
   contextLine: { fontSize: 14, lineHeight: 20, color: '#7B4D1D', fontWeight: '800' },
   trust: { fontSize: 12, lineHeight: 18, color: '#6A4522', fontWeight: '700', opacity: 0.86 },
   fallback: { borderRadius: 20, borderWidth: 1, borderColor: '#E9D8BD', backgroundColor: '#FFF8EE', padding: 14, gap: 6 },
