@@ -1,48 +1,76 @@
 import { contentRegistryJourneys, contentRegistryStories } from '@/data/contentRegistry';
 import { getRuntimeStoryEligibility } from '@/services/runtimeStoryResolverV2';
-import type { Story } from '@/types/contentModel';
+import type { AgeBand, Story } from '@/types/contentModel';
 import type { DharmaJourneyMapModel, DharmaJourneyMapPathMarker, DharmaJourneyMapStep, DharmaJourneyMapStepState } from '@/types/dharmaJourneyMap';
 
-export const dharmaJourneyMapVersion = 'pr178-dharma-journey-map-v1';
+export const dharmaJourneyMapVersion = 'pr179-dharma-journey-map-polish-safe-step-interaction-v1';
 
-const supportedJourneyIds = new Set([
-  'krishna-childhood-journey-pack-1',
+export const dharmaJourneyMapCanonicalRouteIdsV1 = [
+  'krishna-childhood-pack-1',
   'ramayana-journey-pack-1',
-  'ganesha-wisdom-journey-pack-1'
-]);
+  'ganesha-wisdom-pack-1',
+  'ganesha-wisdom-journey'
+] as const;
+
+export const dharmaJourneyMapJourneyIdAliasesV1: Record<string, (typeof dharmaJourneyMapCanonicalRouteIdsV1)[number]> = {
+  'krishna-childhood-journey-pack-1': 'krishna-childhood-pack-1',
+  'ganesha-wisdom-journey-pack-1': 'ganesha-wisdom-pack-1'
+};
+
+const supportedJourneyIds = new Set<string>(dharmaJourneyMapCanonicalRouteIdsV1);
 
 const markerOrder: DharmaJourneyMapPathMarker[] = ['diya', 'flower', 'lotus_dot'];
 
 function resolveStepState(story: Story): DharmaJourneyMapStepState {
   const eligibility = getRuntimeStoryEligibility(story);
+  if (!eligibility.canRender) {
+    if (story.status === 'coming_soon') return 'coming_soon';
+    return 'being_prepared';
+  }
+
   if (story.status === 'available') return 'completed';
-  if (eligibility.canRender) return 'available';
-  if (story.status === 'coming_soon') return 'coming_soon';
-  return 'being_prepared';
+  return 'available';
+}
+
+function safeText(value: string | undefined, fallback: string): string {
+  const trimmed = value?.trim();
+  return trimmed ? trimmed : fallback;
+}
+
+function safeAgeBands(ageBands: AgeBand[] | undefined): AgeBand[] {
+  return Array.isArray(ageBands) && ageBands.length ? ageBands : ['family'];
 }
 
 function toStep(story: Story, order: number): DharmaJourneyMapStep {
   const state = resolveStepState(story);
+  const isTappable = state === 'available' || state === 'completed';
   const marker = markerOrder[(order - 1) % markerOrder.length] ?? 'lotus_dot';
   return {
-    id: `${story.id}-step-${order}`,
+    id: `${story.id || story.slug || 'story'}-step-${order}`,
     order,
-    storyId: story.id,
-    slug: story.slug,
-    title: story.title,
-    summary: story.summary,
-    primaryValue: story.primaryValue,
-    ageBands: story.ageBands,
-    durationMinutes: story.durationMinutes,
+    storyId: safeText(story.id, `story-${order}`),
+    slug: safeText(story.slug, ''),
+    title: safeText(story.title, `Story step ${order}`),
+    summary: safeText(story.summary, 'A gentle story step is being prepared with care.'),
+    primaryValue: safeText(story.primaryValue, 'Dharma'),
+    ageBands: safeAgeBands(story.ageBands),
+    durationMinutes: typeof story.durationMinutes === 'number' && story.durationMinutes > 0 ? story.durationMinutes : null,
     state,
     pathMarker: marker,
-    href: state === 'available' || state === 'completed' ? `/story/${story.slug}` : '/(child)/worlds',
-    trustLabel: state === 'available' || state === 'completed' ? 'Ready in Story World.' : 'Being prepared with care.'
+    href: isTappable ? `/story/${story.slug}` : '',
+    isTappable,
+    trustLabel: isTappable ? 'Ready in Story World.' : 'Being prepared with care.'
   };
 }
 
+export function resolveDharmaJourneyMapJourneyId(journeyId: string): string {
+  const normalizedJourneyId = journeyId.trim();
+  return dharmaJourneyMapJourneyIdAliasesV1[normalizedJourneyId] ?? normalizedJourneyId;
+}
+
 export function getDharmaJourneyMapByJourneyId(journeyId: string): DharmaJourneyMapModel | null {
-  const journey = contentRegistryJourneys.find((item) => item.id === journeyId);
+  const canonicalJourneyId = resolveDharmaJourneyMapJourneyId(journeyId);
+  const journey = contentRegistryJourneys.find((item) => item.id === canonicalJourneyId);
   if (!journey) return null;
 
   const orderedStories = journey.storyIds
@@ -50,21 +78,22 @@ export function getDharmaJourneyMapByJourneyId(journeyId: string): DharmaJourney
     .filter((story): story is Story => Boolean(story))
     .sort((a, b) => (a.journeyOrder ?? Number.MAX_SAFE_INTEGER) - (b.journeyOrder ?? Number.MAX_SAFE_INTEGER));
 
+  const supportedJourney = supportedJourneyIds.has(journey.id);
   const fallbackMessage = orderedStories.length
     ? null
-    : 'This Dharma Journey is being prepared with care. Fresh story steps will appear here soon.';
+    : 'This Dharma Journey is being prepared with care.';
 
   return {
     id: `journey-map-${journey.id}`,
     journeyId: journey.id,
-    journeyTitle: journey.title,
-    childFacingTitle: journey.childFacingTitle,
-    childFacingDescription: journey.description,
-    supportedJourney: supportedJourneyIds.has(journey.id),
+    journeyTitle: safeText(journey.title, 'Dharma Journey'),
+    childFacingTitle: safeText(journey.childFacingTitle, safeText(journey.title, 'Dharma Journey')),
+    childFacingDescription: safeText(journey.description, 'A gentle story path is being prepared with care.'),
+    supportedJourney,
     trustCopy: 'Prepared with care for families. Local-first and gentle by design.',
-    fallbackMessage,
+    fallbackMessage: supportedJourney ? fallbackMessage : 'This Dharma Journey is being prepared with care before it opens for families.',
     progressMode: 'gentle_local_stub',
-    steps: orderedStories.map((story, index) => toStep(story, index + 1))
+    steps: supportedJourney ? orderedStories.map((story, index) => toStep(story, index + 1)) : []
   };
 }
 
