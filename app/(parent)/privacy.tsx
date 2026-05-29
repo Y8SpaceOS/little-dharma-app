@@ -1,7 +1,8 @@
 import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { tokens } from '@/design/tokens';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import { GradientScreen } from '@/components/dharmaKit';
+import { elevation, radii, space, text } from '@/design/visualSystem';
 import { buildPrivacyCenterCopy } from '@/services/privacyCenterCopyService';
 
 
@@ -44,7 +45,7 @@ const sections = [
 
 function PrivacyScreenContent() {
   return (
-    <SafeAreaView style={styles.screen}>
+    <GradientScreen gradient='sky'><SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.heading}>Parent Trust & Privacy Center</Text>
         <Text style={styles.subheading}>
@@ -69,22 +70,22 @@ function PrivacyScreenContent() {
 
         <Link href='/(parent)/dashboard' style={styles.backLink} accessibilityRole='link' accessibilityLabel='Back to Parent Dashboard'>Back to Parent Dashboard</Link>
       </ScrollView>
-    </SafeAreaView>
+    </SafeAreaView></GradientScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#EFF4FF' },
-  content: { padding: tokens.spacing.lg, gap: tokens.spacing.md, paddingBottom: 40 },
-  heading: { fontSize: 30, fontWeight: '800', color: '#1E2C50' },
+  safe: { flex: 1 },
+  content: { padding: space.screen, gap: space.md, paddingBottom: 40 },
+  heading: { ...text.display, color: '#1E2C50' },
   subheading: { color: '#4D5F88', fontSize: 15, lineHeight: 22 },
-  card: { backgroundColor: '#FFFFFF', borderRadius: 22, padding: tokens.spacing.lg, gap: 8, borderWidth: 1, borderColor: '#E5EBFA' },
+  card: { backgroundColor: '#FFFFFF', borderRadius: radii.card, padding: space.lg, gap: 8, borderWidth: 1, borderColor: '#E5EBFA', ...elevation.soft },
   sectionTitle: { color: '#445378', fontWeight: '800', letterSpacing: 0.3, textTransform: 'uppercase', fontSize: 12 },
   detail: { color: '#2B3550', fontSize: 15, lineHeight: 22 },
-  noteCard: { backgroundColor: '#1E2C50', borderRadius: 20, padding: tokens.spacing.lg, gap: 6 },
+  noteCard: { backgroundColor: '#1E2C50', borderRadius: radii.lg, padding: space.lg, gap: 6 },
   noteTitle: { color: '#DCE8FF', fontWeight: '800', textTransform: 'uppercase', fontSize: 12, letterSpacing: 0.3 },
   noteText: { color: '#FFFFFF', fontSize: 15, lineHeight: 22, fontWeight: '600' },
-  backLink: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: tokens.radius.button, textAlign: 'center', color: '#1E2C50', fontWeight: '700' }
+  backLink: { backgroundColor: '#DCE8FF', padding: 16, borderRadius: radii.lg, textAlign: 'center', color: '#1E2C50', fontWeight: '700' }
 });
 
 
