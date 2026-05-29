@@ -3,15 +3,18 @@ import { Link, useRouter } from 'expo-router';
 import { AppState, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import { Card, GradientScreen, HeroCard, LuvluBubble, SectionHeader } from '@/components/dharmaKit';
 import { getOnboardingState, subscribeOnboardingState } from '@/lib/onboardingState';
 import { markThresholdEntered, shouldShowThreshold } from '@/lib/thresholdState';
-import { visualStyles, visualTokens } from '@/design/visualSystem';
+import { useReducedMotion } from '@/lib/useReducedMotion';
+import { palette, radii, space, text, visualStyles } from '@/design/visualSystem';
 import { buildChildHomeTrustMicrocopy } from '@/services/childHomeTrustMicrocopyService';
 
 function TodayScreenContent() {
   const [nickname, setNickname] = useState<string | null>(getOnboardingState().profile?.nickname || null);
   const [showThreshold, setShowThreshold] = useState(false);
   const router = useRouter();
+  const reduceMotion = useReducedMotion();
   const name = nickname?.trim() || 'Little One';
 
   useEffect(() => subscribeOnboardingState(() => setNickname(getOnboardingState().profile?.nickname || null)), []);
@@ -26,31 +29,31 @@ function TodayScreenContent() {
     { title: 'Pick a calm world', copy: 'Choose one story doorway together.', href: '/(child)/worlds' }
   ], []);
 
-  return <SafeAreaView style={visualStyles.screen}><ScrollView contentContainerStyle={styles.content}>
-    <View style={[visualStyles.heroCard, styles.homeHero]}>
+  return <GradientScreen gradient='body'><SafeAreaView style={styles.safe}><ScrollView contentContainerStyle={styles.content}>
+    <HeroCard gradient='warm' style={styles.homeHero}>
       <Text style={styles.greeting}>Namaste, {name}</Text>
       <Text style={styles.headline}>Welcome to Little Dharma</Text>
       <Text style={styles.sub}>A warm story moment is ready for you.</Text>
-    </View>
+    </HeroCard>
 
-    <View style={[visualStyles.helperBubble, styles.luvluCard]}><Text style={styles.helper}>Luvlu whisper: Pick one doorway, take one breath, and begin with a peaceful heart.</Text></View>
+    <LuvluBubble message='Pick one doorway, take one breath, and begin with a peaceful heart.' />
 
-    <View style={[visualStyles.heroCard, styles.trustCard]} accessibilityLabel={trustCopy.accessibilityLabel} accessibilityHint={trustCopy.accessibilityHint}>
+    <Card style={styles.trustCard} accessibilityLabel={trustCopy.accessibilityLabel} accessibilityHint={trustCopy.accessibilityHint}>
       <Text style={styles.trustLine}>{trustCopy.calmWorldCopy}</Text>
       <Text style={styles.trustLine}>{trustCopy.noRaceCopy}</Text>
       <Text style={styles.trustLine}>{trustCopy.choiceCopy}</Text>
       <Text style={styles.trustLine}>{trustCopy.luvluHelperCopy}</Text>
-    </View>
+    </Card>
 
-    <View style={[visualStyles.heroCard, styles.storyWorldEntry]}>
+    <HeroCard gradient='sky' style={styles.storyWorldEntry}>
       <Text style={styles.heroTitle}>Explore Story World</Text>
       <Text style={styles.sub}>Choose one world and begin.</Text>
       <Link href='/(child)/worlds' style={visualStyles.primaryCta} accessibilityRole='link' accessibilityLabel='Open Story World'>Open Story World</Link>
-    </View>
+    </HeroCard>
 
-    <Text style={visualStyles.sectionHeader}>Quick starts</Text>
+    <SectionHeader>Quick starts</SectionHeader>
     <View style={styles.grid}>
-      {quickStarts.map((p) => <Pressable key={p.title} onPress={() => router.push(p.href as never)} accessibilityRole='button' accessibilityLabel={p.title} accessibilityHint={p.copy} style={({ pressed }) => [visualStyles.doorwayCard, styles.card, pressed && styles.cardPressed]}>
+      {quickStarts.map((p) => <Pressable key={p.title} onPress={() => router.push(p.href as never)} accessibilityRole='button' accessibilityLabel={p.title} accessibilityHint={p.copy} style={({ pressed }) => [styles.card, !reduceMotion && pressed && styles.cardPressed]}>
         <View style={styles.cardStack}>
           <Text style={styles.cardTitle}>{p.title}</Text>
           <Text style={styles.cardCopy}>{p.copy}</Text>
@@ -61,10 +64,30 @@ function TodayScreenContent() {
     <View style={styles.parentWrap}><Link href='/(parent)/dashboard' style={visualStyles.secondaryCta} accessibilityRole='link' accessibilityLabel='Open Parent Space'>Open Parent Space</Link></View>
   </ScrollView>
 
-  {showThreshold && <View style={styles.overlay}><View style={[visualStyles.heroCard, { alignItems: 'center' }]}><Text style={styles.headline}>Enter gently</Text><Text style={styles.sub}>Take one breath before story time.</Text><Text onPress={() => { setShowThreshold(false); markThresholdEntered().catch(() => undefined); }} accessibilityRole='button' accessibilityLabel="Enter today's journey" style={[visualStyles.primaryCta, { marginTop: 12, minHeight: 44, paddingVertical: 12 }]}>Enter Today's Journey</Text></View></View>}
-  </SafeAreaView>;
+  {showThreshold && <View style={styles.overlay}><Card style={styles.thresholdCard}><Text style={styles.headline}>Enter gently</Text><Text style={styles.sub}>Take one breath before story time.</Text><Text onPress={() => { setShowThreshold(false); markThresholdEntered().catch(() => undefined); }} accessibilityRole='button' accessibilityLabel="Enter today's journey" style={[visualStyles.primaryCta, { marginTop: 12, minHeight: 44, paddingVertical: 12 }]}>Enter Today's Journey</Text></Card></View>}
+  </SafeAreaView></GradientScreen>;
 }
 
-const styles = StyleSheet.create({ content:{padding:16,gap:14,paddingBottom:36}, homeHero:{backgroundColor:'#FFE4BF',paddingVertical:22}, greeting:{fontSize:17,fontWeight:'800',color:visualTokens.color.mutedBrown}, headline:{fontSize:31,lineHeight:36,fontWeight:'900',color:visualTokens.color.warmBrown}, sub:{fontSize:16,lineHeight:23,color:visualTokens.color.mutedBrown}, luvluCard:{backgroundColor:'#DFF1FF'}, helper:{fontSize:14,lineHeight:20,color:'#1F4A75',fontWeight:'700'}, trustCard:{backgroundColor:'#FFF6E8',gap:6,paddingVertical:16}, trustLine:{fontSize:15,lineHeight:21,color:visualTokens.color.mutedBrown,fontWeight:'700'}, storyWorldEntry:{backgroundColor:'#FBEBC9',paddingVertical:22}, heroTitle:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown}, grid:{gap:10}, card:{borderRadius:22,shadowOpacity:0.1,minHeight:110,paddingVertical:16}, cardPressed:{transform:[{scale:0.98}],shadowOpacity:0.18}, cardStack:{gap:7},  cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown,marginTop:2}, cardCopy:{fontSize:14,lineHeight:19,color:visualTokens.color.mutedBrown}, parentWrap:{paddingTop:6}, overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(255,245,233,0.96)',justifyContent:'center',padding:20} });
+const styles = StyleSheet.create({
+  safe: { flex: 1 },
+  content: { padding: space.screen, gap: space.md, paddingBottom: 36 },
+  homeHero: { paddingVertical: 22 },
+  greeting: { ...text.subheading, color: palette.saffronInk },
+  headline: { ...text.display, color: palette.ink },
+  sub: { ...text.body, color: palette.muted },
+  trustCard: { gap: space.xs, paddingVertical: space.lg },
+  trustLine: { ...text.bodyStrong, color: palette.muted },
+  storyWorldEntry: { paddingVertical: 22 },
+  heroTitle: { ...text.title, color: palette.ink },
+  grid: { gap: space.sm },
+  card: { backgroundColor: palette.paper, borderRadius: radii.lg, borderWidth: 1, borderColor: palette.line, minHeight: 110, paddingVertical: space.lg, paddingHorizontal: space.md },
+  cardPressed: { transform: [{ scale: 0.98 }], opacity: 0.94 },
+  cardStack: { gap: space.xs + 1 },
+  cardTitle: { ...text.heading, color: palette.ink, marginTop: 2 },
+  cardCopy: { ...text.body, color: palette.muted },
+  parentWrap: { paddingTop: space.xs },
+  overlay: { ...StyleSheet.absoluteFillObject, backgroundColor: 'rgba(255,248,236,0.96)', justifyContent: 'center', padding: space.xl },
+  thresholdCard: { alignItems: 'center' }
+});
 
 export default function TodayScreen() { return <RouteErrorBoundary surfaceName='Child Home' audience='child' primaryActionHref='/onboarding' primaryActionLabel='Go to Onboarding'><TodayScreenContent /></RouteErrorBoundary>; }
