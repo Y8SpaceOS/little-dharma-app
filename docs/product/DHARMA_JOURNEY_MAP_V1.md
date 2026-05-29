@@ -1,9 +1,16 @@
 # Dharma Journey Map v1 (PR #178) + Polish/Safe Interaction v1 (PR #179)
 
 ## Supported journeys
-- Krishna Childhood Journey (`krishna-childhood-journey-pack-1`)
+- Krishna Childhood Journey (`krishna-childhood-pack-1`)
 - Ramayana Journey (`ramayana-journey-pack-1`)
-- Ganesha Wisdom Journey (`ganesha-wisdom-journey-pack-1`)
+- Ganesha Wisdom Journey starter pack (`ganesha-wisdom-pack-1`)
+- Ganesha Wisdom Journey expansion path (`ganesha-wisdom-journey`)
+
+## Canonical journey ID handling
+- Story World journey-map routes use `story.journeyId` values from `contentRegistryStories`.
+- Verified canonical registry IDs are `krishna-childhood-pack-1`, `ramayana-journey-pack-1`, `ganesha-wisdom-pack-1`, and `ganesha-wisdom-journey`.
+- Legacy PR #178 route IDs are safely aliased: `krishna-childhood-journey-pack-1` resolves to `krishna-childhood-pack-1`, and `ganesha-wisdom-journey-pack-1` resolves to `ganesha-wisdom-pack-1`.
+- Canonical Krishna Childhood, Ramayana, and Ganesha Wisdom routes all render ordered story steps instead of the unsupported fallback.
 
 ## What the map shows
 - Journey title and child-facing description.

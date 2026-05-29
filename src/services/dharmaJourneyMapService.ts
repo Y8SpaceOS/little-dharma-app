@@ -5,10 +5,16 @@ import type { DharmaJourneyMapModel, DharmaJourneyMapPathMarker, DharmaJourneyMa
 
 export const dharmaJourneyMapVersion = 'pr179-dharma-journey-map-polish-safe-step-interaction-v1';
 
+const canonicalJourneyIdAliases: Record<string, string> = {
+  'krishna-childhood-journey-pack-1': 'krishna-childhood-pack-1',
+  'ganesha-wisdom-journey-pack-1': 'ganesha-wisdom-pack-1'
+};
+
 const supportedJourneyIds = new Set([
-  'krishna-childhood-journey-pack-1',
+  'krishna-childhood-pack-1',
   'ramayana-journey-pack-1',
-  'ganesha-wisdom-journey-pack-1'
+  'ganesha-wisdom-pack-1',
+  'ganesha-wisdom-journey'
 ]);
 
 const markerOrder: DharmaJourneyMapPathMarker[] = ['diya', 'flower', 'lotus_dot'];
@@ -55,8 +61,13 @@ function toStep(story: Story, order: number): DharmaJourneyMapStep {
   };
 }
 
+export function resolveDharmaJourneyMapJourneyId(journeyId: string): string {
+  return canonicalJourneyIdAliases[journeyId] ?? journeyId;
+}
+
 export function getDharmaJourneyMapByJourneyId(journeyId: string): DharmaJourneyMapModel | null {
-  const journey = contentRegistryJourneys.find((item) => item.id === journeyId);
+  const canonicalJourneyId = resolveDharmaJourneyMapJourneyId(journeyId);
+  const journey = contentRegistryJourneys.find((item) => item.id === canonicalJourneyId);
   if (!journey) return null;
 
   const orderedStories = journey.storyIds
