@@ -13,6 +13,10 @@ export const visualTokens = {
     leaf: '#BFE0C6',
     leafSoft: '#E7F4EA',
     diyaYellow: '#FFE09A',
+    gold: '#EACD9D',
+    diyaGlow: '#FFF2DD',
+    diyaRim: '#E9C98F',
+    journeyLine: '#E9D8BD',
     warmBrown: '#4A2F1E',
     mutedBrown: '#6B5241',
     line: '#E8D4B6'

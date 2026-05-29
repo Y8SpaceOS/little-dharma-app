@@ -43,6 +43,9 @@ const worldMap: Record<string, World> = {
 
 const isJourneyLike = (slug: string, world: World) => /journey|ramayana/.test(slug) || /path|chapter/i.test(world.title);
 
+// Gentle wayfinding markers aligned to the canonical Dharma Journey Map (diya, flower, lotus_dot).
+const journeyMarkers = ['🪔', '🌸', '🪷'] as const;
+
 export default function WorldScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const normalizedSlug = (slug || '').toLowerCase();
@@ -63,7 +66,7 @@ export default function WorldScreen() {
     </View>
 
     {world.cards.map((c, idx) => <View key={c.title} style={[visualStyles.storyCard, journeyLike ? styles.journeyCard : styles.worldCard]}>
-      {journeyLike ? <Text style={styles.stepLabel}>Step {idx + 1}</Text> : null}
+      {journeyLike ? <Text style={styles.stepLabel}>{journeyMarkers[idx % journeyMarkers.length]}  Step {idx + 1}</Text> : null}
       <Text style={styles.cardTitle}>{c.title}</Text>
       <Text style={styles.cardDesc}>{c.description}</Text>
       <View style={styles.row}>
@@ -73,7 +76,7 @@ export default function WorldScreen() {
         
       </View>
       <Text style={styles.source}>Tradition note appears in story detail.</Text>
-      {c.status === 'available' && c.storySlug ? <Link href={`/story/${c.storySlug}` as never} style={visualStyles.secondaryCta}>Read story</Link> : <View style={styles.comingSoon}><Text style={styles.comingSoonText}>{journeyLike ? 'This step opens soon' : 'Coming soon'}</Text></View>}
+      {c.status === 'available' && c.storySlug ? <Link href={`/story/${c.storySlug}` as never} style={visualStyles.secondaryCta}>Read story</Link> : <View style={styles.comingSoon}><Text style={styles.comingSoonText}>{journeyLike ? 'Being prepared with care' : 'Coming soon'}</Text></View>}
     </View>)}
   </ScrollView></SafeAreaView>;
 }
@@ -84,18 +87,18 @@ const styles = StyleSheet.create({
   title:{fontSize:30,fontWeight:'900',color:visualTokens.color.warmBrown},
   sub:{fontSize:14,lineHeight:20,color:visualTokens.color.mutedBrown,marginTop:4},
   worldCard:{backgroundColor:'#FFFDF8'},
-  journeyCard:{backgroundColor:'#F9FFF7',borderColor:'#D4E8D0',borderWidth:1},
-  stepLabel:{fontSize:12,fontWeight:'800',color:'#4A7C59',marginBottom:4},
+  journeyCard:{backgroundColor:visualTokens.color.paper,borderColor:visualTokens.color.journeyLine,borderWidth:1},
+  stepLabel:{fontSize:12,fontWeight:'800',color:visualTokens.color.warmBrown,marginBottom:4},
   cardTitle:{fontSize:19,fontWeight:'900',color:visualTokens.color.warmBrown},
   cardDesc:{fontSize:14,lineHeight:20,color:visualTokens.color.mutedBrown},
   row:{flexDirection:'row',flexWrap:'wrap',gap:6},
   source:{fontSize:12,color:visualTokens.color.mutedBrown},
-  pathStrip:{marginTop:4,padding:10,borderRadius:16,backgroundColor:'#FFFFFFB8',borderWidth:1,borderColor:'#D7E7D5',gap:8},
-  pathLabel:{fontSize:12,fontWeight:'800',color:'#4A7C59'},
+  pathStrip:{marginTop:4,padding:10,borderRadius:16,backgroundColor:'#FFFFFFB8',borderWidth:1,borderColor:visualTokens.color.diyaRim,gap:8},
+  pathLabel:{fontSize:12,fontWeight:'800',color:visualTokens.color.warmBrown},
   pathRow:{flexDirection:'row',alignItems:'center'},
-  pathDot:{width:12,height:12,borderRadius:999,backgroundColor:'#CFE0CC'},
-  pathDone:{backgroundColor:'#7DBA84'},
-  pathLine:{height:3,width:28,backgroundColor:'#CFE0CC'},
+  pathDot:{width:12,height:12,borderRadius:999,backgroundColor:visualTokens.color.diyaGlow,borderWidth:1,borderColor:visualTokens.color.diyaRim},
+  pathDone:{backgroundColor:visualTokens.color.saffron,borderColor:visualTokens.color.saffronDeep},
+  pathLine:{height:3,width:28,backgroundColor:visualTokens.color.gold},
   comingSoon:{marginTop:6,paddingVertical:10,paddingHorizontal:12,borderRadius:12,backgroundColor:'#FFF7E9',borderWidth:1,borderColor:'#E8D4B6',alignSelf:'flex-start'},
   comingSoonText:{fontSize:12,fontWeight:'800',color:visualTokens.color.mutedBrown}
 });
