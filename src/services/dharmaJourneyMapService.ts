@@ -5,17 +5,19 @@ import type { DharmaJourneyMapModel, DharmaJourneyMapPathMarker, DharmaJourneyMa
 
 export const dharmaJourneyMapVersion = 'pr179-dharma-journey-map-polish-safe-step-interaction-v1';
 
-const canonicalJourneyIdAliases: Record<string, string> = {
-  'krishna-childhood-journey-pack-1': 'krishna-childhood-pack-1',
-  'ganesha-wisdom-journey-pack-1': 'ganesha-wisdom-pack-1'
-};
-
-const supportedJourneyIds = new Set([
+export const dharmaJourneyMapCanonicalRouteIdsV1 = [
   'krishna-childhood-pack-1',
   'ramayana-journey-pack-1',
   'ganesha-wisdom-pack-1',
   'ganesha-wisdom-journey'
-]);
+] as const;
+
+export const dharmaJourneyMapJourneyIdAliasesV1: Record<string, (typeof dharmaJourneyMapCanonicalRouteIdsV1)[number]> = {
+  'krishna-childhood-journey-pack-1': 'krishna-childhood-pack-1',
+  'ganesha-wisdom-journey-pack-1': 'ganesha-wisdom-pack-1'
+};
+
+const supportedJourneyIds = new Set<string>(dharmaJourneyMapCanonicalRouteIdsV1);
 
 const markerOrder: DharmaJourneyMapPathMarker[] = ['diya', 'flower', 'lotus_dot'];
 
@@ -62,7 +64,8 @@ function toStep(story: Story, order: number): DharmaJourneyMapStep {
 }
 
 export function resolveDharmaJourneyMapJourneyId(journeyId: string): string {
-  return canonicalJourneyIdAliases[journeyId] ?? journeyId;
+  const normalizedJourneyId = journeyId.trim();
+  return dharmaJourneyMapJourneyIdAliasesV1[normalizedJourneyId] ?? normalizedJourneyId;
 }
 
 export function getDharmaJourneyMapByJourneyId(journeyId: string): DharmaJourneyMapModel | null {
