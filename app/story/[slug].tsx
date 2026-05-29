@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
+import { GradientScreen } from '@/components/dharmaKit';
 import { storyWorldItems, storyWorldSections } from '@/data/storyWorld';
 import { markJourneyStoryCompleted } from '@/lib/journeyProgress';
 import { markStoryComplete } from '@/lib/storyProgress';
 import { getRuntimeStoryBySlug } from '@/services/journeys';
-import { visualStyles } from '@/design/visualSystem';
+import { visualStyles, palette } from '@/design/visualSystem';
 import { tokens } from '@/design/tokens';
 import { buildStoryCompletionMoment } from '@/services/storyCompletionMomentService';
 import { buildStoryAudioPlayerState, shouldShowAudioEntryPoint } from '@/services/storyAudioFoundationService';
@@ -27,14 +28,14 @@ function StoryScreenContent() {
 
   if (!resolved) {
     return (
-      <SafeAreaView style={visualStyles.softScreen}>
+      <GradientScreen gradient='body'><SafeAreaView style={styles.safe}>
         <View style={styles.card}>
           <Text style={styles.title}>This story is resting for now.</Text>
           <Text style={styles.body}>Return to Story World or go back to Child Home.</Text>
           <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
           <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
         </View>
-      </SafeAreaView>
+      </SafeAreaView></GradientScreen>
     );
   }
 
@@ -43,14 +44,14 @@ function StoryScreenContent() {
 
   if (safePanels.length === 0) {
     return (
-      <SafeAreaView style={visualStyles.softScreen}>
+      <GradientScreen gradient='body'><SafeAreaView style={styles.safe}>
         <View style={styles.card}>
           <Text style={styles.title}>This story is resting for now.</Text>
           <Text style={styles.body}>This story page is being prepared. You can return safely anytime.</Text>
           <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
           <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
         </View>
-      </SafeAreaView>
+      </SafeAreaView></GradientScreen>
     );
   }
 
@@ -79,7 +80,7 @@ function StoryScreenContent() {
   const gentlePaceCopy = buildStoryReaderGentlePaceCopy();
 
   return (
-    <SafeAreaView style={visualStyles.softScreen}>
+    <GradientScreen gradient='body'><SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.topbar}>
           <Link href='/(child)/worlds' style={styles.topbarBack}>← Back to Story World</Link>
@@ -241,7 +242,7 @@ function StoryScreenContent() {
           </View>
         )}
       </ScrollView>
-    </SafeAreaView>
+    </SafeAreaView></GradientScreen>
   );
 }
 
@@ -254,6 +255,7 @@ export default function StoryScreen() {
 }
 
 const styles = StyleSheet.create({
+  safe: { flex: 1 },
   scrollContent: { padding: tokens.spacing.lg, gap: tokens.spacing.md },
   topbar: { paddingBottom: tokens.spacing.xs },
   topbarBack: { fontSize: 14, fontWeight: '700', color: tokens.colors.midnight },
@@ -274,13 +276,13 @@ const styles = StyleSheet.create({
   valueLineStrong: { fontWeight: '900', color: '#6b4b23' },
   parentLine: { fontSize: 14, lineHeight: 21, color: '#6b5f4d' },
   luvluLine: { fontSize: 14, lineHeight: 21, color: '#4d5f78' },
-  button: { backgroundColor: tokens.colors.saffron, borderRadius: 999, paddingVertical: 13, paddingHorizontal: 18, alignItems: 'center' },
+  button: { backgroundColor: palette.saffron, borderRadius: 999, paddingVertical: 13, paddingHorizontal: 18, alignItems: 'center' },
   buttonText: { color: '#fff', fontWeight: '800' },
   readerShell: { backgroundColor: '#fffdf8', padding: tokens.spacing.lg, gap: tokens.spacing.md, borderWidth: 1, borderColor: '#ebdec7' },
   readingLabel: { fontSize: 13, fontWeight: '700', color: '#6a5b45' },
   sectionTitle: { fontSize: 23, fontWeight: '800', color: tokens.colors.textPrimary },
   progressTrack: { width: '100%', height: 7, borderRadius: 999, backgroundColor: '#f0e2c8', overflow: 'hidden' },
-  progressFill: { height: 7, borderRadius: 999, backgroundColor: tokens.colors.saffron },
+  progressFill: { height: 7, borderRadius: 999, backgroundColor: palette.saffron },
   readerCard: { backgroundColor: '#fffaf1', borderRadius: tokens.radius.card, padding: tokens.spacing.lg, gap: tokens.spacing.sm, borderWidth: 1, borderColor: '#f2e2c5' },
   readerTitle: { fontSize: 22, fontWeight: '800', color: tokens.colors.textPrimary },
   readerText: { fontSize: 21, lineHeight: 34, color: tokens.colors.textPrimary },
