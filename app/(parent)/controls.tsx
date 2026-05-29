@@ -2,7 +2,8 @@ import { useCallback, useState } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
 import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
-import { tokens } from '@/design/tokens';
+import { GradientScreen } from '@/components/dharmaKit';
+import { elevation, palette, radii, space, text } from '@/design/visualSystem';
 import {
   getParentControlsContentReadinessCopy,
   getParentControlsNoPressureCopy,
@@ -45,7 +46,7 @@ export default function ControlsScreen() {
   useFocusEffect(useCallback(() => { refresh(); }, [refresh]));
 
   return (
-    <SafeAreaView style={styles.screen}>
+    <GradientScreen gradient='body'><SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.heading}>Parent Controls</Text>
         <Text style={styles.subheading}>Review child profile, helper prompts, bedtime calm preferences, and local privacy settings.</Text>
@@ -123,23 +124,23 @@ export default function ControlsScreen() {
           <Text style={styles.privacyText}>Data stays on this device. No child public profile. No ads or paid beta flow in this sprint. No external sharing unless a parent manually takes screenshots.</Text>
         </View>
       </ScrollView>
-    </SafeAreaView>
+    </SafeAreaView></GradientScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#FFF8EE' },
-  content: { padding: tokens.spacing.lg, gap: tokens.spacing.md, paddingBottom: 40 },
-  heading: { fontSize: 32, fontWeight: '800', color: '#5E3A0E' },
+  safe: { flex: 1 },
+  content: { padding: space.screen, gap: space.md, paddingBottom: 40 },
+  heading: { ...text.display, fontSize: 32, color: '#5E3A0E' },
   subheading: { color: '#7B5A2B', fontSize: 15 },
-  card: { backgroundColor: '#FFFCF7', borderRadius: 22, borderWidth: 1, borderColor: '#EBDCC8', padding: tokens.spacing.lg, gap: 8 },
+  card: { backgroundColor: palette.paper, borderRadius: radii.card, borderWidth: 1, borderColor: '#EBDCC8', padding: space.lg, gap: 8, ...elevation.soft },
   title: { fontSize: 13, fontWeight: '800', letterSpacing: 0.2, textTransform: 'uppercase', color: '#6D4A16' },
   row: { color: '#3A2B1A', fontSize: 15, lineHeight: 22 },
   helper: { color: '#5F4D35', fontSize: 14, lineHeight: 21 },
-  link: { color: tokens.colors.peacock, fontWeight: '700', marginTop: 6 },
+  link: { color: palette.peacock, fontWeight: '700', marginTop: 6 },
   switchRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 12 },
   switchLabel: { color: '#3A2B1A', fontSize: 15, fontWeight: '600', flex: 1 },
-  privacyCard: { backgroundColor: '#EAF4FF', borderRadius: 22, borderWidth: 1, borderColor: '#D0E5FF', padding: tokens.spacing.lg, gap: 8 },
+  privacyCard: { backgroundColor: palette.sky, borderRadius: radii.card, borderWidth: 1, borderColor: '#D0E5FF', padding: space.lg, gap: 8, ...elevation.soft },
   privacyTitle: { color: '#1E3A5F', fontSize: 13, fontWeight: '800', textTransform: 'uppercase' },
   privacyText: { color: '#204066', fontSize: 14, lineHeight: 21 }
 });
