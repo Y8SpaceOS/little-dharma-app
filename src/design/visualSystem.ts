@@ -42,3 +42,77 @@ export const visualStyles = StyleSheet.create({
   warmText: { color: visualTokens.color.warmBrown },
   mutedText: { color: visualTokens.color.mutedBrown }
 });
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Canonical design-system tokens — Design System Foundation v1.
+// Derived from the 1-487 prototype `globalTokens` (screens 296-423 component
+// library). Additive only: the `visualTokens`/`visualStyles` above are left
+// unchanged so already-merged screens (#176-#179) keep their exact look, while
+// new components and future screens adopt this canonical layer.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const palette = {
+  ink: '#402615',
+  muted: '#7B6550',
+  cream: '#FFF8EC',
+  paper: '#FFFDF8',
+  white: '#FFFFFF',
+  saffron: '#F7B547',
+  saffronInk: '#B66A1F',
+  lotus: '#FAD1E2',
+  lotusDeep: '#F0A9C6',
+  sky: '#E9F7FF',
+  skyDeep: '#68BEEA',
+  leaf: '#E7F6E9',
+  leafDeep: '#7AC87A',
+  gold: '#FFF2C4',
+  line: '#F0D8B8',
+  peacock: '#2E789F',
+  peacockLight: '#64C0F0'
+} as const;
+
+// expo-linear-gradient inputs. `colors` top-to-bottom unless a component overrides.
+export const gradients = {
+  body: { colors: ['#FFF0D8', '#FFF8EC', '#EAF7FF'], locations: [0, 0.42, 1] },
+  warm: { colors: ['#FFF8EC', '#E9F7FF'] },
+  lotus: { colors: ['#FFF8EC', '#FFEFF6'] },
+  sky: { colors: ['#EAF7FF', '#FFF8EC'] },
+  leaf: { colors: ['#FFF8EC', '#E7F6E9'] },
+  brandMark: { colors: ['#FFF2C4', '#FAD1E2', '#E9F7FF'] },
+  peacock: { colors: ['#64C0F0', '#2E789F'] },
+  progress: { colors: ['#F7B547', '#7AC87A'] }
+} as const;
+
+// Real-device type ramp. The prototype's px values are mockup-scale; this ramp
+// preserves the prototype hierarchy/ratios at sizes consistent with the
+// already-shipped screens (today.tsx headline 30, card title ~24, body ~15).
+export const text = {
+  display:    { fontSize: 30, lineHeight: 36, fontWeight: '900', letterSpacing: -0.3, color: palette.ink },
+  title:      { fontSize: 24, lineHeight: 28, fontWeight: '900', letterSpacing: -0.3, color: palette.ink },
+  heading:    { fontSize: 20, lineHeight: 25, fontWeight: '900', color: palette.ink },
+  subheading: { fontSize: 17, lineHeight: 23, fontWeight: '800', color: palette.ink },
+  body:       { fontSize: 15, lineHeight: 22, fontWeight: '600', color: palette.muted },
+  bodyStrong: { fontSize: 15, lineHeight: 22, fontWeight: '800', color: palette.ink },
+  caption:    { fontSize: 13, lineHeight: 18, fontWeight: '800', color: palette.muted },
+  mini:       { fontSize: 11, lineHeight: 15, fontWeight: '800', color: palette.muted },
+  reader:     { fontSize: 18, lineHeight: 27, fontWeight: '500', color: '#4B2C18' }
+} as const;
+
+export const space = { xs: 6, sm: 10, md: 14, lg: 18, xl: 24, xxl: 32, screen: 16, card: 16, gridGap: 12, kvGap: 8 } as const;
+
+export const radii = { hero: 32, card: 28, lg: 24, panel: 18, tile: 16, bubble: 16, listItem: 14, node: 14, nav: 12, iconBox: 11, pill: 999 } as const;
+
+export const elevation = {
+  soft: { shadowColor: '#6A421A', shadowOpacity: 0.08, shadowRadius: 14, shadowOffset: { width: 0, height: 6 }, elevation: 2 },
+  card: { shadowColor: '#6A421A', shadowOpacity: 0.12, shadowRadius: 22, shadowOffset: { width: 0, height: 12 }, elevation: 5 }
+} as const;
+
+// Motion timings (ms) from the 424-487 motion contract. Pair with useReducedMotion().
+export const motion = {
+  buttonPressIn: 90, buttonReleaseSettle: 140,
+  cardLift: 100, cardReturn: 160,
+  doorOpen: 350, nodeReveal: 300, diyaFlame: 250, flowerBloom: 450,
+  bubbleReveal: 180, idleBlinkInterval: 8000
+} as const;
+
+export const dharmaTokens = { palette, gradients, text, space, radii, elevation, motion } as const;
