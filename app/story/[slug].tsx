@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import RouteErrorBoundary from '@/components/RouteErrorBoundary';
-import { GradientScreen } from '@/components/dharmaKit';
+import { Card, Chip, EmptyState, GradientScreen, HeroCard, PrimaryButton } from '@/components/dharmaKit';
 import { storyWorldItems, storyWorldSections } from '@/data/storyWorld';
 import { markJourneyStoryCompleted } from '@/lib/journeyProgress';
 import { markStoryComplete } from '@/lib/storyProgress';
@@ -22,6 +22,12 @@ type Stage = 'detail' | 'reader' | 'complete';
 function StoryScreenContent() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const resolved = slug ? getRuntimeStoryBySlug(slug) : null;
+  const storyWorldPreview = slug
+    ? storyWorldItems.find((item) => item.slug === slug || item.id === slug)
+    : undefined;
+  const previewWorldLabel = storyWorldPreview
+    ? storyWorldSections.find((section) => section.id === storyWorldPreview.sectionId)?.title
+    : undefined;
   const [stage, setStage] = useState<Stage>('detail');
   const [panelIndex, setPanelIndex] = useState(0);
   const [completionWarning, setCompletionWarning] = useState<string | null>(null);
@@ -29,12 +35,34 @@ function StoryScreenContent() {
   if (!resolved) {
     return (
       <GradientScreen gradient='body'><SafeAreaView style={styles.safe}>
-        <View style={styles.card}>
-          <Text style={styles.title}>This story is resting for now.</Text>
-          <Text style={styles.body}>Return to Story World or go back to Child Home.</Text>
-          <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
-          <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
-        </View>
+        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <View style={styles.topbar}>
+            <Link href='/(child)/worlds' style={styles.topbarBack}>← Back to Story World</Link>
+          </View>
+          <HeroCard gradient='warm' style={styles.previewHero}>
+            <Text style={styles.storyCategoryLabel}>{previewWorldLabel || 'Story World'}</Text>
+            <Text style={styles.eyebrow}>Being prepared with care</Text>
+            <Text style={styles.title}>{storyWorldPreview?.title || 'This story is resting for now.'}</Text>
+            <Text style={styles.subtitle}>
+              {storyWorldPreview?.summary || 'This story preview is being prepared before it opens for family reading.'}
+            </Text>
+            {storyWorldPreview ? (
+              <View style={styles.chipRow}>
+                <Chip label={`Age ${storyWorldPreview.ageBands.join(', ')}`} />
+                <Chip label={`${storyWorldPreview.durationMinutes} min`} />
+                <Chip label={`Value: ${storyWorldPreview.primaryValue}`} />
+              </View>
+            ) : null}
+          </HeroCard>
+
+          <Card style={styles.supportCard}>
+            <Text style={styles.valueLineStrong}>Not ready to read yet</Text>
+            <Text style={styles.parentLine}>We only open the reader when the story is ready and safe to read.</Text>
+            <Text style={styles.parentLine}>Local-first, family-safe, and reviewed with care before reading.</Text>
+            <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
+            <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
+          </Card>
+        </ScrollView>
       </SafeAreaView></GradientScreen>
     );
   }
@@ -45,12 +73,18 @@ function StoryScreenContent() {
   if (safePanels.length === 0) {
     return (
       <GradientScreen gradient='body'><SafeAreaView style={styles.safe}>
-        <View style={styles.card}>
-          <Text style={styles.title}>This story is resting for now.</Text>
-          <Text style={styles.body}>This story page is being prepared. You can return safely anytime.</Text>
-          <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
-          <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
-        </View>
+        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <EmptyState
+            title='Being prepared with care'
+            message={`${story.title} is not ready for reading yet, so the reader will stay closed for now.`}
+            trustNote='Local-first, family-safe, and never opened until the story can read safely.'
+          />
+          <Card style={styles.supportCard}>
+            <Text style={styles.parentLine}>Return to Story World and choose another gentle story.</Text>
+            <Link href='/(child)/worlds' style={styles.link}>Return to Story World</Link>
+            <Link href='/(child)/today' style={styles.linkSecondary}>Go back to Child Home</Link>
+          </Card>
+        </ScrollView>
       </SafeAreaView></GradientScreen>
     );
   }
@@ -69,10 +103,17 @@ function StoryScreenContent() {
   const isLastSection = clampedPanelIndex >= safePanels.length - 1;
   const progress = ((clampedPanelIndex + 1) / safePanels.length) * 100;
   const storyIcon = worldLabel?.charAt(0) || story.world.charAt(0) || 'S';
+  const journeyTag = storyMeta?.journeyOrder
+    ? `${worldLabel || story.world} · Step ${storyMeta.journeyOrder}`
+    : worldLabel || story.world;
+  const parentNote = story.ritual?.parentMeaning || 'Gentle, age-appropriate sacred storytelling for shared family reading.';
 
   const completionMoment = buildStoryCompletionMoment(story);
   const audioState = buildStoryAudioPlayerState(story);
   const showAudioPanel = shouldShowAudioEntryPoint(story) || audioState.availability === 'unavailable';
+  const audioStatusCopy = audioState.canPlayNow
+    ? 'Audio: parent-approved listening is available.'
+    : 'Audio: reading only for now.';
   const trustMicrocopy = buildStoryDetailTrustMicrocopy();
   const completionTrustMicrocopy = buildCompletionTrustMicrocopy();
   const audioTrustMicrocopy = buildAudioEntryTrustMicrocopy();
@@ -88,59 +129,50 @@ function StoryScreenContent() {
 
         {stage === 'detail' && (
           <>
-            <View style={[styles.heroCard, visualStyles.roundedCard, visualStyles.warmCard]}>
-              <Text style={styles.storyCategoryLabel}>{worldLabel || story.world}</Text>
+            <HeroCard gradient='warm' style={styles.previewHero}>
+              <Text style={styles.storyCategoryLabel}>{journeyTag}</Text>
               <View style={styles.iconRow}>
                 <View style={styles.storyIconBadge}>
                   <Text style={styles.storyIconText}>{storyIcon}</Text>
                 </View>
-                <Text style={styles.eyebrow}>Story doorway</Text>
+                <Text style={styles.eyebrow}>Story preview</Text>
               </View>
               <Text style={styles.title}>{story.title}</Text>
               <Text style={styles.subtitle}>{summary}</Text>
               <View style={styles.chipRow}>
-                <Text style={styles.metaChip}>Age {ageBand}</Text>
-                <Text style={styles.metaChip}>{durationMinutes} min</Text>
-                <Text style={styles.metaChip}>Value: {primaryValue}</Text>
+                <Chip label={`Age ${ageBand}`} />
+                <Chip label={`${durationMinutes} min`} />
+                <Chip label={`Value: ${primaryValue}`} />
+                {journeyTag ? <Chip label={journeyTag} /> : null}
               </View>
-            </View>
+            </HeroCard>
 
-            <View style={[styles.supportCard, visualStyles.roundedCard]}>
-              <Text style={styles.valueLine}>Today’s value: <Text style={styles.valueLineStrong}>{primaryValue}</Text></Text>
-              <Text style={styles.parentLine}>Parent note: Gentle, age-appropriate sacred storytelling for shared reading.</Text>
-              <Text style={styles.luvluLine}>Luvlu says: Take one soft breath before you begin.</Text>
-            </View>
+            <Card style={styles.parentPreviewCard}>
+              <Text style={styles.valueLine}>What families can expect</Text>
+              <Text style={styles.parentLine}>Parent note: {parentNote}</Text>
+              <Text style={styles.parentLine}>Trust note: local-first and family-safe, with a calm reader and no pressure to finish.</Text>
+              <Text style={styles.parentLine}>Sacred stories are handled with care, simple language, and respectful pacing.</Text>
+            </Card>
 
-            <View style={[styles.supportCard, visualStyles.roundedCard]} accessibilityLabel={trustMicrocopy.accessibilityLabel} accessibilityHint={trustMicrocopy.accessibilityHint}>
+            <Card style={styles.supportCard} accessibilityLabel={trustMicrocopy.accessibilityLabel} accessibilityHint={trustMicrocopy.accessibilityHint}>
               <Text style={styles.valueLineStrong}>{trustMicrocopy.startReadinessCopy}</Text>
               <Text style={styles.parentLine}>{trustMicrocopy.noRaceCopy}</Text>
-              <Text style={styles.parentLine}>Read slowly.</Text>
+              <Text style={styles.parentLine}>{trustMicrocopy.slowReadingCopy}</Text>
               <Text style={styles.parentLine}>{trustMicrocopy.familyReadingCopy}</Text>
               <Text style={styles.parentLine}>{trustMicrocopy.sacredCareCopy}</Text>
-            </View>
+            </Card>
 
             {showAudioPanel ? (
-              <View
-                style={[styles.supportCard, visualStyles.roundedCard]}
+              <Card
+                style={styles.audioStatusCard}
                 accessibilityLabel={audioTrustMicrocopy.accessibilityLabel || audioState.accessibilityLabel}
                 accessibilityHint={audioTrustMicrocopy.accessibilityHint}
               >
-                <Text style={styles.valueLineStrong}>Audio coming soon</Text>
-                <Text style={styles.parentLine}>{audioTrustMicrocopy.optionalListeningCopy}</Text>
-                <Text style={styles.parentLine}>{audioTrustMicrocopy.readMyselfCopy}</Text>
-                <Text style={styles.parentLine}>{audioTrustMicrocopy.noMicRecordingCopy}</Text>
-                <Text style={styles.parentLine}>{audioTrustMicrocopy.parentApprovedCopy}</Text>
-                <Text style={styles.parentLine}>{audioTrustMicrocopy.familyListeningCopy}</Text>
-                <Text style={styles.parentLine}>{audioTrustMicrocopy.sacredCareCopy}</Text>
-                <Text style={styles.parentLine}>
-                  {audioState.canPlayNow ? audioTrustMicrocopy.parentApprovedCopy : audioTrustMicrocopy.comingSoonCopy}
-                </Text>
-              </View>
+                <Text style={styles.parentLine}>{audioStatusCopy}</Text>
+              </Card>
             ) : null}
 
-            <Pressable style={styles.button} onPress={() => setStage('reader')}>
-              <Text style={styles.buttonText}>Begin Story</Text>
-            </Pressable>
+            <PrimaryButton label='Read story' onPress={() => setStage('reader')} />
           </>
         )}
 
@@ -262,6 +294,7 @@ const styles = StyleSheet.create({
   storyCategoryLabel: { fontSize: 12, textTransform: 'uppercase', color: '#7a6444', fontWeight: '800' },
   iconRow: { flexDirection: 'row', alignItems: 'center', gap: tokens.spacing.sm },
   heroCard: { padding: tokens.spacing.lg, gap: tokens.spacing.sm },
+  previewHero: { gap: tokens.spacing.sm },
   storyIconBadge: { width: 40, height: 40, borderRadius: 20, backgroundColor: '#ffe9bf', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: '#e8cca0' },
   storyIconText: { fontSize: 18, fontWeight: '900', color: '#6e4f2d' },
   eyebrow: { fontSize: 13, color: tokens.colors.midnight, fontWeight: '700' },
@@ -270,6 +303,8 @@ const styles = StyleSheet.create({
   chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: tokens.spacing.xs },
   metaChip: { fontSize: 13, color: '#6a5b45', backgroundColor: '#fff3da', borderRadius: 999, borderWidth: 1, borderColor: '#f0d9ad', paddingVertical: 5, paddingHorizontal: 10 },
   supportCard: { backgroundColor: '#fffdf8', borderWidth: 1, borderColor: '#ebdec7', padding: tokens.spacing.md, gap: tokens.spacing.xs },
+  parentPreviewCard: { backgroundColor: '#fffdf8', borderWidth: 1, borderColor: '#ebdec7', padding: tokens.spacing.md, gap: tokens.spacing.xs },
+  audioStatusCard: { backgroundColor: '#fff7e8', borderWidth: 1, borderColor: '#efd6ae', padding: tokens.spacing.md, gap: tokens.spacing.xs },
   completionTrustCard: { marginTop: tokens.spacing.xs },
   gentlePaceCard: { marginTop: tokens.spacing.xs },
   valueLine: { fontSize: 16, lineHeight: 24, color: tokens.colors.textPrimary },
