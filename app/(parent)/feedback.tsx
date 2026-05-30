@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   content: { padding: tokens.spacing.lg, gap: tokens.spacing.md, paddingBottom: 40 },
   heading: { fontSize: 30, fontWeight: '800', color: '#1E2C50' },
   subheading: { color: '#4D5F88', fontSize: 15, lineHeight: 22 },
-  noteCard: { backgroundColor: '#1E2C50', borderRadius: 16, padding: 14, gap: 6 },
+  noteCard: { backgroundColor: '#1E2C50', borderRadius: tokens.radius.card, padding: tokens.spacing.md, gap: 6 },
   noteLine: { color: '#FFFFFF', fontSize: 14, lineHeight: 20 },
   input: { backgroundColor: '#FFFFFF', borderRadius: 14, borderWidth: 1, borderColor: '#D4DEF4', padding: 12, color: '#1E2C50', minHeight: 48, textAlignVertical: 'top' },
   sectionTitle: { color: '#445378', fontWeight: '800', letterSpacing: 0.3, textTransform: 'uppercase', fontSize: 12 },
