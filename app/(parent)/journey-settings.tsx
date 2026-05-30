@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { Link } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { GradientScreen } from '@/components/dharmaKit';
+import { elevation, radii, space, text } from '@/design/visualSystem';
 import { getAllDharmaJourneys, getParentFacingJourneySummary } from '@/lib/dharmaJourneys';
 
 function getJourneyStatusLabel(status: 'available' | 'planned' | 'coming_later') {
@@ -13,7 +15,7 @@ export default function ParentJourneySettingsScreen() {
   const journeys = useMemo(() => getAllDharmaJourneys(), []);
   const summary = getParentFacingJourneySummary();
 
-  return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
+  return <GradientScreen gradient='sky'><SafeAreaView style={styles.safe}><ScrollView contentContainerStyle={styles.content}>
     <Text style={styles.heading}>Journey Settings</Text>
     <Text style={styles.subheading}>{summary.heading}</Text>
 
@@ -42,18 +44,18 @@ export default function ParentJourneySettingsScreen() {
     ))}
 
     <Link href='/(parent)/controls' style={styles.link}>Back to Parent Controls</Link>
-  </ScrollView></SafeAreaView>;
+  </ScrollView></SafeAreaView></GradientScreen>;
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#F4F7FF' },
-  content: { padding: 16, gap: 10, paddingBottom: 32 },
-  heading: { fontSize: 30, fontWeight: '800', color: '#1F2F59' },
+  safe: { flex: 1 },
+  content: { padding: space.screen, gap: space.sm, paddingBottom: 32 },
+  heading: { ...text.display, color: '#1F2F59' },
   subheading: { color: '#4F618B', fontSize: 16 },
-  card: { backgroundColor: '#fff', borderRadius: 16, borderWidth: 1, borderColor: '#E0E8FA', padding: 14, gap: 6 },
+  card: { backgroundColor: '#fff', borderRadius: radii.tile, borderWidth: 1, borderColor: '#E0E8FA', padding: 14, gap: 6, ...elevation.soft },
   title: { fontSize: 16, fontWeight: '800', color: '#2C3E68' },
   journeyTitle: { fontSize: 18, fontWeight: '800', color: '#20345D' },
   copy: { fontSize: 14, color: '#3D4E73', lineHeight: 21 },
   meta: { fontSize: 13, color: '#5A6A92' },
-  link: { marginTop: 8, textAlign: 'center', backgroundColor: '#DCE8FF', color: '#1E2C50', padding: 14, borderRadius: 12, fontWeight: '700' }
+  link: { marginTop: 8, textAlign: 'center', backgroundColor: '#DCE8FF', color: '#1E2C50', padding: 14, borderRadius: radii.nav, fontWeight: '700' }
 });
